@@ -1,0 +1,44 @@
+inflectionClasses:
+  - id: el_verb_omega_active
+    pos: verb
+    description: Standard active voice endings for Omega verbs
+    endings:
+      # Present Indicative Active
+      - suffix: ω
+        features: { tense: pres, mood: ind, voice: act, person: 1, number: sg }
+        stemKey: present
+      - suffix: εις
+        features: { tense: pres, mood: ind, voice: act, person: 2, number: sg }
+        stemKey: present
+      - suffix: ει
+        features: { tense: pres, mood: ind, voice: act, person: 3, number: sg }
+        stemKey: present
+      - suffix: ουμε
+        features: { tense: pres, mood: ind, voice: act, person: 1, number: pl }
+        stemKey: present
+      - suffix: ετε
+        features: { tense: pres, mood: ind, voice: act, person: 2, number: pl }
+        stemKey: present
+      - suffix: ουν
+        features: { tense: pres, mood: ind, voice: act, person: 3, number: pl }
+        stemKey: present
+
+      # Aorist Indicative Active
+      - suffix: α
+        features: { tense: aor, mood: ind, voice: act, person: 1, number: sg }
+        stemKey: aorist
+      - suffix: ες
+        features: { tense: aor, mood: ind, voice: act, person: 2, number: sg }
+        stemKey: aorist
+      - suffix: ε
+        features: { tense: aor, mood: ind, voice: act, person: 3, number: sg }
+        stemKey: aorist
+      - suffix: αμε
+        features: { tense: aor, mood: ind, voice: act, person: 1, number: pl }
+        stemKey: aorist
+      - suffix: ατε
+        features: { tense: aor, mood: ind, voice: act, person: 2, number: pl }
+        stemKey: aorist
+      - suffix: αν
+        features: { tense: aor, mood: ind, voice: act, person: 3, number: pl }
+        stemKey: aorist

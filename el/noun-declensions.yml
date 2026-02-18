@@ -1,0 +1,138 @@
+rulesetVersion: greek-noun-v1.0
+
+declensionClasses:
+
+  # --- MASCULINE ---
+  - id: noun_masc_os
+    description: "Masculine nouns in -ος"
+    gender: masculine
+    singular:
+      nom: ["ος"]
+      gen: ["ου"]
+      acc: ["ο"]
+      voc: ["ε"]
+    plural:
+      nom: ["οι"]
+      gen: ["ων"]
+      acc: ["ους"]
+      voc: ["οι"]
+
+  - id: noun_masc_is
+    description: "Masculine nouns in -ης"
+    gender: masculine
+    singular:
+      nom: ["ης"]
+      gen: ["η"]
+      acc: ["η"]
+      voc: ["η"]
+    plural:
+      nom: ["ες"]
+      gen: ["ων"]
+      acc: ["ες"]
+      voc: ["ες"]
+
+  - id: noun_masc_as
+    description: "Masculine nouns in -ας"
+    gender: masculine
+    singular:
+      nom: ["ας"]
+      gen: ["α"]
+      acc: ["α"]
+      voc: ["α"]
+    plural:
+      nom: ["ες"]
+      gen: ["ων"]
+      acc: ["ες"]
+      voc: ["ες"]
+    notes: ["Stress shift in genitive plural common but handled by accent logic"]
+
+  # --- FEMININE ---
+  - id: noun_fem_a
+    description: "Feminine nouns in -α"
+    gender: feminine
+    singular:
+      nom: ["α"]
+      gen: ["ας"]
+      acc: ["α"]
+      voc: ["α"]
+    plural:
+      nom: ["ες"]
+      gen: ["ων"]
+      acc: ["ες"]
+      voc: ["ες"]
+
+  - id: noun_fem_i
+    description: "Feminine nouns in -η"
+    gender: feminine
+    singular:
+      nom: ["η"]
+      gen: ["ης"]
+      acc: ["η"]
+      voc: ["η"]
+    plural:
+      nom: ["ες"]
+      gen: ["ων"]
+      acc: ["ες"]
+      voc: ["ες"]
+
+  - id: noun_fem_os
+    description: "Feminine nouns in -ος (e.g. οδός)"
+    gender: feminine
+    singular:
+      nom: ["ος"]
+      gen: ["ου"]
+      acc: ["ο"]
+      voc: ["ε", "ο"]
+    plural:
+      nom: ["οι"]
+      gen: ["ων"]
+      acc: ["ους"]
+      voc: ["οι"]
+
+  # --- NEUTER ---
+  - id: noun_neut_o
+    description: "Neuter nouns in -ο"
+    gender: neuter
+    singular:
+      nom: ["ο"]
+      gen: ["ου"]
+      acc: ["ο"]
+      voc: ["ο"]
+    plural:
+      nom: ["α"]
+      gen: ["ων"]
+      acc: ["α"]
+      voc: ["α"]
+
+  - id: noun_neut_i
+    description: "Neuter nouns in -ι"
+    gender: neuter
+    singular:
+      nom: ["ι"]
+      gen: ["ιού", "ιου"] # Allow stress shift in suffix lookup
+      acc: ["ι"]
+      voc: ["ι"]
+    plural:
+      nom: ["ια"]
+      gen: ["ιών", "ιων"]
+      acc: ["ια"]
+      voc: ["ια"]
+
+  - id: noun_neut_ma
+    description: "Neuter nouns in -μα (Stem alternation)"
+    gender: neuter
+    stemAlternation: true
+    singular:
+      nom: ["μα"]
+      gen: ["ματος"]
+      acc: ["μα"]
+      voc: ["μα"]
+    plural:
+      nom: ["ματα"]
+      gen: ["μάτων"]
+      acc: ["ματα"]
+      voc: ["ματα"]
+    # For reverse lookup, suffixes point to lemma reconstruction
+    lemmaRules:
+      - suffix: "ματος"
+        strip: "τος" # stem "σωμα" from "σωματος"

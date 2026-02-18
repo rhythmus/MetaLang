@@ -1,0 +1,85 @@
+rulesetVersion: greek-adj-v1.0
+
+adjectiveFamilies:
+
+  # 1. -ος -η -ο (Regular, unaccented feminine)
+  - id: adj_os_i_o
+    description: "Regular adjectives -ος -η -ο"
+    masculine:
+      - "ος"
+    feminine:
+      - "η"
+    neuter:
+      - "ο"
+    lemmaFrom: masculine
+    paradigmDisplay: "-η -ο"
+    notes:
+      - "Default adjective class"
+
+  # 2. -ός -ή -ό (Tonal variant)
+  - id: adj_os_i_o_tonal
+    description: "Tonal variant -ός -ή -ό"
+    masculine:
+      - "ός"
+    feminine:
+      - "ή"
+    neuter:
+      - "ό"
+    lemmaFrom: masculine
+    paradigmDisplay: "-ή -ό"
+    normalizeTo: adj_os_i_o
+    notes:
+      - "Stress preserved but morphologically same class"
+
+  # 3. -ος -α -ο (ωραίος type, feminine in -α)
+  - id: adj_os_a_o
+    description: "Adjectives -ος -α -ο"
+    masculine:
+      - "ος"
+    feminine:
+      - "α"
+    neuter:
+      - "ο"
+    lemmaFrom: masculine
+    paradigmDisplay: "-α -ο"
+
+  # 4. -ής -ής -ές (contracted, συγγενής type)
+  - id: adj_is_es
+    description: "Adjectives -ής -ής -ές"
+    masculine:
+      - "ής"
+    feminine:
+      - "ής"
+    neuter:
+      - "ές"
+    lemmaFrom: masculine
+    paradigmDisplay: "-ής -ές"
+    genderInvariantForms:
+      - masculine
+      - feminine
+
+  # 5. -ύς -ιά -ύ (rare, βαθύς type)
+  - id: adj_ys_ia_y
+    description: "Adjectives -ύς -ιά -ύ"
+    masculine:
+      - "ύς"
+    feminine:
+      - "ιά"
+    neuter:
+      - "ύ"
+    lemmaFrom: masculine
+    paradigmDisplay: "-ιά -ύ"
+
+  # 6. Participial -μένος -μένη -μένο
+  - id: adj_participial_menos
+    description: "Participial adjectives -μένος -μένη -μένο"
+    masculine:
+      - "μένος"
+    feminine:
+      - "μένη"
+    neuter:
+      - "μένο"
+    lemmaFrom: masculine
+    paradigmDisplay: "-μένη -μένο"
+    flags:
+      - participial

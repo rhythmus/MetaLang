@@ -1,0 +1,40 @@
+# Greek Articles with Morphological Features
+articles:
+  - form: "ο"
+    features: {pos: "part", gender: "masc", number: "sg", case: "nom"}
+  
+  - form: "η"
+    features: {pos: "part", gender: "fem", number: "sg", case: "nom"}
+
+  - form: "το"
+    features: [{pos: "part", gender: "neut", number: "sg", case: "nom"}, {pos: "part", gender: "neut", number: "sg", case: "acc"}]
+
+  - form: "οι"
+    features: [{pos: "part", gender: "masc", number: "pl", case: "nom"}, {pos: "part", gender: "fem", number: "pl", case: "nom"}]
+
+  - form: "τα"
+    features: [{pos: "part", gender: "neut", number: "pl", case: "nom"}, {pos: "part", gender: "neut", number: "pl", case: "acc"}]
+
+  - form: "του"
+    features: [{pos: "part", gender: "masc", number: "sg", case: "gen"}, {pos: "part", gender: "neut", number: "sg", case: "gen"}]
+
+  - form: "της"
+    features: {pos: "part", gender: "fem", number: "sg", case: "gen"}
+
+  - form: "των"
+    features: 
+      - {pos: "part", gender: "masc", number: "pl", case: "gen"}
+      - {pos: "part", gender: "fem", number: "pl", case: "gen"}
+      - {pos: "part", gender: "neut", number: "pl", case: "gen"}
+
+  - form: "τον"
+    features: {pos: "part", gender: "masc", number: "sg", case: "acc"}
+
+  - form: "την"
+    features: {pos: "part", gender: "fem", number: "sg", case: "acc"}
+
+  - form: "τους"
+    features: {pos: "part", gender: "masc", number: "pl", case: "acc"}
+
+  - form: "τις"
+    features: {pos: "part", gender: "fem", number: "pl", case: "acc"}

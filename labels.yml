@@ -1,0 +1,61 @@
+pos_labels:
+  - id: noun
+    abbr:
+      en: n.
+      nl: znw.
+      el: ουσ.
+  - id: propn
+    abbr:
+      en: pn.
+      nl: eigenn.
+      el: κ.ό.
+  - id: adj
+    abbr:
+      en: adj.
+      nl: bnw.
+      el: επίθ.
+  - id: num
+    abbr:
+      en: num.
+      nl: telw.
+      el: αριθ.
+  - id: verb
+    abbr:
+      en: vb.
+      nl: ww.
+      el: ρ.
+  - id: adv
+    abbr:
+      en: adv.
+      nl: bijw.
+      el: επίρρ.
+  - id: adp
+    abbr:
+      en: prep.
+      nl: vz.
+      el: πρόθ.
+  - id: conj
+    abbr:
+      en: cnj.
+      nl: vw.
+      el: σύνδ.
+  - id: det
+    abbr:
+      en: det.
+      nl: det.
+      el: καθ. προσδ.
+  - id: art
+    abbr:
+      en: art.
+      nl: lidw.
+      el: άρθρ.
+  - id: pron
+    abbr:
+      en: pro.
+      nl: vnw.
+      el: αντων.
+  - id: intj
+    abbr:
+      en: intj.
+      nl: tsw.
+      el: επιφ.

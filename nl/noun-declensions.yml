@@ -1,0 +1,56 @@
+declensionClasses:
+  # --- Common Plurals ---
+  - id: n_plural_en
+    description: "Common plural in -en"
+    gender: common
+    plural:
+      nom: ["en"]
+
+  - id: n_plural_s
+    description: "Common plural in -s"
+    gender: common
+    plural:
+      nom: ["s"]
+
+  # --- Common Suffixes (Heuristics) ---
+  # These allow the analyzer to recognize words ending in these suffixes as nouns.
+  - id: n_suffix_ing
+    description: "Nouns ending in -ing (usually feminine/common)"
+    gender: common
+    singular:
+      nom: ["ing"]
+    plural:
+      nom: ["ingen"]
+
+  - id: n_suffix_heid
+    description: "Nouns ending in -heid (usually feminine/common)"
+    gender: common
+    singular:
+      nom: ["heid"]
+    plural:
+      nom: ["heden"] # Irregular plural for -heid
+
+  - id: n_suffix_teit
+    description: "Nouns ending in -teit (usually feminine/common)"
+    gender: common
+    singular:
+      nom: ["teit"]
+    plural:
+      nom: ["teiten"]
+
+  - id: n_suffix_schap
+    description: "Nouns ending in -schap"
+    gender: common # Can be neuter too, but common is... common.
+    singular:
+      nom: ["schap"]
+    plural:
+      nom: ["schappen"]
+
+  # --- Diminutives ---
+  - id: n_diminutive
+    description: "Diminutives (indistinguishable gender, usually neuter?)"
+    gender: neuter
+    singular:
+      nom: ["je", "pje", "tje"]
+    plural:
+      nom: ["jes", "pjes", "tjes"]
