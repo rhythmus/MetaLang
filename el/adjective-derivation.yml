@@ -1,0 +1,31 @@
+rulesetVersion: greek-adj-derivation-v1.0
+
+classes:
+
+  # Comparative Degree (-τερος)
+  - id: adj.comp.τερος
+    description: "Comparative Degree (-τερος -τερη -τερο)"
+    pos: adj
+    rules:
+      - suffix: "τερος"
+        features: {pos: adj, gender: masc, number: sg, case: nom, degree: comp}
+      - suffix: "τερη"
+        features: {pos: adj, gender: fem, number: sg, case: nom, degree: comp}
+      - suffix: "τερο"
+        features: {pos: adj, gender: neut, number: sg, case: nom, degree: comp}
+    lemmaFrom: masculine
+    paradigmDisplay: "-τερη -τερο"
+
+  # Superlative Degree (-τατος)
+  - id: adj.sup.τατος
+    description: "Superlative Degree (-τατος -τατη -τατο)"
+    pos: adj
+    rules:
+      - suffix: "τατος"
+        features: {pos: adj, gender: masc, number: sg, case: nom, degree: sup}
+      - suffix: "τατη"
+        features: {pos: adj, gender: fem, number: sg, case: nom, degree: sup}
+      - suffix: "τατο"
+        features: {pos: adj, gender: neut, number: sg, case: nom, degree: sup}
+    lemmaFrom: masculine
+    paradigmDisplay: "-τατη -τατο"

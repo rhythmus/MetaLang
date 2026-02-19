@@ -1,0 +1,21 @@
+diminutiveSuffixes:
+  # Neuter Diminutives (-άκι)
+  - suffix: "άκι"
+    gender: "neut"
+    example: "σπιτάκι"
+    declensionId: "noun.neut.ι"
+    tags: ["diminutive"]
+
+  # Feminine Diminutives (-ούλα)
+  - suffix: "ούλα"
+    gender: "fem"
+    example: "μανούλα"
+    declensionId: "noun.fem.α"
+    tags: ["diminutive", "affectionate"]
+
+  # Feminine Diminutives (-ίτσα)
+  - suffix: "ίτσα"
+    gender: "fem"
+    example: "ελίτσα"
+    declensionId: "noun.fem.α"
+    tags: ["diminutive"]
