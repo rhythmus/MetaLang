@@ -2,7 +2,7 @@ rulesetVersion: greek-verb-v1.0
 
 conjugationClasses:
 
-  - id: v_omega_active
+  - id: verb.act.ω
     description: "Omega verbs, active voice (Present system + common Aorist)"
     endingRules:
 
@@ -74,7 +74,7 @@ conjugationClasses:
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.68
 
-  - id: v_mediopassive_omai
+  - id: verb.mid.ομαι
     description: "Mediopassive present system -ομαι"
     endingRules:
       - suffix: "ομαι"
@@ -107,7 +107,7 @@ conjugationClasses:
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.90
 
-  - id: v_contracted_ao
+  - id: verb.act.άω.ώ
     description: "Contracted verbs -άω/-ώ (Type A & B)"
     endingRules:
       - suffix: "άω"

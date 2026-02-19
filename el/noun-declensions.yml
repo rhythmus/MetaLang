@@ -3,7 +3,7 @@ rulesetVersion: greek-noun-v1.0
 declensionClasses:
 
   # --- MASCULINE ---
-  - id: noun_masc_os
+  - id: noun.masc.ος
     description: "Masculine nouns in -ος"
     gender: masculine
     singular:
@@ -17,7 +17,7 @@ declensionClasses:
       acc: ["ους"]
       voc: ["οι"]
 
-  - id: noun_masc_is
+  - id: noun.masc.ης
     description: "Masculine nouns in -ης"
     gender: masculine
     singular:
@@ -31,7 +31,7 @@ declensionClasses:
       acc: ["ες"]
       voc: ["ες"]
 
-  - id: noun_masc_as
+  - id: noun.masc.ας
     description: "Masculine nouns in -ας"
     gender: masculine
     singular:
@@ -46,8 +46,22 @@ declensionClasses:
       voc: ["ες"]
     notes: ["Stress shift in genitive plural common but handled by accent logic"]
 
+  - id: noun.masc.ές
+    description: "Masculine nouns in -ές (e.g. καφές)"
+    gender: masculine
+    singular:
+      nom: ["ές"]
+      gen: ["έ"]
+      acc: ["έ"]
+      voc: ["έ"]
+    plural:
+      nom: ["έδες"]
+      gen: ["έδων"]
+      acc: ["έδες"]
+      voc: ["έδες"]
+
   # --- FEMININE ---
-  - id: noun_fem_a
+  - id: noun.fem.α
     description: "Feminine nouns in -α"
     gender: feminine
     singular:
@@ -61,7 +75,7 @@ declensionClasses:
       acc: ["ες"]
       voc: ["ες"]
 
-  - id: noun_fem_i
+  - id: noun.fem.η
     description: "Feminine nouns in -η"
     gender: feminine
     singular:
@@ -75,7 +89,7 @@ declensionClasses:
       acc: ["ες"]
       voc: ["ες"]
 
-  - id: noun_fem_os
+  - id: noun.fem.ος
     description: "Feminine nouns in -ος (e.g. οδός)"
     gender: feminine
     singular:
@@ -90,7 +104,7 @@ declensionClasses:
       voc: ["οι"]
 
   # --- NEUTER ---
-  - id: noun_neut_o
+  - id: noun.neut.ο
     description: "Neuter nouns in -ο"
     gender: neuter
     singular:
@@ -104,7 +118,7 @@ declensionClasses:
       acc: ["α"]
       voc: ["α"]
 
-  - id: noun_neut_i
+  - id: noun.neut.ι
     description: "Neuter nouns in -ι"
     gender: neuter
     singular:
@@ -118,7 +132,7 @@ declensionClasses:
       acc: ["ια"]
       voc: ["ια"]
 
-  - id: noun_neut_ma
+  - id: noun.neut.μα
     description: "Neuter nouns in -μα (Stem alternation)"
     gender: neuter
     stemAlternation: true

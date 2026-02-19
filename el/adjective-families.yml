@@ -3,7 +3,7 @@ rulesetVersion: greek-adj-v1.0
 adjectiveFamilies:
 
   # 1. -ος -η -ο (Regular, unaccented feminine)
-  - id: adj_os_i_o
+  - id: adj.ος-η-ο
     description: "Regular adjectives -ος -η -ο"
     masculine:
       - "ος"
@@ -17,7 +17,7 @@ adjectiveFamilies:
       - "Default adjective class"
 
   # 2. -ός -ή -ό (Tonal variant)
-  - id: adj_os_i_o_tonal
+  - id: adj.ός-ή-ό
     description: "Tonal variant -ός -ή -ό"
     masculine:
       - "ός"
@@ -27,12 +27,12 @@ adjectiveFamilies:
       - "ό"
     lemmaFrom: masculine
     paradigmDisplay: "-ή -ό"
-    normalizeTo: adj_os_i_o
+    normalizeTo: adj.ος-η-ο
     notes:
       - "Stress preserved but morphologically same class"
 
   # 3. -ος -α -ο (ωραίος type, feminine in -α)
-  - id: adj_os_a_o
+  - id: adj.ος-α-ο
     description: "Adjectives -ος -α -ο"
     masculine:
       - "ος"
@@ -44,7 +44,7 @@ adjectiveFamilies:
     paradigmDisplay: "-α -ο"
 
   # 4. -ής -ής -ές (contracted, συγγενής type)
-  - id: adj_is_es
+  - id: adj.ής-ές
     description: "Adjectives -ής -ής -ές"
     masculine:
       - "ής"
@@ -59,7 +59,7 @@ adjectiveFamilies:
       - feminine
 
   # 5. -ύς -ιά -ύ (rare, βαθύς type)
-  - id: adj_ys_ia_y
+  - id: adj.ύς-ιά-ύ
     description: "Adjectives -ύς -ιά -ύ"
     masculine:
       - "ύς"
@@ -71,7 +71,7 @@ adjectiveFamilies:
     paradigmDisplay: "-ιά -ύ"
 
   # 6. Participial -μένος -μένη -μένο
-  - id: adj_participial_menos
+  - id: adj.μένος-μένη-μένο
     description: "Participial adjectives -μένος -μένη -μένο"
     masculine:
       - "μένος"
