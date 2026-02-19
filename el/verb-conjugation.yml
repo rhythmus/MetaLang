@@ -5,6 +5,7 @@ classes:
   - id: verb.act.ω
     description: "Omega verbs, active voice (Present system + common Aorist)"
     pos: verb
+    citationSuffix: "ω"
     rules:
 
       # PRESENT INDICATIVE ACTIVE
