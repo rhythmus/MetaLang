@@ -1,10 +1,11 @@
-rulesetVersion: greek-verb-v1.0
+rulesetVersion: greek-verb-v2.0
 
-conjugationClasses:
+classes:
 
   - id: verb.act.ω
     description: "Omega verbs, active voice (Present system + common Aorist)"
-    endingRules:
+    pos: verb
+    rules:
 
       # PRESENT INDICATIVE ACTIVE
       - suffix: "ω"
@@ -76,7 +77,8 @@ conjugationClasses:
 
   - id: verb.mid.ομαι
     description: "Mediopassive present system -ομαι"
-    endingRules:
+    pos: verb
+    rules:
       - suffix: "ομαι"
         features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 1, number: sg}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
@@ -109,7 +111,8 @@ conjugationClasses:
 
   - id: verb.act.άω.ώ
     description: "Contracted verbs -άω/-ώ (Type A & B)"
-    endingRules:
+    pos: verb
+    rules:
       - suffix: "άω"
         features: {pos: verb, tense: pres, mood: ind, voice: act, person: 1, number: sg}
         lemmaHint: {type: contracted_ao, lemmaSuffix: "άω"}

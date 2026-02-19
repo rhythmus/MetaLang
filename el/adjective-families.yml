@@ -1,16 +1,19 @@
-rulesetVersion: greek-adj-v1.0
+rulesetVersion: greek-adj-v2.0
 
-adjectiveFamilies:
+classes:
 
   # 1. -ος -η -ο (Regular, unaccented feminine)
   - id: adj.ος-η-ο
     description: "Regular adjectives -ος -η -ο"
-    masculine:
-      - "ος"
-    feminine:
-      - "η"
-    neuter:
-      - "ο"
+    pos: adj
+    rules:
+      - suffix: "ος"
+        features: {pos: adj, gender: masc, number: sg, case: nom}
+      - suffix: "η"
+        features: {pos: adj, gender: fem, number: sg, case: nom}
+      - suffix: "ο"
+        features: {pos: adj, gender: neut, number: sg, case: nom}
+    # Note: Full paradigm could be expanded here if needed
     lemmaFrom: masculine
     paradigmDisplay: "-η -ο"
     notes:
@@ -19,39 +22,45 @@ adjectiveFamilies:
   # 2. -ός -ή -ό (Tonal variant)
   - id: adj.ός-ή-ό
     description: "Tonal variant -ός -ή -ό"
-    masculine:
-      - "ός"
-    feminine:
-      - "ή"
-    neuter:
-      - "ό"
+    pos: adj
+    rules:
+      - suffix: "ός"
+        features: {pos: adj, gender: masc, number: sg, case: nom}
+      - suffix: "ή"
+        features: {pos: adj, gender: fem, number: sg, case: nom}
+      - suffix: "ό"
+        features: {pos: adj, gender: neut, number: sg, case: nom}
     lemmaFrom: masculine
     paradigmDisplay: "-ή -ό"
-    normalizeTo: adj.ος-η-ο
+    # normalizeTo: adj.ος-η-ο # Logic moved to Analyzer/Generator if same class structure
     notes:
       - "Stress preserved but morphologically same class"
 
   # 3. -ος -α -ο (ωραίος type, feminine in -α)
   - id: adj.ος-α-ο
     description: "Adjectives -ος -α -ο"
-    masculine:
-      - "ος"
-    feminine:
-      - "α"
-    neuter:
-      - "ο"
+    pos: adj
+    rules:
+      - suffix: "ος"
+        features: {pos: adj, gender: masc, number: sg, case: nom}
+      - suffix: "α"
+        features: {pos: adj, gender: fem, number: sg, case: nom}
+      - suffix: "ο"
+        features: {pos: adj, gender: neut, number: sg, case: nom}
     lemmaFrom: masculine
     paradigmDisplay: "-α -ο"
 
   # 4. -ής -ής -ές (contracted, συγγενής type)
   - id: adj.ής-ές
     description: "Adjectives -ής -ής -ές"
-    masculine:
-      - "ής"
-    feminine:
-      - "ής"
-    neuter:
-      - "ές"
+    pos: adj
+    rules:
+      - suffix: "ής"
+        features: {pos: adj, gender: masc, number: sg, case: nom}
+      - suffix: "ής"
+        features: {pos: adj, gender: fem, number: sg, case: nom}
+      - suffix: "ές"
+        features: {pos: adj, gender: neut, number: sg, case: nom}
     lemmaFrom: masculine
     paradigmDisplay: "-ής -ές"
     genderInvariantForms:
@@ -61,24 +70,28 @@ adjectiveFamilies:
   # 5. -ύς -ιά -ύ (rare, βαθύς type)
   - id: adj.ύς-ιά-ύ
     description: "Adjectives -ύς -ιά -ύ"
-    masculine:
-      - "ύς"
-    feminine:
-      - "ιά"
-    neuter:
-      - "ύ"
+    pos: adj
+    rules:
+      - suffix: "ύς"
+        features: {pos: adj, gender: masc, number: sg, case: nom}
+      - suffix: "ιά"
+        features: {pos: adj, gender: fem, number: sg, case: nom}
+      - suffix: "ύ"
+        features: {pos: adj, gender: neut, number: sg, case: nom}
     lemmaFrom: masculine
     paradigmDisplay: "-ιά -ύ"
 
   # 6. Participial -μένος -μένη -μένο
   - id: adj.μένος-μένη-μένο
     description: "Participial adjectives -μένος -μένη -μένο"
-    masculine:
-      - "μένος"
-    feminine:
-      - "μένη"
-    neuter:
-      - "μένο"
+    pos: adj
+    rules:
+      - suffix: "μένος"
+        features: {pos: adj, gender: masc, number: sg, case: nom}
+      - suffix: "μένη"
+        features: {pos: adj, gender: fem, number: sg, case: nom}
+      - suffix: "μένο"
+        features: {pos: adj, gender: neut, number: sg, case: nom}
     lemmaFrom: masculine
     paradigmDisplay: "-μένη -μένο"
     flags:
