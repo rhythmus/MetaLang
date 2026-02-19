@@ -43,6 +43,22 @@ classes:
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.90
 
+      # AORIST ACTIVE (-σα, -ξα, -ψα)
+      - suffix: "σα"
+        features: {pos: verb, mood: ind, voice: act, person: 1, number: sg}
+        lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
+        confidence: 0.95
+
+      - suffix: "ξα"
+        features: {pos: verb, mood: ind, voice: act, person: 1, number: sg}
+        lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
+        confidence: 0.95
+
+      - suffix: "ψα"
+        features: {pos: verb, mood: ind, voice: act, person: 1, number: sg}
+        lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
+        confidence: 0.95
+
       # IMPERFECT / AORIST ACTIVE (Ambiguous suffix - requires resolver logic)
       - suffix: "α"
         features: {pos: verb, mood: ind, voice: act, person: 1, number: sg}
