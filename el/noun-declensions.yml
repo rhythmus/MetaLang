@@ -27,10 +27,7 @@ classes:
       - suffix: "οι"
         features: {pos: noun, gender: masc, number: pl, case: voc}
 
-  - id: noun.masc.η
-    # Typos in original ID (noun.masc.ης)? Yes, updated to match ID convention.
-    # Wait, original ID was noun.masc.ης. 
-    id: noun.masc.ης
+  - id: noun.masc.ης
     description: "Masculine nouns in -ης"
     pos: noun
     gender: masc

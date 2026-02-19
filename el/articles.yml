@@ -1,40 +1,40 @@
 # Greek Articles with Morphological Features
 articles:
   - form: "ο"
-    features: {pos: "morph", gender: "masc", number: "sg", case: "nom"}
+    features: {pos: "art", gender: "masc", number: "sg", case: "nom"}
   
   - form: "η"
-    features: {pos: "morph", gender: "fem", number: "sg", case: "nom"}
+    features: {pos: "art", gender: "fem", number: "sg", case: "nom"}
 
   - form: "το"
-    features: [{pos: "morph", gender: "neut", number: "sg", case: "nom"}, {pos: "morph", gender: "neut", number: "sg", case: "acc"}]
+    features: [{pos: "art", gender: "neut", number: "sg", case: "nom"}, {pos: "art", gender: "neut", number: "sg", case: "acc"}]
 
   - form: "οι"
-    features: [{pos: "morph", gender: "masc", number: "pl", case: "nom"}, {pos: "morph", gender: "fem", number: "pl", case: "nom"}]
+    features: [{pos: "art", gender: "masc", number: "pl", case: "nom"}, {pos: "art", gender: "fem", number: "pl", case: "nom"}]
 
   - form: "τα"
-    features: [{pos: "morph", gender: "neut", number: "pl", case: "nom"}, {pos: "morph", gender: "neut", number: "pl", case: "acc"}]
+    features: [{pos: "art", gender: "neut", number: "pl", case: "nom"}, {pos: "art", gender: "neut", number: "pl", case: "acc"}]
 
   - form: "του"
-    features: [{pos: "morph", gender: "masc", number: "sg", case: "gen"}, {pos: "morph", gender: "neut", number: "sg", case: "gen"}]
+    features: [{pos: "art", gender: "masc", number: "sg", case: "gen"}, {pos: "art", gender: "neut", number: "sg", case: "gen"}]
 
   - form: "της"
-    features: {pos: "morph", gender: "fem", number: "sg", case: "gen"}
+    features: {pos: "art", gender: "fem", number: "sg", case: "gen"}
 
   - form: "των"
     features: 
-      - {pos: "morph", gender: "masc", number: "pl", case: "gen"}
-      - {pos: "morph", gender: "fem", number: "pl", case: "gen"}
-      - {pos: "morph", gender: "neut", number: "pl", case: "gen"}
+      - {pos: "art", gender: "masc", number: "pl", case: "gen"}
+      - {pos: "art", gender: "fem", number: "pl", case: "gen"}
+      - {pos: "art", gender: "neut", number: "pl", case: "gen"}
 
   - form: "τον"
-    features: {pos: "morph", gender: "masc", number: "sg", case: "acc"}
+    features: {pos: "art", gender: "masc", number: "sg", case: "acc"}
 
   - form: "την"
-    features: {pos: "morph", gender: "fem", number: "sg", case: "acc"}
+    features: {pos: "art", gender: "fem", number: "sg", case: "acc"}
 
   - form: "τους"
-    features: {pos: "morph", gender: "masc", number: "pl", case: "acc"}
+    features: {pos: "art", gender: "masc", number: "pl", case: "acc"}
 
   - form: "τις"
-    features: {pos: "morph", gender: "fem", number: "pl", case: "acc"}
+    features: {pos: "art", gender: "fem", number: "pl", case: "acc"}
