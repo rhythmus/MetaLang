@@ -4,153 +4,153 @@ classes:
 
   - id: verb.act.ω
     description: "Omega verbs, active voice (Present system + common Aorist)"
-    pos: verb
+    pos: v
     citationSuffix: "ω"
     rules:
 
       # PRESENT INDICATIVE ACTIVE
       - suffix: "ω"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.96
 
       - suffix: "εις"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 2, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 2e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.93
 
       - suffix: "ει"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 3, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 3e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.92
 
       - suffix: "ουμε"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 1, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 1e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.92
 
       - suffix: "ετε"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 2, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 2e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.92
 
       - suffix: "ουν"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 3, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 3e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.90
 
       - suffix: "ουνε"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 3, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 3e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.90
 
       # AORIST ACTIVE (-σα, -ξα, -ψα)
       - suffix: "σα"
-        features: {pos: verb, tense: aor, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, tense: aor, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.95
 
       - suffix: "ξα"
-        features: {pos: verb, tense: aor, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, tense: aor, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.95
 
       - suffix: "ψα"
-        features: {pos: verb, tense: aor, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, tense: aor, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "φω"} # Heuristic: ψ -> φ
         confidence: 0.95
 
       # IMPERFECT / AORIST ACTIVE (Ambiguous suffix - requires resolver logic)
       - suffix: "α"
-        features: {pos: verb, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"} # Uses augment stripping logic
         confidence: 0.70
         notes: ["Could be imperfect or aorist"]
 
       - suffix: "ες"
-        features: {pos: verb, mood: ind, voice: act, person: 2, number: sg}
+        features: {pos: v, mood: ind, voice: act, person: 2e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.70
 
       - suffix: "ε"
-        features: {pos: verb, mood: ind, voice: act, person: 3, number: sg}
+        features: {pos: v, mood: ind, voice: act, person: 3e.pers, number: sg}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.70
 
       - suffix: "αμε"
-        features: {pos: verb, mood: ind, voice: act, person: 1, number: pl}
+        features: {pos: v, mood: ind, voice: act, person: 1e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.70
 
       - suffix: "ατε"
-        features: {pos: verb, mood: ind, voice: act, person: 2, number: pl}
+        features: {pos: v, mood: ind, voice: act, person: 2e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.70
 
       - suffix: "αν"
-        features: {pos: verb, mood: ind, voice: act, person: 3, number: pl}
+        features: {pos: v, mood: ind, voice: act, person: 3e.pers, number: pl}
         lemmaHint: {type: present_omega, lemmaSuffix: "ω"}
         confidence: 0.68
 
   - id: verb.mid.ομαι
     description: "Mediopassive present system -ομαι"
-    pos: verb
+    pos: v
     rules:
       - suffix: "ομαι"
-        features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 1, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: mid, person: 1e.pers, number: sg}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.95
 
       - suffix: "εσαι"
-        features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 2, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: mid, person: 2e.pers, number: sg}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.93
 
       - suffix: "εται"
-        features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 3, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: mid, person: 3e.pers, number: sg}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.93
 
       - suffix: "ομαστε"
-        features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 1, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: mid, person: 1e.pers, number: pl}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.92
 
       - suffix: "εστε"
-        features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 2, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: mid, person: 2e.pers, number: pl}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.92
 
       - suffix: "ονται"
-        features: {pos: verb, tense: pres, mood: ind, voice: mid, person: 3, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: mid, person: 3e.pers, number: pl}
         lemmaHint: {type: mediopassive_mai, lemmaSuffix: "ομαι"}
         confidence: 0.90
 
   - id: verb.act.άω.ώ
     description: "Contracted verbs -άω/-ώ (Type A & B)"
-    pos: verb
+    pos: v
     rules:
       - suffix: "άω"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: contracted_ao, lemmaSuffix: "άω"}
         confidence: 0.95
       
       - suffix: "ώ"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 1, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 1e.pers, number: sg}
         lemmaHint: {type: contracted_ao, lemmaSuffix: "ώ"} # Ambiguity with -ώ from other types possible
         confidence: 0.90
 
       - suffix: "άς"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 2, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 2e.pers, number: sg}
         lemmaHint: {type: contracted_ao, lemmaSuffix: "άω"}
         confidence: 0.95
 
       - suffix: "ά"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 3, number: sg}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 3e.pers, number: sg}
         lemmaHint: {type: contracted_ao, lemmaSuffix: "άω"}
         confidence: 0.95
 
       - suffix: "ούμε"
-        features: {pos: verb, tense: pres, mood: ind, voice: act, person: 1, number: pl}
+        features: {pos: v, tense: praes, mood: ind, voice: act, person: 1e.pers, number: pl}
         lemmaHint: {type: contracted_ao, lemmaSuffix: "άω"} # Or -ώ
         confidence: 0.90

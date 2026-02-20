@@ -2,11 +2,11 @@ conjugationClasses:
   - id: v_regular_en
     endingRules:
       - suffix: "en"
-        features: {pos: verb, number: pl, tense: pres}
+        features: {pos: v, number: pl, tense: praes}
         confidence: 0.8
       - suffix: "t"
-        features: {pos: verb, number: sg, person: 3, tense: pres} 
+        features: {pos: v, number: sg, person: 3e.pers, tense: praes} 
         confidence: 0.6
       - suffix: "de"
-        features: {pos: verb, number: sg, tense: past}
+        features: {pos: v, number: sg, tense: past}
         confidence: 0.7

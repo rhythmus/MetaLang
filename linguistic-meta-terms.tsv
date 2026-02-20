@@ -1,127 +1,127 @@
-WikiData	parent	Lexilogio tag	Internal ID	INTERA	UD	PTB
-Q208084						
-Q82042		pos				
-Q41796		s				
-Q189756	s	q				
-Q35102	s	prov				
-Q5551966		MWE			MWE	
-Q6935164	MWE	phras			MWE	
-Q187931	MWE	expr				
-Q128234		cas				
-Q131105		nom		Nm	Nom	
-Q185077		voc		Vo	Voc	
-Q146233		gen		Ge	Gen	
-Q145599		dat		Da	Dat	
-Q146078		acc		Ac	Acc	
-Q156986		abl				
-Q162378		gend				
-Q499327		♂	masc	Ma		
-Q1775415		♀	fem	Fe		
-Q1775461		⚲	neut	Ne		
-Q104083		No				
-Q110786		sg		Sg	Sing	NN
-Q146786		pl		Pl	Plur	NNS
-Q690940		pers				
-		1e.pers		1st		
-		2e.pers		2nd		
-		3e.pers		3rd		
-Q1084		n	noun	No	NOUN	NN
-Q1401131	n	n.gr			NOUN	NP
-Q147276	n	com.n				
-Q147276	n	prop.n	propn	Rg	PROPN	NNP
-Q7884789	prop.n	topo		Rg		
-Q217438	prop.n	demonym	demonym			
-Q34698		adj	adj	Aj	ADJ	JJ
-Q108709	adj	dim			ADJ	JJ
-Q577714						
-				Ba		
-Q14169499	adj	adj.comp		Cp	Cmp	JJR
-Q1817208	adj	adj.sup		Su	Sup	JJS
-Q63116		num	num	Nm	NUM	CD
-Q1329258	num	num.card		Cd		CD
-Q923933	num	num.ord		Od	NUM	CD
-Q110063840	num	num.mult		Ml		
+WikiData	parent	Lexilogio tag	INTERA	UD	PTB
+Q208084					
+Q82042		pos			
+Q41796		s			
+Q189756	s	q			
+Q35102	s	prov			
+Q5551966		MWE		MWE	
+Q6935164	MWE	phras		MWE	
+Q187931	MWE	expr			
+Q128234		cas			
+Q131105		nom	Nm	Nom	
+Q185077		voc	Vo	Voc	
+Q146233		gen	Ge	Gen	
+Q145599		dat	Da	Dat	
+Q146078		acc	Ac	Acc	
+Q156986		abl			
+Q162378		gend			
+Q499327		♂	Ma		
+Q1775415		♀	Fe		
+Q1775461		⚲	Ne		
+Q104083		No			
+Q110786		sg	Sg	Sing	NN
+Q146786		pl	Pl	Plur	NNS
+Q690940		pers			
+		1e.pers	1st		
+		2e.pers	2nd		
+		3e.pers	3rd		
+Q1084		n	No	NOUN	NN
+Q1401131	n	n.gr		NOUN	NP
+Q147276	n	com.n			
+Q147276	n	prop.n	Rg	PROPN	NNP
+Q7884789	prop.n	topo	Rg		
+Q217438	prop.n	demonym			
+Q34698		adj	Aj	ADJ	JJ
+Q108709	adj	dim		ADJ	JJ
+Q577714					
+			Ba		
+Q14169499	adj	adj.comp	Cp	Cmp	JJR
+Q1817208	adj	adj.sup	Su	Sup	JJS
+Q63116		num	Nm	NUM	CD
+Q1329258	num	num.card	Cd		CD
+Q923933	num	num.ord	Od	NUM	CD
+Q110063840	num	num.mult	Ml		
 
-	num	num.anal		An		
-	num	num.sing		No		
-Q55093533	num	num.coll		Ct		
-Q55951821	num	num.adj		Aj		
-Q116843701	num	num.nom		No		
-https://en.wiktionary.org/wiki/adverbial_number	num	num.adv		Ad		
-Q24905		v	verb	Vb	VERB	VB
-Q184932						
-Q179230		inf		Nf		VB
-Q682111		ind		Id	Ind	
-Q22716		imp		Mp	Imp	
-Q473746		subj		Sj	Sub	
-Q625581		cond				
-Q177691		t				
-Q192613		praes	pres	Pr	Pres	
-Q1994301		past	past	Pa	Past	VBD
-Q12547192		imperf	impf	Ip		
-Q625420		perfect	perf	Pe		
-Q501405		fut	fut	Fu	Fut	
-Q217096		aor	aor	aor	Aor	
-Q207857		inflec				
-Q474628	inflec	conjug				
-Q3481903				St		
-Q7977953				We		
-Q211101						
-Q1317831		act		Av	Act	
-Q1194697		pass		Pv	Pass	
-Q2517088		impers		Is	Imp	
-				Mn		
-Q163750	v	v.aux		Vb	AUX	
-Q20409038	v	cop				
-Q1778442	v	v.gr		Vb	VERB	VB
-Q814722	v	v.ptcp		Pp		VBG
-Q380057		adv	adv	Ad	ADV	RB
-Q3734650	adv	adv.gr			ADV	ADVP
-Q2825406	adv	mult.adv				
-Q134316		adp		As	ADP	IN
-Q4833830	adp	prep		Pp	ADP	IN
-Q161873	adp	postp				
+	num	num.anal	An		
+	num	num.sing	No		
+Q55093533	num	num.coll	Ct		
+Q55951821	num	num.adj	Aj		
+Q116843701	num	num.nom	No		
+https://en.wiktionary.org/wiki/adverbial_number	num	num.adv	Ad		
+Q24905		v	Vb	VERB	VB
+Q184932					
+Q179230		inf	Nf		VB
+Q682111		ind	Id	Ind	
+Q22716		imp	Mp	Imp	
+Q473746		subj	Sj	Sub	
+Q625581		cond			
+Q177691		t			
+Q192613		praes	Pr	Pres	
+Q1994301		past	Pa	Past	VBD
+Q12547192		imperf	Ip		
+Q625420		perfect	Pe		
+Q501405		fut	Fu	Fut	
+Q217096		aor	aor	Aor	
+Q207857		inflec			
+Q474628	inflec	conjug			
+Q3481903			St		
+Q7977953			We		
+Q211101					
+Q1317831		act	Av	Act	
+Q1194697		pass	Pv	Pass	
+Q2517088		impers	Is	Imp	
+			Mn		
+Q163750	v	v.aux	Vb	AUX	
+Q20409038	v	cop			
+Q1778442	v	v.gr	Vb	VERB	VB
+Q814722	v	v.ptcp	Pp		VBG
+Q380057		adv	Ad	ADV	RB
+Q3734650	adv	adv.gr		ADV	ADVP
+Q2825406	adv	mult.adv			
+Q134316		adp	As	ADP	IN
+Q4833830	adp	prep	Pp	ADP	IN
+Q161873	adp	postp			
 
-		simp		Sp		
-				Pa		
-Q36484		conj		Cj	CONJ	CC
-Q28833099	conj	conj.coord		Co	CCONJ	CC
-https://en.wikipedia.org/wiki/Conjunction_(grammar)#Subordinating_conjunctions	conj	conj.sub		Sb	SCONJ	IN
-Q576271		det			DET	DT
-Q1306636	det	interr				
-Q103184	det	art	art	At	ART	DT
-Q2865743	art	art.def		Df	ART	DT
-Q3813849	art	art.ind		Id	DET	DT
-Q36224	det	pron	pron	Pn	PRON	PRP
-Q11003	pron	pron.int		Ir	PRON	PRP
-Q468801	pron	pron.pers		Pe	PRON	PRP
-Q1502460	pron	pron.poss		Po	PRON	PRP$
-Q34793275	pron	pron.dem		Dm	PRON	PRP
-Q1050744	pron	pron.rel		Re	PRON	PRP
-Q953129	pron	pron.refl		Pn	PRON	PRP
-Q956030	pron	pron.ind		Id	PRON	PRP
-Q1050744	pron	pron.rel.ind		Ri		
-Q83034		interj	intj	Ij	INTJ	UH
-Q184943		ptcl		Pt	PART	RP
-	ptcl	fut.ptcl		Fu	PART	RP
-	ptcl	neg.ptcl		Ng	PART	RP
-	ptcl	sub.ptcl		Sj	PART	RP
-				Rg		
-Q43249		morph	morph			
-Q102786		abbr		Ab	X	
-	abbr	n.abbr		ΝΒΑΒΒR		
-https://en.wikipedia.org/wiki/Given_name#Initials	abbr	init		ΙΝΙΤ		
-Q101244	abbr	acro		ACRO		
-				Or		
-Q2530613				Fw		
-Q103808		prest				
-Q134550		translit		Tr		
-Q80071		symb		Sy		SYM
-Q82990	symb	dig		DIG		
-Q82622	symb	punct		PUNCT		
-Q7702742	punct	term.punct		P_TERM_P		
-https://commons.wikimedia.org/wiki/Category:Opening_punctuation	punct	op.punct		O_PUNCT		
-https://commons.wikimedia.org/wiki/Category:Closing_punctuation	punct	cl.punct		C_PUNCT		
-Q2704791		enum		ENUM		
-Q205892		datum		DATE		
-Q19798647				Xx		
+		simp	Sp		
+			Pa		
+Q36484		conj	Cj	CONJ	CC
+Q28833099	conj	conj.coord	Co	CCONJ	CC
+https://en.wikipedia.org/wiki/Conjunction_(grammar)#Subordinating_conjunctions	conj	conj.sub	Sb	SCONJ	IN
+Q576271		det		DET	DT
+Q1306636	det	interr			
+Q103184	det	art	At	ART	DT
+Q2865743	art	art.def	Df	ART	DT
+Q3813849	art	art.ind	Id	DET	DT
+Q36224	det	pron	Pn	PRON	PRP
+Q11003	pron	pron.int	Ir	PRON	PRP
+Q468801	pron	pron.pers	Pe	PRON	PRP
+Q1502460	pron	pron.poss	Po	PRON	PRP$
+Q34793275	pron	pron.dem	Dm	PRON	PRP
+Q1050744	pron	pron.rel	Re	PRON	PRP
+Q953129	pron	pron.refl	Pn	PRON	PRP
+Q956030	pron	pron.ind	Id	PRON	PRP
+Q1050744	pron	pron.rel.ind	Ri		
+Q83034		interj	Ij	INTJ	UH
+Q184943		ptcl	Pt	PART	RP
+	ptcl	fut.ptcl	Fu	PART	RP
+	ptcl	neg.ptcl	Ng	PART	RP
+	ptcl	sub.ptcl	Sj	PART	RP
+			Rg		
+Q43249		morph			
+Q102786		abbr	Ab	X	
+	abbr	n.abbr	ΝΒΑΒΒR		
+https://en.wikipedia.org/wiki/Given_name#Initials	abbr	init	ΙΝΙΤ		
+Q101244	abbr	acro	ACRO		
+			Or		
+Q2530613			Fw		
+Q103808		prest			
+Q134550		translit	Tr		
+Q80071		symb	Sy		SYM
+Q82990	symb	dig	DIG		
+Q82622	symb	punct	PUNCT		
+Q7702742	punct	term.punct	P_TERM_P		
+https://commons.wikimedia.org/wiki/Category:Opening_punctuation	punct	op.punct	O_PUNCT		
+https://commons.wikimedia.org/wiki/Category:Closing_punctuation	punct	cl.punct	C_PUNCT		
+Q2704791		enum	ENUM		
+Q205892		datum	DATE		
+Q19798647			Xx		

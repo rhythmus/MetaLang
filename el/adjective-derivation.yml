@@ -8,11 +8,11 @@ classes:
     pos: adj
     rules:
       - suffix: "τερος"
-        features: {pos: adj, gender: masc, number: sg, case: nom, degree: comp}
+        features: {pos: adj, gender: ♂, number: sg, case: nom, degree: adj.comp}
       - suffix: "τερη"
-        features: {pos: adj, gender: fem, number: sg, case: nom, degree: comp}
+        features: {pos: adj, gender: ♀, number: sg, case: nom, degree: adj.comp}
       - suffix: "τερο"
-        features: {pos: adj, gender: neut, number: sg, case: nom, degree: comp}
+        features: {pos: adj, gender: ⚲, number: sg, case: nom, degree: adj.comp}
     lemmaFrom: masculine
     paradigmDisplay: "-τερη -τερο"
 
@@ -22,10 +22,10 @@ classes:
     pos: adj
     rules:
       - suffix: "τατος"
-        features: {pos: adj, gender: masc, number: sg, case: nom, degree: sup}
+        features: {pos: adj, gender: ♂, number: sg, case: nom, degree: adj.sup}
       - suffix: "τατη"
-        features: {pos: adj, gender: fem, number: sg, case: nom, degree: sup}
+        features: {pos: adj, gender: ♀, number: sg, case: nom, degree: adj.sup}
       - suffix: "τατο"
-        features: {pos: adj, gender: neut, number: sg, case: nom, degree: sup}
+        features: {pos: adj, gender: ⚲, number: sg, case: nom, degree: adj.sup}
     lemmaFrom: masculine
     paradigmDisplay: "-τατη -τατο"

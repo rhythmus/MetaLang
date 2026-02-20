@@ -3,6 +3,6 @@ rulesetVersion: greek-acronym-v1.0
 entries:
   # Lookup-based Acronyms / Slang
   - form: "σου-κού"
-    features: {pos: noun, isAcronym: true, gender: neut, number: sg, case: nom}
+    features: {pos: n, isAcronym: true, gender: ⚲, number: sg, case: nom}
   - form: "ΣΚ"
-    features: {pos: noun, isAcronym: true, gender: neut, number: sg, case: nom} # Also covers All-Caps rule, but this gives features
+    features: {pos: n, isAcronym: true, gender: ⚲, number: sg, case: nom} # Also covers All-Caps rule, but this gives features

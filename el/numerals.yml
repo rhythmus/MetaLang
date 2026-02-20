@@ -4,15 +4,15 @@ entries:
   # Cardinals 1-10
   # 1 (declines like article/adj)
   - form: "ένας"
-    features: {pos: num, gender: masc, case: nom, value: 1}
+    features: {pos: num, gender: ♂, case: nom, value: 1}
   - form: "έναν"
-    features: {pos: num, gender: masc, case: acc, value: 1}
+    features: {pos: num, gender: ♂, case: acc, value: 1}
   - form: "μία" # Also μια
-    features: {pos: num, gender: fem, case: nom, value: 1}
+    features: {pos: num, gender: ♀, case: nom, value: 1}
   - form: "μια"
-    features: {pos: num, gender: fem, case: nom, value: 1}
+    features: {pos: num, gender: ♀, case: nom, value: 1}
   - form: "ένα"
-    features: {pos: num, gender: neut, case: nom, value: 1} # Also acc
+    features: {pos: num, gender: ⚲, case: nom, value: 1} # Also acc
 
   # 2 (invariant mostly in Modern Greek, except genitive δύο/δυο)
   - form: "δύο"
@@ -22,15 +22,15 @@ entries:
 
   # 3 (declines τρεις/τρία)
   - form: "τρεις"
-    features: [{pos: num, gender: masc, case: nom, value: 3}, {pos: num, gender: fem, case: nom, value: 3}] # Also acc
+    features: [{pos: num, gender: ♂, case: nom, value: 3}, {pos: num, gender: ♀, case: nom, value: 3}] # Also acc
   - form: "τρία"
-    features: {pos: num, gender: neut, case: nom, value: 3} # Also acc
+    features: {pos: num, gender: ⚲, case: nom, value: 3} # Also acc
 
   # 4 (declines τέσσερις/τέσσερα)
   - form: "τέσσερις"
-    features: [{pos: num, gender: masc, case: nom, value: 4}, {pos: num, gender: fem, case: nom, value: 4}]
+    features: [{pos: num, gender: ♂, case: nom, value: 4}, {pos: num, gender: ♀, case: nom, value: 4}]
   - form: "τέσσερα"
-    features: {pos: num, gender: neut, case: nom, value: 4}
+    features: {pos: num, gender: ⚲, case: nom, value: 4}
 
   # 5-10 Invariant
   - form: "πέντε"

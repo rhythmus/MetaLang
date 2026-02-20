@@ -3,11 +3,11 @@ rulesetVersion: greek-participle-v1.0
 classes:
   - id: verb.ptcp.act
     description: "Active Participle (-οντας/-ώντας)"
-    pos: verb
+    pos: v
     rules:
       - suffix: "οντας"
-        features: {pos: verb, mood: ptcp, voice: act}
+        features: {pos: v, mood: v.ptcp, voice: act}
         confidence: 0.95
       - suffix: "ώντας"
-        features: {pos: verb, mood: ptcp, voice: act}
+        features: {pos: v, mood: v.ptcp, voice: act}
         confidence: 0.95
