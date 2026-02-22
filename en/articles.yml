@@ -1,0 +1,7 @@
+articles:
+  - form: "the"
+    features: {pos: "art", definiteness: "def"}
+  - form: "a"
+    features: {pos: "art", definiteness: "indef"}
+  - form: "an"
+    features: {pos: "art", definiteness: "indef"}
