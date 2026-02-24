@@ -41,7 +41,9 @@ Different linguistic traditions and standards use conflicting labels for the sam
 - **L3**: **Cross-linguistic metalanguage alignment (metalang)**
 
 ### Monorepo Architecture
+
 To support the complex interplay between core logic, localized labels, and external mappings, MetaLang is structured as a **monorepo**. This ensures:
+
 - **Atomic Updates**: Coordinated changes across the core engine and its plugins.
 - **Unified Governance**: A single source of truth for GUIDs and domain hierarchies.
 - **Modular Distribution**: Independent NPM packages (`@metalang/core`, `@metalang/plugin-ud`) built from the same shared data source.
