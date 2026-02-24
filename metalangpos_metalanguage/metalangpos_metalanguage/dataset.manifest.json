@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "updated": "2026-01-28T09:04:11Z",
+  "schemas": [
+    { 
+      "vocabulary": {
+        "n°": "integer",
+        "date": "date",
+        "nl": "string",
+        "el": "string",
+        "PoS": "PoS.tsv",
+        "notes": "string",
+        "theme": "themes.yaml"
+      },
+      "proverbs":{
+        "el_proverb": "string",
+        "en_literal": "string",
+        "en_equivalent": "string",
+        "nl_literal": "string",
+        "nl_equivalent": "string"
+      },
+      "subtitles-top-5000":{}
+    }
+  ],
+  "datasets": {
+    "2024-2025-1B": {
+      "updated": "2026-01-28T09:04:11Z",
+      "name": "Eerste Jaar (1B)",
+      "path": "2024-2025-1B.csv",
+      "updated": "2026-01-28T09:04:11Z",
+      "type": "vocabulary",
+      "status": "rehearsal",
+      "label": [
+        {"nl": "Eerste Jaar (1B)"},
+        {"el": "Πρώτο έτος (1B)"},
+        {"en": "First year (1B)"}
+      ],
+      "schema": ["nr","datum","Nederlands","Grieks","woordsoort","nota","thema"],
+      "subsets": [
+        { "label": [{"nl":"Eerste semester"}, {"el":"Πρώτο εξάμηνο"}], "start": "2024-09-30", "end": "2025-01-13" },
+        { "label": [{"nl":"Tweede semester"}, {"el":"Δεύτερο εξάμηνο"}], "start": "2025-02-04", "end": "2025-05-26" },
+        { "label": [{"nl": "4 februari"}], "date": "2025-02-04" },
+        { "label": [{"nl":"11 februari"}], "date": "2025-02-11" },
+        { "label": [{"nl":"18 februari"}], "date": "2025-02-18" },
+        { "label": [{"nl":"25 februari"}], "date": "2025-02-25" },
+        { "label": [{"nl":"11 maart"   }], "date": "2025-03-11" },
+        { "label": [{"nl":"18 maart"   }], "date": "2025-03-18" },
+        { "label": [{"nl":"25 maart"   }], "date": "2025-03-25" },
+        { "label": [{"nl": "1 april"   }], "date": "2025-04-01" },
+        { "label": [{"nl":"22 april"   }], "date": "2025-04-22" },
+        { "label": [{"nl":"29 april"   }], "date": "2025-04-29" },
+        { "label": [{"nl": "6 mei"     }], "date": "2025-05-06" },
+        { "label": [{"nl":"26 mei"     }], "date": "2025-05-26" }
+      ]
+    },
+    "2025-2026-2A": {
+      "path": "2025-2026-2A.csv",
+      "updated": "2026-01-28T09:04:11Z",
+      "type": "vocabulary",
+      "status": "required",
+      "label": [
+        {"nl": "Tweede Jaar (2A)"},
+        {"el": "Δεύτερο έτος (2Α)"},
+        {"en": "Second year (2A)"}
+      ],
+      "schema": ["nr","datum","Nederlands","Grieks","woordsoort","nota","thema"],
+      "subsets": [
+        { "label": [{"nl":"Eerste semester"}, {"el":"Πρώτο εξάμηνο"}], "start": "2025-09-24", "end": "2025-01-21" },
+        { "label": [{"nl":"Μάθημα 1"}], "date": "2025-09-24" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 2"}], "date": "2025-10-01" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 3"}], "date": "2025-10-08" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 4"}], "date": "2025-10-15" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 5"}], "date": "2025-10-22" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 6"}], "date": "2025-11-05" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 7"}], "date": "2025-11-12" , "status": "rehearsal"},
+        { "label": [{"nl":"Μάθημα 8"}], "date": "2025-11-19" },
+        { "label": [{"nl":"Μάθημα 9"}], "date": "2025-11-26" },
+        { "label": [{"nl":"Μάθημα 10"}],"date": "2025-12-03" },
+        { "label": [{"nl":"Μάθημα 12"}],"date": "2025-12-17" },
+        { "label": [{"nl":"Μάθημα 13"}],"date": "2026-01-07" },
+        { "label": [{"nl":"Μάθημα 14"}],"date": "2026-01-14" },
+        { "label": [{"nl":"Tweede semester"}, {"el":"Δεύτερο εξάμηνο"}], "start": "2026-01-28" }
+      ]
+    },
+    "proverbs": {
+      "path": "Constantinides-proverbs.csv",
+      "updated": "2026-01-28T09:04:11Z",
+      "type": "proverbs",
+      "status": "extra",
+      "schema": ["Greek", "English litteral translation", "English equivalent"],
+      "label": [
+        {"nl": "Spreekwoorden"},
+        {"el": "Παροιμίες"},
+        {"en": "Proverbs"}
+      ],
+      "credits": "Constantinides, M. (1892): Neohellenica, pp 246–7. ISBN 978-3-33730-341-9"
+    },
+    "subtitles-top-5000": {
+      "path": "subtitles-top-5000.tsv",
+      "updated": "2026-01-28T09:04:11Z",
+      "type": "frequencylist",
+      "corpus_size": 111940212,
+      "schema": [
+        "legomenon",
+        "frequency"
+      ],
+      "credits": "https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/Modern_Greek/5K_Wordlist"
+    },
+    "CEFR__CLARINEL_KELLY_word-list_Greek": {
+      "path": "CEFR__CLARINEL_KELLY_word-list_Greek.tsv",
+      "updated": "2026-02-03",
+      "type": "CEFR-wordlist",
+      "corpus_size": 57446651,
+      "credits": "https://inventory.clarin.gr/lcr/741Institute for Language and Speech Processing - Athena Research Center (2015). KELLY word-list Greek. Version 1.0.0. [Dataset (Lexical/Conceptual Resource)]. CLARIN:EL. http://hdl.handle.net/11500/ATHENA-0000-0000-25C1-C"
+    }
+  }
+}

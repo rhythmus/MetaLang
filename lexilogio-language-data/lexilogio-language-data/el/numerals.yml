@@ -1,0 +1,53 @@
+rulesetVersion: greek-numeral-v1.0
+
+entries:
+  # Cardinals 1-10
+  # 1 (declines like article/adj)
+  - form: "ένας"
+    features: {pos: num, gender: ♂, case: nom, value: 1}
+  - form: "έναν"
+    features: {pos: num, gender: ♂, case: acc, value: 1}
+  - form: "μία" # Also μια
+    features: {pos: num, gender: ♀, case: nom, value: 1}
+  - form: "μια"
+    features: {pos: num, gender: ♀, case: nom, value: 1}
+  - form: "ένα"
+    features: {pos: num, gender: ⚲, case: nom, value: 1} # Also acc
+
+  # 2 (invariant mostly in Modern Greek, except genitive δύο/δυο)
+  - form: "δύο"
+    features: {pos: num, value: 2}
+  - form: "δυο"
+    features: {pos: num, value: 2}
+
+  # 3 (declines τρεις/τρία)
+  - form: "τρεις"
+    features: [{pos: num, gender: ♂, case: nom, value: 3}, {pos: num, gender: ♀, case: nom, value: 3}] # Also acc
+  - form: "τρία"
+    features: {pos: num, gender: ⚲, case: nom, value: 3} # Also acc
+
+  # 4 (declines τέσσερις/τέσσερα)
+  - form: "τέσσερις"
+    features: [{pos: num, gender: ♂, case: nom, value: 4}, {pos: num, gender: ♀, case: nom, value: 4}]
+  - form: "τέσσερα"
+    features: {pos: num, gender: ⚲, case: nom, value: 4}
+
+  # 5-10 Invariant
+  - form: "πέντε"
+    features: {pos: num, value: 5}
+  - form: "έξι"
+    features: {pos: num, value: 6}
+  - form: "επτά"
+    features: {pos: num, value: 7}
+  - form: "εφτά"
+    features: {pos: num, value: 7}
+  - form: "οκτώ"
+    features: {pos: num, value: 8}
+  - form: "οχτώ"
+    features: {pos: num, value: 8}
+  - form: "εννέα"
+    features: {pos: num, value: 9}
+  - form: "εννιά"
+    features: {pos: num, value: 9}
+  - form: "δέκα"
+    features: {pos: num, value: 10}

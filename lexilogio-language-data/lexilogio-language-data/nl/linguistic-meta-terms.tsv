@@ -1,0 +1,111 @@
+tag	singular	plural	abbr
+pos	woordsoort	woordsoorten	woords.
+s	zin	zinnen	zin
+q	vraagzin	vraagzinnen	vraag
+prov	spreekwoord	spreekwoorden	spr.
+MWE	meerwoordige uitdrukking	meerwoordige uitdrukkingen	MWE
+phras	fraseem	frasemen	phraseme
+expr	uitdrukking	uitdrukkingen	uitdr.
+cas	naamval	naamvallen	
+nom	nominatief	nominatieven	
+voc	vocative	vocatieven	
+gen	genitief	genitieven	
+dat	datief	datieven	
+acc	accusatief	accusatieven	
+abl	ablatief	ablatieven	
+gend	woordgeslacht	woordgeslachten	
+♂	mannelijk	–	
+♀	vrouwelijk	–	
+⚲	onzijdig	–	
+No	woordgetal	–	
+sg	enkelvoud	enkelvouden	
+pl	meervoud	meervouden	
+pers	(grammaticale) persoon	(grammaticale) personen	
+1e.pers	eerste persoon	–	
+2e.pers	tweede persoon	–	
+3e.pers	derde persoon	–	
+n	zelfstandig naamwoord	zelfstandige naamwoorden	znw.
+n.gr	naamwoordgroep	naamwoordgroepen	znw. groep
+com.n	soortnaam	soortnamen	soortn.
+prop.n	eigennaam	eigennamen	eigenn.
+topo	plaatsnaam	plaatsnamen	plaatsn.
+demonym	demoniem	demoniemen	dem.
+adj	bijvoeglijk naamwoord	bijvoeglijke naamwoorden	bnw.
+dim	verkleinwoord	verkleinwoorden	dim.
+adj.comp	vergelijkende trap	vergelijkende trappen	comp.
+adj.sup	overtreffende trap	overtreffende trappen	sup.
+num	telwoord	telwoorden	telw.
+num.card	hoofdtelwoord	hoofdtelwoorden	
+num.ord	rangtelwoord	rangtelwoorden	rangt.
+num.mult	vermenigvuldigingsgetal	vermenigvuldigingsgetallen	
+num.anal	evenredigheidsgetal	evenredigheidsgetallen	
+num.sing	singulatief	singulatieven	
+num.coll	verzameltelwoord	verzameltelwoorden	
+num.adj	bijvoeglijk telwoord	bijvoeglijk telwoorden	
+num.nom	zelfstandig telwoord	zelfstandig telwoorden	
+num.adv	bijwoordelijk telwoord	bijwoordelijk telwoorden	
+v	werkwoord	werkwoorden	ww.
+inf	onbepaalde wijs	infinitieven	
+ind	aantonende wijs 	indicatieven	
+imp	gebiedende wijs	imperatieven	
+subj	aanvoegdende wijs	conjunctieven	
+cond	voorwaardelijke wijs	conditionales	
+t	werkwoordelijke tijd	tijden van het werkwoord	
+praes	tegenwoordige tijd	tegenwoordige tijden	
+past	verleden tijd	verleden tijden	
+imperf	onvoltooid verleden tijd	onvoltooid verleden tijden	ovt
+perfect	voltooid verleden tijd	voltooid verleden tijden	vvt
+fut	toekomstige tijd	toekomstige tijden	
+inflec	verbuiging	verbuigingen	
+conjug	vervoeging	vervoegingen	
+act	handelende vorm, actieve vorm, actief	actieve vormen	
+pass	lijdende vorm, passief	lijdende vormen, passieven	
+impers	onpersoonlijk passief	onpersoonlijk passieve wijzen	
+v.aux	hulpwerkwoord	hulpwerkwoorden	hww.
+cop	koppelwerkwoord	koppelwerkwoorden	
+v.gr	werkwoordgroep	werkwoordgroepen	ww. groep
+v.ptcp	deelwoord	deelwoorden	dw.
+adv	bijwoord	bijwoorden	bijw.
+adv.gr	bijwoordgroep	bijwoordgroepen	bijw. groep
+mult.adv	vermenigvuldigingsbijwoord	vermenigvuldigingsbijwoorden	
+adp	aanvoegsel	aanvoegsels	
+prep	voorzetsel	voorzetsels	vz.
+postp	achterzetsel	achterzetsels	
+simp			
+conj	voegwoord	voegwoorden	vw.
+conj.coord	nevenschikkend voegwoord	nevenschikkende voegwoorden	neven.
+conj.sub	onderschikkend voegwoord	onderschikkende voegwoorden	onder.
+det	determinator	determinatoren	det.
+interr	vraagwoord	vraagwoord	vraagw.
+art	lidwoord	lidwoorden	lidw.
+art.def	bepaald lidwoord	bepaalde lidwoorden	bep. lidw.
+art.ind	onbepaald lidwoord	onbepaalde lidwoorden	onbep. lidw.
+pron	voornaamwoord	voornaamwoorden	vnw.
+pron.int	vragend voornaamwoord	vragende voornaamwoorden	vvnw.
+pron.pers	persoonlijk voornaamwoord	persoonlijke voornaamwoorden	pers. vnw.
+pron.poss	bezittelijk voornaamwoord	bezittelijke voornaamwoorden	bez. vnw.
+pron.dem	aanwijzend voornaamwoord	aanwijzende voornaamwoorden	aanw. vnw.
+pron.rel	betrekkelijk voornaamwoord	betrekkelijke voornaamwoorden	betr. vnw.
+pron.refl	wederkerig voornaamwoord	wederkerige voornaamwoorden	wederk. vnw.
+pron.ind	onbepaald voornaamwoord	onbepaalde voornaamwoorden	onbep. vnw.
+pron.rel.ind	onbepaald betrekkelijk voornaamwoord	onbepaalde betrekkelijke voornaamwoorden	onbep. betr. vnw.
+interj	tussenwerpsel	tussenwerpsels	tsw.
+ptcl	grammaticaal partikel	grammaticale partikels	part.
+fut.ptcl			
+neg.ptcl			
+sub.ptcl			
+morph	morfeem	morfemen	morf.
+abbr	afkorting	afkortingen	afk.
+n.abbr			
+init	inititalen	inititalen	
+acro	acroniem	acroniemen	
+prest	leenwoord	leenwoorden	
+translit	transliteratie	transliteraties	
+symb	symbool	symbolen	
+dig	cijfer	cijfers	
+punct	interpunctie	interpunctie	
+term.punct			
+op.punct			
+cl.punct			
+enum	opsomming	opsommingen	
+datum	datum	data, datums	

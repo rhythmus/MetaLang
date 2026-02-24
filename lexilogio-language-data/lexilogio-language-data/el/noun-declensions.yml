@@ -1,0 +1,258 @@
+rulesetVersion: greek-noun-v2.0
+
+classes:
+
+  # --- MASCULINE ---
+  - id: noun.masc.ος
+    description: "Masculine nouns in -ος"
+    pos: n
+    gender: ♂
+    rules:
+      # Singular
+      - suffix: "ος"
+        features: {pos: n, gender: ♂, number: sg, case: nom}
+      - suffix: "ου"
+        features: {pos: n, gender: ♂, number: sg, case: gen}
+      - suffix: "ο"
+        features: {pos: n, gender: ♂, number: sg, case: acc}
+      - suffix: "ε"
+        features: {pos: n, gender: ♂, number: sg, case: voc}
+      # Plural
+      - suffix: "οι"
+        features: {pos: n, gender: ♂, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ♂, number: pl, case: gen}
+      - suffix: "ους"
+        features: {pos: n, gender: ♂, number: pl, case: acc}
+      - suffix: "οι"
+        features: {pos: n, gender: ♂, number: pl, case: voc}
+
+  - id: noun.masc.ης
+    description: "Masculine nouns in -ης"
+    pos: n
+    gender: ♂
+    rules:
+      # Singular
+      - suffix: "ης"
+        features: {pos: n, gender: ♂, number: sg, case: nom}
+      - suffix: "η"
+        features: {pos: n, gender: ♂, number: sg, case: gen}
+      - suffix: "η"
+        features: {pos: n, gender: ♂, number: sg, case: acc}
+      - suffix: "η"
+        features: {pos: n, gender: ♂, number: sg, case: voc}
+      # Plural
+      - suffix: "ες"
+        features: {pos: n, gender: ♂, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ♂, number: pl, case: gen}
+      - suffix: "ες"
+        features: {pos: n, gender: ♂, number: pl, case: acc}
+      - suffix: "ες"
+        features: {pos: n, gender: ♂, number: pl, case: voc}
+
+  - id: noun.masc.ας
+    description: "Masculine nouns in -ας"
+    pos: n
+    gender: ♂
+    rules:
+      # Singular
+      - suffix: "ας"
+        features: {pos: n, gender: ♂, number: sg, case: nom}
+      - suffix: "α"
+        features: {pos: n, gender: ♂, number: sg, case: gen}
+      - suffix: "α"
+        features: {pos: n, gender: ♂, number: sg, case: acc}
+      - suffix: "α"
+        features: {pos: n, gender: ♂, number: sg, case: voc}
+      # Plural
+      - suffix: "ες"
+        features: {pos: n, gender: ♂, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ♂, number: pl, case: gen}
+      - suffix: "ες"
+        features: {pos: n, gender: ♂, number: pl, case: acc}
+      - suffix: "ες"
+        features: {pos: n, gender: ♂, number: pl, case: voc}
+    notes: ["Stress shift commonly handled by accent logic"]
+
+  - id: noun.masc.ές
+    description: "Masculine nouns in -ές (e.g. καφές)"
+    pos: n
+    gender: ♂
+    rules:
+      # Singular
+      - suffix: "ές"
+        features: {pos: n, gender: ♂, number: sg, case: nom}
+      - suffix: "έ"
+        features: {pos: n, gender: ♂, number: sg, case: gen}
+      - suffix: "έ"
+        features: {pos: n, gender: ♂, number: sg, case: acc}
+      - suffix: "έ"
+        features: {pos: n, gender: ♂, number: sg, case: voc}
+      # Plural
+      - suffix: "έδες"
+        features: {pos: n, gender: ♂, number: pl, case: nom}
+      - suffix: "έδων"
+        features: {pos: n, gender: ♂, number: pl, case: gen}
+      - suffix: "έδες"
+        features: {pos: n, gender: ♂, number: pl, case: acc}
+      - suffix: "έδες"
+        features: {pos: n, gender: ♂, number: pl, case: voc}
+
+  # --- FEMININE ---
+  - id: noun.fem.α
+    description: "Feminine nouns in -α"
+    pos: n
+    gender: ♀
+    rules:
+      # Singular
+      - suffix: "α"
+        features: {pos: n, gender: ♀, number: sg, case: nom}
+      - suffix: "ας"
+        features: {pos: n, gender: ♀, number: sg, case: gen}
+      - suffix: "α"
+        features: {pos: n, gender: ♀, number: sg, case: acc}
+      - suffix: "α"
+        features: {pos: n, gender: ♀, number: sg, case: voc}
+      # Plural
+      - suffix: "ες"
+        features: {pos: n, gender: ♀, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ♀, number: pl, case: gen}
+      - suffix: "ες"
+        features: {pos: n, gender: ♀, number: pl, case: acc}
+      - suffix: "ες"
+        features: {pos: n, gender: ♀, number: pl, case: voc}
+
+  - id: noun.fem.η
+    description: "Feminine nouns in -η"
+    pos: n
+    gender: ♀
+    rules:
+      # Singular
+      - suffix: "η"
+        features: {pos: n, gender: ♀, number: sg, case: nom}
+      - suffix: "ης"
+        features: {pos: n, gender: ♀, number: sg, case: gen}
+      - suffix: "η"
+        features: {pos: n, gender: ♀, number: sg, case: acc}
+      - suffix: "η"
+        features: {pos: n, gender: ♀, number: sg, case: voc}
+      # Plural
+      - suffix: "ες"
+        features: {pos: n, gender: ♀, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ♀, number: pl, case: gen}
+      - suffix: "ες"
+        features: {pos: n, gender: ♀, number: pl, case: acc}
+      - suffix: "ες"
+        features: {pos: n, gender: ♀, number: pl, case: voc}
+
+  - id: noun.fem.ος
+    description: "Feminine nouns in -ος (e.g. οδός)"
+    pos: n
+    gender: ♀
+    rules:
+      # Singular
+      - suffix: "ος"
+        features: {pos: n, gender: ♀, number: sg, case: nom}
+      - suffix: "ου"
+        features: {pos: n, gender: ♀, number: sg, case: gen}
+      - suffix: "ο"
+        features: {pos: n, gender: ♀, number: sg, case: acc}
+      - suffix: "ε"
+        features: {pos: n, gender: ♀, number: sg, case: voc}
+      - suffix: "ο"
+        features: {pos: n, gender: ♀, number: sg, case: voc}
+      # Plural
+      - suffix: "οι"
+        features: {pos: n, gender: ♀, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ♀, number: pl, case: gen}
+      - suffix: "ους"
+        features: {pos: n, gender: ♀, number: pl, case: acc}
+      - suffix: "οι"
+        features: {pos: n, gender: ♀, number: pl, case: voc}
+
+  # --- NEUTER ---
+  - id: noun.neut.ο
+    description: "Neuter nouns in -ο"
+    pos: n
+    gender: ⚲
+    rules:
+      # Singular
+      - suffix: "ο"
+        features: {pos: n, gender: ⚲, number: sg, case: nom}
+      - suffix: "ου"
+        features: {pos: n, gender: ⚲, number: sg, case: gen}
+      - suffix: "ο"
+        features: {pos: n, gender: ⚲, number: sg, case: acc}
+      - suffix: "ο"
+        features: {pos: n, gender: ⚲, number: sg, case: voc}
+      # Plural
+      - suffix: "α"
+        features: {pos: n, gender: ⚲, number: pl, case: nom}
+      - suffix: "ων"
+        features: {pos: n, gender: ⚲, number: pl, case: gen}
+      - suffix: "α"
+        features: {pos: n, gender: ⚲, number: pl, case: acc}
+      - suffix: "α"
+        features: {pos: n, gender: ⚲, number: pl, case: voc}
+
+  - id: noun.neut.ι
+    description: "Neuter nouns in -ι"
+    pos: n
+    gender: ⚲
+    rules:
+      # Singular
+      - suffix: "ι"
+        features: {pos: n, gender: ⚲, number: sg, case: nom}
+      - suffix: "ιού"
+        features: {pos: n, gender: ⚲, number: sg, case: gen}
+      - suffix: "ιου"
+        features: {pos: n, gender: ⚲, number: sg, case: gen}
+      - suffix: "ι"
+        features: {pos: n, gender: ⚲, number: sg, case: acc}
+      - suffix: "ι"
+        features: {pos: n, gender: ⚲, number: sg, case: voc}
+      # Plural
+      - suffix: "ια"
+        features: {pos: n, gender: ⚲, number: pl, case: nom}
+      - suffix: "ιών"
+        features: {pos: n, gender: ⚲, number: pl, case: gen}
+      - suffix: "ιων"
+        features: {pos: n, gender: ⚲, number: pl, case: gen}
+      - suffix: "ια"
+        features: {pos: n, gender: ⚲, number: pl, case: acc}
+      - suffix: "ια"
+        features: {pos: n, gender: ⚲, number: pl, case: voc}
+
+  - id: noun.neut.μα
+    description: "Neuter nouns in -μα (Stem alternation)"
+    pos: n
+    gender: ⚲
+    stemAlternation: true
+    # For reverse lookup hints:
+    lemmaRules:
+      - suffix: "ματος"
+        strip: "τος" # stem "σωμα" from "σωματος"
+    rules:
+      # Singular
+      - suffix: "μα"
+        features: {pos: n, gender: ⚲, number: sg, case: nom}
+      - suffix: "ματος"
+        features: {pos: n, gender: ⚲, number: sg, case: gen}
+      - suffix: "μα"
+        features: {pos: n, gender: ⚲, number: sg, case: acc}
+      - suffix: "μα"
+        features: {pos: n, gender: ⚲, number: sg, case: voc}
+      # Plural
+      - suffix: "ματα"
+        features: {pos: n, gender: ⚲, number: pl, case: nom}
+      - suffix: "μάτων"
+        features: {pos: n, gender: ⚲, number: pl, case: gen}
+      - suffix: "ματα"
+        features: {pos: n, gender: ⚲, number: pl, case: acc}
+      - suffix: "ματα"
+        features: {pos: n, gender: ⚲, number: pl, case: voc}

@@ -1,0 +1,12 @@
+conjugationClasses:
+  - id: v_regular_en
+    endingRules:
+      - suffix: "en"
+        features: {pos: v, number: pl, tense: praes}
+        confidence: 0.8
+      - suffix: "t"
+        features: {pos: v, number: sg, person: 3e.pers, tense: praes} 
+        confidence: 0.6
+      - suffix: "de"
+        features: {pos: v, number: sg, tense: past}
+        confidence: 0.7

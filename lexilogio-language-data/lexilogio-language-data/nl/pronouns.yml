@@ -1,0 +1,39 @@
+entries:
+  - form: "ik"
+    features: {pos: "pron", type: "pers"}
+  - form: "jij"
+    features: {pos: "pron", type: "pers"}
+  - form: "je"
+    features: {pos: "pron", type: "pers"}
+  - form: "u"
+    features: {pos: "pron", type: "pers"}
+  - form: "hij"
+    features: {pos: "pron", type: "pers"}
+  - form: "zij"
+    features: {pos: "pron", type: "pers"}
+  - form: "ze"
+    features: {pos: "pron", type: "pers"}
+  - form: "het"
+    features: {pos: "pron", type: "pers"}
+  - form: "wij"
+    features: {pos: "pron", type: "pers"}
+  - form: "we"
+    features: {pos: "pron", type: "pers"}
+  - form: "jullie"
+    features: {pos: "pron", type: "pers"}
+  - form: "mij"
+    features: {pos: "pron", type: "pers"}
+  - form: "me"
+    features: {pos: "pron", type: "pers"}
+  - form: "jou"
+    features: {pos: "pron", type: "pers"}
+  - form: "hem"
+    features: {pos: "pron", type: "pers"}
+  - form: "haar"
+    features: {pos: "pron", type: "pers"}
+  - form: "ons"
+    features: {pos: "pron", type: "pers"}
+  - form: "hen"
+    features: {pos: "pron", type: "pers"}
+  - form: "hun"
+    features: {pos: "pron", type: "pers"}
