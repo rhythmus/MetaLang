@@ -1,378 +1,89 @@
-# Metalang
+# Metalang: Cross-Linguistic Terminology Alignment
 
+`metalang` is a multilingual, ontology-based **cross-linguistic terminology alignment layer**. It provides a structured framework for the **metalanguage** (descriptive terminology) used to characterize language data itself—normalizing and interoperating between academic, pedagogical, and computational grammar systems.
 
-## What `metalang` Is (Formally)
+## 1. Defining Metalanguage
+In lexicography, we distinguish between:
+- **Object Language**: The language being described (e.g., the Modern Greek verb λύνω).
+- **Metalanguage**: The tool used to describe it (e.g., "verb, transitive, imperfective").
 
-`metalang` is a multilingual, ontology-based, **cross-linguistic terminology alignment layer**, a framework for linguistic meta-language (descriptive terminology) — i.e. the vocabulary used to describe language itself, designed to normalize and interoperate between academic, pedagogical, and computational grammar systems.
+`metalang` lives at the level of **Lexicographic Metalanguage**: a structured system of controlled descriptive categories, relations, and definitions used to formally characterize lexical items across grammatical, semantic, pragmatic, and structural dimensions.
 
-It is an internationalization (i18n) effort to help translate (and consistently use, across natural languages) lexicographic terminology, grammatical, syntactical and morphological jargon, as used in lexica, dictionaries, academic linguistics literature, and, ultimately, in language-driven software projects.
+### The L2–L3 Alignment Layer
+In a 4-level lexicographic model, `metalang` acts as the **interoperability spine** at the alignment level:
+- **L0**: Object language (e.g., *λύω*)
+- **L1**: Lexical entry structure
+- **L2**: Lexicographic metalanguage categories
+- **L3**: **Cross-linguistic metalanguage alignment (metalang)**
 
-Included are:
+> `metalang` catalogs the **term** (e.g., "aorist"), not the linguistic **phenomenon** (e.g., perfective past aspect morphology).
 
--   [Parts of speech](https://en.wikipedia.org/wiki/Part_of_speech) (e.g. `noun`, `adjective`, `auxiliary (verb)`, etc.)
--   Morphological categories (e.g. `aorist`, `imperfect`, `accusative`, `augment`, etc.)
--   Syntactic roles (e.g. `subject`, `complement`, `adjunct`, etc.)
--   Lexicographic labels (e.g. `archaic`, `dialectal`, `slang`, `poetic`, etc.)
--   Grammatical features (e.g. `definiteness`, `aspect`, `voice`, `mood`, `polarity`, etc.)
-    
+## 2. The Problem: Terminological Fragmentation
+Different linguistic traditions and standards use conflicting labels for the same concepts:
 
-In technical terms:
+| Concept | English | Dutch | Greek | UD | EAGLES | School Grammar |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| [Q34698](https://www.wikidata.org/wiki/Q34698) | adjective | bijvoeglijk mw. | επίθετο | ADJ | ADJ | 'beschrijfwoord' |
+| [Q465800](https://www.wikidata.org/wiki/Q465800) | auxiliary verb | hulpwerkwoord | βοηθητικό ρήμα | AUX | AUX | 'doewoord' |
+| [Q103184](https://www.wikidata.org/wiki/Q103184) | article | lidwoord | άρθρο | DET | ART | 'de-woord' |
 
-> `metalang` is a multilingual ontology of linguistic descriptive categories.
+**The Challenge:**
+- **Universal Dependencies (UD)** tags are universal but minimal.
+- **Academic vs. Lexicographic** conventions often differ.
+- **Pedagogical (School) Grammars** use simplified, often language-specific terms.
+- **System Mismatches**: UD (DET) ≠ EAGLES (ART) for articles; abbreviations vary wildly.
 
-It does not describe language data.  
-It describes **the vocabulary used to describe language data**.
+## 3. The Solution: A Canonical Pivot Layer
+`metalang` acts as the **interoperability spine** between these systems. In a 4-level model, it resides at **L2–L3**:
+- **L0**: Object language (e.g., *λύω*)
+- **L1**: Lexical entry structure
+- **L2**: Lexicographic metalanguage categories
+- **L3**: **Cross-linguistic metalanguage alignment (metalang)**
 
-## Problem It Solves
+### Monorepo Architecture
+To support the complex interplay between core logic, localized labels, and external mappings, MetaLang is structured as a **monorepo**. This ensures:
+- **Atomic Updates**: Coordinated changes across the core engine and its plugins.
+- **Unified Governance**: A single source of truth for GUIDs and domain hierarchies.
+- **Modular Distribution**: Independent NPM packages (`@metalang/core`, `@metalang/plugin-ud`) built from the same shared data source.
 
-Different traditions use different labels:
+### Architectural Role
+Everything maps *to* `metalang`, rather than directly to each other. It provides a **stable internal ID system** (GUIDs) to anchor labels across languages and standards:
 
-| Concept | English | Dutch | Greek | UD | EAGLES | School grammar |
-| --- | --- | --- | --- | --- | --- | --- |
-| [Q34698](https://www.wikidata.org/wiki/Q34698) | adjective | bijvoeglijk naamwoord | επίθετο | ADJ | ADJ | ‘beschrijfwoord’ |
-| [Q465800](https://www.wikidata.org/wiki/Q465800) | auxiliary verb | hulpwerkwoord | βοηθητικό ρήμα | AUX | AUX | ‘doewoord’ |
-| [Q103184](https://www.wikidata.org/wiki/Q103184) | article | lidwoord | άρθρο | DET | ART | ‘de-woord’ |
-
-But:
-
--   UD tags are universal but minimal
--   school grammar is pedagogical
--   academic linguistics differs from lexicographic conventions
--   abbreviations vary wildly
--   UD ≠ CELEX ≠ CGN ≠ EAGLES …
-    
-
-`metalang` becomes the **canonical pivot layer** between all these systems.
-
----
-
-## Architectural Role in the Lexicographic Ecosystem
-
-`metalang` aims to be:
-
-### 1️⃣ A stable internal ID system
-
-Example:
-
-```YAML
-
-wikidata: Q34698  # the ultimate GUID (globally unqique identifier)…
+```yaml
+wikidata: Q34698
 ud: ADJ
 eagles: ADJ
 celex: A
-en: 
-  sing: adjective 
-  plur: adjectives
-  abbr: adj.
-el:
-  sing: επίθετο
-  plur: επίθετα
-  abbr: επίθ.
-nl:
-  sing: [bijvoeglijk naamwoord, adjectief]
-  plur: [bijvoeglijk naamwoorden, adjectieven]
-  abbr: [bvw, adj.]
-
+en: { sing: adjective, plur: adjectives, abbr: adj. }
+el: { sing: επίθετο, plur: επίθετα, abbr: επίθ. }
+nl: { sing: adjectief, plur: adjectieven, abbr: adj. }
 ```
 
-So everything maps *to* `metalang`, never directly to each other.
-
-
-### Conceptual Classes Inside `metalang`
-
-`metalang` distinguishes ditinct top-level domains:
-
-```plaintext
-metalang  
-├── pos                # noun, verb, adjective  
-├── morph\_feature      # tense, aspect, case  
-├── morph\_value        # aorist, imperfect, accusative  
-├── syntactic\_role     # subject, object  
-├── derivational\_type  # diminutive, augmentative  
-├── lex\_register       # slang, archaic, formal  
-├── discourse\_label    # ironic, pejorative  
-├── orthographic\_term  # stress mark, augment
-```
-
-These separate ontological types; hence, do not mix:
-
-- category (tense)  
-- value (aorist)
-- feature (aspect=perfective)
-    
-
-
-## Relationship to Existing Standards
-
-`metalang`  maps to:
-
--   **UD (Universal Dependencies)**
--   **EAGLES**
--   **CELEX**
--   **CGN**
--   **Wikidata QIDs**
--   ISOcat (historical reference)
--   GOLD ontology (?)
--   various school grammars (Dutch, Greek, etc.)
-
-It becomes the interoperability spine.
-
-## Why This Is Non-Trivial
-
-Because:
-
--   “Article” is `DET` in UD, but `ART` in EAGLES
--   “Auxiliary” is syntactic in some traditions, lexical in others
--   “Participles” sometimes treated as verb forms, sometimes adjectives
--   Some traditions merge adverbs & particles
-    
-
-`metalang` thus is a **terminology reconciliation system**.
-
-
----
-
-## Design Philosophy
-
-### 1. Every entry must have:
-
-- stable GUID   
-- domain (pos / morph\_feature / etc.)
-- definitions (not just labels)
-- cross-standard mappings
-- abbreviations per language
-- school vs academic flag
-    
-
-### 2. Separate:
-
--  label (human language string)   
--  concept (metalang ID)
-    
-Never treat strings as canonical!
-
-
-## What is “meta language”?
-
-In lexicography we distinguish:
-
--  **Object language** = the language being described
--  **Metalanguage** = the language used to describe it
-    
-For example, if your dictionary describes Modern Greek:
-
-- λύνω → object language  
-- “verb, transitive, imperfective, takes accusative object” → metalanguage
-
-Lexicographic metalanguage thus is the specialized language, symbols, and definitions used in dictionaries to describe, analyze, and explain the meanings and usage of words (the object language). It includes definitions, grammatical labels (e.g., "noun," "verb"), usage notes, and semantic formulas designed to be precise, consistent, and user-friendly, crucial for accurate lexicographic description.
-
-Key Aspects of Lexicographic Metalanguage:
-
-- **Function** — It is the tool for assigning a definiens to a definiendum (the word being defined).
-- **Components**
-	- _Labels_ — Subjective or objective tags for register, field, or region.
-	- _Definitions_ — Semantic descriptions.
-	- _Structure_ — Formalized structures for presenting lexical relationships like synonymy or antonymy.
-
-The Challenge: Meta language must balance scientific precision for accuracy with accessibility for the dictionary user. Metalanguage is fundamentally used to describe the properties of a word (morphological, syntactic, semantic, pragmatic). It serves as a bridge between the user and the language being studied.
-
-Metalanguage is therefore:
-
-> A controlled descriptive system used to encode lexical properties.
-
-Or a more tight formulation:
-
-> Lexicographic metalanguage is a structured system of controlled descriptive categories, relations, and definitions used to formally characterize lexical items across grammatical, semantic, pragmatic, and structural dimensions.
-
-And:
-
-> `metalang` is a multilingual alignment ontology for lexicographic metalanguage.
-
-## Components (domains) of Lexicographic Metalanguage
-
-### A. Grammatical Metalanguage
-
-Describes formal linguistic structure:
-
--   Part of speech    
--   Inflection class
--   Case governance
--   Subcategorization frame
--   Voice
--   Aspect
--   Derivational morphology
-    
-Example:
-
-```plaintext
-
-λύω  
-POS: verb  
-Aspect: imperfective  
-Voice: active  
-Transitivity: transitive  
-Subcat: NP[acc]
-```
-
-### B. Semantic Metalanguage
-
-Describes meaning relations and semantic decomposition.
-
-Includes:
-
--   Definition (genus + differentia)
--   Synonym
--   Antonym
--   Hypernym
--   Hyponym
--   Semantic features
-    
-Example:
-
-> λύω = “cause something to become free from constraint”
-
-This is structured semantic metalanguage.
-
-
-### C. Pragmatic / Usage Metalanguage
-
-Describes sociolinguistic and stylistic constraints:
-
--   archaic    
--   colloquial
--   vulgar
--   poetic
--   technical
--   regional
--   ironic
-
-These are lexicographic **register labels**.
-
-### D. Structural Metalanguage
-
-Encodes lexical architecture:
-
--   sense numbering
--   subsense nesting
--   phraseological units
--   collocations
--   idioms
--   multi-word expressions
-
-This is hidden but crucial in electronic lexicography.
-
-    
-Computational Metalanguage
-
-Used in:
-
--   Frame semantics
-    
--   WordNet-style ontologies
-    
--   Lexical databases
-    
--   e-lexicography backends
-    
--   XML dictionary schemas (e.g., TEI)
-    
-
-Here the metalanguage becomes:
-
--   Feature-value pairs
--   Typed relations
--   Graph structures
--   Ontology nodes
-    
-
-## The Core Tension
-
-Lexicographic metalanguage must balance:
-
-| Scientific precision | User accessibility |
-| --- | --- |
-| feature matrices | readable prose |
-| semantic decomposition | natural definitions |
-| ontology relations | intuitive examples |
-
-Too technical → unreadable  
-Too intuitive → inconsistent
-
-That tension defines dictionary design.
-
-
-## In conclusion
-
-Your `metalang` project can be defined more precisely now:
-
-> `metalang` is a multilingual ontology of lexicographic metalanguage categories and labels, covering grammatical, semantic, pragmatic, and structural domains.
-
-It is NOT:
-
--   a semantic theory
--   a dictionary
--   a parser
-    
-It is:
-
--   the descriptive infrastructure
-    
-If we distinguish four levels:
-
-```plaintext
-L0  Object language (λύω)  
-L1  Lexical entry structure  
-L2  Lexicographic metalanguage categories  
-L3  Cross-linguistic metalanguage alignment (metalang)
-```
-
-Then `metalang` lives at L2–L3.
-
-
-
-Do NOT conflate:
-
--   metalanguage term  
-    vs
--   linguistic phenomenon
-    
-
-Example:
-
--   "aorist" (metalinguistic term)
--   perfective past aspect morphology (phenomenon)
-
-`metalang` catalogs the term, not the phenomenon.
-
-
-
-# Formal Schema Proposal (Conceptual)
-
-```TypeScript
-
+## 4. Taxonomy & Domains
+`metalang` separates ontological types into distinct top-level domains to avoid mixing categories (tense), values (aorist), and features (aspect=perfective).
+
+### Core Domains
+- **Grammatical**: POS, inflection class, case governance, voice, aspect.
+- **Semantic**: Meaning relations (synonym, hypernym), semantic features, definitions (genus + differentia).
+- **Pragmatic / Usage**: Register labels (archaic, colloquial, technical), regional/stylistic constraints.
+- **Structural**: Lexical architecture (sense numbering, collocations, multi-word expressions).
+- **Computational**: Feature-value pairs, typed relations, and graph structures used in databases and XML schemas (TEI).
+
+## 5. Design Philosophy
+To ensure precision and accessibility, every `metalang` entry adheres to two core rules:
+
+1.  **Mandatory Metadata**: Each entry must include a stable GUID, domain, definition, cross-standard mappings, language-specific abbreviations, and a school-vs-academic flag.
+2.  **Concept/Label Separation**: Never treat strings as canonical. The **Concept** (ID) is distinct from the **Label** (human string).
+
+### Reconciliation Standards
+`metalang` maps to and integrates: **UD, EAGLES, CELEX, CGN, Wikidata QIDs**, ISOcat, GOLD, and various national school grammars.
+
+## 6. Technical Schema (Conceptual)
+```typescript
 interface MetalangConcept {  
-  id: string  
-  domain:   
-    | "pos"  
-    | "morph\_feature"  
-    | "morph\_value"  
-    | "semantic\_relation"  
-    | "register\_label"  
-    | "syntactic\_role"  
-    | "definition\_strategy"  
-  definitions: {  
-    en: string  
-    el?: string  
-    nl?: string  
-  }  
-  mappings: {  
-    ud?: string  
-    eagles?: string  
-    celex?: string  
-    wikidata?: string  
-  }  
+  id: string;
+  domain: "pos" | "morph_feature" | "morph_value" | "semantic_relation" | "register_label" | "syntactic_role" | "definition_strategy";
+  definitions: { en: string; el?: string; nl?: string; };
+  mappings: { ud?: string; eagles?: string; celex?: string; wikidata?: string; };
 }
 ```
-
-
-
