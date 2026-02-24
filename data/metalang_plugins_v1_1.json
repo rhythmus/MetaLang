@@ -1,0 +1,470 @@
+[
+  {
+    "descriptor": {
+      "id": "lexilogio-pos-concordance",
+      "name": "Lexilogio POS Concordance (legacy)",
+      "language": "multilingual",
+      "scope": "institutional",
+      "domains": [
+        "pos",
+        "morph_feature",
+        "morph_value",
+        "lex_struct",
+        "derivation"
+      ],
+      "publisher": "User-provided concordance",
+      "authoritative": false
+    },
+    "mappings": {
+      "1e.pers": "ML_MORPH_VALUE_PERSON_FIRST",
+      "2e.pers": "ML_MORPH_VALUE_PERSON_SECOND",
+      "3e.pers": "ML_MORPH_VALUE_PERSON_THIRD",
+      "MWE": "ML_LEX_STRUCT_MULTIWORD_EXPRESSION",
+      "No": "ML_MORPH_FEATURE_NUMBER",
+      "abbr": "ML_CUSTOM_ABBR",
+      "abl": "ML_MORPH_VALUE_CASE_ABLATIVE",
+      "acc": "ML_MORPH_VALUE_CASE_ACCUSATIVE",
+      "acro": "ML_CUSTOM_ACRO",
+      "act": "ML_CUSTOM_ACT",
+      "adj": "ML_POS_ADJECTIVE",
+      "adj.comp": "ML_MORPH_VALUE_DEGREE_COMPARATIVE",
+      "adj.sup": "ML_MORPH_VALUE_DEGREE_SUPERLATIVE",
+      "adp": "ML_CUSTOM_ADP",
+      "adv": "ML_CUSTOM_ADV",
+      "adv.gr": "ML_CUSTOM_ADV_GR",
+      "art": "ML_CUSTOM_ART",
+      "art.def": "ML_CUSTOM_ART_DEF",
+      "art.ind": "ML_CUSTOM_ART_IND",
+      "cas": "ML_MORPH_FEATURE_CASE",
+      "cl.punct": "ML_CUSTOM_CL_PUNCT",
+      "com.n": "ML_POS_NOUN_COMMON",
+      "cond": "ML_MORPH_VALUE_MOOD_CONDITIONAL",
+      "conj": "ML_CUSTOM_CONJ",
+      "conj.coord": "ML_CUSTOM_CONJ_COORD",
+      "conj.sub": "ML_CUSTOM_CONJ_SUB",
+      "conjug": "ML_CUSTOM_CONJUG",
+      "dat": "ML_MORPH_VALUE_CASE_DATIVE",
+      "datum": "ML_CUSTOM_DATUM",
+      "det": "ML_CUSTOM_DET",
+      "dig": "ML_CUSTOM_DIG",
+      "dim": "ML_DERIVATION_DIMINUTIVE",
+      "enum": "ML_CUSTOM_ENUM",
+      "expr": "ML_LEX_STRUCT_EXPRESSION",
+      "fut": "ML_CUSTOM_FUT",
+      "fut.ptcl": "ML_CUSTOM_FUT_PTCL",
+      "gen": "ML_MORPH_VALUE_CASE_GENITIVE",
+      "gend": "ML_MORPH_FEATURE_GENDER",
+      "imp": "ML_MORPH_VALUE_MOOD_IMPERATIVE",
+      "imperf": "ML_CUSTOM_IMPERF",
+      "impers": "ML_CUSTOM_IMPERS",
+      "ind": "ML_MORPH_VALUE_MOOD_INDICATIVE",
+      "inf": "ML_MORPH_VALUE_VERBFORM_INFINITIVE",
+      "inflec": "ML_CUSTOM_INFLEC",
+      "init": "ML_CUSTOM_INIT",
+      "interj": "ML_CUSTOM_INTERJ",
+      "interr": "ML_CUSTOM_INTERR",
+      "morph": "ML_CUSTOM_MORPH",
+      "mult.adv": "ML_CUSTOM_MULT_ADV",
+      "n": "ML_POS_NOUN",
+      "n.abbr": "ML_CUSTOM_N_ABBR",
+      "n.gr": "ML_POS_NOUN",
+      "neg.ptcl": "ML_CUSTOM_NEG_PTCL",
+      "nom": "ML_MORPH_VALUE_CASE_NOMINATIVE",
+      "num": "ML_POS_NUMERAL",
+      "num.adj": "ML_POS_NUMERAL_ADJECTIVAL",
+      "num.adv": "ML_POS_NUMERAL_ADVERBIAL",
+      "num.anal": "ML_POS_NUMERAL_ANALOGICAL",
+      "num.card": "ML_POS_NUMERAL_CARDINAL",
+      "num.coll": "ML_POS_NUMERAL_COLLECTIVE",
+      "num.mult": "ML_POS_NUMERAL_MULTIPLICATIVE",
+      "num.nom": "ML_POS_NUMERAL_NOMINAL",
+      "num.ord": "ML_POS_NUMERAL_ORDINAL",
+      "num.sing": "ML_POS_NUMERAL_SINGULATIVE",
+      "op.punct": "ML_CUSTOM_OP_PUNCT",
+      "pass": "ML_CUSTOM_PASS",
+      "past": "ML_CUSTOM_PAST",
+      "perfect": "ML_CUSTOM_PERFECT",
+      "pers": "ML_MORPH_FEATURE_PERSON",
+      "phras": "ML_LEX_STRUCT_PHRASE",
+      "pl": "ML_MORPH_VALUE_NUMBER_PLURAL",
+      "pos": "ML_META_PART_OF_SPEECH",
+      "postp": "ML_CUSTOM_POSTP",
+      "praes": "ML_CUSTOM_PRAES",
+      "prep": "ML_CUSTOM_PREP",
+      "prest": "ML_CUSTOM_PREST",
+      "pron": "ML_CUSTOM_PRON",
+      "pron.dem": "ML_CUSTOM_PRON_DEM",
+      "pron.ind": "ML_CUSTOM_PRON_IND",
+      "pron.int": "ML_CUSTOM_PRON_INT",
+      "pron.pers": "ML_CUSTOM_PRON_PERS",
+      "pron.poss": "ML_CUSTOM_PRON_POSS",
+      "pron.refl": "ML_CUSTOM_PRON_REFL",
+      "pron.rel": "ML_CUSTOM_PRON_REL",
+      "pron.rel.ind": "ML_CUSTOM_PRON_REL_IND",
+      "prop.n": "ML_POS_PROPER_NOUN",
+      "prov": "ML_LEX_STRUCT_PROVERB",
+      "ptcl": "ML_CUSTOM_PTCL",
+      "punct": "ML_CUSTOM_PUNCT",
+      "q": "ML_LEX_STRUCT_SENTENCE_INTERROGATIVE",
+      "s": "ML_LEX_STRUCT_SENTENCE",
+      "sg": "ML_MORPH_VALUE_NUMBER_SINGULAR",
+      "simp": "ML_CUSTOM_SIMP",
+      "sub.ptcl": "ML_CUSTOM_SUB_PTCL",
+      "subj": "ML_MORPH_VALUE_MOOD_SUBJUNCTIVE",
+      "symb": "ML_CUSTOM_SYMB",
+      "t": "ML_CUSTOM_T",
+      "term.punct": "ML_CUSTOM_TERM_PUNCT",
+      "topo": "ML_POS_PROPER_NOUN_TOPONYM",
+      "translit": "ML_CUSTOM_TRANSLIT",
+      "v": "ML_POS_VERB",
+      "v.aux": "ML_CUSTOM_V_AUX",
+      "v.gr": "ML_CUSTOM_V_GR",
+      "v.ptcp": "ML_CUSTOM_V_PTCP",
+      "voc": "ML_MORPH_VALUE_CASE_VOCATIVE",
+      "♀": "ML_MORPH_VALUE_GENDER_FEMININE",
+      "♂": "ML_MORPH_VALUE_GENDER_MASCULINE",
+      "⚲": "ML_MORPH_VALUE_GENDER_NEUTER"
+    }
+  },
+  {
+    "descriptor": {
+      "id": "nl-local-scholars",
+      "name": "Dutch local scholars abbreviation list (merged/deduplicated)",
+      "language": "nl",
+      "scope": "institutional",
+      "domains": [
+        "field",
+        "geo",
+        "language_label",
+        "lex_struct",
+        "morph_feature",
+        "morph_value",
+        "orthography",
+        "other",
+        "phonology",
+        "pos",
+        "register",
+        "semantic_class"
+      ],
+      "publisher": "User-provided TSV",
+      "authoritative": false
+    },
+    "mappings": {
+      "aanw. vnw.": [
+        "ML_POS_AANWIJZEND_VOORNAAMWOORD"
+      ],
+      "aardr.": [
+        "ML_FIELD_AARDRIJKSKUNDE"
+      ],
+      "abs.": [
+        "ML_MISC_ABSOLUUT_GEBRUIKT"
+      ],
+      "abstr.": [
+        "ML_SEMANTIC_CLASS_ABSTRACT"
+      ],
+      "acc.": [
+        "ML_MORPH_VALUE_ACCUSATIEF"
+      ],
+      "afk.": [
+        "ML_LEX_STRUCT_AFKORTING"
+      ],
+      "alg.": [
+        "ML_FIELD_ALGEBRA"
+      ],
+      "algem.": [
+        "ML_SEMANTIC_CLASS_ALGEMEEN"
+      ],
+      "amb.": [
+        "ML_FIELD_AMBACHTSTERM_TAAL"
+      ],
+      "anat.": [
+        "ML_FIELD_ANATOMIE"
+      ],
+      "astron.": [
+        "ML_FIELD_ASTRONOMIE"
+      ],
+      "betr. vnw.": [
+        "ML_POS_BETREKKELIJK_VOORNAAMWOORD"
+      ],
+      "bez. vnw.": [
+        "ML_POS_BEZITTELIJK_VOORNAAMWOORD"
+      ],
+      "bijb.": [
+        "ML_FIELD_BIJBEL"
+      ],
+      "bijv.": [
+        "ML_LEX_STRUCT_BIJVOORBEELD"
+      ],
+      "biol.": [
+        "ML_FIELD_BIOLOGIE"
+      ],
+      "bk.": [
+        "ML_MISC_BOUWKUNDE_ARCHITECTUUR"
+      ],
+      "bn.": [
+        "ML_POS_BIJVOEGLIJK_NAAMWOORD"
+      ],
+      "bosb.": [
+        "ML_FIELD_BOSBOUW"
+      ],
+      "bw.": [
+        "ML_POS_BIJWOORD"
+      ],
+      "chem.": [
+        "ML_FIELD_CHEMIE_SCHEIKUNDE"
+      ],
+      "chir.": [
+        "ML_FIELD_CHIRURGIE"
+      ],
+      "concr.": [
+        "ML_SEMANTIC_CLASS_CONCREET"
+      ],
+      "dat.": [
+        "ML_MORPH_VALUE_DATIEF"
+      ],
+      "dial.": [
+        "ML_REGISTER_DIALECTISCH"
+      ],
+      "Dui.": [
+        "ML_GEO_DUITSLAND_DUITS"
+      ],
+      "econ.": [
+        "ML_FIELD_ECONOMIE"
+      ],
+      "Eng.": [
+        "ML_LANGUAGE_ENGELAND_ENGELS"
+      ],
+      "enz.": [
+        "ML_EDITORIAL_ENZOVOORT"
+      ],
+      "fam.": [
+        "ML_REGISTER_FAMILIAIR_GEMEENZAAM"
+      ],
+      "fig.": [
+        "ML_REGISTER_FIGUURLIJK"
+      ],
+      "fil.": [
+        "ML_FIELD_FILOSOFIE"
+      ],
+      "fon.": [
+        "ML_PHONOLOGY_FONETIEK"
+      ],
+      "fot.": [
+        "ML_FIELD_FOTOGRAFIE"
+      ],
+      "Fr.": [
+        "ML_GEO_FRANS_FRANKRIJK"
+      ],
+      "fys.": [
+        "ML_FIELD_FYSIOLOGIE"
+      ],
+      "gen.": [
+        "ML_MORPH_VALUE_GENITIEF"
+      ],
+      "geol.": [
+        "ML_FIELD_GEOLOGIE"
+      ],
+      "germ.": [
+        "ML_MISC_GERMANISME"
+      ],
+      "gew.": [
+        "ML_REGISTER_GEWOONLIJK"
+      ],
+      "godsd.": [
+        "ML_FIELD_GODSDIENST"
+      ],
+      "Gr.": [
+        "ML_LANGUAGE_GRIEKENLAND_GRIEKS"
+      ],
+      "gramm.": [
+        "ML_FIELD_GRAMMATICA"
+      ],
+      "Hebr.": [
+        "ML_LANGUAGE_HEBREEUWS"
+      ],
+      "hist.": [
+        "ML_REGISTER_HISTORISCH"
+      ],
+      "id.": [
+        "ML_LEX_STRUCT_IDEM_GELIJK_WOORD_OF_GELIJKE_UITDRUKKING"
+      ],
+      "iem.(s)": [
+        "ML_MISC_IEMAND_S"
+      ],
+      "Ind.": [
+        "ML_GEO_INDONESI_INDONESISCH"
+      ],
+      "intr.": [
+        "ML_MORPH_FEATURE_INTRANSITIEF"
+      ],
+      "iron.": [
+        "ML_REGISTER_IRONISCH"
+      ],
+      "Ital.": [
+        "ML_GEO_ITALIAANS_ITALI"
+      ],
+      "jur.": [
+        "ML_FIELD_RECHTSTERM"
+      ],
+      "Lat.": [
+        "ML_LANGUAGE_LATIJN_S"
+      ],
+      "lett.": [
+        "ML_ORTHOGRAPHY_LETTERLIJK"
+      ],
+      "lit.": [
+        "ML_REGISTER_LITERAIR"
+      ],
+      "lvw.": [
+        "ML_POS_LIDWOORD"
+      ],
+      "m": [
+        "ML_MORPH_VALUE_MANNELIJK"
+      ],
+      "mv.": [
+        "ML_MORPH_VALUE_MEERVOUD"
+      ],
+      "myth.": [
+        "ML_FIELD_MYTHOLOGIE"
+      ],
+      "nat.": [
+        "ML_MISC_NATUURKUNDE"
+      ],
+      "Ned.": [
+        "ML_GEO_NEDERLAND_S"
+      ],
+      "nl.": [
+        "ML_EDITORIAL_NAMELIJK"
+      ],
+      "o.": [
+        "ML_MORPH_VALUE_ONZIJDIG"
+      ],
+      "o.t.t.": [
+        "ML_MORPH_FEATURE_ONVOLTOOID_TEGENWOORDIGE_TIJD"
+      ],
+      "o.v.t.": [
+        "ML_MORPH_FEATURE_ONVOLTOOID_VERLEDEN_TIJD"
+      ],
+      "pers. vnw.": [
+        "ML_POS_PERSOONLIJK_VOORNAAMWOORD"
+      ],
+      "plank.": [
+        "ML_MISC_PLANTKUNDE"
+      ],
+      "pol.": [
+        "ML_FIELD_POLITIEK"
+      ],
+      "Port.": [
+        "ML_LANGUAGE_PORTUGEES_PORTUGAL"
+      ],
+      "prot.": [
+        "ML_MISC_PROTESTANT_S"
+      ],
+      "psych.": [
+        "ML_MISC_PSYCHOLOGIE"
+      ],
+      "rek.": [
+        "ML_MISC_REKENKUNDE"
+      ],
+      "riv.": [
+        "ML_MISC_RIVIER"
+      ],
+      "Rom.": [
+        "ML_MISC_ROME_IN_S"
+      ],
+      "Rus.": [
+        "ML_LANGUAGE_RUSSISCH_RUSLAND"
+      ],
+      "sam.": [
+        "ML_MISC_SAMENSTELLING"
+      ],
+      "sch.": [
+        "ML_FIELD_SCHOOLTAAL"
+      ],
+      "sp.": [
+        "ML_MISC_SPORT_EN_SPEL"
+      ],
+      "Sp.": [
+        "ML_GEO_SPAANS_SPANJE"
+      ],
+      "spr.": [
+        "ML_MISC_SPREEK_UIT_LEES"
+      ],
+      "staatsk.": [
+        "ML_MISC_STAATSKUNDE"
+      ],
+      "stud.": [
+        "ML_FIELD_STUDENTENTAAL"
+      ],
+      "techn.": [
+        "ML_MISC_TECHNIEK"
+      ],
+      "telw.": [
+        "ML_POS_TELWOORD"
+      ],
+      "theat.": [
+        "ML_MISC_THEATER_TONEEL_DRAMATURGIE"
+      ],
+      "theol.": [
+        "ML_FIELD_THEOLOGIE"
+      ],
+      "tr.": [
+        "ML_MORPH_FEATURE_TRANSITIEF"
+      ],
+      "typ.": [
+        "ML_MISC_TYPOGRAFIE"
+      ],
+      "u.": [
+        "ML_MISC_UND"
+      ],
+      "v": [
+        "ML_MORPH_VALUE_VROUWELIJK"
+      ],
+      "v.d.w.": [
+        "ML_MORPH_FEATURE_VOLTOOID_DEELWOORD"
+      ],
+      "vero.": [
+        "ML_MISC_VEROUDERD_OUDERWETS"
+      ],
+      "vgl.": [
+        "ML_EDITORIAL_VERGELIJK"
+      ],
+      "vnw.": [
+        "ML_POS_VOORNAAMWOORD"
+      ],
+      "volkst.": [
+        "ML_FIELD_VOLKSTAAL_POPULAIR"
+      ],
+      "vrag. vnw.": [
+        "ML_POS_VRAGEND_VOORNAAMWOORD"
+      ],
+      "vv.": [
+        "ML_POS_VOEGWOORD"
+      ],
+      "vz.": [
+        "ML_POS_VOORZETSEL"
+      ],
+      "W.": [
+        "ML_GEO_WEST_EN_WESTELIJK"
+      ],
+      "wet.": [
+        "ML_REGISTER_WETENSCHAPPELIJK"
+      ],
+      "wisk.": [
+        "ML_FIELD_WISKUNDE"
+      ],
+      "ww.": [
+        "ML_POS_WERKWOORD"
+      ],
+      "Z.": [
+        "ML_GEO_ZUID_EN_ZUIDELIJK"
+      ],
+      "zn.": [
+        "ML_POS_ZELFSTANDIG_NAAMWOORD"
+      ],
+      "Zwits.": [
+        "ML_GEO_ZWITSERLAND_ZWITSERS"
+      ]
+    }
+  }
+]
