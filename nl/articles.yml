@@ -1,9 +1,0 @@
-articles:
-  - form: "de"
-    features: {pos: "art", definiteness: "def"}
-  - form: "het"
-    features: {pos: "art", gender: "⚲", number: "sg", definiteness: "def"}
-  - form: "een"
-    features: {pos: "art", number: "sg", definiteness: "indef"}
-  - form: "'n"
-    features: {pos: "art", number: "sg", definiteness: "indef"}
