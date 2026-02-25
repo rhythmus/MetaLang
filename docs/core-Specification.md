@@ -163,39 +163,35 @@ To manage the increasing complexity of the project, the MetaLang specification h
 
 ## 7. Public TypeScript API
 
-7.1 Core principles (pure mapping engine, deterministic, sync vs async)  
+7.1 Core principles (pure mapping engine, deterministic, sync vs async)
+
+MetaLang core is a pure, deterministic mapping library. It uses native ESM (`type: module`) and is designed for high performance in both Node.js and browser environments.
+
 7.2 Concept lookup APIs
 
-- `getConcept(id)`
-- `searchConcepts(query, filters)`
-- `getParents(id)` / `getChildren(id)` / `walkAncestors()`  
+Implemented in the `Registry` class:
+- `getConcept(id: string): Concept | undefined`
+- `getParents(id: string): Concept[]`
+- `getChildren(id: string): Concept[]`
 
 7.3 System discovery APIs
 
-- `listTagSystems(filters)`
-- `listDomains()`
-- `listLocales()` (if internal)  
+- `listTagSystems(): PluginManifest[]`
+- `listDomains(): Domain[]`
 
 7.4 Normalization and conversion APIs
 
-- `normalizeTag(inputTag, system)` → canonical ID
-- `convertTag(inputTag, fromSystem, toSystem)`
-- `convertTagSet(tags, fromSystem, toSystem)`  
+- `normalizeTag(tag: string, systemId: string): Concept[]`: Resolves an external tag to one or more canonical concepts.
+- `resolveTag(tag: string, systemId: string): string[]`: Resolves an external tag to a list of GUIDs.
 
 7.5 Localization APIs
 
-- `translateTag(inputTag, system, locale, variant)`
-- `labelForConcept(conceptId, locale, variant)`  
-
-7.6 Morphology bundle APIs (UD/UniMorph-style)
-
-- `convertFeatureBundle(bundle, fromSystem, toSystem)`
-- `resolveFeatureValuePair("Case=Acc", system)`  
+- `labelForConcept(conceptId: string, locale: string, variant: 'full' | 'abbreviation'): string | null`
 
 7.7 Error model
 
-- null vs Result type
-- structured error codes (unknown system, unknown tag, ambiguous mapping)  
+- Returns `undefined` or empty arrays for missing concepts/mappings.
+- Lightweight and predictable.
 
 7.8 Performance contracts (big-O expectations, caching behavior)  
 

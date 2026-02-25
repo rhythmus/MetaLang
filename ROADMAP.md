@@ -2,19 +2,19 @@
 
 This document outlines the staged implementation plan for the MetaLang project. It is designed to be consumed by an agentic AI developer to build the core infrastructure, plugin ecosystem, and authoring tools.
 
-## Stage 0: Foundation & Workspace
+## Stage 0: Foundation & Workspace ✅
 **Goal**: Establish the monorepo and core schemas.
-- [ ] **Monorepo Setup**: Initialize a `pnpm` monorepo with workspace folders in `packages/*`.
-- [ ] **Data Ingestion**: Move existing `.json` and `.tsv` data from `data/` into a versioned structure.
-- [ ] **Core Schemas**: Define JSON Schemas for `SeedFile`, `PluginManifest`, and `Concept`.
-- [ ] **Linting**: Implement automated referential integrity checks for existing data.
+- [x] **Monorepo Setup**: Initialize a `pnpm` monorepo with workspace folders in `packages/*`.
+- [x] **Data Ingestion**: Move existing `.json` and `.tsv` data from `data/` into a versioned structure.
+- [x] **Core Schemas**: Define JSON Schemas and TypeScript interfaces for `SeedFile`, `PluginManifest`, and `Concept`.
+- [x] **Linting**: Implement automated referential integrity checks (via TypeScript and JSON Schema).
 
-## Stage 1: The Core Engine (`packages/core`)
+## Stage 1: The Core Engine (`packages/core`) ✅
 **Goal**: Build the runtime library for ontology lookup and tag normalization.
-- [ ] **Registry Logic**: Implement `registerTagSystem()` to handle plugin loading and conflict resolution.
-- [ ] **Normalization API**: Create the `normalizeTag(tag, system)` function to resolve external strings to GUIDs.
-- [ ] **Hierarchy Support**: Implement graph walking (parents, children) across domains.
-- [ ] **TypeScript Types**: Generate and export robust types for the entire ontology.
+- [x] **Registry Logic**: Implement `registerTagSystem()` to handle plugin loading and conflict resolution.
+- [x] **Normalization API**: Create the `normalizeTag(tag, system)` function to resolve external strings to GUIDs.
+- [x] **Hierarchy Support**: Implement graph walking (parents, children) across domains.
+- [x] **TypeScript Types**: Generate and export robust types for the entire ontology in `@metalang/schema`.
 
 ## Stage 2: Plugin Ecosystem
 **Goal**: Bridge MetaLang with global standards.

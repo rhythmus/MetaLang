@@ -17,8 +17,9 @@ MetaLang provides:
 ## 📂 Project Structure
 
 This is a monorepo containing the following components:
+- `packages/schema`: Core TypeScript interfaces and JSON schemas.
 - `packages/core`: The central ontology engine and registry.
-- `packages/plugin-*`: Mappings for specific standards and dictionaries.
+- `packages/plugin-ud`: Universal Dependencies tag mapping provider.
 - `docs/`: Comprehensive specifications and concept notes.
 - `data/`: The machine-readable "seed" data for the ontology.
 
@@ -30,7 +31,24 @@ This is a monorepo containing the following components:
 
 ## 🛠️ Getting Started
 
-*(Instructions for setup and development will be added as the monorepo matures.)*
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+)
+- [pnpm](https://pnpm.io/)
+
+### Installation
+
+```bash
+pnpm install
+```
+
+### Verification
+
+Run the core engine verification script:
+
+```bash
+npx tsx scripts/verify_core.ts
+```
 
 ---
 
