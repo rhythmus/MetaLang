@@ -1,5 +1,10 @@
 import type { Concept, PluginManifest, SeedFile } from '@metalang/schema';
 
+export interface ValidationResult {
+    valid: boolean;
+    errors: string[];
+}
+
 export class Registry {
     private concepts: Map<string, Concept> = new Map();
     private tagSystems: Map<string, PluginManifest> = new Map();
@@ -18,6 +23,31 @@ export class Registry {
      */
     public registerTagSystem(manifest: PluginManifest): void {
         this.tagSystems.set(manifest.id, manifest);
+    }
+
+    /**
+     * Validate a plugin manifest against the currently loaded concepts.
+     */
+    public validatePlugin(systemId: string): ValidationResult {
+        const manifest = this.tagSystems.get(systemId);
+        const errors: string[] = [];
+
+        if (!manifest) {
+            return { valid: false, errors: [`Plugin system "${systemId}" not found.`] };
+        }
+
+        for (const [tag, conceptIds] of Object.entries(manifest.mappings)) {
+            for (const id of conceptIds) {
+                if (!this.concepts.has(id)) {
+                    errors.push(`Tag "${tag}" in system "${systemId}" maps to non-existent concept: ${id}`);
+                }
+            }
+        }
+
+        return {
+            valid: errors.length === 0,
+            errors
+        };
     }
 
     /**

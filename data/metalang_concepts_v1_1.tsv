@@ -54,9 +54,41 @@ ML_CUSTOM_SYMB	other		symbol	symbool	σύμβολο	Q80071
 ML_CUSTOM_T	other		(grammatical) tense	werkwoordelijke tijd	γραμματικός χρόνος	Q177691	
 ML_CUSTOM_TERM_PUNCT	other	ML_CUSTOM_PUNCT	terminal punctuation mark		τελικό σημείο στίξης	Q7702742	
 ML_CUSTOM_TRANSLIT	other		transliteration	transliteratie	μεταγραφή	Q134550	
-ML_CUSTOM_V_AUX	other	ML_POS_VERB	auxiliary (verb)	hulpwerkwoord	βοηθητικό ρήμα	Q163750	
-ML_CUSTOM_V_GR	other	ML_POS_VERB	verb phrase	werkwoordgroep	ρηματική φράση	Q1778442	
-ML_CUSTOM_V_PTCP	other	ML_POS_VERB	participle	deelwoord	μετοχή	Q814722	
+ML_POS_V_AUX	pos	ML_POS_VERB	auxiliary (verb)	hulpwerkwoord	βοηθητικό ρήμα	Q163750	
+ML_POS_V_PTCP	pos	ML_POS_VERB	participle	deelwoord	μετοχή	Q814722	
+ML_POS_ADP	pos		adposition	aanvoegsel	πρόθεση	Q134316	
+ML_POS_ADV	pos		adverb	bijwoord	επίρρημα	Q380057	
+ML_POS_CONJ_COORD	pos	ML_POS_CONJ	coordinative conjunction	nevenschikkend voegwoord	συμπλεκτικός σύνδεσμος	Q28833099	
+ML_POS_CONJ_SUB	pos	ML_POS_CONJ	subordinative conjunction	onderschikkend voegwoord	υποτακτικός σύνδεσμος		
+ML_POS_DET	pos		determiner	determinator	καθοριστικός προσδιοριστής	Q576271	
+ML_POS_INTERJ	pos		interjection	tussenwerpsel	επιφώνημα	Q83034	
+ML_POS_NOUN_PROP	pos	ML_POS_NOUN	proper noun	eigennaam	κύριο όνομα	Q147276	
+ML_POS_PTCL	pos		particle	grammaticaal partikel	μόριο	Q184943	
+ML_POS_PRON	pos	ML_POS_DET	pronoun	voornaamwoord	αντωνυμία	Q36224	
+ML_POS_PUNCT	pos	ML_POS_SYMB	punctuation mark	interpunctie	σημείο στίξης	Q82622	
+ML_POS_SYMB	pos		symbol	symbool	σύμβολο	Q80071	
+ML_POS_X	pos		other / unclassified	overig	άλλο	Q781194	
+ML_MORPH_VAL_MALE	morph_value		masculine	mannelijk	αρσενικό	Q499327	
+ML_MORPH_VAL_FEMALE	morph_value		feminine	vrouwelijk	θηλυκό	Q1775415	
+ML_MORPH_VAL_NEUTER	morph_value		neuter	onzijdig	ουδέτερο	Q1775461	
+ML_MORPH_VAL_SINGULAR	morph_value		singular	enkelvoud	ενικός	Q110786	
+ML_MORPH_VAL_PLURAL	morph_value		plural	meervoud	πληθυντικός	Q146786	
+ML_MORPH_VAL_DUAL	morph_value		dual	tweeledig	δυϊκός	Q110786	
+ML_MORPH_VAL_NOMINATIVE	morph_value		nominative (case)	nominatief	ονομαστική	Q131105	
+ML_MORPH_VAL_ACCUSATIVE	morph_value		accusative (case)	accusatief	αιτιατική	Q146078	
+ML_MORPH_VAL_GENITIVE	morph_value		genitive (case)	genitief	γενική	Q146233	
+ML_MORPH_VAL_DATIVE	morph_value		dative (case)	datief	δοτική	Q145599	
+ML_MORPH_VAL_VOCATIVE	morph_value		vocative (case)	vocative	κλητική	Q185077	
+ML_MORPH_VAL_1ST_PERSON	morph_value		1st person	eerste persoon	πρώτο πρόσωπο		
+ML_MORPH_VAL_2ND_PERSON	morph_value		2nd person	tweede persoon	δεύτερο πρόσωπο		
+ML_MORPH_VAL_3RD_PERSON	morph_value		3rd person	derde persoon	τρίτο πρόσωπο		
+ML_MORPH_VAL_PRESENT	morph_value		present tense	tegenwoordige tijd	ενεστώτας	Q192613	
+ML_MORPH_VAL_PAST	morph_value		past tense	verleden tijd	συντελεσμένος	Q1994301	
+ML_MORPH_VAL_FUTURE	morph_value		future tense	toekomstige tijd	μέλλοντας	Q501405	
+ML_MORPH_VAL_INDICATIVE	morph_value		indicative	aantonende wijs	οριστική	Q682111	
+ML_MORPH_VAL_IMPERATIVE	morph_value		imperative	gebiedende wijs	προστακτική	Q22716	
+ML_MORPH_VAL_SUBJUNCTIVE	morph_value		subjunctive	aanvoegdende wijs	υποτακτική	Q473746	
+ML_MORPH_VAL_CONDITIONAL	morph_value		conditional	voorwaardelijke wijs	υποθετική	Q625581	
 ML_DERIVATION_AFFIX	derivation	ML_DERIVATION_PROCESS	affix				wiktionary:Appendix:Glossary
 ML_DERIVATION_DIMINUTIVE	derivation	ML_POS_ADJECTIVE	diminutive	verkleinwoord	υποκοριστικό	Q108709	
 ML_DERIVATION_NOUN_AGENT	derivation	ML_DERIVATION_PROCESS	agent noun				wiktionary:Appendix:Glossary

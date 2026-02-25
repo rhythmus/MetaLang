@@ -1,0 +1,10 @@
+{
+    "name": "@metalang/plugin-eagles",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "EAGLES/MULTEXT-East mapping plugin for MetaLang",
+    "main": "index.js",
+    "dependencies": {
+        "@metalang/schema": "workspace:*"
+    }
+}

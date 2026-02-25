@@ -4706,35 +4706,643 @@
       ]
     },
     {
-      "id": "ML_SYNTACTIC_CLAUSE",
-      "domain": "syntactic_relation",
+      "id": "ML_POS_V_AUX",
+      "domain": "pos",
       "labels": {
         "en": {
-          "full": "Syntactic Clause",
-          "abbreviation": null
+          "full": "auxiliary (verb)"
+        },
+        "nl": {
+          "full": "hulpwerkwoord"
+        },
+        "el": {
+          "full": "βοηθητικό ρήμα"
         }
       },
-      "externalRefs": {},
-      "sources": [
-        "metalang:v1.1"
+      "externalRefs": {
+        "wikidata": "Q163750"
+      },
+      "parents": [
+        "ML_POS_VERB"
       ]
     },
     {
-      "id": "ML_SYNTACTIC_CLAUSE_ADVERBIAL",
-      "domain": "syntactic_relation",
+      "id": "ML_POS_V_PTCP",
+      "domain": "pos",
       "labels": {
         "en": {
-          "full": "adverbial clause",
-          "abbreviation": null
+          "full": "participle"
+        },
+        "nl": {
+          "full": "deelwoord"
+        },
+        "el": {
+          "full": "μετοχή"
         }
       },
-      "externalRefs": {},
-      "sources": [
-        "wiktionary:Appendix:Glossary"
-      ],
+      "externalRefs": {
+        "wikidata": "Q814722"
+      },
       "parents": [
-        "ML_SYNTACTIC_CLAUSE"
+        "ML_POS_VERB"
       ]
+    },
+    {
+      "id": "ML_POS_ADP",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "adposition"
+        },
+        "nl": {
+          "full": "aanvoegsel"
+        },
+        "el": {
+          "full": "πρόθεση"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q134316"
+      }
+    },
+    {
+      "id": "ML_POS_ADV",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "adverb"
+        },
+        "nl": {
+          "full": "bijwoord"
+        },
+        "el": {
+          "full": "επίρρημα"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q380057"
+      }
+    },
+    {
+      "id": "ML_POS_CONJ_COORD",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "coordinative conjunction"
+        },
+        "nl": {
+          "full": "nevenschikkend voegwoord"
+        },
+        "el": {
+          "full": "συμπλεκτικός σύνδεσμος"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q28833099"
+      },
+      "parents": [
+        "ML_CUSTOM_CONJ"
+      ]
+    },
+    {
+      "id": "ML_POS_CONJ_SUB",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "subordinative conjunction"
+        },
+        "nl": {
+          "full": "onderschikkend voegwoord"
+        },
+        "el": {
+          "full": "υποτακτικός σύνδεσμος"
+        }
+      },
+      "parents": [
+        "ML_CUSTOM_CONJ"
+      ]
+    },
+    {
+      "id": "ML_POS_DET",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "determiner"
+        },
+        "nl": {
+          "full": "determinator"
+        },
+        "el": {
+          "full": "καθοριστικός προσδιοριστής"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q576271"
+      }
+    },
+    {
+      "id": "ML_POS_INTERJ",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "interjection"
+        },
+        "nl": {
+          "full": "tussenwerpsel"
+        },
+        "el": {
+          "full": "επιφώνημα"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q83034"
+      }
+    },
+    {
+      "id": "ML_POS_NOUN_PROP",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "proper noun"
+        },
+        "nl": {
+          "full": "eigennaam"
+        },
+        "el": {
+          "full": "κύριο όνομα"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q147276"
+      },
+      "parents": [
+        "ML_POS_NOUN"
+      ]
+    },
+    {
+      "id": "ML_POS_PTCL",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "particle"
+        },
+        "nl": {
+          "full": "grammaticaal partikel"
+        },
+        "el": {
+          "full": "μόριο"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q184943"
+      }
+    },
+    {
+      "id": "ML_POS_PRON",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "pronoun"
+        },
+        "nl": {
+          "full": "voornaamwoord"
+        },
+        "el": {
+          "full": "αντωνυμία"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q36224"
+      },
+      "parents": [
+        "ML_POS_DET"
+      ]
+    },
+    {
+      "id": "ML_POS_PUNCT",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "punctuation mark"
+        },
+        "nl": {
+          "full": "interpunctie"
+        },
+        "el": {
+          "full": "σημείο στίξης"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q82622"
+      },
+      "parents": [
+        "ML_CUSTOM_SYMB"
+      ]
+    },
+    {
+      "id": "ML_POS_SYMB",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "symbol"
+        },
+        "nl": {
+          "full": "symbool"
+        },
+        "el": {
+          "full": "σύμβολο"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q80071"
+      }
+    },
+    {
+      "id": "ML_POS_X",
+      "domain": "pos",
+      "labels": {
+        "en": {
+          "full": "other / unclassified"
+        },
+        "nl": {
+          "full": "overig"
+        },
+        "el": {
+          "full": "άλλο"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q781194"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_MALE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "masculine"
+        },
+        "nl": {
+          "full": "mannelijk"
+        },
+        "el": {
+          "full": "αρσενικό"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q499327"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_FEMALE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "feminine"
+        },
+        "nl": {
+          "full": "vrouwelijk"
+        },
+        "el": {
+          "full": "θηλυκό"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q1775415"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_NEUTER",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "neuter"
+        },
+        "nl": {
+          "full": "onzijdig"
+        },
+        "el": {
+          "full": "ουδέτερο"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q1775461"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_SINGULAR",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "singular"
+        },
+        "nl": {
+          "full": "enkelvoud"
+        },
+        "el": {
+          "full": "ενικός"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q110786"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_PLURAL",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "plural"
+        },
+        "nl": {
+          "full": "meervoud"
+        },
+        "el": {
+          "full": "πληθυντικός"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q146786"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_DUAL",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "dual"
+        },
+        "nl": {
+          "full": "tweeledig"
+        },
+        "el": {
+          "full": "δυϊκός"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q110786"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_NOMINATIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "nominative (case)"
+        },
+        "nl": {
+          "full": "nominatief"
+        },
+        "el": {
+          "full": "ονομαστική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q131105"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_ACCUSATIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "accusative (case)"
+        },
+        "nl": {
+          "full": "accusatief"
+        },
+        "el": {
+          "full": "αιτιατική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q146078"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_GENITIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "genitive (case)"
+        },
+        "nl": {
+          "full": "genitief"
+        },
+        "el": {
+          "full": "γενική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q146233"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_DATIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "datief"
+        },
+        "nl": {
+          "full": "datief"
+        },
+        "el": {
+          "full": "δοτική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q145599"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_VOCATIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "vocative (case)"
+        },
+        "nl": {
+          "full": "vocative"
+        },
+        "el": {
+          "full": "κλητική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q185077"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_1ST_PERSON",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "1st person"
+        },
+        "nl": {
+          "full": "eerste persoon"
+        },
+        "el": {
+          "full": "πρώτο πρόσωπο"
+        }
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_2ND_PERSON",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "2nd person"
+        },
+        "nl": {
+          "full": "tweede persoon"
+        },
+        "el": {
+          "full": "δεύτερο πρόσωπο"
+        }
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_3RD_PERSON",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "3rd person"
+        },
+        "nl": {
+          "full": "derde persoon"
+        },
+        "el": {
+          "full": "τρίτο πρόσωπο"
+        }
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_PRESENT",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "present tense"
+        },
+        "nl": {
+          "full": "tegenwoordige tijd"
+        },
+        "el": {
+          "full": "ενεστώτας"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q192613"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_PAST",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "past tense"
+        },
+        "nl": {
+          "full": "verleden tijd"
+        },
+        "el": {
+          "full": "συντελεσμένος"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q1994301"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_FUTURE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "future tense"
+        },
+        "nl": {
+          "full": "toekomstige tijd"
+        },
+        "el": {
+          "full": "μέλλοντας"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q501405"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_INDICATIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "indicative"
+        },
+        "nl": {
+          "full": "aantonende wijs"
+        },
+        "el": {
+          "full": "οριστική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q682111"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_IMPERATIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "imperative"
+        },
+        "nl": {
+          "full": "gebiedende wijs"
+        },
+        "el": {
+          "full": "προστακτική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q22716"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_SUBJUNCTIVE",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "subjunctive"
+        },
+        "nl": {
+          "full": "aanvoegdende wijs"
+        },
+        "el": {
+          "full": "υποτακτική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q473746"
+      }
+    },
+    {
+      "id": "ML_MORPH_VAL_CONDITIONAL",
+      "domain": "morph_value",
+      "labels": {
+        "en": {
+          "full": "conditional"
+        },
+        "nl": {
+          "full": "voorwaardelijke wijs"
+        },
+        "el": {
+          "full": "υποθετική"
+        }
+      },
+      "externalRefs": {
+        "wikidata": "Q625581"
+      }
     }
   ]
 }
