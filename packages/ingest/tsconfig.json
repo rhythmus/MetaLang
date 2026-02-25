@@ -1,0 +1,28 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "composite": true,
+        "baseUrl": ".",
+        "paths": {
+            "@metalang/schema": [
+                "../schema/src"
+            ],
+            "@metalang/core": [
+                "../core/src"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "references": [
+        {
+            "path": "../schema"
+        },
+        {
+            "path": "../core"
+        }
+    ]
+}
