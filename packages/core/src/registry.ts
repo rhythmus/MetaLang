@@ -42,7 +42,8 @@ export class Registry {
             return { valid: false, errors: [`Plugin system "${systemId}" not found.`] };
         }
 
-        for (const [tag, conceptIds] of Object.entries(manifest.mappings)) {
+        for (const [tag, mappingValue] of Object.entries(manifest.mappings)) {
+            const conceptIds = Array.isArray(mappingValue) ? mappingValue : [mappingValue];
             for (const id of conceptIds) {
                 if (!this.concepts.has(id)) {
                     errors.push(`Tag "${tag}" in system "${systemId}" maps to non-existent concept: ${id}`);
