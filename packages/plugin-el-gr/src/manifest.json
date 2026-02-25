@@ -1,0 +1,44 @@
+{
+    "descriptor": {
+        "id": "el-gr-ltt",
+        "name": "Greek National Standard (LTT school grammar)",
+        "language": "el",
+        "scope": "national",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value"
+        ],
+        "publisher": "Institute of Educational Policy (IEP)",
+        "authoritative": true,
+        "source": {
+            "title": "Γραμματική Νέας Ελληνικής Γλώσσας (Α-Β-Γ Γυμνασίου)",
+            "author": "Χατζησαββίδης Σ., Χατζησαββίδου Α.",
+            "year": 2011,
+            "url": "http://ebooks.edu.gr/ebooks/v/html/8547/2332/Grammatiki-Neas-Ellinikis-Glossas_A-B-G-Gymnasiou_html-apli/",
+            "retrievedAt": "2026-02-25T13:00:00Z",
+            "bibtex": "@book{chatzisavvidis2011grammatiki,\n  title={Grammatiki Neas Ellinikis Glossas (A-B-G Gymnasiou)},\n  author={Chatzisavvidis, S. and Chatzisavvidou, A.},\n  publisher={OEKB},\n  year={2011}\n}"
+        }
+    },
+    "mappings": {
+        "ΟΥΣ": "ML_POS_NOUN",
+        "ΕΠΙΘ": "ML_POS_ADJECTIVE",
+        "ΡΗΜ": "ML_POS_VERB",
+        "ΕΠΙΡ": "ML_POS_ADVERB",
+        "ΑΝΤ": "ML_POS_PRONOUN",
+        "ΑΡΘ": "ML_POS_ARTICLE",
+        "ΜΕΤ": "ML_POS_PARTICIPLE",
+        "ΠΡΟΘ": "ML_POS_PREPOSITION",
+        "ΣΥΝΔ": "ML_POS_CONJUNCTION",
+        "ΕΠΙΦ": "ML_POS_INTERJECTION",
+        "Αρσ": "ML_MORPH_VALUE_GENDER_MASCULINE",
+        "Θηλ": "ML_MORPH_VALUE_GENDER_FEMININE",
+        "Ουδ": "ML_MORPH_VALUE_GENDER_NEUTER",
+        "Εν": "ML_MORPH_VALUE_NUMBER_SINGULAR",
+        "Πληθ": "ML_MORPH_VALUE_NUMBER_PLURAL",
+        "Ονομ": "ML_MORPH_VALUE_CASE_NOMINATIVE",
+        "Γεν": "ML_MORPH_VALUE_CASE_GENITIVE",
+        "Αιτ": "ML_MORPH_VALUE_CASE_ACCUSATIVE",
+        "Κλητ": "ML_MORPH_VALUE_CASE_VOCATIVE"
+    }
+}

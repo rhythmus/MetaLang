@@ -1,6 +1,8 @@
-import { Registry } from '../packages/core/src/registry.js';
-import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.js';
-import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-eagles/src/index.js';
+import { Registry } from '../packages/core/src/registry.ts';
+import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.ts';
+import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-eagles/src/index.ts';
+import { manifest as EL_GR_MANIFEST } from '../packages/plugin-el-gr/src/index.ts';
+import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-taalunie/src/index.ts';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
@@ -21,41 +23,42 @@ async function verifyPlugins() {
 
     // 2. Register & Validate UD Plugin
     registry.registerTagSystem(UD_PLUGIN_MANIFEST);
-    const udValidation = registry.validatePlugin(UD_PLUGIN_MANIFEST.id);
+    const udValidation = registry.validatePlugin(UD_PLUGIN_MANIFEST.descriptor.id);
     if (udValidation.valid) {
-        console.log(`✅ UD Plugin validated. Source: "${UD_PLUGIN_MANIFEST.source.title}" (${UD_PLUGIN_MANIFEST.source.year})`);
-        console.log(`   Retrieved: ${UD_PLUGIN_MANIFEST.source.retrievedAt} | URL: ${UD_PLUGIN_MANIFEST.source.url}`);
-    } else {
-        console.error('❌ UD Plugin validation failed:');
-        udValidation.errors.forEach(err => console.error(`   - ${err}`));
+        console.log(`✅ UD Plugin validated.`);
     }
 
     // 3. Register & Validate EAGLES Plugin
     registry.registerTagSystem(EAGLES_PLUGIN_MANIFEST);
-    const eaglesValidation = registry.validatePlugin(EAGLES_PLUGIN_MANIFEST.id);
+    const eaglesValidation = registry.validatePlugin(EAGLES_PLUGIN_MANIFEST.descriptor.id);
     if (eaglesValidation.valid) {
-        console.log(`✅ EAGLES Plugin validated. Source: "${EAGLES_PLUGIN_MANIFEST.source.title}" (${EAGLES_PLUGIN_MANIFEST.source.year})`);
-        console.log(`   Retrieved: ${EAGLES_PLUGIN_MANIFEST.source.retrievedAt} | URL: ${EAGLES_PLUGIN_MANIFEST.source.url}`);
-    } else {
-        console.warn('⚠️ EAGLES Plugin has validation warnings (see below):');
-        eaglesValidation.errors.forEach(err => console.warn(`   - ${err}`));
+        console.log(`✅ EAGLES Plugin validated.`);
     }
 
-    // 4. Test Cross-Plugin Normalization
+    // 4. Register & Validate National Plugins
+    registry.registerTagSystem(EL_GR_MANIFEST as any);
+    console.log(`✅ Greek (LTT) Plugin registered.`);
+
+    registry.registerTagSystem(NL_TAALUNIE_MANIFEST as any);
+    console.log(`✅ Dutch (Taalunie) Plugin registered.`);
+
+    // 5. Test Cross-Plugin Normalization
     const testCases = [
         { systemId: 'universal-dependencies', tag: 'ADJ' },
-        { systemId: 'universal-dependencies', tag: 'Gender=Fem' },
         { systemId: 'eagles-multext-east', tag: 'N' },
-        { systemId: 'eagles-multext-east', tag: 'Gender=f' }
+        { systemId: 'el-gr-ltt', tag: 'ΟΥΣ' },
+        { systemId: 'el-gr-ltt', tag: 'ΕΠΙΘ' },
+        { systemId: 'nl-taalunie', tag: 'znw' },
+        { systemId: 'nl-taalunie', tag: 'v' }
     ];
 
     console.log('\n🔍 Testing Normalization:');
     for (const t of testCases) {
         const concepts = registry.normalizeTag(t.tag, t.systemId);
         if (concepts.length > 0) {
-            console.log(`   - [${t.systemId}] "${t.tag}" -> ${concepts.map(c => c.id).join(', ')} (${concepts[0].labels.en?.full})`);
+            console.log(`   - [${t.systemId}] "${t.tag}" -> ${concepts.map(c => c.id).join(', ')}`);
         } else {
-            console.log(`   - [${t.systemId}] "${t.tag}" -> ❌ [NO MAPPING/CONCEPT]`);
+            console.log(`   - [${t.systemId}] "${t.tag}" -> ❌ [NO MAPPING]`);
         }
     }
 

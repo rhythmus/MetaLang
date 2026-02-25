@@ -1,0 +1,39 @@
+{
+    "descriptor": {
+        "id": "nl-taalunie",
+        "name": "Dutch Taalunie (ANS-based standards)",
+        "language": "nl",
+        "scope": "national",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value"
+        ],
+        "publisher": "Nederlandse Taalunie",
+        "authoritative": true,
+        "source": {
+            "title": "Algemene Nederlandse Spraakkunst (ANS)",
+            "author": "Haeseryn, W.; Romijn, K.; Geerts, G.; de Rooij, J.; van den Toorn, M.C.",
+            "year": 1997,
+            "url": "https://ans.ivdnt.org/contents",
+            "retrievedAt": "2026-02-25T13:00:00Z",
+            "bibtex": "@book{haeseryn1997algemene,\n  title={Algemene Nederlandse spraakkunst},\n  author={Haeseryn, Walter and Romijn, Kirsten and Geerts, Guido and De Rooij, Jaap and Van den Toorn, Maarten Cornelis},\n  year={1997},\n  publisher={Wolters-Noordhoff}\n}"
+        }
+    },
+    "mappings": {
+        "znw": "ML_POS_NOUN",
+        "bnw": "ML_POS_ADJECTIVE",
+        "ww": "ML_POS_VERB",
+        "bijw": "ML_POS_ADVERB",
+        "vnw": "ML_POS_PRONOUN",
+        "vw": "ML_POS_CONJUNCTION",
+        "vz": "ML_POS_PREPOSITION",
+        "lidw": "ML_POS_ARTICLE",
+        "tw": "ML_POS_NUMERAL",
+        "m": "ML_MORPH_VALUE_GENDER_MASCULINE",
+        "v": "ML_MORPH_VALUE_GENDER_FEMININE",
+        "o": "ML_MORPH_VALUE_GENDER_NEUTER",
+        "ev": "ML_MORPH_VALUE_NUMBER_SINGULAR",
+        "mv": "ML_MORPH_VALUE_NUMBER_PLURAL"
+    }
+}
