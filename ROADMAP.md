@@ -16,11 +16,11 @@ This document outlines the staged implementation plan for the MetaLang project. 
 - [x] **Hierarchy Support**: Implement graph walking (parents, children) across domains.
 - [x] **TypeScript Types**: Generate and export robust types for the entire ontology in `@metalang/schema`.
 
-## Stage 2: Plugin Ecosystem
+## Stage 2: Plugin Ecosystem ✅
 **Goal**: Bridge MetaLang with global standards.
-- [ ] **Standard Plugins**: Implement `@metalang/plugin-ud` (Universal Dependencies) and `@metalang/plugin-eagles`.
-- [ ] **Multi-mapping**: Support mapping a single external tag to multiple canonical concepts.
-- [ ] **Test Suite**: Establish "Golden Tests" ensuring standard tags resolve to expected GUIDs.
+- [x] **Standard Plugins**: Implement `@metalang/plugin-ud` (Universal Dependencies) and `@metalang/plugin-eagles`.
+- [x] **Multi-mapping**: Support mapping a single external tag to multiple canonical concepts.
+- [x] **Test Suite**: Establish "Golden Tests" ensuring standard tags resolve to expected GUIDs and structured bibliographic metadata.
 
 ## Stage 3: Authoring GUI (`packages/gui`)
 **Goal**: A React-based tool for non-dev contributors to maintain the ontology.

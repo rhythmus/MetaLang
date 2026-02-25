@@ -1,0 +1,52 @@
+# MetaLang Implementation Walkthrough
+
+We have successfully established the MetaLang monorepo foundation and implemented the core engine for cross-linguistic terminology alignment.
+
+## 🏗️ Monorepo Structure
+
+Developed as a `pnpm` monorepo with scoped packages:
+
+- **[@metalang/schema](file:///Users/woutersoudan/Desktop/metalang/packages/schema)**: Core TypeScript interfaces and JSON Schemas defining the ontology.
+- **[@metalang/core](file:///Users/woutersoudan/Desktop/metalang/packages/core)**: The central registry and normalization engine.
+- **[@metalang/plugin-ud](file:///Users/woutersoudan/Desktop/metalang/packages/plugin-ud)**: Universal Dependencies mapping provider.
+
+## 🚀 Key Features
+
+### 1. Canonical Registry
+The [Registry](file:///Users/woutersoudan/Desktop/metalang/packages/core/src/registry.ts#3-67) class handles seed data loading and plugin registration, providing a stable pivot point for all linguistic tags.
+
+```typescript
+import { Registry } from '@metalang/core';
+const registry = new Registry();
+registry.loadSeed(seedData);
+registry.registerTagSystem(udPlugin);
+```
+
+### 2. Tag Normalization
+External tags (like `ADJ` from UD) are successfully mapped to canonical MetaLang GUIDs with full multilingual support.
+
+### 3. Hierarchical Graph support
+Supports walking the ontology DAG (Direct Acyclic Graph) to resolve parent-child relationships between concepts.
+
+## ✅ Verification Results
+
+The implementation was verified using a standalone ESM script that successfully linked the monorepo packages.
+
+```
+--- MetaLang Verification ---
+✅ Seed data loaded.
+✅ UD Plugin registered.
+✅ Successfully normalized "ADJ" to:
+   - ID: ML_POS_ADJECTIVE
+   - Domain: pos
+   - Labels (en): adjective
+
+🔍 Checking parents for ML_CUSTOM_ART_DEF:
+   - Parent: ML_CUSTOM_ART ((grammatical) article)
+----------------------------
+```
+
+## 🛠️ Performance & Best Practices
+- **ESM Native**: All packages use native ESM with standard `type: module`.
+- **Referential Integrity**: Schemas ensure all concepts have mandatory metadata and stable IDs.
+- **Plugin Arch**: Decoupled tag systems allow for easy expansion to other standards (EAGLES, national school grammars).

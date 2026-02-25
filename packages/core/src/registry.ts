@@ -1,4 +1,4 @@
-import type { Concept, PluginManifest, SeedFile } from '@metalang/schema';
+import type { Concept, Domain, PluginManifest, SeedFile } from '@metalang/schema';
 
 export interface ValidationResult {
     valid: boolean;
@@ -7,12 +7,18 @@ export interface ValidationResult {
 
 export class Registry {
     private concepts: Map<string, Concept> = new Map();
+    private domains: Map<string, Domain> = new Map();
     private tagSystems: Map<string, PluginManifest> = new Map();
 
     /**
-     * Load concepts from a seed file.
+     * Load concepts and domains from a seed file.
      */
     public loadSeed(seed: SeedFile): void {
+        if (seed.domains) {
+            for (const domain of seed.domains) {
+                this.domains.set(domain.id, domain);
+            }
+        }
         for (const concept of seed.concepts) {
             this.concepts.set(concept.id, concept);
         }
@@ -51,8 +57,22 @@ export class Registry {
     }
 
     /**
-     * Get a concept by its GUID.
+   * List all loaded concepts.
+   */
+    public listConcepts(): Concept[] {
+        return Array.from(this.concepts.values());
+    }
+
+    /**
+     * List all registered domains.
      */
+    public listDomains(): Domain[] {
+        return Array.from(this.domains.values());
+    }
+
+    /**
+     * Get a concept by its GUID.
+       */
     public getConcept(id: string): Concept | undefined {
         return this.concepts.get(id);
     }

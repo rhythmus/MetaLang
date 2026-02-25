@@ -1,0 +1,73 @@
+MetaLang is a cross-linguistic terminology alignment layer designed to bridge disparate linguistic standards (UD, EAGLES, etc.) through a canonical ontology of metalinguistic concepts. It operates at the **L2-L3** level of the lexicographic model, serving as an interoperability spine.
+
+## User Review Required
+
+> [!IMPORTANT]
+> This plan focuses on **Stage 0 (Foundation)** and **Stage 1 (Core Engine)** as defined in the roadmap.
+> We need to decide on the definitive GUID format for concepts (currently using `ML_CUSTOM_*`).
+
+> [!NOTE]
+> We will use `pnpm` for monorepo management. Ensure `pnpm` is installed on your system.
+
+## Proposed Changes
+
+---
+
+### [Component] Monorepo Foundation
+Establish the workspace structure and configuration.
+
+#### [MODIFY] [package.json](file:///Users/woutersoudan/Desktop/metalang/package.json)
+Initialize the root `package.json` with `workspaces` and basic dev dependencies (`typescript`, `pnpm`).
+
+#### [NEW] [pnpm-workspace.yaml](file:///Users/woutersoudan/Desktop/metalang/pnpm-workspace.yaml)
+Define the workspace members: `packages/*`.
+
+---
+
+### [Component] Schema Definition (`packages/schema`)
+Formalize the data model to ensure referential integrity, adhering to the **Concept/Label Separation** principle.
+
+#### [NEW] [index.ts](file:///Users/woutersoudan/Desktop/metalang/packages/schema/src/index.ts)
+Export TypeScript interfaces for:
+- `Concept`: ID (ASCII-only, ALL_CAPS), Domain, Labels (locale-keyed: `full`, `abbr`), ExternalRefs, SystemMappings, Parents (DAG support).
+- `Domain`: Enumeration of valid taxonomies (POS, morph_feature, morph_value, syntactic_relation, etc.).
+- `SeedFile`: Metadata + Array of Concepts.
+- `PluginManifest`: Name, Version, Mappings.
+
+#### [NEW] [concept.schema.json](file:///Users/woutersoudan/Desktop/metalang/packages/schema/schemas/concept.schema.json)
+JSON Schema for validating `data/` files.
+
+---
+
+### [Component] Core Engine (`packages/core`)
+The runtime library for interacting with the ontology.
+
+#### [NEW] [registry.ts](file:///Users/woutersoudan/Desktop/metalang/packages/core/src/registry.ts)
+Logic to load seed data and plugins into an in-memory graph.
+
+#### [NEW] [normalization.ts](file:///Users/woutersoudan/Desktop/metalang/packages/core/src/normalization.ts)
+The `normalizeTag(tag, system)` function.
+- Input: `"ADJ"`, `"universal-dependencies"`
+- Output: `ML_CUSTOM_ADJ` object.
+
+---
+
+### [Component] Data Alignment
+Clean up and organize the seed data.
+
+#### [MODIFY] [metalang_seed_v1_1.json](file:///Users/woutersoudan/Desktop/metalang/data/metalang_seed_v1_1.json)
+Ensure all concepts have a valid `domain` from the defined taxonomy.
+
+---
+
+## Verification Plan
+
+### Automated Tests
+- **Schema Validation**: Run `ajv` (or similar) against `data/*.json` using the new schemas.
+- **Unit Tests**:
+  - `registry.test.ts`: Test loading multiple plugins and resolving conflicts.
+  - `normalization.test.ts`: Test mapping known UD/EAGLES tags to MetaLang GUIDs.
+
+### Manual Verification
+- Inspect the generated TypeScript types to ensure they match the anticipated ontology structure.
+- Run a "Dry Run" of the normalization API with a sample Greek text tagset.
