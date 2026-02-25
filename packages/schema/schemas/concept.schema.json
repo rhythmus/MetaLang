@@ -1,0 +1,92 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "MetaLang Concept",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^ML_[A-Z_]+$"
+        },
+        "domain": {
+            "type": "string",
+            "enum": [
+                "pos",
+                "morph_feature",
+                "morph_value",
+                "syntactic_relation",
+                "semantic_relation",
+                "semantic_class",
+                "register",
+                "field",
+                "geo",
+                "language_label",
+                "lex_struct",
+                "derivation",
+                "etymology",
+                "phonology",
+                "discourse",
+                "orthography",
+                "editorial",
+                "other"
+            ]
+        },
+        "labels": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "full": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "abbreviation": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "required": [
+                    "full",
+                    "abbreviation"
+                ]
+            }
+        },
+        "externalRefs": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            }
+        },
+        "systemMappings": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        },
+        "parents": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "sources": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "id",
+        "domain",
+        "labels",
+        "externalRefs",
+        "systemMappings"
+    ]
+}
