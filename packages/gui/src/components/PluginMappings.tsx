@@ -64,41 +64,66 @@ export const PluginMappings: React.FC<PluginMappingsProps> = ({ manifests, conce
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">System</th>
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">Source Tag</th>
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">MetaLang GUID</th>
+                                <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">Source Info</th>
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500 text-center">Status</th>
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-white/5">
-                            {filteredMappings.map((row, i) => (
-                                <tr key={`${row.system}-${row.tag}-${i}`} className="hover:bg-white/5 transition-colors group">
-                                    <td className="px-6 py-4">
-                                        <span className="text-xs font-medium text-slate-300">{row.system}</span>
-                                    </td>
-                                    <td className="px-6 py-4">
-                                        <code className="text-xs px-2 py-1 rounded bg-white/5 text-blue-300 font-mono">
-                                            {row.tag}
-                                        </code>
-                                    </td>
-                                    <td className="px-6 py-4">
-                                        <div className="flex items-center gap-2">
-                                            <span className="font-mono text-[11px] text-slate-400">{row.guid}</span>
-                                            <ExternalLink size={10} className="opacity-0 group-hover:opacity-40 transition-opacity cursor-pointer" />
-                                        </div>
-                                    </td>
-                                    <td className="px-6 py-4">
-                                        <div className="flex justify-center">
-                                            {row.exists ? (
-                                                <div title="Valid Mapping" className="text-emerald-400">
-                                                    <ShieldCheck size={16} />
+                            {filteredMappings.map((row, i) => {
+                                const manifest = manifests.find(m => m.descriptor.name === row.system);
+                                const source = manifest?.descriptor.source;
+
+                                return (
+                                    <tr key={`${row.system}-${row.tag}-${i}`} className="hover:bg-white/5 transition-colors group">
+                                        <td className="px-6 py-4">
+                                            <span className="text-xs font-medium text-slate-300">{row.system}</span>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <code className="text-xs px-2 py-1 rounded bg-white/5 text-blue-300 font-mono">
+                                                {row.tag}
+                                            </code>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="flex items-center gap-2">
+                                                <span className="font-mono text-[11px] text-slate-400">{row.guid}</span>
+                                                <ExternalLink size={10} className="opacity-0 group-hover:opacity-40 transition-opacity cursor-pointer" />
+                                            </div>
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            {source ? (
+                                                <div className="flex flex-col gap-1 max-w-xs">
+                                                    <span className="text-[10px] text-slate-300 font-medium truncate" title={source.title}>
+                                                        {source.title}
+                                                    </span>
+                                                    <a
+                                                        href={source.url}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-[9px] text-blue-400 flex items-center gap-1 hover:underline"
+                                                    >
+                                                        Source Link <ExternalLink size={8} />
+                                                    </a>
                                                 </div>
                                             ) : (
-                                                <div title="Broken Link (Concept missing)" className="text-rose-400">
-                                                    <ShieldAlert size={16} />
-                                                </div>
+                                                <span className="text-[10px] text-slate-600 italic">No source info</span>
                                             )}
-                                        </div>
-                                    </td>
-                                </tr>
-                            ))}
+                                        </td>
+                                        <td className="px-6 py-4">
+                                            <div className="flex justify-center">
+                                                {row.exists ? (
+                                                    <div title="Valid Mapping" className="text-emerald-400">
+                                                        <ShieldCheck size={16} />
+                                                    </div>
+                                                ) : (
+                                                    <div title="Broken Link (Concept missing)" className="text-rose-400">
+                                                        <ShieldAlert size={16} />
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                );
+                            })}
                         </tbody>
                     </table>
                 </div>

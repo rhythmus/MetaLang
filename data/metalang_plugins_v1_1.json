@@ -118,7 +118,7 @@
       "translit": "ML_CUSTOM_TRANSLIT",
       "v": "ML_POS_VERB",
       "v.aux": "ML_CUSTOM_V_AUX",
-      "v.gr": "ML_CUSTOM_V_GR",
+      "v.gr": "ML_POS_VERB",
       "v.ptcp": "ML_CUSTOM_V_PTCP",
       "voc": "ML_MORPH_VALUE_CASE_VOCATIVE",
       "♀": "ML_MORPH_VALUE_GENDER_FEMININE",
@@ -465,6 +465,171 @@
       "Zwits.": [
         "ML_GEO_ZWITSERLAND_ZWITSERS"
       ]
+    }
+  },
+  {
+    "descriptor": {
+      "id": "universal-dependencies",
+      "name": "Universal Dependencies (UD)",
+      "version": "2.1.0",
+      "source": {
+        "title": "Universal Dependencies v2: An Evergrowing Multilingual Treebank Collection",
+        "author": "Nivre, Joakim; de Marneffe, Marie-Catherine; Ginter, Filip; Hajic, Jan; Manning, Christopher D.; Pyysalo, Sampo; Sarkar, Anoop; Tyers, Francis M.; Zeman, Daniel",
+        "year": 2020,
+        "url": "https://universaldependencies.org/u/pos/",
+        "retrievedAt": "2026-02-25T12:00:00Z",
+        "bibtex": "@inproceedings{nivre2020universal,\n  title={Universal Dependencies v2: An Evergrowing Multilingual Treebank Collection},\n  author={Nivre, Joakim and de Marneffe, Marie-Catherine and Ginter, Filip and Hajic, Jan and Manning, Christopher D and Pyysalo, Sampo and Sarkar, Anoop and Tyers, Francis M and Zeman, Daniel},\n  booktitle={Proceedings of the 12th Language Resources and Evaluation Conference},\n  pages={4034--4043},\n  year={2020}\n}"
+      }
+    },
+    "mappings": {
+      "ADJ": [
+        "ML_POS_ADJECTIVE"
+      ],
+      "ADP": [
+        "ML_POS_ADP"
+      ],
+      "ADV": [
+        "ML_POS_ADVERB"
+      ],
+      "AUX": [
+        "ML_POS_V_AUX"
+      ],
+      "CCONJ": [
+        "ML_POS_CONJ_COORD"
+      ],
+      "DET": [
+        "ML_POS_DET"
+      ],
+      "INTJ": [
+        "ML_POS_INTERJ"
+      ],
+      "NOUN": [
+        "ML_POS_NOUN"
+      ],
+      "NUM": [
+        "ML_POS_NUMERAL"
+      ],
+      "PART": [
+        "ML_POS_PTCL"
+      ],
+      "PRON": [
+        "ML_POS_PRON"
+      ],
+      "PROPN": [
+        "ML_POS_NOUN_PROP"
+      ],
+      "PUNCT": [
+        "ML_POS_PUNCT"
+      ],
+      "SCONJ": [
+        "ML_POS_CONJ_SUB"
+      ],
+      "SYM": [
+        "ML_POS_SYMB"
+      ],
+      "VERB": [
+        "ML_POS_VERB"
+      ],
+      "X": [
+        "ML_POS_X"
+      ]
+    }
+  },
+  {
+    "descriptor": {
+      "id": "eagles-multext-east",
+      "name": "EAGLES / MULTEXT-East",
+      "version": "4.0.0",
+      "source": {
+        "title": "MULTEXT-East: morphosyntactic resources for Central and Eastern European languages",
+        "author": "Erjavec, Tomaž",
+        "year": 2012,
+        "url": "http://nl.ijs.si/ME/V4/msd/html/",
+        "retrievedAt": "2026-02-25T12:00:00Z",
+        "bibtex": "@article{erjavec2012multext,\n  title={MULTEXT-East: morphosyntactic resources for Central and Eastern European languages},\n  author={Erjavec, Toma{\\v{z}}},\n  journal={Language Resources and Evaluation},\n  volume={46},\n  number={1},\n  pages={131--142},\n  year={2012},\n  publisher={Springer}\n}"
+      }
+    },
+    "mappings": {
+      "N": [
+        "ML_POS_NOUN"
+      ],
+      "V": [
+        "ML_POS_VERB"
+      ],
+      "A": [
+        "ML_POS_ADJECTIVE"
+      ]
+    }
+  },
+  {
+    "descriptor": {
+      "id": "el-gr-ltt",
+      "name": "Greek National Standard (LTT school grammar)",
+      "language": "el",
+      "scope": "national",
+      "authoritative": true,
+      "source": {
+        "title": "Γραμματική Νέας Ελληνικής Γλώσσας (Α-Β-Γ Γυμνασίου)",
+        "author": "Χατζησαββίδης Σ., Χατζησαββίδου Α.",
+        "year": 2011,
+        "url": "http://ebooks.edu.gr/ebooks/v/html/8547/2332/Grammatiki-Neas-Ellinikis-Glossas_A-B-G-Gymnasiou_html-apli/",
+        "retrievedAt": "2026-02-25T13:00:00Z",
+        "bibtex": "@book{chatzisavvidis2011grammatiki,\n  title={Grammatiki Neas Ellinikis Glossas (A-B-G Gymnasiou)},\n  author={Chatzisavvidis, S. and Chatzisavvidou, A.},\n  publisher={OEKB},\n  year={2011}\n}"
+      }
+    },
+    "mappings": {
+      "ΟΥΣ": "ML_POS_NOUN",
+      "ΕΠΙΘ": "ML_POS_ADJECTIVE",
+      "ΡΗΜ": "ML_POS_VERB",
+      "ΕΠΙΡ": "ML_POS_ADVERB",
+      "ΑΝΤ": "ML_POS_PRONOUN",
+      "ΑΡΘ": "ML_POS_ARTICLE",
+      "ΜΕΤ": "ML_POS_PARTICIPLE",
+      "ΠΡΟΘ": "ML_POS_PREPOSITION",
+      "ΣΥΝΔ": "ML_POS_CONJUNCTION",
+      "ΕΠΙΦ": "ML_POS_INTERJECTION",
+      "Αρσ": "ML_MORPH_VALUE_GENDER_MASCULINE",
+      "Θηλ": "ML_MORPH_VALUE_GENDER_FEMININE",
+      "Ουδ": "ML_MORPH_VALUE_GENDER_NEUTER",
+      "Εν": "ML_MORPH_VALUE_NUMBER_SINGULAR",
+      "Πληθ": "ML_MORPH_VALUE_NUMBER_PLURAL",
+      "Ονομ": "ML_MORPH_VALUE_CASE_NOMINATIVE",
+      "Γεν": "ML_MORPH_VALUE_CASE_GENITIVE",
+      "Αιτ": "ML_MORPH_VALUE_CASE_ACCUSATIVE",
+      "Κλητ": "ML_MORPH_VALUE_CASE_VOCATIVE"
+    }
+  },
+  {
+    "descriptor": {
+      "id": "nl-taalunie",
+      "name": "Dutch Taalunie (ANS-based standards)",
+      "language": "nl",
+      "scope": "national",
+      "authoritative": true,
+      "source": {
+        "title": "Algemene Nederlandse Spraakkunst (ANS)",
+        "author": "Haeseryn, W.; Romijn, K.; Geerts, G.; de Rooij, J.; van den Toorn, M.C.",
+        "year": 1997,
+        "url": "https://ans.ivdnt.org/contents",
+        "retrievedAt": "2026-02-25T13:00:00Z",
+        "bibtex": "@book{haeseryn1997algemene,\n  title={Algemene Nederlandse spraakkunst},\n  author={Haeseryn, Walter and Romijn, Kirsten and Geerts, Guido and De Rooij, Jaap and Van den Toorn, Maarten Cornelis},\n  year={1997},\n  publisher={Wolters-Noordhoff}\n}"
+      }
+    },
+    "mappings": {
+      "znw": "ML_POS_NOUN",
+      "bnw": "ML_POS_ADJECTIVE",
+      "ww": "ML_POS_VERB",
+      "bijw": "ML_POS_ADVERB",
+      "vnw": "ML_POS_PRONOUN",
+      "vw": "ML_POS_CONJUNCTION",
+      "vz": "ML_POS_PREPOSITION",
+      "lidw": "ML_POS_ARTICLE",
+      "tw": "ML_POS_NUMERAL",
+      "m": "ML_MORPH_VALUE_GENDER_MASCULINE",
+      "v": "ML_MORPH_VALUE_GENDER_FEMININE",
+      "o": "ML_MORPH_VALUE_GENDER_NEUTER",
+      "ev": "ML_MORPH_VALUE_NUMBER_SINGULAR",
+      "mv": "ML_MORPH_VALUE_NUMBER_PLURAL"
     }
   }
 ]
