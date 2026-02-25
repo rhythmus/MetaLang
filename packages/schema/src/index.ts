@@ -103,11 +103,17 @@ export interface BibliographicSource {
 }
 
 export interface PluginManifest {
-  id: string;
-  name: string;
-  version: string;
-  source: BibliographicSource;
+  descriptor: {
+    id: string;
+    name: string;
+    version?: string;
+    language?: string;
+    scope?: string;
+    domains?: string[];
+    publisher?: string;
+    authoritative?: boolean;
+  };
   mappings: {
-    [externalTag: string]: string[]; // maps to concept IDs
+    [externalTag: string]: string | string[]; // maps to concept IDs
   };
 }

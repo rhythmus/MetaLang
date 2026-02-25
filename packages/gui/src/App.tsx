@@ -1,24 +1,34 @@
-import React, { useState, useMemo } from 'react';
-import { LayoutGrid, Binary, Info, Settings, Search, GitBranch } from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { LayoutGrid, Binary, Settings as SettingsIcon, Search, GitBranch, HelpCircle } from 'lucide-react';
 import { Registry } from '@metalang/core';
 import type { Concept } from '@metalang/schema';
 import seedData from '../../../data/metalang_seed_v1_1.json';
+import pluginData from '../../../data/metalang_plugins_v1_1.json';
 import { Workspace } from './components/Workspace';
 import { Inspector } from './components/Inspector';
 import { ExportPanel } from './components/ExportPanel';
 import { DomainGraph } from './components/DomainGraph';
+import { PluginMappings } from './components/PluginMappings';
+import { Settings } from './components/Settings';
+import { Help } from './components/Help';
 import './index.css';
+
+type ViewMode = 'workspace' | 'graph' | 'plugins' | 'settings' | 'help';
 
 export const App: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedConceptId, setSelectedConceptId] = useState<string | null>(null);
   const [modifiedConcepts, setModifiedConcepts] = useState<Map<string, Concept>>(new Map());
   const [isExporting, setIsExporting] = useState(false);
-  const [activeView, setActiveView] = useState<'workspace' | 'graph'>('workspace');
+  const [activeView, setActiveView] = useState<ViewMode>('workspace');
 
   const [registry] = useState(() => {
     const r = new Registry();
     r.loadSeed(seedData as any);
+    // Load plugins
+    if (Array.isArray(pluginData)) {
+      pluginData.forEach(p => r.registerTagSystem(p as any));
+    }
     return r;
   });
 
@@ -39,6 +49,26 @@ export const App: React.FC = () => {
     });
   };
 
+  const handleResetWorkspace = () => {
+    setModifiedConcepts(new Map());
+  };
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        document.querySelector<HTMLInputElement>('.search-input')?.focus();
+      }
+      if (e.key === 'Escape') {
+        setSelectedConceptId(null);
+        setIsExporting(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="app-container">
       {/* Sidebar */}
@@ -51,35 +81,39 @@ export const App: React.FC = () => {
         </div>
 
         <nav className="flex-1 px-4 space-y-1">
-          <div
-            className={`sidebar-link ${activeView === 'workspace' ? 'active' : ''}`}
+          <SidebarLink
+            active={activeView === 'workspace'}
             onClick={() => setActiveView('workspace')}
-          >
-            <LayoutGrid size={18} />
-            <span>Workspace</span>
-          </div>
-          <div
-            className={`sidebar-link ${activeView === 'graph' ? 'active' : ''}`}
+            icon={<LayoutGrid size={18} />}
+            label="Workspace"
+          />
+          <SidebarLink
+            active={activeView === 'graph'}
             onClick={() => setActiveView('graph')}
-          >
-            <GitBranch size={18} />
-            <span>Domain Graph</span>
-          </div>
-          <div className="sidebar-link">
-            <Binary size={18} />
-            <span>Plugin Mappings</span>
-          </div>
-          <div className="sidebar-link">
-            <Settings size={18} />
-            <span>Settings</span>
-          </div>
+            icon={<GitBranch size={18} />}
+            label="Domain Graph"
+          />
+          <SidebarLink
+            active={activeView === 'plugins'}
+            onClick={() => setActiveView('plugins')}
+            icon={<Binary size={18} />}
+            label="Plugin Mappings"
+          />
+          <SidebarLink
+            active={activeView === 'settings'}
+            onClick={() => setActiveView('settings')}
+            icon={<SettingsIcon size={18} />}
+            label="Settings"
+          />
         </nav>
 
         <div className="p-4" style={{ borderTop: '1px solid var(--border-glass)' }}>
-          <div className="sidebar-link">
-            <Info size={18} />
-            <span>Help & Docs</span>
-          </div>
+          <SidebarLink
+            active={activeView === 'help'}
+            onClick={() => setActiveView('help')}
+            icon={<HelpCircle size={18} />}
+            label="Help & Docs"
+          />
         </div>
       </aside>
 
@@ -116,36 +150,58 @@ export const App: React.FC = () => {
               <div className="flex items-end justify-between" style={{ marginBottom: '2rem' }}>
                 <div>
                   <h1 className="text-3xl font-bold mb-2">
-                    {activeView === 'workspace' ? 'Concept Workspace' : 'Domain Hierarchy'}
+                    {activeView === 'workspace' && 'Concept Workspace'}
+                    {activeView === 'graph' && 'Domain Hierarchy'}
+                    {activeView === 'plugins' && 'Plugin Mappings'}
+                    {activeView === 'settings' && 'System Settings'}
+                    {activeView === 'help' && 'Documentation'}
                   </h1>
                   <p style={{ color: 'var(--text-secondary)' }}>
-                    {activeView === 'workspace'
-                      ? 'Manage your canonical ontology and cross-standard mappings.'
-                      : 'Visualize the hierarchical structure of linguistic domains.'}
+                    {activeView === 'workspace' && 'Manage your canonical ontology and cross-standard mappings.'}
+                    {activeView === 'graph' && 'Visualize the hierarchical structure of linguistic domains.'}
+                    {activeView === 'plugins' && 'Inspect cross-standard tag resolutions.'}
+                    {activeView === 'settings' && 'Configure registry and workspace preferences.'}
+                    {activeView === 'help' && 'Learn how to use the MetaLang authoring system.'}
                   </p>
                 </div>
-                {modifiedConcepts.size > 0 && (
-                  <div style={{ fontSize: '0.75rem', color: 'var(--accent-cyan)', background: 'rgba(6, 182, 212, 0.1)', padding: '4px 12px', borderRadius: '40px', border: '1px solid rgba(6, 182, 212, 0.2)' }}>
-                    {modifiedConcepts.size} modified
-                  </div>
-                )}
                 <div style={{ fontSize: '0.75rem', fontFamily: 'monospace', color: 'var(--text-muted)', background: 'var(--border-glass)', padding: '4px 12px', borderRadius: '40px' }}>
                   v1.1.0-alpha
                 </div>
               </div>
 
-              {activeView === 'workspace' ? (
+              {activeView === 'workspace' && (
                 <Workspace
                   concepts={concepts}
                   searchTerm={searchTerm}
                   onSelectConcept={setSelectedConceptId}
                   selectedId={selectedConceptId}
                 />
-              ) : (
+              )}
+              {activeView === 'graph' && (
                 <DomainGraph
                   domains={registry.listDomains()}
                   concepts={concepts}
                 />
+              )}
+              {activeView === 'plugins' && (
+                <PluginMappings
+                  manifests={registry.listTagSystems()}
+                  concepts={concepts}
+                />
+              )}
+              {activeView === 'settings' && (
+                <Settings
+                  stats={{
+                    concepts: registry.listConcepts().length,
+                    domains: registry.listDomains().length,
+                    plugins: registry.listTagSystems().length,
+                    modified: modifiedConcepts.size
+                  }}
+                  onReset={handleResetWorkspace}
+                />
+              )}
+              {activeView === 'help' && (
+                <Help />
               )}
             </div>
           </section>
@@ -170,5 +226,15 @@ export const App: React.FC = () => {
     </div>
   );
 };
+
+const SidebarLink = ({ active, onClick, icon, label }: { active: boolean, onClick: () => void, icon: React.ReactNode, label: string }) => (
+  <div
+    className={`sidebar-link ${active ? 'active' : ''}`}
+    onClick={onClick}
+  >
+    {icon}
+    <span>{label}</span>
+  </div>
+);
 
 export default App;

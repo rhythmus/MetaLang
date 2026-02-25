@@ -28,7 +28,7 @@ export class Registry {
      * Register an external tag system (plugin).
      */
     public registerTagSystem(manifest: PluginManifest): void {
-        this.tagSystems.set(manifest.id, manifest);
+        this.tagSystems.set(manifest.descriptor.id, manifest);
     }
 
     /**
@@ -115,7 +115,8 @@ export class Registry {
     public resolveTag(tag: string, systemId: string): string[] {
         const system = this.tagSystems.get(systemId);
         if (!system) return [];
-        return system.mappings[tag] || [];
+        const result = system.mappings[tag] || [];
+        return Array.isArray(result) ? result : [result];
     }
 
     /**
