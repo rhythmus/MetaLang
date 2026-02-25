@@ -22,19 +22,20 @@ This document outlines the staged implementation plan for the MetaLang project. 
 - [x] **Multi-mapping**: Support mapping a single external tag to multiple canonical concepts.
 - [x] **Test Suite**: Establish "Golden Tests" ensuring standard tags resolve to expected GUIDs and structured bibliographic metadata.
 
-## Stage 3: Authoring GUI (`packages/gui`)
+## Stage 3: Authoring GUI (`packages/gui`) ✅
 **Goal**: A React-based tool for non-dev contributors to maintain the ontology.
-- [ ] **Workspace Panel**: Grid/table view for browsing concepts with advanced filtering.
-- [ ] **Inspector Panel**: Detail view for editing labels, GUIDs, and external references.
-- [ ] **Patch Export**: Implement a "Change Set" model that exports JSON patches for PRs.
-- [ ] **Graph Visualization**: Simple DAG view of domain hierarchies.
+- [x] **Workspace Panel**: Grid/table view for browsing concepts with advanced filtering.
+- [x] **Inspector Panel**: Detail view for editing labels and external references.
+- [x] **Patch Export**: Real-time change tracking with JSON Patch (RFC 6902) export.
+- [x] **Graph Visualization**: Hierarchical SVG view of domain taxonomies.
+- [x] **Plugin & Settings**: Views for inspecting tag mappings and system statistics.
 
-## Stage 4: Advanced Tooling & Governance
-**Goal**: Industrialize the ingestion and maintenance process.
-- [ ] **Wiktionary Ingestion**: CLI tool to harvest registers and POS terms from Wiktionary dump files.
-- [ ] **GitHub Integration**: Add "Commit to Branch" and "Create Pull Request" features directly from the GUI.
-- [ ] **Ambiguity UI**: Dedicated interface for resolving N-to-N mapping conflicts.
-- [ ] **Release Automation**: CI/CD pipeline for independent package versioning and publishing.
+## Stage 4: Interoperability & Expansion
+**Goal**: Industrialize ingestion and expand national standard support.
+- [x] **National Plugins**: Implement `@metalang/plugin-el-gr` and `@metalang/plugin-nl-taalunie`.
+- [ ] **Wiktionary Ingestion**: CLI tool to harvest registers and POS terms from Wiktionary.
+- [ ] **GitHub Integration**: PR creation flow directly from the GUI.
+- [ ] **Release Pipeline**: CI/CD for package versioning and deployment.
 
 ---
 **Development Instruction**: Proceed through these stages sequentially. Verify each stage with unit tests against the `data/` seed files before moving to the next.

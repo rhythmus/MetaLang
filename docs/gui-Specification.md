@@ -108,9 +108,9 @@ Acceptance criteria:
 
 ### 4.3 Tag System / Plugin Module
 
-4.3.1 Plugin registry view  
-4.3.2 Plugin descriptor editor  
-4.3.3 Mapping grid  
+4.3.1 Plugin registry view: Display overview of registered standards and their authoritative status.
+4.3.2 Plugin descriptor info: Explicitly surface bibliographic source information (author, year, URL) to the user.
+4.3.3 Mapping grid: Inspect resolve/normalization results with provenance context.
 4.3.4 Multi-concept mapping support  
 4.3.5 Ambiguity handling UI  
 4.3.6 Bulk mapping suggestions  

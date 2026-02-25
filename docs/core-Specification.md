@@ -93,7 +93,16 @@ To manage the increasing complexity of the project, the MetaLang specification h
 5.1 Plugin concept and design goals  
 5.2 Tag system descriptor schema
 
-- `id`, `name`, `language` (label language), `scope`, `domains`, `publisher`, `authoritative`, `website`, `version`
+The `PluginManifest` MUST include a `descriptor` object containing:
+- `id`: unique machine safe identifier.
+- `name`: human-readable name of the system.
+- `version`: (optional) version of the tag system.
+- `language`: (optional) primary language the tags belong to.
+- `scope`: `global`, `national`, `institutional`, or `project`.
+- `domains`: list of domains covered (e.g., `pos`, `morph_value`).
+- `publisher`: (optional) the entity maintaining the system.
+- `authoritative`: (optional) boolean indicating if this is an official standard.
+- `source`: (optional) `BibliographicSource` object for academic attribution.
 
 5.3 Plugin mapping schema
 
@@ -221,7 +230,9 @@ Implemented in the `Registry` class:
 ## 9. Ingestion Pipelines and Authoring Workflows
 
 9.1 Ingesting dictionary abbreviation lists (e.g., Van Dale / Wolters Kluwer / local scholars)  
-9.2 Provenance model (source attribution per mapping and concept)  
+9.2 Provenance model (source attribution per mapping and concept)
+
+MetaLang implements a **Linguistic Provenance Layer** at the plugin manifest level. Each plugin manifest MUST provide a `BibliographicSource` in its descriptor to ensure that every canonical mapping is traceable to its scholarly or institutional origin. This metadata includes title, author, year, URL, and BibTeX for standardized academic citation.
 9.3 Wiktionary glossary ingestion workflow
 
 - harvesting terms
