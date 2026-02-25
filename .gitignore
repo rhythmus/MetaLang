@@ -11,5 +11,5 @@ dist/
 *.tsbuildinfo
 
 # Brain
-.gemini/antigravity/brain/
-docs/AI agents chat history/*.resolved
+.gemini/
+docs/AI agents chat history/
