@@ -5,10 +5,25 @@ import { X, ExternalLink, GitBranch, Languages, ChevronRight } from 'lucide-reac
 interface InspectorProps {
     concept: Concept | null;
     onClose: () => void;
+    onUpdate: (concept: Concept) => void;
 }
 
-export const Inspector: React.FC<InspectorProps> = ({ concept, onClose }) => {
+export const Inspector: React.FC<InspectorProps> = ({ concept, onClose, onUpdate }) => {
     if (!concept) return null;
+
+    const handleLabelChange = (lang: string, field: 'full' | 'abbreviation', value: string) => {
+        const updatedConcept = {
+            ...concept,
+            labels: {
+                ...concept.labels,
+                [lang]: {
+                    ...(concept.labels[lang] || { full: '', abbreviation: '' }),
+                    [field]: value || null
+                }
+            }
+        };
+        onUpdate(updatedConcept);
+    };
 
     return (
         <aside className="inspector-panel glass-card">
@@ -54,17 +69,27 @@ export const Inspector: React.FC<InspectorProps> = ({ concept, onClose }) => {
                                     <div className="flex items-center justify-between mb-2">
                                         <span className="text-[10px] font-bold uppercase text-slate-500">{lang}</span>
                                     </div>
-                                    <div className="space-y-2">
+                                    <div className="flex flex-col gap-3">
                                         <div className="flex flex-col">
-                                            <span className="text-[10px] text-slate-500">Full Name</span>
-                                            <span className="text-sm">{labels.full || '-'}</span>
+                                            <span className="text-[10px] text-slate-500 mb-1">Full Name</span>
+                                            <input
+                                                type="text"
+                                                className="search-input"
+                                                style={{ padding: '6px 12px', borderRadius: '6px', fontSize: '13px' }}
+                                                value={labels.full || ''}
+                                                onChange={(e) => handleLabelChange(lang, 'full', e.target.value)}
+                                            />
                                         </div>
-                                        {labels.abbreviation && (
-                                            <div className="flex flex-col">
-                                                <span className="text-[10px] text-slate-500">Abbreviation</span>
-                                                <span className="text-sm font-mono">{labels.abbreviation}</span>
-                                            </div>
-                                        )}
+                                        <div className="flex flex-col">
+                                            <span className="text-[10px] text-slate-500 mb-1">Abbreviation</span>
+                                            <input
+                                                type="text"
+                                                className="search-input font-mono"
+                                                style={{ padding: '6px 12px', borderRadius: '6px', fontSize: '12px' }}
+                                                value={labels.abbreviation || ''}
+                                                onChange={(e) => handleLabelChange(lang, 'abbreviation', e.target.value)}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             );
@@ -94,7 +119,7 @@ export const Inspector: React.FC<InspectorProps> = ({ concept, onClose }) => {
 
             <div className="p-4 border-t bg-white/5 mt-auto">
                 <button className="w-full py-2.5 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all text-sm font-medium">
-                    Edit Metadata
+                    Commit Changes
                 </button>
             </div>
         </aside>

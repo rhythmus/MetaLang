@@ -71,6 +71,31 @@ export class Registry {
     }
 
     /**
+   * Apply a JSON Patch (RFC 6902) to the registry state.
+   * This is a simplified implementation for the GUI authoring flow.
+   */
+    public applyPatch(patch: any[]): void {
+        for (const op of patch) {
+            const parts = op.path.split('/').filter(Boolean);
+            if (parts[0] === 'concepts') {
+                const conceptId = parts[1];
+                const concept = this.concepts.get(conceptId);
+
+                if (op.op === 'add' || op.op === 'replace') {
+                    if (parts.length === 2) {
+                        this.concepts.set(conceptId, op.value);
+                    } else if (concept) {
+                        // Shallow property update for now
+                        (concept as any)[parts[2]] = op.value;
+                    }
+                } else if (op.op === 'remove' && parts.length === 2) {
+                    this.concepts.delete(conceptId);
+                }
+            }
+        }
+    }
+
+    /**
      * Get a concept by its GUID.
        */
     public getConcept(id: string): Concept | undefined {
