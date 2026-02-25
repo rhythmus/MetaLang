@@ -7,16 +7,17 @@ import type { PluginManifest } from '@metalang/schema';
  * This manifest maps the most common first-position (category) characters.
  */
 export const EAGLES_PLUGIN_MANIFEST: PluginManifest = {
-    id: 'eagles-multext-east',
-    name: 'EAGLES / MULTEXT-East',
-    version: '4.0.0',
-    source: {
-        title: 'MULTEXT-East: morphosyntactic resources for Central and Eastern European languages',
-        author: 'Erjavec, Tomaž',
-        year: 2012,
-        url: 'http://nl.ijs.si/ME/V4/msd/html/',
-        retrievedAt: '2026-02-25T12:00:00Z',
-        bibtex: `@article{erjavec2012multext,
+    descriptor: {
+        id: 'eagles-multext-east',
+        name: 'EAGLES / MULTEXT-East',
+        version: '4.0.0',
+        source: {
+            title: 'MULTEXT-East: morphosyntactic resources for Central and Eastern European languages',
+            author: 'Erjavec, Tomaž',
+            year: 2012,
+            url: 'http://nl.ijs.si/ME/V4/msd/html/',
+            retrievedAt: '2026-02-25T12:00:00Z',
+            bibtex: `@article{erjavec2012multext,
   title={MULTEXT-East: morphosyntactic resources for Central and Eastern European languages},
   author={Erjavec, Toma{\\v{z}}},
   journal={Language Resources and Evaluation},
@@ -26,6 +27,7 @@ export const EAGLES_PLUGIN_MANIFEST: PluginManifest = {
   year={2012},
   publisher={Springer}
 }`
+        }
     },
     mappings: {
         // --- Major Categories (First position of MSD) ---

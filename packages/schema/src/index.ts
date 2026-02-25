@@ -112,6 +112,7 @@ export interface PluginManifest {
     domains?: string[];
     publisher?: string;
     authoritative?: boolean;
+    source?: BibliographicSource;
   };
   mappings: {
     [externalTag: string]: string | string[]; // maps to concept IDs
