@@ -8,6 +8,20 @@ export const UD_PLUGIN_MANIFEST: PluginManifest = {
     id: 'universal-dependencies',
     name: 'Universal Dependencies (UD)',
     version: '2.1.0',
+    source: {
+        title: 'Universal Dependencies v2: An Evergrowing Multilingual Treebank Collection',
+        author: 'Nivre, Joakim; de Marneffe, Marie-Catherine; Ginter, Filip; Hajic, Jan; Manning, Christopher D.; Pyysalo, Sampo; Sarkar, Anoop; Tyers, Francis M.; Zeman, Daniel',
+        year: 2020,
+        url: 'https://universaldependencies.org/u/pos/',
+        retrievedAt: '2026-02-25T12:00:00Z',
+        bibtex: `@inproceedings{nivre2020universal,
+  title={Universal Dependencies v2: An Evergrowing Multilingual Treebank Collection},
+  author={Nivre, Joakim and de Marneffe, Marie-Catherine and Ginter, Filip and Hajic, Jan and Manning, Christopher D and Pyysalo, Sampo and Sarkar, Anoop and Tyers, Francis M and Zeman, Daniel},
+  booktitle={Proceedings of the 12th Language Resources and Evaluation Conference},
+  pages={4034--4043},
+  year={2020}
+}`
+    },
     mappings: {
         // --- POS Tags ---
         'ADJ': ['ML_POS_ADJECTIVE'],

@@ -93,10 +93,20 @@ export interface SeedFile {
   concepts: Concept[];
 }
 
+export interface BibliographicSource {
+  title: string;
+  author?: string;
+  year?: number;
+  url: string;
+  retrievedAt: string; // ISO 8601
+  bibtex?: string;
+}
+
 export interface PluginManifest {
   id: string;
   name: string;
   version: string;
+  source: BibliographicSource;
   mappings: {
     [externalTag: string]: string[]; // maps to concept IDs
   };

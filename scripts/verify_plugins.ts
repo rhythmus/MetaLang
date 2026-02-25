@@ -23,7 +23,8 @@ async function verifyPlugins() {
     registry.registerTagSystem(UD_PLUGIN_MANIFEST);
     const udValidation = registry.validatePlugin(UD_PLUGIN_MANIFEST.id);
     if (udValidation.valid) {
-        console.log('✅ UD Plugin validated.');
+        console.log(`✅ UD Plugin validated. Source: "${UD_PLUGIN_MANIFEST.source.title}" (${UD_PLUGIN_MANIFEST.source.year})`);
+        console.log(`   Retrieved: ${UD_PLUGIN_MANIFEST.source.retrievedAt} | URL: ${UD_PLUGIN_MANIFEST.source.url}`);
     } else {
         console.error('❌ UD Plugin validation failed:');
         udValidation.errors.forEach(err => console.error(`   - ${err}`));
@@ -33,7 +34,8 @@ async function verifyPlugins() {
     registry.registerTagSystem(EAGLES_PLUGIN_MANIFEST);
     const eaglesValidation = registry.validatePlugin(EAGLES_PLUGIN_MANIFEST.id);
     if (eaglesValidation.valid) {
-        console.log('✅ EAGLES Plugin validated.');
+        console.log(`✅ EAGLES Plugin validated. Source: "${EAGLES_PLUGIN_MANIFEST.source.title}" (${EAGLES_PLUGIN_MANIFEST.source.year})`);
+        console.log(`   Retrieved: ${EAGLES_PLUGIN_MANIFEST.source.retrievedAt} | URL: ${EAGLES_PLUGIN_MANIFEST.source.url}`);
     } else {
         console.warn('⚠️ EAGLES Plugin has validation warnings (see below):');
         eaglesValidation.errors.forEach(err => console.warn(`   - ${err}`));
