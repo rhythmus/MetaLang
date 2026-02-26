@@ -21,10 +21,14 @@ async function runVerification() {
     }
 
     const domainsTsv = fs.readFileSync(domainsPath, 'utf8');
-    const conceptsTsv = fs.readFileSync(conceptsPath, 'utf8');
 
-    registry.loadTSVData(domainsTsv, conceptsTsv);
-    console.log('✅ Core data loaded from TSVs.');
+    // Read all concept files from data/concepts/
+    const conceptsDir = path.join(__dirname, '../data/concepts');
+    const conceptFiles = fs.readdirSync(conceptsDir).filter(f => f.endsWith('.tsv'));
+    const conceptsTsvs = conceptFiles.map(f => fs.readFileSync(path.join(conceptsDir, f), 'utf8'));
+
+    registry.loadTSVData(domainsTsv, conceptsTsvs);
+    console.log(`✅ Core data loaded from TSVs (${conceptFiles.length} files).`);
 
     // 2. Register UD Plugin
     registry.registerTagSystem(UD_PLUGIN_MANIFEST);

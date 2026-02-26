@@ -13,9 +13,12 @@ export class Registry {
     /**
      * Load concepts and domains from TSV data strings.
      */
-    public loadTSVData(domainsTsv: string, conceptsTsv: string): void {
+    public loadTSVData(domainsTsv: string, conceptsTsv: string | string[]): void {
         this.parseDomainsTSV(domainsTsv).forEach(d => this.domains.set(d.id, d));
-        this.parseConceptsTSV(conceptsTsv).forEach(c => this.concepts.set(c.id, c));
+        const conceptsContents = Array.isArray(conceptsTsv) ? conceptsTsv : [conceptsTsv];
+        conceptsContents.forEach(content => {
+            this.parseConceptsTSV(content).forEach(c => this.concepts.set(c.id, c));
+        });
     }
 
     private parseDomainsTSV(content: string): Domain[] {
@@ -41,10 +44,11 @@ export class Registry {
             const label = parts[3] || '';
 
             // Derive domain from ML_ID (e.g. ML_POS_NOUN -> POS)
-            const domain = id.includes('_') ? id.split('_')[1] : 'CUSTOM';
+            const idParts = id.split('_');
+            const domain = idParts.length >= 2 ? idParts[1] : 'CUSTOM';
 
             return {
-                domain,
+                domain: domain || 'CUSTOM',
                 parent: parent ? parent.split(',').map(p => p.trim()) : [],
                 wikidata,
                 id,
