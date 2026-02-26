@@ -1,0 +1,152 @@
+{
+    "descriptor": {
+        "id": "pt-generic",
+        "name": "Generic Portuguese",
+        "language": "pt",
+        "scope": "global",
+        "domains": [
+            "phonology",
+            "etymology",
+            "language",
+            "derivation",
+            "prosody"
+        ],
+        "publisher": "MetaLang Project",
+        "authoritative": false,
+        "source": {
+            "title": "Portuguese Linguistic Glossary (Wiktionary based)",
+            "author": "MetaLang Contributors",
+            "year": 2026,
+            "url": "https://pt.wiktionary.org/wiki/Portal:Lingu%C3%ADstica/Gloss%C3%A1rio",
+            "lastEditedAt": "2026-02-26T20:29:32+01:00"
+        }
+    },
+    "mappings": {
+        "ML_PHONOLOGY_APHERESIS": {
+            "id": "ML_PHONOLOGY_APHERESIS",
+            "singular": "aférese"
+        },
+        "ML_PHONOLOGY_APOCOPE": {
+            "id": "ML_PHONOLOGY_APOCOPE",
+            "singular": "apócope"
+        },
+        "ML_PHONOLOGY_BIS-ESDRUXULA": {
+            "id": "ML_PHONOLOGY_BIS-ESDRUXULA",
+            "singular": "bisesdrúxula"
+        },
+        "ML_PHONOLOGY_BRAQUISSEMIA": {
+            "id": "ML_PHONOLOGY_BRAQUISSEMIA",
+            "singular": "braquissemia"
+        },
+        "ML_PHONOLOGY_CONSONANT": {
+            "id": "ML_PHONOLOGY_CONSONANT",
+            "singular": "consoante",
+            "plural": "consoantes"
+        },
+        "ML_ETYMOLOGY_LEARNED-BORROWING": {
+            "id": "ML_ETYMOLOGY_LEARNED-BORROWING",
+            "singular": "cultismo"
+        },
+        "ML_ETYMOLOGY_MISTAKEN-DERIVATION": {
+            "id": "ML_ETYMOLOGY_MISTAKEN-DERIVATION",
+            "singular": "derivação equivocada"
+        },
+        "ML_ETYMOLOGY_IMPROPER-DERIVATION": {
+            "id": "ML_ETYMOLOGY_IMPROPER-DERIVATION",
+            "singular": "derivação imprópria"
+        },
+        "ML_ETYMOLOGY_PARASYNTHETIC-DERIVATION": {
+            "id": "ML_ETYMOLOGY_PARASYNTHETIC-DERIVATION",
+            "singular": "derivação parassintética"
+        },
+        "ML_DERIVATION_AFFIXATION": {
+            "id": "ML_DERIVATION_AFFIXATION",
+            "singular": "derivação própria"
+        },
+        "ML_ETYMOLOGY_REGRESSIVE-DERIVATION": {
+            "id": "ML_ETYMOLOGY_REGRESSIVE-DERIVATION",
+            "singular": "derivação regressiva"
+        },
+        "ML_ETYMOLOGY_LOANWORD": {
+            "id": "ML_ETYMOLOGY_LOANWORD",
+            "singular": "estrangeirismo"
+        },
+        "ML_ETYMOLOGY_ETYMON": {
+            "id": "ML_ETYMOLOGY_ETYMON",
+            "singular": "étimo"
+        },
+        "ML_PHONOLOGY_PHONEME": {
+            "id": "ML_PHONOLOGY_PHONEME",
+            "singular": "fonema",
+            "plural": "fonemas"
+        },
+        "ML_PHONOLOGY_FORTITION": {
+            "id": "ML_PHONOLOGY_FORTITION",
+            "singular": "fortição"
+        },
+        "ML_PHONOLOGY_LENITION": {
+            "id": "ML_PHONOLOGY_LENITION",
+            "singular": "lenição"
+        },
+        "ML_LANGUAGE_ARTIFICIAL": {
+            "id": "ML_LANGUAGE_ARTIFICIAL",
+            "singular": "língua artificial"
+        },
+        "ML_LANGUAGE_EXTINCT": {
+            "id": "ML_LANGUAGE_EXTINCT",
+            "singular": "língua extinta"
+        },
+        "ML_LANGUAGE_FRANCA": {
+            "id": "ML_LANGUAGE_FRANCA",
+            "singular": "língua franca"
+        },
+        "ML_LANGUAGE_DEAD": {
+            "id": "ML_LANGUAGE_DEAD",
+            "singular": "língua morta"
+        },
+        "ML_LANGUAGE_NATURAL": {
+            "id": "ML_LANGUAGE_NATURAL",
+            "singular": "língua natural"
+        },
+        "ML_PHONOLOGY_OXYTONE": {
+            "id": "ML_PHONOLOGY_OXYTONE",
+            "singular": "oxítona",
+            "plural": "oxítonas"
+        },
+        "ML_PHONOLOGY_PAROXYTONE": {
+            "id": "ML_PHONOLOGY_PAROXYTONE",
+            "singular": "paroxítona",
+            "plural": "paroxítonas"
+        },
+        "ML_PHONOLOGY_PROPAROXYTONE": {
+            "id": "ML_PHONOLOGY_PROPAROXYTONE",
+            "singular": "proparoxítona",
+            "plural": "proparoxítonas",
+            "synonyms": [
+                "esdrúxula"
+            ]
+        },
+        "ML_PHONOLOGY_PROPAROXYTONE-APPARENT": {
+            "id": "ML_PHONOLOGY_PROPAROXYTONE-APPARENT",
+            "singular": "proparoxítona aparente"
+        },
+        "ML_ETYMOLOGY_SEMI-LEARNED-BORROWING": {
+            "id": "ML_ETYMOLOGY_SEMI-LEARNED-BORROWING",
+            "singular": "semicultismo"
+        },
+        "ML_PHONOLOGY_SEMIVOWEL": {
+            "id": "ML_PHONOLOGY_SEMIVOWEL",
+            "singular": "semivogal",
+            "plural": "semivogais"
+        },
+        "ML_PHONOLOGY_SYNCOPE": {
+            "id": "ML_PHONOLOGY_SYNCOPE",
+            "singular": "síncope"
+        },
+        "ML_PHONOLOGY_VOWEL": {
+            "id": "ML_PHONOLOGY_VOWEL",
+            "singular": "vogal",
+            "plural": "vogais"
+        }
+    }
+}

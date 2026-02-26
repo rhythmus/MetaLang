@@ -1,0 +1,1073 @@
+{
+    "descriptor": {
+        "id": "fr-generic",
+        "name": "Generic French",
+        "language": "fr",
+        "scope": "global",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value",
+            "lex_struct",
+            "phonology",
+            "editorial",
+            "rhetoric"
+        ]
+    },
+    "mappings": {
+        "ML_MORPH-VALUE_CASE-ABLATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ABLATIVE",
+            "singular": "Ablatif",
+            "definition": "Déclinaison d’un nom quand il suit certaines [prépositions](#P), par exemple, le latin [_in vino veritas_](https://fr.wiktionary.org/wiki/in_vino_veritas) (« vérité **dans le vin** »)."
+        },
+        "ML_PHONOLOGY_DIACRITIC": {
+            "id": "ML_PHONOLOGY_DIACRITIC",
+            "singular": "Accent",
+            "definition": "[Accent](https://fr.wiktionary.org/wiki/accent) → voir [diacritique](#diacritique).",
+            "synonyms": [
+                "Diacritique"
+            ]
+        },
+        "ML_MORPH-VALUE_CASE-ACCUSATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ACCUSATIVE",
+            "singular": "Accusatif",
+            "definition": "Déclinaison d’un nom qui indique le complément d’objet direct du verbe. Par exemple, le latin [_canis canem edit_](https://fr.wiktionary.org/wiki/canis_canem_edit) (« le chien mange **le chien** »). En outre, l’accusatif est réclamé par certaines prépositions, par exemple, le latin [_per_](https://fr.wiktionary.org/wiki/per#la) : _per fenestram exeo_ (« je sors par **la fenêtre** »). Également nommé [cas régime](https://fr.wiktionary.org/wiki/cas_régime)."
+        },
+        "ML_POS_ADJECTIVE": {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "Adjectif",
+            "definition": "Mot qui sert à décrire un nom ; en français : _une maison rouge_."
+        },
+        "ML_POS_ADVERB": {
+            "id": "ML_POS_ADVERB",
+            "singular": "Adverbe",
+            "definition": "Mot qui sert à décrire, à qualifier un verbe ou un adjectif ; en français : _il joue rapidement_."
+        },
+        "ML_PHONOLOGY_ALPHABET": {
+            "id": "ML_PHONOLOGY_ALPHABET",
+            "singular": "Alphabet",
+            "definition": "[Alphabet](https://fr.wiktionary.org/wiki/alphabet) [phonétique](https://fr.wiktionary.org/wiki/phonétique) [international](https://fr.wiktionary.org/wiki/international) (API) : système de notation conçu pour transcrire scripturalement la prononciation des énoncés."
+        },
+        "ML_LEX-STRUCT_ANAGRAM": {
+            "id": "ML_LEX-STRUCT_ANAGRAM",
+            "singular": "Anagramme",
+            "definition": "Mot ou phrase formé des lettres d’un autre mot ou phrase (abstraction faite des diacritiques). En français, [_chien_](https://fr.wiktionary.org/wiki/chien) et [_niche_](https://fr.wiktionary.org/wiki/niche) sont des anagrammes."
+        },
+        "ML_LEX-STRUCT_ANTONYM": {
+            "id": "ML_LEX-STRUCT_ANTONYM",
+            "singular": "Antonyme",
+            "definition": "Mot de sens opposé."
+        },
+        "ML_EDITORIAL_ARCHAIC": {
+            "id": "ML_EDITORIAL_ARCHAIC",
+            "singular": "Archaïsme",
+            "definition": "Qualifie un mot ancien qui n’est plus d’usage à la suite d'un changement des règles de la langue (par exemple les terminaisons en _-ois_ du français remplacées par _-ais_) ou à la disparition du référent qu’il désigne. Ne pas confondre avec [_désuet_](#D) et [_vieilli_](#V)."
+        },
+        "ML_EDITORIAL_SLANG": {
+            "id": "ML_EDITORIAL_SLANG",
+            "singular": "Argot",
+            "definition": "[Argot](https://fr.wiktionary.org/wiki/argot), [argotique](https://fr.wiktionary.org/wiki/argotique) : Vocabulaire du [registre argotique](https://fr.wiktionary.org/wiki/registre_argotique)."
+        },
+        "ML_POS_VERB-BITRANSITIVE": {
+            "id": "ML_POS_VERB-BITRANSITIVE",
+            "singular": "Bitransitif",
+            "definition": "Se dit d’un verbe nécessitant deux compléments d’objets (la plupart du temps un [complément d’objet direct](https://fr.wiktionary.org/wiki/complément_d’objet_direct) et un [complément d’objet indirect](https://fr.wiktionary.org/wiki/complément_d’objet_indirect))."
+        },
+        "ML_MORPH-VALUE_NUMBER-COLLECTIVE": {
+            "id": "ML_MORPH-VALUE_NUMBER-COLLECTIVE",
+            "singular": "Collectif",
+            "definition": "substantif présentant à l'esprit l'idée de plusieurs individus de même nature, formant une collection prise comme un tout [singulier](#singulier)."
+        },
+        "ML_MORPH-VALUE_GENDER-COMMON": {
+            "id": "ML_MORPH-VALUE_GENDER-COMMON",
+            "singular": "Commun",
+            "definition": "[Commun](https://fr.wiktionary.org/wiki/commun) (Genre) : Une des valeurs de [genre](#genre) grammatical possible dans certaines langues, entrant en compte dans la variation de forme des énoncés, exprimant que la terminaison est la même au masculin et au féminin."
+        },
+        "ML_MORPH-VALUE_MOOD-CONDITIONNEL": {
+            "id": "ML_MORPH-VALUE_MOOD-CONDITIONNEL",
+            "singular": "Conditionnel",
+            "definition": "Temps verbal qui indique une possibilité. En français, _j’aimerais aller à la plage demain s’il fait beau_ ([aimer](https://fr.wiktionary.org/wiki/aimer) au conditionnel)."
+        },
+        "ML_EDITORIAL_CONTEMPORARY": {
+            "id": "ML_EDITORIAL_CONTEMPORARY",
+            "singular": "Contemporain",
+            "definition": "Indique que l’orthographe du mot est celle en cours aujourd’hui, en opposition à une orthographe passée, d’avant une réforme orthographique."
+        },
+        "ML_LEX-STRUCT_PORTMANTEAU": {
+            "id": "ML_LEX-STRUCT_PORTMANTEAU",
+            "singular": "mot-valise",
+            "definition": "Calque structural : Traduction mot-à-mot d’une locution venant d’une autre langue. En français, [_mot-valise_](https://fr.wiktionary.org/wiki/mot-valise) est la traduction littérale du mot anglais [_portmanteau word_](https://fr.wiktionary.org/wiki/portmanteau_word).",
+            "synonyms": [
+                "Mot-valise"
+            ]
+        },
+        "ML_MORPH-VALUE_CASE-DATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-DATIVE",
+            "singular": "Datif",
+            "definition": "Déclinaison d’un nom qui indique l’objet indirect du verbe. En latin, _Marcus patri librum dat_ (« Marcus donne le livre **à son père** »)."
+        },
+        "ML_MORPH-VALUE_DEFECTIVE": {
+            "id": "ML_MORPH-VALUE_DEFECTIVE",
+            "singular": "Défectif",
+            "definition": "Caractérisation d’un verbe qui ne peut pas se conjuguer à tous les temps ou toutes les personnes. Par exemple en français, [_falloir_](https://fr.wiktionary.org/wiki/falloir) (troisième personne du singulier seulement) ou [_choir_](https://fr.wiktionary.org/wiki/choir) (pas de [imparfait](#I) indicatif)."
+        },
+        "ML_EDITORIAL_DERISION": {
+            "id": "ML_EDITORIAL_DERISION",
+            "singular": "Dérision",
+            "definition": "Marque de moquerie souvent accompagnée de mépris."
+        },
+        "ML_EDITORIAL_OBSOLETE": {
+            "id": "ML_EDITORIAL_OBSOLETE",
+            "singular": "Désuet",
+            "definition": "[Inusité](https://fr.wiktionary.org/wiki/inusité), qui n’est plus employé par la langue moderne. À distinguer de [vieilli](#vieilli) (en cours de désuétude) et [archaïsme](#archaïsme) (plus employé car le système de la langue a changé ou l’objet a disparu)."
+        },
+        "ML_EDITORIAL_DIDACTIC": {
+            "id": "ML_EDITORIAL_DIDACTIC",
+            "singular": "Didactique",
+            "definition": "Terme utilisé pour l’explication ou l’enseignement."
+        },
+        "ML_MORPH-VALUE_NUMBER-DUEL": {
+            "id": "ML_MORPH-VALUE_NUMBER-DUEL",
+            "singular": "Duel",
+            "definition": "Nombre grammatical qui existe dans certaines langues. Le duel est utilisé lorsqu’il y a précisément deux objets dont on parle. Valeur distincte de [singulier](#S) et [pluriel](#P)."
+        },
+        "ML_MORPH-VALUE_CASE-ERGATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ERGATIVE",
+            "singular": "Ergatif",
+            "definition": "Se dit d’un verbe qui peut s’employer comme verbe [transitif](#T) ou [intransitif](#I) avec un sens [passif](#P) sous sa forme intransitive. En français, _j’ai fondu le chocolat_ (transitif) et _le chocolat a fondu_ (intransitif)."
+        },
+        "ML_MORPH-VALUE_GENDER-EPICENE": {
+            "id": "ML_MORPH-VALUE_GENDER-EPICENE",
+            "singular": "Épicène",
+            "definition": "[Épicène](https://fr.wiktionary.org/wiki/épicène) (Genre) : Désigne le cas où deux mots de même signification – à un genre biologique du désigné près, sont également identiques dans leur forme orale et écrite, après conversion de [genre](#genre) grammatical. Il se distingue donc du cas des [mots multigenres](https://fr.wiktionary.org/wiki/Catégorie:Noms_multigenres_en_français), qui partagent une même forme mais pas le même sens par ce type de conversion, tel _une œuvre_ et _un œuvre_. Certains termes réputés épicènes ont également des formes alternatives marquées par le genre. Par exemple _un philosophe_ et _une philosophe_ n’empêchent pas l’emploi avéré de la forme _une philosophesse_."
+        },
+        "ML_EDITORIAL_FAMILIAR": {
+            "id": "ML_EDITORIAL_FAMILIAR",
+            "singular": "Familier",
+            "definition": "Vocabulaire du [registre familier](https://fr.wiktionary.org/wiki/registre_familier). Peut être aussi _Très familier_."
+        },
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "Féminin",
+            "definition": "[Féminin](https://fr.wiktionary.org/wiki/féminin) Une des valeurs de [Genre](#genre) grammatical possible dans certaines langues, entrant en compte dans la variation de forme des énoncés. Malgré son nom, elle peut référer aussi bien à des inanimés, que des animés de sexe quelconque."
+        },
+        "ML_MORPH-VALUE_TENSE-FUTURE": {
+            "id": "ML_MORPH-VALUE_TENSE-FUTURE",
+            "singular": "Futur",
+            "definition": "Temps verbal qui indique ce qui va arriver dans l’avenir."
+        },
+        "ML_MORPH-VALUE_CASE-GENITIVE": {
+            "id": "ML_MORPH-VALUE_CASE-GENITIVE",
+            "singular": "Génitif",
+            "definition": "Le cas génitif indique que quelque chose est possédé par quelque chose d’autre. En latin, [curriculum vitæ](https://fr.wiktionary.org/wiki/curriculum_vitæ#la) (« chemin **de la vie** »)."
+        },
+        "ML_MORPH-VALUE_MOOD-GERUND": {
+            "id": "ML_MORPH-VALUE_MOOD-GERUND",
+            "singular": "Gérondif",
+            "definition": "Emploi du [participe présent](#P) d’un verbe comme un nom commun. En anglais, _I like watching TV_ (« j’aime **regarder** la télé »)."
+        },
+        "ML_LEX-STRUCT_HAPAX": {
+            "id": "ML_LEX-STRUCT_HAPAX",
+            "singular": "Hapax",
+            "definition": "Mot dont on n’a trouvé qu’une seule utilisation dans le [corpus](https://fr.wiktionary.org/wiki/corpus). Cette qualification relève des lexicographes et doit être référencée."
+        },
+        "ML_LEX-STRUCT_SYNONYM": {
+            "id": "ML_LEX-STRUCT_SYNONYM",
+            "singular": "Synonyme",
+            "definition": "[Synonyme](https://fr.wiktionary.org/wiki/synonyme) utilisé en poésie scaldique à la place du mot normal pour désigner quelque chose."
+        },
+        "ML_LEX-STRUCT_HOLONYM": {
+            "id": "ML_LEX-STRUCT_HOLONYM",
+            "singular": "Holonyme",
+            "definition": "Mot qui désigne un tout dont le mot fait partie. Par exemple, _corps_ est un holonyme de [_bras_](https://fr.wiktionary.org/wiki/bras) et de [_tête_](https://fr.wiktionary.org/wiki/tête), [_Asie_](https://fr.wiktionary.org/wiki/Asie) est un holonyme de [_Inde_](https://fr.wiktionary.org/wiki/Inde) → voir [méronyme](#méronyme)."
+        },
+        "ML_LEX-STRUCT_HOMOPHONE": {
+            "id": "ML_LEX-STRUCT_HOMOPHONE",
+            "singular": "Homophone",
+            "definition": "Mot se prononçant pareil. _Mer_, _mère_ et _maire_ sont des homophones."
+        },
+        "ML_LEX-STRUCT_HYPERNYM": {
+            "id": "ML_LEX-STRUCT_HYPERNYM",
+            "singular": "Hyperonyme",
+            "definition": "Mot dont le sens inclut (est plus général que) celui d’un autre mot. _Fruit_ est un hyperonyme de [_pomme_](https://fr.wiktionary.org/wiki/pomme) et de [_cerise_](https://fr.wiktionary.org/wiki/cerise) → voir [hyponyme](#hyponyme)."
+        },
+        "ML_LEX-STRUCT_HYPONYM": {
+            "id": "ML_LEX-STRUCT_HYPONYM",
+            "singular": "Hyponyme",
+            "definition": "Mot dont le sens est inclus (est plus spécifique que) dans celui d’un autre mot. _Pomme_ est un hyponyme de [_fruit_](https://fr.wiktionary.org/wiki/fruit) → voir [hyperonyme](#hyperonyme)."
+        },
+        "ML_LEX-STRUCT_IDIOM": {
+            "id": "ML_LEX-STRUCT_IDIOM",
+            "singular": "Idiome",
+            "definition": "[Idiome](https://fr.wiktionary.org/wiki/idiome), [idiomatique](https://fr.wiktionary.org/wiki/idiomatique) : Phrase ou locution dont le sens est figuré. En français, [_se casser_](https://fr.wiktionary.org/wiki/se_casser), [_se tirer_](https://fr.wiktionary.org/wiki/se_tirer) au lieu de [_partir_](https://fr.wiktionary.org/wiki/partir)."
+        },
+        "ML_MORPH-VALUE_TENSE-IMPERFECT": {
+            "id": "ML_MORPH-VALUE_TENSE-IMPERFECT",
+            "singular": "Imparfait",
+            "definition": "Temps qui indique une action habituelle du passé, ou une action interrompue. En français, _Je me lavais quand ma mère m’a appelé_ ([laver](https://fr.wiktionary.org/wiki/laver) à l’imparfait)."
+        },
+        "ML_MORPH-VALUE_NUMBER-UNCOUNTABLE": {
+            "id": "ML_MORPH-VALUE_NUMBER-UNCOUNTABLE",
+            "singular": "Indénombrable",
+            "definition": "Qui ne peut être utilisé ni au pluriel ni directement avec un numéral, car le nom désigne une caractéristique commune plutôt que des objets séparés."
+        },
+        "ML_MORPH-VALUE_CASE-INSTRUMENTAL": {
+            "id": "ML_MORPH-VALUE_CASE-INSTRUMENTAL",
+            "singular": "Instrumental",
+            "definition": "[Déclinaison](https://fr.wiktionary.org/wiki/déclinaison) qui indique l’[agent](https://fr.wiktionary.org/wiki/agent) de la phrase."
+        },
+        "ML_MORPH-VALUE_INVARIABLE": {
+            "id": "ML_MORPH-VALUE_INVARIABLE",
+            "singular": "Invariable",
+            "definition": "Se dit d'un mot dont la forme ne change pas quel que soit le contexte. Par exemple, un adverbe, ou bien un nom ou un adjectif qui ne peut ni se mettre au pluriel, ni au féminin, ou bien dont l'écriture est la même dans tous les cas (comme [_gaz_](https://fr.wiktionary.org/wiki/gaz) par exemple)."
+        },
+        "ML_EDITORIAL_IRONIC": {
+            "id": "ML_EDITORIAL_IRONIC",
+            "singular": "Ironique",
+            "definition": "Mot utilisé par [dérision](https://fr.wiktionary.org/wiki/dérision)."
+        },
+        "ML_MORPH-VALUE_IRREGULAR": {
+            "id": "ML_MORPH-VALUE_IRREGULAR",
+            "singular": "Irrégulier",
+            "definition": "Se dit d'un verbe qui ne se suit pas une conjugaison régulière ; par exemple, le verbe [_aller_](https://fr.wiktionary.org/wiki/aller) (_je vais, tu vas_, etc.) est un verbe irrégulier. Se dit aussi d'un mot qui ne suit pas les règles habituelles, par exemple [_œil_](https://fr.wiktionary.org/wiki/œil) (pluriel : [_yeux_](https://fr.wiktionary.org/wiki/yeux)) et [_manger_](https://fr.wiktionary.org/wiki/manger) (je [_mangeais_](https://fr.wiktionary.org/wiki/mangeais) et non je *_mangais_)."
+        },
+        "ML_EDITORIAL_LITERARY": {
+            "id": "ML_EDITORIAL_LITERARY",
+            "singular": "Littéraire",
+            "definition": "[Vocabulaire](https://fr.wiktionary.org/wiki/vocabulaire) [original](https://fr.wiktionary.org/wiki/original) ou très [recherché](https://fr.wiktionary.org/wiki/recherché), employé uniquement ou essentiellement dans des œuvres [littéraires](https://fr.wiktionary.org/wiki/littéraire)."
+        },
+        "ML_MORPH-VALUE_CASE-LOCATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-LOCATIVE",
+            "singular": "Locatif",
+            "definition": "Déclinaison d’un nom ou d’un adjectif qui indique la position de quelque chose. Par exemple, en latin _Lutetiae habitat_ (« il habite **à** Paris »)."
+        },
+        "ML_LEX-STRUCT_LOCUTION": {
+            "id": "ML_LEX-STRUCT_LOCUTION",
+            "singular": "Locution",
+            "definition": "Série de mots qui remplacent un mot simple. Par exemple, [_poisson rouge_](https://fr.wiktionary.org/wiki/poisson_rouge) est une locution nominale (qui remplace un nom) et [_faire des frais_](https://fr.wiktionary.org/wiki/faire_des_frais) est une locution verbale (qui remplace un verbe)."
+        },
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "Masculin",
+            "definition": "[Masculin](https://fr.wiktionary.org/wiki/masculin) Une des valeurs de [Genre](#genre) grammatical possible dans certaines langues, entrant en compte dans la variation de forme des énoncés. Malgré son nom, elle peut référer aussi bien à des inanimés, que des animés de sexe quelconque."
+        },
+        "ML_EDITORIAL_AMELIORATIVE": {
+            "id": "ML_EDITORIAL_AMELIORATIVE",
+            "singular": "Mélioratif",
+            "definition": "Qui donne un sens plus favorable ; contraire de [péjoratif](#péjoratif)."
+        },
+        "ML_LEX-STRUCT_MERONYM": {
+            "id": "ML_LEX-STRUCT_MERONYM",
+            "singular": "Méronyme",
+            "definition": "Se dit d’un mot qui décrit une partie de quelque chose d’autre. Par exemple, _bras_ est un méronyme de _corps_, _Inde_ est un méronyme de _Asie_ → voir [holonyme](#holonyme)."
+        },
+        "ML_MORPH-VALUE_GENDER-NEUTER": {
+            "id": "ML_MORPH-VALUE_GENDER-NEUTER",
+            "singular": "Neutre",
+            "definition": "[Neutre](https://fr.wiktionary.org/wiki/neutre) (Genre) : Une des valeurs de [Genre](#genre) grammatical possible dans certaines langues, entrant en compte dans la variation de forme des énoncés. Malgré son nom, elle peut référer aussi bien à des inanimés, que des animés de sexe quelconque."
+        },
+        "ML_POS_NOUN": {
+            "id": "ML_POS_NOUN",
+            "singular": "Nom",
+            "definition": "[Substantif](https://fr.wiktionary.org/wiki/substantif), mot qui décrit un objet ou un sentiment. En français, _maison_ et _réalité_ sont des noms. [Nom commun](https://fr.wiktionary.org/wiki/nom_commun) : Nom qui ne prend en général pas de [majuscule](https://fr.wiktionary.org/wiki/majuscule) car il décrit quelque chose d’ordinaire (comme _maison_ et _réalité_ ci-dessus). [Nom collectif](https://fr.wiktionary.org/wiki/nom_collectif) : Nom au singulier qui désigne un ensemble de référents. [Nom propre](https://fr.wiktionary.org/wiki/nom_propre) : Nom qui désigne généralement quelque chose d’unique, et prend normalement une majuscule. Il s’agit surtout de marques déposées ([Honda](https://fr.wikipedia.org/wiki/Honda), [Microsoft](https://fr.wikipedia.org/wiki/Microsoft)), de noms et de prénoms ([Emmanuelle](https://fr.wiktionary.org/wiki/Emmanuelle), [Béart](https://fr.wiktionary.org/wiki/Béart), [Confucius](https://fr.wiktionary.org/wiki/Confucius)) ou de [toponymes](https://fr.wiktionary.org/wiki/toponyme) ([Belgique](https://fr.wiktionary.org/wiki/Belgique), [Londres](https://fr.wiktionary.org/wiki/Londres), [Delaware](https://fr.wiktionary.org/wiki/Delaware))."
+        },
+        "ML_MORPH-VALUE_TENSE-PAST-COMPOUND": {
+            "id": "ML_MORPH-VALUE_TENSE-PAST-COMPOUND",
+            "singular": "Passé composé",
+            "definition": "Temps verbal qui emploie le participe passé et un verbe auxiliaire tel que « [avoir](https://fr.wiktionary.org/wiki/avoir) » en français, et qui décrit une action faite une fois dans le passé."
+        },
+        "ML_MORPH-VALUE_TENSE-PAST-REMOTE": {
+            "id": "ML_MORPH-VALUE_TENSE-PAST-REMOTE",
+            "singular": "Passé simple",
+            "definition": "Temps verbal qui indique une action faite une fois dans le passé, et qui n’a pas de lien avec le présent (surtout en parlant du français).",
+            "synonyms": [
+                "Prétérit"
+            ]
+        },
+        "ML_MORPH-VALUE_VOICE-PASSIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-PASSIVE",
+            "singular": "Passif",
+            "definition": "Verbe utilisé à la forme passive, c’est-à-dire qui présente l’action comme subie par le sujet, au lieu d’être faite par lui."
+        },
+        "ML_EDITORIAL_PEJORATIVE": {
+            "id": "ML_EDITORIAL_PEJORATIVE",
+            "singular": "Péjoratif",
+            "definition": "Qui donne un sens défavorable ; contraire de [mélioratif](#M)."
+        },
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "Pluriel",
+            "definition": "Cas utilisé lorsqu’il y a plusieurs choses. En français, _les chaises_ est le pluriel de _la chaise_ → voir [singulier](#singulier) et [duel](#duel)."
+        },
+        "ML_EDITORIAL_POETIC": {
+            "id": "ML_EDITORIAL_POETIC",
+            "singular": "Poétique",
+            "definition": "Employé en [poésie](https://fr.wiktionary.org/wiki/poésie)."
+        },
+        "ML_EDITORIAL_COLLEQUIAL": {
+            "id": "ML_EDITORIAL_COLLEQUIAL",
+            "singular": "Populaire",
+            "definition": "Vocabulaire du [registre populaire](https://fr.wiktionary.org/wiki/registre_populaire)."
+        },
+        "ML_POS_PREPOSITION": {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "Préposition",
+            "definition": "Mot qui indique la position d’un objet relatif à un autre objet. En français, [_de_](https://fr.wiktionary.org/wiki/de), [_à_](https://fr.wiktionary.org/wiki/à), [_sur_](https://fr.wiktionary.org/wiki/sur), [_dans_](https://fr.wiktionary.org/wiki/dans) et [_sous_](https://fr.wiktionary.org/wiki/sous) sont des prépositions."
+        },
+        "ML_MORPH-VALUE_TENSE-PRESENT": {
+            "id": "ML_MORPH-VALUE_TENSE-PRESENT",
+            "singular": "Présent",
+            "definition": "Temps verbal qui indique ce qui se passe maintenant, aujourd’hui."
+        },
+        "ML_MORPH-VALUE_VOICE-PRONOMINAL": {
+            "id": "ML_MORPH-VALUE_VOICE-PRONOMINAL",
+            "singular": "Pronominal",
+            "definition": "Se dit d’un verbe qui, parfois ou toujours, est accompagné d’un pronom personnel réfléchi (me, te, se, nous, vous, se) de la même personne que le pronom sujet (je, tu, il/elle / on, nous, vous, ils/elles)."
+        },
+        "ML_MORPH-VALUE_VOICE-REFLEXIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-REFLEXIVE",
+            "singular": "Réfléchi",
+            "definition": "[Réfléchi](https://fr.wiktionary.org/wiki/réfléchi), [réflexif](https://fr.wiktionary.org/wiki/réflexif) : Se dit d’un verbe dont le sujet et l’objet sont la même entité."
+        },
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "Singulier",
+            "definition": "Se dit d’un nom qui est seul, dont il n’y a qu’un exemplaire. → voir [pluriel](#pluriel) et [duel](#duel)."
+        },
+        "ML_EDITORIAL_FORMAL": {
+            "id": "ML_EDITORIAL_FORMAL",
+            "singular": "Soutenu",
+            "definition": "Vocabulaire du [registre soutenu](https://fr.wiktionary.org/wiki/registre_soutenu). S’oppose à familier."
+        },
+        "ML_EDITORIAL_COMMON-STANDARD": {
+            "id": "ML_EDITORIAL_COMMON-STANDARD",
+            "singular": "Standard",
+            "definition": "Vocabulaire du [registre standard](https://fr.wiktionary.org/wiki/registre_standard). C’est le cas par défaut, qui n’est usuellement pas indiqué."
+        },
+        "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE": {
+            "id": "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE",
+            "singular": "Subjonctif",
+            "definition": "Mode qui exprime la dépendance, la tension psychologique (volonté, sentiment) ou la subjectivité (doute, incertitude)."
+        },
+        "ML_LEX-STRUCT_SUBSTANTIVATION": {
+            "id": "ML_LEX-STRUCT_SUBSTANTIVATION",
+            "singular": "Substantivation",
+            "definition": "utilisation d’un mot (souvent un [adjectif](#adjectif)) comme un [nom commun](#nom). Cela se fait généralement en actualisant le mot par un [déterminant](#déterminant)."
+        },
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "Verbe",
+            "definition": "Mot qui décrit une action. Par exemple, [_jouer_](https://fr.wiktionary.org/wiki/jouer), [_rire_](https://fr.wiktionary.org/wiki/rire), [_aimer_](https://fr.wiktionary.org/wiki/aimer), [_pleuvoir_](https://fr.wiktionary.org/wiki/pleuvoir) et [_prendre_](https://fr.wiktionary.org/wiki/prendre) sont des verbes en français."
+        },
+        "ML_EDITORIAL_VULGAR": {
+            "id": "ML_EDITORIAL_VULGAR",
+            "singular": "Vulgaire",
+            "definition": "Manière de s’exprimer usuel d’une majorité des membres d’une communauté, en dehors des cadres spécifiques où les us et coutumes incite à moduler le registre employé."
+        },
+        "ML_RHETORIC_GRAPHEME": {
+            "id": "ML_RHETORIC_GRAPHEME",
+            "singular": "Graphème",
+            "definition": "Lettres de l'alphabet, lettres étrangères, lettres inconnues"
+        },
+        "ML_RHETORIC_PHONEME": {
+            "id": "ML_RHETORIC_PHONEME",
+            "singular": "Phonème",
+            "definition": "Accents, sons, syllabes, voyelles et consonnes, groupes vocaliques et consonantiques, pieds versifiés"
+        },
+        "ML_RHETORIC_MORPHEME": {
+            "id": "ML_RHETORIC_MORPHEME",
+            "singular": "Morphème",
+            "definition": "Mots, groupes de mots, particules et conjonctions, codes typographiques, ponctuation, étymologie"
+        },
+        "ML_RHETORIC_SEME": {
+            "id": "ML_RHETORIC_SEME",
+            "singular": "Sème",
+            "definition": "Connotation, polysémie, lexique, vocable, antonymie, synonymie, champs sémantiques"
+        },
+        "ML_RHETORIC_ISOCOLIE": {
+            "id": "ML_RHETORIC_ISOCOLIE",
+            "singular": "isocolie",
+            "definition": "[Stylistique] Répétition d'une cadence sur plusieurs segments de phrase"
+        },
+        "ML_RHETORIC_TETRAMETRES": {
+            "id": "ML_RHETORIC_TETRAMETRES",
+            "singular": "tétramètres",
+            "definition": "« Quatre bœufs attelés , d'un pas tranquille et lent, Promenaient dans Paris le monarque indolent » — Boileau , Le Lutrin"
+        },
+        "ML_RHETORIC_ASSONANCE": {
+            "id": "ML_RHETORIC_ASSONANCE",
+            "singular": "assonance",
+            "definition": "[Stylistique] répétition d'une voyelle sur plusieurs mots d'une même phrase"
+        },
+        "ML_RHETORIC_CONTRE-ASSONANCE": {
+            "id": "ML_RHETORIC_CONTRE-ASSONANCE",
+            "singular": "Contre-assonance",
+            "definition": "[Poétique] rimes qui s'accouplent sur un groupe vocalique formé d'un phonème consonantique identique et d'une voyelle tonique variable"
+        },
+        "ML_RHETORIC_ECHO": {
+            "id": "ML_RHETORIC_ECHO",
+            "singular": "écho",
+            "definition": "[Poétique: vers-écho] répétition d’une rime sur le vers suivant qui est formé d’un seul mot homophone"
+        },
+        "ML_RHETORIC_HOMEOTELEUTON": {
+            "id": "ML_RHETORIC_HOMEOTELEUTON",
+            "singular": "homéotéleute",
+            "definition": "[Stylistique] Répétition d'un groupe phonique dans une même phrase"
+        },
+        "ML_RHETORIC_HEMISTICH": {
+            "id": "ML_RHETORIC_HEMISTICH",
+            "singular": "hémistiche",
+            "definition": "« J'aime le son du c or , le soir, au fond des bois, Soit qu'il chante les pl eur s de la biche aux abois, Ou l'adieu du chass eur que l'écho faible accueille, Et que le vent du n or d p or te de feuille en feuille. » — Vigny , Poèmes antiques et modernes , Le Cor , I"
+        },
+        "ML_RHETORIC_ONOMATOPOEIA": {
+            "id": "ML_RHETORIC_ONOMATOPOEIA",
+            "singular": "onomatopée",
+            "definition": "Catégorie d'interjection émise pour simuler un bruit particulier associé à un être, un animal ou un objet, par l'imitation des sons que ceux-ci produisent. Il ne s’agit pas à proprement parler d’une figure excepté lorsqu’elle est consciemment formée, au contraire de l’onomatopée héritée par la communauté linguistique"
+        },
+        "ML_RHETORIC_PARECHESE": {
+            "id": "ML_RHETORIC_PARECHESE",
+            "singular": "paréchèse",
+            "definition": "Rapprochement excessif de syllabes identiques dans des mots successifs"
+        },
+        "ML_RHETORIC_PROSONOMASIE": {
+            "id": "ML_RHETORIC_PROSONOMASIE",
+            "singular": "prosonomasie",
+            "definition": "[Stylistique] répétition dans une phrase ou une formule de deux groupes de mots à la sonorité similaire"
+        },
+        "ML_RHETORIC_ANAPHORA": {
+            "id": "ML_RHETORIC_ANAPHORA",
+            "singular": "anaphore",
+            "definition": "Répétition au début de plusieurs membres de phrase ou de plusieurs vers, d'un mot ou d'un groupe de mots"
+        },
+        "ML_RHETORIC_ANNOMINATION": {
+            "id": "ML_RHETORIC_ANNOMINATION",
+            "singular": "annomination",
+            "definition": "[Stylistique] synonyme de paronomase (latin adnominatio , traduction du grec paronomase )"
+        },
+        "ML_RHETORIC_ANTANACLASE": {
+            "id": "ML_RHETORIC_ANTANACLASE",
+            "singular": "antanaclase",
+            "definition": "Répétition, dans une même phrase, d'un mot employé chaque fois avec une acception différente"
+        },
+        "ML_RHETORIC_CONCATENATION": {
+            "id": "ML_RHETORIC_CONCATENATION",
+            "singular": "concaténation",
+            "definition": "Désigne la disposition dans un même texte de plusieurs anadiploses successives, à la manière des maillons d'une chaîne."
+        },
+        "ML_RHETORIC_CONGLOBATION": {
+            "id": "ML_RHETORIC_CONGLOBATION",
+            "singular": "conglobation",
+            "definition": "Répétition rhétorique d'arguments semblables qui vise à prouver une argumentation ou à justifier une idée qui n'est exposée qu'à la fin du discours ; proche de l' accumulation"
+        },
+        "ML_RHETORIC_EPANALEPSE": {
+            "id": "ML_RHETORIC_EPANALEPSE",
+            "singular": "épanalepse",
+            "definition": "[Poétique] répétition d'un groupe de mots ou plus souvent un vers à travers une ou plusieurs strophes (voir aussi Pantoum )"
+        },
+        "ML_RHETORIC_EPANAPHORA_FR": {
+            "id": "ML_RHETORIC_EPANAPHORA_FR",
+            "singular": "épanaphore",
+            "definition": "[Rhétorique] répétition d'une même formule au début de phrases ou de segments de phrase successifs, dans la même structure syntaxique"
+        },
+        "ML_RHETORIC_EPANADIPLOSE": {
+            "id": "ML_RHETORIC_EPANADIPLOSE",
+            "singular": "épanadiplose",
+            "definition": "[Rhétorique et stylistique] répétition d'une expression, d'un groupe de mots, d'une réplique à travers un discours (insistance, hantise, effet comique...)"
+        },
+        "ML_RHETORIC_EPANODE": {
+            "id": "ML_RHETORIC_EPANODE",
+            "singular": "épanode",
+            "definition": "Répétition de groupes de mots qui semblent fonctionner de manière autonome alors que la poursuite du texte montre que ces termes étaient en réalité les annonces d'un développement dont ils constituent les éléments"
+        },
+        "ML_RHETORIC_EPIPHORE": {
+            "id": "ML_RHETORIC_EPIPHORE",
+            "singular": "épiphore",
+            "definition": "[Poétique] répétition d'un mot ou d'un vers en fin de strophe"
+        },
+        "ML_RHETORIC_EPIZEUXE": {
+            "id": "ML_RHETORIC_EPIZEUXE",
+            "singular": "épizeuxe",
+            "definition": "Répétition contiguë d'un même terme sans coordination"
+        },
+        "ML_RHETORIC_EXPOLITION": {
+            "id": "ML_RHETORIC_EXPOLITION",
+            "singular": "expolition",
+            "definition": "Figure proche de l' accumulation qui consiste à répéter un même argument sous des formes diverses"
+        },
+        "ML_RHETORIC_FIGURA-ETYMOLOGICA": {
+            "id": "ML_RHETORIC_FIGURA-ETYMOLOGICA",
+            "singular": "figura etymologica",
+            "definition": "Assemblage de mots différents venant réellement ou apparemment d'une même racine étymologique ; proche de la traductio"
+        },
+        "ML_RHETORIC_HOMEOPTOTE": {
+            "id": "ML_RHETORIC_HOMEOPTOTE",
+            "singular": "homéoptote",
+            "definition": "Répétition de formes morpho-syntaxiques sur la base d'un parallélisme grammatical des marqueurs morphologiques ou morphèmes"
+        },
+        "ML_RHETORIC_ISOCOLON": {
+            "id": "ML_RHETORIC_ISOCOLON",
+            "singular": "isocolon",
+            "definition": "Figure de style de répétition qui consiste à former un nombre égal ou quasi égal de syllabes dans une unité d'une période, généralement parce que ces groupes de mots utilisent la même structure syntaxique ; proche du parallélisme"
+        },
+        "ML_RHETORIC_PALILOGY_FR": {
+            "id": "ML_RHETORIC_PALILOGY_FR",
+            "singular": "palilogie",
+            "definition": "Répétition d'un mot pour l'accentuer"
+        },
+        "ML_RHETORIC_PARONOMASIA": {
+            "id": "ML_RHETORIC_PARONOMASIA",
+            "singular": "paronomase",
+            "definition": "Répétition visant à rapprocher des paronymes au sein du même énoncé"
+        },
+        "ML_RHETORIC_POLYPTOTE": {
+            "id": "ML_RHETORIC_POLYPTOTE",
+            "singular": "polyptote",
+            "definition": "Répétition de plusieurs termes de même racine, ou encore un même verbe sous différentes formes. Le mot subit des variations morpho-syntaxiques"
+        },
+        "ML_RHETORIC_SYMPLOQUE": {
+            "id": "ML_RHETORIC_SYMPLOQUE",
+            "singular": "symploque",
+            "definition": "Répétition d'un ou plusieurs mots commençant et terminant une proposition, combinant l'anaphore et l'épiphore selon un schéma : A___B / A___B"
+        },
+        "ML_RHETORIC_THEMATISATION": {
+            "id": "ML_RHETORIC_THEMATISATION",
+            "singular": "thématisation",
+            "definition": "Répétition, généralement au début de phrase ou de vers, d'un élément repris ensuite (thème du propos) afin de le mettre en relief"
+        },
+        "ML_RHETORIC_TRADUCTIO": {
+            "id": "ML_RHETORIC_TRADUCTIO",
+            "singular": "traductio",
+            "definition": "Répétition à l'intérieur du même vers d'un mot ou d'une série de mots mais avec une variation grammaticale (de temps, de mode, etc.) ; proche de la paronomase Ou répétition de mots ayant ou semblant avoir une même racine étymologique ; proche de la figura etymologica"
+        },
+        "ML_RHETORIC_ALLUSION": {
+            "id": "ML_RHETORIC_ALLUSION",
+            "singular": "allusion",
+            "definition": "Expression d'une idée sans l’articuler en avançant une autre idée à sa place"
+        },
+        "ML_RHETORIC_ANADIPLOSIS": {
+            "id": "ML_RHETORIC_ANADIPLOSIS",
+            "singular": "anadiplose",
+            "definition": "Reprise d'un même mot en fin de phrase et en début de phrase suivante ; proche de la concaténation . L' épanadiplose et l'anadiplose sont des formes particulières d' épanalepses"
+        },
+        "ML_RHETORIC_AUTOCATEGOREME": {
+            "id": "ML_RHETORIC_AUTOCATEGOREME",
+            "singular": "autocatégorème",
+            "definition": "Répétition d'une accusation envers soi, délibérée ou feinte, afin de susciter une dénégation de l'interlocuteur"
+        },
+        "ML_RHETORIC_AUTOCORRECTION": {
+            "id": "ML_RHETORIC_AUTOCORRECTION",
+            "singular": "autocorrection",
+            "definition": "Reprise volontaire de paroles que l'on vient d'énoncer afin de les reformuler avec plus de justesse ou plus de force. Voir épanorthose"
+        },
+        "ML_RHETORIC_CLICHE": {
+            "id": "ML_RHETORIC_CLICHE",
+            "singular": "cliché",
+            "definition": "Répétition d'une image ou d'une tournure usées par un emploi fréquent et populaire et hautement prévisible et souvent littéraire ou artistique"
+        },
+        "ML_RHETORIC_HYPERBOLE": {
+            "id": "ML_RHETORIC_HYPERBOLE",
+            "singular": "hyperbole",
+            "definition": "Amplification d'un énoncé. C'est la principale figure de l'exagération"
+        },
+        "ML_RHETORIC_METAPHORE-FILEE": {
+            "id": "ML_RHETORIC_METAPHORE-FILEE",
+            "singular": "métaphore filée",
+            "definition": "Suite de métaphores sur le même thème. La première métaphore en engendre d'autres, construites à partir du même comparant, et développant un champ lexical dans la suite du texte"
+        },
+        "ML_RHETORIC_PARRHESIE": {
+            "id": "ML_RHETORIC_PARRHESIE",
+            "singular": "parrhésie",
+            "definition": "Figure d'adjonction qui consiste à dire ce qu'on a de plus intime en cherchant ses mots ; proche de la licence et du \"franc parler\""
+        },
+        "ML_RHETORIC_PERISSOLOGIE": {
+            "id": "ML_RHETORIC_PERISSOLOGIE",
+            "singular": "périssologie",
+            "definition": "Faute d’écriture par redondance, qui consiste à l’ajout d’un ou de plusieurs détails inutiles qui n’apportent rien à la compréhension d’une idée ni à l’expression de cette idée, sinon pour l’alourdir ; proche du pléonasme"
+        },
+        "ML_RHETORIC_PHEBUS": {
+            "id": "ML_RHETORIC_PHEBUS",
+            "singular": "phébus",
+            "definition": "Obscurcissement du discours en répétant des arguments identiques ; proche du galimatias"
+        },
+        "ML_RHETORIC_PONCIF": {
+            "id": "ML_RHETORIC_PONCIF",
+            "singular": "poncif",
+            "definition": "Répétition d'une expression banale et conventionnelle ; proche du lieu commun ou du cliché"
+        },
+        "ML_RHETORIC_REDONDANCE": {
+            "id": "ML_RHETORIC_REDONDANCE",
+            "singular": "redondance",
+            "definition": "[Stylistique] répétition monotone de la même idée en plusieurs formulations différentes au sein d'une même phrase. Voir pléonasme"
+        },
+        "ML_RHETORIC_TOPOS": {
+            "id": "ML_RHETORIC_TOPOS",
+            "singular": "topos",
+            "definition": "Répétition d'un lieu commun ou d'un cliché admis par tous"
+        },
+        "ML_RHETORIC_EPENTHESE": {
+            "id": "ML_RHETORIC_EPENTHESE",
+            "singular": "épenthèse",
+            "definition": "addition interne d'un phonème ou d'une syllabe que l'étymologie ne justifie pas ou pour en faciliter l'articulation (sens phonétique) ou obtenir un effet particulier (sens stylistique) la paragoge est un ajout à la fin du mot et la prothèse , au début"
+        },
+        "ML_RHETORIC_ANTEPIPHORE": {
+            "id": "ML_RHETORIC_ANTEPIPHORE",
+            "singular": "antépiphore",
+            "definition": "Répétition d'un même groupe de mots (ou d'un même vers) au début et à la fin d'un paragraphe (ou d'une strophe) produisant un effet de clôture ; proche de l' épiphore , de l' épanadiplose et de l' anaphore"
+        },
+        "ML_RHETORIC_ANTICLIMAX": {
+            "id": "ML_RHETORIC_ANTICLIMAX",
+            "singular": "anticlimax",
+            "definition": "Gradation négative opposée à une gradation positive, ou, par effet d' antithèse , expression négative qui suit une gradation positive"
+        },
+        "ML_RHETORIC_AUXESE": {
+            "id": "ML_RHETORIC_AUXESE",
+            "singular": "auxèse",
+            "definition": "Accumulation de termes ou d'expressions d'une grande intensité ou hyperboliques, à gradation positive"
+        },
+        "ML_RHETORIC_ENUMERATION": {
+            "id": "ML_RHETORIC_ENUMERATION",
+            "singular": "énumération",
+            "definition": "Accumulation, les uns à la suite des autres, de plusieurs éléments de même niveau syntaxique, coordonnés ou non"
+        },
+        "ML_RHETORIC_EPIPHONEME": {
+            "id": "ML_RHETORIC_EPIPHONEME",
+            "singular": "épiphonème",
+            "definition": "Sentence ou réflexion d'opinion générale exprimée au cours d'un développement pour servir de conclusion ou d'illustration marquante (procédé utilisé dans les fables)"
+        },
+        "ML_RHETORIC_EPIPHRASE": {
+            "id": "ML_RHETORIC_EPIPHRASE",
+            "singular": "épiphrase",
+            "definition": "[Rhétorique] pensée de portée générale ajoutée après un développement, mais inséparable de l'argumentation."
+        },
+        "ML_RHETORIC_EPITHETISME": {
+            "id": "ML_RHETORIC_EPITHETISME",
+            "singular": "épithétisme",
+            "definition": "[Rhétorique] accumulation de précisions descriptives ou explicatives autour d'une idée centrale"
+        },
+        "ML_RHETORIC_HYPOTYPOSE": {
+            "id": "ML_RHETORIC_HYPOTYPOSE",
+            "singular": "hypotypose",
+            "definition": "« L'aurore aux doigts de rose » — Homère « Sur les blancs nénuphars, l'oiseau ployant ses ailes , Buvait de son bec rose en ce bassin charmant » — Leconte de Lisle , Poèmes barbares, La fontaine aux lianes"
+        },
+        "ML_RHETORIC_EPITROCHASME": {
+            "id": "ML_RHETORIC_EPITROCHASME",
+            "singular": "épitrochasme",
+            "definition": "Accumulation de mots brefs, dans un vers ou une phrase, qui produit des effets rythmiques particuliers"
+        },
+        "ML_RHETORIC_CLIMAX": {
+            "id": "ML_RHETORIC_CLIMAX",
+            "singular": "gradation",
+            "definition": "Accumulation de termes ou d'expressions dont l'intensité s'accentue dans un sens positif ou dans un sens négatif"
+        },
+        "ML_RHETORIC_HYPERHYPOTAXE": {
+            "id": "ML_RHETORIC_HYPERHYPOTAXE",
+            "singular": "hyperhypotaxe",
+            "definition": "Insertion de subordonnées en trop grand nombre"
+        },
+        "ML_RHETORIC_HYPOTAXE": {
+            "id": "ML_RHETORIC_HYPOTAXE",
+            "singular": "hypotaxe",
+            "definition": "Consiste à enrichir une phrase ou un propos par une succession de propositions coordonnées par des mots de liaison"
+        },
+        "ML_RHETORIC_MOT-VALISE": {
+            "id": "ML_RHETORIC_MOT-VALISE",
+            "singular": "mot-valise",
+            "definition": "Elusion d'au moins deux autres mots existant dans la langue ; proche du néologisme et de l' haplologie"
+        },
+        "ML_RHETORIC_NEOLOGISME": {
+            "id": "ML_RHETORIC_NEOLOGISME",
+            "singular": "néologisme",
+            "definition": "Création et utilisation d'un mot ou d'une expression qu'on vient de former à partir d'éléments déjà existants dans la langue elle-même ; proche du mot-valise"
+        },
+        "ML_RHETORIC_PARADOXISME": {
+            "id": "ML_RHETORIC_PARADOXISME",
+            "singular": "paradoxisme",
+            "definition": "Association de deux termes ou de deux idées antithétiques"
+        },
+        "ML_RHETORIC_PARAPHRASE": {
+            "id": "ML_RHETORIC_PARAPHRASE",
+            "singular": "paraphrase",
+            "definition": "[Rhétorique ou lyrisme poétique] accumulation, au cours d'un développement, d'idées accessoires afin de renforcer une idée centrale, proche de la reformulation et de la traduction"
+        },
+        "ML_RHETORIC_PAREMBOLE": {
+            "id": "ML_RHETORIC_PAREMBOLE",
+            "singular": "parembole",
+            "definition": "Inclusion dans une phrase ou à un ensemble de phrases des parenthèses discursives dans lesquelles le sens de la phrase incidente a un rapport direct avec le sujet de la phrase principale ; proche de la parenthèse et de l' hyperhypotaxe"
+        },
+        "ML_RHETORIC_PERIPHRASIS": {
+            "id": "ML_RHETORIC_PERIPHRASIS",
+            "singular": "périphrase",
+            "definition": "Consiste à désigner quelque chose ou quelqu'un sans dire son nom ; proche de l' épithète homérique , de l' antonomase , de la circonlocution , et du kenning"
+        },
+        "ML_RHETORIC_POLYSYNDETON": {
+            "id": "ML_RHETORIC_POLYSYNDETON",
+            "singular": "polysyndète",
+            "definition": "Ajout d'une conjonction de coordination au début de chacun des membres de la ou des phrase(s), le plus souvent alors qu'elle n'y est pas nécessaire"
+        },
+        "ML_RHETORIC_PRONOMINATION": {
+            "id": "ML_RHETORIC_PRONOMINATION",
+            "singular": "pronomination",
+            "definition": "Figure de style qui consiste à évoquer un objet sans directement le nommer, à l'aide d'une expression choisie qui l'évoque par une qualité ou un attribut qui lui sont particuliers ou intrinsèques, et le faire reconnaître dans cette caractéristique."
+        },
+        "ML_RHETORIC_SUSPENSION": {
+            "id": "ML_RHETORIC_SUSPENSION",
+            "singular": "suspension",
+            "definition": "Consiste à mettre le lecteur ou l'auditeur dans l'attente impatiente de ce qu'on a annoncé mais pas encore dit afin de le tenir en haleine ou pour mettre en relief une idée ou une expression ; proche de la prétérition"
+        },
+        "ML_RHETORIC_SYNCHISE": {
+            "id": "ML_RHETORIC_SYNCHISE",
+            "singular": "synchise",
+            "definition": "Défaut qui consiste à rompre le déroulement syntaxique par des parenthèses innombrables qui laissent en suspens les constructions et finissent par rendre la phrase inintelligible."
+        },
+        "ML_RHETORIC_TAPINOSE": {
+            "id": "ML_RHETORIC_TAPINOSE",
+            "singular": "tapinose",
+            "definition": "Accumulation de termes ou d'expressions d'une grande intensité ou hyperboliques à gradation négative"
+        },
+        "ML_RHETORIC_AMPHIGOURI": {
+            "id": "ML_RHETORIC_AMPHIGOURI",
+            "singular": "amphigouri",
+            "definition": "Discours obscur et incompréhensible rendu possible par une accumulation de détails ou d'arguments ; le galimatias est une variante. L'article regroupe toutes les figures désignant un discours obscur à la limite de la faute de langage"
+        },
+        "ML_RHETORIC_ANTILOGIE": {
+            "id": "ML_RHETORIC_ANTILOGIE",
+            "singular": "antilogie",
+            "definition": "Consiste en une contradiction ou incompatibilité entre deux idées ou deux opinions dans une même phrase ou un même texte"
+        },
+        "ML_RHETORIC_CHLEUASME": {
+            "id": "ML_RHETORIC_CHLEUASME",
+            "singular": "chleuasme",
+            "definition": "Consiste à en rajouter sur soi-même en se dépréciant pour mieux se dédouaner, ou pour recevoir des éloges ; figure ironique"
+        },
+        "ML_RHETORIC_SIMILE": {
+            "id": "ML_RHETORIC_SIMILE",
+            "singular": "comparaison",
+            "definition": "Mise en relation d'un objet, d'une circonstance, d'un concept ou d'une qualité (dit comparé ) avec un autre élément (dit comparant ) au moyen d'un terme introduisant l' analogie"
+        },
+        "ML_RHETORIC_EPANORTHOSE": {
+            "id": "ML_RHETORIC_EPANORTHOSE",
+            "singular": "épanorthose",
+            "definition": "[Rhétorique et Poétique] affirmation suivie d'une ou de plusieurs expressions correctrices de renforcement, d'atténuation ou de rétractation, afin de la nuancer"
+        },
+        "ML_RHETORIC_OXYMORON": {
+            "id": "ML_RHETORIC_OXYMORON",
+            "singular": "oxymore",
+            "definition": "[Stylistique] réunion dans un même syntagme de deux mots sémantiquement opposés mais appartenant à des catégories grammaticales différentes aboutissant à une image improbable, frappante, proche du paradoxe et de l' antithèse"
+        },
+        "ML_RHETORIC_PARADOX": {
+            "id": "ML_RHETORIC_PARADOX",
+            "singular": "paradoxe",
+            "definition": "[Rhétorique] exposition d'une idée qui apparaît d'abord contraire au sens commun (voir aussi paradoxisme )"
+        },
+        "ML_RHETORIC_PLEONASM": {
+            "id": "ML_RHETORIC_PLEONASM",
+            "singular": "pléonasme",
+            "definition": "Ajout d'un ou plusieurs mots choisis qui ne sont pas nécessaires au sens grammatical de la phrase mais par lesquels l'expression d'une idée est, soit renforcée, soit précisée"
+        },
+        "ML_RHETORIC_REGRESSION": {
+            "id": "ML_RHETORIC_REGRESSION",
+            "singular": "régression",
+            "definition": "Reprise, dans le cours de la phrase, des mots employés afin de les placer dans un ordre inverse"
+        },
+        "ML_RHETORIC_TAUTOLOGY": {
+            "id": "ML_RHETORIC_TAUTOLOGY",
+            "singular": "tautologie",
+            "definition": "Redondance sémantique qui consiste à attribuer à une chose une qualité soit contenue dans la définition du mot, soit assumée par la nature de la chose. Ou redondance logique qui affirme une idée qui va de soi pour tout le monde"
+        },
+        "ML_RHETORIC_TRUISME": {
+            "id": "ML_RHETORIC_TRUISME",
+            "singular": "truisme",
+            "definition": "Expression évidente et n'apportant aucune information"
+        },
+        "ML_RHETORIC_LIPOGRAMME": {
+            "id": "ML_RHETORIC_LIPOGRAMME",
+            "singular": "lipogramme",
+            "definition": "consiste à ne pas utiliser sciemment une lettre donnée"
+        },
+        "ML_RHETORIC_ELISION": {
+            "id": "ML_RHETORIC_ELISION",
+            "singular": "élision",
+            "definition": "amuïssement de la voyelle finale d’un mot devant un autre mot à initiale vocalique"
+        },
+        "ML_RHETORIC_SYNCOPE": {
+            "id": "ML_RHETORIC_SYNCOPE",
+            "singular": "syncope",
+            "definition": "disparition d'un ou plusieurs phonèmes au sein d'un même mot"
+        },
+        "ML_RHETORIC_ASYNDETON": {
+            "id": "ML_RHETORIC_ASYNDETON",
+            "singular": "asyndète",
+            "definition": "suppression des liens logiques et des conjonctions dans une phrase ; proche de l’ accumulation"
+        },
+        "ML_RHETORIC_ELLIPSIS": {
+            "id": "ML_RHETORIC_ELLIPSIS",
+            "singular": "ellipse",
+            "definition": "[Rhétorique] consiste à omettre un ou plusieurs éléments en principe nécessaires à la compréhension du texte, pour produire un effet de raccourci. [Stylistique] ellipse temporelle ou diégétique : omission d'un moment de l'action pour l'accélérer ou pour dissimuler une information"
+        },
+        "ML_RHETORIC_PARATAXE": {
+            "id": "ML_RHETORIC_PARATAXE",
+            "singular": "parataxe",
+            "definition": "juxtaposition des phrases, sans mot de liaison explicitant le rapport syntaxique de subordination ou de coordination qui les unit ; contraire de l' hypotaxe"
+        },
+        "ML_RHETORIC_SYLLEPSIS": {
+            "id": "ML_RHETORIC_SYLLEPSIS",
+            "singular": "syllepse",
+            "definition": "syllepse grammaticale: effacement des règles morpho-syntaxiques d’accord fondée sur l’accord des mots selon un sens préféré et non selon la stricte grammaire"
+        },
+        "ML_RHETORIC_ZEUGMA": {
+            "id": "ML_RHETORIC_ZEUGMA",
+            "singular": "zeugma",
+            "definition": "[syntaxique] ellipse fait de ne pas répéter un élément commun dans une phrase présentant deux membres parallèles (souvent d'un nombre différent)."
+        },
+        "ML_RHETORIC_ANACOLUTHON": {
+            "id": "ML_RHETORIC_ANACOLUTHON",
+            "singular": "anacoluthe",
+            "definition": "« Vêtu de probité candide et de lin blanc. » — Victor Hugo , Booz endormi"
+        },
+        "ML_RHETORIC_AMPHIBOLOGIE": {
+            "id": "ML_RHETORIC_AMPHIBOLOGIE",
+            "singular": "amphibologie",
+            "definition": "ambiguïté grammaticale et syntaxique qui donne lieu à diverses interprétations d'une même phrase"
+        },
+        "ML_RHETORIC_ANTIPHRASE": {
+            "id": "ML_RHETORIC_ANTIPHRASE",
+            "singular": "antiphrase",
+            "definition": "emploi, dans une situation caractérisée, des mots contraires à sa pensée pour mieux l'exprimer. Cette figure qui sous-tend l'ironie est proche de la litote , de l' antithèse et de l' euphémisme"
+        },
+        "ML_RHETORIC_APHORISM": {
+            "id": "ML_RHETORIC_APHORISM",
+            "singular": "aphorisme",
+            "definition": "formule brève qui résume l'essentiel d'une pensée"
+        },
+        "ML_RHETORIC_APOPHTHEGM": {
+            "id": "ML_RHETORIC_APOPHTHEGM",
+            "singular": "apophtegme",
+            "definition": "parole mémorable ayant valeur de maxime"
+        },
+        "ML_RHETORIC_APOSIOPESE": {
+            "id": "ML_RHETORIC_APOSIOPESE",
+            "singular": "aposiopèse",
+            "definition": "consiste à interrompre une phrase ou un vers sans achever sa pensée"
+        },
+        "ML_RHETORIC_BRACHYLOGIE": {
+            "id": "ML_RHETORIC_BRACHYLOGIE",
+            "singular": "brachylogie",
+            "definition": "emploi d'une expression elliptique, ou plus courte qu'une autre aboutissant à un discours bref, variante de l' ellipse (rhétorique)"
+        },
+        "ML_RHETORIC_EUPHEMISM": {
+            "id": "ML_RHETORIC_EUPHEMISM",
+            "singular": "euphémisme",
+            "definition": "atténuation ou adoucissement d'une idée déplaisante"
+        },
+        "ML_RHETORIC_GNOMISME": {
+            "id": "ML_RHETORIC_GNOMISME",
+            "singular": "gnomisme",
+            "definition": "figure d’effacement (d’une démonstration logique notamment) sous forme de sentence, de proverbes ou de maximes, généralement pour exprimer une vérité morale, une leçon, une règle de vie, un conseil ; proche de l’ enthymème"
+        },
+        "ML_RHETORIC_KAKEMPHATON": {
+            "id": "ML_RHETORIC_KAKEMPHATON",
+            "singular": "kakemphaton",
+            "definition": "consiste en un jeu de mots, souvent un calembour ou apparenté, réalisé involontairement"
+        },
+        "ML_RHETORIC_PARABOLE": {
+            "id": "ML_RHETORIC_PARABOLE",
+            "singular": "parabole",
+            "definition": "consistant en une courte histoire qui utilise les événements quotidiens pour illustrer une morale ou une doctrine, proche de l' allégorie et de la maxime"
+        },
+        "ML_RHETORIC_PARALIPSIS": {
+            "id": "ML_RHETORIC_PARALIPSIS",
+            "singular": "prétérition",
+            "definition": "parler de quelque chose après avoir annoncé que l'on ne va pas en parler"
+        },
+        "ML_RHETORIC_ANTILABE": {
+            "id": "ML_RHETORIC_ANTILABE",
+            "singular": "antilabe",
+            "definition": "réarrangement d'un même vers, qui est morcelé en plusieurs répliques sous forme de phrases indépendantes"
+        },
+        "ML_RHETORIC_ANTIMETABOLE": {
+            "id": "ML_RHETORIC_ANTIMETABOLE",
+            "singular": "antimétabole",
+            "definition": "chiasme qui consiste à reprendre les mots d'une phrase dans une autre mais en en modifiant l'ordre de présentation, proche de l' anadiplose et de l' épanadiplose"
+        },
+        "ML_RHETORIC_CHIASMUS": {
+            "id": "ML_RHETORIC_CHIASMUS",
+            "singular": "chiasme",
+            "definition": "inversion syntaxique de la seconde de deux propositions normalement symétriques"
+        },
+        "ML_RHETORIC_ENALLAGE": {
+            "id": "ML_RHETORIC_ENALLAGE",
+            "singular": "énallage",
+            "definition": "changement brusque de temps, de mode, de nombre ou de genre, afin de dramatiser une situation."
+        },
+        "ML_RHETORIC_HENDIADYS": {
+            "id": "ML_RHETORIC_HENDIADYS",
+            "singular": "hendiadys",
+            "definition": "remplacement de la subordination entre deux mots par une coordination"
+        },
+        "ML_RHETORIC_HYPALLAGE": {
+            "id": "ML_RHETORIC_HYPALLAGE",
+            "singular": "hypallage",
+            "definition": "Échange de points de vue ou d'images entre deux idées. Voir aussi Catachrèse"
+        },
+        "ML_RHETORIC_HYPERBATON": {
+            "id": "ML_RHETORIC_HYPERBATON",
+            "singular": "hyperbate",
+            "definition": "prolongation de la phrase, par l'ajout d'un élément qui se trouve ainsi déplacé."
+        },
+        "ML_RHETORIC_HYPOZEUXE": {
+            "id": "ML_RHETORIC_HYPOZEUXE",
+            "singular": "hypozeuxe",
+            "definition": "[stylistique] maintien, par des mots associés, du parallélisme entre les termes d'une énumération pour l'équilibre ou la cadence de la phrase"
+        },
+        "ML_RHETORIC_INVERSION": {
+            "id": "ML_RHETORIC_INVERSION",
+            "singular": "inversion",
+            "definition": "[Poétique] inversion de l’ordre habituel des mots sans nuire à la compréhension (commodité de versification ou mise en valeur de mots)"
+        },
+        "ML_RHETORIC_PARALLELISME": {
+            "id": "ML_RHETORIC_PARALLELISME",
+            "singular": "parallélisme",
+            "definition": "succession de deux segments de phrase qui ont la même construction syntaxique en un rapport de symétrie et de répétition, proche de l' anaphore et du chiasme . L' hypozeuxe en est une variante"
+        },
+        "ML_RHETORIC_TMESE-(RHETORIQUE)": {
+            "id": "ML_RHETORIC_TMESE-(RHETORIQUE)",
+            "singular": "tmèse (rhétorique)",
+            "definition": "variante de l' hyperbate qui consiste en la division d'un mot composé, dont les parties se retrouvent séparées par un ou plusieurs mots"
+        },
+        "ML_RHETORIC_ANTIPARASTASE": {
+            "id": "ML_RHETORIC_ANTIPARASTASE",
+            "singular": "antiparastase",
+            "definition": "figure de réarrangement consistant à s'appuyer sur un argument faible pour le retourner en sa faveur"
+        },
+        "ML_RHETORIC_ANTITHESIS": {
+            "id": "ML_RHETORIC_ANTITHESIS",
+            "singular": "antithèse",
+            "definition": "rapprochement rapide de deux idées dont le sens est opposé ou logiquement éloigné, proche de l' oxymore et du parallélisme"
+        },
+        "ML_RHETORIC_APOSTROPHE": {
+            "id": "ML_RHETORIC_APOSTROPHE",
+            "singular": "apostrophe",
+            "definition": "[rhétorique] aparté au milieu d'un discours pour interpeller un objet ou une personne symbolique"
+        },
+        "ML_RHETORIC_METALEPSE": {
+            "id": "ML_RHETORIC_METALEPSE",
+            "singular": "métalepse",
+            "definition": "[Stylistique] figure de style qui consiste à prendre la cause pour la conséquence. [Narrative] Intrusion ou implication du narrateur extérieur dans son propre discours."
+        },
+        "ML_RHETORIC_PROLEPSE": {
+            "id": "ML_RHETORIC_PROLEPSE",
+            "singular": "prolepse",
+            "definition": "[syntaxe] expression anticipée, dans le COD de la principale, du sujet de la subordonnée comme dans « Regarde cette auto, comme elle est belle » [stylistique] emploi d'un terme (souvent un adjectif), qui représente par concision un état antérieur ou postérieur au moment de l'énoncé [rhétorique] réfutation anticipée d'une objection possible. [narratologie] la prolepse - ou anticipation - est une figure de style par laquelle sont mentionnés des faits qui se produiront bien plus tard"
+        },
+        "ML_RHETORIC_ANANTAPODOTON": {
+            "id": "ML_RHETORIC_ANANTAPODOTON",
+            "singular": "anantapodoton",
+            "definition": "substitution de la structure syntaxique du premier membre d'une phrase alternative (en « ou bien… ou bien »), par une formule synthétique, souvent exclamative"
+        },
+        "ML_RHETORIC_ASTEISME": {
+            "id": "ML_RHETORIC_ASTEISME",
+            "singular": "astéisme",
+            "definition": "figure d' ironie consistant en une louange ou une flatterie adroite faisant semblant de blâmer ou de se plaindre de quelqu'un"
+        },
+        "ML_RHETORIC_CONSTRUCTIO-AD-SENSUM": {
+            "id": "ML_RHETORIC_CONSTRUCTIO-AD-SENSUM",
+            "singular": "constructio ad sensum",
+            "definition": "accord entre le verbe et le sujet non par les règles de grammaire mais par le sens ; autre nom de la syllepse grammaticale"
+        },
+        "ML_RHETORIC_HENDIATRIS": {
+            "id": "ML_RHETORIC_HENDIATRIS",
+            "singular": "hendiatris",
+            "definition": "repose sur l'utilisation de trois mots, employés pour exprimer une idée ou une image."
+        },
+        "ML_RHETORIC_SOLECISME": {
+            "id": "ML_RHETORIC_SOLECISME",
+            "singular": "solécisme",
+            "definition": "Faute de syntaxe (construction incorrecte) permettant d'aboutir à un langage populaire proche du barbarisme"
+        },
+        "ML_RHETORIC_VERBIGERATION": {
+            "id": "ML_RHETORIC_VERBIGERATION",
+            "singular": "verbigération",
+            "definition": "synonymes d' amphigouri . Flux de paroles inutiles n'apportant aucune nouvelle information, proche du phébus et du galimatias"
+        },
+        "ML_RHETORIC_ANTONOMASIA": {
+            "id": "ML_RHETORIC_ANTONOMASIA",
+            "singular": "antonomase",
+            "definition": "Emploi d'un nom propre à la place d'un nom commun ou inversement ; variante de la métonymie"
+        },
+        "ML_RHETORIC_CHOSIFICATION": {
+            "id": "ML_RHETORIC_CHOSIFICATION",
+            "singular": "chosification",
+            "definition": "Transformation ou transposition d'une abstraction en un objet concret, visant à appréhender un concept, comme une chose concrète, variante de l' allégorie"
+        },
+        "ML_RHETORIC_CIRCONLOCUTION": {
+            "id": "ML_RHETORIC_CIRCONLOCUTION",
+            "singular": "circonlocution",
+            "definition": "forme d' ironie qui consiste en l'allongement de l’expression visant à masquer son embarras ou à dissimuler une idée"
+        },
+        "ML_RHETORIC_DIGRESSION": {
+            "id": "ML_RHETORIC_DIGRESSION",
+            "singular": "digression",
+            "definition": "Introduction de propos étranger au sujet général d'un discours, d'un débat, d'un écrit"
+        },
+        "ML_RHETORIC_ETHOPEE": {
+            "id": "ML_RHETORIC_ETHOPEE",
+            "singular": "éthopée",
+            "definition": "Description des mœurs d'un personnage, variante de l' hypotypose"
+        },
+        "ML_RHETORIC_IRONY": {
+            "id": "ML_RHETORIC_IRONY",
+            "singular": "ironie",
+            "definition": "Consiste à dire le contraire de ce qu'on veut entendre dans le but de railler, non de tromper"
+        },
+        "ML_RHETORIC_LITOTES": {
+            "id": "ML_RHETORIC_LITOTES",
+            "singular": "litote",
+            "definition": "Déguiser sa pensée de façon à la faire deviner dans toute sa force"
+        },
+        "ML_RHETORIC_METAPHOR": {
+            "id": "ML_RHETORIC_METAPHOR",
+            "singular": "métaphore",
+            "definition": "Consiste à utiliser un mot à la place d'un autre, sur la base de la ressemblance ou de l'opposition"
+        },
+        "ML_RHETORIC_METONYMY": {
+            "id": "ML_RHETORIC_METONYMY",
+            "singular": "métonymie",
+            "definition": "Remplace une idée par une autre qui lui est associée"
+        },
+        "ML_RHETORIC_PERSONIFICATION": {
+            "id": "ML_RHETORIC_PERSONIFICATION",
+            "singular": "personnification",
+            "definition": "Consiste à faire d'un être inanimé ou d'une abstraction un personnage réel proche de l' allégorie (rhétorique)"
+        },
+        "ML_RHETORIC_PROSOPOGRAPHIE": {
+            "id": "ML_RHETORIC_PROSOPOGRAPHIE",
+            "singular": "prosopographie",
+            "definition": "Description animée et comme vivante d'un personnage ou d'un groupe de personnages, variante de l' hypotypose"
+        },
+        "ML_RHETORIC_PROSOPOPOEIA_FR": {
+            "id": "ML_RHETORIC_PROSOPOPOEIA_FR",
+            "singular": "prosopopée",
+            "definition": "consiste à donner la parole à un absent, à une personne, à un animal ou à un être inanimé qui est personnifié, variante de l' hypotypose"
+        },
+        "ML_RHETORIC_QUESTION-RHETORIQUE": {
+            "id": "ML_RHETORIC_QUESTION-RHETORIQUE",
+            "singular": "question rhétorique",
+            "definition": "fausse question destinée à garder la parole ou à émouvoir"
+        },
+        "ML_RHETORIC_SERMOCINATION": {
+            "id": "ML_RHETORIC_SERMOCINATION",
+            "singular": "sermocination",
+            "definition": "utilisation d'un personnage imaginaire, historique ou abstrait pour évoquer ses assertions ; variante de la prosopopée"
+        },
+        "ML_RHETORIC_SYMBOLE": {
+            "id": "ML_RHETORIC_SYMBOLE",
+            "singular": "symbole",
+            "definition": "énoncé narratif ou descriptif polysémique, susceptible d'une double interprétation sur le plan de la réalité et sur le plan des idées ; lien indirect qui unit une image et une idée ou un concept reposant sur une métonymie ou une métaphore et à l'origine de l' allégorie"
+        },
+        "ML_RHETORIC_SYNECDOCHE": {
+            "id": "ML_RHETORIC_SYNECDOCHE",
+            "singular": "synecdoque",
+            "definition": "Consiste à prendre la partie pour le tout, proche de la métaphore"
+        }
+    }
+}

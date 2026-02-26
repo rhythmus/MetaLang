@@ -1,0 +1,19 @@
+{
+    "name": "@metalang/plugin-no",
+    "version": "1.0.0",
+    "description": "Norwegian generic language plugin for MetaLang",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@metalang/schema": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    }
+}

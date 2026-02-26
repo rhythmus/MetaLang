@@ -1,0 +1,418 @@
+{
+    "$schema": "../../../schema/schemas/plugin-manifest.schema.json",
+    "descriptor": {
+        "id": "cs-generic",
+        "name": "Czech Generic",
+        "language": "cs",
+        "isGeneric": true,
+        "lastEditedAt": "2026-02-26T20:55:00Z",
+        "source": {
+            "title": "Czech Linguistic Glossary (Wiktionary based)",
+            "url": "https://cs.wiktionary.org/wiki/Wiktionary:Slovn%C3%ADk_lingvistick%C3%A9_terminologie",
+            "lastEditedAt": "2026-02-26T20:55:00Z"
+        }
+    },
+    "mappings": {
+        "ML_MORPH-VALUE_CASE-ABESSIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ABESSIVE",
+            "singular": "abessiv"
+        },
+        "ML_MORPH-VALUE_CASE-ABLATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ABLATIVE",
+            "singular": "ablativ"
+        },
+        "ML_LEX-STRUCT_ABBREVIATION": {
+            "id": "ML_LEX-STRUCT_ABBREVIATION",
+            "singular": "zkratka",
+            "synonyms": [
+                "abreviace",
+                "abreviatura"
+            ]
+        },
+        "ML_LEX-STRUCT_PROVERB": {
+            "id": "ML_LEX-STRUCT_PROVERB",
+            "singular": "přísloví",
+            "synonyms": [
+                "adagium"
+            ]
+        },
+        "ML_MORPH-VALUE_CASE-ADESSIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ADESSIVE",
+            "singular": "adessiv"
+        },
+        "ML_POS_ADJECTIVE": {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "adjektivum"
+        },
+        "ML_POS_ADV": {
+            "id": "ML_POS_ADV",
+            "singular": "příslovce",
+            "synonyms": [
+                "adverbium"
+            ]
+        },
+        "ML_PHONOLOGY_APHERESIS": {
+            "id": "ML_PHONOLOGY_APHERESIS",
+            "singular": "afereze"
+        },
+        "ML_DERIVATION_AFFIX": {
+            "id": "ML_DERIVATION_AFFIX",
+            "singular": "afix"
+        },
+        "ML_DERIVATION_AFFIXATION": {
+            "id": "ML_DERIVATION_AFFIXATION",
+            "singular": "afixace"
+        },
+        "ML_LEX-STRUCT_AGENT": {
+            "id": "ML_LEX-STRUCT_AGENT",
+            "singular": "agens"
+        },
+        "ML_PHONOLOGY_STRESS": {
+            "id": "ML_PHONOLOGY_STRESS",
+            "singular": "přízvuk",
+            "synonyms": [
+                "akcent"
+            ]
+        },
+        "ML_MORPH-VALUE_VOICE-ACTIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-ACTIVE",
+            "singular": "aktivum"
+        },
+        "ML_MORPH-VALUE_CASE-ACCUSATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ACCUSATIVE",
+            "singular": "akuzativ"
+        },
+        "ML_MORPH-VALUE_CASE-ALLATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ALLATIVE",
+            "singular": "allativ"
+        },
+        "ML_PHONOLOGY_ANAPTYXIS": {
+            "id": "ML_PHONOLOGY_ANAPTYXIS",
+            "singular": "anaptyxe"
+        },
+        "ML_LEX-STRUCT_ANTONYM": {
+            "id": "ML_LEX-STRUCT_ANTONYM",
+            "singular": "antonymum"
+        },
+        "ML_LEX-STRUCT_ANTHROPONYM": {
+            "id": "ML_LEX-STRUCT_ANTHROPONYM",
+            "singular": "antroponymum"
+        },
+        "ML_MORPH-VALUE_TENSE-AORIST": {
+            "id": "ML_MORPH-VALUE_TENSE-AORIST",
+            "singular": "aorist"
+        },
+        "ML_LEX-STRUCT_COMMON-NOUN": {
+            "id": "ML_LEX-STRUCT_COMMON-NOUN",
+            "singular": "apelativum"
+        },
+        "ML_EDITORIAL_SLANG": {
+            "id": "ML_EDITORIAL_SLANG",
+            "singular": "slang",
+            "synonyms": [
+                "argot"
+            ]
+        },
+        "ML_LEX-STRUCT_ATTRIBUTE": {
+            "id": "ML_LEX-STRUCT_ATTRIBUTE",
+            "singular": "atribut"
+        },
+        "ML_LEX-STRUCT_AUGMENTATIVE": {
+            "id": "ML_LEX-STRUCT_AUGMENTATIVE",
+            "singular": "augmentativum"
+        },
+        "ML_POS_INTERJ": {
+            "id": "ML_POS_INTERJ",
+            "singular": "citoslovce"
+        },
+        "ML_MORPH-VALUE_TENSE": {
+            "id": "ML_MORPH-VALUE_TENSE",
+            "singular": "čas"
+        },
+        "ML_MORPH-VALUE_CONJUGATION": {
+            "id": "ML_MORPH-VALUE_CONJUGATION",
+            "singular": "časování"
+        },
+        "ML_POS_PTCL": {
+            "id": "ML_POS_PTCL",
+            "singular": "částice"
+        },
+        "ML_MORPH-VALUE_NUMBER": {
+            "id": "ML_MORPH-VALUE_NUMBER",
+            "singular": "číslo"
+        },
+        "ML_POS_NUMERAL": {
+            "id": "ML_POS_NUMERAL",
+            "singular": "číslovka"
+        },
+        "ML_MORPH-VALUE_CASE-DATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-DATIVE",
+            "singular": "dativ"
+        },
+        "ML_MORPH-VALUE_DECLENSION": {
+            "id": "ML_MORPH-VALUE_DECLENSION",
+            "singular": "deklinace"
+        },
+        "ML_MORPH-VALUE_CASE-DELATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-DELATIVE",
+            "singular": "delativ"
+        },
+        "ML_LEX-STRUCT_DENOTATION": {
+            "id": "ML_LEX-STRUCT_DENOTATION",
+            "singular": "denotát"
+        },
+        "ML_LANGUAGE_DIALECT": {
+            "id": "ML_LANGUAGE_DIALECT",
+            "singular": "nářečí",
+            "synonyms": [
+                "dialekt"
+            ]
+        },
+        "ML_LEX-STRUCT_DIMINUTIVE": {
+            "id": "ML_LEX-STRUCT_DIMINUTIVE",
+            "singular": "diminutivum"
+        },
+        "ML_MORPH-VALUE_NUMBER-DISTRIBUTIVE": {
+            "id": "ML_MORPH-VALUE_NUMBER-DISTRIBUTIVE",
+            "singular": "distributiv"
+        },
+        "ML_MORPH-VALUE_NUMBER-DUAL": {
+            "id": "ML_MORPH-VALUE_NUMBER-DUAL",
+            "singular": "duál"
+        },
+        "ML_LEX-STRUCT_DOUBLET": {
+            "id": "ML_LEX-STRUCT_DOUBLET",
+            "singular": "dubleta"
+        },
+        "ML_MORPH-VALUE_DEGREE-EQUATIVE": {
+            "id": "ML_MORPH-VALUE_DEGREE-EQUATIVE",
+            "singular": "ekvativ"
+        },
+        "ML_MORPH-VALUE_CASE-ELATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ELATIVE",
+            "singular": "elativ"
+        },
+        "ML_PHONOLOGY_EPENTHESIS": {
+            "id": "ML_PHONOLOGY_EPENTHESIS",
+            "singular": "epenteze"
+        },
+        "ML_MORPH-VALUE_CASE-ESSIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ESSIVE",
+            "singular": "essiv"
+        },
+        "ML_LEX-STRUCT_ETHNONYM": {
+            "id": "ML_LEX-STRUCT_ETHNONYM",
+            "singular": "etnonymum"
+        },
+        "ML_EDITORIAL_EUPHEMISM": {
+            "id": "ML_EDITORIAL_EUPHEMISM",
+            "singular": "eufemismus"
+        },
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "femininum"
+        },
+        "ML_PHONOLOGY_PHONEME": {
+            "id": "ML_PHONOLOGY_PHONEME",
+            "singular": "foném"
+        },
+        "ML_LEX-STRUCT_PHRASE": {
+            "id": "ML_LEX-STRUCT_PHRASE",
+            "singular": "fráze"
+        },
+        "ML_MORPH-VALUE_CASE-GENITIVE": {
+            "id": "ML_MORPH-VALUE_CASE-GENITIVE",
+            "singular": "genitiv"
+        },
+        "ML_MORPH-VALUE_VERBFORM-GERUND": {
+            "id": "ML_MORPH-VALUE_VERBFORM-GERUND",
+            "singular": "gerundium"
+        },
+        "ML_MORPH-VALUE_VERBFORM-GERUNDIVE": {
+            "id": "ML_MORPH-VALUE_VERBFORM-GERUNDIVE",
+            "singular": "gerundivum"
+        },
+        "ML_PHONOLOGY_HOMOPHONE": {
+            "id": "ML_PHONOLOGY_HOMOPHONE",
+            "singular": "homofon"
+        },
+        "ML_PHONOLOGY_HOMONYM": {
+            "id": "ML_PHONOLOGY_HOMONYM",
+            "singular": "homonymum"
+        },
+        "ML_LANGUAGE_IDIOLECT": {
+            "id": "ML_LANGUAGE_IDIOLECT",
+            "singular": "idiolekt"
+        },
+        "ML_MORPH-VALUE_CASE-ILLATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-ILLATIVE",
+            "singular": "ilativ"
+        },
+        "ML_MORPH-VALUE_MOOD-IMPERATIVE": {
+            "id": "ML_MORPH-VALUE_MOOD-IMPERATIVE",
+            "singular": "imperativ"
+        },
+        "ML_MORPH-VALUE_VERBFORM-INFINITIVE": {
+            "id": "ML_MORPH-VALUE_VERBFORM-INFINITIVE",
+            "singular": "infinitiv"
+        },
+        "ML_MORPH-VALUE_CASE-INSTRUMENTAL": {
+            "id": "ML_MORPH-VALUE_CASE-INSTRUMENTAL",
+            "singular": "instrumentál"
+        },
+        "ML_POS_VERB-INTRANSITIVE": {
+            "id": "ML_POS_VERB-INTRANSITIVE",
+            "singular": "intranzitivní"
+        },
+        "ML_LEX-STRUCT_CALQUE": {
+            "id": "ML_LEX-STRUCT_CALQUE",
+            "singular": "kalk"
+        },
+        "ML_MORPH-VALUE_DEGREE-COMPARATIVE": {
+            "id": "ML_MORPH-VALUE_DEGREE-COMPARATIVE",
+            "singular": "komparativ"
+        },
+        "ML_MORPH-VALUE_MOOD-CONDITIONAL": {
+            "id": "ML_MORPH-VALUE_MOOD-CONDITIONAL",
+            "singular": "kondicionál"
+        },
+        "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE": {
+            "id": "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE",
+            "singular": "konjunktiv"
+        },
+        "ML_PHONOLOGY_CONSONANT": {
+            "id": "ML_PHONOLOGY_CONSONANT",
+            "singular": "konsonanta"
+        },
+        "ML_LEX-STRUCT_LEMMA": {
+            "id": "ML_LEX-STRUCT_LEMMA",
+            "singular": "lemma"
+        },
+        "ML_MORPH-VALUE_CASE-LOCATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-LOCATIVE",
+            "singular": "lokál"
+        },
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "maskulinum"
+        },
+        "ML_EDITORIAL_FIGURATIVE": {
+            "id": "ML_EDITORIAL_FIGURATIVE",
+            "singular": "metafora"
+        },
+        "ML_LEX-STRUCT_NEOLOGISM": {
+            "id": "ML_LEX-STRUCT_NEOLOGISM",
+            "singular": "neologismus"
+        },
+        "ML_MORPH-VALUE_GENDER-NEUTER": {
+            "id": "ML_MORPH-VALUE_GENDER-NEUTER",
+            "singular": "neutrum"
+        },
+        "ML_MORPH-VALUE_CASE-NOMINATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-NOMINATIVE",
+            "singular": "nominativ"
+        },
+        "ML_MORPH-VALUE_PERSON": {
+            "id": "ML_MORPH-VALUE_PERSON",
+            "singular": "osoba"
+        },
+        "ML_MORPH-VALUE_CASE": {
+            "id": "ML_MORPH-VALUE_CASE",
+            "singular": "pád"
+        },
+        "ML_POS_VERB-PTCP": {
+            "id": "ML_POS_VERB-PTCP",
+            "singular": "participium"
+        },
+        "ML_MORPH-VALUE_CASE-PARTITIVE": {
+            "id": "ML_MORPH-VALUE_CASE-PARTITIVE",
+            "singular": "partitiv"
+        },
+        "ML_MORPH-VALUE_VOICE-PASSIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-PASSIVE",
+            "singular": "pasivum"
+        },
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "plurál"
+        },
+        "ML_POS_PREPOSITION": {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "prepozice"
+        },
+        "ML_MORPH-VALUE_PAST": {
+            "id": "ML_MORPH-VALUE_PAST",
+            "singular": "preteritum"
+        },
+        "ML_MORPH-VALUE_PRESENT": {
+            "id": "ML_MORPH-VALUE_PRESENT",
+            "singular": "prezens"
+        },
+        "ML_POS_PRONOUN": {
+            "id": "ML_POS_PRONOUN",
+            "singular": "zájmeno",
+            "synonyms": [
+                "pronomen"
+            ]
+        },
+        "ML_POS_PROPER-NOUN": {
+            "id": "ML_POS_PROPER-NOUN",
+            "singular": "proprium"
+        },
+        "ML_LEX-STRUCT_NICKNAME": {
+            "id": "ML_LEX-STRUCT_NICKNAME",
+            "singular": "přezdívka"
+        },
+        "ML_DERIVATION_SUFFIX": {
+            "id": "ML_DERIVATION_SUFFIX",
+            "singular": "přípona",
+            "synonyms": [
+                "sufix"
+            ]
+        },
+        "ML_LEX-STRUCT_PSEUDONYM": {
+            "id": "ML_LEX-STRUCT_PSEUDONYM",
+            "singular": "pseudonym"
+        },
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "singulár"
+        },
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "sloveso"
+        },
+        "ML_POS_CONJUNCTION": {
+            "id": "ML_POS_CONJUNCTION",
+            "singular": "spojka"
+        },
+        "ML_SYNTAX_SUBJECT": {
+            "id": "ML_SYNTAX_SUBJECT",
+            "singular": "subjekt"
+        },
+        "ML_POS_NOUN": {
+            "id": "ML_POS_NOUN",
+            "singular": "substantivum"
+        },
+        "ML_DERIVATION_SUFFIXATION": {
+            "id": "ML_DERIVATION_SUFFIXATION",
+            "singular": "sufixace"
+        },
+        "ML_MORPH-VALUE_DEGREE-SUPERLATIVE": {
+            "id": "ML_MORPH-VALUE_DEGREE-SUPERLATIVE",
+            "singular": "superlativ"
+        },
+        "ML_POS_VERB-TRANSITIVE": {
+            "id": "ML_POS_VERB-TRANSITIVE",
+            "singular": "tranzitivní"
+        },
+        "ML_MORPH-VALUE_CASE-VOCATIVE": {
+            "id": "ML_MORPH-VALUE_CASE-VOCATIVE",
+            "singular": "vokativ"
+        },
+        "ML_LEX-STRUCT_SYMBOL": {
+            "id": "ML_LEX-STRUCT_SYMBOL",
+            "singular": "značka"
+        }
+    }
+}

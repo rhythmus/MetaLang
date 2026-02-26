@@ -1,0 +1,21 @@
+{
+    "name": "@metalang/plugin-fr",
+    "version": "1.0.0",
+    "description": "French Generic Language Plugin for MetaLang",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "metalang",
+        "french",
+        "linguistics"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@metalang/core": "workspace:*"
+    }
+}

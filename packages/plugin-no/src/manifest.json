@@ -1,0 +1,84 @@
+{
+    "$schema": "../../../schema/schemas/plugin-manifest.schema.json",
+    "descriptor": {
+        "id": "no-generic",
+        "name": "Norwegian Generic",
+        "language": "no",
+        "isGeneric": true,
+        "lastEditedAt": "2026-02-26T20:50:00Z",
+        "source": {
+            "title": "Norwegian Linguistic Glossary (Wiktionary based)",
+            "url": "https://no.wiktionary.org/wiki/Wiktionary:Ordliste",
+            "lastEditedAt": "2026-02-26T20:50:00Z"
+        }
+    },
+    "mappings": {
+        "ML_LANGUAGE_DIALECT": {
+            "id": "ML_LANGUAGE_DIALECT",
+            "singular": "dialekt"
+        },
+        "ML_EDITORIAL_EUPHEMISM": {
+            "id": "ML_EDITORIAL_EUPHEMISM",
+            "singular": "eufemisme"
+        },
+        "ML_EDITORIAL_FORMAL": {
+            "id": "ML_EDITORIAL_FORMAL",
+            "singular": "formelt"
+        },
+        "ML_EDITORIAL_ARCHAIC": {
+            "id": "ML_EDITORIAL_ARCHAIC",
+            "singular": "foreldet"
+        },
+        "ML_EDITORIAL_HUMOROUS": {
+            "id": "ML_EDITORIAL_HUMOROUS",
+            "singular": "humoristisk"
+        },
+        "ML_POS_VERB-INTRANSITIVE": {
+            "id": "ML_POS_VERB-INTRANSITIVE",
+            "singular": "intransitiv"
+        },
+        "ML_EDITORIAL_LEGAL": {
+            "id": "ML_EDITORIAL_LEGAL",
+            "singular": "juridisk språk"
+        },
+        "ML_EDITORIAL_DEROGATORY": {
+            "id": "ML_EDITORIAL_DEROGATORY",
+            "singular": "nedsettende",
+            "synonyms": [
+                "skjellsord"
+            ]
+        },
+        "ML_LEX-STRUCT_NEOLOGISM": {
+            "id": "ML_LEX-STRUCT_NEOLOGISM",
+            "singular": "neologisme"
+        },
+        "ML_EDITORIAL_FIGURATIVE": {
+            "id": "ML_EDITORIAL_FIGURATIVE",
+            "singular": "overført"
+        },
+        "ML_EDITORIAL_SLANG": {
+            "id": "ML_EDITORIAL_SLANG",
+            "singular": "slang"
+        },
+        "ML_EDITORIAL_SIMILE": {
+            "id": "ML_EDITORIAL_SIMILE",
+            "singular": "simile"
+        },
+        "ML_LANGUAGE_SOCIOLECT": {
+            "id": "ML_LANGUAGE_SOCIOLECT",
+            "singular": "sosiolekt"
+        },
+        "ML_POS_VERB-TRANSITIVE": {
+            "id": "ML_POS_VERB-TRANSITIVE",
+            "singular": "transitiv"
+        },
+        "ML_EDITORIAL_INFORMAL": {
+            "id": "ML_EDITORIAL_INFORMAL",
+            "singular": "uformelt"
+        },
+        "ML_LEX-STRUCT_GLOSS": {
+            "id": "ML_LEX-STRUCT_GLOSS",
+            "singular": "glose"
+        }
+    }
+}
