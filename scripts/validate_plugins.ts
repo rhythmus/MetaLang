@@ -21,8 +21,16 @@ const validate = ajv.compile(schema);
 const pluginPaths = [
     'packages/plugin-ud/src/index.ts',
     'packages/plugin-eagles/src/index.ts',
-    'packages/plugin-el-gr/src/manifest.json',
-    'packages/plugin-nl-taalunie/src/manifest.json'
+    'packages/plugin-nl-taalunie/src/manifest.json',
+    'packages/plugin-en/src/manifest.json',
+    'packages/plugin-pt/src/manifest.json',
+    'packages/plugin-no/src/manifest.json',
+    'packages/plugin-cs/src/manifest.json',
+    'packages/plugin-fr/src/manifest.json',
+    'packages/plugin-br/src/manifest.json',
+    'packages/plugin-de/src/manifest.json',
+    'packages/plugin-pl/src/manifest.json',
+    'packages/plugin-ro/src/manifest.json'
 ];
 
 async function validatePlugins() {
