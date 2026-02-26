@@ -2,12 +2,12 @@ WikiData QID	parent	ML_ID	label	description	wiktionary
 Q339718		ML_RHETORIC_ACCUMULATIO	accumulatio	The emphasis or summary of previously made points or inferences by excessive praise or accusation.	https://en.wiktionary.org/wiki/accumulatio
 Q19893772		ML_RHETORIC_ACUTEZZA	acutezza	Wit or wordplay used in rhetoric.	https://en.wiktionary.org/wiki/acutezza
 Q189183		ML_RHETORIC_AD-HOMINEM	ad hominem		
-		ML_RHETORIC_ADJUNCTION	adjunction	When a verb is placed at the beginning or the end of a sentence instead of in the middle. For example (from [_Rhetorica ad Herennium_](https://en.wikipedia.org/wiki/Rhetorica_ad_Herennium)), "At the beginning, as follows: 'Fades physical beauty with disease or age.' At the end, as follows: 'Either with disease or age physical beauty fades.'"	https://en.wiktionary.org/wiki/adjunction
+Q443851	ML_RHETORIC_ADJUNCTION	adjunction	When a verb is placed at the beginning or the end of a sentence instead of in the middle. For example (from [_Rhetorica ad Herennium_](https://en.wikipedia.org/wiki/Rhetorica_ad_Herennium)), "At the beginning, as follows: 'Fades physical beauty with disease or age.' At the end, as follows: 'Either with disease or age physical beauty fades.'"	https://en.wiktionary.org/wiki/adjunction
 Q35986		ML_RHETORIC_AESTHETICS	aesthetics	The examination of symbolic expression to determine its rhetorical possibilities.	https://en.wiktionary.org/wiki/aesthetics
-		ML_RHETORIC_AETIOLOGIA	aetiologia	Giving a cause or a reason.	https://en.wiktionary.org/wiki/aetiologia
+Q381283	ML_RHETORIC_AETIOLOGIA	aetiologia	Giving a cause or a reason.	https://en.wiktionary.org/wiki/aetiologia
 		ML_RHETORIC_AFFECTUS	affectus	A term used by the Italian Humanists of the Renaissance to describe the source of emotions or passions in the human mind.	https://en.wiktionary.org/wiki/affectus
 Q3745428		ML_RHETORIC_AFFIRMATION-AND-NEGATION	affirmation and negation		
-		ML_RHETORIC_ALLOIOSIS	alloiosis, alloisis		
+Q122393309	ML_RHETORIC_ALLOIOSIS	alloiosis, alloisis		
 Q50757077		ML_RHETORIC_AMBIGUA	ambigua	An ambiguous statement used in making puns.	https://en.wiktionary.org/wiki/ambigua
 Q738162		ML_RHETORIC_ANACOENOSIS	anacoenosis	A speaker asks their audience or opponents for their opinion or answer to the point in question.	https://en.wiktionary.org/wiki/anacoenosis
 Q484456		ML_RHETORIC_ANACOLUTHON	anacoluthon	An abrupt change of syntax within a sentence. (What I want is — like anybody cares.)	https://en.wiktionary.org/wiki/anacoluthon
@@ -23,7 +23,7 @@ Q5112363		ML_RHETORIC_ANTISTROPHE	antistrophe	In rhetoric, repeating the last wo
 Q122313503		ML_RHETORIC_ANTITHESIS	antithesis	The juxtaposition of contrasting ideas in balanced or parallel words, phrases, or grammatical structures; the second stage of the dialectic process.	https://en.wiktionary.org/wiki/antithesis
 Q618563		ML_RHETORIC_APHERESIS	apheresis	The removal or omission of the initial sound or syllable from a word. Examples in English are [_scarp_](https://en.wiktionary.org/wiki/scarp#English) from earlier [_escarp_](https://en.wiktionary.org/wiki/escarp#English), and colloquial [_splain_](https://en.wiktionary.org/wiki/splain#English) from [_explain_](https://en.wiktionary.org/wiki/explain#English).	https://en.wiktionary.org/wiki/apheresis
 Q112154		ML_RHETORIC_APOCOPE	apocope	The omission of the last letter or syllable of a word.	https://en.wiktionary.org/wiki/apocope
-		ML_RHETORIC_APOPHASIS	apophasis, apophesis		
+Q618703	ML_RHETORIC_APOPHASIS	apophasis, apophesis		
 Q261262		ML_RHETORIC_APORIA	aporia	An attempt to discredit an opposing viewpoint by casting doubt on it.	https://en.wiktionary.org/wiki/aporia
 Q619760		ML_RHETORIC_APOSIOPESIS	aposiopesis	An abrupt stop in the middle of a sentence; used by a speaker to convey unwillingness or inability to complete a thought or statement.	https://en.wiktionary.org/wiki/aposiopesis
 Q436048		ML_RHETORIC_APOSTROPHE	apostrophe	From [Ancient Greek](https://en.wikipedia.org/wiki/Ancient_Greek) [_ἀποστροφή_](https://en.wiktionary.org/wiki/%E1%BC%80%CF%80%CE%BF%CF%83%CF%84%CF%81%CE%BF%CF%86%CE%AE#Ancient_Greek) (apostrophḗ). A figure of speech consisting of a sudden turn in a text towards an exclamatory address to an imaginary person or a thing.	https://en.wiktionary.org/wiki/apostrophe
@@ -43,13 +43,13 @@ Q50808388		ML_RHETORIC_AXIOMS	axioms	The point where scientific reasoning starts
 Q720113		ML_RHETORIC_BARBARISM	barbarism		
 Q2886750		ML_RHETORIC_BASES-DE-MANRESA	Bases de Manresa		
 Q43247602		ML_RHETORIC_BATHOSELLA	Bathosella		
-		ML_RHETORIC_BDELYGMA	bdelygma	Expression of hatred or contempt.	https://en.wiktionary.org/wiki/bdelygma
+Q136383617	ML_RHETORIC_BDELYGMA	bdelygma	Expression of hatred or contempt.	https://en.wiktionary.org/wiki/bdelygma
 Q4940904		ML_RHETORIC_BOMPHIOLOGIA	Bomphiologia	Bombastic speech.	https://en.wiktionary.org/wiki/bomphiologia
 Q640423		ML_RHETORIC_BRACHYLOGY	brachylogy		
 Q1253840		ML_RHETORIC_BREVITAS	brevitas	Concise expression.	https://en.wiktionary.org/wiki/brevitas
 Q122382956		ML_RHETORIC_BURDEN-OF-PROOF	burden of proof	Theory of argument giving the obligation of proving a case to the challenging party.	https://en.wiktionary.org/wiki/burden_of_proof
 Q63554165		ML_RHETORIC_CANON	canon	A term often used to discuss significant literary works in a specific field, used by [Cicero](https://en.wiktionary.org/wiki/Cicero) to outline five significant parts of the rhetorical composition process.	https://en.wiktionary.org/wiki/canon
-		ML_RHETORIC_CAPTATIO-BENEVOLUNTATIAE	captatio benevoluntatiae	From [Latin](https://en.wikipedia.org/wiki/Latin). The part of a letter which secures the goodwill of the recipient.	https://en.wiktionary.org/wiki/captatio_benevoluntatiae
+Q1049386	ML_RHETORIC_CAPTATIO-BENEVOLUNTATIAE	captatio benevoluntatiae	From [Latin](https://en.wikipedia.org/wiki/Latin). The part of a letter which secures the goodwill of the recipient.	https://en.wiktionary.org/wiki/captatio_benevoluntatiae
 Q582726		ML_RHETORIC_CATACHRESIS	catachresis	The inexact use of a similar word in place of the proper one to create an unlikely metaphor. For example (from _Rhetorica ad Herennium_), "'The power of man is short'" or "'the long wisdom in the man.'"	https://en.wiktionary.org/wiki/catachresis
 Q2574811		ML_RHETORIC_CAUSE	cause		
 Q5074396		ML_RHETORIC_CHARISMA	charisma	An attribute that allows a speaker's words to become powerful.	https://en.wiktionary.org/wiki/charisma
@@ -91,7 +91,7 @@ Q788419		ML_RHETORIC_ECPHONESIS	ecphonesis	A sentence consisting of a single wor
 Q3330405		ML_RHETORIC_ELOCUTIO	elocutio	In the classical theory of the production of a speech ([pronuntiatio](https://en.wiktionary.org/wiki/pronuntiatio)), elocution refers to the stage of elaborating the wording of a text, using correct grammar and diction.	https://en.wiktionary.org/wiki/elocutio
 Q12769393		ML_RHETORIC_END	end		
 Q422913		ML_RHETORIC_ENTHYMEME	enthymeme	A type of argument that is grounded in assumed commonalities between a rhetor and the audience. For example, "(claim 1) Bob is a person. Therefore, (claim 3) Bob is mortal." The assumption (unstated claim 2) is that "People are mortal." A type of [syllogism](https://en.wiktionary.org/wiki/syllogism). Started by [Aristotle](https://en.wikipedia.org/wiki/Aristotle).	https://en.wiktionary.org/wiki/enthymeme
-		ML_RHETORIC_EPANAPHORA	epanaphora	In rhetoric, repeating the same word or phrase at the beginning of successive phrases for emphasis. For example (from [_Rhetorica ad Herennium_](https://en.wikipedia.org/wiki/Rhetorica_ad_Herennium)), "'To you must go the credit for this, to you are thanks due, to you will this act of yours bring glory.'"	https://en.wiktionary.org/wiki/epanaphora
+Q1346372	ML_RHETORIC_EPANAPHORA	epanaphora	In rhetoric, repeating the same word or phrase at the beginning of successive phrases for emphasis. For example (from [_Rhetorica ad Herennium_](https://en.wikipedia.org/wiki/Rhetorica_ad_Herennium)), "'To you must go the credit for this, to you are thanks due, to you will this act of yours bring glory.'"	https://en.wiktionary.org/wiki/epanaphora
 Q1346967		ML_RHETORIC_EPIDEICTIC	epideictic	Ceremonial rhetoric, such as might be found in a funeral or victory speech.	https://en.wiktionary.org/wiki/epideictic
 Q591966		ML_RHETORIC_EPIPHORA	epiphora	The repetition of a phrase or word at the end of several sentences or clauses. Also see anaphora.	https://en.wiktionary.org/wiki/epiphora
 Q9471		ML_RHETORIC_EPISTEMOLOGY	epistemology	Philosophical study directed at understanding how people gain knowledge.	https://en.wiktionary.org/wiki/epistemology
