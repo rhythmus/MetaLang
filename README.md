@@ -42,12 +42,70 @@ This is a monorepo containing the following components:
 pnpm install
 ```
 
-### Verification
+## 💻 API Usage Examples
 
-Run the core engine verification script:
+MetaLang provides a powerful programmatic interface to resolve, translate, and explore linguistic data.
+
+### 1. Unified Search & Resolution
+Quickly find concepts or resolve tags from specific systems.
+
+```typescript
+import { defaultRegistry as registry } from '@metalang/core';
+
+// Search across all plugins for any tag or term
+const results = registry.search("znw"); 
+// [ { systemId: "nl-generic", tag: "znw.", conceptId: "ML_POS_NOUN", matchType: "partial" }, ... ]
+
+// Resolve a tag in a specific context
+const concepts = registry.resolve("v", "nl-taalunie"); 
+// Returns full Concept objects for ML_MORPH-VALUE_GENDER_FEMININE
+```
+
+### 2. Cross-System Translation (Conversion)
+Map terminology directly from one tradition to another.
+
+```typescript
+// Translate a Dutch school grammar tag to its English pedagogical equivalent
+const enTags = registry.translateTag("znw", "nl-generic", "en-generic");
+// Returns: ["noun", "n.", "noun phrase"]
+
+// Get all tags for a concept in a specific system
+const elTags = registry.translateConcept("ML_POS_NOUN", "el-generic");
+// Returns: ["ουσιαστικό", "ουσ.", ...]
+```
+
+### 3. Linguistic Forms & Fallbacks
+Retrieve localized singular, plural, and abbreviated forms with a robust fallback chain.
+
+```typescript
+// Get forms for 'article' in a specific system, with automatic fallbacks
+const forms = registry.getForms("ML_POS_ARTICLE", "nl-taalunie");
+
+console.log(forms.singular);      // "lidwoord"
+console.log(forms.abbreviations);   // ["lw."]
+console.log(forms.sourceSystemId); // "nl-generic" (resolves via language fallback)
+```
+
+### 4. Ontology Navigation & Metadata
+Traverse the concept hierarchy and link to global knowledge bases.
+
+```typescript
+// Navigate the ontology
+const children = registry.getChildren("ML_POS_NOUN"); 
+// [Concept(ML_POS_NOUN-COMMON), Concept(ML_POS_PROPER-NOUN), ...]
+
+// External Links
+const wikidata = registry.getWikiDataId("ML_POS_NOUN"); // "Q1401131"
+const wikiUrl = registry.getWikipediaUrl("ML_POS_NOUN", "nl"); 
+// "https://nl.wikipedia.org/wiki/zelfstandig_naamwoord"
+```
+
+## 🧪 Verification
+
+Run the comprehensive API stress test:
 
 ```bash
-npx tsx scripts/verify_core.ts
+npx tsx scripts/verify_api.ts
 ```
 
 ---
