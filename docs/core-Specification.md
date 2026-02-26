@@ -377,3 +377,29 @@ E. Example plugins: UD / Stanford / Van Dale / Local scholars
 F. Example conversion scenarios (POS conversion, abbreviation normalization, UI localization)  
 G. Glossary of terms used in this spec  
 H. Change log
+I. Editorial Standards and Curation Policy
+
+## Appendix I: Editorial Standards and Curation Policy
+
+To maintain the high quality and taxonomic integrity of the MetaLang ontology, all human and AI collaborators MUST adhere to the following editorial standards during curation and enrichment.
+
+### I.1 Taxonomic Clustering
+- **Grouping**: Concepts in `concepts.tsv` SHOULD be physically clustered by their domain and hierarchy.
+- **Parental Proximity**: Child concepts (e.g., `ML_MORPH-VALUE_GENDER-MASCULINE`) SHOULD be placed immediately following their primary parent (e.g., `ML_MORPH-FEATURE_GENDER`) to facilitate human readability and logical navigation of the source file.
+
+### I.2 Aggressive Noise Reduction
+- **Scrutiny of Automated Results**: WikiData enrichment results MUST be strictly vetted. Irrelevant entities (e.g., specific book titles, institutions, or modern architecture styles) that accidentally match linguistic search terms MUST be pruned.
+- **Relevance**: Only concepts with direct linguistic, typographic, or lexicographical utility SHOULD remain in the core ontology.
+
+### I.3 Domain Integrity and Discipline
+- **Correct Classification**: Entities MUST be assigned to the most specific and logically correct domain. 
+  - *Example*: Natural languages or language codes (ISO) belong in the `LANGUAGE` domain, even if they have geographical associations that might suggest the `GEO` domain.
+- **ISO Compliance**: Use standard codes (ISO 639 for languages, ISO 3166 for regions) wherever possible in labels and IDs.
+
+### I.4 Label and ID Conventions
+- **Casing**: Labels SHOULD be lowercase unless they represent proper nouns (e.g., `active voice` vs `English`).
+- **Descriptive Terminology**: Favor descriptive terms over literal symbols for non-alphanumeric concepts (e.g., use `tricolon` instead of `⁝` for both ID and label).
+- **Abbreviation Accuracy**: Use standard scholarly abbreviations for editorial markers (e.g., `cf.` for confer).
+
+### I.5 Taxonomy over Flat Lists
+- Avoid flat lists of related items. Always attempt to identify or create a "parent" concept to provide structure to new concept groups.
