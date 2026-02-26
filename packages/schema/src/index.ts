@@ -57,7 +57,7 @@ export interface BibliographicSource {
   author?: string;
   year?: number;
   url: string;
-  retrievedAt: string; // ISO 8601
+  lastEditedAt: string; // ISO 8601
   bibtex?: string;
 }
 
@@ -93,7 +93,6 @@ export interface PluginManifest {
     source?: BibliographicSource;
   };
   mappings: {
-    [externalTag: string]: string | string[]; // maps to concept IDs
+    [externalTag: string]: string | string[] | LinguisticMapping; // Flat or rich mappings
   };
-  linguisticMappings?: LinguisticMapping[]; // Rich mapping structured by ML_ID
 }

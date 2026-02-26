@@ -76,44 +76,72 @@ export class Registry {
     public registerTagSystem(manifest: PluginManifest): void {
         this.tagSystems.set(manifest.descriptor.id, manifest);
 
-        // Index linguistic mappings if present
-        if (manifest.linguisticMappings) {
-            const systemMappings = new Map<string, LinguisticMapping>();
-            for (const lm of manifest.linguisticMappings) {
-                systemMappings.set(lm.id, lm);
+        const systemLinguisticMappings = new Map<string, LinguisticMapping>();
 
-                // Also add to traditional mappings for normalization/lookup
+        // Process mappings
+        for (const [tag, value] of Object.entries(manifest.mappings)) {
+            if (typeof value === 'object' && !Array.isArray(value)) {
+                // Rich LinguisticMapping
+                const lm = value as LinguisticMapping;
+                systemLinguisticMappings.set(lm.id, lm);
+
+                // Add abbreviations (with automatic dot-stripping)
+                if (lm.abbreviations) {
+                    const allAbbrs = new Set<string>();
+                    for (const abbr of lm.abbreviations) {
+                        allAbbrs.add(abbr);
+                        if (abbr.includes('.') && abbr.endsWith('.')) {
+                            allAbbrs.add(abbr.replace(/\.+$/, ''));
+                        }
+                    }
+                    for (const abbr of allAbbrs) {
+                        this.addInternalMapping(manifest.descriptor.id, abbr, lm.id);
+                    }
+                }
+
+                // Add singular/plural forms
                 if (lm.singular) {
                     const terms = Array.isArray(lm.singular) ? lm.singular : [lm.singular];
-                    for (const term of terms) this.addMapping(manifest.descriptor.id, term, lm.id);
+                    for (const term of terms) this.addInternalMapping(manifest.descriptor.id, term, lm.id);
                 }
                 if (lm.plural) {
                     const terms = Array.isArray(lm.plural) ? lm.plural : [lm.plural];
-                    for (const term of terms) this.addMapping(manifest.descriptor.id, term, lm.id);
+                    for (const term of terms) this.addInternalMapping(manifest.descriptor.id, term, lm.id);
                 }
-                if (lm.abbreviations) {
-                    for (const abbr of lm.abbreviations) {
-                        this.addMapping(manifest.descriptor.id, abbr, lm.id);
-                    }
+            } else {
+                // Flat mapping (string or string[])
+                const conceptIds = Array.isArray(value) ? value : [value];
+                for (const id of conceptIds) {
+                    this.addInternalMapping(manifest.descriptor.id, tag, id);
                 }
             }
-            this.linguisticMappings.set(manifest.descriptor.id, systemMappings);
+        }
+
+        if (systemLinguisticMappings.size > 0) {
+            this.linguisticMappings.set(manifest.descriptor.id, systemLinguisticMappings);
         }
     }
 
-    private addMapping(systemId: string, tag: string, conceptId: string): void {
+    private addInternalMapping(systemId: string, tag: string, conceptId: string): void {
         const manifest = this.tagSystems.get(systemId);
         if (!manifest) return;
 
+        // Note: we are modifying the manifest.mappings object which might 
+        // cause issues if multiple mappings point to the same tag.
+        // However, this is the internal registry state. 
+        // For normalization, we keep a separate flat index if needed, 
+        // but here we just ensure the tag resolves.
         const existing = manifest.mappings[tag];
         if (!existing) {
             manifest.mappings[tag] = conceptId;
-        } else {
+        } else if (typeof existing === 'string' || Array.isArray(existing)) {
             const ids = Array.isArray(existing) ? existing : [existing];
             if (!ids.includes(conceptId)) {
                 manifest.mappings[tag] = [...ids, conceptId];
             }
         }
+        // If it's a rich mapping already, we don't overwrite it for now 
+        // to avoid losing the rich data, but normalization should handle it.
     }
 
     /**
@@ -128,7 +156,13 @@ export class Registry {
         }
 
         for (const [tag, mappingValue] of Object.entries(manifest.mappings)) {
-            const conceptIds = Array.isArray(mappingValue) ? mappingValue : [mappingValue];
+            let conceptIds: string[];
+            if (typeof mappingValue === 'object' && !Array.isArray(mappingValue)) {
+                conceptIds = [(mappingValue as LinguisticMapping).id];
+            } else {
+                conceptIds = Array.isArray(mappingValue) ? mappingValue as string[] : [mappingValue as string];
+            }
+
             for (const id of conceptIds) {
                 if (!this.concepts.has(id)) {
                     errors.push(`Tag "${tag}" in system "${systemId}" maps to non-existent concept: ${id}`);
@@ -261,7 +295,10 @@ export class Registry {
         const system = this.tagSystems.get(systemId);
         if (!system) return [];
         const result = system.mappings[tag] || [];
-        return Array.isArray(result) ? result : [result];
+        if (typeof result === 'object' && !Array.isArray(result)) {
+            return [(result as LinguisticMapping).id];
+        }
+        return Array.isArray(result) ? result : [result as string];
     }
 
     /**
@@ -292,15 +329,9 @@ export class Registry {
      */
     public resolveTags(tags: string[], systemId: string): Map<string, string[]> {
         const result = new Map<string, string[]>();
-        const system = this.tagSystems.get(systemId);
 
         for (const tag of tags) {
-            if (!system) {
-                result.set(tag, []);
-                continue;
-            }
-            const mappingValue = system.mappings[tag] || [];
-            result.set(tag, Array.isArray(mappingValue) ? mappingValue : [mappingValue]);
+            result.set(tag, this.resolveTag(tag, systemId));
         }
 
         return result;

@@ -68,13 +68,18 @@ async function verifyPlugins() {
         { systemId: 'el-gr-ltt', tag: 'ΕΠΙΘ' },
         { systemId: 'nl-taalunie', tag: 'znw' },
         { systemId: 'nl-taalunie', tag: 'v' },
-        { systemId: 'nl-generic', tag: 'znw.' },
-        { systemId: 'nl-generic', tag: 'bv.' },
-        { systemId: 'nl-generic', tag: 'enz.' },
-        { systemId: 'en-generic', tag: 'n.' },
-        { systemId: 'en-generic', tag: 'e.g.' },
-        { systemId: 'el-generic', tag: 'ουσ.' },
-        { systemId: 'el-generic', tag: 'κλπ.' }
+        { systemId: 'nl-generic', tag: 'znw.', expected: 'ML_POS_NOUN' },
+        { systemId: 'nl-generic', tag: 'znw', expected: 'ML_POS_NOUN' }, // Test dot-stripping
+        { systemId: 'nl-generic', tag: 'bv.', expected: 'ML_EDITORIAL_eg' },
+        { systemId: 'nl-generic', tag: 'bv', expected: 'ML_EDITORIAL_eg' }, // Test dot-stripping
+        { systemId: 'nl-generic', tag: 'enz.', expected: 'ML_EDITORIAL_etc' },
+        { systemId: 'en-generic', tag: 'n.', expected: 'ML_POS_NOUN' },
+        { systemId: 'en-generic', tag: 'n', expected: 'ML_POS_NOUN' },  // Test dot-stripping
+        { systemId: 'en-generic', tag: 'e.g.', expected: 'ML_EDITORIAL_eg' },
+        { systemId: 'en-generic', tag: 'eg', expected: 'ML_EDITORIAL_eg' }, // Test dot-stripping
+        { systemId: 'el-generic', tag: 'ουσ.', expected: 'ML_POS_NOUN' },
+        { systemId: 'el-generic', tag: 'ουσ', expected: 'ML_POS_NOUN' }, // Test dot-stripping
+        { systemId: 'el-generic', tag: 'κλπ.', expected: 'ML_EDITORIAL_etc' }
     ];
 
     console.log('\n🔍 Testing Normalization:');

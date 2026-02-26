@@ -19,76 +19,16 @@
             "author": "MetaLang Contributors",
             "year": 2026,
             "url": "https://metalang.org/ontology/en",
-            "retrievedAt": "2026-02-26T18:00:00Z"
+            "lastEditedAt": "2026-02-26T18:59:19.386Z"
         }
     },
-    "mappings": {},
-    "linguisticMappings": [
-        {
-            "id": "ML_EDITORIAL_eg",
-            "singular": "for example",
-            "abbreviations": [
-                "e.g.",
-                "eg."
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_etc",
-            "singular": "et cetera",
-            "abbreviations": [
-                "etc.",
-                "etc"
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_cf",
-            "singular": "confer",
-            "abbreviations": [
-                "cf.",
-                "see"
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_SUBJECT",
-            "singular": "subject",
-            "plural": "subjects",
-            "abbreviations": [
-                "subj."
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_PREDICATE",
-            "singular": "predicate",
-            "plural": "predicates",
-            "abbreviations": [
-                "pred."
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
-            "singular": "direct object",
-            "plural": "direct objects",
-            "abbreviations": [
-                "d.o."
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
-            "singular": "indirect object",
-            "plural": "indirect objects",
-            "abbreviations": [
-                "i.o."
-            ]
-        },
-        {
+    "mappings": {
+        "ML_FIELD_GRAMMAR": {
             "id": "ML_FIELD_GRAMMAR",
             "singular": "part of speech",
-            "plural": "parts of speech",
-            "abbreviations": [
-                "PoS"
-            ]
+            "plural": "parts of speech"
         },
-        {
+        "ML_CUSTOM_S": {
             "id": "ML_CUSTOM_S",
             "singular": "sentence",
             "plural": "sentences",
@@ -96,7 +36,7 @@
                 "sent."
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-INTERROGATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-INTERROGATIVE",
             "singular": "question",
             "plural": "questions",
@@ -104,7 +44,7 @@
                 "q."
             ]
         },
-        {
+        "ML_LEX-STRUCT_PROVERB": {
             "id": "ML_LEX-STRUCT_PROVERB",
             "singular": "proverb",
             "plural": "proverbs",
@@ -112,15 +52,12 @@
                 "prov."
             ]
         },
-        {
+        "ML_LEX-STRUCT_MULTIWORD-EXPRESSION": {
             "id": "ML_LEX-STRUCT_MULTIWORD-EXPRESSION",
             "singular": "multi-word expression",
-            "plural": "multi-word expressions",
-            "abbreviations": [
-                "MWE"
-            ]
+            "plural": "multi-word expressions"
         },
-        {
+        "ML_LEX-STRUCT_PHRASE": {
             "id": "ML_LEX-STRUCT_PHRASE",
             "singular": "phraseme",
             "plural": "phrasemes",
@@ -128,7 +65,7 @@
                 "phr."
             ]
         },
-        {
+        "ML_LEX-STRUCT_EXPRESSION": {
             "id": "ML_LEX-STRUCT_EXPRESSION",
             "singular": "expression",
             "plural": "expressions",
@@ -136,72 +73,72 @@
                 "expr."
             ]
         },
-        {
+        "ML_MORPH-FEATURE_CASE": {
             "id": "ML_MORPH-FEATURE_CASE",
             "singular": "(grammatical) case",
             "plural": "(grammatical) cases"
         },
-        {
+        "ML_MORPH-VALUE_CASE-NOMINATIVE": {
             "id": "ML_MORPH-VALUE_CASE-NOMINATIVE",
             "singular": "nominative (case)",
             "abbreviations": [
                 "nom."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-VOCATIVE": {
             "id": "ML_MORPH-VALUE_CASE-VOCATIVE",
             "singular": "vocative (case)",
             "abbreviations": [
                 "voc."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-GENITIVE": {
             "id": "ML_MORPH-VALUE_CASE-GENITIVE",
             "singular": "genitive (case)",
             "abbreviations": [
                 "gen."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-DATIVE": {
             "id": "ML_MORPH-VALUE_CASE-DATIVE",
             "singular": "dative (case)",
             "abbreviations": [
                 "dat."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-ACCUSATIVE": {
             "id": "ML_MORPH-VALUE_CASE-ACCUSATIVE",
             "singular": "accusative (case)",
             "abbreviations": [
                 "acc."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-ABLATIVE": {
             "id": "ML_MORPH-VALUE_CASE-ABLATIVE",
             "singular": "ablative (case)"
         },
-        {
+        "ML_MORPH-FEATURE_GENDER": {
             "id": "ML_MORPH-FEATURE_GENDER",
             "singular": "(grammatical) gender"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
             "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
             "singular": "masculine"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
             "id": "ML_MORPH-VALUE_GENDER-FEMININE",
             "singular": "feminine"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-NEUTER": {
             "id": "ML_MORPH-VALUE_GENDER-NEUTER",
             "singular": "neuter"
         },
-        {
+        "ML_MORPH-FEATURE_NUMBER": {
             "id": "ML_MORPH-FEATURE_NUMBER",
             "singular": "(grammatical) number",
             "plural": "(grammatical) numbers"
         },
-        {
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
             "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
             "singular": "singular",
             "plural": "singulars",
@@ -209,7 +146,7 @@
                 "sg."
             ]
         },
-        {
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
             "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
             "singular": "plural",
             "plural": "plurals",
@@ -217,39 +154,38 @@
                 "pl."
             ]
         },
-        {
+        "ML_MORPH-FEATURE_PERSON": {
             "id": "ML_MORPH-FEATURE_PERSON",
             "singular": "(grammatical) person",
             "plural": "(grammatical) persons"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-FIRST": {
             "id": "ML_MORPH-VALUE_PERSON-FIRST",
             "singular": "noun"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-SECOND": {
             "id": "ML_MORPH-VALUE_PERSON-SECOND",
             "singular": "noun phrase"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-THIRD": {
             "id": "ML_MORPH-VALUE_PERSON-THIRD",
             "singular": "common noun"
         },
-        {
+        "ML_POS_NOUN": {
             "id": "ML_POS_NOUN",
             "singular": [
-                "noun phrase",
-                "noun"
+                "noun",
+                "noun phrase"
             ],
             "plural": [
-                "noun phrases",
-                "nouns"
+                "nouns",
+                "noun phrases"
             ],
             "abbreviations": [
-                "NP",
                 "n."
             ]
         },
-        {
+        "ML_POS_PROPER-NOUN": {
             "id": "ML_POS_PROPER-NOUN",
             "singular": [
                 "common noun",
@@ -263,12 +199,12 @@
                 "pn."
             ]
         },
-        {
+        "ML_POS_PROPER-NOUN-TOPONYM": {
             "id": "ML_POS_PROPER-NOUN-TOPONYM",
             "singular": "toponym",
             "plural": "toponyms"
         },
-        {
+        "ML_POS_ADJECTIVE": {
             "id": "ML_POS_ADJECTIVE",
             "singular": "adjective",
             "plural": "adjectives",
@@ -276,7 +212,7 @@
                 "adj."
             ]
         },
-        {
+        "ML_DERIVATION_DIMINUTIVE": {
             "id": "ML_DERIVATION_DIMINUTIVE",
             "singular": "diminutive",
             "plural": "diminutives",
@@ -284,7 +220,7 @@
                 "dim."
             ]
         },
-        {
+        "ML_MORPH-VALUE_DEGREE-COMPARATIVE": {
             "id": "ML_MORPH-VALUE_DEGREE-COMPARATIVE",
             "singular": "comparative (degree)",
             "plural": [
@@ -295,7 +231,7 @@
                 "comp."
             ]
         },
-        {
+        "ML_MORPH-VALUE_DEGREE-SUPERLATIVE": {
             "id": "ML_MORPH-VALUE_DEGREE-SUPERLATIVE",
             "singular": "superlative (degree)",
             "plural": [
@@ -306,7 +242,15 @@
                 "sup."
             ]
         },
-        {
+        "ML_POS_NUMERAL": {
+            "id": "ML_POS_NUMERAL",
+            "singular": "numeral",
+            "plural": "numerals",
+            "abbreviations": [
+                "num."
+            ]
+        },
+        "ML_POS_NUMERAL-CARDINAL": {
             "id": "ML_POS_NUMERAL-CARDINAL",
             "singular": "cardinal (numeral)",
             "plural": [
@@ -314,7 +258,7 @@
                 "cardinal numerals"
             ]
         },
-        {
+        "ML_POS_NUMERAL-ORDINAL": {
             "id": "ML_POS_NUMERAL-ORDINAL",
             "singular": "ordinal (numeral)",
             "plural": [
@@ -325,7 +269,7 @@
                 "ord."
             ]
         },
-        {
+        "ML_POS_NUMERAL-MULTIPLICATIVE": {
             "id": "ML_POS_NUMERAL-MULTIPLICATIVE",
             "singular": "multiplicative (numeral)",
             "plural": [
@@ -333,7 +277,7 @@
                 "multiplicative numerals"
             ]
         },
-        {
+        "ML_POS_NUMERAL-COLLECTIVE": {
             "id": "ML_POS_NUMERAL-COLLECTIVE",
             "singular": "collective (numeral)",
             "plural": [
@@ -341,7 +285,7 @@
                 "collective numerals"
             ]
         },
-        {
+        "ML_POS_NUMERAL-ADJECTIVAL": {
             "id": "ML_POS_NUMERAL-ADJECTIVAL",
             "singular": [
                 "adjectival numeral",
@@ -352,7 +296,7 @@
                 "numeral adjectives"
             ]
         },
-        {
+        "ML_POS_NUMERAL-NOMINAL": {
             "id": "ML_POS_NUMERAL-NOMINAL",
             "singular": "nominal (numeral)",
             "plural": [
@@ -360,7 +304,15 @@
                 "nominal numerals"
             ]
         },
-        {
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "verb",
+            "plural": "verbs",
+            "abbreviations": [
+                "vb."
+            ]
+        },
+        "ML_MORPH-VALUE_VERBFORM-INFINITIVE": {
             "id": "ML_MORPH-VALUE_VERBFORM-INFINITIVE",
             "singular": "infinitive",
             "plural": [
@@ -368,7 +320,7 @@
                 "infinitive moods"
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-INDICATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-INDICATIVE",
             "singular": "indicative",
             "plural": [
@@ -376,7 +328,7 @@
                 "indicative moods"
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-IMPERATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-IMPERATIVE",
             "singular": "imperative",
             "plural": [
@@ -384,7 +336,7 @@
                 "imperative moods"
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE": {
             "id": "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE",
             "singular": "subjunctive",
             "plural": [
@@ -392,67 +344,67 @@
                 "subjunctive moods"
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-CONDITIONAL": {
             "id": "ML_MORPH-VALUE_MOOD-CONDITIONAL",
             "singular": "conditional",
             "plural": "conditional moods"
         },
-        {
+        "ML_CUSTOM_T": {
             "id": "ML_CUSTOM_T",
             "singular": "(grammatical) tense",
             "plural": "(grammatical) tenses"
         },
-        {
+        "ML_MORPH-VALUE_PRESENT": {
             "id": "ML_MORPH-VALUE_PRESENT",
             "singular": "present tense",
             "plural": "present tenses"
         },
-        {
+        "ML_MORPH-VALUE_PAST": {
             "id": "ML_MORPH-VALUE_PAST",
             "singular": "past tense",
             "plural": "past tenses"
         },
-        {
+        "ML_POS_IMPERF": {
             "id": "ML_POS_IMPERF",
             "singular": "imperfective tense",
             "plural": "imperfective tenses"
         },
-        {
+        "ML_CUSTOM_PERFECT": {
             "id": "ML_CUSTOM_PERFECT",
             "singular": "perfective tense",
             "plural": "perfective tenses"
         },
-        {
+        "ML_MORPH-VALUE_FUTURE": {
             "id": "ML_MORPH-VALUE_FUTURE",
             "singular": "future tense",
             "plural": "future tenses"
         },
-        {
+        "ML_MORPH_INFLEC": {
             "id": "ML_MORPH_INFLEC",
             "singular": "(grammatical) inflection",
             "plural": "(grammatical) inflections"
         },
-        {
+        "ML_CUSTOM_CONJUG": {
             "id": "ML_CUSTOM_CONJUG",
             "singular": "conjugation",
             "plural": "conjugations"
         },
-        {
+        "ML_POS_ACT": {
             "id": "ML_POS_ACT",
             "singular": "active (voice)",
             "plural": "active voices"
         },
-        {
+        "ML_CUSTOM_PASS": {
             "id": "ML_CUSTOM_PASS",
             "singular": "passive (voice)",
             "plural": "passive voices"
         },
-        {
+        "ML_POS_IMPERS": {
             "id": "ML_POS_IMPERS",
             "singular": "impersonal passive voice",
             "plural": "impersonal passive voices"
         },
-        {
+        "ML_POS_VERB-AUX": {
             "id": "ML_POS_VERB-AUX",
             "singular": "auxiliary (verb)",
             "plural": "auxiliary verbs",
@@ -460,15 +412,12 @@
                 "aux."
             ]
         },
-        {
+        "ML_CUSTOM_V-GR": {
             "id": "ML_CUSTOM_V-GR",
             "singular": "verb phrase",
-            "plural": "verb phrases",
-            "abbreviations": [
-                "VP"
-            ]
+            "plural": "verb phrases"
         },
-        {
+        "ML_POS_VERB-PTCP": {
             "id": "ML_POS_VERB-PTCP",
             "singular": "participle",
             "plural": "participles",
@@ -476,20 +425,25 @@
                 "ptcp."
             ]
         },
-        {
-            "id": "ML_POS_ADV-GR",
-            "singular": "adverb phrase",
-            "plural": "adverb phrases",
+        "ML_POS_ADVERB": {
+            "id": "ML_POS_ADVERB",
+            "singular": "adverb",
+            "plural": "adverbs",
             "abbreviations": [
-                "ADVP"
+                "adv."
             ]
         },
-        {
+        "ML_POS_ADV-GR": {
+            "id": "ML_POS_ADV-GR",
+            "singular": "adverb phrase",
+            "plural": "adverb phrases"
+        },
+        "ML_CUSTOM_MULT-ADV": {
             "id": "ML_CUSTOM_MULT-ADV",
             "singular": "multiplicative adverb",
             "plural": "multiplicative adverbs"
         },
-        {
+        "ML_POS_ADP": {
             "id": "ML_POS_ADP",
             "singular": "adposition",
             "plural": "adpositions",
@@ -497,7 +451,7 @@
                 "adp."
             ]
         },
-        {
+        "ML_POS_PREPOSITION": {
             "id": "ML_POS_PREPOSITION",
             "singular": "preposition",
             "plural": "prepositions",
@@ -505,12 +459,12 @@
                 "prep."
             ]
         },
-        {
+        "ML_CUSTOM_POSTP": {
             "id": "ML_CUSTOM_POSTP",
             "singular": "postpostion",
             "plural": "postpostions"
         },
-        {
+        "ML_POS_CONJUNCTION": {
             "id": "ML_POS_CONJUNCTION",
             "singular": "conjunction",
             "plural": "conjunctions",
@@ -518,7 +472,7 @@
                 "cnj."
             ]
         },
-        {
+        "ML_POS_CONJ-COORD": {
             "id": "ML_POS_CONJ-COORD",
             "singular": "coordinative conjunction",
             "plural": "coordinative conjunctions",
@@ -526,7 +480,7 @@
                 "coord."
             ]
         },
-        {
+        "ML_POS_DET": {
             "id": "ML_POS_DET",
             "singular": "determiner",
             "plural": "determiners",
@@ -534,7 +488,7 @@
                 "det."
             ]
         },
-        {
+        "ML_POS_ART": {
             "id": "ML_POS_ART",
             "singular": "(grammatical) article",
             "plural": "articles",
@@ -542,7 +496,7 @@
                 "art."
             ]
         },
-        {
+        "ML_POS_ART-DEF": {
             "id": "ML_POS_ART-DEF",
             "singular": "definite article",
             "plural": "definite articles",
@@ -550,7 +504,7 @@
                 "def. art."
             ]
         },
-        {
+        "ML_POS_ART-IND": {
             "id": "ML_POS_ART-IND",
             "singular": "indefinite article",
             "plural": "indefinite articles",
@@ -558,7 +512,7 @@
                 "indef. art."
             ]
         },
-        {
+        "ML_POS_PRONOUN": {
             "id": "ML_POS_PRONOUN",
             "singular": "pronoun",
             "plural": "pronouns",
@@ -566,7 +520,7 @@
                 "pro."
             ]
         },
-        {
+        "ML_POS_PRON-INT": {
             "id": "ML_POS_PRON-INT",
             "singular": "interrogative pronoun",
             "plural": "interrogative pronouns",
@@ -574,7 +528,7 @@
                 "int. pro."
             ]
         },
-        {
+        "ML_POS_PERSONAL-PRONOUN": {
             "id": "ML_POS_PERSONAL-PRONOUN",
             "singular": "personal pronoun",
             "plural": "personal pronouns",
@@ -582,7 +536,7 @@
                 "pers."
             ]
         },
-        {
+        "ML_POS_POSSESSIVE-PRONOUN": {
             "id": "ML_POS_POSSESSIVE-PRONOUN",
             "singular": "possessive pronoun",
             "plural": "possessive pronouns",
@@ -590,7 +544,7 @@
                 "poss."
             ]
         },
-        {
+        "ML_POS_DEMONSTRATIVE-PRONOUN": {
             "id": "ML_POS_DEMONSTRATIVE-PRONOUN",
             "singular": "demonstrative pronoun",
             "plural": "demonstrative pronouns",
@@ -598,7 +552,7 @@
                 "dem."
             ]
         },
-        {
+        "ML_POS_RELATIVE-PRONOUN": {
             "id": "ML_POS_RELATIVE-PRONOUN",
             "singular": [
                 "relative pronoun",
@@ -613,7 +567,7 @@
                 "relind."
             ]
         },
-        {
+        "ML_POS_PRON-REFL": {
             "id": "ML_POS_PRON-REFL",
             "singular": "reflexive pronoun",
             "plural": "reflexive pronouns",
@@ -621,7 +575,7 @@
                 "refl."
             ]
         },
-        {
+        "ML_POS_PRON-IND": {
             "id": "ML_POS_PRON-IND",
             "singular": "indefinite pronoun",
             "plural": "indefinite pronouns",
@@ -629,7 +583,7 @@
                 "indef."
             ]
         },
-        {
+        "ML_POS_INTERJ": {
             "id": "ML_POS_INTERJ",
             "singular": "interjection",
             "plural": "interjections",
@@ -637,7 +591,7 @@
                 "intj."
             ]
         },
-        {
+        "ML_POS_PTCL": {
             "id": "ML_POS_PTCL",
             "singular": "particle",
             "plural": "particles",
@@ -645,84 +599,72 @@
                 "ptcl."
             ]
         },
-        {
+        "ML_MORPHOLOGY_MORPHEME": {
             "id": "ML_MORPHOLOGY_MORPHEME",
             "singular": "morpheme",
             "plural": "morphemes"
         },
-        {
-            "id": "ML_CUSTOM_N-ABBR",
-            "singular": "not-breaking abbreviation",
-            "plural": "not-breaking abbreviations"
-        },
-        {
-            "id": "ML_CUSTOM_INIT",
-            "singular": "initials (plural)",
-            "plural": "initials"
-        },
-        {
+        "ML_CUSTOM_ACRO": {
             "id": "ML_CUSTOM_ACRO",
             "singular": "acronym",
             "plural": "acronyms"
         },
-        {
+        "ML_ETYMOLOGY_LOANWORD": {
             "id": "ML_ETYMOLOGY_LOANWORD",
             "singular": "loanword",
             "plural": "loanwords"
         },
-        {
+        "ML_CUSTOM_TRANSLIT": {
             "id": "ML_CUSTOM_TRANSLIT",
             "singular": "transliteration",
             "plural": "transliterations"
         },
-        {
+        "ML_RHETORIC_SYMBOL": {
             "id": "ML_RHETORIC_SYMBOL",
             "singular": "symbol",
             "plural": "symbols"
         },
-        {
+        "ML_CUSTOM_DIG": {
             "id": "ML_CUSTOM_DIG",
             "singular": "digit",
             "plural": "digits"
         },
-        {
+        "ML_POS_PUNCT": {
             "id": "ML_POS_PUNCT",
             "singular": "punctuation mark",
             "plural": "punctuation"
         },
-        {
+        "ML_CUSTOM_ENUM": {
             "id": "ML_CUSTOM_ENUM",
             "singular": "enumeration",
             "plural": "enumerations"
         },
-        {
+        "ML_CUSTOM_DATUM": {
             "id": "ML_CUSTOM_DATUM",
             "singular": "date",
             "plural": "dates"
         },
-        {
-            "id": "ML_POS_NUMERAL",
-            "singular": "numeral",
-            "plural": "numerals",
+        "ML_EDITORIAL_eg": {
+            "id": "ML_EDITORIAL_eg",
+            "singular": "for example",
             "abbreviations": [
-                "num."
+                "e.g.",
+                "eg."
             ]
         },
-        {
-            "id": "ML_POS_VERB",
-            "singular": "verb",
-            "plural": "verbs",
+        "ML_EDITORIAL_etc": {
+            "id": "ML_EDITORIAL_etc",
+            "singular": "et cetera",
             "abbreviations": [
-                "vb."
+                "etc."
             ]
         },
-        {
-            "id": "ML_POS_ADVERB",
-            "singular": "adverb",
-            "plural": "adverbs",
+        "ML_EDITORIAL_cf": {
+            "id": "ML_EDITORIAL_cf",
+            "singular": "confer",
             "abbreviations": [
-                "adv."
+                "cf."
             ]
         }
-    ]
+    }
 }

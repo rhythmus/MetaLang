@@ -19,55 +19,16 @@
             "author": "MetaLang Contributors",
             "year": 2026,
             "url": "https://metalang.org/ontology/el",
-            "retrievedAt": "2026-02-26T18:00:00Z"
+            "lastEditedAt": "2026-02-26T18:59:19.387Z"
         }
     },
-    "mappings": {},
-    "linguisticMappings": [
-        {
-            "id": "ML_EDITORIAL_etc",
-            "singular": "και τα λοιπά",
-            "abbreviations": [
-                "κ.τ.λ.",
-                "κλπ."
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_VERGELIJK",
-            "abbreviations": [
-                "συγκρ."
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_SUBJECT",
-            "singular": "υποκείμενο",
-            "plural": "υποκείμενα",
-            "abbreviations": [
-                "υποκ."
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_PREDICATE",
-            "singular": "κατηγόρημα",
-            "plural": "κατηγορήματα",
-            "abbreviations": [
-                "κατηγ."
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
-            "singular": "άμεσο αντικείμενο"
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
-            "singular": "έμμεσο αντικείμενο"
-        },
-        {
+    "mappings": {
+        "ML_FIELD_GRAMMAR": {
             "id": "ML_FIELD_GRAMMAR",
             "singular": "τύπος λέξης",
             "plural": "τύποι λέξεων"
         },
-        {
+        "ML_CUSTOM_S": {
             "id": "ML_CUSTOM_S",
             "singular": "πρόταση",
             "plural": "προτάσεις",
@@ -75,7 +36,7 @@
                 "πρότ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-INTERROGATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-INTERROGATIVE",
             "singular": "ερώτηση",
             "plural": "ερωτήσεις",
@@ -83,7 +44,7 @@
                 "ερ."
             ]
         },
-        {
+        "ML_LEX-STRUCT_PROVERB": {
             "id": "ML_LEX-STRUCT_PROVERB",
             "singular": "παροιμία",
             "plural": "παροιμίες",
@@ -91,17 +52,17 @@
                 "παρ."
             ]
         },
-        {
+        "ML_LEX-STRUCT_MULTIWORD-EXPRESSION": {
             "id": "ML_LEX-STRUCT_MULTIWORD-EXPRESSION",
             "singular": "πολυλεκτικό σύνολο",
             "plural": "πολυλεκτικά σύνολα"
         },
-        {
+        "ML_LEX-STRUCT_PHRASE": {
             "id": "ML_LEX-STRUCT_PHRASE",
             "singular": "φρασεολογισμός",
             "plural": "φρασεολογισμοί"
         },
-        {
+        "ML_LEX-STRUCT_EXPRESSION": {
             "id": "ML_LEX-STRUCT_EXPRESSION",
             "singular": "έκφραση",
             "plural": "εκφράσεις",
@@ -109,142 +70,127 @@
                 "έκφρ."
             ]
         },
-        {
+        "ML_MORPH-FEATURE_CASE": {
             "id": "ML_MORPH-FEATURE_CASE",
             "singular": "πτώση",
-            "plural": "πτώσεις",
-            "abbreviations": [
-                "πτώση"
-            ]
+            "plural": "πτώσεις"
         },
-        {
+        "ML_MORPH-VALUE_CASE-NOMINATIVE": {
             "id": "ML_MORPH-VALUE_CASE-NOMINATIVE",
             "singular": "ονομαστική",
             "abbreviations": [
                 "ονομ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-VOCATIVE": {
             "id": "ML_MORPH-VALUE_CASE-VOCATIVE",
             "singular": "κλητική",
             "abbreviations": [
                 "κλητ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-GENITIVE": {
             "id": "ML_MORPH-VALUE_CASE-GENITIVE",
             "singular": "γενική",
             "abbreviations": [
                 "γεν."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-DATIVE": {
             "id": "ML_MORPH-VALUE_CASE-DATIVE",
             "singular": "δοτική",
             "abbreviations": [
                 "δοτ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-ACCUSATIVE": {
             "id": "ML_MORPH-VALUE_CASE-ACCUSATIVE",
             "singular": "αιτιατική",
             "abbreviations": [
                 "αιτ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_CASE-ABLATIVE": {
             "id": "ML_MORPH-VALUE_CASE-ABLATIVE",
             "singular": "αφαιρετική"
         },
-        {
+        "ML_MORPH-FEATURE_GENDER": {
             "id": "ML_MORPH-FEATURE_GENDER",
             "singular": "γένος",
-            "plural": "γένη",
-            "abbreviations": [
-                "γένος"
-            ]
+            "plural": "γένη"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
             "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
             "singular": "αρσενικό",
             "abbreviations": [
                 "αρσ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
             "id": "ML_MORPH-VALUE_GENDER-FEMININE",
             "singular": "θηλυκό",
             "abbreviations": [
                 "θηλ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_GENDER-NEUTER": {
             "id": "ML_MORPH-VALUE_GENDER-NEUTER",
             "singular": "ουδέτερο",
             "abbreviations": [
                 "ουδ."
             ]
         },
-        {
+        "ML_MORPH-FEATURE_NUMBER": {
             "id": "ML_MORPH-FEATURE_NUMBER",
             "singular": "αριθμός",
             "plural": "αριθμοί"
         },
-        {
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
             "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
             "singular": "ενικός",
             "abbreviations": [
                 "εν."
             ]
         },
-        {
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
             "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
             "singular": "πληθυντικός",
             "abbreviations": [
                 "πληθ."
             ]
         },
-        {
+        "ML_MORPH-FEATURE_PERSON": {
             "id": "ML_MORPH-FEATURE_PERSON",
             "singular": "πρόσωπο",
             "plural": "πρόσωπα"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-FIRST": {
             "id": "ML_MORPH-VALUE_PERSON-FIRST",
-            "plural": "πρώτο πρόσωπο",
-            "abbreviations": [
-                "α'"
-            ]
+            "plural": "πρώτο πρόσωπο"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-SECOND": {
             "id": "ML_MORPH-VALUE_PERSON-SECOND",
-            "plural": "δεύτερο πρόσωπο",
-            "abbreviations": [
-                "β'"
-            ]
+            "plural": "δεύτερο πρόσωπο"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-THIRD": {
             "id": "ML_MORPH-VALUE_PERSON-THIRD",
-            "plural": "τρίτο πρόσωπο",
-            "abbreviations": [
-                "γ'"
-            ]
+            "plural": "τρίτο πρόσωπο"
         },
-        {
+        "ML_POS_NOUN": {
             "id": "ML_POS_NOUN",
             "singular": [
-                "ονοματική φράση",
-                "ουσιαστικό"
+                "ουσιαστικό",
+                "ονοματική φράση"
             ],
             "plural": [
-                "ονοματικές φράσεις",
-                "ουσιαστικά"
+                "ουσιαστικά",
+                "ονοματικές φράσεις"
             ],
             "abbreviations": [
                 "ουσ."
             ]
         },
-        {
+        "ML_POS_PROPER-NOUN": {
             "id": "ML_POS_PROPER-NOUN",
             "singular": [
                 "κοινό όνομα",
@@ -259,12 +205,12 @@
                 "κ.ό."
             ]
         },
-        {
+        "ML_POS_PROPER-NOUN-TOPONYM": {
             "id": "ML_POS_PROPER-NOUN-TOPONYM",
             "singular": "τοπωνύμιο",
             "plural": "τοπωνύμια"
         },
-        {
+        "ML_POS_ADJECTIVE": {
             "id": "ML_POS_ADJECTIVE",
             "singular": "επίθετο",
             "plural": "επίθετα",
@@ -272,7 +218,7 @@
                 "επίθ."
             ]
         },
-        {
+        "ML_DERIVATION_DIMINUTIVE": {
             "id": "ML_DERIVATION_DIMINUTIVE",
             "singular": "υποκοριστικό",
             "plural": "υποκοριστικά",
@@ -280,7 +226,7 @@
                 "υποκ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_DEGREE-COMPARATIVE": {
             "id": "ML_MORPH-VALUE_DEGREE-COMPARATIVE",
             "singular": "συγκριτικός βαθμός",
             "plural": "συγκριτικοί βαθμοί",
@@ -288,7 +234,7 @@
                 "συγκρ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_DEGREE-SUPERLATIVE": {
             "id": "ML_MORPH-VALUE_DEGREE-SUPERLATIVE",
             "singular": "υπερθετικός βαθμός",
             "plural": "υπερθετικοί βαθμοί",
@@ -296,7 +242,15 @@
                 "υπερθ."
             ]
         },
-        {
+        "ML_POS_NUMERAL": {
+            "id": "ML_POS_NUMERAL",
+            "singular": "αριθμητικό",
+            "plural": "αριθμητικά",
+            "abbreviations": [
+                "αριθ."
+            ]
+        },
+        "ML_POS_NUMERAL-CARDINAL": {
             "id": "ML_POS_NUMERAL-CARDINAL",
             "singular": "απόλυτος αριθμός",
             "plural": "απόλυτο αριθμητικό",
@@ -304,7 +258,7 @@
                 "απόλ."
             ]
         },
-        {
+        "ML_POS_NUMERAL-ORDINAL": {
             "id": "ML_POS_NUMERAL-ORDINAL",
             "singular": "τακτικό αριθμητικό",
             "plural": "τακτικά αριθμητικά",
@@ -312,29 +266,37 @@
                 "τακτ."
             ]
         },
-        {
+        "ML_POS_NUMERAL-MULTIPLICATIVE": {
             "id": "ML_POS_NUMERAL-MULTIPLICATIVE",
             "plural": "πολλαπλασιαστικά"
         },
-        {
+        "ML_POS_NUMERAL-COLLECTIVE": {
             "id": "ML_POS_NUMERAL-COLLECTIVE",
             "plural": "περιληπτικά",
             "abbreviations": [
                 "περιλ."
             ]
         },
-        {
+        "ML_POS_NUMERAL-ADJECTIVAL": {
             "id": "ML_POS_NUMERAL-ADJECTIVAL",
             "plural": "επιθετικά",
             "abbreviations": [
                 "επιθ."
             ]
         },
-        {
+        "ML_POS_NUMERAL-NOMINAL": {
             "id": "ML_POS_NUMERAL-NOMINAL",
             "plural": "ουσιαστικά"
         },
-        {
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "ρήμα",
+            "plural": "ρήματα",
+            "abbreviations": [
+                "ρ."
+            ]
+        },
+        "ML_MORPH-VALUE_VERBFORM-INFINITIVE": {
             "id": "ML_MORPH-VALUE_VERBFORM-INFINITIVE",
             "singular": "απαρέμφατο",
             "plural": "απαρέμφατο",
@@ -342,28 +304,28 @@
                 "απαρ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-INDICATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-INDICATIVE",
             "plural": "οριστική",
             "abbreviations": [
                 "οριστ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-IMPERATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-IMPERATIVE",
             "singular": "προστακτική",
             "abbreviations": [
                 "προστ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE": {
             "id": "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE",
             "singular": "υποτακτική",
             "abbreviations": [
                 "υποτ."
             ]
         },
-        {
+        "ML_MORPH-VALUE_MOOD-CONDITIONAL": {
             "id": "ML_MORPH-VALUE_MOOD-CONDITIONAL",
             "singular": "υποθετική",
             "plural": "υποθετικές",
@@ -371,7 +333,7 @@
                 "υποθ."
             ]
         },
-        {
+        "ML_CUSTOM_T": {
             "id": "ML_CUSTOM_T",
             "singular": "γραμματικός χρόνος",
             "plural": "χρόνοι",
@@ -379,39 +341,36 @@
                 "χρόν."
             ]
         },
-        {
+        "ML_MORPH-VALUE_PRESENT": {
             "id": "ML_MORPH-VALUE_PRESENT",
             "singular": "ενεστώτας",
             "plural": "ενεστώτας"
         },
-        {
+        "ML_MORPH-VALUE_PAST": {
             "id": "ML_MORPH-VALUE_PAST",
             "singular": "συντελεσμένος"
         },
-        {
+        "ML_POS_IMPERF": {
             "id": "ML_POS_IMPERF",
             "singular": "παρατατικός",
             "abbreviations": [
                 "παρατ."
             ]
         },
-        {
+        "ML_CUSTOM_PERFECT": {
             "id": "ML_CUSTOM_PERFECT",
             "singular": "αόριστος"
         },
-        {
+        "ML_MORPH-VALUE_FUTURE": {
             "id": "ML_MORPH-VALUE_FUTURE",
             "singular": "μέλλοντας"
         },
-        {
+        "ML_MORPH_INFLEC": {
             "id": "ML_MORPH_INFLEC",
             "singular": "κλίση",
-            "plural": "κλίσεις",
-            "abbreviations": [
-                "κλίση"
-            ]
+            "plural": "κλίσεις"
         },
-        {
+        "ML_CUSTOM_CONJUG": {
             "id": "ML_CUSTOM_CONJUG",
             "singular": "συζυγία",
             "plural": "συζυγίες",
@@ -419,25 +378,25 @@
                 "συζ."
             ]
         },
-        {
+        "ML_POS_ACT": {
             "id": "ML_POS_ACT",
             "plural": "ενεργητική",
             "abbreviations": [
                 "ενεργ."
             ]
         },
-        {
+        "ML_CUSTOM_PASS": {
             "id": "ML_CUSTOM_PASS",
             "plural": "παθητική",
             "abbreviations": [
                 "παθ."
             ]
         },
-        {
+        "ML_POS_IMPERS": {
             "id": "ML_POS_IMPERS",
             "plural": "απρόσωπο"
         },
-        {
+        "ML_POS_VERB-AUX": {
             "id": "ML_POS_VERB-AUX",
             "singular": "βοηθητικό ρήμα",
             "plural": "βοηθητικά ρήματα",
@@ -445,12 +404,12 @@
                 "βοηθ. ρ."
             ]
         },
-        {
+        "ML_CUSTOM_V-GR": {
             "id": "ML_CUSTOM_V-GR",
             "singular": "ρηματική φράση",
             "plural": "ρηματικές φράσεις"
         },
-        {
+        "ML_POS_VERB-PTCP": {
             "id": "ML_POS_VERB-PTCP",
             "singular": "μετοχή",
             "plural": "μετοχές",
@@ -458,22 +417,30 @@
                 "μτχ."
             ]
         },
-        {
+        "ML_POS_ADVERB": {
+            "id": "ML_POS_ADVERB",
+            "singular": "επίρρημα",
+            "plural": "επιρρήματα",
+            "abbreviations": [
+                "επίρρ."
+            ]
+        },
+        "ML_POS_ADV-GR": {
             "id": "ML_POS_ADV-GR",
             "singular": "επιρρηματική φράση",
             "plural": "επιρρηματικές φράσεις"
         },
-        {
+        "ML_CUSTOM_MULT-ADV": {
             "id": "ML_CUSTOM_MULT-ADV",
             "singular": "πολλαπλασιαστικό επίρρημα",
             "plural": "πολλαπλασιαστικά επιρρήματα"
         },
-        {
+        "ML_POS_ADP": {
             "id": "ML_POS_ADP",
             "singular": "πρόθεση",
             "plural": "προθέσεις"
         },
-        {
+        "ML_POS_PREPOSITION": {
             "id": "ML_POS_PREPOSITION",
             "singular": "πρόθεση",
             "plural": "προθέσεις",
@@ -481,12 +448,12 @@
                 "πρόθ."
             ]
         },
-        {
+        "ML_CUSTOM_POSTP": {
             "id": "ML_CUSTOM_POSTP",
             "singular": "οπισθοθετικό",
             "plural": "οπισθοθετικά"
         },
-        {
+        "ML_POS_CONJUNCTION": {
             "id": "ML_POS_CONJUNCTION",
             "singular": "σύνδεσμος",
             "plural": "σύνδεσμοι",
@@ -494,7 +461,7 @@
                 "σύνδ."
             ]
         },
-        {
+        "ML_POS_CONJ-COORD": {
             "id": "ML_POS_CONJ-COORD",
             "singular": "συμπλεκτικός σύνδεσμος",
             "plural": "συμπλεκτικοί σύνδεσμοι",
@@ -502,7 +469,7 @@
                 "συμπλ. σύνδ."
             ]
         },
-        {
+        "ML_POS_DET": {
             "id": "ML_POS_DET",
             "singular": "καθοριστικός προσδιοριστής",
             "plural": "καθοριστικοί προσδιοριστές",
@@ -510,7 +477,7 @@
                 "καθ. προσδ."
             ]
         },
-        {
+        "ML_POS_ART": {
             "id": "ML_POS_ART",
             "singular": "άρθρο",
             "plural": "άρθρα",
@@ -518,7 +485,7 @@
                 "άρθρ."
             ]
         },
-        {
+        "ML_POS_ART-DEF": {
             "id": "ML_POS_ART-DEF",
             "singular": "οριστικό άρθρο",
             "plural": "οριστικά άρθρα",
@@ -526,7 +493,7 @@
                 "ορισ. άρθρ."
             ]
         },
-        {
+        "ML_POS_ART-IND": {
             "id": "ML_POS_ART-IND",
             "singular": "αόριστο άρθρο",
             "plural": "αόριστα άρθρα",
@@ -534,7 +501,7 @@
                 "αόρ. άρθρ."
             ]
         },
-        {
+        "ML_POS_PRONOUN": {
             "id": "ML_POS_PRONOUN",
             "singular": "αντωνυμία",
             "plural": "αντωνυμίες",
@@ -542,7 +509,7 @@
                 "αντων."
             ]
         },
-        {
+        "ML_POS_PRON-INT": {
             "id": "ML_POS_PRON-INT",
             "singular": "ερωτηματική αντωνυμία",
             "plural": "ερωτηματικές αντωνυμίες",
@@ -550,7 +517,7 @@
                 "ερ. αντων."
             ]
         },
-        {
+        "ML_POS_PERSONAL-PRONOUN": {
             "id": "ML_POS_PERSONAL-PRONOUN",
             "singular": "προσωπική αντωνυμία",
             "plural": "προσωπικές αντωνυμίες",
@@ -558,7 +525,7 @@
                 "προσ. αντων."
             ]
         },
-        {
+        "ML_POS_POSSESSIVE-PRONOUN": {
             "id": "ML_POS_POSSESSIVE-PRONOUN",
             "singular": "κτητική αντωνυμία",
             "plural": "κτητικές αντωνυμίες",
@@ -566,7 +533,7 @@
                 "κτητ. αντων."
             ]
         },
-        {
+        "ML_POS_DEMONSTRATIVE-PRONOUN": {
             "id": "ML_POS_DEMONSTRATIVE-PRONOUN",
             "singular": "δεικτική αντωνυμία",
             "plural": "δεικτικές αντωνυμίες",
@@ -574,7 +541,7 @@
                 "δεικτ. αντων."
             ]
         },
-        {
+        "ML_POS_RELATIVE-PRONOUN": {
             "id": "ML_POS_RELATIVE-PRONOUN",
             "singular": [
                 "αναφορική αντωνυμία",
@@ -589,7 +556,7 @@
                 "αόρ. αναφ. αντων."
             ]
         },
-        {
+        "ML_POS_PRON-REFL": {
             "id": "ML_POS_PRON-REFL",
             "singular": "αυτοπαθής αντωνυμία",
             "plural": "αυτοπαθείς αντωνυμίες",
@@ -597,7 +564,7 @@
                 "αυτοπ. αντων."
             ]
         },
-        {
+        "ML_POS_PRON-IND": {
             "id": "ML_POS_PRON-IND",
             "singular": "αόριστη αντωνυμία",
             "plural": "αόριστες αντωνυμίες",
@@ -605,7 +572,7 @@
                 "αόρ. αντων."
             ]
         },
-        {
+        "ML_POS_INTERJ": {
             "id": "ML_POS_INTERJ",
             "singular": "επιφώνημα",
             "plural": "επιφωνήματα",
@@ -613,7 +580,7 @@
                 "επιφ."
             ]
         },
-        {
+        "ML_POS_PTCL": {
             "id": "ML_POS_PTCL",
             "singular": "μόριο",
             "plural": "μόρια",
@@ -621,82 +588,63 @@
                 "μόρ."
             ]
         },
-        {
+        "ML_MORPHOLOGY_MORPHEME": {
             "id": "ML_MORPHOLOGY_MORPHEME",
             "singular": "μορφή",
             "plural": "μορφές"
         },
-        {
-            "id": "ML_CUSTOM_N-ABBR",
-            "plural": "μη διασπώμενη συντομογραφία"
-        },
-        {
-            "id": "ML_CUSTOM_INIT",
-            "singular": "αρχικό",
-            "plural": "αρχικά"
-        },
-        {
+        "ML_CUSTOM_ACRO": {
             "id": "ML_CUSTOM_ACRO",
             "singular": "αρκτικόλεξο"
         },
-        {
+        "ML_ETYMOLOGY_LOANWORD": {
             "id": "ML_ETYMOLOGY_LOANWORD",
             "singular": "δάνειο",
             "plural": "δάνεια"
         },
-        {
+        "ML_CUSTOM_TRANSLIT": {
             "id": "ML_CUSTOM_TRANSLIT",
             "singular": "μεταγραφή",
             "plural": "μεταγραφές"
         },
-        {
+        "ML_RHETORIC_SYMBOL": {
             "id": "ML_RHETORIC_SYMBOL",
             "singular": "σύμβολο",
             "plural": "σύμβολα"
         },
-        {
+        "ML_CUSTOM_DIG": {
             "id": "ML_CUSTOM_DIG",
             "singular": "ψηφίο",
             "plural": "ψηφία"
         },
-        {
+        "ML_POS_PUNCT": {
             "id": "ML_POS_PUNCT",
             "singular": "σημείο στίξης",
             "plural": "σημεία στίξης"
         },
-        {
+        "ML_CUSTOM_ENUM": {
             "id": "ML_CUSTOM_ENUM",
             "singular": "αρίθμηση",
             "plural": "αριθμήσεις"
         },
-        {
+        "ML_CUSTOM_DATUM": {
             "id": "ML_CUSTOM_DATUM",
             "singular": "ημερομηνία",
             "plural": "ημερομηνίες"
         },
-        {
-            "id": "ML_POS_NUMERAL",
-            "singular": "αριθμητικό",
-            "plural": "αριθμητικά",
+        "ML_EDITORIAL_etc": {
+            "id": "ML_EDITORIAL_etc",
+            "singular": "και τα λοιπά",
             "abbreviations": [
-                "αριθ."
+                "κ.τ.λ.",
+                "κλπ."
             ]
         },
-        {
-            "id": "ML_POS_VERB",
-            "singular": "ρήμα",
-            "plural": "ρήματα",
+        "ML_EDITORIAL_VERGELIJK": {
+            "id": "ML_EDITORIAL_VERGELIJK",
             "abbreviations": [
-                "ρ."
-            ]
-        },
-        {
-            "id": "ML_POS_ADVERB",
-            "singular": "επίρρημα",
-            "plural": "επιρρήματα",
-            "abbreviations": [
-                "επίρρ."
+                "συγκρ."
             ]
         }
-    ]
+    }
 }

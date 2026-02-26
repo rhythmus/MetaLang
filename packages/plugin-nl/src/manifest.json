@@ -19,72 +19,11 @@
             "author": "MetaLang Contributors",
             "year": 2026,
             "url": "https://metalang.org/ontology/nl",
-            "retrievedAt": "2026-02-26T18:00:00Z"
+            "lastEditedAt": "2026-02-26T18:59:19.384Z"
         }
     },
-    "mappings": {},
-    "linguisticMappings": [
-        {
-            "id": "ML_EDITORIAL_eg",
-            "singular": "bijvoorbeeld",
-            "abbreviations": [
-                "bv.",
-                "bvb.",
-                "vb."
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_etc",
-            "singular": "enzovoort",
-            "abbreviations": [
-                "enz.",
-                "enzv."
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_NAMELIJK",
-            "singular": "namelijk",
-            "abbreviations": [
-                "nam."
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_VERGELIJK",
-            "singular": "vergelijk",
-            "abbreviations": [
-                "vlg.",
-                "vgl."
-            ]
-        },
-        {
-            "id": "ML_EDITORIAL_cf",
-            "singular": "confer",
-            "abbreviations": [
-                "cf.",
-                "zie"
-            ]
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_SUBJECT",
-            "singular": "onderwerp"
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_PREDICATE",
-            "singular": "gezegde"
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
-            "singular": "lijdend voorwerp"
-        },
-        {
-            "id": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
-            "singular": "meewerkend voorwerp"
-        },
-        {
-            "id": "ML_MORPH-VALUE_VERBFORM-GERUND",
-            "singular": "gerundium"
-        },
-        {
+    "mappings": {
+        "ML_FIELD_GRAMMAR": {
             "id": "ML_FIELD_GRAMMAR",
             "singular": "woordsoort",
             "plural": "woordsoorten",
@@ -92,23 +31,17 @@
                 "woords."
             ]
         },
-        {
+        "ML_CUSTOM_S": {
             "id": "ML_CUSTOM_S",
             "singular": "zin",
-            "plural": "zinnen",
-            "abbreviations": [
-                "zin"
-            ]
+            "plural": "zinnen"
         },
-        {
+        "ML_MORPH-VALUE_MOOD-INTERROGATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-INTERROGATIVE",
             "singular": "vraagzin",
-            "plural": "vraagzinnen",
-            "abbreviations": [
-                "vraag"
-            ]
+            "plural": "vraagzinnen"
         },
-        {
+        "ML_LEX-STRUCT_PROVERB": {
             "id": "ML_LEX-STRUCT_PROVERB",
             "singular": "spreekwoord",
             "plural": "spreekwoorden",
@@ -116,23 +49,17 @@
                 "spr."
             ]
         },
-        {
+        "ML_LEX-STRUCT_MULTIWORD-EXPRESSION": {
             "id": "ML_LEX-STRUCT_MULTIWORD-EXPRESSION",
             "singular": "meerwoordige uitdrukking",
-            "plural": "meerwoordige uitdrukkingen",
-            "abbreviations": [
-                "MWE"
-            ]
+            "plural": "meerwoordige uitdrukkingen"
         },
-        {
+        "ML_LEX-STRUCT_PHRASE": {
             "id": "ML_LEX-STRUCT_PHRASE",
             "singular": "fraseem",
-            "plural": "frasemen",
-            "abbreviations": [
-                "phraseme"
-            ]
+            "plural": "frasemen"
         },
-        {
+        "ML_LEX-STRUCT_EXPRESSION": {
             "id": "ML_LEX-STRUCT_EXPRESSION",
             "singular": "uitdrukking",
             "plural": "uitdrukkingen",
@@ -140,105 +67,104 @@
                 "uitdr."
             ]
         },
-        {
+        "ML_MORPH-FEATURE_CASE": {
             "id": "ML_MORPH-FEATURE_CASE",
             "singular": "naamval",
             "plural": "naamvallen"
         },
-        {
+        "ML_MORPH-VALUE_CASE-NOMINATIVE": {
             "id": "ML_MORPH-VALUE_CASE-NOMINATIVE",
             "singular": "nominatief",
             "plural": "nominatieven"
         },
-        {
+        "ML_MORPH-VALUE_CASE-VOCATIVE": {
             "id": "ML_MORPH-VALUE_CASE-VOCATIVE",
             "singular": "vocative",
             "plural": "vocatieven"
         },
-        {
+        "ML_MORPH-VALUE_CASE-GENITIVE": {
             "id": "ML_MORPH-VALUE_CASE-GENITIVE",
             "singular": "genitief",
             "plural": "genitieven"
         },
-        {
+        "ML_MORPH-VALUE_CASE-DATIVE": {
             "id": "ML_MORPH-VALUE_CASE-DATIVE",
             "singular": "datief",
             "plural": "datieven"
         },
-        {
+        "ML_MORPH-VALUE_CASE-ACCUSATIVE": {
             "id": "ML_MORPH-VALUE_CASE-ACCUSATIVE",
             "singular": "accusatief",
             "plural": "accusatieven"
         },
-        {
+        "ML_MORPH-VALUE_CASE-ABLATIVE": {
             "id": "ML_MORPH-VALUE_CASE-ABLATIVE",
             "singular": "ablatief",
             "plural": "ablatieven"
         },
-        {
+        "ML_MORPH-FEATURE_GENDER": {
             "id": "ML_MORPH-FEATURE_GENDER",
             "singular": "woordgeslacht",
             "plural": "woordgeslachten"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
             "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
             "singular": "mannelijk"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
             "id": "ML_MORPH-VALUE_GENDER-FEMININE",
             "singular": "vrouwelijk"
         },
-        {
+        "ML_MORPH-VALUE_GENDER-NEUTER": {
             "id": "ML_MORPH-VALUE_GENDER-NEUTER",
             "singular": "onzijdig"
         },
-        {
+        "ML_MORPH-FEATURE_NUMBER": {
             "id": "ML_MORPH-FEATURE_NUMBER",
             "singular": "woordgetal"
         },
-        {
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
             "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
             "singular": "enkelvoud",
             "plural": "enkelvouden"
         },
-        {
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
             "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
             "singular": "meervoud",
             "plural": "meervouden"
         },
-        {
+        "ML_MORPH-FEATURE_PERSON": {
             "id": "ML_MORPH-FEATURE_PERSON",
             "singular": "(grammaticale) persoon",
             "plural": "(grammaticale) personen"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-FIRST": {
             "id": "ML_MORPH-VALUE_PERSON-FIRST",
             "singular": "eerste persoon"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-SECOND": {
             "id": "ML_MORPH-VALUE_PERSON-SECOND",
             "singular": "tweede persoon"
         },
-        {
+        "ML_MORPH-VALUE_PERSON-THIRD": {
             "id": "ML_MORPH-VALUE_PERSON-THIRD",
             "singular": "derde persoon"
         },
-        {
+        "ML_POS_NOUN": {
             "id": "ML_POS_NOUN",
             "singular": [
-                "naamwoordgroep",
-                "zelfstandig naamwoord"
+                "zelfstandig naamwoord",
+                "naamwoordgroep"
             ],
             "plural": [
-                "naamwoordgroepen",
-                "zelfstandige naamwoorden"
+                "zelfstandige naamwoorden",
+                "naamwoordgroepen"
             ],
             "abbreviations": [
-                "znw. groep",
                 "znw."
             ]
         },
-        {
+        "ML_POS_PROPER-NOUN": {
             "id": "ML_POS_PROPER-NOUN",
             "singular": [
                 "soortnaam",
@@ -253,7 +179,7 @@
                 "eigenn."
             ]
         },
-        {
+        "ML_POS_PROPER-NOUN-TOPONYM": {
             "id": "ML_POS_PROPER-NOUN-TOPONYM",
             "singular": "plaatsnaam",
             "plural": "plaatsnamen",
@@ -261,7 +187,7 @@
                 "plaatsn."
             ]
         },
-        {
+        "ML_POS_ADJECTIVE": {
             "id": "ML_POS_ADJECTIVE",
             "singular": "bijvoeglijk naamwoord",
             "plural": "bijvoeglijke naamwoorden",
@@ -269,7 +195,7 @@
                 "bnw."
             ]
         },
-        {
+        "ML_DERIVATION_DIMINUTIVE": {
             "id": "ML_DERIVATION_DIMINUTIVE",
             "singular": "verkleinwoord",
             "plural": "verkleinwoorden",
@@ -277,7 +203,7 @@
                 "dim."
             ]
         },
-        {
+        "ML_MORPH-VALUE_DEGREE-COMPARATIVE": {
             "id": "ML_MORPH-VALUE_DEGREE-COMPARATIVE",
             "singular": "vergelijkende trap",
             "plural": "vergelijkende trappen",
@@ -285,7 +211,7 @@
                 "comp."
             ]
         },
-        {
+        "ML_MORPH-VALUE_DEGREE-SUPERLATIVE": {
             "id": "ML_MORPH-VALUE_DEGREE-SUPERLATIVE",
             "singular": "overtreffende trap",
             "plural": "overtreffende trappen",
@@ -293,12 +219,20 @@
                 "sup."
             ]
         },
-        {
+        "ML_POS_NUMERAL": {
+            "id": "ML_POS_NUMERAL",
+            "singular": "telwoord",
+            "plural": "telwoorden",
+            "abbreviations": [
+                "telw."
+            ]
+        },
+        "ML_POS_NUMERAL-CARDINAL": {
             "id": "ML_POS_NUMERAL-CARDINAL",
             "singular": "hoofdtelwoord",
             "plural": "hoofdtelwoorden"
         },
-        {
+        "ML_POS_NUMERAL-ORDINAL": {
             "id": "ML_POS_NUMERAL-ORDINAL",
             "singular": "rangtelwoord",
             "plural": "rangtelwoorden",
@@ -306,98 +240,100 @@
                 "rangt."
             ]
         },
-        {
+        "ML_POS_NUMERAL-MULTIPLICATIVE": {
             "id": "ML_POS_NUMERAL-MULTIPLICATIVE",
             "singular": "vermenigvuldigingsgetal",
             "plural": "vermenigvuldigingsgetallen"
         },
-        {
+        "ML_POS_NUMERAL-COLLECTIVE": {
             "id": "ML_POS_NUMERAL-COLLECTIVE",
             "singular": "verzameltelwoord",
             "plural": "verzameltelwoorden"
         },
-        {
+        "ML_POS_NUMERAL-ADJECTIVAL": {
             "id": "ML_POS_NUMERAL-ADJECTIVAL",
             "singular": "bijvoeglijk telwoord",
             "plural": "bijvoeglijk telwoorden"
         },
-        {
+        "ML_POS_NUMERAL-NOMINAL": {
             "id": "ML_POS_NUMERAL-NOMINAL",
             "singular": "zelfstandig telwoord",
             "plural": "zelfstandig telwoorden"
         },
-        {
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "werkwoord",
+            "plural": "werkwoorden",
+            "abbreviations": [
+                "ww."
+            ]
+        },
+        "ML_MORPH-VALUE_VERBFORM-INFINITIVE": {
             "id": "ML_MORPH-VALUE_VERBFORM-INFINITIVE",
             "singular": "onbepaalde wijs",
             "plural": "infinitieven"
         },
-        {
+        "ML_MORPH-VALUE_MOOD-INDICATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-INDICATIVE",
             "singular": "aantonende wijs",
             "plural": "indicatieven"
         },
-        {
+        "ML_MORPH-VALUE_MOOD-IMPERATIVE": {
             "id": "ML_MORPH-VALUE_MOOD-IMPERATIVE",
             "singular": "gebiedende wijs",
             "plural": "imperatieven"
         },
-        {
+        "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE": {
             "id": "ML_MORPH-VALUE_MOOD-SUBJUNCTIVE",
             "singular": "aanvoegdende wijs",
             "plural": "conjunctieven"
         },
-        {
+        "ML_MORPH-VALUE_MOOD-CONDITIONAL": {
             "id": "ML_MORPH-VALUE_MOOD-CONDITIONAL",
             "singular": "voorwaardelijke wijs",
             "plural": "conditionales"
         },
-        {
+        "ML_CUSTOM_T": {
             "id": "ML_CUSTOM_T",
             "singular": "werkwoordelijke tijd",
             "plural": "tijden van het werkwoord"
         },
-        {
+        "ML_MORPH-VALUE_PRESENT": {
             "id": "ML_MORPH-VALUE_PRESENT",
             "singular": "tegenwoordige tijd",
             "plural": "tegenwoordige tijden"
         },
-        {
+        "ML_MORPH-VALUE_PAST": {
             "id": "ML_MORPH-VALUE_PAST",
             "singular": "verleden tijd",
             "plural": "verleden tijden"
         },
-        {
+        "ML_POS_IMPERF": {
             "id": "ML_POS_IMPERF",
             "singular": "onvoltooid verleden tijd",
-            "plural": "onvoltooid verleden tijden",
-            "abbreviations": [
-                "ovt"
-            ]
+            "plural": "onvoltooid verleden tijden"
         },
-        {
+        "ML_CUSTOM_PERFECT": {
             "id": "ML_CUSTOM_PERFECT",
             "singular": "voltooid verleden tijd",
-            "plural": "voltooid verleden tijden",
-            "abbreviations": [
-                "vvt"
-            ]
+            "plural": "voltooid verleden tijden"
         },
-        {
+        "ML_MORPH-VALUE_FUTURE": {
             "id": "ML_MORPH-VALUE_FUTURE",
             "singular": "toekomstige tijd",
             "plural": "toekomstige tijden"
         },
-        {
+        "ML_MORPH_INFLEC": {
             "id": "ML_MORPH_INFLEC",
             "singular": "verbuiging",
             "plural": "verbuigingen"
         },
-        {
+        "ML_CUSTOM_CONJUG": {
             "id": "ML_CUSTOM_CONJUG",
             "singular": "vervoeging",
             "plural": "vervoegingen"
         },
-        {
+        "ML_POS_ACT": {
             "id": "ML_POS_ACT",
             "singular": [
                 "handelende vorm",
@@ -406,7 +342,7 @@
             ],
             "plural": "actieve vormen"
         },
-        {
+        "ML_CUSTOM_PASS": {
             "id": "ML_CUSTOM_PASS",
             "singular": [
                 "lijdende vorm",
@@ -417,12 +353,12 @@
                 "passieven"
             ]
         },
-        {
+        "ML_POS_IMPERS": {
             "id": "ML_POS_IMPERS",
             "singular": "onpersoonlijk passief",
             "plural": "onpersoonlijk passieve wijzen"
         },
-        {
+        "ML_POS_VERB-AUX": {
             "id": "ML_POS_VERB-AUX",
             "singular": "hulpwerkwoord",
             "plural": "hulpwerkwoorden",
@@ -430,15 +366,12 @@
                 "hww."
             ]
         },
-        {
+        "ML_CUSTOM_V-GR": {
             "id": "ML_CUSTOM_V-GR",
             "singular": "werkwoordgroep",
-            "plural": "werkwoordgroepen",
-            "abbreviations": [
-                "ww. groep"
-            ]
+            "plural": "werkwoordgroepen"
         },
-        {
+        "ML_POS_VERB-PTCP": {
             "id": "ML_POS_VERB-PTCP",
             "singular": "deelwoord",
             "plural": "deelwoorden",
@@ -446,25 +379,30 @@
                 "dw."
             ]
         },
-        {
-            "id": "ML_POS_ADV-GR",
-            "singular": "bijwoordgroep",
-            "plural": "bijwoordgroepen",
+        "ML_POS_ADVERB": {
+            "id": "ML_POS_ADVERB",
+            "singular": "bijwoord",
+            "plural": "bijwoorden",
             "abbreviations": [
-                "bijw. groep"
+                "bijw."
             ]
         },
-        {
+        "ML_POS_ADV-GR": {
+            "id": "ML_POS_ADV-GR",
+            "singular": "bijwoordgroep",
+            "plural": "bijwoordgroepen"
+        },
+        "ML_CUSTOM_MULT-ADV": {
             "id": "ML_CUSTOM_MULT-ADV",
             "singular": "vermenigvuldigingsbijwoord",
             "plural": "vermenigvuldigingsbijwoorden"
         },
-        {
+        "ML_POS_ADP": {
             "id": "ML_POS_ADP",
             "singular": "aanvoegsel",
             "plural": "aanvoegsels"
         },
-        {
+        "ML_POS_PREPOSITION": {
             "id": "ML_POS_PREPOSITION",
             "singular": "voorzetsel",
             "plural": "voorzetsels",
@@ -472,12 +410,12 @@
                 "vz."
             ]
         },
-        {
+        "ML_CUSTOM_POSTP": {
             "id": "ML_CUSTOM_POSTP",
             "singular": "achterzetsel",
             "plural": "achterzetsels"
         },
-        {
+        "ML_POS_CONJUNCTION": {
             "id": "ML_POS_CONJUNCTION",
             "singular": "voegwoord",
             "plural": "voegwoorden",
@@ -485,7 +423,7 @@
                 "vw."
             ]
         },
-        {
+        "ML_POS_CONJ-COORD": {
             "id": "ML_POS_CONJ-COORD",
             "singular": "nevenschikkend voegwoord",
             "plural": "nevenschikkende voegwoorden",
@@ -493,7 +431,7 @@
                 "neven."
             ]
         },
-        {
+        "ML_POS_DET": {
             "id": "ML_POS_DET",
             "singular": "determinator",
             "plural": "determinatoren",
@@ -501,7 +439,7 @@
                 "det."
             ]
         },
-        {
+        "ML_POS_ART": {
             "id": "ML_POS_ART",
             "singular": "lidwoord",
             "plural": "lidwoorden",
@@ -509,7 +447,7 @@
                 "lidw."
             ]
         },
-        {
+        "ML_POS_ART-DEF": {
             "id": "ML_POS_ART-DEF",
             "singular": "bepaald lidwoord",
             "plural": "bepaalde lidwoorden",
@@ -517,7 +455,7 @@
                 "bep. lidw."
             ]
         },
-        {
+        "ML_POS_ART-IND": {
             "id": "ML_POS_ART-IND",
             "singular": "onbepaald lidwoord",
             "plural": "onbepaalde lidwoorden",
@@ -525,7 +463,7 @@
                 "onbep. lidw."
             ]
         },
-        {
+        "ML_POS_PRONOUN": {
             "id": "ML_POS_PRONOUN",
             "singular": "voornaamwoord",
             "plural": "voornaamwoorden",
@@ -533,7 +471,7 @@
                 "vnw."
             ]
         },
-        {
+        "ML_POS_PRON-INT": {
             "id": "ML_POS_PRON-INT",
             "singular": "vragend voornaamwoord",
             "plural": "vragende voornaamwoorden",
@@ -541,7 +479,7 @@
                 "vvnw."
             ]
         },
-        {
+        "ML_POS_PERSONAL-PRONOUN": {
             "id": "ML_POS_PERSONAL-PRONOUN",
             "singular": "persoonlijk voornaamwoord",
             "plural": "persoonlijke voornaamwoorden",
@@ -549,7 +487,7 @@
                 "pers. vnw."
             ]
         },
-        {
+        "ML_POS_POSSESSIVE-PRONOUN": {
             "id": "ML_POS_POSSESSIVE-PRONOUN",
             "singular": "bezittelijk voornaamwoord",
             "plural": "bezittelijke voornaamwoorden",
@@ -557,7 +495,7 @@
                 "bez. vnw."
             ]
         },
-        {
+        "ML_POS_DEMONSTRATIVE-PRONOUN": {
             "id": "ML_POS_DEMONSTRATIVE-PRONOUN",
             "singular": "aanwijzend voornaamwoord",
             "plural": "aanwijzende voornaamwoorden",
@@ -565,7 +503,7 @@
                 "aanw. vnw."
             ]
         },
-        {
+        "ML_POS_RELATIVE-PRONOUN": {
             "id": "ML_POS_RELATIVE-PRONOUN",
             "singular": [
                 "betrekkelijk voornaamwoord",
@@ -580,7 +518,7 @@
                 "onbep. betr. vnw."
             ]
         },
-        {
+        "ML_POS_PRON-REFL": {
             "id": "ML_POS_PRON-REFL",
             "singular": "wederkerig voornaamwoord",
             "plural": "wederkerige voornaamwoorden",
@@ -588,7 +526,7 @@
                 "wederk. vnw."
             ]
         },
-        {
+        "ML_POS_PRON-IND": {
             "id": "ML_POS_PRON-IND",
             "singular": "onbepaald voornaamwoord",
             "plural": "onbepaalde voornaamwoorden",
@@ -596,7 +534,7 @@
                 "onbep. vnw."
             ]
         },
-        {
+        "ML_POS_INTERJ": {
             "id": "ML_POS_INTERJ",
             "singular": "tussenwerpsel",
             "plural": "tussenwerpsels",
@@ -604,7 +542,7 @@
                 "tsw."
             ]
         },
-        {
+        "ML_POS_PTCL": {
             "id": "ML_POS_PTCL",
             "singular": "grammaticaal partikel",
             "plural": "grammaticale partikels",
@@ -612,7 +550,7 @@
                 "part."
             ]
         },
-        {
+        "ML_MORPHOLOGY_MORPHEME": {
             "id": "ML_MORPHOLOGY_MORPHEME",
             "singular": "morfeem",
             "plural": "morfemen",
@@ -620,50 +558,42 @@
                 "morf."
             ]
         },
-        {
-            "id": "ML_CUSTOM_N-ABBR"
-        },
-        {
-            "id": "ML_CUSTOM_INIT",
-            "singular": "inititalen",
-            "plural": "inititalen"
-        },
-        {
+        "ML_CUSTOM_ACRO": {
             "id": "ML_CUSTOM_ACRO",
             "singular": "acroniem",
             "plural": "acroniemen"
         },
-        {
+        "ML_ETYMOLOGY_LOANWORD": {
             "id": "ML_ETYMOLOGY_LOANWORD",
             "singular": "leenwoord",
             "plural": "leenwoorden"
         },
-        {
+        "ML_CUSTOM_TRANSLIT": {
             "id": "ML_CUSTOM_TRANSLIT",
             "singular": "transliteratie",
             "plural": "transliteraties"
         },
-        {
+        "ML_RHETORIC_SYMBOL": {
             "id": "ML_RHETORIC_SYMBOL",
             "singular": "symbool",
             "plural": "symbolen"
         },
-        {
+        "ML_CUSTOM_DIG": {
             "id": "ML_CUSTOM_DIG",
             "singular": "cijfer",
             "plural": "cijfers"
         },
-        {
+        "ML_POS_PUNCT": {
             "id": "ML_POS_PUNCT",
             "singular": "interpunctie",
             "plural": "interpunctie"
         },
-        {
+        "ML_CUSTOM_ENUM": {
             "id": "ML_CUSTOM_ENUM",
             "singular": "opsomming",
             "plural": "opsommingen"
         },
-        {
+        "ML_CUSTOM_DATUM": {
             "id": "ML_CUSTOM_DATUM",
             "singular": "datum",
             "plural": [
@@ -671,29 +601,44 @@
                 "datums"
             ]
         },
-        {
-            "id": "ML_POS_NUMERAL",
-            "singular": "telwoord",
-            "plural": "telwoorden",
+        "ML_EDITORIAL_eg": {
+            "id": "ML_EDITORIAL_eg",
+            "singular": "bijvoorbeeld",
             "abbreviations": [
-                "telw."
+                "bv.",
+                "bvb.",
+                "vb."
             ]
         },
-        {
-            "id": "ML_POS_VERB",
-            "singular": "werkwoord",
-            "plural": "werkwoorden",
+        "ML_EDITORIAL_etc": {
+            "id": "ML_EDITORIAL_etc",
+            "singular": "enzovoort",
             "abbreviations": [
-                "ww."
+                "enz.",
+                "enzv."
             ]
         },
-        {
-            "id": "ML_POS_ADVERB",
-            "singular": "bijwoord",
-            "plural": "bijwoorden",
+        "ML_EDITORIAL_NAMELIJK": {
+            "id": "ML_EDITORIAL_NAMELIJK",
+            "singular": "namelijk",
             "abbreviations": [
-                "bijw."
+                "nam."
+            ]
+        },
+        "ML_EDITORIAL_VERGELIJK": {
+            "id": "ML_EDITORIAL_VERGELIJK",
+            "singular": "vergelijk",
+            "abbreviations": [
+                "vlg.",
+                "vgl."
+            ]
+        },
+        "ML_EDITORIAL_cf": {
+            "id": "ML_EDITORIAL_cf",
+            "singular": "confer",
+            "abbreviations": [
+                "cf."
             ]
         }
-    ]
+    }
 }
