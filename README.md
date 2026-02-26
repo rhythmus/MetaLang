@@ -108,6 +108,20 @@ Run the comprehensive API stress test:
 npx tsx scripts/verify_api.ts
 ```
 
----
+## 📝 Citation
 
-*MetaLang: Bridging the gap between human linguistics and machine data.*
+If you use MetaLang in your research or project, please cite it as follows:
+
+```bibtex
+@software{Soudan_MetaLang_2026,
+  author = {Soudan, Wouter},
+  license = {ISC},
+  month = {2},
+  title = {{MetaLang}},
+  url = {https://github.com/rhythmus/MetaLang},
+  version = {1.0.0},
+  year = {2026}
+}
+```
+
+Alternatively, you can use the `CITATION.cff` file in this repository for other formats.

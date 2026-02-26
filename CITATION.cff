@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Soudan
+    given-names: Wouter
+title: "MetaLang"
+version: 1.0.0
+date-released: 2026-02-26
+url: "https://github.com/rhythmus/MetaLang"
+repository-code: "https://github.com/rhythmus/MetaLang"
+license: ISC
+abstract: "MetaLang is a multilingual, ontology-based framework for linguistic metalanguage — the vocabulary used to describe language itself. It serves as a canonical pivot layer between academic, pedagogical, and computational grammar systems."
+keywords:
+  - linguistics
+  - metalanguage
+  - ontology
+  - terminology
+  - multidialectal
+  - cross-linguistic
