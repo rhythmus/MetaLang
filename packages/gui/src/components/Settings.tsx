@@ -76,6 +76,51 @@ export const Settings: React.FC<SettingsProps> = ({ stats, onReset }) => {
                 </div>
             </div>
 
+            {/* GitHub Settings */}
+            <div className="space-y-4">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500">GitHub Integration</h3>
+                <div className="glass-card p-6 space-y-6">
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                        Configure your GitHub credentials to enable automated Pull Request creation from the Export panel.
+                        Your Personal Access Token (PAT) is stored securely in your browser's local storage.
+                    </p>
+
+                    <div className="grid grid-cols-2 gap-6">
+                        <div className="space-y-2">
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Repository Owner</label>
+                            <input
+                                type="text"
+                                className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-2 text-sm focus:border-blue-500/50 outline-none transition-colors"
+                                placeholder="e.g. woutersoudan"
+                                defaultValue={localStorage.getItem('gh_owner') || 'woutersoudan'}
+                                onChange={(e) => localStorage.setItem('gh_owner', e.target.value)}
+                            />
+                        </div>
+                        <div className="space-y-2">
+                            <label className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Repository Name</label>
+                            <input
+                                type="text"
+                                className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-2 text-sm focus:border-blue-500/50 outline-none transition-colors"
+                                placeholder="e.g. metalang"
+                                defaultValue={localStorage.getItem('gh_repo') || 'metalang'}
+                                onChange={(e) => localStorage.setItem('gh_repo', e.target.value)}
+                            />
+                        </div>
+                    </div>
+
+                    <div className="space-y-2">
+                        <label className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Personal Access Token (PAT)</label>
+                        <input
+                            type="password"
+                            className="w-full bg-black/40 border border-white/5 rounded-lg px-4 py-2 text-sm focus:border-blue-500/50 outline-none transition-colors"
+                            placeholder="ghp_xxxxxxxxxxxx"
+                            defaultValue={localStorage.getItem('gh_token') || ''}
+                            onChange={(e) => localStorage.setItem('gh_token', e.target.value)}
+                        />
+                    </div>
+                </div>
+            </div>
+
             <div className="p-8 rounded-2xl bg-blue-600/10 border border-blue-500/20 flex gap-6 items-center">
                 <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
                     <Info size={32} />

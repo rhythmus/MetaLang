@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import type { Concept } from '@metalang/schema';
-import { X, Copy, Download } from 'lucide-react';
+import { X, Copy, Download, GitBranch } from 'lucide-react';
 import { generatePatch } from '../utils/patch';
 
 interface ExportPanelProps {
@@ -65,13 +65,91 @@ export const ExportPanel: React.FC<ExportPanelProps> = ({ original, updated, onC
                     </button>
                     <button
                         onClick={handleDownload}
-                        className="btn-primary flex items-center gap-2"
+                        className="btn-primary"
+                        style={{ background: 'rgba(255,255,255,0.05)', color: 'white', border: '1px solid rgba(255,255,255,0.1)' }}
                     >
                         <Download size={16} />
                         Download .json
                     </button>
+                    <GitHubSubmitButton content={patchJson} />
                 </div>
             </div>
+        </div>
+    );
+};
+
+const GitHubSubmitButton: React.FC<{ content: string }> = ({ content }) => {
+    const [status, setStatus] = React.useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [prUrl, setPrUrl] = React.useState<string | null>(null);
+    const [error, setError] = React.useState<string | null>(null);
+
+    const handleSubmit = async () => {
+        const owner = localStorage.getItem('gh_owner') || 'woutersoudan';
+        const repo = localStorage.getItem('gh_repo') || 'metalang';
+        const auth = localStorage.getItem('gh_token');
+
+        if (!auth) {
+            alert('Please configure your GitHub Personal Access Token (PAT) in Settings.');
+            return;
+        }
+
+        setStatus('loading');
+        setError(null);
+
+        try {
+            const { GitHubService } = await import('@metalang/core');
+            const service = new GitHubService({ owner, repo, auth });
+
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+            const branchName = `patch-${timestamp}`;
+
+            const url = await service.createPullRequest({
+                title: `Ontology Update: ${timestamp}`,
+                body: `This PR contains an automated ontology patch generated from the MetaLang Authoring GUI.\n\n### Summary\n- Branch: \`${branchName}\`\n- Generated at: ${new Date().toLocaleString()}`,
+                branchName,
+                filePath: 'data/metalang_seed_v1_1.json',
+                content,
+                commitMessage: `feat(ontology): apply patch ${timestamp}`
+            });
+
+            setPrUrl(url);
+            setStatus('success');
+        } catch (err: any) {
+            console.error(err);
+            setError(err.message || 'Failed to create PR');
+            setStatus('error');
+        }
+    };
+
+    if (status === 'success' && prUrl) {
+        return (
+            <a
+                href={prUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary flex items-center gap-2 bg-green-500/20 text-green-400 border-green-500/20 hover:bg-green-500/30"
+            >
+                <GitBranch size={16} />
+                View PR on GitHub
+            </a>
+        );
+    }
+
+    return (
+        <div className="flex flex-col items-end gap-1">
+            <button
+                onClick={handleSubmit}
+                disabled={status === 'loading'}
+                className="btn-primary flex items-center gap-2"
+            >
+                <GitBranch size={16} />
+                {status === 'loading' ? 'Creating PR...' : 'Submit as PR'}
+            </button>
+            {status === 'error' && error && (
+                <span className="text-[10px] text-rose-400 font-medium">
+                    {error}
+                </span>
+            )}
         </div>
     );
 };

@@ -78,7 +78,7 @@ export class GitHubService {
             repo: this.repo,
             path: request.filePath,
             message: request.commitMessage,
-            content: Buffer.from(request.content).toString('base64'),
+            content: btoa(unescape(encodeURIComponent(request.content))),
             branch: request.branchName,
         };
         if (fileSha) params.sha = fileSha;
