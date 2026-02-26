@@ -1,4 +1,4 @@
-import type { Concept, Domain, PluginManifest, LinguisticMapping } from '@metalang/schema';
+import type { Concept, Domain, PluginManifest, LinguisticMapping, ResolvedLinguisticMapping } from '@metalang/schema';
 
 export interface ValidationResult {
     valid: boolean;
@@ -35,7 +35,7 @@ export class Registry {
     }
 
     private parseDomainsTSV(content: string): Domain[] {
-        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#'));
+        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#')).slice(1);
         return lines.map(line => {
             const parts = line.split('\t').map(s => s.trim());
             return {
@@ -48,7 +48,7 @@ export class Registry {
     }
 
     private parseConceptsTSV(content: string): Concept[] {
-        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#'));
+        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#')).slice(1);
         return lines.map(line => {
             const parts = line.split('\t').map(s => s.trim());
             const wikidata = parts[0] || '';
@@ -200,6 +200,58 @@ export class Registry {
      */
     public getLinguisticMapping(conceptId: string, systemId: string): LinguisticMapping | undefined {
         return this.linguisticMappings.get(systemId)?.get(conceptId);
+    }
+
+    /**
+     * Resolve a linguistic mapping using a hierarchical fallback mechanism:
+     * 1. Target System
+     * 2. Generic Language Plugin (e.g. nl-generic)
+     * 3. Global Fallback (en-generic)
+     * 4. Ontology Label
+     */
+    public resolveLinguisticMapping(conceptId: string, systemId: string): ResolvedLinguisticMapping | undefined {
+        const isValid = (m: LinguisticMapping) => !!(m.singular || m.plural || (m.abbreviations && m.abbreviations.length > 0));
+
+        // 1. Target System
+        let mapping = this.getLinguisticMapping(conceptId, systemId);
+        if (mapping && isValid(mapping)) {
+            return { ...mapping, sourceSystemId: systemId, isFallback: false };
+        }
+
+        // 2. Language Fallback
+        const targetSystem = this.tagSystems.get(systemId);
+        if (targetSystem?.descriptor.language) {
+            const langGenericId = `${targetSystem.descriptor.language}-generic`;
+            if (langGenericId !== systemId) {
+                mapping = this.getLinguisticMapping(conceptId, langGenericId);
+                if (mapping && isValid(mapping)) {
+                    return { ...mapping, sourceSystemId: langGenericId, isFallback: true };
+                }
+            }
+        }
+
+        // 3. Global Fallback (English)
+        if (systemId !== 'en-generic') {
+            mapping = this.getLinguisticMapping(conceptId, 'en-generic');
+            if (mapping && isValid(mapping)) {
+                return { ...mapping, sourceSystemId: 'en-generic', isFallback: true };
+            }
+        }
+
+        // 4. Ontology Fallback
+        const concept = this.getConcept(conceptId);
+        if (concept) {
+            const label = concept.label || conceptId;
+            return {
+                id: conceptId,
+                singular: `[${label}]`,
+                sourceSystemId: 'ontology',
+                isFallback: true,
+                isOntologyLabel: true
+            };
+        }
+
+        return undefined;
     }
 
     /**

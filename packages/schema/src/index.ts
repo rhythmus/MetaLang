@@ -71,6 +71,15 @@ export interface LinguisticMapping {
   abbreviations?: string[]; // Array of common abbreviations
 }
 
+/**
+ * Result of a linguistic resolution, including fallback metadata.
+ */
+export interface ResolvedLinguisticMapping extends LinguisticMapping {
+  sourceSystemId: string; // The system that provided the mapping (e.g., 'nl-generic')
+  isFallback: boolean;    // True if this result comes from a fallback system or ontology
+  isOntologyLabel?: boolean; // True if we fell back to the canonical ontology label
+}
+
 export interface PluginManifest {
   descriptor: {
     id: string;

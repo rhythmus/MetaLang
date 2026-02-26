@@ -19,10 +19,11 @@ async function verifyPlugins() {
     console.log('--- MetaLang Plugin Ecosystem Verification ---');
 
     // 1. Load Core Data
-    const domainsPath = path.join(__dirname, '../ontology/domains.tsv');
+    const ontologyPath = path.join(__dirname, '../ontology');
+    const domainsPath = path.join(ontologyPath, 'domains.tsv');
     const domainsTsv = fs.readFileSync(domainsPath, 'utf8');
 
-    const conceptsDir = path.join(__dirname, '../ontology/concepts');
+    const conceptsDir = path.join(ontologyPath, 'concepts');
     const conceptFiles = fs.readdirSync(conceptsDir).filter(f => f.endsWith('.tsv'));
     const conceptsTsvs = conceptFiles.map(f => fs.readFileSync(path.join(conceptsDir, f), 'utf8'));
 
@@ -105,6 +106,25 @@ async function verifyPlugins() {
             console.log(`     Abbrs:    ${mapping.abbreviations?.join(', ') || '-'}`);
         } else {
             console.log(`   - [${test.systemId}] ${test.conceptId}: ❌ [NOT FOUND]`);
+        }
+    }
+
+    console.log('\n🔍 Testing Hierarchical Fallback:');
+    const fallbackTests = [
+        { conceptId: 'ML_POS_NOUN', systemId: 'nl-taalunie' },       // 1. Direct match
+        { conceptId: 'ML_EDITORIAL_eg', systemId: 'nl-taalunie' },   // 2. Language Fallback (to nl-generic)
+        { conceptId: 'ML_CUSTOM_N-ABBR', systemId: 'nl-taalunie' },  // 3. Global Fallback (to en-generic)
+        { conceptId: 'ML_DERIVATION_AFFIX', systemId: 'nl-taalunie' } // 4. Ontology Fallback
+    ];
+
+    for (const test of fallbackTests) {
+        const resolved = registry.resolveLinguisticMapping(test.conceptId, test.systemId);
+        if (resolved) {
+            const status = resolved.isFallback ? `[FALLBACK: ${resolved.sourceSystemId}]` : '[DIRECT]';
+            const term = Array.isArray(resolved.singular) ? resolved.singular[0] : resolved.singular;
+            console.log(`   - [${test.systemId}] ${test.conceptId} -> "${term}" ${status}`);
+        } else {
+            console.log(`   - [${test.systemId}] ${test.conceptId} -> ❌ [NOT RESOLVED]`);
         }
     }
 
