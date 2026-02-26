@@ -55,15 +55,21 @@ To manage the increasing complexity of the project, the MetaLang specification h
 - Lexicographic structure
 - Derivation / word formation
 - Etymology / historical process
-- Phonology / phonetics (v1.1+)
-- Discourse / rhetoric
-- Orthography / writing
-- Editorial markers (if retained) 
+- PHONOLOGY / phonetics (v1.1+)
+- DISCOURSE / rhetoric
+- ORTHOGRAPHY / writing
+- EDITORIAL markers (if retained) 
 
-3.3 Concept properties (minimum required fields)
+3.3 Concept properties (TSV columns)
 
-- `id`, `domain`, `labels`, `parents`, `externalRefs`, `sources`, optional metadata  
-    3.4 Hierarchy rules (explicit graph)
+- `WikiData QID`: Canonical bridge to external linked data.
+- `parent`: Single or comma-separated list of parent Concept IDs.
+- `id`: Unique MetaLang ID (ML_ID).
+- `label`: Primary English label.
+
+3.4 Domain Hierarchy
+
+Domains now support a `parent` property in `domains.tsv`, allowing for grouping (e.g., `RHETORIC` and `FIELD` under `REGISTER`; `LEX-STRUCT` and `SYNTACTIC-RELATION` under `SYNTAX`).
 - DAG support (multi-parenting)
 - Prohibited relationships and constraints  
     3.5 Concept lifecycle governance
@@ -81,9 +87,19 @@ To manage the increasing complexity of the project, the MetaLang specification h
 ## 4. Canonical ID System
 
 4.1 ID goals and invariants (stability, language neutrality, machine safety)  
-4.2 ID grammar specification (formal syntax)  
-4.3 Naming conventions per domain  
-4.4 Rationale for ALL\_CAPS\_UNDERSCORE and ASCII-only  
+4.2 ID grammar specification
+
+MetaLang IDs (ML_IDs) follow the structure: `ML_[DOMAIN]_[CONCEPT-NAME]`
+- **Separators**: The underscore (`_`) is used EXCLUSIVELY to separate the `ML` prefix, the `DOMAIN`, and the `CONCEPT` part.
+- **Word Joining**: Within a domain or concept name, multiple words MUST be joined by hyphens (`-`).
+- **Casing**: All components MUST be in ALL_CAPS, with exceptions for external standards (e.g., `ML_LANGUAGE_nl-BE`).
+
+4.3 Naming conventions per domain
+- `ML_POS_NOUN`
+- `ML_MORPH-VALUE_GENDER-FEMININE`
+- `ML_REGISTER_TECHNICAL`
+
+4.4 Rationale for ALL_CAPS_UNDERSCORE and ASCII-only  
 4.5 Reserved prefixes and namespaces (`ML_`, domain tokens, future-proofing)  
 4.6 Migration strategy from legacy IDs (e.g. Lexilogio v0 tags)  
 4.7 ID linting rules and automated checks
@@ -212,7 +228,9 @@ Implemented in the `Registry` class:
 8.1 Seed file role and invariants  
 8.2 Machine-readable seed format specification (JSON schema)  
 8.3 Plugin manifest format specification (JSON schema)  
-8.4 TSV formats for curation and round-tripping  
+8.4 TSV formats for curation and round-tripping
+- **concepts.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`
+- **domains.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`
 8.5 Lossless round-tripping requirements  
 8.6 Build pipeline
 

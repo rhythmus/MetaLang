@@ -2,8 +2,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { LayoutGrid, Binary, Settings as SettingsIcon, Search, GitBranch, HelpCircle } from 'lucide-react';
 import { Registry } from '@metalang/core';
 import type { Concept } from '@metalang/schema';
-import seedData from '../../../data/metalang_seed_v1_1.json';
-import pluginData from '../../../data/metalang_plugins_v1_1.json';
+import domainsTsv from '../../../data/domains.tsv?raw';
+import conceptsTsv from '../../../data/concepts.tsv?raw';
 import { Workspace } from './components/Workspace';
 import { Inspector } from './components/Inspector';
 import { ExportPanel } from './components/ExportPanel';
@@ -24,11 +24,7 @@ export const App: React.FC = () => {
 
   const [registry] = useState(() => {
     const r = new Registry();
-    r.loadSeed(seedData as any);
-    // Load plugins
-    if (Array.isArray(pluginData)) {
-      pluginData.forEach(p => r.registerTagSystem(p as any));
-    }
+    r.loadTSVData(domainsTsv, conceptsTsv);
     return r;
   });
 

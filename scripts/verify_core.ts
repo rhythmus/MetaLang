@@ -1,5 +1,5 @@
-import { Registry } from '../packages/core/src/registry.js';
-import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.js';
+import { Registry } from '../packages/core/src/registry.ts';
+import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.ts';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
@@ -12,14 +12,19 @@ async function runVerification() {
 
     console.log('--- MetaLang Verification ---');
 
-    // 1. Load Seed Data
-    const seedPath = path.join(__dirname, '../data/metalang_seed_v1_1.json');
-    if (!fs.existsSync(seedPath)) {
-        throw new Error(`Seed file not found at ${seedPath}`);
+    // 1. Load TSV Data
+    const domainsPath = path.join(__dirname, '../data/domains.tsv');
+    const conceptsPath = path.join(__dirname, '../data/concepts.tsv');
+
+    if (!fs.existsSync(domainsPath) || !fs.existsSync(conceptsPath)) {
+        throw new Error(`TSV files not found in data/`);
     }
-    const seedData = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
-    registry.loadSeed(seedData);
-    console.log('✅ Seed data loaded.');
+
+    const domainsTsv = fs.readFileSync(domainsPath, 'utf8');
+    const conceptsTsv = fs.readFileSync(conceptsPath, 'utf8');
+
+    registry.loadTSVData(domainsTsv, conceptsTsv);
+    console.log('✅ Core data loaded from TSVs.');
 
     // 2. Register UD Plugin
     registry.registerTagSystem(UD_PLUGIN_MANIFEST);
@@ -31,22 +36,22 @@ async function runVerification() {
 
     if (concepts.length > 0) {
         console.log(`✅ Successfully normalized "${testTag}" to:`);
-        concepts.forEach(c => {
-            console.log(`   - ID: ${c.id}`);
-            console.log(`   - Domain: ${c.domain}`);
-            console.log(`   - Labels (en): ${c.labels.en?.full}`);
+        concepts.forEach(concept => {
+            console.log(`   - ID: ${concept.id}`);
+            console.log(`   - Domain: ${concept.domain}`);
+            console.log(`   - Label: ${concept.label}`);
         });
     } else {
         console.error(`❌ Failed to normalize "${testTag}"`);
     }
 
     // 4. Test Hierarchy
-    const childId = 'ML_CUSTOM_ART_DEF'; // Definite Article
+    const childId = 'ML_POS_ART-DEF'; // Definite Article
     const parents = registry.getParents(childId);
     console.log(`\n🔍 Checking parents for ${childId}:`);
     if (parents.length > 0) {
         parents.forEach(p => {
-            console.log(`   - Parent: ${p.id} (${p.labels.en?.full})`);
+            console.log(`   - Parent: ${p.id} (${p.label})`);
         });
     } else {
         console.log('   (No parents found - check seed data mapping)');
