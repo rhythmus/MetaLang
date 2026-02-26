@@ -1,8 +1,8 @@
 import { Registry } from '../packages/core/src/registry.ts';
-import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.ts';
-import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-eagles/src/index.ts';
+import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.js';
+import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-EAGLES/src/index.js';
 import { manifest as EL_GR_MANIFEST } from '../packages/plugin-el-ΓΝΕΓ/src/index.ts';
-import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-taalunie/src/index.ts';
+import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-Taalunie/src/index.js';
 import { manifest as NL_GENERIC_MANIFEST } from '../packages/plugin-nl/src/index.ts';
 import { manifest as EN_GENERIC_MANIFEST } from '../packages/plugin-en/src/index.ts';
 import { manifest as EL_GENERIC_MANIFEST } from '../packages/plugin-el/src/index.ts';
