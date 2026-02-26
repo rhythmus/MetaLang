@@ -10,7 +10,8 @@
             "morph_value",
             "editorial",
             "lex_struct",
-            "syntax"
+            "syntax",
+            "rhetoric"
         ],
         "publisher": "MetaLang Project",
         "authoritative": false,
@@ -20,7 +21,8 @@
             "year": 2026,
             "url": "https://metalang.org/ontology/nl",
             "lastEditedAt": "2026-02-26T18:59:19.384Z"
-        }
+        },
+        "lastEditedAt": "2026-02-26T22:00:38.632Z"
     },
     "mappings": {
         "ML_FIELD_GRAMMAR": {
@@ -639,6 +641,1036 @@
             "abbreviations": [
                 "cf."
             ]
+        },
+        "ML_RHETORIC_APOCOPE": {
+            "id": "ML_RHETORIC_APOCOPE",
+            "singular": "apocope",
+            "definition": ""
+        },
+        "ML_RHETORIC_CATACHRESIS": {
+            "id": "ML_RHETORIC_CATACHRESIS",
+            "singular": "catachrese",
+            "definition": ""
+        },
+        "ML_RHETORIC_ACCISMUS": {
+            "id": "ML_RHETORIC_ACCISMUS",
+            "singular": "accismus",
+            "definition": ""
+        },
+        "ML_RHETORIC_ACCONSONANTIE": {
+            "id": "ML_RHETORIC_ACCONSONANTIE",
+            "singular": "assonantie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ACCUMULATIO": {
+            "id": "ML_RHETORIC_ACCUMULATIO",
+            "singular": "accumulatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_ACRYOLOGIE": {
+            "id": "ML_RHETORIC_ACRYOLOGIE",
+            "singular": "acryologie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ADJECTIO": {
+            "id": "ML_RHETORIC_ADJECTIO",
+            "singular": "adjectio",
+            "definition": ""
+        },
+        "ML_RHETORIC_ADNOMINATIO": {
+            "id": "ML_RHETORIC_ADNOMINATIO",
+            "singular": "adnominatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_ADYNATON": {
+            "id": "ML_RHETORIC_ADYNATON",
+            "singular": "adynaton",
+            "definition": ""
+        },
+        "ML_RHETORIC_ALLEGORY": {
+            "id": "ML_RHETORIC_ALLEGORY",
+            "singular": "allegorie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ALLITERATIE": {
+            "id": "ML_RHETORIC_ALLITERATIE",
+            "singular": "stafrijm",
+            "definition": ""
+        },
+        "ML_RHETORIC_ALLUSIE": {
+            "id": "ML_RHETORIC_ALLUSIE",
+            "singular": "allusie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ALS_VERGELIJKING": {
+            "id": "ML_RHETORIC_ALS_VERGELIJKING",
+            "singular": "als-vergelijking",
+            "definition": ""
+        },
+        "ML_RHETORIC_AMBIGUITEIT": {
+            "id": "ML_RHETORIC_AMBIGUITEIT",
+            "singular": "ambiguïteit",
+            "definition": ""
+        },
+        "ML_RHETORIC_AMPLIFICATIE": {
+            "id": "ML_RHETORIC_AMPLIFICATIE",
+            "singular": "amplificatie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANACLASIS": {
+            "id": "ML_RHETORIC_ANACLASIS",
+            "singular": "anaclasis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANADIPLOSIS": {
+            "id": "ML_RHETORIC_ANADIPLOSIS",
+            "singular": "anadiplosis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANAFOOR": {
+            "id": "ML_RHETORIC_ANAFOOR",
+            "singular": "anafoor",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANAKOLOET": {
+            "id": "ML_RHETORIC_ANAKOLOET",
+            "singular": "anakoloet",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANAMNESIS": {
+            "id": "ML_RHETORIC_ANAMNESIS",
+            "singular": "anamnesis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANASTROFE": {
+            "id": "ML_RHETORIC_ANASTROFE",
+            "singular": "anastrofe",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANATOPISME": {
+            "id": "ML_RHETORIC_ANATOPISME",
+            "singular": "anatopisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANIMALISERING": {
+            "id": "ML_RHETORIC_ANIMALISERING",
+            "singular": "animalisering",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANNOMINATIO": {
+            "id": "ML_RHETORIC_ANNOMINATIO",
+            "singular": "annominatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTANACLASIS": {
+            "id": "ML_RHETORIC_ANTANACLASIS",
+            "singular": "antanaclasis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTICIPATIE": {
+            "id": "ML_RHETORIC_ANTICIPATIE",
+            "singular": "anticipatie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTICLIMAX_FR": {
+            "id": "ML_RHETORIC_ANTICLIMAX_FR",
+            "singular": "anticlimax",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTIFRASE": {
+            "id": "ML_RHETORIC_ANTIFRASE",
+            "singular": "antifrase",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTIMETABOOL": {
+            "id": "ML_RHETORIC_ANTIMETABOOL",
+            "singular": "antimetabool",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTISTASIS": {
+            "id": "ML_RHETORIC_ANTISTASIS",
+            "singular": "antistasis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTITHESE": {
+            "id": "ML_RHETORIC_ANTITHESE",
+            "singular": "antithese",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTONOMASIA": {
+            "id": "ML_RHETORIC_ANTONOMASIA",
+            "singular": "antonomasie",
+            "definition": ""
+        },
+        "ML_RHETORIC_APOKOINU": {
+            "id": "ML_RHETORIC_APOKOINU",
+            "singular": "apokoinou",
+            "definition": ""
+        },
+        "ML_RHETORIC_APORIE": {
+            "id": "ML_RHETORIC_APORIE",
+            "singular": "aporie",
+            "definition": ""
+        },
+        "ML_RHETORIC_APOSIOPESE": {
+            "id": "ML_RHETORIC_APOSIOPESE",
+            "singular": "aposiopese",
+            "definition": ""
+        },
+        "ML_RHETORIC_APOSTROF": {
+            "id": "ML_RHETORIC_APOSTROF",
+            "singular": "apostrof",
+            "definition": ""
+        },
+        "ML_RHETORIC_APPOSITIE": {
+            "id": "ML_RHETORIC_APPOSITIE",
+            "singular": "appositie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ARCHAISME": {
+            "id": "ML_RHETORIC_ARCHAISME",
+            "singular": "archaïsme",
+            "definition": ""
+        },
+        "ML_RHETORIC_ASTEISME": {
+            "id": "ML_RHETORIC_ASTEISME",
+            "singular": "asteïsme",
+            "definition": ""
+        },
+        "ML_RHETORIC_ASYNDETISCHE_VERGELIJKING": {
+            "id": "ML_RHETORIC_ASYNDETISCHE_VERGELIJKING",
+            "singular": "asyndetische vergelijking",
+            "definition": ""
+        },
+        "ML_RHETORIC_ASYNDETON": {
+            "id": "ML_RHETORIC_ASYNDETON",
+            "singular": "asyndeton",
+            "definition": ""
+        },
+        "ML_RHETORIC_AUXESIS": {
+            "id": "ML_RHETORIC_AUXESIS",
+            "singular": "auxesis",
+            "definition": ""
+        },
+        "ML_RHETORIC_BATHOS": {
+            "id": "ML_RHETORIC_BATHOS",
+            "singular": "bathos",
+            "definition": ""
+        },
+        "ML_RHETORIC_BATTOLOGIE": {
+            "id": "ML_RHETORIC_BATTOLOGIE",
+            "singular": "battologie",
+            "definition": ""
+        },
+        "ML_RHETORIC_BEELDSPRAAK": {
+            "id": "ML_RHETORIC_BEELDSPRAAK",
+            "singular": "beeldspraak",
+            "definition": ""
+        },
+        "ML_RHETORIC_HOMERISCHE_VERGELIJKING": {
+            "id": "ML_RHETORIC_HOMERISCHE_VERGELIJKING",
+            "singular": "homerische vergelijking",
+            "definition": ""
+        },
+        "ML_RHETORIC_METAFOOR": {
+            "id": "ML_RHETORIC_METAFOOR",
+            "singular": "metafoor",
+            "definition": ""
+        },
+        "ML_RHETORIC_METONYMIE": {
+            "id": "ML_RHETORIC_METONYMIE",
+            "singular": "metonymie",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERSONIFICATIE": {
+            "id": "ML_RHETORIC_PERSONIFICATIE",
+            "singular": "personificatie",
+            "definition": ""
+        },
+        "ML_RHETORIC_SYNESTHESIE": {
+            "id": "ML_RHETORIC_SYNESTHESIE",
+            "singular": "synesthesie",
+            "definition": ""
+        },
+        "ML_RHETORIC_VEGETALISERING": {
+            "id": "ML_RHETORIC_VEGETALISERING",
+            "singular": "vegetalisering",
+            "definition": ""
+        },
+        "ML_RHETORIC_VERGELIJKING": {
+            "id": "ML_RHETORIC_VERGELIJKING",
+            "singular": "vergelijking",
+            "definition": ""
+        },
+        "ML_RHETORIC_BIJSTELLING": {
+            "id": "ML_RHETORIC_BIJSTELLING",
+            "singular": "bijstelling",
+            "definition": ""
+        },
+        "ML_RHETORIC_BOMBAST": {
+            "id": "ML_RHETORIC_BOMBAST",
+            "singular": "bombast",
+            "definition": ""
+        },
+        "ML_RHETORIC_BOUTADE": {
+            "id": "ML_RHETORIC_BOUTADE",
+            "singular": "boutade",
+            "definition": ""
+        },
+        "ML_RHETORIC_BRACHYLOGY": {
+            "id": "ML_RHETORIC_BRACHYLOGY",
+            "singular": "brachylogie",
+            "definition": ""
+        },
+        "ML_RHETORIC_BREVITAS": {
+            "id": "ML_RHETORIC_BREVITAS",
+            "singular": "brevitas",
+            "definition": ""
+        },
+        "ML_RHETORIC_CALEMBOUR": {
+            "id": "ML_RHETORIC_CALEMBOUR",
+            "singular": "calembour",
+            "definition": ""
+        },
+        "ML_RHETORIC_CAPTATIO-BENEVOLENTIAE": {
+            "id": "ML_RHETORIC_CAPTATIO-BENEVOLENTIAE",
+            "singular": "captatio benevolentiae",
+            "definition": ""
+        },
+        "ML_RHETORIC_CHIASME": {
+            "id": "ML_RHETORIC_CHIASME",
+            "singular": "chiasme",
+            "definition": ""
+        },
+        "ML_RHETORIC_CLICHE": {
+            "id": "ML_RHETORIC_CLICHE",
+            "singular": "cliché",
+            "definition": ""
+        },
+        "ML_RHETORIC_CLIMAX": {
+            "id": "ML_RHETORIC_CLIMAX",
+            "singular": "climax",
+            "definition": ""
+        },
+        "ML_RHETORIC_CLOU": {
+            "id": "ML_RHETORIC_CLOU",
+            "singular": "pointe",
+            "definition": ""
+        },
+        "ML_RHETORIC_COMPARATIO": {
+            "id": "ML_RHETORIC_COMPARATIO",
+            "singular": "comparatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_COMPLEXIO": {
+            "id": "ML_RHETORIC_COMPLEXIO",
+            "singular": "complexio",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONCESSIO": {
+            "id": "ML_RHETORIC_CONCESSIO",
+            "singular": "concessio",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONCETTO": {
+            "id": "ML_RHETORIC_CONCETTO",
+            "singular": "concetto",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONTAMINATIE": {
+            "id": "ML_RHETORIC_CONTAMINATIE",
+            "singular": "contaminatie",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONTRACTIE": {
+            "id": "ML_RHETORIC_CONTRACTIE",
+            "singular": "contractie",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONSTRUCTIO-AD-SENSUM": {
+            "id": "ML_RHETORIC_CONSTRUCTIO-AD-SENSUM",
+            "singular": "constructio ad sensum",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONTRADICTIO_IN_ADJECTO": {
+            "id": "ML_RHETORIC_CONTRADICTIO_IN_ADJECTO",
+            "singular": "contradictio in adjecto",
+            "definition": ""
+        },
+        "ML_RHETORIC_CONTRADICTIO_IN_TERMINIS": {
+            "id": "ML_RHETORIC_CONTRADICTIO_IN_TERMINIS",
+            "singular": "contradictio in terminis",
+            "definition": ""
+        },
+        "ML_RHETORIC_CORRECTIO": {
+            "id": "ML_RHETORIC_CORRECTIO",
+            "singular": "correctio",
+            "definition": ""
+        },
+        "ML_RHETORIC_CYNISME": {
+            "id": "ML_RHETORIC_CYNISME",
+            "singular": "cynisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_DEINOSIS": {
+            "id": "ML_RHETORIC_DEINOSIS",
+            "singular": "deinosis",
+            "definition": ""
+        },
+        "ML_RHETORIC_DESCRIPTIO": {
+            "id": "ML_RHETORIC_DESCRIPTIO",
+            "singular": "descriptio",
+            "definition": ""
+        },
+        "ML_RHETORIC_DIACOPE": {
+            "id": "ML_RHETORIC_DIACOPE",
+            "singular": "diacope",
+            "definition": ""
+        },
+        "ML_RHETORIC_DIAFOOR": {
+            "id": "ML_RHETORIC_DIAFOOR",
+            "singular": "diafoor",
+            "definition": ""
+        },
+        "ML_RHETORIC_DIERESIS": {
+            "id": "ML_RHETORIC_DIERESIS",
+            "singular": "diëresis",
+            "definition": ""
+        },
+        "ML_RHETORIC_DIGRESSIO": {
+            "id": "ML_RHETORIC_DIGRESSIO",
+            "singular": "digressio",
+            "definition": ""
+        },
+        "ML_RHETORIC_DISTINCTIO": {
+            "id": "ML_RHETORIC_DISTINCTIO",
+            "singular": "distinctio",
+            "definition": ""
+        },
+        "ML_RHETORIC_DOODDOENER": {
+            "id": "ML_RHETORIC_DOODDOENER",
+            "singular": "dooddoener",
+            "definition": ""
+        },
+        "ML_RHETORIC_DUBITATIO": {
+            "id": "ML_RHETORIC_DUBITATIO",
+            "singular": "dubitatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_DYSPHEMISM": {
+            "id": "ML_RHETORIC_DYSPHEMISM",
+            "singular": "dysfemisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_EFFICTIO": {
+            "id": "ML_RHETORIC_EFFICTIO",
+            "singular": "effictio",
+            "definition": ""
+        },
+        "ML_RHETORIC_EKFONESIS": {
+            "id": "ML_RHETORIC_EKFONESIS",
+            "singular": "ekfonesis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EKFRASIS": {
+            "id": "ML_RHETORIC_EKFRASIS",
+            "singular": "ekfrasis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ELISIE": {
+            "id": "ML_RHETORIC_ELISIE",
+            "singular": "elisie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ELLIPS": {
+            "id": "ML_RHETORIC_ELLIPS",
+            "singular": "ellips",
+            "definition": ""
+        },
+        "ML_RHETORIC_EMFASE": {
+            "id": "ML_RHETORIC_EMFASE",
+            "singular": "emfase",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENALLAGE": {
+            "id": "ML_RHETORIC_ENALLAGE",
+            "singular": "enallage",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENANTIOSIS": {
+            "id": "ML_RHETORIC_ENANTIOSIS",
+            "singular": "enantiosis",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENERGIA": {
+            "id": "ML_RHETORIC_ENERGIA",
+            "singular": "energia",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENCLISE": {
+            "id": "ML_RHETORIC_ENCLISE",
+            "singular": "enclise",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENUMERATIE": {
+            "id": "ML_RHETORIC_ENUMERATIE",
+            "singular": "enumeratie",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANADIPLOSE": {
+            "id": "ML_RHETORIC_EPANADIPLOSE",
+            "singular": "epanadiplosis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANAFOOR": {
+            "id": "ML_RHETORIC_EPANAFOOR",
+            "singular": "epanafoor",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANALEPSIS": {
+            "id": "ML_RHETORIC_EPANALEPSIS",
+            "singular": "epanalepsis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANODOS": {
+            "id": "ML_RHETORIC_EPANODOS",
+            "singular": "epanodos",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANORTHOSIS": {
+            "id": "ML_RHETORIC_EPANORTHOSIS",
+            "singular": "epanorthosis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPENTHESIS": {
+            "id": "ML_RHETORIC_EPENTHESIS",
+            "singular": "epenthesis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPICLASIS": {
+            "id": "ML_RHETORIC_EPICLASIS",
+            "singular": "epiclasis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPIFOOR": {
+            "id": "ML_RHETORIC_EPIFOOR",
+            "singular": "epifoor",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPIFRASE": {
+            "id": "ML_RHETORIC_EPIFRASE",
+            "singular": "epifrase",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPISTROFE": {
+            "id": "ML_RHETORIC_EPISTROFE",
+            "singular": "epistrofe",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPITROPE": {
+            "id": "ML_RHETORIC_EPITROPE",
+            "singular": "epitrope",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPITHETON_ORNANS": {
+            "id": "ML_RHETORIC_EPITHETON_ORNANS",
+            "singular": "epitheton (ornans)",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPIZEUXIS": {
+            "id": "ML_RHETORIC_EPIZEUXIS",
+            "singular": "epizeuxis",
+            "definition": ""
+        },
+        "ML_RHETORIC_EUPHEMISM": {
+            "id": "ML_RHETORIC_EUPHEMISM",
+            "singular": "eufemisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_EXCLAMATIO": {
+            "id": "ML_RHETORIC_EXCLAMATIO",
+            "singular": "exclamatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_EXCURSIO": {
+            "id": "ML_RHETORIC_EXCURSIO",
+            "singular": "excursio",
+            "definition": ""
+        },
+        "ML_RHETORIC_FLASHBACK": {
+            "id": "ML_RHETORIC_FLASHBACK",
+            "singular": "flashback",
+            "definition": ""
+        },
+        "ML_RHETORIC_FLASHFORWARD": {
+            "id": "ML_RHETORIC_FLASHFORWARD",
+            "singular": "flashforward",
+            "definition": ""
+        },
+        "ML_RHETORIC_FIGURA-ETYMOLOGICA": {
+            "id": "ML_RHETORIC_FIGURA-ETYMOLOGICA",
+            "singular": "figura etymologica",
+            "definition": ""
+        },
+        "ML_RHETORIC_FIGUURLIJKE_BETEKENIS": {
+            "id": "ML_RHETORIC_FIGUURLIJKE_BETEKENIS",
+            "singular": "figuurlijke betekenis",
+            "definition": ""
+        },
+        "ML_RHETORIC_GEDACHTENRIJM": {
+            "id": "ML_RHETORIC_GEDACHTENRIJM",
+            "singular": "gedachtenrijm",
+            "definition": ""
+        },
+        "ML_RHETORIC_GEMEENPLAATS": {
+            "id": "ML_RHETORIC_GEMEENPLAATS",
+            "singular": "gemeenplaats",
+            "definition": ""
+        },
+        "ML_RHETORIC_GEMINATION": {
+            "id": "ML_RHETORIC_GEMINATION",
+            "singular": "geminatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_GNOME": {
+            "id": "ML_RHETORIC_GNOME",
+            "singular": "gnome",
+            "definition": ""
+        },
+        "ML_RHETORIC_HENDIADYS_FR": {
+            "id": "ML_RHETORIC_HENDIADYS_FR",
+            "singular": "hendiadys",
+            "definition": ""
+        },
+        "ML_RHETORIC_HERHALING": {
+            "id": "ML_RHETORIC_HERHALING",
+            "singular": "herhaling",
+            "definition": ""
+        },
+        "ML_RHETORIC_HOMOIOTELEUTON": {
+            "id": "ML_RHETORIC_HOMOIOTELEUTON",
+            "singular": "homoioteleuton",
+            "definition": ""
+        },
+        "ML_RHETORIC_HYPALLAGE": {
+            "id": "ML_RHETORIC_HYPALLAGE",
+            "singular": "hypallage",
+            "definition": ""
+        },
+        "ML_RHETORIC_HYPERBATON": {
+            "id": "ML_RHETORIC_HYPERBATON",
+            "singular": "hyperbaton",
+            "definition": ""
+        },
+        "ML_RHETORIC_HYPERBOOL": {
+            "id": "ML_RHETORIC_HYPERBOOL",
+            "singular": "hyperbool",
+            "definition": ""
+        },
+        "ML_RHETORIC_HYSTERON_PROTERON": {
+            "id": "ML_RHETORIC_HYSTERON_PROTERON",
+            "singular": "hysteron proteron",
+            "definition": ""
+        },
+        "ML_RHETORIC_HYSTHEROLOGIE": {
+            "id": "ML_RHETORIC_HYSTHEROLOGIE",
+            "singular": "hystherologie",
+            "definition": ""
+        },
+        "ML_RHETORIC_IN_MEDIAS_RES": {
+            "id": "ML_RHETORIC_IN_MEDIAS_RES",
+            "singular": "in medias res",
+            "definition": ""
+        },
+        "ML_RHETORIC_INCANTATIE": {
+            "id": "ML_RHETORIC_INCANTATIE",
+            "singular": "incantatie",
+            "definition": ""
+        },
+        "ML_RHETORIC_INVERSIE": {
+            "id": "ML_RHETORIC_INVERSIE",
+            "singular": "inversie",
+            "definition": ""
+        },
+        "ML_RHETORIC_INVOCATIO": {
+            "id": "ML_RHETORIC_INVOCATIO",
+            "singular": "invocatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_INQUIT_FORMULE": {
+            "id": "ML_RHETORIC_INQUIT_FORMULE",
+            "singular": "inquit-formule",
+            "definition": ""
+        },
+        "ML_RHETORIC_IRONIE": {
+            "id": "ML_RHETORIC_IRONIE",
+            "singular": "ironie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ISOCOLON": {
+            "id": "ML_RHETORIC_ISOCOLON",
+            "singular": "isocolon",
+            "definition": ""
+        },
+        "ML_RHETORIC_ITERATIO": {
+            "id": "ML_RHETORIC_ITERATIO",
+            "singular": "iteratio",
+            "definition": ""
+        },
+        "ML_RHETORIC_KENNING": {
+            "id": "ML_RHETORIC_KENNING",
+            "singular": "kenning",
+            "definition": ""
+        },
+        "ML_RHETORIC_KLANKNABOOTSING": {
+            "id": "ML_RHETORIC_KLANKNABOOTSING",
+            "singular": "klanknabootsing",
+            "definition": ""
+        },
+        "ML_RHETORIC_KRUISSTELLING": {
+            "id": "ML_RHETORIC_KRUISSTELLING",
+            "singular": "kruisstelling",
+            "definition": ""
+        },
+        "ML_RHETORIC_KYKLOS": {
+            "id": "ML_RHETORIC_KYKLOS",
+            "singular": "kyklos",
+            "definition": ""
+        },
+        "ML_RHETORIC_LITOTES": {
+            "id": "ML_RHETORIC_LITOTES",
+            "singular": "litotes",
+            "definition": ""
+        },
+        "ML_RHETORIC_MALAPROPISME": {
+            "id": "ML_RHETORIC_MALAPROPISME",
+            "singular": "malapropisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_MEIOSIS": {
+            "id": "ML_RHETORIC_MEIOSIS",
+            "singular": "meiose",
+            "definition": ""
+        },
+        "ML_RHETORIC_MESODIPLOSIS": {
+            "id": "ML_RHETORIC_MESODIPLOSIS",
+            "singular": "mesodiplosis",
+            "definition": ""
+        },
+        "ML_RHETORIC_METALEPSIS": {
+            "id": "ML_RHETORIC_METALEPSIS",
+            "singular": "metalepsis",
+            "definition": ""
+        },
+        "ML_RHETORIC_OCCUPATIO": {
+            "id": "ML_RHETORIC_OCCUPATIO",
+            "singular": "occupatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_OMKERING": {
+            "id": "ML_RHETORIC_OMKERING",
+            "singular": "omkering",
+            "definition": ""
+        },
+        "ML_RHETORIC_OMSCHRIJVING": {
+            "id": "ML_RHETORIC_OMSCHRIJVING",
+            "singular": "omschrijving",
+            "definition": ""
+        },
+        "ML_RHETORIC_ONOMATOPEE": {
+            "id": "ML_RHETORIC_ONOMATOPEE",
+            "singular": "onomatopee",
+            "definition": ""
+        },
+        "ML_RHETORIC_OPEENSTAPELING": {
+            "id": "ML_RHETORIC_OPEENSTAPELING",
+            "singular": "opeenstapeling",
+            "definition": ""
+        },
+        "ML_RHETORIC_OPSOMMING": {
+            "id": "ML_RHETORIC_OPSOMMING",
+            "singular": "opsomming",
+            "definition": ""
+        },
+        "ML_RHETORIC_OPTATIE": {
+            "id": "ML_RHETORIC_OPTATIE",
+            "singular": "optatie",
+            "definition": ""
+        },
+        "ML_RHETORIC_OVERDRIJVING": {
+            "id": "ML_RHETORIC_OVERDRIJVING",
+            "singular": "overdrijving",
+            "definition": ""
+        },
+        "ML_RHETORIC_OXYMORON": {
+            "id": "ML_RHETORIC_OXYMORON",
+            "singular": "oxymoron",
+            "definition": ""
+        },
+        "ML_RHETORIC_PALILOGY_FR": {
+            "id": "ML_RHETORIC_PALILOGY_FR",
+            "singular": "palilogie",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARABOOL": {
+            "id": "ML_RHETORIC_PARABOOL",
+            "singular": "parabool",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARADOX": {
+            "id": "ML_RHETORIC_PARADOX",
+            "singular": "paradox",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARAFRASE": {
+            "id": "ML_RHETORIC_PARAFRASE",
+            "singular": "parafrase",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARAGOGE": {
+            "id": "ML_RHETORIC_PARAGOGE",
+            "singular": "paragoge",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARALEIPSIS": {
+            "id": "ML_RHETORIC_PARALEIPSIS",
+            "singular": "preteritio",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARALLELLISME": {
+            "id": "ML_RHETORIC_PARALLELLISME",
+            "singular": "parallellisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARENTHESIS": {
+            "id": "ML_RHETORIC_PARENTHESIS",
+            "singular": "parenthese",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARONOMASIE": {
+            "id": "ML_RHETORIC_PARONOMASIE",
+            "singular": "paronomasie",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARS_PRO_TOTO": {
+            "id": "ML_RHETORIC_PARS_PRO_TOTO",
+            "singular": "pars pro toto",
+            "definition": ""
+        },
+        "ML_RHETORIC_PAUZERIJM": {
+            "id": "ML_RHETORIC_PAUZERIJM",
+            "singular": "pauzerijm",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERCONTATIO": {
+            "id": "ML_RHETORIC_PERCONTATIO",
+            "singular": "percontatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERIFRASE": {
+            "id": "ML_RHETORIC_PERIFRASE",
+            "singular": "perifrase",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERMISSIO": {
+            "id": "ML_RHETORIC_PERMISSIO",
+            "singular": "permissio",
+            "definition": ""
+        },
+        "ML_RHETORIC_PLEONASME": {
+            "id": "ML_RHETORIC_PLEONASME",
+            "singular": "pleonasme",
+            "definition": ""
+        },
+        "ML_RHETORIC_PLOKE": {
+            "id": "ML_RHETORIC_PLOKE",
+            "singular": "ploke",
+            "definition": ""
+        },
+        "ML_RHETORIC_POLYPTOTON": {
+            "id": "ML_RHETORIC_POLYPTOTON",
+            "singular": "polyptoton",
+            "definition": ""
+        },
+        "ML_RHETORIC_POLYSYNDETON": {
+            "id": "ML_RHETORIC_POLYSYNDETON",
+            "singular": "polysyndeton",
+            "definition": ""
+        },
+        "ML_RHETORIC_PRAEMUNITIO": {
+            "id": "ML_RHETORIC_PRAEMUNITIO",
+            "singular": "praemunitio",
+            "definition": ""
+        },
+        "ML_RHETORIC_PREGNANTIE": {
+            "id": "ML_RHETORIC_PREGNANTIE",
+            "singular": "pregnantie",
+            "definition": ""
+        },
+        "ML_RHETORIC_PROCLISE": {
+            "id": "ML_RHETORIC_PROCLISE",
+            "singular": "proclise",
+            "definition": ""
+        },
+        "ML_RHETORIC_PROLEPSIS": {
+            "id": "ML_RHETORIC_PROLEPSIS",
+            "singular": "prolepsis",
+            "definition": ""
+        },
+        "ML_RHETORIC_PROTERON_HYSTERON": {
+            "id": "ML_RHETORIC_PROTERON_HYSTERON",
+            "singular": "proteron hysteron",
+            "definition": ""
+        },
+        "ML_RHETORIC_PROTHYSTERON": {
+            "id": "ML_RHETORIC_PROTHYSTERON",
+            "singular": "prothysteron",
+            "definition": ""
+        },
+        "ML_RHETORIC_REFUTATIO": {
+            "id": "ML_RHETORIC_REFUTATIO",
+            "singular": "refutatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_REPETITION": {
+            "id": "ML_RHETORIC_REPETITION",
+            "singular": "repetitio",
+            "definition": ""
+        },
+        "ML_RHETORIC_RETICENTIE": {
+            "id": "ML_RHETORIC_RETICENTIE",
+            "singular": "reticentie",
+            "definition": ""
+        },
+        "ML_RHETORIC_RETORISCHE_VRAAG": {
+            "id": "ML_RHETORIC_RETORISCHE_VRAAG",
+            "singular": "retorische vraag",
+            "definition": ""
+        },
+        "ML_RHETORIC_RIJM": {
+            "id": "ML_RHETORIC_RIJM",
+            "singular": "rijm",
+            "definition": ""
+        },
+        "ML_RHETORIC_SARCASME": {
+            "id": "ML_RHETORIC_SARCASME",
+            "singular": "sarcasme",
+            "definition": ""
+        },
+        "ML_RHETORIC_PROSOPOPOEIA_FR": {
+            "id": "ML_RHETORIC_PROSOPOPOEIA_FR",
+            "singular": "sermocinatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_SNEEUWKLOON": {
+            "id": "ML_RHETORIC_SNEEUWKLOON",
+            "singular": "sneeuwkloon",
+            "definition": ""
+        },
+        "ML_RHETORIC_SPOONERISME": {
+            "id": "ML_RHETORIC_SPOONERISME",
+            "singular": "spoonerisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_SYLLEPSIS": {
+            "id": "ML_RHETORIC_SYLLEPSIS",
+            "singular": "syllepsis",
+            "definition": ""
+        },
+        "ML_RHETORIC_SYMPLOKE": {
+            "id": "ML_RHETORIC_SYMPLOKE",
+            "singular": "symploke",
+            "definition": ""
+        },
+        "ML_RHETORIC_SYNALEPHE": {
+            "id": "ML_RHETORIC_SYNALEPHE",
+            "singular": "synalephe",
+            "definition": ""
+        },
+        "ML_RHETORIC_SYNCOPE": {
+            "id": "ML_RHETORIC_SYNCOPE",
+            "singular": "syncope",
+            "definition": ""
+        },
+        "ML_RHETORIC_SYNECDOCHE": {
+            "id": "ML_RHETORIC_SYNECDOCHE",
+            "singular": "synecdoche",
+            "definition": ""
+        },
+        "ML_RHETORIC_TAUTOLOGIE": {
+            "id": "ML_RHETORIC_TAUTOLOGIE",
+            "singular": "tautologie",
+            "definition": ""
+        },
+        "ML_RHETORIC_TMESIS": {
+            "id": "ML_RHETORIC_TMESIS",
+            "singular": "tmesis",
+            "definition": ""
+        },
+        "ML_RHETORIC_TOESPELING": {
+            "id": "ML_RHETORIC_TOESPELING",
+            "singular": "toespeling",
+            "definition": ""
+        },
+        "ML_RHETORIC_TOPOS": {
+            "id": "ML_RHETORIC_TOPOS",
+            "singular": "topos",
+            "definition": ""
+        },
+        "ML_RHETORIC_⁝": {
+            "id": "ML_RHETORIC_⁝",
+            "singular": "tricolon",
+            "definition": ""
+        },
+        "ML_RHETORIC_TROOP": {
+            "id": "ML_RHETORIC_TROOP",
+            "singular": "troop",
+            "definition": ""
+        },
+        "ML_RHETORIC_UNDERSTATEMENT": {
+            "id": "ML_RHETORIC_UNDERSTATEMENT",
+            "singular": "understatement",
+            "definition": ""
+        },
+        "ML_RHETORIC_VARIATIO": {
+            "id": "ML_RHETORIC_VARIATIO",
+            "singular": "variatio",
+            "definition": ""
+        },
+        "ML_RHETORIC_VOOROPPLAATSING": {
+            "id": "ML_RHETORIC_VOOROPPLAATSING",
+            "singular": "vooropplaatsing",
+            "definition": ""
+        },
+        "ML_RHETORIC_VULGARISME": {
+            "id": "ML_RHETORIC_VULGARISME",
+            "singular": "vulgarisme",
+            "definition": ""
+        },
+        "ML_RHETORIC_WOORDHERHALING": {
+            "id": "ML_RHETORIC_WOORDHERHALING",
+            "singular": "woordherhaling",
+            "definition": ""
+        },
+        "ML_RHETORIC_ZEDENSPREUK": {
+            "id": "ML_RHETORIC_ZEDENSPREUK",
+            "singular": "zedenspreuk",
+            "definition": ""
+        },
+        "ML_RHETORIC_ZELFCORRECTIE": {
+            "id": "ML_RHETORIC_ZELFCORRECTIE",
+            "singular": "zelfcorrectie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ZEUGMA": {
+            "id": "ML_RHETORIC_ZEUGMA",
+            "singular": "zeugma",
+            "definition": ""
+        },
+        "ML_RHETORIC_ZINSPELING": {
+            "id": "ML_RHETORIC_ZINSPELING",
+            "singular": "zinspeling",
+            "definition": ""
         }
     }
 }

@@ -1,0 +1,273 @@
+{
+    "descriptor": {
+        "id": "br-generic",
+        "name": "Generic Breton",
+        "language": "br",
+        "scope": "global",
+        "domains": [
+            "rhetoric"
+        ]
+    },
+    "mappings": {
+        "ML_RHETORIC_ADAMMEG": {
+            "id": "ML_RHETORIC_ADAMMEG",
+            "singular": "Adammeg",
+            "definition": ""
+        },
+        "ML_RHETORIC_AMPUKAD": {
+            "id": "ML_RHETORIC_AMPUKAD",
+            "singular": "Ampukad",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANADIPLOSIS": {
+            "id": "ML_RHETORIC_ANADIPLOSIS",
+            "singular": "Anadiplozenn",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANAPHORA": {
+            "id": "ML_RHETORIC_ANAPHORA",
+            "singular": "Anaforenn",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTIMERIA": {
+            "id": "ML_RHETORIC_ANTIMERIA",
+            "singular": "Antimeria",
+            "definition": ""
+        },
+        "ML_RHETORIC_ARSAV": {
+            "id": "ML_RHETORIC_ARSAV",
+            "singular": "Arsav",
+            "definition": ""
+        },
+        "ML_RHETORIC_ARUNDERC’HAD": {
+            "id": "ML_RHETORIC_ARUNDERC’HAD",
+            "singular": "Arunderc’had",
+            "definition": ""
+        },
+        "ML_RHETORIC_DAMARRESONIEZH": {
+            "id": "ML_RHETORIC_DAMARRESONIEZH",
+            "singular": "Damarresoniezh",
+            "definition": ""
+        },
+        "ML_RHETORIC_DAMVENEG": {
+            "id": "ML_RHETORIC_DAMVENEG",
+            "singular": "Damveneg",
+            "definition": ""
+        },
+        "ML_RHETORIC_DASPUGNADUR": {
+            "id": "ML_RHETORIC_DASPUGNADUR",
+            "singular": "Daspugnadur",
+            "definition": ""
+        },
+        "ML_RHETORIC_DIAC’HINAD": {
+            "id": "ML_RHETORIC_DIAC’HINAD",
+            "singular": "Diac’hinad",
+            "definition": ""
+        },
+        "ML_RHETORIC_DIC-HARVAD": {
+            "id": "ML_RHETORIC_DIC-HARVAD",
+            "singular": "Dic'harvad",
+            "definition": ""
+        },
+        "ML_RHETORIC_DISTONIEZH": {
+            "id": "ML_RHETORIC_DISTONIEZH",
+            "singular": "Distoniezh",
+            "definition": ""
+        },
+        "ML_RHETORIC_DRE-EILPENN-STER": {
+            "id": "ML_RHETORIC_DRE-EILPENN-STER",
+            "singular": "Dre eilpenn ster",
+            "definition": ""
+        },
+        "ML_RHETORIC_DREMMEGAÑ": {
+            "id": "ML_RHETORIC_DREMMEGAÑ",
+            "singular": "Dremmegañ",
+            "definition": ""
+        },
+        "ML_RHETORIC_EMDOURTAD": {
+            "id": "ML_RHETORIC_EMDOURTAD",
+            "singular": "Emdourtad",
+            "definition": ""
+        },
+        "ML_RHETORIC_EMSKOEVAÑ": {
+            "id": "ML_RHETORIC_EMSKOEVAÑ",
+            "singular": "Emskoevañ",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANADIPLOSE": {
+            "id": "ML_RHETORIC_EPANADIPLOSE",
+            "singular": "Epanadiplozenn",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPANALEPSE": {
+            "id": "ML_RHETORIC_EPANALEPSE",
+            "singular": "Epanalepsenn",
+            "definition": ""
+        },
+        "ML_RHETORIC_ERLOEZAD": {
+            "id": "ML_RHETORIC_ERLOEZAD",
+            "singular": "Erloezad",
+            "definition": ""
+        },
+        "ML_RHETORIC_EZREVELLADUR": {
+            "id": "ML_RHETORIC_EZREVELLADUR",
+            "singular": "Ezrevelladur",
+            "definition": ""
+        },
+        "ML_RHETORIC_GINADUR": {
+            "id": "ML_RHETORIC_GINADUR",
+            "singular": "Ginadur",
+            "definition": ""
+        },
+        "ML_RHETORIC_GOUDAOLAD": {
+            "id": "ML_RHETORIC_GOUDAOLAD",
+            "singular": "Goudaolad",
+            "definition": ""
+        },
+        "ML_RHETORIC_GOURZHANVAD": {
+            "id": "ML_RHETORIC_GOURZHANVAD",
+            "singular": "Gourzhanvad",
+            "definition": ""
+        },
+        "ML_RHETORIC_GOURZHDOD": {
+            "id": "ML_RHETORIC_GOURZHDOD",
+            "singular": "Gourzhdod",
+            "definition": ""
+        },
+        "ML_RHETORIC_GOURZHEBIEZH": {
+            "id": "ML_RHETORIC_GOURZHEBIEZH",
+            "singular": "Gourzhebiezh",
+            "definition": ""
+        },
+        "ML_RHETORIC_GOURLEIZHAD": {
+            "id": "ML_RHETORIC_GOURLEIZHAD",
+            "singular": "Gourleizhad",
+            "definition": ""
+        },
+        "ML_RHETORIC_GOURZAOLAD": {
+            "id": "ML_RHETORIC_GOURZAOLAD",
+            "singular": "Gourzaolad",
+            "definition": ""
+        },
+        "ML_RHETORIC_GWELTRE": {
+            "id": "ML_RHETORIC_GWELTRE",
+            "singular": "Gweltre",
+            "definition": ""
+        },
+        "ML_RHETORIC_HENDIATRIS": {
+            "id": "ML_RHETORIC_HENDIATRIS",
+            "singular": "Hendiatris",
+            "definition": ""
+        },
+        "ML_RHETORIC_IRONY": {
+            "id": "ML_RHETORIC_IRONY",
+            "singular": "Ironiezh",
+            "definition": ""
+        },
+        "ML_RHETORIC_KENGAN": {
+            "id": "ML_RHETORIC_KENGAN",
+            "singular": "Kengan",
+            "definition": ""
+        },
+        "ML_RHETORIC_KENGANEZ": {
+            "id": "ML_RHETORIC_KENGANEZ",
+            "singular": "Kenganez",
+            "definition": ""
+        },
+        "ML_RHETORIC_KENSTURDED": {
+            "id": "ML_RHETORIC_KENSTURDED",
+            "singular": "Kensturded",
+            "definition": ""
+        },
+        "ML_RHETORIC_SIMILE": {
+            "id": "ML_RHETORIC_SIMILE",
+            "singular": "Keñveriadur",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERIPHRASIS": {
+            "id": "ML_RHETORIC_PERIPHRASIS",
+            "singular": "Kevelc'heriad",
+            "definition": ""
+        },
+        "ML_RHETORIC_LEDANTALAD": {
+            "id": "ML_RHETORIC_LEDANTALAD",
+            "singular": "Ledantalad",
+            "definition": ""
+        },
+        "ML_RHETORIC_LEDANVAD": {
+            "id": "ML_RHETORIC_LEDANVAD",
+            "singular": "Ledanvad",
+            "definition": ""
+        },
+        "ML_RHETORIC_NEBANTIZ": {
+            "id": "ML_RHETORIC_NEBANTIZ",
+            "singular": "Nebantiz",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARABLE_FR": {
+            "id": "ML_RHETORIC_PARABLE_FR",
+            "singular": "Parabolenn",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERSONIFICATION": {
+            "id": "ML_RHETORIC_PERSONIFICATION",
+            "singular": "Personadur",
+            "definition": ""
+        },
+        "ML_RHETORIC_RELAVAR": {
+            "id": "ML_RHETORIC_RELAVAR",
+            "singular": "Relavar",
+            "definition": ""
+        },
+        "ML_RHETORIC_STAGENNAD": {
+            "id": "ML_RHETORIC_STAGENNAD",
+            "singular": "Stagennad",
+            "definition": ""
+        },
+        "ML_RHETORIC_TREREZAD": {
+            "id": "ML_RHETORIC_TREREZAD",
+            "singular": "Trerezad",
+            "definition": ""
+        },
+        "ML_RHETORIC_TROADELL": {
+            "id": "ML_RHETORIC_TROADELL",
+            "singular": "Troadell",
+            "definition": ""
+        },
+        "ML_RHETORIC_LUNIENN-STIL": {
+            "id": "ML_RHETORIC_LUNIENN-STIL",
+            "singular": "Lunienn stil",
+            "definition": ""
+        },
+        "ML_RHETORIC_RHETORIC": {
+            "id": "ML_RHETORIC_RHETORIC",
+            "singular": "Retorik",
+            "definition": ""
+        },
+        "ML_RHETORIC_STERONIEZH": {
+            "id": "ML_RHETORIC_STERONIEZH",
+            "singular": "Steroniezh",
+            "definition": ""
+        },
+        "ML_RHETORIC_STILOURIEZH": {
+            "id": "ML_RHETORIC_STILOURIEZH",
+            "singular": "Stilouriezh",
+            "definition": ""
+        },
+        "ML_RHETORIC_TROZENN": {
+            "id": "ML_RHETORIC_TROZENN",
+            "singular": "Trozenn",
+            "definition": ""
+        },
+        "ML_RHETORIC_YEZHADUR": {
+            "id": "ML_RHETORIC_YEZHADUR",
+            "singular": "Yezhadur",
+            "definition": ""
+        },
+        "ML_RHETORIC_↑PENNGERIOU-GALLEK-A-GAVER-ER-GERIADUR-MAÑ.": {
+            "id": "ML_RHETORIC_↑PENNGERIOU-GALLEK-A-GAVER-ER-GERIADUR-MAÑ.",
+            "singular": "↑Penngerioù gallek a gaver er geriadur-mañ.",
+            "definition": ""
+        }
+    }
+}

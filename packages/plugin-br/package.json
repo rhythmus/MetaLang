@@ -1,0 +1,25 @@
+{
+    "name": "@metalang/plugin-br",
+    "version": "1.0.0",
+    "description": "Breton language plugin for MetaLang",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "metalang",
+        "linguistics",
+        "breton",
+        "br"
+    ],
+    "author": "MetaLang Contributors",
+    "license": "MIT",
+    "dependencies": {
+        "@metalang/core": "^1.0.0"
+    }
+}

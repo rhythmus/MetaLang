@@ -1,0 +1,25 @@
+{
+    "name": "@metalang/plugin-pl",
+    "version": "1.0.0",
+    "description": "Polish language plugin for MetaLang",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "metalang",
+        "linguistics",
+        "polish",
+        "pl"
+    ],
+    "author": "MetaLang Contributors",
+    "license": "MIT",
+    "dependencies": {
+        "@metalang/core": "^1.0.0"
+    }
+}

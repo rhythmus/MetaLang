@@ -1,0 +1,262 @@
+{
+    "descriptor": {
+        "id": "pl-generic",
+        "name": "Generic Polish",
+        "language": "pl",
+        "scope": "global",
+        "domains": [
+            "rhetoric"
+        ]
+    },
+    "mappings": {
+        "ML_RHETORIC_ALLEGORY": {
+            "id": "ML_RHETORIC_ALLEGORY",
+            "singular": "alegoria",
+            "definition": ""
+        },
+        "ML_RHETORIC_ALLITERATION": {
+            "id": "ML_RHETORIC_ALLITERATION",
+            "singular": "aliteracja",
+            "definition": ""
+        },
+        "ML_RHETORIC_AMPLIFICATION": {
+            "id": "ML_RHETORIC_AMPLIFICATION",
+            "singular": "amplifikacja",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANAPHORA": {
+            "id": "ML_RHETORIC_ANAPHORA",
+            "singular": "anafora",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANACOLUTHON": {
+            "id": "ML_RHETORIC_ANACOLUTHON",
+            "singular": "anakolut",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANIMALIZATION": {
+            "id": "ML_RHETORIC_ANIMALIZATION",
+            "singular": "animalizacja",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANIMATION": {
+            "id": "ML_RHETORIC_ANIMATION",
+            "singular": "animizacja",
+            "definition": "",
+            "synonyms": [
+                "ożywienie"
+            ]
+        },
+        "ML_RHETORIC_ANTHROPOMORPHISM": {
+            "id": "ML_RHETORIC_ANTHROPOMORPHISM",
+            "singular": "antropomorfizacja",
+            "definition": ""
+        },
+        "ML_RHETORIC_ANTITHESIS": {
+            "id": "ML_RHETORIC_ANTITHESIS",
+            "singular": "antyteza",
+            "definition": ""
+        },
+        "ML_RHETORIC_APOSTROPHE": {
+            "id": "ML_RHETORIC_APOSTROPHE",
+            "singular": "apostrofa",
+            "definition": ""
+        },
+        "ML_RHETORIC_ASYNDETON": {
+            "id": "ML_RHETORIC_ASYNDETON",
+            "singular": "asyndeton",
+            "definition": ""
+        },
+        "ML_RHETORIC_ONOMATOPOEIA": {
+            "id": "ML_RHETORIC_ONOMATOPOEIA",
+            "singular": "dźwiękonaśladownictwo",
+            "definition": "",
+            "synonyms": [
+                "onomatopeja"
+            ]
+        },
+        "ML_RHETORIC_ECHOLALIA": {
+            "id": "ML_RHETORIC_ECHOLALIA",
+            "singular": "echolalia",
+            "definition": ""
+        },
+        "ML_RHETORIC_ELLIPSIS": {
+            "id": "ML_RHETORIC_ELLIPSIS",
+            "singular": "elipsa",
+            "definition": ""
+        },
+        "ML_RHETORIC_EMPHASIS": {
+            "id": "ML_RHETORIC_EMPHASIS",
+            "singular": "emfaza",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENUMERATION": {
+            "id": "ML_RHETORIC_ENUMERATION",
+            "singular": "enumeracja",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPIPHORA": {
+            "id": "ML_RHETORIC_EPIPHORA",
+            "singular": "epifora",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPITHET": {
+            "id": "ML_RHETORIC_EPITHET",
+            "singular": "epitet",
+            "definition": ""
+        },
+        "ML_RHETORIC_EPITHETON-ORNANS": {
+            "id": "ML_RHETORIC_EPITHETON-ORNANS",
+            "singular": "epitet stały",
+            "definition": ""
+        },
+        "ML_RHETORIC_EUPHEMISM": {
+            "id": "ML_RHETORIC_EUPHEMISM",
+            "singular": "eufemizm",
+            "definition": ""
+        },
+        "ML_RHETORIC_EUPHONY": {
+            "id": "ML_RHETORIC_EUPHONY",
+            "singular": "eufonia",
+            "definition": ""
+        },
+        "ML_RHETORIC_GLOSSOLALIA": {
+            "id": "ML_RHETORIC_GLOSSOLALIA",
+            "singular": "glosolalia",
+            "definition": ""
+        },
+        "ML_RHETORIC_CLIMAX": {
+            "id": "ML_RHETORIC_CLIMAX",
+            "singular": "gradacja",
+            "definition": ""
+        },
+        "ML_RHETORIC_GROTESQUE": {
+            "id": "ML_RHETORIC_GROTESQUE",
+            "singular": "groteska",
+            "definition": ""
+        },
+        "ML_RHETORIC_HYPERBOLE": {
+            "id": "ML_RHETORIC_HYPERBOLE",
+            "singular": "hiperbola",
+            "definition": ""
+        },
+        "ML_RHETORIC_SOUND-INSTRUMENTATION": {
+            "id": "ML_RHETORIC_SOUND-INSTRUMENTATION",
+            "singular": "instrumentacja głoskowa",
+            "definition": ""
+        },
+        "ML_RHETORIC_INVERSION": {
+            "id": "ML_RHETORIC_INVERSION",
+            "singular": "inwersja",
+            "definition": ""
+        },
+        "ML_RHETORIC_INVOCATION": {
+            "id": "ML_RHETORIC_INVOCATION",
+            "singular": "inwokacja",
+            "definition": ""
+        },
+        "ML_RHETORIC_IRONY": {
+            "id": "ML_RHETORIC_IRONY",
+            "singular": "ironia",
+            "definition": ""
+        },
+        "ML_RHETORIC_METAPHOR": {
+            "id": "ML_RHETORIC_METAPHOR",
+            "singular": "metafora",
+            "definition": "",
+            "synonyms": [
+                "przenośnia"
+            ]
+        },
+        "ML_RHETORIC_METONYMY": {
+            "id": "ML_RHETORIC_METONYMY",
+            "singular": "metonimia",
+            "definition": ""
+        },
+        "ML_RHETORIC_OXYMORON": {
+            "id": "ML_RHETORIC_OXYMORON",
+            "singular": "oksymoron",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARADOX": {
+            "id": "ML_RHETORIC_PARADOX",
+            "singular": "paradoks",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARAPHRASE": {
+            "id": "ML_RHETORIC_PARAPHRASE",
+            "singular": "parafraza",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARALLELISM": {
+            "id": "ML_RHETORIC_PARALLELISM",
+            "singular": "paralelizm składniowy",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARENTHESIS": {
+            "id": "ML_RHETORIC_PARENTHESIS",
+            "singular": "parenteza",
+            "definition": ""
+        },
+        "ML_RHETORIC_PARONOMASIA": {
+            "id": "ML_RHETORIC_PARONOMASIA",
+            "singular": "paronomazja",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERSONIFICATION": {
+            "id": "ML_RHETORIC_PERSONIFICATION",
+            "singular": "personifikacja",
+            "definition": ""
+        },
+        "ML_RHETORIC_PERIPHRASIS": {
+            "id": "ML_RHETORIC_PERIPHRASIS",
+            "singular": "peryfraza",
+            "definition": ""
+        },
+        "ML_RHETORIC_PLEONASM": {
+            "id": "ML_RHETORIC_PLEONASM",
+            "singular": "pleonazm",
+            "definition": ""
+        },
+        "ML_RHETORIC_POLYSYNDETON": {
+            "id": "ML_RHETORIC_POLYSYNDETON",
+            "singular": "polisyndeton",
+            "definition": ""
+        },
+        "ML_RHETORIC_SIMILE": {
+            "id": "ML_RHETORIC_SIMILE",
+            "singular": "porównanie",
+            "definition": ""
+        },
+        "ML_RHETORIC_REPETITION": {
+            "id": "ML_RHETORIC_REPETITION",
+            "singular": "powtórzenie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ENJAMBMENT": {
+            "id": "ML_RHETORIC_ENJAMBMENT",
+            "singular": "przerzutnia",
+            "definition": ""
+        },
+        "ML_RHETORIC_RHETORIC-QUESTION": {
+            "id": "ML_RHETORIC_RHETORIC-QUESTION",
+            "singular": "pytanie retoryczne",
+            "definition": ""
+        },
+        "ML_RHETORIC_SARCASM": {
+            "id": "ML_RHETORIC_SARCASM",
+            "singular": "sarkazm",
+            "definition": ""
+        },
+        "ML_RHETORIC_EXCLAMATIO": {
+            "id": "ML_RHETORIC_EXCLAMATIO",
+            "singular": "wykrzyknienie",
+            "definition": ""
+        },
+        "ML_RHETORIC_ZEUGMA": {
+            "id": "ML_RHETORIC_ZEUGMA",
+            "singular": "zeugma",
+            "definition": ""
+        }
+    }
+}

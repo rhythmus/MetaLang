@@ -1,0 +1,198 @@
+{
+    "descriptor": {
+        "id": "ro-generic",
+        "name": "Generic Romanian",
+        "language": "ro",
+        "scope": "global",
+        "domains": [
+            "rhetoric"
+        ]
+    },
+    "mappings": {
+        "ML_RHETORIC_ACCUMULATIO": {
+            "id": "ML_RHETORIC_ACCUMULATIO",
+            "singular": "Acumulare",
+            "definition": "exagerarea și sumarizarea punctelor sau insinuărilor anterioare prin laude excesive sau acuzații. exemplu:\"A subliniat o serie întreagă de greșeli, evidențiind fiecare detaliu în parte.\""
+        },
+        "ML_RHETORIC_ALLITERATION": {
+            "id": "ML_RHETORIC_ALLITERATION",
+            "singular": "Aliterație",
+            "definition": "folosirea unei serii de două sau mai multe cuvinte care încep cu aceeași literă. exemplu: \"În grădina verde, gingașele ghiocei gângureau.\""
+        },
+        "ML_RHETORIC_ANTITHESIS": {
+            "id": "ML_RHETORIC_ANTITHESIS",
+            "singular": "Antiteză",
+            "definition": "juxtapunerea ideilor contrastante în cuvinte, fraze sau structuri gramaticale echilibrate sau paralele."
+        },
+        "ML_RHETORIC_APORIA": {
+            "id": "ML_RHETORIC_APORIA",
+            "singular": "Aporie",
+            "definition": "o declarație de îndoială, făcută în scop retoric și adesea simulată."
+        },
+        "ML_RHETORIC_APOSTROPHE": {
+            "id": "ML_RHETORIC_APOSTROPHE",
+            "singular": "Apostrof",
+            "definition": "o figură de stil constând într-o întoarcere bruscă a textului către o adresă exclamativă către o persoană imaginară sau un lucru."
+        },
+        "ML_RHETORIC_ARGUMENTUM-AD-BACULUM": {
+            "id": "ML_RHETORIC_ARGUMENTUM-AD-BACULUM",
+            "singular": "Argumentum ad baculum",
+            "definition": "soluționarea unei probleme prin apel la forță."
+        },
+        "ML_RHETORIC_ASSONANCE": {
+            "id": "ML_RHETORIC_ASSONANCE",
+            "singular": "Asonanță",
+            "definition": "cuvinte care repetă același sunet vocal."
+        },
+        "ML_RHETORIC_AXIOM": {
+            "id": "ML_RHETORIC_AXIOM",
+            "singular": "Axiome",
+            "definition": "punctul de plecare al raționamentului științific; principii care nu sunt puse sub semnul întrebării."
+        },
+        "ML_EDITORIAL_BARBARISM": {
+            "id": "ML_EDITORIAL_BARBARISM",
+            "singular": "Barbarism",
+            "definition": "folosirea unui cuvânt, expresie sau pronunție non-standard într-o limbă, în special unul considerat greșit din punct de vedere prescriptiv în morfologie."
+        },
+        "ML_RHETORIC_CAPTATIO-BENEVOLENTIAE": {
+            "id": "ML_RHETORIC_CAPTATIO-BENEVOLENTIAE",
+            "singular": "Captatio benevolentiae",
+            "definition": "orice dispozitiv literar sau oral care încearcă să câștige bunăvoința ascultătorului sau cititorului la începutul unei discuții sau lucrări."
+        },
+        "ML_RHETORIC_DISPOSITION": {
+            "id": "ML_RHETORIC_DISPOSITION",
+            "singular": "Dispoziție",
+            "definition": "etapa de planificare a structurii și secvenței ideilor; adesea denumită aranjament, a doua dintre cele cinci canoane retorice ale lui Cicero."
+        },
+        "ML_RHETORIC_DYSPHEMISM": {
+            "id": "ML_RHETORIC_DYSPHEMISM",
+            "singular": "Disfemism",
+            "definition": "un termen cu conotații negative pentru ceva în realitate destul de inofensiv sau inofensiv."
+        },
+        "ML_RHETORIC_ELLIPSIS": {
+            "id": "ML_RHETORIC_ELLIPSIS",
+            "singular": "Elipsă",
+            "definition": "suprimarea cuvintelor auxiliare pentru a da expresiei o vivacitate sau o forță mai mare."
+        },
+        "ML_RHETORIC_EPITHET": {
+            "id": "ML_RHETORIC_EPITHET",
+            "singular": "Epitet",
+            "definition": "un termen utilizat ca înlocuitor descriptiv și calificativ pentru numele unei persoane, locuri sau lucruri."
+        },
+        "ML_RHETORIC_EPIZEUXIS": {
+            "id": "ML_RHETORIC_EPIZEUXIS",
+            "singular": "Epizeuxis",
+            "definition": "figură de stil care constă în repetarea imediată a unui cuvânt sau a unei expresii, fără alte cuvinte intercalate între ele. exemplu: \"Ridică-te! Ridică-te și luptă pentru visul tău!\""
+        },
+        "ML_RHETORIC_ETHOS": {
+            "id": "ML_RHETORIC_ETHOS",
+            "singular": "Ethos",
+            "definition": "o apel retoric la o audiență bazată pe credibilitatea vorbitorului/scrisului."
+        },
+        "ML_RHETORIC_EUPHEMISM": {
+            "id": "ML_RHETORIC_EUPHEMISM",
+            "singular": "Eufemism",
+            "definition": "un termen sau o expresie inofensivă, circumlocutorie sau circumstanțială pentru ceva neplăcut sau obscen."
+        },
+        "ML_RHETORIC_IGNORATIO-ELENCHI": {
+            "id": "ML_RHETORIC_IGNORATIO-ELENCHI",
+            "singular": "Ignoratio elenchi",
+            "definition": "o concluzie care este irelevantă."
+        },
+        "ML_RHETORIC_IRONY": {
+            "id": "ML_RHETORIC_IRONY",
+            "singular": "Ironie",
+            "definition": "un contrast deliberat între sensul indirect și cel direct pentru a atrage atenția asupra opusului."
+        },
+        "ML_EDITORIAL_JARGON": {
+            "id": "ML_EDITORIAL_JARGON",
+            "singular": "Jargon",
+            "definition": "limbaj foarte tehnic folosit de un anumit grup."
+        },
+        "ML_RHETORIC_KAIROS": {
+            "id": "ML_RHETORIC_KAIROS",
+            "singular": "Kairos",
+            "definition": "\"sincronizare\" sau \"circumstanțele potrivite\"."
+        },
+        "ML_RHETORIC_LOGOS": {
+            "id": "ML_RHETORIC_LOGOS",
+            "singular": "Logos",
+            "definition": "apeluri retorice bazate pe logică sau raționament."
+        },
+        "ML_RHETORIC_LITOTES": {
+            "id": "ML_RHETORIC_LITOTES",
+            "singular": "Meioză",
+            "definition": "o figură de stil eufemistică ce subestimează intenționat ceva sau implică faptul că este mai puțin semnificativ sau important decât este în realitate."
+        },
+        "ML_RHETORIC_METAPHOR": {
+            "id": "ML_RHETORIC_METAPHOR",
+            "singular": "Metaforă",
+            "definition": "o figură de stil în care un cuvânt care se aplică în mod normal unui lucru este folosit pentru a desemna altceva, pentru a crea o imagine mentală."
+        },
+        "ML_RHETORIC_METONYMY": {
+            "id": "ML_RHETORIC_METONYMY",
+            "singular": "Metonimie",
+            "definition": "o figură de stil care înlocuiește un cuvânt sau o frază cu altul cu care este strâns asociat."
+        },
+        "ML_RHETORIC_ONOMATOPOEIA": {
+            "id": "ML_RHETORIC_ONOMATOPOEIA",
+            "singular": "Onomatopee",
+            "definition": "cuvinte care imită sunetele, obiectele sau acțiunile la care se referă, de exemplu \"zumzet\", \"văicăreli\", \"țârâit\"."
+        },
+        "ML_RHETORIC_PARADOX": {
+            "id": "ML_RHETORIC_PARADOX",
+            "singular": "Paradox",
+            "definition": "o afirmație aparent absurdă sau auto-contradictorie."
+        },
+        "ML_RHETORIC_PARALLELISM": {
+            "id": "ML_RHETORIC_PARALLELISM",
+            "singular": "Paralelism",
+            "definition": "corespondentă, în sens sau construcție, a clauzelor sau pasajelor succesive."
+        },
+        "ML_RHETORIC_PARENTHESIS": {
+            "id": "ML_RHETORIC_PARENTHESIS",
+            "singular": "Paranteză",
+            "definition": "un cuvânt, clauză sau propoziție explicativă sau calificativă inserată într-un pasaj, care nu este esențială pentru sensul literal."
+        },
+        "ML_RHETORIC_PERSONIFICATION": {
+            "id": "ML_RHETORIC_PERSONIFICATION",
+            "singular": "Personificare",
+            "definition": "o figură de stil care atribuie caracteristici umane obiectelor neînsuflețite sau reprezintă o persoană absentă ca fiind prezentă."
+        },
+        "ML_RHETORIC_PLEONASM": {
+            "id": "ML_RHETORIC_PLEONASM",
+            "singular": "Pleonasm",
+            "definition": "utilizarea mai multor cuvinte decât sunt necesare pentru a exprima o idee."
+        },
+        "ML_LEX-STRUCT_POLYSEMY": {
+            "id": "ML_LEX-STRUCT_POLYSEMY",
+            "singular": "Polisemie",
+            "definition": "capacitatea unui cuvânt sau a unei fraze de a avea mai multe înțelesuri."
+        },
+        "ML_RHETORIC_RHETORIC": {
+            "id": "ML_RHETORIC_RHETORIC",
+            "singular": "Retorica",
+            "definition": "studiul și practica exprimării eficiente; de asemenea, un tip de discurs, concentrat pe obiectivele unui discurs sau a unui text care încearcă să influențeze mintea publicului."
+        },
+        "ML_RHETORIC_SPIN": {
+            "id": "ML_RHETORIC_SPIN",
+            "singular": "Spin",
+            "definition": "actul de a concura pentru a insufla un sens în punctele de agendă pentru publicuri alese."
+        },
+        "ML_RHETORIC_SPOONERISM": {
+            "id": "ML_RHETORIC_SPOONERISM",
+            "singular": "Spoonerism",
+            "definition": "schimbarea deliberată sau involuntară a sunetelor sau morfemelor între două cuvinte dintr-o frază, creând un nou sens."
+        },
+        "ML_RHETORIC_SYMBOL": {
+            "id": "ML_RHETORIC_SYMBOL",
+            "singular": "Simbol",
+            "definition": "o reprezentare vizuală sau metaforică a unei idei sau concepte."
+        },
+        "ML_RHETORIC_TAUTOLOGY": {
+            "id": "ML_RHETORIC_TAUTOLOGY",
+            "singular": "Tautologie",
+            "definition": "repetarea aceleași idei cu cuvinte diferite."
+        }
+    }
+}
