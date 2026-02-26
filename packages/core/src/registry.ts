@@ -21,6 +21,18 @@ export class Registry {
         });
     }
 
+    /**
+     * Load the entire registry state from a JSON seed object.
+     */
+    public loadSeed(seed: any): void {
+        if (seed.domains) {
+            seed.domains.forEach((d: Domain) => this.domains.set(d.id, d));
+        }
+        if (seed.concepts) {
+            seed.concepts.forEach((c: Concept) => this.concepts.set(c.id, c));
+        }
+    }
+
     private parseDomainsTSV(content: string): Domain[] {
         const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#'));
         return lines.map(line => {
