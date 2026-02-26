@@ -66,8 +66,8 @@ export interface BibliographicSource {
  */
 export interface LinguisticMapping {
   id: string;             // ML_ID
-  singular?: string;      // Full singular form
-  plural?: string;        // Full plural form
+  singular?: string | string[];      // Full singular form(s)
+  plural?: string | string[];        // Full plural form(s)
   abbreviations?: string[]; // Array of common abbreviations
 }
 

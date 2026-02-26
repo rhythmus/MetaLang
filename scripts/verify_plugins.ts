@@ -89,15 +89,19 @@ async function verifyPlugins() {
         { conceptId: 'ML_POS_NOUN', systemId: 'en-generic' },
         { conceptId: 'ML_POS_NOUN', systemId: 'el-generic' },
         { conceptId: 'ML_EDITORIAL_eg', systemId: 'nl-generic' },
-        { conceptId: 'ML_EDITORIAL_eg', systemId: 'en-generic' }
+        { conceptId: 'ML_EDITORIAL_eg', systemId: 'en-generic' },
+        { conceptId: 'ML_POS_NUMERAL-COLLECTIVE', systemId: 'en-generic' },
+        { conceptId: 'ML_CUSTOM_PASS', systemId: 'nl-generic' }
     ];
 
     for (const test of localizationTests) {
         const mapping = registry.getLinguisticMapping(test.conceptId, test.systemId);
         if (mapping) {
             console.log(`   - [${test.systemId}] ${test.conceptId}:`);
-            console.log(`     Singular: ${mapping.singular || '-'}`);
-            console.log(`     Plural:   ${mapping.plural || '-'}`);
+            const s = mapping.singular;
+            const p = mapping.plural;
+            console.log(`     Singular: ${Array.isArray(s) ? s.join(' | ') : (s || '-')}`);
+            console.log(`     Plural:   ${Array.isArray(p) ? p.join(' | ') : (p || '-')}`);
             console.log(`     Abbrs:    ${mapping.abbreviations?.join(', ') || '-'}`);
         } else {
             console.log(`   - [${test.systemId}] ${test.conceptId}: ❌ [NOT FOUND]`);

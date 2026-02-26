@@ -83,8 +83,14 @@ export class Registry {
                 systemMappings.set(lm.id, lm);
 
                 // Also add to traditional mappings for normalization/lookup
-                if (lm.singular) this.addMapping(manifest.descriptor.id, lm.singular, lm.id);
-                if (lm.plural) this.addMapping(manifest.descriptor.id, lm.plural, lm.id);
+                if (lm.singular) {
+                    const terms = Array.isArray(lm.singular) ? lm.singular : [lm.singular];
+                    for (const term of terms) this.addMapping(manifest.descriptor.id, term, lm.id);
+                }
+                if (lm.plural) {
+                    const terms = Array.isArray(lm.plural) ? lm.plural : [lm.plural];
+                    for (const term of terms) this.addMapping(manifest.descriptor.id, term, lm.id);
+                }
                 if (lm.abbreviations) {
                     for (const abbr of lm.abbreviations) {
                         this.addMapping(manifest.descriptor.id, abbr, lm.id);
