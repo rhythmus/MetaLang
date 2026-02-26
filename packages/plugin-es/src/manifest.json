@@ -1,0 +1,138 @@
+{
+    "descriptor": {
+        "id": "es-generic",
+        "name": "Generic Spanish",
+        "language": "es",
+        "scope": "global",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value",
+            "editorial",
+            "lex_struct",
+            "syntax"
+        ],
+        "publisher": "MetaLang Project",
+        "authoritative": false,
+        "source": {
+            "title": "Generic Spanish Linguistic Abbreviation Reference",
+            "author": "MetaLang Contributors",
+            "year": 2026,
+            "url": "https://metalang.org/ontology/es",
+            "lastEditedAt": "2026-02-26T22:47:00.000Z"
+        }
+    },
+    "mappings": {
+        "ML_POS_NOUN": {
+            "id": "ML_POS_NOUN",
+            "singular": "sustantivo",
+            "plural": "sustantivos",
+            "abbreviations": [
+                "sust."
+            ]
+        },
+        "ML_POS_ADJECTIVE": {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "adjetivo",
+            "plural": "adjetivos",
+            "abbreviations": [
+                "adj."
+            ]
+        },
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "verbo",
+            "plural": "verbos",
+            "abbreviations": [
+                "v."
+            ]
+        },
+        "ML_POS_ADVERB": {
+            "id": "ML_POS_ADVERB",
+            "singular": "adverbio",
+            "plural": "adverbios",
+            "abbreviations": [
+                "adv."
+            ]
+        },
+        "ML_POS_PRONOUN": {
+            "id": "ML_POS_PRONOUN",
+            "singular": "pronombre",
+            "plural": "pronombres",
+            "abbreviations": [
+                "pron."
+            ]
+        },
+        "ML_POS_DETERMINER": {
+            "id": "ML_POS_DETERMINER",
+            "singular": "determinante",
+            "plural": "determinantes",
+            "abbreviations": [
+                "det."
+            ]
+        },
+        "ML_POS_PREPOSITION": {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "preposición",
+            "plural": "preposiciones",
+            "abbreviations": [
+                "prep."
+            ]
+        },
+        "ML_POS_CONJUNCTION": {
+            "id": "ML_POS_CONJUNCTION",
+            "singular": "conjunción",
+            "plural": "conjunciones",
+            "abbreviations": [
+                "conj."
+            ]
+        },
+        "ML_POS_ART-DEF": {
+            "id": "ML_POS_ART-DEF",
+            "singular": "artículo definido",
+            "plural": "artículos definidos",
+            "abbreviations": [
+                "art. def."
+            ]
+        },
+        "ML_POS_ART-IND": {
+            "id": "ML_POS_ART-IND",
+            "singular": "artículo indefinido",
+            "plural": "artículos indefinidos",
+            "abbreviations": [
+                "art. ind."
+            ]
+        },
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "masculino",
+            "abbreviations": [
+                "m.",
+                "masc."
+            ]
+        },
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "femenino",
+            "abbreviations": [
+                "f.",
+                "fem."
+            ]
+        },
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "singular",
+            "abbreviations": [
+                "sg.",
+                "sing."
+            ]
+        },
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "plural",
+            "abbreviations": [
+                "pl."
+            ]
+        }
+    }
+}
