@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { SeedFile, Concept, DomainID } from '@metalang/schema';
+import { Concept, DomainID } from '@metalang/schema';
 
 export interface MergeOptions {
     dryRun: boolean;
@@ -13,7 +13,7 @@ export interface MergeOptions {
 export function mergeTsvIntoSeed(tsvPath: string, seedPath: string, options: MergeOptions): void {
     const tsvContent = fs.readFileSync(tsvPath, 'utf8');
     const seedContent = fs.readFileSync(seedPath, 'utf8');
-    const seed: SeedFile = JSON.parse(seedContent);
+    const seed: { concepts: Concept[] } = JSON.parse(seedContent);
 
     const rows = tsvContent.split('\n').filter(line => line.trim().length > 0);
     if (rows.length === 0) {
@@ -52,14 +52,12 @@ export function mergeTsvIntoSeed(tsvPath: string, seedPath: string, options: Mer
             if (!term) continue;
 
             const qid = qidIdx !== -1 ? cols[qidIdx] : undefined;
-            const guid = `ML_RHETORIC_${term.toUpperCase().replace(/\s+/g, '_')}`;
+            const guid = `ML_REGISTER-RHETORIC_${term.toUpperCase().replace(/\s+/g, '-')}`;
 
             concept = {
                 id: guid,
-                domain: (options.domain as DomainID) || 'other',
-                labels: {
-                    en: { full: term, abbreviation: null }
-                },
+                domain: (options.domain as DomainID) || 'CUSTOM',
+                label: term,
                 externalRefs: qid ? { wikidata: qid } : {},
                 systemMappings: {}
             };
@@ -73,22 +71,20 @@ export function mergeTsvIntoSeed(tsvPath: string, seedPath: string, options: Mer
 
             const title = cols[titleIdx];
             const guid = cols[guidIdx];
-            const domain = (domainIdx !== -1 ? cols[domainIdx] : 'other') as DomainID;
+            const domain = (domainIdx !== -1 ? cols[domainIdx] : 'CUSTOM') as DomainID;
 
             if (!guid || !title) continue;
 
             concept = {
                 id: guid,
                 domain: domain,
-                labels: {
-                    el: { full: title, abbreviation: null }
-                },
+                label: title,
                 systemMappings: {}
             };
         }
 
         if (concept.id) {
-            const existingIndex = seed.concepts.findIndex(c => c.id === concept.id);
+            const existingIndex = seed.concepts.findIndex((c: Concept) => c.id === concept.id);
             if (existingIndex !== -1) {
                 // Merge logic (shallow for now)
                 seed.concepts[existingIndex] = { ...seed.concepts[existingIndex], ...concept } as Concept;

@@ -1,4 +1,4 @@
-import type { Concept, Domain, PluginManifest, SeedFile } from '@metalang/schema';
+import type { Concept, Domain, PluginManifest } from '@metalang/schema';
 
 export interface ValidationResult {
     valid: boolean;
@@ -11,17 +11,46 @@ export class Registry {
     private tagSystems: Map<string, PluginManifest> = new Map();
 
     /**
-     * Load concepts and domains from a seed file.
+     * Load concepts and domains from TSV data strings.
      */
-    public loadSeed(seed: SeedFile): void {
-        if (seed.domains) {
-            for (const domain of seed.domains) {
-                this.domains.set(domain.id, domain);
-            }
-        }
-        for (const concept of seed.concepts) {
-            this.concepts.set(concept.id, concept);
-        }
+    public loadTSVData(domainsTsv: string, conceptsTsv: string): void {
+        this.parseDomainsTSV(domainsTsv).forEach(d => this.domains.set(d.id, d));
+        this.parseConceptsTSV(conceptsTsv).forEach(c => this.concepts.set(c.id, c));
+    }
+
+    private parseDomainsTSV(content: string): Domain[] {
+        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#'));
+        return lines.map(line => {
+            const parts = line.split('\t').map(s => s.trim());
+            return {
+                wikidata: parts[0] || '',
+                parent: parts[1] || '',
+                id: parts[2] || '',
+                label: parts[3] || ''
+            };
+        });
+    }
+
+    private parseConceptsTSV(content: string): Concept[] {
+        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#'));
+        return lines.map(line => {
+            const parts = line.split('\t').map(s => s.trim());
+            const wikidata = parts[0] || '';
+            const parent = parts[1] || '';
+            const id = parts[2] || '';
+            const label = parts[3] || '';
+
+            // Derive domain from ML_ID (e.g. ML_POS_NOUN -> POS)
+            const domain = id.includes('_') ? id.split('_')[1] : 'CUSTOM';
+
+            return {
+                domain,
+                parent: parent ? parent.split(',').map(p => p.trim()) : [],
+                wikidata,
+                id,
+                label
+            };
+        });
     }
 
     /**
@@ -135,8 +164,9 @@ export class Registry {
      */
     public getParents(id: string): Concept[] {
         const concept = this.getConcept(id);
-        if (!concept || !concept.parents) return [];
-        return concept.parents
+        if (!concept || !concept.parent) return [];
+        const parentIds = Array.isArray(concept.parent) ? concept.parent : [concept.parent];
+        return parentIds
             .map((pid: string) => this.getConcept(pid))
             .filter((c: Concept | undefined): c is Concept => !!c);
     }

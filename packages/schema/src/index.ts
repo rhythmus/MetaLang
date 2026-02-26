@@ -2,93 +2,50 @@
  * Valid domains for MetaLang concepts as defined in the taxonomy.
  */
 export type DomainID =
-  | 'pos'
-  | 'morph_feature'
-  | 'morph_value'
-  | 'syntactic_relation'
-  | 'semantic_relation'
-  | 'semantic_class'
-  | 'register'
-  | 'field'
-  | 'geo'
-  | 'language_label'
-  | 'lex_struct'
-  | 'derivation'
-  | 'etymology'
-  | 'phonology'
-  | 'discourse'
-  | 'orthography'
-  | 'editorial'
-  | 'other';
+  | 'POS'
+  | 'MORPHOLOGY'
+  | 'MORPH-FEATURE'
+  | 'MORPH-VALUE'
+  | 'SYNTAX'
+  | 'SYNTACTIC-RELATION'
+  | 'SEMANTICS'
+  | 'SEMANTIC-RELATION'
+  | 'SEMANTIC-CLASS'
+  | 'REGISTER'
+  | 'RHETORIC'
+  | 'FIELD'
+  | 'GEO'
+  | 'LANGUAGE'
+  | 'LEX-STRUCT'
+  | 'DERIVATION'
+  | 'ETYMOLOGY'
+  | 'PHONOLOGY'
+  | 'DISCOURSE'
+  | 'ORTHOGRAPHY'
+  | 'EDITORIAL'
+  | 'CUSTOM';
 
 export interface Domain {
-  id: DomainID;
-  name: string;
-  description?: string;
-}
-
-export interface LabelSet {
-  full: string | null;
-  abbreviation: string | null;
-}
-
-export interface MultiLingualLabels {
-  [locale: string]: LabelSet;
-}
-
-export interface ExternalRefs {
-  wikidata?: string;
-  [key: string]: string | undefined;
-}
-
-export interface SystemMappings {
-  [systemId: string]: string[];
+  wikidata: string; // WikiData QID
+  parent: string;   // Parent Domain ID (optional/empty)
+  id: string;      // ML_ID (prefix, e.g., POS)
+  label: string;   // Internal default label
 }
 
 /**
  * A canonical MetaLang concept.
  */
 export interface Concept {
-  /**
-   * The globally unique identifier for the concept.
-   * Format: ML_[DOMAIN]_[TERM] or ML_CUSTOM_[TERM] (ASCII, ALL_CAPS).
-   */
-  id: string;
-
-  /**
-   * The domain this concept belongs to.
-   */
-  domain: DomainID;
-
-  /**
-   * Multilingual labels and abbreviations.
-   */
-  labels: MultiLingualLabels;
-
-  /**
-   * Links to external ontologies or databases (e.g., Wikidata).
-   */
-  externalRefs: ExternalRefs;
-
-  /**
-   * Mappings from external tag systems (e.g., "ud", "eagles").
-   */
-  systemMappings: SystemMappings;
-
-  /**
-   * Parent concept IDs to support DAG hierarchy.
-   */
-  parents?: string[];
-
-  /**
-   * Sources or references for the concept definition.
-   */
-  sources?: string[];
+  domain: string;  // e.g., POS
+  parent: string | string[]; // Comma-separated in TSV, array in memory
+  wikidata: string; // WikiData QID
+  id: string;      // Full ML_ID (e.g., ML_POS_NOUN)
+  label: string;   // English label
+  externalRefs?: Record<string, string>;
+  systemMappings?: Record<string, string | string[]>;
 }
 
-export interface SeedFile {
-  metalangVersion: string;
-  generatedFrom?: string[];
+export interface CoreTSVData {
   domains: Domain[];
   concepts: Concept[];
 }

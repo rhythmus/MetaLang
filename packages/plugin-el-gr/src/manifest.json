@@ -5,9 +5,9 @@
         "language": "el",
         "scope": "national",
         "domains": [
-            "pos",
-            "morph_feature",
-            "morph_value"
+            "POS",
+            "MORPH-FEATURE",
+            "MORPH-VALUE"
         ],
         "publisher": "Institute of Educational Policy (IEP)",
         "authoritative": true,
@@ -15,7 +15,7 @@
             "title": "Γραμματική Νέας Ελληνικής Γλώσσας (Α-Β-Γ Γυμνασίου)",
             "author": "Χατζησαββίδης Σ., Χατζησαββίδου Α.",
             "year": 2011,
-            "url": "http://ebooks.edu.gr/ebooks/v/html/8547/2332/Grammatiki-Neas-Ellinikis-Glossas_A-B-G-Gymnasiou_html-apli/",
+            "url": "https://ebooks.edu.gr/ebooks/v/html/8547/2334/Grammatiki-Neas-Ellinikis-Glossas_A-B-G-Gymnasiou_html-apli/",
             "retrievedAt": "2026-02-25T13:00:00Z",
             "bibtex": "@book{chatzisavvidis2011grammatiki,\n  title={Grammatiki Neas Ellinikis Glossas (A-B-G Gymnasiou)},\n  author={Chatzisavvidis, S. and Chatzisavvidou, A.},\n  publisher={OEKB},\n  year={2011}\n}"
         }
@@ -31,14 +31,14 @@
         "ΠΡΟΘ": "ML_POS_PREPOSITION",
         "ΣΥΝΔ": "ML_POS_CONJUNCTION",
         "ΕΠΙΦ": "ML_POS_INTERJECTION",
-        "Αρσ": "ML_MORPH_VALUE_GENDER_MASCULINE",
-        "Θηλ": "ML_MORPH_VALUE_GENDER_FEMININE",
-        "Ουδ": "ML_MORPH_VALUE_GENDER_NEUTER",
-        "Εν": "ML_MORPH_VALUE_NUMBER_SINGULAR",
-        "Πληθ": "ML_MORPH_VALUE_NUMBER_PLURAL",
-        "Ονομ": "ML_MORPH_VALUE_CASE_NOMINATIVE",
-        "Γεν": "ML_MORPH_VALUE_CASE_GENITIVE",
-        "Αιτ": "ML_MORPH_VALUE_CASE_ACCUSATIVE",
-        "Κλητ": "ML_MORPH_VALUE_CASE_VOCATIVE"
+        "Αρσ": "ML_MORPH-VALUE_GENDER-MASCULINE",
+        "Θηλ": "ML_MORPH-VALUE_GENDER-FEMININE",
+        "Ουδ": "ML_MORPH-VALUE_GENDER-NEUTER",
+        "Εν": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+        "Πληθ": "ML_MORPH-VALUE_NUMBER-PLURAL",
+        "Ονομ": "ML_MORPH-VALUE_CASE-NOMINATIVE",
+        "Γεν": "ML_MORPH-VALUE_CASE-GENITIVE",
+        "Αιτ": "ML_MORPH-VALUE_CASE-ACCUSATIVE",
+        "Κλητ": "ML_MORPH-VALUE_CASE-VOCATIVE"
     }
 }

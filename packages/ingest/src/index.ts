@@ -59,7 +59,8 @@ program
     .command('classify')
     .description('Classify harvested terms against MetaLang registry')
     .argument('<file>', 'Harvested JSON file')
-    .option('-s, --seed <file>', 'Seed data file to load registry from')
+    .option('-d, --domains <file>', 'Domains TSV file')
+    .option('-c, --concepts <file>', 'Concepts TSV file')
     .option('-o, --output <file>', 'Output classification JSON file')
     .action(async (file, options) => {
         console.log(chalk.blue(`🧠 Classifying terms from ${chalk.bold(file)}...`));
@@ -69,15 +70,16 @@ program
             const terms = JSON.parse(rawData);
 
             const registry = new Registry();
-            if (options.seed) {
-                const seedData = JSON.parse(fs.readFileSync(options.seed, 'utf-8'));
-                registry.loadSeed(seedData);
+            const domainsPath = options.domains || '../../data/domains.tsv';
+            const conceptsPath = options.concepts || '../../data/concepts.tsv';
+
+            if (fs.existsSync(domainsPath) && fs.existsSync(conceptsPath)) {
+                registry.loadTSVData(
+                    fs.readFileSync(domainsPath, 'utf-8'),
+                    fs.readFileSync(conceptsPath, 'utf-8')
+                );
             } else {
-                // Fallback to finding common locations
-                const defaultSeed = '../../data/metalang_seed_v1_1.json';
-                if (fs.existsSync(defaultSeed)) {
-                    registry.loadSeed(JSON.parse(fs.readFileSync(defaultSeed, 'utf-8')));
-                }
+                console.warn(chalk.yellow(`⚠️ Data files not found at ${domainsPath} or ${conceptsPath}`));
             }
 
             const mappings = classifyTerms(terms, registry);

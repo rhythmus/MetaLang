@@ -1,0 +1,22 @@
+# WikiData QID	parent	ML_ID	label
+Q82042		POS	part of speech
+Q38311		MORPHOLOGY	morphology
+Q980357	MORPHOLOGY	MORPH-FEATURE	morphological feature (dimension), grammatical category
+	MORPHOLOGY	MORPH-VALUE	morphological value
+Q728001	MORPHOLOGY	DERIVATION	derivation, word formation
+Q37437		SYNTAX	syntax
+Q1474213	SYNTAX	LEX-STRUCT	lexicographic structure, grammatical construction
+	SYNTAX	SYNTACTIC-RELATION	syntactic relation
+Q39645		SEMANTICS	semantics
+Q16947106	SEMANTICS	SEMANTIC-CLASS	semantic class
+Q286576	SEMANTICS	REGISTER	register
+Q81009	REGISTER	RHETORIC	rhetorics
+Q11862829	REGISTER	FIELD	subject field, academic discipline
+Q1129466	REGISTER	DISCOURSE	discourse (discourse analysis, rhetorics)
+Q35245		ETYMOLOGY	etymology
+Q40998		PHONOLOGY	phonology, phonetics
+Q43091		ORTHOGRAPHY	orthography
+Q906278		GEO	geographic label (country code)
+Q1059900		LANGUAGE	(IETF) language tag (origin/usage)
+Q198614		EDITORIAL	editorial marker (conformity to style guide)
+		CUSTOM	unclassified, other
