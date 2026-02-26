@@ -6,7 +6,7 @@
   - Complete `ontology/concepts/punctuation.tsv` (opening/closing marks, specialized symbols).
   - Map remaining localized rhetorical terms in `ontology/concepts/rhetoric.tsv`.
 - [ ] **Label Validation**: Cross-check existing labels and translations against WikiData using QID lookups to ensure global alignment.
-- [ ] **Punctuation Support**: Verify full engine support in `@metalang/core` and ensure all language plugins map their local punctuation marks to the core ontology.
+- [x] **Punctuation Support**: Verify full engine support in `@metalang/core` and ensure all language plugins map their local punctuation marks to the core ontology.
 
 ## 🌍 Language Package Completion
 - [ ] **Exhaustive Language Plugins**: Complete the "Core 9" language set.
@@ -29,3 +29,7 @@
 - [ ] **Unified Documentation**: Integrate and simplify existing docs.
 - [ ] **API Reference**: Expand `docs/API_REFERENCE.md` with comprehensive examples and plugin-author guides.
 - [ ] **Academic Output**: Draft Whitepaper and transition to a formal Journal Paper.
+
+
+- coverage and completeness of the ontology in comparison to https://github.com/UniversalDependencies
+
