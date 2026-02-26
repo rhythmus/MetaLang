@@ -12,6 +12,7 @@ Q501405		ML_MORPH-VALUE_FUTURE	future tense	The [tense](#tense) of a [verb](#ver
 Q1775415		ML_MORPH-VALUE_GENDER-FEMININE	feminine	Feminine; said of a word belonging to the feminine [gender](#gender), which is usually contrasted with the [masculine](#masculine) gender, and also often with a [neuter](#neuter) gender.	https://en.wiktionary.org/wiki/feminine
 Q499327		ML_MORPH-VALUE_GENDER-MASCULINE	masculine	Belonging to the male grammatical [gender](#gender), in languages that have gender distinctions.	https://en.wiktionary.org/wiki/masculine
 Q1775461		ML_MORPH-VALUE_GENDER-NEUTER	neuter	Of neuter [gender](#gender): having a form which is not [masculine](#masculine) nor [feminine](#feminine); or having a form which is not of [common gender](#common_gender).	https://en.wiktionary.org/wiki/neuter
+Q1327177		ML_MORPH-VALUE_GENDER-EPICENE	epicene	Having the same form for both [masculine](#masculine) and [feminine](#feminine) genders.	https://en.wiktionary.org/wiki/epicene
 		ML_MORPH-VALUE_MOOD-ADMIRATIVE	admirative	A verb form similar to [mirative](https://en.wiktionary.org/wiki/mirative), found primarily in some languages of the Balkan sprachbund (i.e. namely Albanian, Bulgarian and Macedonian), which expresses surprise, irony, doubt, or reportedness on the part of the speaker.	https://en.wiktionary.org/wiki/admirative
 Q625581		ML_MORPH-VALUE_MOOD-CONDITIONAL	conditional		
 Q22716		ML_MORPH-VALUE_MOOD-IMPERATIVE	imperative		
@@ -29,3 +30,42 @@ Q192613		ML_MORPH-VALUE_PRESENT	present tense	The [tense](#tense) of a [verb](#v
 Q179230		ML_MORPH-VALUE_VERBFORM-INFINITIVE	infinitive	A non-[finite](https://en.wiktionary.org/wiki/finite) verb form considered [neutral](https://en.wiktionary.org/wiki/neutral) with respect to [inflection](#inflection); depending on language variously found used with [auxiliary verbs](https://en.wiktionary.org/wiki/auxiliary_verb), in [subordinate clauses](https://en.wiktionary.org/wiki/subordinate_clause), or acting as a [gerund](#gerund), and often as the [dictionary form](https://en.wiktionary.org/wiki/dictionary_form). In English, the infinitive is formed with the word [_to_](https://en.wiktionary.org/wiki/to#English), e.g. to [_read_](https://en.wiktionary.org/wiki/read#English).	https://en.wiktionary.org/wiki/infinitive
 Q192302	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-GERUND	gerund	Any of various non-finite [verb](#verb) forms in various languages. In English, a "[gerund](https://en.wikipedia.org/wiki/Gerund#Gerunds_in_English)" refers to a verb in its [_-ing_](https://en.wiktionary.org/wiki/-ing#English) form when used in a way that resembles the use of a [noun](#noun). Despite showing noun-like behavior in the context of the surrounding sentence, gerunds show verbal behavior in the context of their own internal clause: they can take direct objects or be modified by adverbs. In this way, gerunds are distinguished from deverbal nouns ending in _-ing,_ which occur in noun phrases that can take determiners or be modified by adjectives. For example, "manufacturing" is a gerund in the following sentence: "Efficiently manufacturing this device is difficult." It is a [verbal noun](#verbal_noun) (not a gerund) in this sentence: "The efficient manufacturing of this device is difficult." In other languages, gerund can refer to a form that often functions as an [adverb](#adverb) to form [adverbial](#adverbial) phrases or the continuous tense.	https://en.wiktionary.org/wiki/gerund
 Q851145	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-GERUNDIVE	gerundive		
+Q12547192	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-PARTICIPLE-PAST	past participle		
+Q12547192	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-PARTICIPLE-PRESENT	present participle		
+Q331776		ML_MORPH-VALUE_CASE-ABESSIVE	abessive (case)	A case chosen to indicate the absence or lack of something.	https://en.wiktionary.org/wiki/abessive_case
+Q281954		ML_MORPH-VALUE_CASE-ADESSIVE	adessive (case)	A case used to indicate position on a surface.	https://en.wiktionary.org/wiki/adessive_case
+Q654366		ML_MORPH-VALUE_CASE-ALLATIVE	allative (case)	A case used to indicate the surface goal of a motion.	https://en.wiktionary.org/wiki/allative_case
+Q1642398		ML_MORPH-VALUE_CASE-ILLATIVE	illative (case)	A case used to indicate "into".	https://en.wiktionary.org/wiki/illative_case
+Q1163139		ML_MORPH-VALUE_CASE-PARTITIVE	partitive (case)	A case used to indicate a partial amount of a whole.	https://en.wiktionary.org/wiki/partitive_case
+Q12547192		ML_MORPH-VALUE_CASE-DELATIVE	delative (case)		
+Q12547192		ML_MORPH-VALUE_CASE-ELATIVE	elative (case)		
+Q12547192		ML_MORPH-VALUE_CASE-ESSIVE	essive (case)		
+Q12547192		ML_MORPH-VALUE_CASE-INESSIVE	inessive (case)		
+Q12547192		ML_MORPH-VALUE_CASE-INSTRUMENTAL	instrumental (case)		
+Q12547192		ML_MORPH-VALUE_CASE-LOCATIVE	locative (case)		
+Q12547192		ML_MORPH-VALUE_CASE-SUBLATIVE	sublative (case)		
+Q12547192		ML_MORPH-VALUE_CASE-TERMINATIVE	terminative (case)		
+Q12547192		ML_MORPH-VALUE_CASE-TRANSLATIVE	translative (case)		
+Q12547192		ML_MORPH-VALUE_NUMBER-DISTRIBUTIVE	distributive (number)		
+Q12547192		ML_MORPH-VALUE_NUMBER-QUADRAL	quadral (number)		
+Q12547192		ML_MORPH-VALUE_NUMBER-PAUCAL	paucal (number)		
+Q12547192		ML_MORPH-VALUE_NUMBER-TRIAL	trial (number)		
+Q12547192		ML_MORPH-VALUE_TENSE-AORIST	aorist (tense)		
+Q12547192		ML_MORPH-VALUE_TENSE-IMPERFECT	imperfect (tense)		
+Q12547192		ML_MORPH-VALUE_TENSE-PERFECT	perfect (tense)		
+Q12547192		ML_MORPH-VALUE_TENSE-PLUPERFECT	pluperfect (tense)		
+Q12547192		ML_MORPH-VALUE_VOICE-ACTIVE	active (voice)		
+Q12547192		ML_MORPH-VALUE_VOICE-PASSIVE	passive (voice)		
+Q12547192		ML_MORPH-VALUE_VOICE-PRONOMINAL	pronominal (voice)		
+Q12547192		ML_MORPH-VALUE_DEGREE-EQUATIVE	equative (degree)		
+Q12547192		ML_MORPH-VALUE_CASE-ERGATIVE	ergative (case)		
+Q12547192		ML_MORPH-VALUE_DEFECTIVE	defective	Said of a [word](https://en.wiktionary.org/wiki/word#Noun) (especially a [verb](https://en.wiktionary.org/wiki/verb#Noun)) that lacks one or more of the [inflections](https://en.wiktionary.org/wiki/inflection#Noun) provided by the regular [paradigm](https://en.wiktionary.org/wiki/paradigm#Noun) of the language.	https://en.wiktionary.org/wiki/defective
+Q12547192		ML_MORPH-VALUE_INVARIABLE	invariable	Not [variable](https://en.wiktionary.org/wiki/variable#Adjective); [stationary](https://en.wiktionary.org/wiki/stationary#Adjective); [uniform](https://en.wiktionary.org/wiki/uniform#Adjective); [unchanged](https://en.wiktionary.org/wiki/unchanged#Adjective).	https://en.wiktionary.org/wiki/invariable
+Q12547192		ML_MORPH-VALUE_IRREGULAR	irregular	Not [regular](https://en.wiktionary.org/wiki/regular#Adjective).	https://en.wiktionary.org/wiki/irregular
+Q12547192		ML_MORPH-VALUE_ASPECT-STATIVE	stative	Of or relating to a [state](https://en.wiktionary.org/wiki/state#Noun) or [condition](https://en.wiktionary.org/wiki/condition#Noun).	https://en.wiktionary.org/wiki/stative
+Q12547192		ML_MORPH-VALUE_IMPERSONAL	impersonal	Not [personal](https://en.wiktionary.org/wiki/personal#Adjective); not representing a [person](https://en.wiktionary.org/wiki/person#Noun).	https://en.wiktionary.org/wiki/impersonal
+Q12547192		ML_MORPH-VALUE_UNCOUNTABLE	uncountable	That cannot be [counted](https://en.wiktionary.org/wiki/count#Verb); [innumerable](https://en.wiktionary.org/wiki/innumerable#Adjective).	https://en.wiktionary.org/wiki/uncountable
+Q12547192		ML_MORPH-VALUE_TENSE-PAST-REMOTE	remote past	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express an [action](https://en.wiktionary.org/wiki/action#Noun) that happened in the [distant](https://en.wiktionary.org/wiki/distant#Adjective) [past](https://en.wiktionary.org/wiki/past#Noun).	https://en.wiktionary.org/wiki/remote_past
+Q12547192		ML_MORPH-VALUE_TENSE-PAST-COMPOUND	past compound	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express a completed action in the past using an auxiliary. (French [passé composé](https://fr.wiktionary.org/wiki/passé_composé))
+Q12547192		ML_MORPH-VALUE_TENSE-PAST-ANTERIOR	past anterior	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express an action that occurred immediately before another past action. (French [passé antérieur](https://fr.wiktionary.org/wiki/passé_antérieur))
+Q12547192		ML_MORPH-VALUE_TENSE-FUTURE-ANTERIOR	future anterior	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express a future action that will be completed before another future action. (French [futur antérieur](https://fr.wiktionary.org/wiki/futur_antérieur))

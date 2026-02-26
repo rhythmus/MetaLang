@@ -10,3 +10,30 @@ Q41796		ML_LEX-STRUCT_SENTENCE	sentence	A syntactic unit that expresses a comple
 Q189756	ML_LEX-STRUCT_SENTENCE	ML_LEX-STRUCT_SENTENCE-INTERROGATIVE	question		
 Q1278140		ML_LEX-STRUCT_CONSTRUCTION	construction		
 Q322305	ML_LEX-STRUCT_CONSTRUCTION	ML_LEX-STRUCT_ABLATIVUS-ABSOLUTUS	ablativus absolutus		
+Q13022	ML_LEX-STRUCT_WORD	ML_LEX-STRUCT_NEOLOGISM	neologism	A newly coined word or expression.	https://en.wiktionary.org/wiki/neologism
+Q101244		ML_LEX-STRUCT_GLOSS	gloss	A brief explanation or definition of a word or phrase.	https://en.wiktionary.org/wiki/gloss
+Q101244		ML_LEX-STRUCT_AGENT	agent	The (actual, real) initiator of the action.	
+Q101244		ML_LEX-STRUCT_DENOTATION	denotation	The literal primary meaning of a word, in contrast to the feelings or ideas that the word suggests.	
+Q101244		ML_LEX-STRUCT_ATTRIBUTE	attribute	A quality or feature regarded as a characteristic or inherent part of someone or something.	
+Q101244		ML_LEX-STRUCT_AUGMENTATIVE	augmentative	A word with an enlarged meaning or with a coarser meaning compared to the neutral related word.	
+Q101244		ML_LEX-STRUCT_DIMINUTIVE	diminutive	A word with a small meaning compared to the neutral related word.	
+Q101244		ML_LEX-STRUCT_DOUBLET	doublet	Two or more words in a language that have different forms but the same etymological root.	
+Q101244		ML_LEX-STRUCT_ANTHROPONYM	anthroponym	A proper name of an individual person or group of people.	
+Q101244		ML_LEX-STRUCT_ETHNONYM	ethnonym	A proper name of a tribe or nation.	
+Q101244		ML_LEX-STRUCT_HYPOCORISTIC	hypocoric	A domestic or pet name, sometimes also shortened.	
+Q101244		ML_LEX-STRUCT_CALQUE	calque	A word or phrase borrowed from another language by literal word-for-word or root-for-root translation.	
+Q101244		ML_LEX-STRUCT_ENDING	ending		
+Q101244		ML_LEX-STRUCT_LEMMA	lemma		
+Q101244		ML_LEX-STRUCT_PALINDROME	palindrome		
+Q101244		ML_LEX-STRUCT_SYMBOL	symbol		
+Q101244		ML_ROOT_LEX-STRUCT_SIGN	sign		
+Q101244		ML_LEX-STRUCT_ANAGRAM	anagram		
+Q101244		ML_LEX-STRUCT_HYPERNYM	hypernym		
+Q101244		ML_LEX-STRUCT_HYPONYM	hyponym		
+Q101244		ML_LEX-STRUCT_MERONYM	meronym		
+Q101244		ML_LEX-STRUCT_HAPAX	hapax		
+Q101244		ML_LEX-STRUCT_IDIOM	idiom		
+Q101244		ML_LEX-STRUCT_PORTMANTEAU	portmanteau		
+Q101244		ML_LEX-STRUCT_LOCUTION	locution		
+Q101244		ML_LEX-STRUCT_SUBSTANTIVATION	substantivation		
+Q101244		ML_LEX-STRUCT_ANTONYM	antonym		

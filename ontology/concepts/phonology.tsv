@@ -2,3 +2,24 @@ WikiData QID	parent	ML_ID	label	description	wiktionary
 		ML_PHONOLOGY_FONETIEK	fonetiek		
 		ML_PHONOLOGY_SEGMENT	Phonology Segment		
 	ML_PHONOLOGY_SEGMENT	ML_PHONOLOGY_SEGMENT-AFFRICATE	affricate	A [consonant](#consonant) sound made up of a [plosive](#plosive) and a [fricative](#fricative) pronounced simultaneously, together behaving within a language's [phonology](https://en.wiktionary.org/wiki/phonology) as if one single consonant. English has the affricates /t͡ʃ/, as in _church_, and /d͡ʒ/, as in _judge_. Some languages are known to distinguish affricates from an otherwise-identical sequence of a plosive followed by a fricative, such as Polish [_czy_](https://en.wiktionary.org/wiki/czy#Polish) /t͡ʂɘ/ vs. [_trzy_](https://en.wiktionary.org/wiki/trzy#Polish) /tʂɘ/.	https://en.wiktionary.org/wiki/affricate
+Q101244		ML_PHONOLOGY_UNIT	Phonological Unit		
+Q20202	ML_PHONOLOGY_UNIT	ML_PHONOLOGY_PHONEME	phoneme	An indivisible unit of sound in a given language, an abstraction of the physical speech sounds.	https://en.wiktionary.org/wiki/phoneme
+Q38035	ML_PHONOLOGY_UNIT	ML_PHONOLOGY_CONSONANT	consonant	Any sound that is not the dominant sound of a syllable, the dominant sound generally being a vowel.	https://en.wiktionary.org/wiki/consonant
+Q36244	ML_PHONOLOGY_UNIT	ML_PHONOLOGY_VOWEL	vowel	A speech sound produced by a comparatively open configuration of the vocal tract.	https://en.wiktionary.org/wiki/vowel
+Q194441	ML_PHONOLOGY_UNIT	ML_PHONOLOGY_SEMIVOWEL	semivowel	A speech sound that is phonetically similar to a vowel sound, but functions as the boundary of a syllable rather than as the nucleus of a syllable. Also termed a glide.	https://en.wiktionary.org/wiki/semivowel, https://en.wiktionary.org/wiki/glide
+Q101244		ML_PHONOLOGY_PROSODY	Prosody		
+Q101244	ML_PHONOLOGY_PROSODY	ML_PHONOLOGY_STRESS	stress		
+Q101244	ML_PHONOLOGY_STRESS	ML_PHONOLOGY_OXYTONE	oxytone	With the stress upon the final syllable.	https://en.wiktionary.org/wiki/oxytone
+Q101244	ML_PHONOLOGY_STRESS	ML_PHONOLOGY_PAROXYTONE	paroxytone	With the stress upon the penultimate (second to last) syllable.	https://en.wiktionary.org/wiki/paroxytone
+Q101244	ML_PHONOLOGY_STRESS	ML_PHONOLOGY_PROPAROXYTONE	proparoxytone	With the stress upon the antepenultimate (third to last) syllable.	https://en.wiktionary.org/wiki/proparoxytone
+Q101244	ML_PHONOLOGY_STRESS	ML_PHONOLOGY_PROPAROXYTONE-APPARENT	apparent proparoxytone	A word ending in an unstressed diphthong that can be pronounced as either paroxytone or proparoxytone.	
+Q101244	ML_PHONOLOGY_STRESS	ML_PHONOLOGY_BIS-ESDRUXULA	bis-esdruxula	A word tonicly accented on the syllable before the antepenultimate.	
+Q101244		ML_PHONOLOGY_PROCESS	Phonological Process		
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_APHERESIS	apheresis	The loss of one or more sounds from the beginning of a word.	https://en.wiktionary.org/wiki/apheresis
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_APOCOPE	apocope	The loss of one or more sounds from the end of a word.	https://en.wiktionary.org/wiki/apocope
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_SYNCOPE	syncope	The loss of one or more sounds from the interior of a word.	https://en.wiktionary.org/wiki/syncope
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_FORTITION	fortition	A consonant change in which a sound becomes "stronger" or more constricted.	https://en.wiktionary.org/wiki/fortition
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_LENITION	lenition	A consonant change in which a sound becomes "weaker" or less constricted.	https://en.wiktionary.org/wiki/lenition
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_BRAQUISSEMIA	braquissemia	Reduction of a word.	
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_EPENTHESIS	epenthesis	The addition of one or more sounds to a word, especially to the interior of a word.	https://en.wiktionary.org/wiki/epenthesis
+Q101244	ML_PHONOLOGY_PROCESS	ML_PHONOLOGY_ANAPTYXIS	anaptyxis	The insertion of a vowel between two consonants to aid pronunciation.	https://en.wiktionary.org/wiki/anaptyxis

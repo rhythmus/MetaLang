@@ -11,3 +11,13 @@ WikiData QID	parent	ML_ID	label	description	wiktionary
 		ML_LANGUAGE_pt-PT	Portugees, Portugal		
 		ML_LANGUAGE_ru	Russisch, Rusland		
 		ML_LANGUAGE_tr	Turkish		
+Q101244		ML_LANGUAGE_TYPE	Language Type		
+Q252062	ML_LANGUAGE_TYPE	ML_LANGUAGE_ARTIFICIAL	artificial language	A language developed artificially by one or more persons to supply a specific use need.	https://en.wiktionary.org/wiki/artificial_language
+Q45762	ML_LANGUAGE_TYPE	ML_LANGUAGE_EXTINCT	extinct language	A language that has no remaining native speakers and no descendants.	https://en.wiktionary.org/wiki/extinct_language
+Q12035	ML_LANGUAGE_TYPE	ML_LANGUAGE_FRANCA	lingua franca	A language adopted between speakers whose native languages are incompatible.	https://en.wiktionary.org/wiki/lingua_franca
+Q12821	ML_LANGUAGE_TYPE	ML_LANGUAGE_DEAD	dead language	A language that is no longer in active use and survives only through documents.	https://en.wiktionary.org/wiki/dead_language
+Q33288	ML_LANGUAGE_TYPE	ML_LANGUAGE_NATURAL	natural language	A language developed naturally by people according to their communication needs.	https://en.wiktionary.org/wiki/natural_language
+Q101244		ML_LANGUAGE_VARIETY	Language Variety		
+Q33292	ML_LANGUAGE_VARIETY	ML_LANGUAGE_DIALECT	dialect	A variety of a language that is characteristic of a particular group of the language's speakers.	https://en.wiktionary.org/wiki/dialect
+Q1134005	ML_LANGUAGE_VARIETY	ML_LANGUAGE_SOCIOLECT	sociolect	The variety of language, a dialect, used by a particular social class.	https://en.wiktionary.org/wiki/sociolect
+Q44243	ML_LANGUAGE_VARIETY	ML_LANGUAGE_IDIOLECT	idiolect	A person’s individual and unique use of language.	https://en.wiktionary.org/wiki/idiolect

@@ -7,3 +7,26 @@ Q845653		ML_EDITORIAL_etc	etcetera
 		ML_CUSTOM_SPREEK-UIT-LEES	spreek uit, lees		
 		ML_LEX-STRUCT_ALTERNATIVE-FORM	alternative form	In definitions: An "alternative form" of a given word is another spelling of that word which is pronounced differently: for example, _killikinick_ is an alternative form of _kinnikinnick_. (A spelling which is pronounced the same is an "alternative spelling": for example, _judgement_ is an alternative spelling of _judgment_.) / As a header: The header "Alternative forms" [encompasses](https://en.wiktionary.org/wiki/Wiktionary:Entry_layout#Alternative_forms) both alternative spellings (_judgement_, _judgment_; _sulphur_, _sulfur_) and alternative forms (_killikinick_, _kinnikinnick_), as well as differences in hyphenation (_tea-cup_, _teacup_), capitalization (_LASER_, _laser_), and other similar differences (_naïveté_, _naiveté_).	
 		ML_LEX-STRUCT_IDEM	idem, gelijk woord of gelijke uitdrukking		
+Q101244		ML_EDITORIAL_REGISTER	Linguistic Register		
+Q101244	ML_EDITORIAL_REGISTER	ML_EDITORIAL_FORMAL	formal	Language used in formal or official contexts.	https://en.wiktionary.org/wiki/formal
+Q101244	ML_EDITORIAL_REGISTER	ML_EDITORIAL_INFORMAL	informal	Language used in informal or everyday contexts.	https://en.wiktionary.org/wiki/informal
+Q101244	ML_EDITORIAL_REGISTER	ML_EDITORIAL_SLANG	slang	Informal language use within a limited environment or a specific group.	https://en.wiktionary.org/wiki/slang
+Q101244	ML_EDITORIAL_REGISTER	ML_EDITORIAL_LEGAL	legal	Language used in legal literature and in the judiciary.	https://en.wiktionary.org/wiki/legal
+Q101244		ML_EDITORIAL_STYLE	Linguistic Style		
+Q101244	ML_EDITORIAL_STYLE	ML_EDITORIAL_ARCHAIC	archaic	Words or meanings that are no longer in active use and which speakers may have trouble understanding.	https://en.wiktionary.org/wiki/archaic
+Q101244	ML_EDITORIAL_STYLE	ML_EDITORIAL_HUMOROUS	humorous	Playful or ironic language use.	https://en.wiktionary.org/wiki/humorous
+Q101244	ML_EDITORIAL_STYLE	ML_EDITORIAL_DEROGATORY	derogatory	Words or idioms intended to ridicule or hang out the person or thing it denotes.	https://en.wiktionary.org/wiki/derogatory
+Q101244	ML_EDITORIAL_STYLE	ML_EDITORIAL_FIGURATIVE	figurative	Words which, in addition to their original meaning, are used in a transferred or metaphorical meaning.	https://en.wiktionary.org/wiki/figurative
+Q101244	ML_EDITORIAL_STYLE	ML_EDITORIAL_SIMILE	simile	A figure of speech where one thing is compared to another using "as" or "like".	https://en.wiktionary.org/wiki/simile
+Q101244	ML_EDITORIAL_STYLE	ML_EDITORIAL_EUPHEMISM	euphemism	A mild or indirect word or expression substituted for one considered to be too harsh or blunt.	https://en.wiktionary.org/wiki/euphemism
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_BARBARISM	barbarism		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_ABUS-DE-LANGAGE	abus de langage		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_CONTEMPORARY	contemporary		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_DIDACTIC	didactic		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_IRONIC	ironic		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_LITERARY	literary		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_AMELIORATIVE	ameliorative		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_POETIC	poetic		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_VULGAR	vulgar		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_DERISION	derision		
+Q12547192	ML_EDITORIAL_STYLE	ML_EDITORIAL_COMMON	common/standard		

@@ -8,7 +8,7 @@ Q28833099	ML_POS_CONJUNCTION	ML_POS_CONJ-COORD	coordinative conjunction
 	ML_POS_CONJUNCTION	ML_POS_CONJ-SUB	subordinative conjunction		
 Q36484		ML_POS_CONJUNCTION	conjunction	A word used to join other words or phrases together into sentences.	https://en.wiktionary.org/wiki/conjunction
 Q34793275	ML_POS_PRONOUN	ML_POS_DEMONSTRATIVE-PRONOUN	demonstrative pronoun		
-	Q1306636	ML_POS_DET	ML_CUSTOM_INTERR	A noun modifier that expresses the in-context reference or quantity of a noun or noun phrase. Determiners are often considered adjectives, but in fact are not quite the same; for example, in English, [_big_](https://en.wiktionary.org/wiki/big#English) is an adjective, so “the big car” is grammatical while *“He saw big car” is not, but [_some_](https://en.wiktionary.org/wiki/some#English) is a determiner, so *“the some car” is not grammatical while “He saw some car” is. In English, adjectives can _sometimes_ stand alone without a noun, while determiners nearly _always_ can (contrast *“He saw big” with “He saw some”), such that they are sometimes considered pronouns as well as adjectives.	https://en.wiktionary.org/wiki/determiner
+Q1306636	ML_POS_DET	ML_POS_DETERMINER	determiner	A noun modifier that expresses the in-context reference or quantity of a noun or noun phrase. Determiners are often considered adjectives, but in fact are not quite the same; for example, in English, [_big_](https://en.wiktionary.org/wiki/big#English) is an adjective, so “the big car” is grammatical while *“He saw big car” is not, but [_some_](https://en.wiktionary.org/wiki/some#English) is a determiner, so *“the some car” is not grammatical while “He saw some car” is. In English, adjectives can _sometimes_ stand alone without a noun, while determiners nearly _always_ can (contrast *“He saw big” with “He saw some”), such that they are sometimes considered pronouns as well as adjectives.	https://en.wiktionary.org/wiki/determiner
 Q83034		ML_POS_INTERJ	interjection	An expression of emotion ("ouch!", "wow!") or any of several kinds of expression that functions as a replacement of a sentence ([prosentence](https://en.wiktionary.org/wiki/prosentence)) or that are not syntactically connected to a sentence, including curses ("damn!"), greetings ("hey", "bye"), response particles ("okay", "oh!", "m-hm", "huh?"), and hesitation markers ("uh", "er", "um"), and perhaps profanities, discourse markers and fillers.	https://en.wiktionary.org/wiki/interjection
 Q1401131	ML_POS_NOUN	ML_POS_NOUN	noun	A word that refers to a person (such as an [_actress_](https://en.wiktionary.org/wiki/actress#English)), a place, a physical thing (such as [_wood_](https://en.wiktionary.org/wiki/wood#English)), or concept (such as [_beauty_](https://en.wiktionary.org/wiki/beauty#English), [_joy_](https://en.wiktionary.org/wiki/joy#English), or [_time_](https://en.wiktionary.org/wiki/time#English)). See also [countable](#countable), [uncountable](#uncountable) and [plural](#plural).	https://en.wiktionary.org/wiki/noun
 Q147101	ML_POS_NOUN	ML_POS_NOUN-COMMON	common noun		
@@ -35,6 +35,7 @@ Q814722	ML_POS_VERB	ML_POS_VERB-PTCP	participle	A form of a [verb](#verb) that m
 Q781194		ML_POS_X	other / unclassified		
 	ML_POS_PTCL	ML_POS_FUT-PTCL	future particle		
 		ML_CUSTOM_IEMAND-S	iemand(s)		
+		ML_CUSTOM_PERF	perfect	The [aspect](#aspect) of a verb indicating that the action described is completed. In English, it consists of the verb _have_ + the past participle, e.g. _Tom has painted the fence_ or _Tom has taken medicine_. Depending on the tense of _have_ one can have present perfect, which are represented in the previous examples, or past perfect: _Tom had painted the fence_, _Tom had taken medicine_. _To have painted_ is a perfect infinitive. See also [_Imperfect_](#imperfect). Not to be confused with [_perfective_](#perfective).	https://en.wiktionary.org/wiki/perfect
 Q12547192		ML_POS_IMPERF	imperfective tense		
 Q2517088		ML_POS_IMPERS	impersonal passive voice		
 Q2825406	ML_CUSTOM_ADV	ML_CUSTOM_MULT-ADV	multiplicative adverb		
@@ -51,3 +52,7 @@ Q177691		ML_CUSTOM_T	(grammatical) tense
 Q1317831		ML_POS_ACT	active (voice)		
 Q3734650	ML_CUSTOM_ADV	ML_POS_ADV-GR	adverb phrase		
 Q1778442	ML_POS_VERB	ML_CUSTOM_V-GR	verb phrase		
+Q24905		ML_POS_VERB	verb	A word that usually serves to indicate an action, event, or state.	https://en.wiktionary.org/wiki/verb
+Q24905	ML_POS_VERB	ML_POS_VERB-TRANSITIVE	transitive verb	A verb which requires one or more objects.	https://en.wiktionary.org/wiki/transitive_verb
+Q24905	ML_POS_VERB	ML_POS_VERB-INTRANSITIVE	intransitive verb	A verb that does not take a direct object.	https://en.wiktionary.org/wiki/intransitive_verb
+Q12547192	ML_POS_VERB	ML_POS_VERB-BITRANSITIVE	bitransitive verb		
