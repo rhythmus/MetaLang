@@ -1,5 +1,5 @@
-import { Registry } from '../packages/core/src/registry.js';
-import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.js';
+import { Registry } from '../packages/core/src/registry.ts';
+import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.ts';
 import type { Concept } from '@metalang/schema';
 import * as fs from 'fs';
 import * as path from 'path';

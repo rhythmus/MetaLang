@@ -79,6 +79,28 @@
         "ML_LEX-STRUCT_GLOSS": {
             "id": "ML_LEX-STRUCT_GLOSS",
             "singular": "glose"
-        }
+        },
+        ".": "ML_PUNCTUATION_FULL-STOP",
+        ",": "ML_PUNCTUATION_COMMA",
+        ":": "ML_PUNCTUATION_COLON",
+        ";": "ML_PUNCTUATION_SEMICOLON",
+        "?": "ML_PUNCTUATION_QUESTION-MARK",
+        "!": "ML_PUNCTUATION_EXCLAMATION-MARK",
+        "\"": "ML_PUNCTUATION_QUOTATION-MARKS",
+        "'": "ML_PUNCTUATION_APOSTROPHE",
+        "-": "ML_PUNCTUATION_HYPHEN",
+        "(": "ML_PUNCTUATION_PARENTHESES",
+        ")": "ML_PUNCTUATION_CL-PUNCT",
+        "[": "ML_PUNCTUATION_BRACKETS",
+        "]": "ML_PUNCTUATION_CL-PUNCT",
+        "{": "ML_PUNCTUATION_BRACES",
+        "}": "ML_PUNCTUATION_CL-PUNCT",
+        "/": "ML_PUNCTUATION_SLASH",
+        "\\": "ML_PUNCTUATION_BACKSLASH",
+        "&": "ML_PUNCTUATION_AMPERSAND",
+        "*": "ML_PUNCTUATION_ASTERISK",
+        "@": "ML_PUNCTUATION_AT-SIGN",
+        "#": "ML_PUNCTUATION_HASH",
+        "%": "ML_PUNCTUATION_PERCENT"
     }
 }
