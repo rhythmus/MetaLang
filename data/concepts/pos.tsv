@@ -33,3 +33,28 @@ Q163750	ML_POS_VERB	ML_POS_VERB-AUX	auxiliary (verb)
 Q814722	ML_POS_VERB	ML_POS_VERB-PTCP	participle
 		ML_POS_VRAGEND-VOORNAAMWOORD	vragend voornaamwoord
 Q781194		ML_POS_X	other / unclassified
+
+
+	ML_POS_PTCL	ML_POS_FUT-PTCL	future particle
+
+		ML_CUSTOM_IEMAND-S	iemand(s)
+Q12547192		ML_POS_IMPERF	imperfective tense
+Q2517088		ML_POS_IMPERS	impersonal passive voice
+	Q1306636	ML_POS_DET	ML_CUSTOM_INTERR	question word
+Q2825406	ML_CUSTOM_ADV	ML_CUSTOM_MULT-ADV	multiplicative adverb
+	ML_POS_PTCL	ML_CUSTOM_NEG-PTCL	negative particle
+
+Q1194697		ML_CUSTOM_PASS	passive (voice)
+Q625420		ML_CUSTOM_PERFECT	perfective tense
+Q161873	ML_POS_ADP	ML_CUSTOM_POSTP	postpostion
+Q956030	ML_POS_PRONOUN	ML_POS_PRON-IND	indefinite pronoun
+Q11003	ML_POS_PRONOUN	ML_POS_PRON-INT	interrogative pronoun
+Q953129	ML_POS_PRONOUN	ML_POS_PRON-REFL	reflexive pronoun
+		ML_CUSTOM_SIMP	simple
+	ML_POS_PTCL	ML_CUSTOM_SUB-PTCL	subjunctive particle
+Q177691		ML_CUSTOM_T	(grammatical) tense
+
+Q1317831		ML_POS_ACT	active (voice)
+Q3734650	ML_CUSTOM_ADV	ML_POS_ADV-GR	adverb phrase
+
+Q1778442	ML_POS_VERB	ML_CUSTOM_V-GR	verb phrase
