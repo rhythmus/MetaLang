@@ -22,6 +22,7 @@ export type DomainID =
   | 'PHONOLOGY'
   | 'DISCOURSE'
   | 'ORTHOGRAPHY'
+  | 'PUNCTUATION'
   | 'EDITORIAL'
   | 'CUSTOM';
 

@@ -1,5 +1,6 @@
-import { Registry } from '../packages/core/src/registry.ts';
-import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.ts';
+import { Registry } from '../packages/core/src/registry.js';
+import { UD_PLUGIN_MANIFEST } from '../packages/plugin-ud/src/index.js';
+import type { Concept } from '@metalang/schema';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
@@ -16,8 +17,8 @@ async function runVerification() {
     const domainsPath = path.join(__dirname, '../data/domains.tsv');
     const conceptsPath = path.join(__dirname, '../data/concepts.tsv');
 
-    if (!fs.existsSync(domainsPath) || !fs.existsSync(conceptsPath)) {
-        throw new Error(`TSV files not found in data/`);
+    if (!fs.existsSync(domainsPath)) {
+        throw new Error(`TSV file not found: domains.tsv`);
     }
 
     const domainsTsv = fs.readFileSync(domainsPath, 'utf8');
@@ -40,7 +41,7 @@ async function runVerification() {
 
     if (concepts.length > 0) {
         console.log(`✅ Successfully normalized "${testTag}" to:`);
-        concepts.forEach(concept => {
+        concepts.forEach((concept: Concept) => {
             console.log(`   - ID: ${concept.id}`);
             console.log(`   - Domain: ${concept.domain}`);
             console.log(`   - Label: ${concept.label}`);
@@ -54,7 +55,7 @@ async function runVerification() {
     const parents = registry.getParents(childId);
     console.log(`\n🔍 Checking parents for ${childId}:`);
     if (parents.length > 0) {
-        parents.forEach(p => {
+        parents.forEach((p: Concept) => {
             console.log(`   - Parent: ${p.id} (${p.label})`);
         });
     } else {
