@@ -358,8 +358,11 @@ MetaLang implements a **Linguistic Provenance Layer** at the plugin manifest lev
 - Wiktionary licensing compatibility  
     15.3 Provenance and attribution requirements  
     15.4 Policy for shipping proprietary datasets (private plugin guidance)
-    
 
+### 15.5 Project Citation
+To ensure academic and institutional credit, MetaLang provides a machine-readable `CITATION.cff` file in the repository root. This file follows the **Citation File Format (CFF)** standard, allowing users to easily export bibliographic metadata (BibTeX, APA) for inclusion in research papers and technical reports. The `README.md` also provides a direct BibTeX snippet for quick reference.
+    
+    
 ## 16. Roadmap and Version Plan
 
 16.1 v1 MVP scope (must-have)  
