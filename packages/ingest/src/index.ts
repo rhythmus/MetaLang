@@ -70,8 +70,8 @@ program
             const terms = JSON.parse(rawData);
 
             const registry = new Registry();
-            const domainsPath = options.domains || '../../data/domains.tsv';
-            const conceptsPath = options.concepts || '../../data/concepts.tsv';
+            const domainsPath = options.domains || '../../ontology/domains.tsv';
+            const conceptsPath = options.concepts || '../../ontology/concepts.tsv';
 
             if (fs.existsSync(domainsPath) && fs.existsSync(conceptsPath)) {
                 registry.loadTSVData(

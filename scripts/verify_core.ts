@@ -14,8 +14,8 @@ async function runVerification() {
     console.log('--- MetaLang Verification ---');
 
     // 1. Load TSV Data
-    const domainsPath = path.join(__dirname, '../data/domains.tsv');
-    const conceptsPath = path.join(__dirname, '../data/concepts.tsv');
+    const domainsPath = path.join(__dirname, '../ontology/domains.tsv');
+    const conceptsPath = path.join(__dirname, '../ontology/concepts.tsv');
 
     if (!fs.existsSync(domainsPath)) {
         throw new Error(`TSV file not found: domains.tsv`);
@@ -23,8 +23,8 @@ async function runVerification() {
 
     const domainsTsv = fs.readFileSync(domainsPath, 'utf8');
 
-    // Read all concept files from data/concepts/
-    const conceptsDir = path.join(__dirname, '../data/concepts');
+    // Read all concept files from ontology/concepts/
+    const conceptsDir = path.join(__dirname, '../ontology/concepts');
     const conceptFiles = fs.readdirSync(conceptsDir).filter(f => f.endsWith('.tsv'));
     const conceptsTsvs = conceptFiles.map(f => fs.readFileSync(path.join(conceptsDir, f), 'utf8'));
 

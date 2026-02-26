@@ -107,7 +107,7 @@ const GitHubSubmitButton: React.FC<{ content: string }> = ({ content }) => {
                 title: `Ontology Update: ${timestamp}`,
                 body: `This PR contains an automated ontology patch generated from the MetaLang Authoring GUI.\n\n### Summary\n- Branch: \`${branchName}\`\n- Generated at: ${new Date().toLocaleString()}`,
                 branchName,
-                filePath: 'data/metalang_seed_v1_1.json',
+                filePath: 'ontology/metalang_seed_v1_1.json',
                 content,
                 commitMessage: `feat(ontology): apply patch ${timestamp}`
             });

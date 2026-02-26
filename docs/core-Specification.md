@@ -230,11 +230,11 @@ Implemented in the `Registry` class:
 8.2 Machine-readable seed format specification (JSON schema)  
 8.3 Plugin manifest format specification (JSON schema)  
 8.4 TSV formats for curation and round-tripping
-- **data/concepts/<domain>.tsv**: Domain-specific concept files containing `WikiData QID`, `parent`, `ML_ID`, `label`.
+- **ontology/concepts/<domain>.tsv**: Domain-specific concept files containing `WikiData QID`, `parent`, `ML_ID`, `label`.
 - **domains.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`.
 
 ### 8.5 Modular Concept Architecture
-The transition from a monolithic `concepts.tsv` to a directory-based structure (`data/concepts/`) allows for better isolation of domain-specific data, easier human review, and fewer merge conflicts during collaborative curation.
+The transition from a monolithic `concepts.tsv` to a directory-based structure (`ontology/concepts/`) allows for better isolation of domain-specific data, easier human review, and fewer merge conflicts during collaborative curation.
 8.5 Lossless round-tripping requirements  
 8.6 Build pipeline
 

@@ -16,7 +16,7 @@ async function verifyPlugins() {
     console.log('--- MetaLang Plugin Ecosystem Verification ---');
 
     // 1. Load Seed Data
-    const seedPath = path.join(__dirname, '../data/metalang_seed_v1_1.json');
+    const seedPath = path.join(__dirname, '../ontology/metalang_seed_v1_1.json');
     const seedData = JSON.parse(fs.readFileSync(seedPath, 'utf8'));
     registry.loadSeed(seedData);
     console.log('✅ Seed data loaded.');

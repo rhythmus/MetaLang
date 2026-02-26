@@ -21,7 +21,7 @@ This is a monorepo containing the following components:
 - `packages/core`: The central ontology engine and registry.
 - `packages/plugin-ud`: Universal Dependencies tag mapping provider.
 - `docs/`: Comprehensive specifications and concept notes.
-- `data/`: The machine-readable "seed" data for the ontology.
+- `ontology/`: The machine-readable "seed" data for the ontology.
 
 ## 📖 Key Documentation
 
