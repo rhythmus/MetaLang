@@ -6,7 +6,7 @@ Q980357	MORPHOLOGY	MORPH-FEATURE	morphological feature (dimension), grammatical 
 Q728001	MORPHOLOGY	DERIVATION	derivation, word formation
 Q37437		SYNTAX	syntax
 Q1474213	SYNTAX	LEX-STRUCT	lexicographic structure, grammatical construction
-	SYNTAX	SYNTACTIC-RELATION	syntactic relation
+Q162130	SYNTAX	SYNTACTIC-RELATION	syntactic relation (functional role)
 Q39645		SEMANTICS	semantics
 Q16947106	SEMANTICS	SEMANTIC-CLASS	semantic class
 Q286576	SEMANTICS	REGISTER	register

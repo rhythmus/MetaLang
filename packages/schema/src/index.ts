@@ -23,6 +23,7 @@ export type DomainID =
   | 'DISCOURSE'
   | 'ORTHOGRAPHY'
   | 'PUNCTUATION'
+  | 'SYNTACTIC-RELATION'
   | 'EDITORIAL'
   | 'CUSTOM';
 
