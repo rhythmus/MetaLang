@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate-plugins": "tsx scripts/validate_plugins.ts"
+    "validate-plugins": "tsx scripts/validate_plugins.ts",
+    "version-all": "pnpm -r version"
   },
   "keywords": [],
   "author": "",
