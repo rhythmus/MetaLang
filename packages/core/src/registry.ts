@@ -1,4 +1,7 @@
-import type { Concept, Domain, PluginManifest, LinguisticMapping, ResolvedLinguisticMapping } from '@metalang/schema';
+import type {
+    Concept, Domain, PluginManifest, LinguisticMapping,
+    ResolvedLinguisticMapping, SearchOptions, SearchResult, PluginDescriptor
+} from '@metalang/schema';
 
 export interface ValidationResult {
     valid: boolean;
@@ -10,6 +13,8 @@ export class Registry {
     private domains: Map<string, Domain> = new Map();
     private tagSystems: Map<string, PluginManifest> = new Map();
     private linguisticMappings: Map<string, Map<string, LinguisticMapping>> = new Map(); // systemId -> ML_ID -> mapping
+
+    // --- Core Management ---
 
     /**
      * Load concepts and domains from TSV data strings.
@@ -126,11 +131,6 @@ export class Registry {
         const manifest = this.tagSystems.get(systemId);
         if (!manifest) return;
 
-        // Note: we are modifying the manifest.mappings object which might 
-        // cause issues if multiple mappings point to the same tag.
-        // However, this is the internal registry state. 
-        // For normalization, we keep a separate flat index if needed, 
-        // but here we just ensure the tag resolves.
         const existing = manifest.mappings[tag];
         if (!existing) {
             manifest.mappings[tag] = conceptId;
@@ -140,7 +140,7 @@ export class Registry {
                 manifest.mappings[tag] = [...ids, conceptId];
             }
         }
-        // If it's a rich mapping already, we don't overwrite it for now 
+        // If it's a rich mapping already, we don't overwrite it for now
         // to avoid losing the rich data, but normalization should handle it.
     }
 
@@ -176,11 +176,147 @@ export class Registry {
         };
     }
 
+    // --- Search & Resolution API ---
+
+    /**
+     * Search across all systems for exact or partial matches.
+     */
+    public search(query: string, options: SearchOptions = {}): SearchResult[] {
+        const results: SearchResult[] = [];
+        const systems = options.systemIds || Array.from(this.tagSystems.keys());
+        const exact = options.exactMatch ?? false;
+        const limit = options.limit ?? 100;
+
+        const q = query.toLowerCase();
+
+        for (const systemId of systems) {
+            const manifest = this.tagSystems.get(systemId);
+            if (!manifest) continue;
+
+            for (const [tag, value] of Object.entries(manifest.mappings)) {
+                const tagLower = tag.toLowerCase();
+                let matchType: SearchResult['matchType'] | null = null;
+                let conceptId: string;
+
+                if (tagLower === q) {
+                    matchType = 'exact';
+                } else if (!exact && tagLower.includes(q)) {
+                    matchType = 'partial';
+                }
+
+                if (matchType) {
+                    if (typeof value === 'object' && !Array.isArray(value)) {
+                        conceptId = (value as LinguisticMapping).id;
+                    } else {
+                        const ids = Array.isArray(value) ? value : [value as string];
+                        conceptId = ids[0] || '';
+                    }
+                    if (conceptId) {
+                        results.push({ systemId, conceptId, tag, matchType });
+                    }
+                    if (results.length >= limit) return results;
+                }
+            }
+        }
+
+        return results;
+    }
+
+    /**
+     * Resolve a tag to full Concept objects.
+     */
+    public resolve(tag: string, systemId: string): Concept[] {
+        return this.normalizeTag(tag, systemId);
+    }
+
+    /**
+     * Batch resolution of multiple tags.
+     */
+    public resolveTerms(tags: string[], systemId: string): Map<string, Concept[]> {
+        const result = new Map<string, Concept[]>();
+        for (const tag of tags) {
+            result.set(tag, this.resolve(tag, systemId));
+        }
+        return result;
+    }
+
+    // --- Cross-System Resolution (Conversion) ---
+
+    /**
+     * Convert a tag from one system to equivalent tags in another system.
+     */
+    public translateTag(tag: string, fromSystemId: string, toSystemId: string): string[] {
+        const conceptIds = this.resolveTag(tag, fromSystemId);
+        const result = new Set<string>();
+        for (const cid of conceptIds) {
+            this.translateConcept(cid, toSystemId).forEach(t => result.add(t));
+        }
+        return Array.from(result);
+    }
+
+    /**
+     * Get all tags for a concept in a specific system.
+     */
+    public translateConcept(conceptId: string, systemId: string): string[] {
+        const manifest = this.tagSystems.get(systemId);
+        if (!manifest) return [];
+
+        const tags: string[] = [];
+        for (const [tag, value] of Object.entries(manifest.mappings)) {
+            if (typeof value === 'object' && !Array.isArray(value)) {
+                if ((value as LinguisticMapping).id === conceptId) tags.push(tag);
+            } else {
+                const ids = Array.isArray(value) ? value : [value];
+                if (ids.includes(conceptId)) tags.push(tag);
+            }
+        }
+        return tags;
+    }
+
+    // --- Linguistic L10n API ---
+
+    /**
+     * Get rich forms for a concept with full hierarchical fallback.
+     */
+    public getForms(conceptId: string, systemId: string): ResolvedLinguisticMapping | undefined {
+        return this.resolveLinguisticMapping(conceptId, systemId);
+    }
+
+    public getSingular(conceptId: string, systemId: string): string[] {
+        const m = this.getForms(conceptId, systemId);
+        if (!m?.singular) return [];
+        return Array.isArray(m.singular) ? m.singular : [m.singular];
+    }
+
+    public getPlural(conceptId: string, systemId: string): string[] {
+        const m = this.getForms(conceptId, systemId);
+        if (!m?.plural) return [];
+        return Array.isArray(m.plural) ? m.plural : [m.plural];
+    }
+
+    public getAbbreviations(conceptId: string, systemId: string): string[] {
+        const m = this.getForms(conceptId, systemId);
+        return m?.abbreviations || [];
+    }
+
+    // --- Ontology & Connections ---
+
     /**
    * List all loaded concepts.
    */
     public listConcepts(): Concept[] {
         return Array.from(this.concepts.values());
+    }
+
+    /**
+     * Get a concept by its GUID.
+       */
+    public getConcept(id: string): Concept | undefined {
+        return this.concepts.get(id);
+    }
+
+    public getDomain(domainId: string): Domain | undefined {
+        return this.domains.get(domainId);
     }
 
     /**
@@ -191,42 +327,82 @@ export class Registry {
     }
 
     /**
-   * Apply a JSON Patch (RFC 6902) to the registry state.
-   * This is a simplified implementation for the GUI authoring flow.
-   */
-    public applyPatch(patch: any[]): void {
-        for (const op of patch) {
-            const parts = op.path.split('/').filter(Boolean);
-            if (parts[0] === 'concepts') {
-                const conceptId = parts[1];
-                const concept = this.concepts.get(conceptId);
-
-                if (op.op === 'add' || op.op === 'replace') {
-                    if (parts.length === 2) {
-                        this.concepts.set(conceptId, op.value);
-                    } else if (concept) {
-                        // Shallow property update for now
-                        (concept as any)[parts[2]] = op.value;
-                    }
-                } else if (op.op === 'remove' && parts.length === 2) {
-                    this.concepts.delete(conceptId);
-                }
-            }
-        }
-    }
-
-    /**
-     * Get a concept by its GUID.
-       */
-    public getConcept(id: string): Concept | undefined {
-        return this.concepts.get(id);
-    }
-
-    /**
-     * List all registered tag systems.
+     * Get all direct children of a concept.
      */
-    public listTagSystems(): PluginManifest[] {
-        return Array.from(this.tagSystems.values());
+    public getChildren(conceptId: string): Concept[] {
+        return Array.from(this.concepts.values()).filter(c => {
+            const parents = Array.isArray(c.parent) ? c.parent : [c.parent];
+            return parents.includes(conceptId);
+        });
+    }
+
+    /**
+     * Get all concepts belonging to a specific domain.
+     */
+    public getConceptsByDomain(domainId: string): Concept[] {
+        return Array.from(this.concepts.values()).filter(c => c.domain === domainId);
+    }
+
+    /**
+     * Get all parents of a concept.
+     */
+    public getParents(id: string): Concept[] {
+        const concept = this.getConcept(id);
+        if (!concept || !concept.parent) return [];
+        const parentIds = Array.isArray(concept.parent) ? concept.parent : [concept.parent];
+        return parentIds
+            .map((pid: string) => this.getConcept(pid))
+            .filter((c: Concept | undefined): c is Concept => !!c);
+    }
+
+    // --- Semantic & External Metadata ---
+
+    public getWikiDataId(conceptId: string): string | undefined {
+        return this.getConcept(conceptId)?.wikidata;
+    }
+
+    public getWikipediaUrl(conceptId: string, lang: string = 'en'): string | undefined {
+        const wikiId = this.getWikiDataId(conceptId);
+        if (!wikiId) return undefined;
+        // In a real app, we might query Wikidata API or have a localized mapping.
+        // For now, we return a standard link template or concept label if available.
+        const concept = this.getConcept(conceptId);
+        if (!concept) return undefined;
+        return `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(concept.label.replace(/ /g, '_'))}`;
+    }
+
+    public getWiktionaryUrl(term: string, lang: string = 'en'): string {
+        return `https://${lang}.wiktionary.org/wiki/${encodeURIComponent(term)}`;
+    }
+
+    // --- System Info ---
+
+    public getSystems(): PluginDescriptor[] {
+        return Array.from(this.tagSystems.values()).map(s => ({
+            id: s.descriptor.id,
+            name: s.descriptor.name,
+            language: s.descriptor.language ?? undefined,
+            scope: s.descriptor.scope ?? undefined,
+            domains: s.descriptor.domains ?? undefined
+        }));
+    }
+
+    public getLanguages(): string[] {
+        const langs = new Set<string>();
+        for (const s of this.tagSystems.values()) {
+            if (s.descriptor.language) langs.add(s.descriptor.language);
+        }
+        return Array.from(langs);
+    }
+
+    public getSystemsByLanguage(lang: string): PluginDescriptor[] {
+        return this.getSystems().filter(s => s.language === lang);
+    }
+
+    // --- Internal Helpers & Legacy Compatibility ---
+
+    public registerLinguisticMapping(manifest: PluginManifest): void {
+        this.registerTagSystem(manifest);
     }
 
     /**
@@ -312,15 +488,35 @@ export class Registry {
     }
 
     /**
-     * Get all parents of a concept.
+     * List all registered tag systems.
      */
-    public getParents(id: string): Concept[] {
-        const concept = this.getConcept(id);
-        if (!concept || !concept.parent) return [];
-        const parentIds = Array.isArray(concept.parent) ? concept.parent : [concept.parent];
-        return parentIds
-            .map((pid: string) => this.getConcept(pid))
-            .filter((c: Concept | undefined): c is Concept => !!c);
+    public listTagSystems(): PluginManifest[] {
+        return Array.from(this.tagSystems.values());
+    }
+
+    /**
+   * Apply a JSON Patch (RFC 6902) to the registry state.
+   * This is a simplified implementation for the GUI authoring flow.
+   */
+    public applyPatch(patch: any[]): void {
+        for (const op of patch) {
+            const parts = op.path.split('/').filter(Boolean);
+            if (parts[0] === 'concepts') {
+                const conceptId = parts[1];
+                const concept = this.concepts.get(conceptId);
+
+                if (op.op === 'add' || op.op === 'replace') {
+                    if (parts.length === 2) {
+                        this.concepts.set(conceptId, op.value);
+                    } else if (concept) {
+                        // Shallow property update for now
+                        (concept as any)[parts[2]] = op.value;
+                    }
+                } else if (op.op === 'remove' && parts.length === 2) {
+                    this.concepts.delete(conceptId);
+                }
+            }
+        }
     }
 
     /**

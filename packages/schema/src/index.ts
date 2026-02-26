@@ -96,3 +96,24 @@ export interface PluginManifest {
     [externalTag: string]: string | string[] | LinguisticMapping; // Flat or rich mappings
   };
 }
+
+export interface SearchOptions {
+  exactMatch?: boolean;
+  limit?: number;
+  systemIds?: string[];
+}
+
+export interface SearchResult {
+  systemId: string;
+  conceptId: string;
+  tag: string;
+  matchType: 'exact' | 'partial' | 'term' | 'abbreviation';
+}
+
+export interface PluginDescriptor {
+  id: string;
+  name: string;
+  language: string | undefined;
+  scope: string | undefined;
+  domains: string[] | undefined;
+}
