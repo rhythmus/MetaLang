@@ -2,7 +2,7 @@ WikiData QID	parent	ML_ID	label	description	wiktionary
 		ML_LEX-STRUCT_ABBREVIATION	abbreviation	A shortened form of a word or phrase, such as an [initialism](#initialism), [acronym](#acronym), or [clipping](#clipping).	https://en.wiktionary.org/wiki/abbreviation
 		ML_LEX-STRUCT_ACRONYM	acronym	An [abbreviation](#abbreviation), usually formed from the initial letters of a phrase, that is pronounced as the “word” it would spell, such as [_NATO_](https://en.wiktionary.org/wiki/NATO#English). / Contrast an [initialism](#initialism), where the letters are pronounced individually, and a [syllabic abbreviation](#syllabic_abbreviation), which is formed from syllables (rather than letters) of the underlying phrase.	https://en.wiktionary.org/wiki/acronym
 		ML_LEX-STRUCT_AFKORTING	afkorting		
-Q187931	ML_LEX-STRUCT_MULTIWORD-EXPRESSION	ML_LEX-STRUCT_EXPRESSION	expression		
+Q187931	ML_LEX-STRUCT_MULTIWORD-EXPRESSION	ML_LEX-STRUCT_EXPRESSION	expression	Applying the correct language to an argument.	https://en.wiktionary.org/wiki/expression
 Q5551966		ML_LEX-STRUCT_MULTIWORD-EXPRESSION	multi-word expression		
 Q6935164	ML_LEX-STRUCT_MULTIWORD-EXPRESSION	ML_LEX-STRUCT_PHRASE	phraseme		
 Q35102	ML_LEX-STRUCT_SENTENCE	ML_LEX-STRUCT_PROVERB	proverb	A [phrase](#phrase) expressing a basic truth which may be applied to common situations.	https://en.wiktionary.org/wiki/proverb

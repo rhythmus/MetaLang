@@ -1,10 +1,12 @@
 import csv
 import os
 import re
+import sys
 
 # Paths
 ONTOLOGY_DIR = 'ontology/concepts'
-SEED_FILE = 'ontology/todo_Wiktionary-terms/Q31178539_wiktionary_glossary_en.tsv'
+SEED_FILE = sys.argv[1] if len(sys.argv) > 1 else 'ontology/todo_Wiktionary-terms/Q31178539_wiktionary_glossary_en.tsv'
+DEFAULT_DOMAIN = sys.argv[2] if len(sys.argv) > 2 else 'CUSTOM'
 OUTPUT_DIR = 'ontology/concepts' # Overwrite the same directory
 
 def slugify(text):
@@ -85,30 +87,37 @@ def main():
                     while len(parts) < 6: parts.append('')
                     f.write('\t'.join(parts[:6]) + '\n' )
 
-    # 5. Handle new concepts (append to custom.tsv)
-    custom_path = os.path.join(ONTOLOGY_DIR, 'custom.tsv')
-    # If custom.tsv wasn't in all_files, create it
-    mode = 'a' if os.path.exists(custom_path) else 'w'
-    with open(custom_path, mode, encoding='utf-8') as f:
+    # 5. Handle new concepts (append to target file)
+    target_filename = f"{DEFAULT_DOMAIN.lower()}.tsv"
+    if DEFAULT_DOMAIN == "CUSTOM": target_filename = "custom.tsv"
+    elif DEFAULT_DOMAIN == "MORPH-VALUE": target_filename = "morph-value.tsv"
+    elif DEFAULT_DOMAIN == "MORPH-FEATURE": target_filename = "morph-feature.tsv"
+    # Ensure file exists in all_files list or created
+    target_path = os.path.join(ONTOLOGY_DIR, target_filename)
+
+    # Re-read existing file if it's the target file to avoid duplicate headers/rows
+    existing_ids = set(enriched_concepts.keys())
+
+    mode = 'a' if os.path.exists(target_path) else 'w'
+    with open(target_path, mode, encoding='utf-8') as f:
         if mode == 'w':
              f.write("WikiData QID\tparent\tML_ID\tlabel\tdescription\twiktionary\n")
         
         for item in new_concepts:
-            # Create a unique ML_ID
-            # Guess domain based on term? Or just CUSTOM for now.
-            # Let's try some basic keyword matching for domain
-            domain = "CUSTOM"
+            domain = DEFAULT_DOMAIN
             t = item['term'].lower()
-            if "case" in t or "person" in t or "number" in t or "gender" in t: domain = "MORPH-VALUE"
-            elif "verb" in t or "noun" in t or "adjective" in t or "adverb" in t or "pronoun" in t: domain = "POS"
-            elif "suffix" in t or "prefix" in t or "affix" in t: domain = "DERIVATION"
-            elif "accent" in t or "vowel" in t or "consonant" in t: domain = "PHONOLOGY"
+            # If default is CUSTOM, try to guess better
+            if domain == "CUSTOM":
+                if "case" in t or "person" in t or "number" in t or "gender" in t: domain = "MORPH-VALUE"
+                elif "verb" in t or "noun" in t or "adjective" in t or "adverb" in t or "pronoun" in t: domain = "POS"
+                elif "suffix" in t or "prefix" in t or "affix" in t: domain = "DERIVATION"
+                elif "accent" in t or "vowel" in t or "consonant" in t: domain = "PHONOLOGY"
             
             cid = f"ML_{domain}_{slugify(item['term'])}"
-            # Check for duplicates in enriched_concepts just in case
-            if cid in enriched_concepts: continue 
+            if cid in existing_ids: continue 
 
             f.write(f"\t\t{cid}\t{item['term']}\t{item['definition']}\t{item['link']}\n")
+            existing_ids.add(cid)
 
     print(f"Successfully merged {len(matched_terms)} existing terms and added {len(new_concepts)} new concepts.")
 
