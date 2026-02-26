@@ -375,7 +375,8 @@ To ensure academic and institutional credit, MetaLang provides a machine-readabl
 - richer semantic class system  
 
 16.4 Current Progress (Early 2026)
-- **Generic Language Plugins**: Established a pattern for national/global generic plugins (Portuguese, Norwegian, Czech, French, Breton, German, Polish, Romanian) mapping Wiktionary terms to canonical IDs.
+- **Generic Language Plugins**: Established a pattern for national/global generic plugins (Portuguese, Norwegian, Czech, French, Breton, German, Polish, Romanian, Spanish, Italian, Russian) mapping Wiktionary terms to canonical IDs.
+- **Ontology Enrichment**: Filled gaps in core `POS`, `PUNCTUATION`, and `RHETORIC` domains with global Wikidata QIDs and new concepts for specific numerals (distributive, fractional).
 - **Rhetorical Ontology Expansion**: Massive expansion of the `RHETORIC` domain (250+ concepts) with standardized `ML_RHETORIC_` prefixing and Wikidata cross-referencing.
 
 16.4 Long-term: ecosystem governance and registry model
@@ -387,8 +388,8 @@ A. Domain definitions (normative)
 B. Canonical ID naming guide (normative)  
 C. JSON Schema: seed file  
 D. JSON Schema: plugin file  
-E. Example plugins: UD / EAGLES / Generic Language Plugins (PT, NO, CS, FR, BR, DE, PL, RO, NL)
-F. Example conversion scenarios (POS conversion, abbreviation normalization, rhetorical search)  
+E. Example plugins: UD / EAGLES / Generic Language Plugins (PT, NO, CS, FR, BR, DE, PL, RO, NL, ES, IT, RU)
+F. Example conversion scenarios (POS conversion, abbreviation normalization, rhetorical search, multilingual mapping)  
 G. Glossary of terms used in this spec  
 H. Change log
 I. Editorial Standards and Curation Policy

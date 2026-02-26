@@ -11,9 +11,9 @@
 ## 🌍 Language Package Completion
 - [ ] **Exhaustive Language Plugins**: Complete the "Core 9" language set.
   - [x] English, German, Dutch, French, Greek, Polish.
-  - [ ] **Spanish (`es`)**: Develop exhaustive plugin mapping.
-  - [ ] **Italian (`it`)**: Develop exhaustive plugin mapping.
-  - [ ] **Russian (`ru`)**: Develop exhaustive plugin mapping.
+  - [x] **Spanish (`es`)**: Develop exhaustive plugin mapping.
+  - [x] **Italian (`it`)**: Develop exhaustive plugin mapping.
+  - [x] **Russian (`ru`)**: Develop exhaustive plugin mapping.
 - [ ] **Generic Plugin Upgrade**: Refactor generic language providers to leverage QID lookups for more robust fallbacks.
 
 ## 📏 Standardization & Interoperability

@@ -11,7 +11,7 @@ Linguistic terminology is fragmented. The same concept (e.g., an "article") migh
 MetaLang provides:
 
 - **Canonical Ontology**: A stable hierarchy of linguistic concepts across domains (POS, Morphology, Syntax, etc.).
-- **Multilingual Labels**: localized terms and abbreviations for end-users and software.
+- **Multilingual Labels**: localized terms and abbreviations for end-users and software (EN, NL, EL, DE, FR, PT, ES, IT, RU).
 - **Plugin Architecture**: A system for mapping any external tagset (e.g., UD, CELEX) to the MetaLang core.
 
 ## 📂 Project Structure

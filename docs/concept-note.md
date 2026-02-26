@@ -78,7 +78,7 @@ To ensure precision and accessibility, every `metalang` entry adheres to two cor
 2.  **Concept/Label Separation**: Never treat strings as canonical. The **Concept** (ID) is distinct from the **Label** (human string).
 
 ### Reconciliation Standards
-`metalang` maps to and integrates: **UD, EAGLES, CELEX, CGN, Wikidata QIDs**, ISOcat, GOLD, and various national school grammars.
+`metalang` maps to and integrates: **UD, EAGLES, CELEX, CGN, Wikidata QIDs**, ISOcat, GOLD, and various national school grammars (EN, NL, EL, DE, FR, PT, ES, IT, RU).
 
 ## 6. Technical Schema (Conceptual)
 ```typescript
