@@ -29,8 +29,8 @@ export const UD_PLUGIN_MANIFEST: PluginManifest = {
         'ADJ': ['ML_POS_ADJECTIVE'],
         'ADP': ['ML_POS_ADP'],
         'ADV': ['ML_POS_ADVERB'],
-        'AUX': ['ML_POS_V_AUX'],
-        'CCONJ': ['ML_POS_CONJ_COORD'],
+        'AUX': ['ML_POS_V-AUX'],
+        'CCONJ': ['ML_POS_CONJ-COORD'],
         'DET': ['ML_POS_DET'],
         'INTJ': ['ML_POS_INTERJ'],
         'NOUN': ['ML_POS_NOUN'],
@@ -39,44 +39,44 @@ export const UD_PLUGIN_MANIFEST: PluginManifest = {
         'PRON': ['ML_POS_PRON'],
         'PROPN': ['ML_POS_NOUN_PROP'],
         'PUNCT': ['ML_POS_PUNCT'],
-        'SCONJ': ['ML_POS_CONJ_SUB'],
+        'SCONJ': ['ML_POS_CONJ-SUB'],
         'SYM': ['ML_POS_SYMB'],
         'VERB': ['ML_POS_VERB'],
         'X': ['ML_POS_X'],
 
         // --- Core Features (Sample mappings) ---
         // Gender
-        'Gender=Fem': ['ML_MORPH_VAL_FEMALE'],
-        'Gender=Masc': ['ML_MORPH_VAL_MALE'],
-        'Gender=Neut': ['ML_MORPH_VAL_NEUTER'],
+        'Gender=Fem': ['ML_MORPH-VALUE_GENDER-FEMININE'],
+        'Gender=Masc': ['ML_MORPH-VALUE_GENDER-MASCULINE'],
+        'Gender=Neut': ['ML_MORPH-VALUE_GENDER-NEUTER'],
 
         // Number
-        'Number=Sing': ['ML_MORPH_VAL_SINGULAR'],
-        'Number=Plur': ['ML_MORPH_VAL_PLURAL'],
-        'Number=Dual': ['ML_MORPH_VAL_DUAL'],
+        'Number=Sing': ['ML_MORPH-VALUE_NUMBER-SINGULAR'],
+        'Number=Plur': ['ML_MORPH-VALUE_NUMBER-PLURAL'],
+        'Number=Dual': ['ML_MORPH-VALUE_NUMBER-DUAL'],
 
         // Case
-        'Case=Nom': ['ML_MORPH_VAL_NOMINATIVE'],
-        'Case=Acc': ['ML_MORPH_VAL_ACCUSATIVE'],
-        'Case=Gen': ['ML_MORPH_VAL_GENITIVE'],
-        'Case=Dat': ['ML_MORPH_VAL_DATIVE'],
-        'Case=Voc': ['ML_MORPH_VAL_VOCATIVE'],
+        'Case=Nom': ['ML_MORPH-VALUE_CASE-NOMINATIVE'],
+        'Case=Acc': ['ML_MORPH-VALUE_CASE-ACCUSATIVE'],
+        'Case=Gen': ['ML_MORPH-VALUE_CASE-GENITIVE'],
+        'Case=Dat': ['ML_MORPH-VALUE_CASE-DATIVE'],
+        'Case=Voc': ['ML_MORPH-VALUE_CASE-VOCATIVE'],
 
         // Person
-        'Person=1': ['ML_MORPH_VAL_1ST_PERSON'],
-        'Person=2': ['ML_MORPH_VAL_2ND_PERSON'],
-        'Person=3': ['ML_MORPH_VAL_3RD_PERSON'],
+        'Person=1': ['ML_MORPH-VALUE_PERSON-FIRST'],
+        'Person=2': ['ML_MORPH-VALUE_PERSON-SECOND'],
+        'Person=3': ['ML_MORPH-VALUE_PERSON-THIRD'],
 
         // Tense
-        'Tense=Pres': ['ML_MORPH_VAL_PRESENT'],
-        'Tense=Past': ['ML_MORPH_VAL_PAST'],
-        'Tense=Fut': ['ML_MORPH_VAL_FUTURE'],
+        'Tense=Pres': ['ML_MORPH-VALUE_PRESENT'],
+        'Tense=Past': ['ML_MORPH-VALUE_PAST'],
+        'Tense=Fut': ['ML_MORPH-VALUE_FUTURE'],
 
         // Mood
-        'Mood=Ind': ['ML_MORPH_VAL_INDICATIVE'],
-        'Mood=Imp': ['ML_MORPH_VAL_IMPERATIVE'],
-        'Mood=Sub': ['ML_MORPH_VAL_SUBJUNCTIVE'],
-        'Mood=Cnd': ['ML_MORPH_VAL_CONDITIONAL']
+        'Mood=Ind': ['ML_MORPH-VALUE_MOOD-INDICATIVE'],
+        'Mood=Imp': ['ML_MORPH-VALUE_MOOD-IMPERATIVE'],
+        'Mood=Sub': ['ML_MORPH-VALUE_MOOD-SUBJUNCTIVE'],
+        'Mood=Cnd': ['ML_MORPH-VALUE_MOOD-CONDITIONAL']
     }
 };
 
