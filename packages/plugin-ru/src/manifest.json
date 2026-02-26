@@ -1,0 +1,139 @@
+{
+    "descriptor": {
+        "id": "ru-generic",
+        "name": "Generic Russian",
+        "language": "ru",
+        "scope": "global",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value",
+            "editorial",
+            "lex_struct",
+            "syntax"
+        ],
+        "publisher": "MetaLang Project",
+        "authoritative": false,
+        "source": {
+            "title": "Generic Russian Linguistic Abbreviation Reference",
+            "author": "MetaLang Contributors",
+            "year": 2026,
+            "url": "https://metalang.org/ontology/ru",
+            "lastEditedAt": "2026-02-26T22:49:00.000Z"
+        }
+    },
+    "mappings": {
+        "ML_POS_NOUN": {
+            "id": "ML_POS_NOUN",
+            "singular": "имя существительное",
+            "plural": "имена существительные",
+            "abbreviations": [
+                "сущ."
+            ]
+        },
+        "ML_POS_ADJECTIVE": {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "имя прилагательное",
+            "plural": "имена прилагательные",
+            "abbreviations": [
+                "прил."
+            ]
+        },
+        "ML_POS_VERB": {
+            "id": "ML_POS_VERB",
+            "singular": "глагол",
+            "plural": "глаголы",
+            "abbreviations": [
+                "гл."
+            ]
+        },
+        "ML_POS_ADVERB": {
+            "id": "ML_POS_ADVERB",
+            "singular": "наречие",
+            "plural": "наречия",
+            "abbreviations": [
+                "нареч."
+            ]
+        },
+        "ML_POS_PRONOUN": {
+            "id": "ML_POS_PRONOUN",
+            "singular": "местоимение",
+            "plural": "местоимения",
+            "abbreviations": [
+                "мест."
+            ]
+        },
+        "ML_POS_PREPOSITION": {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "предлог",
+            "plural": "предлоги",
+            "abbreviations": [
+                "пред."
+            ]
+        },
+        "ML_POS_CONJUNCTION": {
+            "id": "ML_POS_CONJUNCTION",
+            "singular": "союз",
+            "plural": "союзы",
+            "abbreviations": [
+                "союз"
+            ]
+        },
+        "ML_POS_PTCL": {
+            "id": "ML_POS_PTCL",
+            "singular": "частица",
+            "plural": "частицы",
+            "abbreviations": [
+                "част."
+            ]
+        },
+        "ML_POS_INTERJ": {
+            "id": "ML_POS_INTERJ",
+            "singular": "междометие",
+            "plural": "междометия",
+            "abbreviations": [
+                "межд."
+            ]
+        },
+        "ML_MORPH-VALUE_GENDER-MASCULINE": {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "мужской род",
+            "abbreviations": [
+                "м. р.",
+                "муж."
+            ]
+        },
+        "ML_MORPH-VALUE_GENDER-FEMININE": {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "женский род",
+            "abbreviations": [
+                "ж. р.",
+                "жен."
+            ]
+        },
+        "ML_MORPH-VALUE_GENDER-NEUTER": {
+            "id": "ML_MORPH-VALUE_GENDER-NEUTER",
+            "singular": "средний род",
+            "abbreviations": [
+                "ср. р.",
+                "сред."
+            ]
+        },
+        "ML_MORPH-VALUE_NUMBER-SINGULAR": {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "единственное число",
+            "abbreviations": [
+                "ед. ч.",
+                "ед."
+            ]
+        },
+        "ML_MORPH-VALUE_NUMBER-PLURAL": {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "множественное число",
+            "abbreviations": [
+                "мн. ч.",
+                "мн."
+            ]
+        }
+    }
+}
