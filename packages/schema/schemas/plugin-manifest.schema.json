@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "MetaLang Plugin Manifest",
+    "type": "object",
+    "properties": {
+        "descriptor": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                },
+                "language": {
+                    "type": "string"
+                },
+                "scope": {
+                    "type": "string"
+                },
+                "domains": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "publisher": {
+                    "type": "string"
+                },
+                "authoritative": {
+                    "type": "boolean"
+                },
+                "source": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "author": {
+                            "type": "string"
+                        },
+                        "year": {
+                            "type": "integer"
+                        },
+                        "url": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "retrievedAt": {
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "bibtex": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "title",
+                        "url",
+                        "retrievedAt"
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "name"
+            ]
+        },
+        "mappings": {
+            "type": "object",
+            "additionalProperties": {
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "required": [
+        "descriptor",
+        "mappings"
+    ]
+}

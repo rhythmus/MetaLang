@@ -140,6 +140,26 @@ export class Registry {
             .map((pid: string) => this.getConcept(pid))
             .filter((c: Concept | undefined): c is Concept => !!c);
     }
+
+    /**
+     * Resolve a list of external tags to MetaLang concept IDs.
+     * Returns a Map where keys are the input tags.
+     */
+    public resolveTags(tags: string[], systemId: string): Map<string, string[]> {
+        const result = new Map<string, string[]>();
+        const system = this.tagSystems.get(systemId);
+
+        for (const tag of tags) {
+            if (!system) {
+                result.set(tag, []);
+                continue;
+            }
+            const mappingValue = system.mappings[tag] || [];
+            result.set(tag, Array.isArray(mappingValue) ? mappingValue : [mappingValue]);
+        }
+
+        return result;
+    }
 }
 
 // Singleton instance for default usage
