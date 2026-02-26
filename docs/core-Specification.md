@@ -58,6 +58,7 @@ To manage the increasing complexity of the project, the MetaLang specification h
 - PHONOLOGY / phonetics (v1.1+)
 - DISCOURSE / rhetoric
 - ORTHOGRAPHY / writing
+- PUNCTUATION (child of ORTHOGRAPHY)
 - EDITORIAL markers (if retained) 
 
 3.3 Concept properties (TSV columns)
@@ -229,8 +230,11 @@ Implemented in the `Registry` class:
 8.2 Machine-readable seed format specification (JSON schema)  
 8.3 Plugin manifest format specification (JSON schema)  
 8.4 TSV formats for curation and round-tripping
-- **concepts.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`
-- **domains.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`
+- **data/concepts/<domain>.tsv**: Domain-specific concept files containing `WikiData QID`, `parent`, `ML_ID`, `label`.
+- **domains.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`.
+
+### 8.5 Modular Concept Architecture
+The transition from a monolithic `concepts.tsv` to a directory-based structure (`data/concepts/`) allows for better isolation of domain-specific data, easier human review, and fewer merge conflicts during collaborative curation.
 8.5 Lossless round-tripping requirements  
 8.6 Build pipeline
 
