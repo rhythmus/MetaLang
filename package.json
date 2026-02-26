@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "validate-plugins": "tsx scripts/validate_plugins.ts",
-    "version-all": "pnpm -r version"
+    "version-all": "pnpm -r version",
+    "release": "pnpm validate-plugins && pnpm version-all && pnpm build"
   },
   "keywords": [],
   "author": "",

@@ -6,6 +6,7 @@ import { Registry } from '@metalang/core';
 import { fetchCategoryMembers, normalizeWiktionaryTitle } from './lib/wiktionary.js';
 import { classifyTerms } from './lib/classify.js';
 import { exportToTSV } from './lib/export.js';
+import { mergeTsvIntoSeed } from './lib/merge.js';
 
 const program = new Command();
 
@@ -113,6 +114,23 @@ program
             console.log(chalk.green(`✅ Export complete.`));
         } catch (error: any) {
             console.error(chalk.red(`❌ Error exporting: ${error.message}`));
+            process.exit(1);
+        }
+    });
+
+program
+    .command('merge')
+    .description('Merge curated TSV entries into a seed JSON file')
+    .argument('<tsv>', 'Curated TSV file')
+    .argument('<seed>', 'Target seed JSON file')
+    .option('--dry-run', 'Show what would be merged without writing')
+    .option('--domain <id>', 'Default domain for new concepts')
+    .action((tsv, seed, options) => {
+        console.log(chalk.blue(`🔄 Merging ${chalk.bold(tsv)} into ${chalk.bold(seed)}...`));
+        try {
+            mergeTsvIntoSeed(tsv, seed, options);
+        } catch (error: any) {
+            console.error(chalk.red(`❌ Error merging: ${error.message}`));
             process.exit(1);
         }
     });

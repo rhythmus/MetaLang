@@ -5343,6 +5343,4050 @@
       "externalRefs": {
         "wikidata": "Q625581"
       }
+    },
+    {
+      "id": "ML_RHETORIC_ACCUMULATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "accumulatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ACUTEZZA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "acutezza",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ADJUNCTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "adjunction",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AESTHETICS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "aesthetics",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AETIOLOGIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "aetiologia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AFFECTUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "affectus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ALLOIOSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "alloiosis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ALLOISIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "alloisis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AMBIGUA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ambigua",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AMPLIFICATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "amplificatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AMPLIFICATION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "amplification",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANACOENOSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "anacoenosis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANACOLUTHON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "anacoluthon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANADIPLOSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "anadiplosis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANALOGY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "analogy",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANAPHORA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "anaphora",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANAPODOTON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "anapodoton",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANECDOTE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "anecdote",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANIMORUM_MOTUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "animorum motus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANTANACLASIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "antanaclasis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANTIPTOSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "antiptosis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANTISTROPHE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "antistrophe",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ANTITHESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "antithesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APHAERESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "aphaeresis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APOCOPE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "apocope",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APOPHASIS/_APOPHESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "apophasis/ apophesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APORIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "aporia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APOSIOPESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "aposiopesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APOSTROPHE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "apostrophe",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_APPEALS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "appeals",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARETE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "arete",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARGUMENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "argument",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARGUMENTUM_AD_BACULUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "argumentum ad baculum",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARGUMENTUM_AD_HOMINEM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "argumentum ad hominem",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARRANGEMENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "arrangement",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARS_ARENGANDI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ars arengandi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARS_DICTAMINIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ars dictaminis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARS_POETRIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ars poetria",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARS_PRAEDICANDI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ars praedicandi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ARTISTIC_PROOFS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "artistic proofs",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ASYNDETON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "asyndeton",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AUDIENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "audience",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AUXESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "auxesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_AXIOMS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "axioms",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BACKING",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "backing",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BARBARISMUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "barbarismus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BASES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "bases",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BATHOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "bathos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BDELYGMA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "bdelygma",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BELLES_LETTRES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "belles lettres",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BELLETRISTICMOVEMENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "belletristicmovement",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BOMPHIOLOGIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "bomphiologia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BRACHYLOGIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "brachylogia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BREVITAS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "brevitas",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_BURDEN_OF_PROOF",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "burden of proof",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CANON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "canon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CAPTATIO_BENEVOLUNTATIAE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "captatio benevoluntatiae",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CATACHRESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "catachresis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CHARISMA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "charisma",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CIRCA_REM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "circa rem",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CLAIM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "claim",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CLASSICISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "classicism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CLIMAX",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "climax",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_COLON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "colon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_COMMON_TOPICS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "common topics",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONSUBSTANTIALITY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "consubstantiality",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONCLUSIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "conclusio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONFIRMATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "confirmatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONFUTATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "confutatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONSTRAINTS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "constraints",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONTINGENCY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "contingency",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONTEXT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "context",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONVERSIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "conversio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONVERSATION_MODEL",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "conversation model",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_COOKERY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "cookery",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CRITICAL_THEORY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "critical theory",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_CONCESSION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "concession",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DATA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "data",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DECONSTRUCTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "deconstruction",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DEDUCTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "deduction",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DELECTARE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "delectare",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DELIVERY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "delivery",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DEMOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "demos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DIALECTIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "dialectic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DIALLAGE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "diallage",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DICTAMEN",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "dictamen",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DISPOSITIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "dispositio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DISSOI_LOGOI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "dissoi logoi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DISTRIBUTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "distribution",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DIVISIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "divisio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DOCERE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "docere",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DRAMATISTIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "dramatistic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_DYSPHEMISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "dysphemism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ECPHONESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ecphonesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ELOCUTIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "elocutio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ENTHYMEME",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "enthymeme",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ENUMERATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "enumeratio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPANAPHORA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epanaphora",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPIDEICTIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epideictic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPIPHORA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epiphora",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPISTEMOLOGY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epistemology",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPISTROPHE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epistrophe",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPITHET",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epithet",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EPIZEUXIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "epizeuxis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ETHOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ethos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ETHOPOEIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ethopoeia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EUPHEMISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "euphemism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EVIDENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "evidence",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EXEMPLUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "exemplum",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EXIGENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "exigence",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EXORDIUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "exordium",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_EXPRESSION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "expression",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FABLE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "fable",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FACETIAE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "facetiae",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FACILITAS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "facilitas",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FACULTY_PSYCHOLOGY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "faculty psychology",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FALSE_CONSCIOUSNESS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "false consciousness",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FEMINIST_RHETORIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "feminist rhetoric",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FICTIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "fictio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FIELD-DEPENDENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "field-dependent",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FIELD-INVARIANT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "field-invariant",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FIGURE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "figure",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FORENSIC_ORATORY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "forensic oratory",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_FORUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "forum",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_GENS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "gens",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_GENERA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "genera",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_GRAECISMUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "graecismus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HERMENEUTICS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "hermeneutics",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HETEROGLOSSIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "heteroglossia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HEURISTICS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "heuristics",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HOMIOLOGIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "homiologia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HOMOIOTELEUTON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "homoioteleuton",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HORISMUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "horismus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HYPERBOLE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "hyperbole",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HYPOPHORA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "hypophora",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HYPOTHESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "hypothesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HYPSOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "hypsos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_HYPOZEUXIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "hypozeuxis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ICON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "icon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IDENTIFICATION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "identification",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IDEOLOGY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ideology",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IGNORATIO_ELENCHI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ignoratio elenchi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IMITATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "imitatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INARTISTIC_PROOFS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "inartistic proofs",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INDEFINITE_QUESTIONS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "indefinite questions",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INDIGNATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "indignatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INDUCTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "induction",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INGENIUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ingenium",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IN_RE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "in re",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INSTITUTIO_ORATORIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "institutio oratoria",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INSULTATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "insultatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INTERLACEMENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "interlacement",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INTERSUBJECTIVE_AGREEMENTS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "intersubjective agreements",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INVENTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "invention",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_INVITATIONAL_RHETORIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "invitational rhetoric",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IOCI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ioci",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_IRONY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "irony",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ISOCOLON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "isocolon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ISSUES_OF_DEFINITION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "issues of definition",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ISSUES_OF_FACT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "issues of fact",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ISSUES_OF_QUALITY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "issues of quality",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_JARGON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "jargon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_JIAN_SHI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "jian shi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_JUDICIAL",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "judicial",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_KAIROS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "kairos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_KATEGORIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "kategoria",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_KOINOI_TOPOI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "koinoi topoi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_KOINONIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "koinonia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_KOLAKEIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "kolakeia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LATINITAS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "latinitas",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LEXIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "lexis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LITERAE_HUMANAE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "literae humanae",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LITOTES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "litotes",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOCALISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "localism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOCI_COMMUNES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "loci communes",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOCUTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "locution",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOGICAL_FALLACY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "logical fallacy",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOGICAL_POSITIVISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "logical positivism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOGICAL_PROOF",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "logical proof",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOGOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "logos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_LOGOLOGY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "logology",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MAJOR_PREMISE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "major premise",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MAGNANIMITY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "magnanimity",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MATERIAL_FALLACY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "material fallacy",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MAXIM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "maxim",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MEIOSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "meiosis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MEMORY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "memory",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_META-NARRATIVES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "meta-narratives",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_METAPHOR",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "metaphor",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_METONYM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "metonym",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_METONYMY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "metonymy",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_METRON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "metron",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MINOR_PREMISE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "minor premise",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MODUS_INVENIENDI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "modus inveniendi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MODUS_PROFERENDI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "modus proferendi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MORAL_REASONING",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "moral reasoning",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MOTIVE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "motive",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_MOVERE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "movere",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NARRATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "narratio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NARRATION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "narration",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NECESSARY_CAUSE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "necessary cause",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NEGATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "negatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NEOPLATONISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "neoplatonism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NOEMA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "noema",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NOMOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "nomos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NON_SEQUITUR",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "non sequitur",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_NOTARIES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "notaries",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_OICTOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "oictos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_OMINATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ominatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ONOMATOPOEIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "onomatopoeia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_OPENING",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "opening",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_OPTATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "optatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ORCOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "orcos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_OXYMORON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "oxymoron",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PARADEIGMA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "paradeigma",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PARADOX",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "paradox",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PARALIPSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "paralipsis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PARALLEL_SYNTAX",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "parallel syntax",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PARONOMASIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "paronomasia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PARTICULAR_AUDIENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "particular audience",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PATHOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "pathos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PERFECTUS_ORATOR",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "perfectus orator",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PERIPHRASIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "periphrasis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PERORATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "peroratio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PERSONIFICATION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "personification",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PETITIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "petitio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PHALLOGOCENTRISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "phallogocentrism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PHRONESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "phronesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PHYSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "physis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PIAN",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "pian",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PISTIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "pistis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PLAUSIBILITY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "plausibility",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PLEONASM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "pleonasm",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POETRIAE,_ARS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "poetriae, ars",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POLIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "polis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POLYPHONIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "polyphonic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POLYPTOTON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "polyptoton",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POLYSYNDETON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "polysyndeton",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PORTRAYL",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "portrayl",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POSITION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "position",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POSITIVISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "positivism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_POSTMODERNISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "postmodernism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PRAEDICANDI,_ARS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "praedicandi, ars",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PRAGMATISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "pragmatism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PRESENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "presence",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PRESUMPTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "presumption",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PRONUNTIATO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "pronuntiato",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PROTREPTIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "protreptic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PRUDENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "prudence",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PSOGOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "psogos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PSYCHAGOGOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "psychagogos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PSYCHE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "psyche",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PUBLIC_SPHERE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "public sphere",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_PURPOSE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "purpose",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_QUADRIVIUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "quadrivium",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_QUAESTIONES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "quaestiones",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_REASONING_BY_CONTRARIES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "reasoning by contraries",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_REBUTTAL",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rebuttal",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "res",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETOR",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetor",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetores",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetoric",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORICAL_AUDIENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetorical audience",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORICAL_DISCOURSE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetorical discourse",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORICAL_OPPOSITION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetorical opposition",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORICAL_SITUATION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetorical situation",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORICAL_THEORY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetorical theory",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_RHETORIC_OF_FICTION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "rhetoric of fiction",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SALON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "salon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SALUTATIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "salutatio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SANNIO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "sannio",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SCHOLASTICISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "scholasticism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SCIENTIFIC_METHOD",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "scientific method",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SCIENTIFIC_REASONING",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "scientific reasoning",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SCIENTISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "scientism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SCIENTISTIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "scientistic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SECOND_SOPHISTIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "second sophistic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SEMANTICS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "semantics",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SEMIOTICS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "semiotics",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SENATUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "senatus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SENSUS_COMMUNIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "sensus communis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SENTENTIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "sententia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SHUI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "shui",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SIGN",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "sign",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SIGNIFYING",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "signifying",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SIMILE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "simile",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SKEPTICISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "skepticism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SOLECISMUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "solecismus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SOPHISTS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "sophists",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SORAISMUS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "soraismus",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SPREZZATURA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "Sprezzatura",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_STARTING_POINTS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "starting points",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_STASIS_SYSTEM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "stasis system",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_STATUS_QUO",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "status quo",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_STUDIA_HUMANITAS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "studia humanitas",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYLLEPSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "syllepsis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYLLOGISM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "syllogism",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYLLOGISTIC_LOGIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "syllogistic logic",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYMBOL",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "symbol",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYMBOLIC_INDUCEMENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "symbolic inducement",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYMPHERON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "sympheron",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYNCHYSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "synchysis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYNCOPE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "syncope",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_SYNECDOCHE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "synecdoche",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TAPINOSIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "tapinosis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TASTE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "taste",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TAUTOLOGIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "tautologia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TAXIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "taxis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TECHNE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "techne",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TERMINISTIC_SCREENS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "terministic screens",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_THEME",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "theme",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_THESIS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "thesis",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_THESMOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "thesmos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TONE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "tone",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TOPICAL_SYSTEMS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "topical systems",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TOPOGRAPHIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "topographia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TOPOTHESIA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "topothesia",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TOPOS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "Topos",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TOULMIN_MODEL",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "Toulmin model",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TRANSGRESSION",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "transgression",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TRANSLATIVE_ISSUE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "translative issue",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TRICOLON",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "tricolon",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TRIVIUM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "trivium",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_TROPES",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "tropes",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_UNDERSTATEMENT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "understatement",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_UNIVERSAL_AUDIENCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "universal audience",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_UOMO_UNIVERSALE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "uomo universale",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_UTTERANCE",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "utterance",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_VALIDITY",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "validity",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_VALIDITY_CLAIM",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "validity claim",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_VERBA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "verba",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_VISUAL_RHETORIC",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "visual rhetoric",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_VIR_BONUS_BENI_DICENDI",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "vir bonus beni dicendi",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_VITA_ACTIVA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "vita activa",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_WARRANT",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "warrant",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_WAYS_AND_MEANS",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "ways and means",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
+    },
+    {
+      "id": "ML_RHETORIC_ZEUGMA",
+      "domain": "register",
+      "labels": {
+        "en": {
+          "full": "zeugma",
+          "abbreviation": null
+        }
+      },
+      "externalRefs": {},
+      "systemMappings": {}
     }
   ]
 }

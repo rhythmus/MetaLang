@@ -33,9 +33,21 @@ This document outlines the staged implementation plan for the MetaLang project. 
 ## Stage 4: Interoperability & Expansion
 **Goal**: Industrialize ingestion and expand national standard support.
 - [x] **National Plugins**: Implement `@metalang/plugin-el-gr` and `@metalang/plugin-nl-taalunie`.
-- [ ] **Wiktionary Ingestion**: CLI tool to harvest registers and POS terms from Wiktionary.
-- [ ] **GitHub Integration**: PR creation flow directly from the GUI.
-- [ ] **Release Pipeline**: CI/CD for package versioning and deployment.
+- [x] **Wiktionary Ingestion**: CLI tool to harvest registers and POS terms from Wiktionary.
+- [x] **GitHub Integration**: PR creation flow directly from the GUI.
+      - [x] Research GitHub API (Octokit) requirements
+      - [x] Implement PR creation service in @metalang/core
+      - [x] Add "Submit as PR" to GUI Export Panel
+      - [x] Release Pipeline
+      - [x] Setup GitHub Actions for build & test
+- [x] **Release Pipeline**: CI/CD for package versioning and deployment.
+
+## Stage 5: Documentation & Deployment
+- [x] Comprehensive API reference
+- [x] Deployment guide for the GUI
+- [x] Automated versioning and NPM publishing
+- [x] Final Documentation & Release
 
 ---
+
 **Development Instruction**: Proceed through these stages sequentially. Verify each stage with unit tests against the `data/` seed files before moving to the next.
