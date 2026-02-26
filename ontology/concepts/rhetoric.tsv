@@ -403,3 +403,392 @@ Q87523478		ML_RHETORIC_⁝	tricolon	The pattern of three phrases in parallel, fo
 		ML_RHETORIC_UOMO-UNIVERSALE	uomo universale	The universal man.	https://en.wiktionary.org/wiki/uomo_universale
 		ML_RHETORIC_VISUAL-RHETORIC	visual rhetoric	A theoretical framework describing how visual images communicate, as opposed to aural or verbal messages.	https://en.wiktionary.org/wiki/visual_rhetoric
 		ML_RHETORIC_WAYS-AND-MEANS	ways and means	One of the five main matters that [Aristotle](https://en.wikipedia.org/wiki/Aristotle) claims political speakers make speeches on. It consists of the speaker's country's revenue and sources, as well as the expenditures of the country.	https://en.wiktionary.org/wiki/ways_and_means
+Q126002		ML_RHETORIC_CONCATENATION	concaténation		
+Q2992980		ML_RHETORIC_CONGLOBATION	conglobation		
+Q2167367		ML_RHETORIC_EPANALEPSE	épanalepse		
+Q3589041		ML_RHETORIC_EPANAPHORA_FR	épanaphore		
+Q1346372		ML_RHETORIC_EPANADIPLOSE	épanadiplose		
+Q3589049		ML_RHETORIC_EPANODE	épanode		
+Q3062199		ML_RHETORIC_EXPOLITION	expolition		
+Q3139911		ML_RHETORIC_HOMEOPTOTE	homéoptote		
+Q1346391		ML_RHETORIC_PALILOGY_FR	palilogie		
+Q660149		ML_RHETORIC_SYMPLOQUE	symploque		
+Q63105		ML_RHETORIC_THEMATISATION	thématisation		
+Q1962866		ML_RHETORIC_TRADUCTIO	traductio		
+Q506667		ML_RHETORIC_ALLUSION	allusion		
+Q2872535		ML_RHETORIC_AUTOCATEGOREME	autocatégorème		
+Q2872544		ML_RHETORIC_AUTOCORRECTION	autocorrection		
+Q1763329		ML_RHETORIC_METAPHORE-FILEE	métaphore filée		
+Q384975		ML_RHETORIC_PARRHESIA_FR	parrhésie		
+Q3412002		ML_RHETORIC_PERISSOLOGY_FR	périssologie		
+Q3382095		ML_RHETORIC_PHEBUS	phébus		
+Q2857711		ML_RHETORIC_ANTEPIPHORA	antépiphore		
+Q10413463		ML_RHETORIC_ANTICLIMAX_FR	anticlimax		
+Q3589010		ML_RHETORIC_ENUMERATION	énumération		
+Q2311336		ML_RHETORIC_EPIPHONEME	épiphonème		
+Q1347223		ML_RHETORIC_EPIPHRASE	épiphrase		
+Q3589311		ML_RHETORIC_EPITHETISME	épithétisme		
+Q1641487		ML_RHETORIC_HYPOTYPOSE	hypotypose		
+Q3589312		ML_RHETORIC_EPITROCHASME	épitrochasme		
+Q3144137		ML_RHETORIC_HYPERHYPOTAXE	hyperhypotaxe		
+Q1641440		ML_RHETORIC_HYPOTAXE	hypotaxe		
+Q17636333		ML_RHETORIC_PARADOXISME	paradoxisme		
+Q3364992		ML_RHETORIC_PAREMBOLE	parembole		
+Q3407462		ML_RHETORIC_PRONOMINATION	pronomination		
+Q3505716		ML_RHETORIC_SUSPENSION	suspension		
+Q3508159		ML_RHETORIC_SYNCHISE	synchise		
+Q3515458		ML_RHETORIC_TAPINOSE_FR	tapinose		
+Q2844256		ML_RHETORIC_AMPHIGOURI	amphigouri		
+Q577567		ML_RHETORIC_ANTILOGIE	antilogie		
+Q1135275		ML_RHETORIC_EPANORTHOSE	épanorthose		
+Q3455869		ML_RHETORIC_REGRESSION	régression		
+Q3192042		ML_RHETORIC_KAKEMPHATON	kakemphaton		
+Q208555		ML_RHETORIC_PARABLE_FR	parabole		
+Q1456360		ML_RHETORIC_HENDIADYS_FR	hendiadys		
+Q2868641		ML_RHETORIC_ASTEISME	astéisme		
+Q13409844		ML_RHETORIC_PROSOPOPOEIA_FR	prosopopée		
+Q3155487		ML_RHETORIC_ISOCOLIE	isocolie		
+Q211689		ML_RHETORIC_TETRAMETRE	tétramètre		
+Q2995862		ML_RHETORIC_CONTRE-ASSONANCE	contre-assonance		
+Q3577484		ML_RHETORIC_ECHO	écho		
+Q3367116		ML_RHETORIC_PARECHESE	paréchèse		
+Q2972210		ML_RHETORIC_PROSONOMASIE	prosonomasie		
+Q173287		ML_RHETORIC_ACROSTIC	acrostic	A [poem](https://en.wiktionary.org/wiki/poem#Noun) or other [form](https://en.wiktionary.org/wiki/form#Noun) of [writing](https://en.wiktionary.org/wiki/writing#Noun) in which the [first](https://en.wiktionary.org/wiki/first#Adjective) [letter](https://en.wiktionary.org/wiki/letter#Noun), [syllable](https://en.wiktionary.org/wiki/syllable#Noun) or [word](https://en.wiktionary.org/wiki/word#Noun) of each [line](https://en.wiktionary.org/wiki/line#Noun), [paragraph](https://en.wiktionary.org/wiki/paragraph#Noun) or other [recurring](https://en.wiktionary.org/wiki/recurring#Adjective) [feature](https://en.wiktionary.org/wiki/feature#Noun) in the [text](https://en.wiktionary.org/wiki/text#Noun) [spells](https://en.wiktionary.org/wiki/spell#Verb) out a word or a [message](https://en.wiktionary.org/wiki/message#Noun).	https://en.wiktionary.org/wiki/acrostic
+Q4672645		ML_RHETORIC_ACCISMUS	accismus	A [feigned](https://en.wiktionary.org/wiki/feign#Verb) [refusal](https://en.wiktionary.org/wiki/refusal#Noun) of something [earnestly](https://en.wiktionary.org/wiki/earnestly#Adverb) [desired](https://en.wiktionary.org/wiki/desire#Verb).	https://en.wiktionary.org/wiki/accismus
+Q1432603		ML_RHETORIC_ALOGISM	alogism	An [illogical](https://en.wiktionary.org/wiki/illogical#Adjective) [statement](https://en.wiktionary.org/wiki/statement#Noun).	https://en.wiktionary.org/wiki/alogism
+Q576853		ML_RHETORIC_ANTILABE	antilabe	A [technique](https://en.wiktionary.org/wiki/technique#Noun) in [drama](https://en.wiktionary.org/wiki/drama#Noun) in which a [single](https://en.wiktionary.org/wiki/single#Adjective) [verse](https://en.wiktionary.org/wiki/verse#Noun) line is [distributed](https://en.wiktionary.org/wiki/distribute#Verb) among two or [more](https://en.wiktionary.org/wiki/more#Adjective) [speakers](https://en.wiktionary.org/wiki/speaker#Noun).	https://en.wiktionary.org/wiki/antilabe
+Q618865		ML_RHETORIC_APOKOINU	apokoinu	A [construction](https://en.wiktionary.org/wiki/construction#Noun) in which a [word](https://en.wiktionary.org/wiki/word#Noun) or [phrase](https://en.wiktionary.org/wiki/phrase#Noun) serves as a [member](https://en.wiktionary.org/wiki/member#Noun) of [two](https://en.wiktionary.org/wiki/two#Numeral) [clauses](https://en.wiktionary.org/wiki/clause#Noun) or [sentences](https://en.wiktionary.org/wiki/sentence#Noun).	https://en.wiktionary.org/wiki/apokoinu
+Q622134		ML_RHETORIC_APROSDOKETON	aprosdoketon	A [figure](https://en.wiktionary.org/wiki/figure#Noun) in which an [unexpected](https://en.wiktionary.org/wiki/unexpected#Adjective) [word](https://en.wiktionary.org/wiki/word#Noun) or [phrase](https://en.wiktionary.org/wiki/phrase#Noun) [ends](https://en.wiktionary.org/wiki/end#Verb) a [sentence](https://en.wiktionary.org/wiki/sentence#Noun).	https://en.wiktionary.org/wiki/aprosdoketon
+Q1056345		ML_RHETORIC_CAPTATIO-BENEVOLENTIAE	captatio benevolentiae	A [rhetorical](https://en.wiktionary.org/wiki/rhetorical#Adjective) [technique](https://en.wiktionary.org/wiki/technique#Noun) aimed at [capturing](https://en.wiktionary.org/wiki/capture#Verb) the [goodwill](https://en.wiktionary.org/wiki/goodwill#Noun) of the [audience](https://en.wiktionary.org/wiki/audience#Noun).	https://en.wiktionary.org/wiki/captatio_benevolentiae
+Q1072524		ML_RHETORIC_CHIFFRE	chiffre	A [symbol](https://en.wiktionary.org/wiki/symbol#Noun) or [code](https://en.wiktionary.org/wiki/code#Noun) in [literature](https://en.wiktionary.org/wiki/literature#Noun) whose [meaning](https://en.wiktionary.org/wiki/meaning#Noun) is [obscure](https://en.wiktionary.org/wiki/obscure#Adjective).	https://en.wiktionary.org/wiki/chiffre
+Q989859		ML_RHETORIC_CHREIA	chreia	A [short](https://en.wiktionary.org/wiki/short#Adjective) [essay](https://en.wiktionary.org/wiki/essay#Noun) or [composition](https://en.wiktionary.org/wiki/composition#Noun) that [expounds](https://en.wiktionary.org/wiki/expound#Verb) on a [well-known](https://en.wiktionary.org/wiki/well-known#Adjective) [saying](https://en.wiktionary.org/wiki/saying#Noun) or [action](https://en.wiktionary.org/wiki/action#Noun).	https://en.wiktionary.org/wiki/chreia
+Q208674		ML_RHETORIC_CONTAMINATION	contamination	The [merging](https://en.wiktionary.org/wiki/merge#Verb) of [two](https://en.wiktionary.org/wiki/two#Numeral) or [more](https://en.wiktionary.org/wiki/more#Adjective) [words](https://en.wiktionary.org/wiki/word#Noun) into [one](https://en.wiktionary.org/wiki/one#Numeral).	https://en.wiktionary.org/wiki/contamination
+Q1123930		ML_RHETORIC_CONCESSIO	concessio	A [rhetorical](https://en.wiktionary.org/wiki/rhetorical#Adjective) [figure](https://en.wiktionary.org/wiki/figure#Noun) in which a [point](https://en.wiktionary.org/wiki/point#Noun) is [conceded](https://en.wiktionary.org/wiki/concede#Verb) to the [opponent](https://en.wiktionary.org/wiki/opponent#Noun).	https://en.wiktionary.org/wiki/concessio
+Q505271		ML_RHETORIC_CONSTRUCTIO-AD-SENSUM	constructio ad sensum	A [grammatical](https://en.wiktionary.org/wiki/grammatical#Adjective) [agreement](https://en.wiktionary.org/wiki/agreement#Noun) of a [word](https://en.wiktionary.org/wiki/word#Noun) with the [meaning](https://en.wiktionary.org/wiki/meaning#Noun) rather than the [form](https://en.wiktionary.org/wiki/form#Noun).	https://en.wiktionary.org/wiki/constructio_ad_sensum
+Q1209111		ML_RHETORIC_DIAPHORA	diaphora	The [repetition](https://en.wiktionary.org/wiki/repetition#Noun) of a [word](https://en.wiktionary.org/wiki/word#Noun) in a [different](https://en.wiktionary.org/wiki/different#Adjective) [sense](https://en.wiktionary.org/wiki/sense#Noun).	https://en.wiktionary.org/wiki/diaphora
+Q897398		ML_RHETORIC_DICOLON	dicolon	A [sentence](https://en.wiktionary.org/wiki/sentence#Noun) or [period](https://en.wiktionary.org/wiki/period#Noun) [consisting](https://en.wiktionary.org/wiki/consist#Verb) of [two](https://en.wiktionary.org/wiki/two#Numeral) [cola](https://en.wiktionary.org/wiki/colon#Noun).	https://en.wiktionary.org/wiki/dicolon
+Q1347507		ML_RHETORIC_EPONOMASIE	eponomasie	The [substitution](https://en.wiktionary.org/wiki/substitution#Noun) of a [name](https://en.wiktionary.org/wiki/name#Noun) for a [quality](https://en.wiktionary.org/wiki/quality#Noun) or [vice versa](https://en.wiktionary.org/wiki/vice_versa#Adverb).	https://en.wiktionary.org/wiki/eponomasie
+Q1382380		ML_RHETORIC_EVIDENZ	evidenz	A [description](https://en.wiktionary.org/wiki/description#Noun) so [vivid](https://en.wiktionary.org/wiki/vivid#Adjective) that the [hearer](https://en.wiktionary.org/wiki/hearer#Noun) [seems](https://en.wiktionary.org/wiki/seem#Verb) to [see](https://en.wiktionary.org/wiki/see#Verb) the [object](https://en.wiktionary.org/wiki/object#Noun).	https://en.wiktionary.org/wiki/evidenz
+Q1333333		ML_RHETORIC_EXEMPLUM	exemplum	A [brief](https://en.wiktionary.org/wiki/brief#Adjective) [story](https://en.wiktionary.org/wiki/story#Noun) used to [make](https://en.wiktionary.org/wiki/make#Verb) a [point](https://en.wiktionary.org/wiki/point#Noun) or [illustrate](https://en.wiktionary.org/wiki/illustrate#Verb) a [moral](https://en.wiktionary.org/wiki/moral#Adjective).	https://en.wiktionary.org/wiki/exemplum
+Q1427140		ML_RHETORIC_FLOSKEL	floskel	A [superficial](https://en.wiktionary.org/wiki/superficial#Adjective) or [hackneyed](https://en.wiktionary.org/wiki/hackneyed#Adjective) [phrase](https://en.wiktionary.org/wiki/phrase#Noun).	https://en.wiktionary.org/wiki/floskel
+Q1641379		ML_RHETORIC_HYPOPHORA	hypophora	A [figure](https://en.wiktionary.org/wiki/figure#Noun) in which a [speaker](https://en.wiktionary.org/wiki/speaker#Noun) [raises](https://en.wiktionary.org/wiki/raise#Verb) a [question](https://en.wiktionary.org/wiki/question#Noun) and then [immediately](https://en.wiktionary.org/wiki/immediately#Adverb) [answers](https://en.wiktionary.org/wiki/answer#Verb) it.	https://en.wiktionary.org/wiki/hypophora
+Q1663722		ML_RHETORIC_INCONZINNITY	inkonzinnität	The [deliberate](https://en.wiktionary.org/wiki/deliberate#Adjective) [avoidance](https://en.wiktionary.org/wiki/avoidance#Noun) of [parallel](https://en.wiktionary.org/wiki/parallel#Adjective) [structures](https://en.wiktionary.org/wiki/structure#Noun).	https://en.wiktionary.org/wiki/inkonzinnität
+Q1671839		ML_RHETORIC_INVOCATION	invocation	An [address](https://en.wiktionary.org/wiki/address#Noun) to a [deity](https://en.wiktionary.org/wiki/deity#Noun) or [muse](https://en.wiktionary.org/wiki/muse#Noun).	https://en.wiktionary.org/wiki/invocation
+Q1276680		ML_RHETORIC_CACOPHONY	cacophony	A [harsh](https://en.wiktionary.org/wiki/harsh#Adjective), [discordant](https://en.wiktionary.org/wiki/discordant#Adjective) [mixture](https://en.wiktionary.org/wiki/mixture#Noun) of [sounds](https://en.wiktionary.org/wiki/sound#Noun).	https://en.wiktionary.org/wiki/cacophony
+Q1783745		ML_RHETORIC_CONZINNITY	konzinnität	[Symmetry](https://en.wiktionary.org/wiki/symmetry#Noun) or [proportion](https://en.wiktionary.org/wiki/proportion#Noun) in [style](https://en.wiktionary.org/wiki/style#Noun).	https://en.wiktionary.org/wiki/konzinnität
+Q1057682		ML_RHETORIC_MALAPROPISM	malapropism	The [mistaken](https://en.wiktionary.org/wiki/mistaken#Adjective) [use](https://en.wiktionary.org/wiki/use#Noun) of a [word](https://en.wiktionary.org/wiki/word#Noun) in [place](https://en.wiktionary.org/wiki/place#Noun) of a [similar-sounding](https://en.wiktionary.org/wiki/similar-sounding#Adjective) one.	https://en.wiktionary.org/wiki/malapropism
+Q256716		ML_RHETORIC_MONTAGE	montage	The [process](https://en.wiktionary.org/wiki/process#Noun) of [editing](https://en.wiktionary.org/wiki/edit#Verb) [separate](https://en.wiktionary.org/wiki/separate#Adjective) [pieces](https://en.wiktionary.org/wiki/piece#Noun) into a [single](https://en.wiktionary.org/wiki/single#Adjective) [whole](https://en.wiktionary.org/wiki/whole#Noun).	https://en.wiktionary.org/wiki/montage
+Q28643		ML_RHETORIC_PARADIGMA	paradigma	A [typical](https://en.wiktionary.org/wiki/typical#Adjective) [example](https://en.wiktionary.org/wiki/example#Noun) or [pattern](https://en.wiktionary.org/wiki/pattern#Noun) of something.	https://en.wiktionary.org/wiki/paradigma
+Q7135771		ML_RHETORIC_PARAPROSDOKIAN	paraprosdokian	A [figure](https://en.wiktionary.org/wiki/figure#Noun) of [speech](https://en.wiktionary.org/wiki/speech#Noun) in which the [latter](https://en.wiktionary.org/wiki/latter#Adjective) [part](https://en.wiktionary.org/wiki/part#Noun) of a [sentence](https://en.wiktionary.org/wiki/sentence#Noun) or [phrase](https://en.wiktionary.org/wiki/phrase#Noun) is [unexpected](https://en.wiktionary.org/wiki/unexpected#Adjective).	https://en.wiktionary.org/wiki/paraprosdokian
+Q1567990		ML_RHETORIC_PLURALIS-AUCTORIS	pluralis auctoris	The [use](https://en.wiktionary.org/wiki/use#Noun) of the [first-person](https://en.wiktionary.org/wiki/first-person#Adjective) [plural](https://en.wiktionary.org/wiki/plural#Noun) by an [author](https://en.wiktionary.org/wiki/author#Noun) [referring](https://en.wiktionary.org/wiki/refer#Verb) to [themselves](https://en.wiktionary.org/wiki/themselves#Pronoun).	https://en.wiktionary.org/wiki/pluralis_auctoris
+Q1706700		ML_RHETORIC_PLURALIS-MAJESTATIS	pluralis majestatis	The [use](https://en.wiktionary.org/wiki/use#Noun) of a [plural](https://en.wiktionary.org/wiki/plural#Noun) [pronoun](https://en.wiktionary.org/wiki/pronoun#Noun) by a [monarch](https://en.wiktionary.org/wiki/monarch#Noun) or [other](https://en.wiktionary.org/wiki/other#Adjective) [high](https://en.wiktionary.org/wiki/high#Adjective) [official](https://en.wiktionary.org/wiki/official#Noun) [referring](https://en.wiktionary.org/wiki/refer#Verb) to [themselves](https://en.wiktionary.org/wiki/themselves#Pronoun).	https://en.wiktionary.org/wiki/pluralis_majestatis
+Q256495		ML_RHETORIC_PLURALIS-MODESTIAE	pluralis modestiae	The [use](https://en.wiktionary.org/wiki/use#Noun) of the [plural](https://en.wiktionary.org/wiki/plural#Noun) [referring](https://en.wiktionary.org/wiki/refer#Verb) to [oneself](https://en.wiktionary.org/wiki/oneself#Pronoun) as a [token](https://en.wiktionary.org/wiki/token#Noun) of [modesty](https://en.wiktionary.org/wiki/modesty#Noun).	https://en.wiktionary.org/wiki/pluralis_modestiae
+Q175780		ML_RHETORIC_POINTE	pointe	A [witty](https://en.wiktionary.org/wiki/witty#Adjective) or [ingenious](https://en.wiktionary.org/wiki/ingenious#Adjective) [thought](https://en.wiktionary.org/wiki/thought#Noun) or [remark](https://en.wiktionary.org/wiki/remark#Noun).	https://en.wiktionary.org/wiki/pointe
+Q1641421		ML_RHETORIC_PROKATALEPSIS	prokatalepsis	A [figure](https://en.wiktionary.org/wiki/figure#Noun) in which a [speaker](https://en.wiktionary.org/wiki/speaker#Noun) [anticipates](https://en.wiktionary.org/wiki/anticipate#Verb) and [responds](https://en.wiktionary.org/wiki/respond#Verb) to an [opponent's](https://en.wiktionary.org/wiki/opponent#Noun) [argument](https://en.wiktionary.org/wiki/argument#Noun).	https://en.wiktionary.org/wiki/prokatalepsis
+Q56296840		ML_RHETORIC_SERMOCINATIO	sermocinatio	A [figure](https://en.wiktionary.org/wiki/figure#Noun) in which a [speaker](https://en.wiktionary.org/wiki/speaker#Noun) [represents](https://en.wiktionary.org/wiki/represent#Verb) [another](https://en.wiktionary.org/wiki/another#Adjective) [person](https://en.wiktionary.org/wiki/person#Noun) as [speaking](https://en.wiktionary.org/wiki/speak#Verb).	https://en.wiktionary.org/wiki/sermocinatio
+Q1341857		ML_RHETORIC_STICHOMYTHY	stichomythie	A [technique](https://en.wiktionary.org/wiki/technique#Noun) in [verse](https://en.wiktionary.org/wiki/verse#Noun) [drama](https://en.wiktionary.org/wiki/drama#Noun) in which [sequences](https://en.wiktionary.org/wiki/sequence#Noun) of [single](https://en.wiktionary.org/wiki/single#Adjective) [alternating](https://en.wiktionary.org/wiki/alternate#Verb) [lines](https://en.wiktionary.org/wiki/line#Noun) are [given](https://en.wiktionary.org/wiki/give#Verb) to [each](https://en.wiktionary.org/wiki/each#Adjective) [speaker](https://en.wiktionary.org/wiki/speaker#Noun).	https://en.wiktionary.org/wiki/stichomythy
+Q464810		ML_RHETORIC_APORIA	aporia	A [state](https://en.wiktionary.org/wiki/state#Noun) of [puzzlement](https://en.wiktionary.org/wiki/puzzlement#Noun) or [doubt](https://en.wiktionary.org/wiki/doubt#Noun).	https://en.wiktionary.org/wiki/aporia
+Q211756		ML_RHETORIC_ARGUMENTUM-AD-BACULUM	argumentum ad baculum	An [argument](https://en.wiktionary.org/wiki/argument#Noun) [resorting](https://en.wiktionary.org/wiki/resort#Verb) to the [threat](https://en.wiktionary.org/wiki/threat#Noun) of [force](https://en.wiktionary.org/wiki/force#Noun).	https://en.wiktionary.org/wiki/argumentum_ad_baculum
+Q177114		ML_RHETORIC_AXIOM	axiom	A [self-evident](https://en.wiktionary.org/wiki/self-evident#Adjective) [truth](https://en.wiktionary.org/wiki/truth#Noun).	https://en.wiktionary.org/wiki/axiom
+Q737677		ML_RHETORIC_IGNORATIO-ELENCHI	ignoratio elenchi	The [formal](https://en.wiktionary.org/wiki/formal#Adjective) [fallacy](https://en.wiktionary.org/wiki/fallacy#Noun) of [ignoring](https://en.wiktionary.org/wiki/ignore#Verb) the [issue](https://en.wiktionary.org/wiki/issue#Noun).	https://en.wiktionary.org/wiki/ignoratio_elenchi
+Q845756		ML_RHETORIC_KAIROS	kairos	The [opportune](https://en.wiktionary.org/wiki/opportune#Adjective) [time](https://en.wiktionary.org/wiki/time#Noun) and [place](https://en.wiktionary.org/wiki/place#Noun) for [stating](https://en.wiktionary.org/wiki/state#Verb) or [doing](https://en.wiktionary.org/wiki/do#Verb) something.	https://en.wiktionary.org/wiki/kairos
+Q229949		ML_RHETORIC_SPIN	spin	A [form](https://en.wiktionary.org/wiki/form#Noun) of [propaganda](https://en.wiktionary.org/wiki/propaganda#Noun) [achieved](https://en.wiktionary.org/wiki/achieve#Verb) through [providing](https://en.wiktionary.org/wiki/provide#Verb) an [interpretation](https://en.wiktionary.org/wiki/interpretation#Noun) of an [event](https://en.wiktionary.org/wiki/event#Noun).	https://en.wiktionary.org/wiki/spin
+Q836165		ML_RHETORIC_LIPOGRAM	lipogram	A [text](https://en.wiktionary.org/wiki/text#Noun) in which a [certain](https://en.wiktionary.org/wiki/certain#Adjective) [letter](https://en.wiktionary.org/wiki/letter#Noun) is [omitted](https://en.wiktionary.org/wiki/omit#Verb).	https://en.wiktionary.org/wiki/lipogram
+Q733671		ML_RHETORIC_EUPHONY	euphony	A [pleasing](https://en.wiktionary.org/wiki/pleasing#Adjective) [sound](https://en.wiktionary.org/wiki/sound#Noun).	https://en.wiktionary.org/wiki/euphony
+Q660851		ML_RHETORIC_GLOSSOLALIA	glossolalia	The [phenomenon](https://en.wiktionary.org/wiki/phenomenon#Noun) of [speaking](https://en.wiktionary.org/wiki/speak#Verb) in [tongues](https://en.wiktionary.org/wiki/tongue#Noun).	https://en.wiktionary.org/wiki/glossolalia
+Q245100		ML_RHETORIC_GROTESQUE	grotesque	A [style](https://en.wiktionary.org/wiki/style#Noun) of [decorative](https://en.wiktionary.org/wiki/decorative#Adjective) [art](https://en.wiktionary.org/wiki/art#Noun) [characterized](https://en.wiktionary.org/wiki/characterize#Verb) by [fanciful](https://en.wiktionary.org/wiki/fanciful#Adjective) or [fantastic](https://en.wiktionary.org/wiki/fantastic#Adjective) [human](https://en.wiktionary.org/wiki/human#Adjective) and [animal](https://en.wiktionary.org/wiki/animal#Adjective) [forms](https://en.wiktionary.org/wiki/form#Noun).	https://en.wiktionary.org/wiki/grotesque
+Q16560051		ML_RHETORIC_SOUND-INSTRUMENTATION	instrumentacja głoskowa		
+Found 138 missing concepts in manifests.
+		ML_RHETORIC_ADAMMEG	Adammeg		
+		ML_RHETORIC_AMPUKAD	Ampukad		
+		ML_RHETORIC_ANTIMERIA	Antimeria		
+		ML_RHETORIC_ARSAV	Arsav		
+		ML_RHETORIC_ARUNDERC’HAD	Arunderc’had		
+		ML_RHETORIC_DAMARRESONIEZH	Damarresoniezh		
+		ML_RHETORIC_DAMVENEG	Damveneg		
+		ML_RHETORIC_DASPUGNADUR	Daspugnadur		
+		ML_RHETORIC_DIAC’HINAD	Diac’hinad		
+		ML_RHETORIC_DIC-HARVAD	Dic'harvad		
+		ML_RHETORIC_DISTONIEZH	Distoniezh		
+		ML_RHETORIC_DRE-EILPENN-STER	Dre eilpenn ster		
+		ML_RHETORIC_DREMMEGAÑ	Dremmegañ		
+		ML_RHETORIC_EMDOURTAD	Emdourtad		
+		ML_RHETORIC_EMSKOEVAÑ	Emskoevañ		
+		ML_RHETORIC_ERLOEZAD	Erloezad		
+		ML_RHETORIC_EZREVELLADUR	Ezrevelladur		
+		ML_RHETORIC_GINADUR	Ginadur		
+		ML_RHETORIC_GOUDAOLAD	Goudaolad		
+		ML_RHETORIC_GOURZHANVAD	Gourzhanvad		
+		ML_RHETORIC_GOURZHDOD	Gourzhdod		
+		ML_RHETORIC_GOURZHEBIEZH	Gourzhebiezh		
+		ML_RHETORIC_GOURLEIZHAD	Gourleizhad		
+		ML_RHETORIC_GOURZAOLAD	Gourzaolad		
+		ML_RHETORIC_GWELTRE	Gweltre		
+		ML_RHETORIC_HENDIATRIS	Hendiatris		
+		ML_RHETORIC_KENGAN	Kengan		
+		ML_RHETORIC_KENGANEZ	Kenganez		
+		ML_RHETORIC_KENSTURDED	Kensturded		
+		ML_RHETORIC_LEDANTALAD	Ledantalad		
+		ML_RHETORIC_LEDANVAD	Ledanvad		
+		ML_RHETORIC_NEBANTIZ	Nebantiz		
+		ML_RHETORIC_RELAVAR	Relavar		
+		ML_RHETORIC_STAGENNAD	Stagennad		
+		ML_RHETORIC_TREREZAD	Trerezad		
+		ML_RHETORIC_TROADELL	Troadell		
+		ML_RHETORIC_LUNIENN-STIL	Lunienn stil		
+		ML_RHETORIC_RHETORIC	Retorik		
+		ML_RHETORIC_STERONIEZH	Steroniezh		
+		ML_RHETORIC_STILOURIEZH	Stilouriezh		
+		ML_RHETORIC_TROZENN	Trozenn		
+		ML_RHETORIC_YEZHADUR	Yezhadur		
+		ML_RHETORIC_↑PENNGERIOU-GALLEK-A-GAVER-ER-GERIADUR-MAÑ.	↑Penngerioù gallek a gaver er geriadur-mañ.		
+		ML_RHETORIC_ADYNATON	Adynaton	Vergleich mit Unmöglichem	
+		ML_RHETORIC_ALLEGORY	Allegorie	Verbildlichung, ausgeführte Metapher, im Allgemeinen ein Gleichnis; häufig wird hierbei eine abstrakte Idee durch etwas Gegenständliches ausgedrückt (siehe auch: Symbol )	
+		ML_RHETORIC_ALLITERATION	Alliteration	Zwei oder mehrere unmittelbar aufeinander folgende Wörter besitzen den gleichen Anfangslaut	
+		ML_RHETORIC_ANASTROPHE	Anastrophe	Vertauschung zweier zusammengehörender Wörter (auch: Inversion )	
+		ML_RHETORIC_ANTHROPOMORPHISM	Anthropomorphismus	Übertragung menschlicher Eigenschaften auf unbelebte Gegenstände (siehe auch: Verdinglichung )	
+		ML_RHETORIC_PROLEPSIS	Antizipation	eine Vorausschau bzw. einen Zeitsprung in die Zukunft oder durch den Text geweckte Lesererwartungen (siehe auch: Vorausdeutung )	
+		ML_RHETORIC_ANTICLIMAX	Antiklimax	Abfallende Steigerung, Gegenteil zur Klimax	
+		ML_RHETORIC_ANTIPHRASIS	Antiphrasis	Es soll das Gegenteil des eigentlich Gesagten ausgedrückt werden; kann sich auf ein einzelnes Wort, einen Satz oder eine Passage beziehen; eine der häufigsten Formen der Ironie	
+		ML_RHETORIC_ANTITHETON	Antitheton	Gegenüberstellung zweier entgegengesetzter Gedanken (kein Widerspruch) (siehe auch: Antithese )	
+		ML_RHETORIC_ANTONOMASIA	Antonomasie	Sonderfall der Synekdoche , Eigenname als Gattungsbegriff (oder umgekehrt)	
+		ML_RHETORIC_ASSONANCE	Assonanz	Vokalischer Halbreim	
+		ML_RHETORIC_SPOONERISM	Buchstabendreher	Meist Vertauschung der anlautenden Konsonanten, seltener der Vokale, zweier zusammengehöriger Wörter, so dass sich ein neuer, meist alberner Sinn oder Klang ergibt; Sonderfall: Schüttelreim , engl. Spoonerismus , franz. „Contrepèterie“ (siehe auch: Paronomasie , Polysemie , Wortspiel , Neologismus )	
+		ML_RHETORIC_CHIASMUS	Chiasmus	Symmetrische Überkreuzstellung von syntaktisch oder semantisch entsprechenden Satzteilen (siehe auch: Epanodos , Parallelismus )	
+		ML_RHETORIC_TRICOLON	Dreier-Figur	Siehe: Trikolon	
+		ML_RHETORIC_ELLIPSIS	Ellipse	Auslassung von Satzteilen (siehe auch: Brachylogie , Zeugma )	
+		ML_RHETORIC_EMPHASIS	Emphase	Nachdrückliche Hervorhebung eines Wortes zur Gefühlsverstärkung	
+		ML_RHETORIC_ENJAMBMENT	Enjambement	Fortführung eines Satzes über das Vers-/Zeilenende hinaus	
+		ML_RHETORIC_EXCLAMATIO	Exclamatio	Ausruf	
+		ML_RHETORIC_FIGURA-ETYMOLOGICA	Figura etymologica	Verwendung von zwei oder mehr sprachgeschichtlich verwandten Wörtern in einem Kolon	
+		ML_RHETORIC_GEMINATION	Geminatio	Sonderfall der Repetitio ; Verdoppelung (siehe auch: Anadiplose , Anapher , Epipher , Kyklos , Symploke )	
+		ML_RHETORIC_HENDIADYS	Hendiadyoin	Syntaktische Beiordnung eines semantisch untergeordneten Begriffs (oft falsch verstanden: Zwei Wörter mit gleicher oder sehr ähnlicher Bedeutung werden zur Verstärkung der Gesamtaussage verwendet [siehe: Tautologie ])	
+		ML_RHETORIC_HYPALLAGE	Hypallage	Zuordnung eines Attributs zum falschen Substantiv	
+		ML_RHETORIC_HYPERBATON	Hyperbaton	Einschub durch Umstellung; zwei Wörter, die syntaktisch (und inhaltlich) zusammengehören, stehen weit voneinander	
+		ML_RHETORIC_HYSTERON-PROTERON	Hysteron-Proteron	Nachholtechnik; das logisch/zeitlich Nachfolgende wird an den Anfang gestellt (Sonderfall: Anachronismus )	
+		ML_RHETORIC_INVERSION	Inversion	Umkehrung der normalen Wortstellung im Satz zur Hervorhebung des Umgestellten (auch Anastrophe )	
+		ML_RHETORIC_KYKLOS	Kyklos	Sonderfall der Repetitio , Wiederholung des Satz-/Versanfangs am Ende (Schema: x … x ) (siehe auch: Anadiplose , Anapher , Epipher , Geminatio , Symploke )	
+		ML_RHETORIC_LITOTES	Litotes	Hervorhebung eines Begriffs durch Untertreibung, Abschwächung oder doppelte Verneinung	
+		ML_RHETORIC_PARALLELISM	Parallelismus	Paralleler Aufbau von (Teil-)Sätzen	
+		ML_RHETORIC_PARAPHRASE	Paraphrase	Erklärende Umschreibung (als Zusatz) (siehe auch: Periphrase )	
+		ML_RHETORIC_PARATAXIS	Parataxe	Nebeneinanderstellen gleichwertiger Hauptsätze bzw. beigeordneter Nebensätze (Gegenteil zur Hypotaxe , siehe auch: Satzreihe )	
+		ML_RHETORIC_PARENTHESIS	Parenthese	Einschub von Wörtern oder Satzteilen im Satz	
+		ML_RHETORIC_REPETITION	Repetitio	Wiederholung eines Wortes/Satzteils (siehe auch: Anadiplose , Anapher , Epanalepse , Epipher , Geminatio , Kyklos , Polyptoton , Symploke )	
+		ML_RHETORIC_RHETORIC-QUESTION	Rhetorische Frage	Frage, auf die keine Antwort erwartet wird (Scheinfrage)	
+		ML_RHETORIC_SARCASM	Sarkasmus	Beißender, bitterer und/oder verletzender Spott und Hohn; oft unter Verwendung von Ironie (z. B. als Reaktion auf einen Angriff) (siehe auch: Zynismus )	
+		ML_RHETORIC_TETRACOLON	Tetrakolon	Viergliedriger Ausdruck, bei dem alle vier Teile semantisch gleich aufgebaut sind und zueinander parallel und/oder chiastisch stehen (siehe auch: Dikolon , Trikolon )	
+		ML_RHETORIC_CYNICISM	Zynismus	(Als rhetorisches Stilmittel:) Boshaft verletzende, oft ironische Äußerung als Demonstration der Überlegenheit, unter Missachtung, Umdeutung oder Ad-absurdum-Führung allgemein verbreiteter/anerkannter Werte (siehe auch: Sarkasmus )	
+		ML_RHETORIC_ANIMALIZATION	animalizacja		
+		ML_RHETORIC_ANIMATION	animizacja		
+		ML_RHETORIC_ECHOLALIA	echolalia		
+		ML_RHETORIC_EPITHETON-ORNANS	epitet stały		
+		ML_RHETORIC_DISPOSITION	Dispoziție	etapa de planificare a structurii și secvenței ideilor; adesea denumită aranjament, a doua dintre cele cinci canoane retorice ale lui Cicero.	
+		ML_RHETORIC_GRAPHEME	Graphème	Lettres de l'alphabet, lettres étrangères, lettres inconnues	
+		ML_RHETORIC_PHONEME	Phonème	Accents, sons, syllabes, voyelles et consonnes, groupes vocaliques et consonantiques, pieds versifiés	
+		ML_RHETORIC_MORPHEME	Morphème	Mots, groupes de mots, particules et conjonctions, codes typographiques, ponctuation, étymologie	
+		ML_RHETORIC_SEME	Sème	Connotation, polysémie, lexique, vocable, antonymie, synonymie, champs sémantiques	
+		ML_RHETORIC_TETRAMETRES	tétramètres	« Quatre bœufs attelés , d'un pas tranquille et lent, Promenaient dans Paris le monarque indolent » — Boileau , Le Lutrin	
+		ML_RHETORIC_HEMISTICH	hémistiche	« J'aime le son du c or , le soir, au fond des bois, Soit qu'il chante les pl eur s de la biche aux abois, Ou l'adieu du chass eur que l'écho faible accueille, Et que le vent du n or d p or te de feuille en feuille. » — Vigny , Poèmes antiques et modernes , Le Cor , I	
+		ML_RHETORIC_ANNOMINATION	annomination	[Stylistique] synonyme de paronomase (latin adnominatio , traduction du grec paronomase )	
+		ML_RHETORIC_ANTANACLASE	antanaclase	Répétition, dans une même phrase, d'un mot employé chaque fois avec une acception différente	
+		ML_RHETORIC_EPIPHORE	épiphore	[Poétique] répétition d'un mot ou d'un vers en fin de strophe	
+		ML_RHETORIC_EPIZEUXE	épizeuxe	Répétition contiguë d'un même terme sans coordination	
+		ML_RHETORIC_POLYPTOTE	polyptote	Répétition de plusieurs termes de même racine, ou encore un même verbe sous différentes formes. Le mot subit des variations morpho-syntaxiques	
+		ML_RHETORIC_CLICHE	cliché	Répétition d'une image ou d'une tournure usées par un emploi fréquent et populaire et hautement prévisible et souvent littéraire ou artistique	
+		ML_RHETORIC_PARRHESIE	parrhésie	Figure d'adjonction qui consiste à dire ce qu'on a de plus intime en cherchant ses mots ; proche de la licence et du "franc parler"	
+		ML_RHETORIC_PERISSOLOGIE	périssologie	Faute d’écriture par redondance, qui consiste à l’ajout d’un ou de plusieurs détails inutiles qui n’apportent rien à la compréhension d’une idée ni à l’expression de cette idée, sinon pour l’alourdir ; proche du pléonasme	
+		ML_RHETORIC_PONCIF	poncif	Répétition d'une expression banale et conventionnelle ; proche du lieu commun ou du cliché	
+		ML_RHETORIC_REDONDANCE	redondance	[Stylistique] répétition monotone de la même idée en plusieurs formulations différentes au sein d'une même phrase. Voir pléonasme	
+		ML_RHETORIC_EPENTHESE	épenthèse	addition interne d'un phonème ou d'une syllabe que l'étymologie ne justifie pas ou pour en faciliter l'articulation (sens phonétique) ou obtenir un effet particulier (sens stylistique) la paragoge est un ajout à la fin du mot et la prothèse , au début	
+		ML_RHETORIC_ANTEPIPHORE	antépiphore	Répétition d'un même groupe de mots (ou d'un même vers) au début et à la fin d'un paragraphe (ou d'une strophe) produisant un effet de clôture ; proche de l' épiphore , de l' épanadiplose et de l' anaphore	
+		ML_RHETORIC_AUXESE	auxèse	Accumulation de termes ou d'expressions d'une grande intensité ou hyperboliques, à gradation positive	
+		ML_RHETORIC_MOT-VALISE	mot-valise	Elusion d'au moins deux autres mots existant dans la langue ; proche du néologisme et de l' haplologie	
+		ML_RHETORIC_NEOLOGISME	néologisme	Création et utilisation d'un mot ou d'une expression qu'on vient de former à partir d'éléments déjà existants dans la langue elle-même ; proche du mot-valise	
+		ML_RHETORIC_TAPINOSE	tapinose	Accumulation de termes ou d'expressions d'une grande intensité ou hyperboliques à gradation négative	
+		ML_RHETORIC_CHLEUASME	chleuasme	Consiste à en rajouter sur soi-même en se dépréciant pour mieux se dédouaner, ou pour recevoir des éloges ; figure ironique	
+		ML_RHETORIC_TRUISME	truisme	Expression évidente et n'apportant aucune information	
+		ML_RHETORIC_LIPOGRAMME	lipogramme	consiste à ne pas utiliser sciemment une lettre donnée	
+		ML_RHETORIC_ELISION	élision	amuïssement de la voyelle finale d’un mot devant un autre mot à initiale vocalique	
+		ML_RHETORIC_PARATAXE	parataxe	juxtaposition des phrases, sans mot de liaison explicitant le rapport syntaxique de subordination ou de coordination qui les unit ; contraire de l' hypotaxe	
+		ML_RHETORIC_AMPHIBOLOGIE	amphibologie	ambiguïté grammaticale et syntaxique qui donne lieu à diverses interprétations d'une même phrase	
+		ML_RHETORIC_ANTIPHRASE	antiphrase	emploi, dans une situation caractérisée, des mots contraires à sa pensée pour mieux l'exprimer. Cette figure qui sous-tend l'ironie est proche de la litote , de l' antithèse et de l' euphémisme	
+		ML_RHETORIC_APHORISM	aphorisme	formule brève qui résume l'essentiel d'une pensée	
+		ML_RHETORIC_APOPHTHEGM	apophtegme	parole mémorable ayant valeur de maxime	
+		ML_RHETORIC_APOSIOPESE	aposiopèse	consiste à interrompre une phrase ou un vers sans achever sa pensée	
+		ML_RHETORIC_BRACHYLOGIE	brachylogie	emploi d'une expression elliptique, ou plus courte qu'une autre aboutissant à un discours bref, variante de l' ellipse (rhétorique)	
+		ML_RHETORIC_GNOMISME	gnomisme	figure d’effacement (d’une démonstration logique notamment) sous forme de sentence, de proverbes ou de maximes, généralement pour exprimer une vérité morale, une leçon, une règle de vie, un conseil ; proche de l’ enthymème	
+		ML_RHETORIC_PARABOLE	parabole	consistant en une courte histoire qui utilise les événements quotidiens pour illustrer une morale ou une doctrine, proche de l' allégorie et de la maxime	
+		ML_RHETORIC_ANTIMETABOLE	antimétabole	chiasme qui consiste à reprendre les mots d'une phrase dans une autre mais en en modifiant l'ordre de présentation, proche de l' anadiplose et de l' épanadiplose	
+		ML_RHETORIC_ENALLAGE	énallage	changement brusque de temps, de mode, de nombre ou de genre, afin de dramatiser une situation.	
+		ML_RHETORIC_HYPOZEUXE	hypozeuxe	[stylistique] maintien, par des mots associés, du parallélisme entre les termes d'une énumération pour l'équilibre ou la cadence de la phrase	
+		ML_RHETORIC_PARALLELISME	parallélisme	succession de deux segments de phrase qui ont la même construction syntaxique en un rapport de symétrie et de répétition, proche de l' anaphore et du chiasme . L' hypozeuxe en est une variante	
+		ML_RHETORIC_TMESE-(RHETORIQUE)	tmèse (rhétorique)	variante de l' hyperbate qui consiste en la division d'un mot composé, dont les parties se retrouvent séparées par un ou plusieurs mots	
+		ML_RHETORIC_ANTIPARASTASE	antiparastase	figure de réarrangement consistant à s'appuyer sur un argument faible pour le retourner en sa faveur	
+		ML_RHETORIC_METALEPSE	métalepse	[Stylistique] figure de style qui consiste à prendre la cause pour la conséquence. [Narrative] Intrusion ou implication du narrateur extérieur dans son propre discours.	
+		ML_RHETORIC_PROLEPSE	prolepse	[syntaxe] expression anticipée, dans le COD de la principale, du sujet de la subordonnée comme dans « Regarde cette auto, comme elle est belle » [stylistique] emploi d'un terme (souvent un adjectif), qui représente par concision un état antérieur ou postérieur au moment de l'énoncé [rhétorique] réfutation anticipée d'une objection possible. [narratologie] la prolepse - ou anticipation - est une figure de style par laquelle sont mentionnés des faits qui se produiront bien plus tard	
+		ML_RHETORIC_ANANTAPODOTON	anantapodoton	substitution de la structure syntaxique du premier membre d'une phrase alternative (en « ou bien… ou bien »), par une formule synthétique, souvent exclamative	
+		ML_RHETORIC_SOLECISME	solécisme	Faute de syntaxe (construction incorrecte) permettant d'aboutir à un langage populaire proche du barbarisme	
+		ML_RHETORIC_VERBIGERATION	verbigération	synonymes d' amphigouri . Flux de paroles inutiles n'apportant aucune nouvelle information, proche du phébus et du galimatias	
+		ML_RHETORIC_CHOSIFICATION	chosification	Transformation ou transposition d'une abstraction en un objet concret, visant à appréhender un concept, comme une chose concrète, variante de l' allégorie	
+		ML_RHETORIC_CIRCONLOCUTION	circonlocution	forme d' ironie qui consiste en l'allongement de l’expression visant à masquer son embarras ou à dissimuler une idée	
+		ML_RHETORIC_DIGRESSION	digression	Introduction de propos étranger au sujet général d'un discours, d'un débat, d'un écrit	
+		ML_RHETORIC_ETHOPEE	éthopée	Description des mœurs d'un personnage, variante de l' hypotypose	
+		ML_RHETORIC_PROSOPOGRAPHIE	prosopographie	Description animée et comme vivante d'un personnage ou d'un groupe de personnages, variante de l' hypotypose	
+		ML_RHETORIC_QUESTION-RHETORIQUE	question rhétorique	fausse question destinée à garder la parole ou à émouvoir	
+		ML_RHETORIC_SERMOCINATION	sermocination	utilisation d'un personnage imaginaire, historique ou abstrait pour évoquer ses assertions ; variante de la prosopopée	
+		ML_RHETORIC_SYMBOLE	symbole	énoncé narratif ou descriptif polysémique, susceptible d'une double interprétation sur le plan de la réalité et sur le plan des idées ; lien indirect qui unit une image et une idée ou un concept reposant sur une métonymie ou une métaphore et à l'origine de l' allégorie	
+
+Q191092		ML_RHETORIC_ACCONSONANTIE	acconsonantie		https://nl.wiktionary.org/wiki/acconsonantie
+Q2731985		ML_RHETORIC_ACRYOLOGIE	acryologie		https://nl.wiktionary.org/wiki/acryologie
+		ML_RHETORIC_ADJECTIO	adjectio		https://nl.wiktionary.org/wiki/adjectio
+		ML_RHETORIC_ADNOMINATIO	adnominatio		https://nl.wiktionary.org/wiki/adnominatio
+Q484495		ML_RHETORIC_ALLITERATIE	alliteratie		https://nl.wiktionary.org/wiki/alliteratie
+		ML_RHETORIC_ALLUSIE	allusie		https://nl.wiktionary.org/wiki/allusie
+		ML_RHETORIC_ALS_VERGELIJKING	als-vergelijking		https://nl.wiktionary.org/wiki/als-vergelijking
+		ML_RHETORIC_AMBIGUITEIT	ambiguïteit		https://nl.wiktionary.org/wiki/ambiguïteit
+		ML_RHETORIC_AMPLIFICATIE	amplificatie		https://nl.wiktionary.org/wiki/amplificatie
+Q4064723		ML_RHETORIC_ANACLASIS	anaclasis		https://nl.wiktionary.org/wiki/anaclasis
+		ML_RHETORIC_ANAFOOR	anafoor		https://nl.wiktionary.org/wiki/anafoor
+		ML_RHETORIC_ANAKOLOET	anakoloet		https://nl.wiktionary.org/wiki/anakoloet
+		ML_RHETORIC_ANAMNESIS	anamnesis		https://nl.wiktionary.org/wiki/anamnesis
+Q582293		ML_RHETORIC_ANASTROFE	anastrofe		https://nl.wiktionary.org/wiki/anastrofe
+		ML_RHETORIC_ANATOPISME	anatopisme		https://nl.wiktionary.org/wiki/anatopisme
+		ML_RHETORIC_ANIMALISERING	animalisering		https://nl.wiktionary.org/wiki/animalisering
+		ML_RHETORIC_ANNOMINATIO	annominatio		https://nl.wiktionary.org/wiki/annominatio
+		ML_RHETORIC_ANTICIPATIE	anticipatie		https://nl.wiktionary.org/wiki/anticipatie
+Q253147		ML_RHETORIC_ANTIFRASE	antifrase		https://nl.wiktionary.org/wiki/antifrase
+		ML_RHETORIC_ANTIMETABOOL	antimetabool		https://nl.wiktionary.org/wiki/antimetabool
+		ML_RHETORIC_ANTISTASIS	antistasis		https://nl.wiktionary.org/wiki/antistasis
+		ML_RHETORIC_ANTITHESE	antithese		https://nl.wiktionary.org/wiki/antithese
+		ML_RHETORIC_APORIE	aporie		https://nl.wiktionary.org/wiki/aporie
+		ML_RHETORIC_APOSIOPESE	aposiopese		https://nl.wiktionary.org/wiki/aposiopese
+		ML_RHETORIC_APOSTROF	apostrof		https://nl.wiktionary.org/wiki/apostrof
+		ML_RHETORIC_APPOSITIE	appositie		https://nl.wiktionary.org/wiki/appositie
+		ML_RHETORIC_ARCHAISME	archaïsme		https://nl.wiktionary.org/wiki/archaïsme
+		ML_RHETORIC_ASYNDETISCHE_VERGELIJKING	asyndetische vergelijking		https://nl.wiktionary.org/wiki/asyndetische vergelijking
+		ML_RHETORIC_BATTOLOGIE	battologie		https://nl.wiktionary.org/wiki/battologie
+		ML_RHETORIC_BEELDSPRAAK	beeldspraak		https://nl.wiktionary.org/wiki/beeldspraak
+Q2180696		ML_RHETORIC_HOMERISCHE_VERGELIJKING	homerische vergelijking		https://nl.wiktionary.org/wiki/homerische vergelijking
+		ML_RHETORIC_METAFOOR	metafoor		https://nl.wiktionary.org/wiki/metafoor
+		ML_RHETORIC_METONYMIE	metonymie		https://nl.wiktionary.org/wiki/metonymie
+		ML_RHETORIC_PERSONIFICATIE	personificatie		https://nl.wiktionary.org/wiki/personificatie
+		ML_RHETORIC_SYNESTHESIE	synesthesie		https://nl.wiktionary.org/wiki/synesthesie
+Q136375137		ML_RHETORIC_VEGETALISERING	vegetalisering		https://nl.wiktionary.org/wiki/vegetalisering
+		ML_RHETORIC_VERGELIJKING	vergelijking		https://nl.wiktionary.org/wiki/vergelijking
+		ML_RHETORIC_BIJSTELLING	bijstelling		https://nl.wiktionary.org/wiki/bijstelling
+		ML_RHETORIC_BOMBAST	bombast		https://nl.wiktionary.org/wiki/bombast
+		ML_RHETORIC_BOUTADE	boutade		https://nl.wiktionary.org/wiki/boutade
+		ML_RHETORIC_CALEMBOUR	calembour		https://nl.wiktionary.org/wiki/calembour
+		ML_RHETORIC_CHIASME	chiasme		https://nl.wiktionary.org/wiki/chiasme
+Q671054		ML_RHETORIC_CLOU	clou		https://nl.wiktionary.org/wiki/clou
+		ML_RHETORIC_COMPARATIO	comparatio		https://nl.wiktionary.org/wiki/comparatio
+		ML_RHETORIC_COMPLEXIO	complexio		https://nl.wiktionary.org/wiki/complexio
+		ML_RHETORIC_CONCETTO	concetto		https://nl.wiktionary.org/wiki/concetto
+Q287903		ML_RHETORIC_CONTAMINATIE	contaminatie		https://nl.wiktionary.org/wiki/contaminatie
+		ML_RHETORIC_CONTRACTIE	contractie		https://nl.wiktionary.org/wiki/contractie
+		ML_RHETORIC_CONTRADICTIO_IN_ADJECTO	contradictio in adjecto		https://nl.wiktionary.org/wiki/contradictio in adjecto
+		ML_RHETORIC_CONTRADICTIO_IN_TERMINIS	contradictio in terminis		https://nl.wiktionary.org/wiki/contradictio in terminis
+		ML_RHETORIC_CORRECTIO	correctio		https://nl.wiktionary.org/wiki/correctio
+Q245781		ML_RHETORIC_CYNISME	cynisme		https://nl.wiktionary.org/wiki/cynisme
+		ML_RHETORIC_DEINOSIS	deinosis		https://nl.wiktionary.org/wiki/deinosis
+		ML_RHETORIC_DESCRIPTIO	descriptio		https://nl.wiktionary.org/wiki/descriptio
+		ML_RHETORIC_DIACOPE	diacope		https://nl.wiktionary.org/wiki/diacope
+		ML_RHETORIC_DIAFOOR	diafoor		https://nl.wiktionary.org/wiki/diafoor
+		ML_RHETORIC_DIERESIS	diëresis		https://nl.wiktionary.org/wiki/diëresis
+Q2383053		ML_RHETORIC_DIGRESSIO	digressio		https://nl.wiktionary.org/wiki/digressio
+		ML_RHETORIC_DISTINCTIO	distinctio		https://nl.wiktionary.org/wiki/distinctio
+		ML_RHETORIC_DOODDOENER	dooddoener		https://nl.wiktionary.org/wiki/dooddoener
+		ML_RHETORIC_DUBITATIO	dubitatio		https://nl.wiktionary.org/wiki/dubitatio
+		ML_RHETORIC_EFFICTIO	effictio		https://nl.wiktionary.org/wiki/effictio
+		ML_RHETORIC_EKFONESIS	ekfonesis		https://nl.wiktionary.org/wiki/ekfonesis
+Q1323450		ML_RHETORIC_EKFRASIS	ekfrasis		https://nl.wiktionary.org/wiki/ekfrasis
+		ML_RHETORIC_ELISIE	elisie		https://nl.wiktionary.org/wiki/elisie
+		ML_RHETORIC_ELLIPS	ellips		https://nl.wiktionary.org/wiki/ellips
+Q65044042		ML_RHETORIC_EMFASE	emfase		https://nl.wiktionary.org/wiki/emfase
+		ML_RHETORIC_ENALLAGE	enallage		https://nl.wiktionary.org/wiki/enallage
+		ML_RHETORIC_ENANTIOSIS	enantiosis		https://nl.wiktionary.org/wiki/enantiosis
+		ML_RHETORIC_ENERGIA	energia		https://nl.wiktionary.org/wiki/energia
+		ML_RHETORIC_ENCLISE	enclise		https://nl.wiktionary.org/wiki/enclise
+		ML_RHETORIC_ENUMERATIE	enumeratie		https://nl.wiktionary.org/wiki/enumeratie
+		ML_RHETORIC_EPANAFOOR	epanafoor		https://nl.wiktionary.org/wiki/epanafoor
+		ML_RHETORIC_EPANALEPSIS	epanalepsis		https://nl.wiktionary.org/wiki/epanalepsis
+		ML_RHETORIC_EPANODOS	epanodos		https://nl.wiktionary.org/wiki/epanodos
+		ML_RHETORIC_EPANORTHOSIS	epanorthosis		https://nl.wiktionary.org/wiki/epanorthosis
+		ML_RHETORIC_EPENTHESIS	epenthesis		https://nl.wiktionary.org/wiki/epenthesis
+		ML_RHETORIC_EPICLASIS	epiclasis		https://nl.wiktionary.org/wiki/epiclasis
+Q963102		ML_RHETORIC_EPIFOOR	epifoor		https://nl.wiktionary.org/wiki/epifoor
+		ML_RHETORIC_EPIFRASE	epifrase		https://nl.wiktionary.org/wiki/epifrase
+		ML_RHETORIC_EPISTROFE	epistrofe		https://nl.wiktionary.org/wiki/epistrofe
+		ML_RHETORIC_EPITROPE	epitrope		https://nl.wiktionary.org/wiki/epitrope
+		ML_RHETORIC_EPITHETON_ORNANS	epitheton (ornans)		https://nl.wiktionary.org/wiki/epitheton (ornans)
+		ML_RHETORIC_EXCURSIO	excursio		https://nl.wiktionary.org/wiki/excursio
+		ML_RHETORIC_FLASHBACK	flashback		https://nl.wiktionary.org/wiki/flashback
+		ML_RHETORIC_FLASHFORWARD	flashforward		https://nl.wiktionary.org/wiki/flashforward
+		ML_RHETORIC_FIGUURLIJKE_BETEKENIS	figuurlijke betekenis		https://nl.wiktionary.org/wiki/figuurlijke betekenis
+Q106504966		ML_RHETORIC_GEDACHTENRIJM	gedachtenrijm		https://nl.wiktionary.org/wiki/gedachtenrijm
+		ML_RHETORIC_GEMEENPLAATS	gemeenplaats		https://nl.wiktionary.org/wiki/gemeenplaats
+		ML_RHETORIC_GNOME	gnome		https://nl.wiktionary.org/wiki/gnome
+		ML_RHETORIC_HERHALING	herhaling		https://nl.wiktionary.org/wiki/herhaling
+		ML_RHETORIC_HYPERBOOL	hyperbool		https://nl.wiktionary.org/wiki/hyperbool
+		ML_RHETORIC_HYSTERON_PROTERON	hysteron proteron		https://nl.wiktionary.org/wiki/hysteron proteron
+		ML_RHETORIC_HYSTHEROLOGIE	hystherologie		https://nl.wiktionary.org/wiki/hystherologie
+		ML_RHETORIC_IN_MEDIAS_RES	in medias res		https://nl.wiktionary.org/wiki/in medias res
+Q1999796		ML_RHETORIC_INCANTATIE	incantatie		https://nl.wiktionary.org/wiki/incantatie
+		ML_RHETORIC_INVERSIE	inversie		https://nl.wiktionary.org/wiki/inversie
+		ML_RHETORIC_INVOCATIO	invocatio		https://nl.wiktionary.org/wiki/invocatio
+		ML_RHETORIC_INQUIT_FORMULE	inquit-formule		https://nl.wiktionary.org/wiki/inquit-formule
+		ML_RHETORIC_IRONIE	ironie		https://nl.wiktionary.org/wiki/ironie
+		ML_RHETORIC_ITERATIO	iteratio		https://nl.wiktionary.org/wiki/iteratio
+Q952912		ML_RHETORIC_KENNING	kenning		https://nl.wiktionary.org/wiki/kenning
+		ML_RHETORIC_KLANKNABOOTSING	klanknabootsing		https://nl.wiktionary.org/wiki/klanknabootsing
+		ML_RHETORIC_KRUISSTELLING	kruisstelling		https://nl.wiktionary.org/wiki/kruisstelling
+		ML_RHETORIC_MALAPROPISME	malapropisme		https://nl.wiktionary.org/wiki/malapropisme
+		ML_RHETORIC_MESODIPLOSIS	mesodiplosis		https://nl.wiktionary.org/wiki/mesodiplosis
+		ML_RHETORIC_METALEPSIS	metalepsis		https://nl.wiktionary.org/wiki/metalepsis
+		ML_RHETORIC_OCCUPATIO	occupatio		https://nl.wiktionary.org/wiki/occupatio
+		ML_RHETORIC_OMKERING	omkering		https://nl.wiktionary.org/wiki/omkering
+		ML_RHETORIC_OMSCHRIJVING	omschrijving		https://nl.wiktionary.org/wiki/omschrijving
+		ML_RHETORIC_ONOMATOPEE	onomatopee		https://nl.wiktionary.org/wiki/onomatopee
+		ML_RHETORIC_OPEENSTAPELING	opeenstapeling		https://nl.wiktionary.org/wiki/opeenstapeling
+		ML_RHETORIC_OPSOMMING	opsomming		https://nl.wiktionary.org/wiki/opsomming
+		ML_RHETORIC_OPTATIE	optatie		https://nl.wiktionary.org/wiki/optatie
+		ML_RHETORIC_OVERDRIJVING	overdrijving		https://nl.wiktionary.org/wiki/overdrijving
+		ML_RHETORIC_PARABOOL	parabool		https://nl.wiktionary.org/wiki/parabool
+		ML_RHETORIC_PARAFRASE	parafrase		https://nl.wiktionary.org/wiki/parafrase
+		ML_RHETORIC_PARAGOGE	paragoge		https://nl.wiktionary.org/wiki/paragoge
+Q1376885		ML_RHETORIC_PARALEIPSIS	paraleipsis		https://nl.wiktionary.org/wiki/paraleipsis
+		ML_RHETORIC_PARALLELLISME	parallellisme		https://nl.wiktionary.org/wiki/parallellisme
+		ML_RHETORIC_PARONOMASIE	paronomasie		https://nl.wiktionary.org/wiki/paronomasie
+		ML_RHETORIC_PARS_PRO_TOTO	pars pro toto		https://nl.wiktionary.org/wiki/pars pro toto
+		ML_RHETORIC_PAUZERIJM	pauzerijm		https://nl.wiktionary.org/wiki/pauzerijm
+Q2743112		ML_RHETORIC_PERCONTATIO	percontatio		https://nl.wiktionary.org/wiki/percontatio
+		ML_RHETORIC_PERIFRASE	perifrase		https://nl.wiktionary.org/wiki/perifrase
+		ML_RHETORIC_PERMISSIO	permissio		https://nl.wiktionary.org/wiki/permissio
+		ML_RHETORIC_PLEONASME	pleonasme		https://nl.wiktionary.org/wiki/pleonasme
+		ML_RHETORIC_PLOKE	ploke		https://nl.wiktionary.org/wiki/ploke
+		ML_RHETORIC_PRAEMUNITIO	praemunitio		https://nl.wiktionary.org/wiki/praemunitio
+		ML_RHETORIC_PREGNANTIE	pregnantie		https://nl.wiktionary.org/wiki/pregnantie
+Q2412848		ML_RHETORIC_PROCLISE	proclise		https://nl.wiktionary.org/wiki/proclise
+		ML_RHETORIC_PROLEPSIS	prolepsis		https://nl.wiktionary.org/wiki/prolepsis
+		ML_RHETORIC_PROTERON_HYSTERON	proteron hysteron		https://nl.wiktionary.org/wiki/proteron hysteron
+		ML_RHETORIC_PROTHYSTERON	prothysteron		https://nl.wiktionary.org/wiki/prothysteron
+		ML_RHETORIC_REFUTATIO	refutatio		https://nl.wiktionary.org/wiki/refutatio
+		ML_RHETORIC_RETICENTIE	reticentie		https://nl.wiktionary.org/wiki/reticentie
+		ML_RHETORIC_RETORISCHE_VRAAG	retorische vraag		https://nl.wiktionary.org/wiki/retorische vraag
+		ML_RHETORIC_RIJM	rijm		https://nl.wiktionary.org/wiki/rijm
+		ML_RHETORIC_SARCASME	sarcasme		https://nl.wiktionary.org/wiki/sarcasme
+		ML_RHETORIC_SNEEUWKLOON	sneeuwkloon		https://nl.wiktionary.org/wiki/sneeuwkloon
+		ML_RHETORIC_SPOONERISME	spoonerisme		https://nl.wiktionary.org/wiki/spoonerisme
+		ML_RHETORIC_SYMPLOKE	symploke		https://nl.wiktionary.org/wiki/symploke
+		ML_RHETORIC_SYNALEPHE	synalephe		https://nl.wiktionary.org/wiki/synalephe
+		ML_RHETORIC_TAUTOLOGIE	tautologie		https://nl.wiktionary.org/wiki/tautologie
+		ML_RHETORIC_TMESIS	tmesis		https://nl.wiktionary.org/wiki/tmesis
+		ML_RHETORIC_TOESPELING	toespeling		https://nl.wiktionary.org/wiki/toespeling
+		ML_RHETORIC_TROOP	troop		https://nl.wiktionary.org/wiki/troop
+Q2510771		ML_RHETORIC_VARIATIO	variatio		https://nl.wiktionary.org/wiki/variatio
+		ML_RHETORIC_VOOROPPLAATSING	vooropplaatsing		https://nl.wiktionary.org/wiki/vooropplaatsing
+		ML_RHETORIC_VULGARISME	vulgarisme		https://nl.wiktionary.org/wiki/vulgarisme
+		ML_RHETORIC_WOORDHERHALING	woordherhaling		https://nl.wiktionary.org/wiki/woordherhaling
+		ML_RHETORIC_ZEDENSPREUK	zedenspreuk		https://nl.wiktionary.org/wiki/zedenspreuk
+		ML_RHETORIC_ZELFCORRECTIE	zelfcorrectie		https://nl.wiktionary.org/wiki/zelfcorrectie
+		ML_RHETORIC_ZINSPELING	zinspeling		https://nl.wiktionary.org/wiki/zinspeling
