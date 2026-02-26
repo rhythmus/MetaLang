@@ -363,13 +363,17 @@ MetaLang implements a **Linguistic Provenance Layer** at the plugin manifest lev
 ## 16. Roadmap and Version Plan
 
 16.1 v1 MVP scope (must-have)  
-16.2 v1.1 scope (domains added: field/geo/language/semantic\_class/phonology/etymology)  
+16.2 v1.1 scope (domains added: field/geo/language/semantic\_class/phonology/etymology/rhetoric)  
 16.3 v1.x planned expansions
 
-- definition methodology domain
+- deeper definition methodology
 - prosody domain
 - deeper syntactic constructions
 - richer semantic class system  
+
+16.4 Current Progress (Early 2026)
+- **Generic Language Plugins**: Established a pattern for national/global generic plugins (Portuguese, Norwegian, Czech, French, Breton, German, Polish, Romanian) mapping Wiktionary terms to canonical IDs.
+- **Rhetorical Ontology Expansion**: Massive expansion of the `RHETORIC` domain (250+ concepts) with standardized `ML_RHETORIC_` prefixing and Wikidata cross-referencing.
 
 16.4 Long-term: ecosystem governance and registry model
     
@@ -380,8 +384,8 @@ A. Domain definitions (normative)
 B. Canonical ID naming guide (normative)  
 C. JSON Schema: seed file  
 D. JSON Schema: plugin file  
-E. Example plugins: UD / Stanford / Van Dale / Local scholars  
-F. Example conversion scenarios (POS conversion, abbreviation normalization, UI localization)  
+E. Example plugins: UD / EAGLES / Generic Language Plugins (PT, NO, CS, FR, BR, DE, PL, RO, NL)
+F. Example conversion scenarios (POS conversion, abbreviation normalization, rhetorical search)  
 G. Glossary of terms used in this spec  
 H. Change log
 I. Editorial Standards and Curation Policy

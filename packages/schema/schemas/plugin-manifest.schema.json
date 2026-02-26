@@ -53,14 +53,17 @@
                             "type": "string",
                             "format": "date-time"
                         },
+                        "lastEditedAt": {
+                            "type": "string",
+                            "format": "date-time"
+                        },
                         "bibtex": {
                             "type": "string"
                         }
                     },
                     "required": [
                         "title",
-                        "url",
-                        "retrievedAt"
+                        "url"
                     ]
                 }
             },
@@ -80,6 +83,58 @@
                         "type": "array",
                         "items": {
                             "type": "string"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "singular": {
+                                "oneOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                ]
+                            },
+                            "plural": {
+                                "oneOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                ]
+                            },
+                            "abbreviations": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "synonyms": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "definition": {
+                                "type": "string"
+                            },
+                            "wikidata_qid": {
+                                "type": "string"
+                            }
                         }
                     }
                 ]
