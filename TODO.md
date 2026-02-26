@@ -14,11 +14,11 @@
   - [x] **Spanish (`es`)**: Develop exhaustive plugin mapping.
   - [x] **Italian (`it`)**: Develop exhaustive plugin mapping.
   - [x] **Russian (`ru`)**: Develop exhaustive plugin mapping.
-- [ ] **Generic Plugin Upgrade**: Refactor generic language providers to leverage QID lookups for more robust fallbacks.
+- [x] **Generic Plugin Upgrade**: Refactor generic language providers to leverage QID lookups for more robust fallbacks.
 
 ## 📏 Standardization & Interoperability
 - [ ] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
-- [ ] **CLDR Integration**: Use CLDR as a dependency for authoritative linguistic metadata and translations.
+- [ ] **CLDR Integration**: Use CLDR as a dependency for authoritative language metadata and translations (incl. endonyms, exonyms).
 - [ ] **Geographic Standards**: Integrate **ISO 3166** or similar for geographic names and identifiers.
 
 ## 🧹 Technical Debt & Maintenance

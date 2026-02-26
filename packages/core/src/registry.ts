@@ -13,6 +13,7 @@ export class Registry {
     private domains: Map<string, Domain> = new Map();
     private tagSystems: Map<string, PluginManifest> = new Map();
     private linguisticMappings: Map<string, Map<string, LinguisticMapping>> = new Map(); // systemId -> ML_ID -> mapping
+    private qidMap: Map<string, string[]> = new Map(); // QID -> [ML_ID, ...]
 
     // --- Core Management ---
 
@@ -23,7 +24,15 @@ export class Registry {
         this.parseDomainsTSV(domainsTsv).forEach(d => this.domains.set(d.id, d));
         const conceptsContents = Array.isArray(conceptsTsv) ? conceptsTsv : [conceptsTsv];
         conceptsContents.forEach(content => {
-            this.parseConceptsTSV(content).forEach(c => this.concepts.set(c.id, c));
+            this.parseConceptsTSV(content).forEach(c => {
+                this.concepts.set(c.id, c);
+                if (c.wikidata) {
+                    const ids = this.qidMap.get(c.wikidata) || [];
+                    if (!ids.includes(c.id)) {
+                        this.qidMap.set(c.wikidata, [...ids, c.id]);
+                    }
+                }
+            });
         });
     }
 
@@ -35,7 +44,15 @@ export class Registry {
             seed.domains.forEach((d: Domain) => this.domains.set(d.id, d));
         }
         if (seed.concepts) {
-            seed.concepts.forEach((c: Concept) => this.concepts.set(c.id, c));
+            seed.concepts.forEach((c: Concept) => {
+                this.concepts.set(c.id, c);
+                if (c.wikidata) {
+                    const ids = this.qidMap.get(c.wikidata) || [];
+                    if (!ids.includes(c.id)) {
+                        this.qidMap.set(c.wikidata, [...ids, c.id]);
+                    }
+                }
+            });
         }
     }
 
@@ -426,34 +443,44 @@ export class Registry {
     public resolveLinguisticMapping(conceptId: string, systemId: string): ResolvedLinguisticMapping | undefined {
         const isValid = (m: LinguisticMapping) => !!(m.singular || m.plural || (m.abbreviations && m.abbreviations.length > 0));
 
-        // 1. Target System
-        let mapping = this.getLinguisticMapping(conceptId, systemId);
-        if (mapping && isValid(mapping)) {
-            return { ...mapping, sourceSystemId: systemId, isFallback: false };
-        }
-
-        // 2. Language Fallback
+        // 1. Direct match (target, language generic, global generic)
+        const systemsToTry = [systemId];
         const targetSystem = this.tagSystems.get(systemId);
         if (targetSystem?.descriptor.language) {
             const langGenericId = `${targetSystem.descriptor.language}-generic`;
-            if (langGenericId !== systemId) {
-                mapping = this.getLinguisticMapping(conceptId, langGenericId);
-                if (mapping && isValid(mapping)) {
-                    return { ...mapping, sourceSystemId: langGenericId, isFallback: true };
+            if (langGenericId !== systemId) systemsToTry.push(langGenericId);
+        }
+        if (systemId !== 'en-generic') systemsToTry.push('en-generic');
+
+        for (const sid of systemsToTry) {
+            const mapping = this.getLinguisticMapping(conceptId, sid);
+            if (mapping && isValid(mapping)) {
+                return { ...mapping, sourceSystemId: sid, isFallback: sid !== systemId };
+            }
+        }
+
+        // 2. QID Sibling Fallback
+        const concept = this.getConcept(conceptId);
+        if (concept?.wikidata) {
+            const siblingIds = this.qidMap.get(concept.wikidata) || [];
+            for (const siblingId of siblingIds) {
+                if (siblingId === conceptId) continue;
+                for (const sid of systemsToTry) {
+                    const siblingMapping = this.getLinguisticMapping(siblingId, sid);
+                    if (siblingMapping && isValid(siblingMapping)) {
+                        return {
+                            ...siblingMapping,
+                            id: conceptId, // Return with requested concept ID
+                            sourceSystemId: sid,
+                            isFallback: true,
+                            isQidSibling: true // Flag as QID-based sibling match
+                        } as any;
+                    }
                 }
             }
         }
 
-        // 3. Global Fallback (English)
-        if (systemId !== 'en-generic') {
-            mapping = this.getLinguisticMapping(conceptId, 'en-generic');
-            if (mapping && isValid(mapping)) {
-                return { ...mapping, sourceSystemId: 'en-generic', isFallback: true };
-            }
-        }
-
-        // 4. Ontology Fallback
-        const concept = this.getConcept(conceptId);
+        // 3. Ontology Fallback
         if (concept) {
             const label = concept.label || conceptId;
             return {
