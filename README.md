@@ -21,7 +21,7 @@ This is a monorepo containing the following components:
 - `packages/core`: The central ontology engine and registry.
 - `packages/plugin-ud`: Universal Dependencies tag mapping provider.
 - `docs/`: Comprehensive specifications and concept notes.
-- `ontology/`: The machine-readable "seed" data for the ontology.
+- `ontology/`: The single-source-of-truth directory of definitions, defining the entire "world" of MetaLang—the domains, the concepts, and their hierarchical relationships
 
 ## 📖 Key Documentation
 

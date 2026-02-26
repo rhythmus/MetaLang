@@ -58,7 +58,7 @@ To manage the increasing complexity of the project, the MetaLang specification h
 - PHONOLOGY / phonetics (v1.1+)
 - DISCOURSE / rhetoric
 - ORTHOGRAPHY / writing
-- PUNCTUATION (child of ORTHOGRAPHY)
+- PUNCTUATION (child of ORTHOGRAPHY): Distinct domain for typographic markers, allowing for properties like open/close/terminal parity.
 - EDITORIAL markers (if retained) 
 
 3.3 Concept properties (TSV columns)
@@ -71,6 +71,9 @@ To manage the increasing complexity of the project, the MetaLang specification h
 3.4 Domain Hierarchy
 
 Domains now support a `parent` property in `domains.tsv`, allowing for grouping (e.g., `RHETORIC` and `FIELD` under `REGISTER`; `LEX-STRUCT` and `SYNTACTIC-RELATION` under `SYNTAX`).
+
+### 3.5 Rationale: Functional vs. Categorical Roles
+The inclusion of the `SYNTACTIC-RELATION` domain (separate from `POS`) acknowledges the distinction between a word's categorical identity (e.g., Noun) and its functional role within a sentence (e.g., Subject). This separation is critical for mapping to dependency-based systems like Universal Dependencies.
 - DAG support (multi-parenting)
 - Prohibited relationships and constraints  
     3.5 Concept lifecycle governance
@@ -234,7 +237,7 @@ Implemented in the `Registry` class:
 - **domains.tsv**: `WikiData QID`, `parent`, `ML_ID`, `label`.
 
 ### 8.5 Modular Concept Architecture
-The transition from a monolithic `concepts.tsv` to a directory-based structure (`ontology/concepts/`) allows for better isolation of domain-specific data, easier human review, and fewer merge conflicts during collaborative curation.
+The transition from a monolithic `concepts.tsv` to a directory-based structure (`ontology/concepts/`) allows for better isolation of domain-specific data, easier human review, and fewer merge conflicts during collaborative curation. The directory was renamed to `ontology/` (from `data/`) to signify its role as the definitive source of truth and foundational infrastructure for the entire MetaLang ecosystem.
 8.5 Lossless round-tripping requirements  
 8.6 Build pipeline
 
