@@ -1,11 +1,11 @@
-WikiData QID	parent	ML_ID	label
-Q128234		ML_MORPH-FEATURE_CASE	(grammatical) case
-Q162378		ML_MORPH-FEATURE_GENDER	(grammatical) gender
-		ML_MORPH-FEATURE_INTRANSITIEF	intransitief
-Q104083		ML_MORPH-FEATURE_NUMBER	(grammatical) number
-		ML_MORPH-FEATURE_ONVOLTOOID-TEGENWOORDIGE-TIJD	onvoltooid tegenwoordige tijd
-		ML_MORPH-FEATURE_ONVOLTOOID-VERLEDEN-TIJD	onvoltooid verleden tijd
-Q690940		ML_MORPH-FEATURE_PERSON	(grammatical) person
-		ML_MORPH-FEATURE_TRANSITIEF	transitief
-		ML_MORPH-FEATURE_TRANSITIVITY-AMBITRANSITIVE	ambitransitive verb
-		ML_MORPH-FEATURE_VOLTOOID-DEELWOORD	voltooid deelwoord
+WikiData QID	parent	ML_ID	label	description	wiktionary
+Q128234		ML_MORPH-FEATURE_CASE	(grammatical) case		
+Q162378		ML_MORPH-FEATURE_GENDER	(grammatical) gender		
+		ML_MORPH-FEATURE_INTRANSITIEF	intransitief		
+Q104083		ML_MORPH-FEATURE_NUMBER	(grammatical) number		
+		ML_MORPH-FEATURE_ONVOLTOOID-TEGENWOORDIGE-TIJD	onvoltooid tegenwoordige tijd		
+		ML_MORPH-FEATURE_ONVOLTOOID-VERLEDEN-TIJD	onvoltooid verleden tijd		
+Q690940		ML_MORPH-FEATURE_PERSON	(grammatical) person		
+		ML_MORPH-FEATURE_TRANSITIEF	transitief		
+		ML_MORPH-FEATURE_TRANSITIVITY-AMBITRANSITIVE	ambitransitive verb	Capable of being either [transitive](#transitive) or [intransitive](#intransitive) depending on usage. For instance, [_eat_](https://en.wiktionary.org/wiki/eat#English) and [_read_](https://en.wiktionary.org/wiki/read#English) optionally take a [direct object](#direct_object): "I eat daily", "She likes to read" (both intransitive), "Read this book", "I do not eat meat" (both transitive). [Ergative verbs](#ergative_verb) (q.v.) are a kind of ambitransitive verb. Compare [ditransitive verb](#ditransitive_verb).	https://en.wiktionary.org/wiki/ambitransitive_verb
+		ML_MORPH-FEATURE_VOLTOOID-DEELWOORD	voltooid deelwoord		

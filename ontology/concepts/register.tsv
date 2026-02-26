@@ -1,12 +1,12 @@
-WikiData QID	parent	ML_ID	label
-		ML_REGISTER_ABSOLUUT-GEBRUIKT	absoluut (gebruikt)
-		ML_REGISTER_ANGRY	angry register
-		ML_REGISTER_ARCHAIC	verouderd, ouderwets
-		ML_REGISTER_DIALECTISCH	dialectisch
-		ML_REGISTER_FAMILIAIR-GEMEENZAAM	familiair, gemeenzaam
-		ML_REGISTER_FIGUURLIJK	figuurlijk
-		ML_REGISTER_GEWOONLIJK	gewoonlijk
-		ML_REGISTER_HISTORISCH	historisch
-		ML_REGISTER_IRONISCH	ironisch
-		ML_REGISTER_LITERAIR	literair
-		ML_REGISTER_WETENSCHAPPELIJK	wetenschappelijk
+WikiData QID	parent	ML_ID	label	description	wiktionary
+		ML_REGISTER_ABSOLUUT-GEBRUIKT	absoluut (gebruikt)		
+		ML_REGISTER_ANGRY	angry register	Belonging to the angry linguistic [register](#register), used only when the speaker is angry. This register is quite rare, but is found in the [Bikol languages](https://en.wikipedia.org/wiki/Bikol_languages) of the central Philippines.	https://en.wiktionary.org/wiki/angry
+		ML_REGISTER_ARCHAIC	verouderd, ouderwets		
+		ML_REGISTER_DIALECTISCH	dialectisch		
+		ML_REGISTER_FAMILIAIR-GEMEENZAAM	familiair, gemeenzaam		
+		ML_REGISTER_FIGUURLIJK	figuurlijk		
+		ML_REGISTER_GEWOONLIJK	gewoonlijk		
+		ML_REGISTER_HISTORISCH	historisch		
+		ML_REGISTER_IRONISCH	ironisch		
+		ML_REGISTER_LITERAIR	literair		
+		ML_REGISTER_WETENSCHAPPELIJK	wetenschappelijk		

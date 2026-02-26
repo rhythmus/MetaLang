@@ -1,31 +1,31 @@
-WikiData QID	parent	ML_ID	label
-Q156986		ML_MORPH-VALUE_CASE-ABLATIVE	ablative (case)
-		ML_MORPH-VALUE_CASE-ABSOLUTIVE	absolutive case
-Q146078		ML_MORPH-VALUE_CASE-ACCUSATIVE	accusative (case)
-Q145599		ML_MORPH-VALUE_CASE-DATIVE	dative (case)
-Q146233		ML_MORPH-VALUE_CASE-GENITIVE	genitive (case)
-Q131105		ML_MORPH-VALUE_CASE-NOMINATIVE	nominative (case)
-Q185077		ML_MORPH-VALUE_CASE-VOCATIVE	vocative (case)
-Q14169499	ML_POS_ADJECTIVE	ML_MORPH-VALUE_DEGREE-COMPARATIVE	comparative (degree)
-Q1817208	ML_POS_ADJECTIVE	ML_MORPH-VALUE_DEGREE-SUPERLATIVE	superlative (degree)
-Q501405		ML_MORPH-VALUE_FUTURE	future tense
-Q1775415		ML_MORPH-VALUE_GENDER-FEMININE	feminine
-Q499327		ML_MORPH-VALUE_GENDER-MASCULINE	masculine
-Q1775461		ML_MORPH-VALUE_GENDER-NEUTER	neuter
-		ML_MORPH-VALUE_MOOD-ADMIRATIVE	admirative
-Q625581		ML_MORPH-VALUE_MOOD-CONDITIONAL	conditional
-Q22716		ML_MORPH-VALUE_MOOD-IMPERATIVE	imperative
-Q682111		ML_MORPH-VALUE_MOOD-INDICATIVE	indicative
-Q473746		ML_MORPH-VALUE_MOOD-SUBJUNCTIVE	subjunctive
-		ML_MORPH-VALUE_NOUN-STATE-ANNEXED	annexed state
-Q110022		ML_MORPH-VALUE_NUMBER-DUAL	dual
-Q146786		ML_MORPH-VALUE_NUMBER-PLURAL	plural
-Q110786		ML_MORPH-VALUE_NUMBER-SINGULAR	singular
-Q1994301		ML_MORPH-VALUE_PAST	past tense
-		ML_MORPH-VALUE_PERSON-FIRST	1st person
-		ML_MORPH-VALUE_PERSON-SECOND	2nd person
-		ML_MORPH-VALUE_PERSON-THIRD	3rd person
-Q192613		ML_MORPH-VALUE_PRESENT	present tense
-Q179230		ML_MORPH-VALUE_VERBFORM-INFINITIVE	infinitive
-Q192302	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-GERUND	gerund
-Q851145	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-GERUNDIVE	gerundive
+WikiData QID	parent	ML_ID	label	description	wiktionary
+Q156986		ML_MORPH-VALUE_CASE-ABLATIVE	ablative (case)		
+		ML_MORPH-VALUE_CASE-ABSOLUTIVE	absolutive case	A [case](#case) used to indicate the [patient](https://en.wiktionary.org/wiki/patient#Noun) or [experiencer](https://en.wiktionary.org/wiki/experiencer) of a [verb](#verb)'s action.	https://en.wiktionary.org/wiki/absolutive_case
+Q146078		ML_MORPH-VALUE_CASE-ACCUSATIVE	accusative (case)		
+Q145599		ML_MORPH-VALUE_CASE-DATIVE	dative (case)		
+Q146233		ML_MORPH-VALUE_CASE-GENITIVE	genitive (case)		
+Q131105		ML_MORPH-VALUE_CASE-NOMINATIVE	nominative (case)		
+Q185077		ML_MORPH-VALUE_CASE-VOCATIVE	vocative (case)		
+Q14169499	ML_POS_ADJECTIVE	ML_MORPH-VALUE_DEGREE-COMPARATIVE	comparative (degree)		
+Q1817208	ML_POS_ADJECTIVE	ML_MORPH-VALUE_DEGREE-SUPERLATIVE	superlative (degree)		
+Q501405		ML_MORPH-VALUE_FUTURE	future tense	The [tense](#tense) of a [verb](#verb) used to refer to an event that has not yet happened, is expected to happen in the future, or might never happen. In English it is formed by using [_will_](https://en.wiktionary.org/wiki/will#English) or [_shall_](https://en.wiktionary.org/wiki/shall#English) before the verb, as in _I will go home tomorrow_.	https://en.wiktionary.org/wiki/future_tense
+Q1775415		ML_MORPH-VALUE_GENDER-FEMININE	feminine	Feminine; said of a word belonging to the feminine [gender](#gender), which is usually contrasted with the [masculine](#masculine) gender, and also often with a [neuter](#neuter) gender.	https://en.wiktionary.org/wiki/feminine
+Q499327		ML_MORPH-VALUE_GENDER-MASCULINE	masculine	Belonging to the male grammatical [gender](#gender), in languages that have gender distinctions.	https://en.wiktionary.org/wiki/masculine
+Q1775461		ML_MORPH-VALUE_GENDER-NEUTER	neuter	Of neuter [gender](#gender): having a form which is not [masculine](#masculine) nor [feminine](#feminine); or having a form which is not of [common gender](#common_gender).	https://en.wiktionary.org/wiki/neuter
+		ML_MORPH-VALUE_MOOD-ADMIRATIVE	admirative	A verb form similar to [mirative](https://en.wiktionary.org/wiki/mirative), found primarily in some languages of the Balkan sprachbund (i.e. namely Albanian, Bulgarian and Macedonian), which expresses surprise, irony, doubt, or reportedness on the part of the speaker.	https://en.wiktionary.org/wiki/admirative
+Q625581		ML_MORPH-VALUE_MOOD-CONDITIONAL	conditional		
+Q22716		ML_MORPH-VALUE_MOOD-IMPERATIVE	imperative		
+Q682111		ML_MORPH-VALUE_MOOD-INDICATIVE	indicative		
+Q473746		ML_MORPH-VALUE_MOOD-SUBJUNCTIVE	subjunctive		
+		ML_MORPH-VALUE_NOUN-STATE-ANNEXED	annexed state	In [Berber languages](https://en.wiktionary.org/wiki/Category:Berber_languages), a grammatical [case](#case) or [state](#state) of the [noun](#noun), part of a binary opposition with the [free state](#free_state). The annexed state is characterized by modification of the noun's initial syllable: in Northern Berber, [masculine](#masculine) nouns typically take a _w-_ or _y-_ prefix (e.g. [_argaz_](https://en.wiktionary.org/wiki/argaz#Kabyle) (“man”) → [_wergaz_](https://en.wiktionary.org/w/index.php?title=wergaz&action=edit&redlink=1)), while [feminine](#feminine) nouns may lose their initial vowel. The annexed state marks a noun in a [dependency](#dependency) relationship: after most [prepositions](#preposition), as the [subject](#subject) of a [verb](#verb), after numerals, or as a [determiner](#determiner) of another noun. Also called [**construct state**](#construct_state). / Contrast [_free state_](#free_state).	https://en.wiktionary.org/wiki/annexed_state
+Q110022		ML_MORPH-VALUE_NUMBER-DUAL	dual	A [grammatical number](#number) that indicates exactly two items or individuals. Usually contrasts with [singular](#singular_number) and [plural](#plural_number).	https://en.wiktionary.org/wiki/dual, https://en.wiktionary.org/wiki/dual_number
+Q146786		ML_MORPH-VALUE_NUMBER-PLURAL	plural	A [grammatical number](#number) that indicates multiple items or individuals. Most languages contrast it with [singular](#singular_number), and plural indicates two or more. Some languages also possess the [dual](#dual_number) or even [trial](#trial_number) numbers; in these instances the plural indicates more than the highest specific number.	https://en.wiktionary.org/wiki/plural
+Q110786		ML_MORPH-VALUE_NUMBER-SINGULAR	singular	A [grammatical number](#number) that indicates exactly one item or individual. Usually contrasts with [plural](#plural_number), and, in some languages, with [dual](#dual_number).	https://en.wiktionary.org/wiki/singular
+Q1994301		ML_MORPH-VALUE_PAST	past tense	The [tense](#tense) of a [verb](#verb) used to refer to an event, transaction, or occurrence that did happen or has happened, or an object that existed, at a point in time before now. An English example is [_saw_](https://en.wiktionary.org/wiki/saw#English) in _I saw my friend yesterday_.	https://en.wiktionary.org/wiki/past_tense
+		ML_MORPH-VALUE_PERSON-FIRST	1st person	_See [_first person_](#first_person)._	
+		ML_MORPH-VALUE_PERSON-SECOND	2nd person	_See [_second person_](#second_person)._	
+		ML_MORPH-VALUE_PERSON-THIRD	3rd person	_See [_third person_](#third_person)._	
+Q192613		ML_MORPH-VALUE_PRESENT	present tense	The [tense](#tense) of a [verb](#verb) used primarily to refer to an event, transaction, or occurrence happening now or at the present time. The verb [_see_](https://en.wiktionary.org/wiki/see#English) in _I see my friend in the window_ is in the present tense. In many languages, including English, the present tense may also be used to refer to past or future events in certain contexts: _My plane leaves tomorrow morning_ (where [_leave_](https://en.wiktionary.org/wiki/leave#English) is a present verb that refers to the future), or: _John Lennon dies of gunshot wounds_ (as in a headline, where [_dies_](https://en.wiktionary.org/wiki/dies#English) is a present verb that refers to the past; see [historical present](https://en.wiktionary.org/wiki/historical_present)). While such uses are somewhat exceptional in English, the present tense is used much more widely in many languages. For example, the German present tense also covers some or most of the uses of the English future (_I will do_) and present perfect (_I have done_).	https://en.wiktionary.org/wiki/present_tense
+Q179230		ML_MORPH-VALUE_VERBFORM-INFINITIVE	infinitive	A non-[finite](https://en.wiktionary.org/wiki/finite) verb form considered [neutral](https://en.wiktionary.org/wiki/neutral) with respect to [inflection](#inflection); depending on language variously found used with [auxiliary verbs](https://en.wiktionary.org/wiki/auxiliary_verb), in [subordinate clauses](https://en.wiktionary.org/wiki/subordinate_clause), or acting as a [gerund](#gerund), and often as the [dictionary form](https://en.wiktionary.org/wiki/dictionary_form). In English, the infinitive is formed with the word [_to_](https://en.wiktionary.org/wiki/to#English), e.g. to [_read_](https://en.wiktionary.org/wiki/read#English).	https://en.wiktionary.org/wiki/infinitive
+Q192302	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-GERUND	gerund	Any of various non-finite [verb](#verb) forms in various languages. In English, a "[gerund](https://en.wikipedia.org/wiki/Gerund#Gerunds_in_English)" refers to a verb in its [_-ing_](https://en.wiktionary.org/wiki/-ing#English) form when used in a way that resembles the use of a [noun](#noun). Despite showing noun-like behavior in the context of the surrounding sentence, gerunds show verbal behavior in the context of their own internal clause: they can take direct objects or be modified by adverbs. In this way, gerunds are distinguished from deverbal nouns ending in _-ing,_ which occur in noun phrases that can take determiners or be modified by adjectives. For example, "manufacturing" is a gerund in the following sentence: "Efficiently manufacturing this device is difficult." It is a [verbal noun](#verbal_noun) (not a gerund) in this sentence: "The efficient manufacturing of this device is difficult." In other languages, gerund can refer to a form that often functions as an [adverb](#adverb) to form [adverbial](#adverbial) phrases or the continuous tense.	https://en.wiktionary.org/wiki/gerund
+Q851145	ML_POS_VERB	ML_MORPH-VALUE_VERBFORM-GERUNDIVE	gerundive		

@@ -1,23 +1,21 @@
-# WikiData QID	parent	ML_ID	label
-Q190618		ML_PUNCTUATION_FULL-STOP	full stop
-Q161737		ML_PUNCTUATION_COMMA	comma
-Q102694		ML_PUNCTUATION_COLON	colon
-Q11246		ML_PUNCTUATION_GREEK-SEMICOLON	greek semicolon
-Q11169		ML_PUNCTUATION_QUESTION-MARK	question mark
-Q158661		ML_PUNCTUATION_EXCLAMATION-MARK	exclamation mark
-Q190601		ML_PUNCTUATION_QUOTATION-MARKS	quotation marks
-Q83034		ML_PUNCTUATION_APOSTROPHE	apostrophe
-Q162460		ML_PUNCTUATION_DIAERESIS	diaeresis
-Q621535		ML_PUNCTUATION_GREEK-ACCENT	greek accent
-Q192797		ML_PUNCTUATION_HYPHEN	hyphen
-Q190884		ML_PUNCTUATION_DASH	dash
-Q190623		ML_PUNCTUATION_ELLIPSIS	ellipsis
-Q190538		ML_PUNCTUATION_PARENTHESES	parentheses
-Q190538		ML_PUNCTUATION_BRACKETS	brackets
-Q190538		ML_PUNCTUATION_BRACES	braces
-Q330104		ML_PUNCTUATION_DITTO-MARK	ditto mark
-
-	ML_POS_PUNCT	ML_PUNCTUATION_CL-PUNCT	close punctuation mark
-Q7702742	ML_POS_PUNCT	ML_PUNCTUATION_TERM-PUNCT	terminal punctuation mark
-
-	ML_POS_PUNCT	ML_CUSTOM_OP-PUNCT	open punctuation mark
+WikiData QID	parent	ML_ID	label	description	wiktionary
+Q190618		ML_PUNCTUATION_FULL-STOP	full stop		
+Q161737		ML_PUNCTUATION_COMMA	comma		
+Q102694		ML_PUNCTUATION_COLON	colon		
+Q11246		ML_PUNCTUATION_GREEK-SEMICOLON	greek semicolon		
+Q11169		ML_PUNCTUATION_QUESTION-MARK	question mark		
+Q158661		ML_PUNCTUATION_EXCLAMATION-MARK	exclamation mark		
+Q190601		ML_PUNCTUATION_QUOTATION-MARKS	quotation marks		
+Q83034		ML_PUNCTUATION_APOSTROPHE	apostrophe		
+Q162460		ML_PUNCTUATION_DIAERESIS	diaeresis	A [diacritic](#diacritic) ( ¨ ), typically placed over a [vowel](#vowel) letter. Depending on the language, it usually either indicates that the vowel is sounded separately from the preceding vowel (as in French [_naïf_](https://en.wiktionary.org/wiki/na%C3%AFf#French) (“naive”) and the dated English spelling [_coöperate_](https://en.wiktionary.org/wiki/co%C3%B6perate#English)), or that the vowel has a different (often specifically [fronted](#front_vowel)) pronunciation compared with the base vowel without the diaeresis. The latter usage is typical of [German](https://en.wikipedia.org/wiki/German_language) and certain other [Germanic languages](https://en.wikipedia.org/wiki/Germanic_languages), as in [_über_](https://en.wiktionary.org/wiki/%C3%BCber#German) (“over”) and [_König_](https://en.wiktionary.org/wiki/K%C3%B6nig#German) (“king”), and in this case the diacritic often goes by the alternative name of [_umlaut_](#umlaut).	https://en.wiktionary.org/wiki/diaeresis
+Q621535		ML_PUNCTUATION_GREEK-ACCENT	greek accent		
+Q192797		ML_PUNCTUATION_HYPHEN	hyphen		
+Q190884		ML_PUNCTUATION_DASH	dash		
+Q190623		ML_PUNCTUATION_ELLIPSIS	ellipsis	The omission of a word or phrase that can be inferred from the context.	https://en.wiktionary.org/wiki/ellipsis
+Q190538		ML_PUNCTUATION_PARENTHESES	parentheses		
+Q190538		ML_PUNCTUATION_BRACKETS	brackets		
+Q190538		ML_PUNCTUATION_BRACES	braces		
+Q330104		ML_PUNCTUATION_DITTO-MARK	ditto mark		
+	ML_POS_PUNCT	ML_PUNCTUATION_CL-PUNCT	close punctuation mark		
+Q7702742	ML_POS_PUNCT	ML_PUNCTUATION_TERM-PUNCT	terminal punctuation mark		
+	ML_POS_PUNCT	ML_CUSTOM_OP-PUNCT	open punctuation mark		

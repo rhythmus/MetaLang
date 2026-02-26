@@ -43,6 +43,8 @@ export interface Concept {
   wikidata: string; // WikiData QID
   id: string;      // Full ML_ID (e.g., ML_POS_NOUN)
   label: string;   // English label
+  description: string | undefined;
+  wiktionary: string | undefined;
   externalRefs?: Record<string, string>;
   systemMappings?: Record<string, string | string[]>;
 }

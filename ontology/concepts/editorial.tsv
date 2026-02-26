@@ -1,9 +1,9 @@
-WikiData QID	parent	ML_ID	label
-		ML_EDITORIAL_NAMELIJK	namelijk
-		ML_EDITORIAL_VERGELIJK	vergelijk
-Q1048501		ML_EDITORIAL_cf	confer
-Q845653		ML_EDITORIAL_etc	etcetera
-		ML_EDITORIAL_eg	bijvoorbeeld
-		ML_CUSTOM_SPREEK-UIT-LEES	spreek uit, lees
-		ML_LEX-STRUCT_ALTERNATIVE-FORM	alternative form
-		ML_LEX-STRUCT_IDEM	idem, gelijk woord of gelijke uitdrukking
+WikiData QID	parent	ML_ID	label	description	wiktionary
+		ML_EDITORIAL_NAMELIJK	namelijk		
+		ML_EDITORIAL_VERGELIJK	vergelijk		
+Q1048501		ML_EDITORIAL_cf	confer		
+Q845653		ML_EDITORIAL_etc	etcetera		
+		ML_EDITORIAL_eg	bijvoorbeeld		
+		ML_CUSTOM_SPREEK-UIT-LEES	spreek uit, lees		
+		ML_LEX-STRUCT_ALTERNATIVE-FORM	alternative form	In definitions: An "alternative form" of a given word is another spelling of that word which is pronounced differently: for example, _killikinick_ is an alternative form of _kinnikinnick_. (A spelling which is pronounced the same is an "alternative spelling": for example, _judgement_ is an alternative spelling of _judgment_.) / As a header: The header "Alternative forms" [encompasses](https://en.wiktionary.org/wiki/Wiktionary:Entry_layout#Alternative_forms) both alternative spellings (_judgement_, _judgment_; _sulphur_, _sulfur_) and alternative forms (_killikinick_, _kinnikinnick_), as well as differences in hyphenation (_tea-cup_, _teacup_), capitalization (_LASER_, _laser_), and other similar differences (_naïveté_, _naiveté_).	
+		ML_LEX-STRUCT_IDEM	idem, gelijk woord of gelijke uitdrukking		

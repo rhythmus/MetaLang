@@ -1,281 +1,281 @@
-WikiData QID	parent	ML_ID	label
-Q339718		ML_RHETORIC_ACCUMULATIO	accumulatio
-Q19893772		ML_RHETORIC_ACUTEZZA	acutezza
-Q189183		ML_RHETORIC_AD-HOMINEM	ad hominem
-		ML_RHETORIC_ADJUNCTION	adjunction
-Q35986		ML_RHETORIC_AESTHETICS	aesthetics
-		ML_RHETORIC_AETIOLOGIA	aetiologia
-		ML_RHETORIC_AFFECTUS	affectus
-Q3745428		ML_RHETORIC_AFFIRMATION-AND-NEGATION	affirmation and negation
-		ML_RHETORIC_ALLOIOSIS	alloiosis, alloisis
-Q50757077		ML_RHETORIC_AMBIGUA	ambigua
-Q738162		ML_RHETORIC_ANACOENOSIS	anacoenosis
-Q484456		ML_RHETORIC_ANACOLUTHON	anacoluthon
-Q14544854		ML_RHETORIC_ANADIPLOSIS	anadiplosis
-Q185816		ML_RHETORIC_ANALOGY	analogy
-Q486050		ML_RHETORIC_ANAPHORA	anaphora
-Q4751584		ML_RHETORIC_ANAPODOTON	anapodoton
-Q193206		ML_RHETORIC_ANECDOTE	anecdote
-		ML_RHETORIC_ANIMORUM-MOTUS	animorum motus
-Q2463842		ML_RHETORIC_ANTANACLASIS	antanaclasis
-Q17049634		ML_RHETORIC_ANTIPTOSIS	antiptosis
-Q5112363		ML_RHETORIC_ANTISTROPHE	antistrophe
-Q122313503		ML_RHETORIC_ANTITHESIS	antithesis
-Q618563		ML_RHETORIC_APHERESIS	apheresis
-Q112154		ML_RHETORIC_APOCOPE	apocope
-		ML_RHETORIC_APOPHASIS	apophasis, apophesis
-Q261262		ML_RHETORIC_APORIA	aporia
-Q619760		ML_RHETORIC_APOSIOPESIS	aposiopesis
-Q436048		ML_RHETORIC_APOSTROPHE	apostrophe
-Q4959031		ML_RHETORIC_APPELLATE-COURT	appellate court
-Q18595825		ML_RHETORIC_ARETE	Arete
-Q186619		ML_RHETORIC_ARGUMENT	argument
-Q752275		ML_RHETORIC_ARGUMENTUM-AD-BACULUM	argumentum ad baculum
-Q777939		ML_RHETORIC_ARROGANCE	arrogance
-Q137711384		ML_RHETORIC_ARS-ARENGANDI	ars arengandi
-Q56304068		ML_RHETORIC_ARS-PRAEDICANDI	ars praedicandi
-Q9160460		ML_RHETORIC_ART-OF-POETRY	art of poetry
-Q1406161		ML_RHETORIC_ARTISTIC-THEME	artistic theme
-Q747668		ML_RHETORIC_ASYNDETON	asyndeton
-Q211198		ML_RHETORIC_AUDIENCE	audience
-Q2873202		ML_RHETORIC_AUXESIS	auxesis
-Q50808388		ML_RHETORIC_AXIOMS	axioms
-Q720113		ML_RHETORIC_BARBARISM	barbarism
-Q2886750		ML_RHETORIC_BASES-DE-MANRESA	Bases de Manresa
-Q43247602		ML_RHETORIC_BATHOSELLA	Bathosella
-		ML_RHETORIC_BDELYGMA	bdelygma
-Q4940904		ML_RHETORIC_BOMPHIOLOGIA	Bomphiologia
-Q640423		ML_RHETORIC_BRACHYLOGY	brachylogy
-Q1253840		ML_RHETORIC_BREVITAS	brevitas
-Q122382956		ML_RHETORIC_BURDEN-OF-PROOF	burden of proof
-Q63554165		ML_RHETORIC_CANON	canon
-		ML_RHETORIC_CAPTATIO-BENEVOLUNTATIAE	captatio benevoluntatiae
-Q582726		ML_RHETORIC_CATACHRESIS	catachresis
-Q2574811		ML_RHETORIC_CAUSE	cause
-Q5074396		ML_RHETORIC_CHARISMA	charisma
-		ML_RHETORIC_CIRCA-REM	circa rem
-Q1095194		ML_RHETORIC_CIRCUMLOCUTION	circumlocution
-Q52000412		ML_RHETORIC_CLIMAX	Climax
-Q5982337		ML_RHETORIC_COLON	colon
-Q721747		ML_RHETORIC_COMMEMORATIVE-PLAQUE	commemorative plaque
-Q332880		ML_RHETORIC_COMMON-SENSE	common sense
-Q53989261		ML_RHETORIC_COMMON-TOPICS-IN-EIGHTEENTH-CENTURY-PREFACES-TO-ENGLISH-SCHOOL-GRAMMARS:-AN-APPLICATION-OF-THE-ECEG-DATABASE	Common topics in eighteenth-century prefaces to English school grammars: an application of the ECEG database
-Q378097		ML_RHETORIC_COMMUNION	communion
-Q2791145		ML_RHETORIC_COMPOSITION-STUDIES	composition studies
-Q327209		ML_RHETORIC_CONCESSION	concession
-Q188613		ML_RHETORIC_CONFIRMATION	confirmation
-Q1125478		ML_RHETORIC_CONFUTATIO-AUGUSTANA	Confutatio Augustana
-Q135014683		ML_RHETORIC_CONSTRAINTS	Constraints
-Q7188981		ML_RHETORIC_CONSUBSTANTIALITY	Consubstantiality
-Q1123462		ML_RHETORIC_CONTEXT	ConTeXt
-Q122314017		ML_RHETORIC_CONTINGENCY	CONTINGENCY
-Q128767372		ML_RHETORIC_CONVERSATION-MODELING-ON-REDDIT-USING-A-GRAPH-STRUCTURED-LSTM	Conversation Modeling on Reddit Using a Graph-Structured LSTM
-Q1051355		ML_RHETORIC_CONVERSION-DISORDER	conversion disorder
-Q38695		ML_RHETORIC_COOKING	cooking
-Q2995866		ML_RHETORIC_COUNTERARGUMENT	counterargument
-Q1530061		ML_RHETORIC_CREDIBILITY	credibility
-Q301751		ML_RHETORIC_CRITICAL-SOCIOLOGY	critical sociology
-Q22983		ML_RHETORIC_DATA	Data
-Q3704137		ML_RHETORIC_DE-OPTIMO-GENERE-ORATORUM	De Optimo Genere Oratorum
-Q56404555		ML_RHETORIC_DECONSTRUCTION	deconstruction
-Q18450032		ML_RHETORIC_DELECTARE	Delectare
-Q37008247		ML_RHETORIC_DEMOS	Demos
-Q9453		ML_RHETORIC_DIALECTIC	dialectic
-Q11694112		ML_RHETORIC_DIALLAGE	diallage
-Q3322847		ML_RHETORIC_DISPOSITIO	dispositio
-Q3710346		ML_RHETORIC_DISSOI-LOGOI	Dissoi Logoi
-Q16829905		ML_RHETORIC_DOCERE	Docere
-Q5305774		ML_RHETORIC_DRAMATISTIC-PENTAD	Dramatistic pentad
-Q844782		ML_RHETORIC_DYSPHEMISM	dysphemism
-Q788419		ML_RHETORIC_ECPHONESIS	ecphonesis
-Q3330405		ML_RHETORIC_ELOCUTIO	elocutio
-Q12769393		ML_RHETORIC_END	end
-Q422913		ML_RHETORIC_ENTHYMEME	enthymeme
-		ML_RHETORIC_EPANAPHORA	epanaphora
-Q1346967		ML_RHETORIC_EPIDEICTIC	epideictic
-Q591966		ML_RHETORIC_EPIPHORA	epiphora
-Q9471		ML_RHETORIC_EPISTEMOLOGY	epistemology
-Q1937845		ML_RHETORIC_EPISTROPHE	epistrophe
-Q207869		ML_RHETORIC_EPITHET	epithet
-Q1953281		ML_RHETORIC_EPIZEUXIS	epizeuxis
-Q3591979		ML_RHETORIC_ETHOPOEIA	ethopoeia
-Q83464		ML_RHETORIC_EUPHEMISM	euphemism
-Q176763		ML_RHETORIC_EVIDENCE	evidence
-Q1993117		ML_RHETORIC_EXEMPLUM	exemplum
-Q25221914		ML_RHETORIC_EXIGENCE	exigence
-Q1384158		ML_RHETORIC_EXORDIUM	exordium
-Q4481574		ML_RHETORIC_FACETIAE	facetiae
-Q13226383		ML_RHETORIC_FACILITY	facility
-Q5429092		ML_RHETORIC_FACULTY-PSYCHOLOGY	faculty psychology
-Q2581738		ML_RHETORIC_FALSE-CONSCIOUSNESS	False consciousness
-Q55611560		ML_RHETORIC_FEMINIST-RHETORIC	Feminist rhetoric
-Q8253		ML_RHETORIC_FICTION	fiction
-Q48311426		ML_RHETORIC_FIELD-DEPENDENT-TRANSVERSE-RELAXATION-RATE-INCREASE-MAY-BE-A-SPECIFIC-MEASURE-OF-TISSUE-IRON-STORES	Field dependent transverse relaxation rate increase may be a specific measure of tissue iron stores
-		ML_RHETORIC_FIELD-INVARIANT	field-invariant
-Q29527347		ML_RHETORIC_FIGURE	figure
-Q58606280		ML_RHETORIC_FORENSIC-ORATORY-AND-THE-JURY-TRIAL-IN-NINETEENTH-CENTURY-AMERICA	Forensic oratory and the jury trial in nineteenth-century America
-Q962165		ML_RHETORIC_FORMAL-FALLACY	formal fallacy
-Q83460		ML_RHETORIC_GENERAL	general
-Q37476917		ML_RHETORIC_GENS	Gens
-Q131476263		ML_RHETORIC_GRAECISMUS	graecismus
-Q102686		ML_RHETORIC_HERMENEUTICS	hermeneutics
-Q3068733		ML_RHETORIC_HETEROGLOSSIA	heteroglossia
-Q201413		ML_RHETORIC_HEURISTIC	heuristic
-Q932406		ML_RHETORIC_HOMEOTELEUTON	homeoteleuton
-		ML_RHETORIC_HOMIOLOGIA	homiologia
-Q181036		ML_RHETORIC_HYPERBOLE	hyperbole
-Q1641379		ML_RHETORIC_HYPOPHORA	hypophora
-Q41719		ML_RHETORIC_HYPOTHESIS	hypothesis
-Q16938453		ML_RHETORIC_HYPOZEUXIS	hypozeuxis
-Q2250272		ML_RHETORIC_HYPSOSINGA	hypsosinga
-Q132137		ML_RHETORIC_ICON	icon
-Q2493413		ML_RHETORIC_IDENTIFICATION	identification
-Q7257		ML_RHETORIC_IDEOLOGY	ideology
-Q1131737		ML_RHETORIC_IMITATION	imitation
-Q2730592		ML_RHETORIC_INDIGNATION	indignation
-Q29887572		ML_RHETORIC_INDUCTION	Induction
-		ML_RHETORIC_INSULTATIO	insultatio
-		ML_RHETORIC_INTERSUBJECTIVE-AGREEMENTS	intersubjective agreements
-Q48785158		ML_RHETORIC_INVITATIONAL-RHETORIC	Invitational rhetoric
-Q131361		ML_RHETORIC_IRONY	irony
-Q737677		ML_RHETORIC_IRRELEVANT-CONCLUSION	irrelevant conclusion
-Q21446657		ML_RHETORIC_ISOCOLON	isocolon
-		ML_RHETORIC_ISSUES-OF-FACT	issues of fact
-Q17951		ML_RHETORIC_JARGON	jargon
-Q109578617		ML_RHETORIC_JIAN-SHI	Jian Shi
-Q19376756		ML_RHETORIC_KAIROS	kairos
-		ML_RHETORIC_KOINOI-TOPOI	koinoi topoi
-Q60790563		ML_RHETORIC_KOLAKEIA	kolakeia
-Q13624084		ML_RHETORIC_LEXIS	Lexis
-Q12139612		ML_RHETORIC_LIST	list
-		ML_RHETORIC_LITERAE-HUMANAE	literae humanae
-Q1149297		ML_RHETORIC_LOCALISM	localism
-Q1542696		ML_RHETORIC_LOCI-COMMUNES	loci communes
-Q3257782		ML_RHETORIC_LOCUTION	locution
-Q193627		ML_RHETORIC_LOGICAL-POSITIVISM	logical positivism
-		ML_RHETORIC_LOGICAL-PROOF	logical proof
-Q17113456		ML_RHETORIC_LOGOLOGY	logology
-Q180832		ML_RHETORIC_LOGOS	logos
-Q1549475		ML_RHETORIC_MAGNANIMITY	magnanimity
-		ML_RHETORIC_MAJOR-PREMISE	major premise
-		ML_RHETORIC_MATERIAL-FALLACY	material fallacy
-Q396447		ML_RHETORIC_MAXIM	maxim
-Q3278958		ML_RHETORIC_MEIOSIS	meiosis
-Q492		ML_RHETORIC_MEMORY	memory
-		ML_RHETORIC_META-NARRATIVES	meta-narratives
-Q18534		ML_RHETORIC_METAPHOR	metaphor
-Q1760396		ML_RHETORIC_METRON	Metron
-Q169534		ML_RHETORIC_MILITARY-DIVISION	military division
-Q103610094		ML_RHETORIC_MINOR-PREMISE	Minor Premise
-		ML_RHETORIC_MODUS-INVENIENDI	modus inveniendi
-		ML_RHETORIC_MODUS-PROFERENDI	modus proferendi
-Q6909140		ML_RHETORIC_MORAL-REASONING	moral reasoning
-Q3894383		ML_RHETORIC_MOVERE	Movere
-		ML_RHETORIC_NECESSARY-CAUSE	necessary cause
-Q54111		ML_RHETORIC_NEOCLASSICAL-ARCHITECTURE	Neoclassical architecture
-Q162145		ML_RHETORIC_NEOPLATONISM	Neoplatonism
-Q26207914		ML_RHETORIC_NOEMA	noema
-Q825737		ML_RHETORIC_NON-SEQUITUR	non sequitur
-		ML_RHETORIC_OICTOS	oictos
-Q104447468		ML_RHETORIC_OMINATION	Omination
-Q170239		ML_RHETORIC_ONOMATOPOEIA	onomatopoeia
-		ML_RHETORIC_OPTATIO	optatio
-Q169429		ML_RHETORIC_OXYMORON	oxymoron
-Q2449062		ML_RHETORIC_PARADEIGMA	paradeigma
-Q483372		ML_RHETORIC_PARADOX	paradox
-Q14511256		ML_RHETORIC_PARALIPSIS	paralipsis
-Q10282159		ML_RHETORIC_PARALLEL-SYNTAX	parallel syntax
-		ML_RHETORIC_PARTICULAR-AUDIENCE	particular audience
-Q633885		ML_RHETORIC_PATHOS	pathos
-Q3412014		ML_RHETORIC_PERORATION	peroration
-Q207174		ML_RHETORIC_PERSONIFICATION	personification
-Q697279		ML_RHETORIC_PETITION	petition
-Q3493035		ML_RHETORIC_PHALLOGOCENTRISM	phallogocentrism
-Q15814210		ML_RHETORIC_PHRONESIS	phronesis
-Q15761466		ML_RHETORIC_PHYSIS	physis
-Q5994		ML_RHETORIC_PIANO	piano
-Q107185154		ML_RHETORIC_PISTIS	pistis
-Q188741		ML_RHETORIC_PLEONASM	pleonasm
-		ML_RHETORIC_POETRIAE,-ARS	poetriae, ars
-Q384593		ML_RHETORIC_POLICE-OFFICER	police officer
-Q270141		ML_RHETORIC_POLYMATH	polymath
-Q179465		ML_RHETORIC_POLYPHONY	polyphony
-Q680469		ML_RHETORIC_POLYPTOTON	polyptoton
-Q426492		ML_RHETORIC_POLYSYNDETON	polysyndeton
-		ML_RHETORIC_PORTRAYL	portrayl
-Q131015		ML_RHETORIC_POSITIVISM	positivism
-Q126692		ML_RHETORIC_PRAGMATISM	pragmatism
-Q3402394		ML_RHETORIC_PRESENCE	presence
-Q200726		ML_RHETORIC_PROBABILITY-DISTRIBUTION	probability distribution
-		ML_RHETORIC_PRONUNTIATO	pronuntiato
-Q108163		ML_RHETORIC_PROPOSITION	proposition
-Q2113832		ML_RHETORIC_PROTREPTICUS	protrepticus
-Q3924778		ML_RHETORIC_PRUDENCE	prudence
-Q21656365		ML_RHETORIC_PSOGOS	psogos
-		ML_RHETORIC_PSYCHAGOGOS	psychagogos
-Q10355327		ML_RHETORIC_PSYCHE	Psyche
-Q17945		ML_RHETORIC_PUBLIC-SPHERE	public sphere
-Q263668		ML_RHETORIC_PUN	pun
-Q21136445		ML_RHETORIC_PURPOSE	purpose
-Q273822		ML_RHETORIC_QUADRIVIUM	quadrivium
-Q135672152		ML_RHETORIC_QUAESTIONES	quaestiones
-		ML_RHETORIC_REASONING-BY-CONTRARIES	reasoning by contraries
-Q18182606		ML_RHETORIC_RES	Res
-Q64825398		ML_RHETORIC_RETIRED	retired
-Q136388991		ML_RHETORIC_RHETORES-SELECTI	Rhetores selecti
-		ML_RHETORIC_RHETORICAL-DISCOURSE	rhetorical discourse
-		ML_RHETORIC_RHETORICAL-OPPOSITION	rhetorical opposition
-Q7320449		ML_RHETORIC_RHETORICAL-SITUATION	rhetorical situation
-Q361809		ML_RHETORIC_RHETORICIAN	rhetorician
-Q516766		ML_RHETORIC_SALUTATION	salutation
-Q39645		ML_RHETORIC_SEMANTICS	semantics
-Q60195		ML_RHETORIC_SEMIOTICS	semiotics
-Q37140445		ML_RHETORIC_SENATUS	Senatus
-Q110727088		ML_RHETORIC_SHUI	Shui
-Q199714		ML_RHETORIC_SIMILE	simile
-Q1395219		ML_RHETORIC_SKEPTICISM	skepticism
-Q1545853		ML_RHETORIC_SOLECISM	solecism
-Q3750514		ML_RHETORIC_SOPHIST	sophist
-		ML_RHETORIC_SORAISMUS	soraismus
-Q545839		ML_RHETORIC_SPREZZATURA	sprezzatura
-		ML_RHETORIC_STASIS-SYSTEM	stasis system
-Q322265		ML_RHETORIC_STATUS-QUO	status quo
-Q6671777		ML_RHETORIC_STRUCTURE	structure
-		ML_RHETORIC_STUDIA-HUMANITAS	studia humanitas
-Q1269323		ML_RHETORIC_SYLLEPSIS	syllepsis
-Q107342		ML_RHETORIC_SYLLOGISM	syllogism
-		ML_RHETORIC_SYLLOGISTIC-LOGIC	syllogistic logic
-Q80071		ML_RHETORIC_SYMBOL	symbol
-		ML_RHETORIC_SYMBOLIC-INDUCEMENT	symbolic inducement
-		ML_RHETORIC_SYMPHERON	sympheron
-Q3961434		ML_RHETORIC_SYNCHYSIS	synchysis
-Q180007		ML_RHETORIC_SYNCOPE	syncope
-Q10687425		ML_RHETORIC_SYNECDOCHE	synecdoche
-		ML_RHETORIC_TAPINOSIS	tapinosis
-Q37477789		ML_RHETORIC_TASTE	taste
-Q209555		ML_RHETORIC_TAUTOLOGY	tautology
-Q82650		ML_RHETORIC_TAXI	taxi
-Q1054		ML_RHETORIC_TECHNETIUM	technetium
-Q1266946		ML_RHETORIC_THESIS	thesis
-		ML_RHETORIC_THESMOS	thesmos
-Q1203324		ML_RHETORIC_TONE	tone
-		ML_RHETORIC_TOPICAL-SYSTEMS	topical systems
-Q12522118		ML_RHETORIC_TOPOS	topos
-Q17087170		ML_RHETORIC_TOPOTHESIA	topothesia
-Q97168137		ML_RHETORIC_TOULMIN-MODEL-OF-ARGUMENT	Toulmin model of argument
-Q3537603		ML_RHETORIC_TRANSGRESSION	transgression
-		ML_RHETORIC_TRANSLATIVE-ISSUE	translative issue
-Q7590		ML_RHETORIC_TRANSPORT	transport
-Q205186		ML_RHETORIC_TRIVIUM	trivium
-Q1554097		ML_RHETORIC_TROPE	trope
-		ML_RHETORIC_UNIVERSAL-AUDIENCE	universal audience
-Q258403		ML_RHETORIC_UTTERANCE	utterance
-Q545349		ML_RHETORIC_VALIDITY	validity
-		ML_RHETORIC_VALIDITY-CLAIM	validity claim
-Q7920926		ML_RHETORIC_VERBA	Verba
-Q3331189		ML_RHETORIC_VERSION,-EDITION-OR-TRANSLATION	version, edition or translation
-		ML_RHETORIC_VIR-BONUS-BENI-DICENDI	vir bonus beni dicendi
-Q2528506		ML_RHETORIC_VITA-ACTIVA	vita activa
-Q1631685		ML_RHETORIC_WARRANT	Warrant
-Q196984		ML_RHETORIC_ZEUGMA	zeugma
-Q87523478		ML_RHETORIC_⁝	tricolon
+WikiData QID	parent	ML_ID	label	description	wiktionary
+Q339718		ML_RHETORIC_ACCUMULATIO	accumulatio		
+Q19893772		ML_RHETORIC_ACUTEZZA	acutezza		
+Q189183		ML_RHETORIC_AD-HOMINEM	ad hominem		
+		ML_RHETORIC_ADJUNCTION	adjunction		
+Q35986		ML_RHETORIC_AESTHETICS	aesthetics		
+		ML_RHETORIC_AETIOLOGIA	aetiologia		
+		ML_RHETORIC_AFFECTUS	affectus		
+Q3745428		ML_RHETORIC_AFFIRMATION-AND-NEGATION	affirmation and negation		
+		ML_RHETORIC_ALLOIOSIS	alloiosis, alloisis		
+Q50757077		ML_RHETORIC_AMBIGUA	ambigua		
+Q738162		ML_RHETORIC_ANACOENOSIS	anacoenosis		
+Q484456		ML_RHETORIC_ANACOLUTHON	anacoluthon		
+Q14544854		ML_RHETORIC_ANADIPLOSIS	anadiplosis		
+Q185816		ML_RHETORIC_ANALOGY	analogy		
+Q486050		ML_RHETORIC_ANAPHORA	anaphora		
+Q4751584		ML_RHETORIC_ANAPODOTON	anapodoton		
+Q193206		ML_RHETORIC_ANECDOTE	anecdote		
+		ML_RHETORIC_ANIMORUM-MOTUS	animorum motus		
+Q2463842		ML_RHETORIC_ANTANACLASIS	antanaclasis		
+Q17049634		ML_RHETORIC_ANTIPTOSIS	antiptosis		
+Q5112363		ML_RHETORIC_ANTISTROPHE	antistrophe		
+Q122313503		ML_RHETORIC_ANTITHESIS	antithesis		
+Q618563		ML_RHETORIC_APHERESIS	apheresis	The removal or omission of the initial sound or syllable from a word. Examples in English are [_scarp_](https://en.wiktionary.org/wiki/scarp#English) from earlier [_escarp_](https://en.wiktionary.org/wiki/escarp#English), and colloquial [_splain_](https://en.wiktionary.org/wiki/splain#English) from [_explain_](https://en.wiktionary.org/wiki/explain#English).	https://en.wiktionary.org/wiki/apheresis
+Q112154		ML_RHETORIC_APOCOPE	apocope	The removal or omission of the final sound or syllable of a word. Frequently occurs in Italian, Spanish, and other Romance languages.	https://en.wiktionary.org/wiki/apocope
+		ML_RHETORIC_APOPHASIS	apophasis, apophesis		
+Q261262		ML_RHETORIC_APORIA	aporia		
+Q619760		ML_RHETORIC_APOSIOPESIS	aposiopesis		
+Q436048		ML_RHETORIC_APOSTROPHE	apostrophe		
+Q4959031		ML_RHETORIC_APPELLATE-COURT	appellate court		
+Q18595825		ML_RHETORIC_ARETE	Arete		
+Q186619		ML_RHETORIC_ARGUMENT	argument		
+Q752275		ML_RHETORIC_ARGUMENTUM-AD-BACULUM	argumentum ad baculum		
+Q777939		ML_RHETORIC_ARROGANCE	arrogance		
+Q137711384		ML_RHETORIC_ARS-ARENGANDI	ars arengandi		
+Q56304068		ML_RHETORIC_ARS-PRAEDICANDI	ars praedicandi		
+Q9160460		ML_RHETORIC_ART-OF-POETRY	art of poetry		
+Q1406161		ML_RHETORIC_ARTISTIC-THEME	artistic theme		
+Q747668		ML_RHETORIC_ASYNDETON	asyndeton		
+Q211198		ML_RHETORIC_AUDIENCE	audience		
+Q2873202		ML_RHETORIC_AUXESIS	auxesis		
+Q50808388		ML_RHETORIC_AXIOMS	axioms		
+Q720113		ML_RHETORIC_BARBARISM	barbarism		
+Q2886750		ML_RHETORIC_BASES-DE-MANRESA	Bases de Manresa		
+Q43247602		ML_RHETORIC_BATHOSELLA	Bathosella		
+		ML_RHETORIC_BDELYGMA	bdelygma		
+Q4940904		ML_RHETORIC_BOMPHIOLOGIA	Bomphiologia		
+Q640423		ML_RHETORIC_BRACHYLOGY	brachylogy		
+Q1253840		ML_RHETORIC_BREVITAS	brevitas		
+Q122382956		ML_RHETORIC_BURDEN-OF-PROOF	burden of proof		
+Q63554165		ML_RHETORIC_CANON	canon		
+		ML_RHETORIC_CAPTATIO-BENEVOLUNTATIAE	captatio benevoluntatiae		
+Q582726		ML_RHETORIC_CATACHRESIS	catachresis		
+Q2574811		ML_RHETORIC_CAUSE	cause		
+Q5074396		ML_RHETORIC_CHARISMA	charisma		
+		ML_RHETORIC_CIRCA-REM	circa rem		
+Q1095194		ML_RHETORIC_CIRCUMLOCUTION	circumlocution		
+Q52000412		ML_RHETORIC_CLIMAX	Climax		
+Q5982337		ML_RHETORIC_COLON	colon		
+Q721747		ML_RHETORIC_COMMEMORATIVE-PLAQUE	commemorative plaque		
+Q332880		ML_RHETORIC_COMMON-SENSE	common sense		
+Q53989261		ML_RHETORIC_COMMON-TOPICS-IN-EIGHTEENTH-CENTURY-PREFACES-TO-ENGLISH-SCHOOL-GRAMMARS:-AN-APPLICATION-OF-THE-ECEG-DATABASE	Common topics in eighteenth-century prefaces to English school grammars: an application of the ECEG database		
+Q378097		ML_RHETORIC_COMMUNION	communion		
+Q2791145		ML_RHETORIC_COMPOSITION-STUDIES	composition studies		
+Q327209		ML_RHETORIC_CONCESSION	concession		
+Q188613		ML_RHETORIC_CONFIRMATION	confirmation		
+Q1125478		ML_RHETORIC_CONFUTATIO-AUGUSTANA	Confutatio Augustana		
+Q135014683		ML_RHETORIC_CONSTRAINTS	Constraints		
+Q7188981		ML_RHETORIC_CONSUBSTANTIALITY	Consubstantiality		
+Q1123462		ML_RHETORIC_CONTEXT	ConTeXt		
+Q122314017		ML_RHETORIC_CONTINGENCY	CONTINGENCY		
+Q128767372		ML_RHETORIC_CONVERSATION-MODELING-ON-REDDIT-USING-A-GRAPH-STRUCTURED-LSTM	Conversation Modeling on Reddit Using a Graph-Structured LSTM		
+Q1051355		ML_RHETORIC_CONVERSION-DISORDER	conversion disorder		
+Q38695		ML_RHETORIC_COOKING	cooking		
+Q2995866		ML_RHETORIC_COUNTERARGUMENT	counterargument		
+Q1530061		ML_RHETORIC_CREDIBILITY	credibility		
+Q301751		ML_RHETORIC_CRITICAL-SOCIOLOGY	critical sociology		
+Q22983		ML_RHETORIC_DATA	Data		
+Q3704137		ML_RHETORIC_DE-OPTIMO-GENERE-ORATORUM	De Optimo Genere Oratorum		
+Q56404555		ML_RHETORIC_DECONSTRUCTION	deconstruction		
+Q18450032		ML_RHETORIC_DELECTARE	Delectare		
+Q37008247		ML_RHETORIC_DEMOS	Demos		
+Q9453		ML_RHETORIC_DIALECTIC	dialectic		
+Q11694112		ML_RHETORIC_DIALLAGE	diallage		
+Q3322847		ML_RHETORIC_DISPOSITIO	dispositio		
+Q3710346		ML_RHETORIC_DISSOI-LOGOI	Dissoi Logoi		
+Q16829905		ML_RHETORIC_DOCERE	Docere		
+Q5305774		ML_RHETORIC_DRAMATISTIC-PENTAD	Dramatistic pentad		
+Q844782		ML_RHETORIC_DYSPHEMISM	dysphemism	A term carrying negative connotations or imagery to replace a (more) neutral original. / Contrast [_euphemism_](#euphemism).	https://en.wiktionary.org/wiki/dysphemism
+Q788419		ML_RHETORIC_ECPHONESIS	ecphonesis		
+Q3330405		ML_RHETORIC_ELOCUTIO	elocutio		
+Q12769393		ML_RHETORIC_END	end		
+Q422913		ML_RHETORIC_ENTHYMEME	enthymeme		
+		ML_RHETORIC_EPANAPHORA	epanaphora		
+Q1346967		ML_RHETORIC_EPIDEICTIC	epideictic		
+Q591966		ML_RHETORIC_EPIPHORA	epiphora		
+Q9471		ML_RHETORIC_EPISTEMOLOGY	epistemology		
+Q1937845		ML_RHETORIC_EPISTROPHE	epistrophe		
+Q207869		ML_RHETORIC_EPITHET	epithet		
+Q1953281		ML_RHETORIC_EPIZEUXIS	epizeuxis		
+Q3591979		ML_RHETORIC_ETHOPOEIA	ethopoeia		
+Q83464		ML_RHETORIC_EUPHEMISM	euphemism	A term that is (or is meant to be) less vulgar or less offensive than the one it replaces, or avoids (or is meant to avoid) the [connotations](#connotation) of the one that it replaces. / Contrast [_dysphemism_](#dysphemism).	https://en.wiktionary.org/wiki/euphemism
+Q176763		ML_RHETORIC_EVIDENCE	evidence		
+Q1993117		ML_RHETORIC_EXEMPLUM	exemplum		
+Q25221914		ML_RHETORIC_EXIGENCE	exigence		
+Q1384158		ML_RHETORIC_EXORDIUM	exordium		
+Q4481574		ML_RHETORIC_FACETIAE	facetiae		
+Q13226383		ML_RHETORIC_FACILITY	facility		
+Q5429092		ML_RHETORIC_FACULTY-PSYCHOLOGY	faculty psychology		
+Q2581738		ML_RHETORIC_FALSE-CONSCIOUSNESS	False consciousness		
+Q55611560		ML_RHETORIC_FEMINIST-RHETORIC	Feminist rhetoric		
+Q8253		ML_RHETORIC_FICTION	fiction		
+Q48311426		ML_RHETORIC_FIELD-DEPENDENT-TRANSVERSE-RELAXATION-RATE-INCREASE-MAY-BE-A-SPECIFIC-MEASURE-OF-TISSUE-IRON-STORES	Field dependent transverse relaxation rate increase may be a specific measure of tissue iron stores		
+		ML_RHETORIC_FIELD-INVARIANT	field-invariant		
+Q29527347		ML_RHETORIC_FIGURE	figure		
+Q58606280		ML_RHETORIC_FORENSIC-ORATORY-AND-THE-JURY-TRIAL-IN-NINETEENTH-CENTURY-AMERICA	Forensic oratory and the jury trial in nineteenth-century America		
+Q962165		ML_RHETORIC_FORMAL-FALLACY	formal fallacy		
+Q83460		ML_RHETORIC_GENERAL	general		
+Q37476917		ML_RHETORIC_GENS	Gens		
+Q131476263		ML_RHETORIC_GRAECISMUS	graecismus		
+Q102686		ML_RHETORIC_HERMENEUTICS	hermeneutics		
+Q3068733		ML_RHETORIC_HETEROGLOSSIA	heteroglossia		
+Q201413		ML_RHETORIC_HEURISTIC	heuristic		
+Q932406		ML_RHETORIC_HOMEOTELEUTON	homeoteleuton		
+		ML_RHETORIC_HOMIOLOGIA	homiologia		
+Q181036		ML_RHETORIC_HYPERBOLE	hyperbole	Deliberate or unintentional overstatement, particularly if extreme.	https://en.wiktionary.org/wiki/hyperbole
+Q1641379		ML_RHETORIC_HYPOPHORA	hypophora		
+Q41719		ML_RHETORIC_HYPOTHESIS	hypothesis		
+Q16938453		ML_RHETORIC_HYPOZEUXIS	hypozeuxis		
+Q2250272		ML_RHETORIC_HYPSOSINGA	hypsosinga		
+Q132137		ML_RHETORIC_ICON	icon		
+Q2493413		ML_RHETORIC_IDENTIFICATION	identification		
+Q7257		ML_RHETORIC_IDEOLOGY	ideology		
+Q1131737		ML_RHETORIC_IMITATION	imitation		
+Q2730592		ML_RHETORIC_INDIGNATION	indignation		
+Q29887572		ML_RHETORIC_INDUCTION	Induction		
+		ML_RHETORIC_INSULTATIO	insultatio		
+		ML_RHETORIC_INTERSUBJECTIVE-AGREEMENTS	intersubjective agreements		
+Q48785158		ML_RHETORIC_INVITATIONAL-RHETORIC	Invitational rhetoric		
+Q131361		ML_RHETORIC_IRONY	irony		
+Q737677		ML_RHETORIC_IRRELEVANT-CONCLUSION	irrelevant conclusion		
+Q21446657		ML_RHETORIC_ISOCOLON	isocolon		
+		ML_RHETORIC_ISSUES-OF-FACT	issues of fact		
+Q17951		ML_RHETORIC_JARGON	jargon	A term from either (1) a [technical](#technical) [terminology](https://en.wiktionary.org/wiki/terminology) specific to a particular [subject](https://en.wiktionary.org/wiki/subject#Noun) or [occupation](https://en.wiktionary.org/wiki/occupation#Noun) or (2) the [language](https://en.wiktionary.org/wiki/language) [characteristic](https://en.wiktionary.org/wiki/characteristic#Adjective) of a particular [group](https://en.wiktionary.org/wiki/group#Noun) of people (for example, those who share a [hobby](https://en.wiktionary.org/wiki/hobby) or a [subculture](https://en.wiktionary.org/wiki/subculture)).	https://en.wiktionary.org/wiki/jargon
+Q109578617		ML_RHETORIC_JIAN-SHI	Jian Shi		
+Q19376756		ML_RHETORIC_KAIROS	kairos		
+		ML_RHETORIC_KOINOI-TOPOI	koinoi topoi		
+Q60790563		ML_RHETORIC_KOLAKEIA	kolakeia		
+Q13624084		ML_RHETORIC_LEXIS	Lexis		
+Q12139612		ML_RHETORIC_LIST	list		
+		ML_RHETORIC_LITERAE-HUMANAE	literae humanae		
+Q1149297		ML_RHETORIC_LOCALISM	localism		
+Q1542696		ML_RHETORIC_LOCI-COMMUNES	loci communes		
+Q3257782		ML_RHETORIC_LOCUTION	locution		
+Q193627		ML_RHETORIC_LOGICAL-POSITIVISM	logical positivism		
+		ML_RHETORIC_LOGICAL-PROOF	logical proof		
+Q17113456		ML_RHETORIC_LOGOLOGY	logology		
+Q180832		ML_RHETORIC_LOGOS	logos		
+Q1549475		ML_RHETORIC_MAGNANIMITY	magnanimity		
+		ML_RHETORIC_MAJOR-PREMISE	major premise		
+		ML_RHETORIC_MATERIAL-FALLACY	material fallacy		
+Q396447		ML_RHETORIC_MAXIM	maxim		
+Q3278958		ML_RHETORIC_MEIOSIS	meiosis	A form of [_understatement_](https://en.wiktionary.org/wiki/understatement) that consists of downplaying or diminishing the focal quality of a statement for contrastive, humorous or dramatic effect, sometimes deployed as part of a [higher register](#higher_register). E.g.: _that was actually quite good_ instead of _that was excellent_ ; _he is somewhat displeased_ instead of _he is furious_, etc. Not to be confused with [euphemism](#euphemism) (although meiosis can be used for the purpose of euphemism) or [litotes](#litotes), which is a similar figure of speech that also uses understatement.	https://en.wiktionary.org/wiki/meiosis
+Q492		ML_RHETORIC_MEMORY	memory		
+		ML_RHETORIC_META-NARRATIVES	meta-narratives		
+Q18534		ML_RHETORIC_METAPHOR	metaphor		
+Q1760396		ML_RHETORIC_METRON	Metron		
+Q169534		ML_RHETORIC_MILITARY-DIVISION	military division		
+Q103610094		ML_RHETORIC_MINOR-PREMISE	Minor Premise		
+		ML_RHETORIC_MODUS-INVENIENDI	modus inveniendi		
+		ML_RHETORIC_MODUS-PROFERENDI	modus proferendi		
+Q6909140		ML_RHETORIC_MORAL-REASONING	moral reasoning		
+Q3894383		ML_RHETORIC_MOVERE	Movere		
+		ML_RHETORIC_NECESSARY-CAUSE	necessary cause		
+Q54111		ML_RHETORIC_NEOCLASSICAL-ARCHITECTURE	Neoclassical architecture		
+Q162145		ML_RHETORIC_NEOPLATONISM	Neoplatonism		
+Q26207914		ML_RHETORIC_NOEMA	noema		
+Q825737		ML_RHETORIC_NON-SEQUITUR	non sequitur		
+		ML_RHETORIC_OICTOS	oictos		
+Q104447468		ML_RHETORIC_OMINATION	Omination		
+Q170239		ML_RHETORIC_ONOMATOPOEIA	onomatopoeia	A word that is meant to sound like what it represents (with similarity more or less [fanciful](https://en.wiktionary.org/wiki/fanciful) or [notional](https://en.wiktionary.org/wiki/notional)). English examples are [_kaboom_](https://en.wiktionary.org/wiki/kaboom#English), [_cuckoo_](https://en.wiktionary.org/wiki/cuckoo#English), [_tweet_](https://en.wiktionary.org/wiki/tweet#English) and [_ding dong_](https://en.wiktionary.org/wiki/ding_dong#English). Onomatopoeia is one way of being [_imitative_](#imitative).	https://en.wiktionary.org/wiki/onomatopoeia
+		ML_RHETORIC_OPTATIO	optatio		
+Q169429		ML_RHETORIC_OXYMORON	oxymoron		
+Q2449062		ML_RHETORIC_PARADEIGMA	paradeigma		
+Q483372		ML_RHETORIC_PARADOX	paradox		
+Q14511256		ML_RHETORIC_PARALIPSIS	paralipsis		
+Q10282159		ML_RHETORIC_PARALLEL-SYNTAX	parallel syntax		
+		ML_RHETORIC_PARTICULAR-AUDIENCE	particular audience		
+Q633885		ML_RHETORIC_PATHOS	pathos		
+Q3412014		ML_RHETORIC_PERORATION	peroration		
+Q207174		ML_RHETORIC_PERSONIFICATION	personification		
+Q697279		ML_RHETORIC_PETITION	petition		
+Q3493035		ML_RHETORIC_PHALLOGOCENTRISM	phallogocentrism		
+Q15814210		ML_RHETORIC_PHRONESIS	phronesis		
+Q15761466		ML_RHETORIC_PHYSIS	physis		
+Q5994		ML_RHETORIC_PIANO	piano		
+Q107185154		ML_RHETORIC_PISTIS	pistis		
+Q188741		ML_RHETORIC_PLEONASM	pleonasm		
+		ML_RHETORIC_POETRIAE,-ARS	poetriae, ars		
+Q384593		ML_RHETORIC_POLICE-OFFICER	police officer		
+Q270141		ML_RHETORIC_POLYMATH	polymath		
+Q179465		ML_RHETORIC_POLYPHONY	polyphony		
+Q680469		ML_RHETORIC_POLYPTOTON	polyptoton		
+Q426492		ML_RHETORIC_POLYSYNDETON	polysyndeton		
+		ML_RHETORIC_PORTRAYL	portrayl		
+Q131015		ML_RHETORIC_POSITIVISM	positivism		
+Q126692		ML_RHETORIC_PRAGMATISM	pragmatism		
+Q3402394		ML_RHETORIC_PRESENCE	presence		
+Q200726		ML_RHETORIC_PROBABILITY-DISTRIBUTION	probability distribution		
+		ML_RHETORIC_PRONUNTIATO	pronuntiato		
+Q108163		ML_RHETORIC_PROPOSITION	proposition		
+Q2113832		ML_RHETORIC_PROTREPTICUS	protrepticus		
+Q3924778		ML_RHETORIC_PRUDENCE	prudence		
+Q21656365		ML_RHETORIC_PSOGOS	psogos		
+		ML_RHETORIC_PSYCHAGOGOS	psychagogos		
+Q10355327		ML_RHETORIC_PSYCHE	Psyche		
+Q17945		ML_RHETORIC_PUBLIC-SPHERE	public sphere		
+Q263668		ML_RHETORIC_PUN	pun		
+Q21136445		ML_RHETORIC_PURPOSE	purpose		
+Q273822		ML_RHETORIC_QUADRIVIUM	quadrivium		
+Q135672152		ML_RHETORIC_QUAESTIONES	quaestiones		
+		ML_RHETORIC_REASONING-BY-CONTRARIES	reasoning by contraries		
+Q18182606		ML_RHETORIC_RES	Res		
+Q64825398		ML_RHETORIC_RETIRED	retired		
+Q136388991		ML_RHETORIC_RHETORES-SELECTI	Rhetores selecti		
+		ML_RHETORIC_RHETORICAL-DISCOURSE	rhetorical discourse		
+		ML_RHETORIC_RHETORICAL-OPPOSITION	rhetorical opposition		
+Q7320449		ML_RHETORIC_RHETORICAL-SITUATION	rhetorical situation		
+Q361809		ML_RHETORIC_RHETORICIAN	rhetorician		
+Q516766		ML_RHETORIC_SALUTATION	salutation		
+Q39645		ML_RHETORIC_SEMANTICS	semantics		
+Q60195		ML_RHETORIC_SEMIOTICS	semiotics		
+Q37140445		ML_RHETORIC_SENATUS	Senatus		
+Q110727088		ML_RHETORIC_SHUI	Shui		
+Q199714		ML_RHETORIC_SIMILE	simile	A [figure of speech](https://en.wiktionary.org/wiki/figure_of_speech) in which one thing is compared to another; in English, it generally uses [like](https://en.wiktionary.org/wiki/like) or [as](https://en.wiktionary.org/wiki/as); see [metaphor](#metaphorical) and [figurative](#figurative).	https://en.wiktionary.org/wiki/simile
+Q1395219		ML_RHETORIC_SKEPTICISM	skepticism		
+Q1545853		ML_RHETORIC_SOLECISM	solecism		
+Q3750514		ML_RHETORIC_SOPHIST	sophist		
+		ML_RHETORIC_SORAISMUS	soraismus		
+Q545839		ML_RHETORIC_SPREZZATURA	sprezzatura		
+		ML_RHETORIC_STASIS-SYSTEM	stasis system		
+Q322265		ML_RHETORIC_STATUS-QUO	status quo		
+Q6671777		ML_RHETORIC_STRUCTURE	structure		
+		ML_RHETORIC_STUDIA-HUMANITAS	studia humanitas		
+Q1269323		ML_RHETORIC_SYLLEPSIS	syllepsis		
+Q107342		ML_RHETORIC_SYLLOGISM	syllogism		
+		ML_RHETORIC_SYLLOGISTIC-LOGIC	syllogistic logic		
+Q80071		ML_RHETORIC_SYMBOL	symbol		
+		ML_RHETORIC_SYMBOLIC-INDUCEMENT	symbolic inducement		
+		ML_RHETORIC_SYMPHERON	sympheron		
+Q3961434		ML_RHETORIC_SYNCHYSIS	synchysis		
+Q180007		ML_RHETORIC_SYNCOPE	syncope	The deletion or elision of sounds inside a word (not at the beginning or end), most often a single [vowel](#vowel), but sometimes a [consonant](#consonant) or a sequence of vowels or consonants. Deletion at the beginning of a word is called [apheresis](#apheresis), at the end [apocope](#apocope).	https://en.wiktionary.org/wiki/syncope
+Q10687425		ML_RHETORIC_SYNECDOCHE	synecdoche	A [figure of speech](https://en.wiktionary.org/wiki/figure_of_speech) that uses the name of a part of something to represent the whole, or the whole to represent a part. Compare [metonym](#metonym), which overlaps substantially in [denotation](#denotation).	https://en.wiktionary.org/wiki/synecdoche
+		ML_RHETORIC_TAPINOSIS	tapinosis		
+Q37477789		ML_RHETORIC_TASTE	taste		
+Q209555		ML_RHETORIC_TAUTOLOGY	tautology	Redundant use of words, a [pleonasm](https://en.wiktionary.org/wiki/pleonasm), an unnecessary and tedious repetition.	https://en.wiktionary.org/wiki/tautology
+Q82650		ML_RHETORIC_TAXI	taxi		
+Q1054		ML_RHETORIC_TECHNETIUM	technetium		
+Q1266946		ML_RHETORIC_THESIS	thesis		
+		ML_RHETORIC_THESMOS	thesmos		
+Q1203324		ML_RHETORIC_TONE	tone	The pitch of a given syllable in languages where changing the pitch changes the basic meaning of the word. In [Mandarin Chinese](https://en.wikipedia.org/wiki/Mandarin_Chinese), for example, the word pronounced /ma/ (similar to English [_ma_](https://en.wiktionary.org/wiki/ma#English)), when pronounced with a high level tone means “mother”, but when pronounced with a rising tone means “bother”, and when pronounced with a falling tone means “scold”.	https://en.wiktionary.org/wiki/tone
+		ML_RHETORIC_TOPICAL-SYSTEMS	topical systems		
+Q12522118		ML_RHETORIC_TOPOS	topos		
+Q17087170		ML_RHETORIC_TOPOTHESIA	topothesia		
+Q97168137		ML_RHETORIC_TOULMIN-MODEL-OF-ARGUMENT	Toulmin model of argument		
+Q3537603		ML_RHETORIC_TRANSGRESSION	transgression		
+		ML_RHETORIC_TRANSLATIVE-ISSUE	translative issue		
+Q7590		ML_RHETORIC_TRANSPORT	transport		
+Q205186		ML_RHETORIC_TRIVIUM	trivium		
+Q1554097		ML_RHETORIC_TROPE	trope		
+		ML_RHETORIC_UNIVERSAL-AUDIENCE	universal audience		
+Q258403		ML_RHETORIC_UTTERANCE	utterance		
+Q545349		ML_RHETORIC_VALIDITY	validity		
+		ML_RHETORIC_VALIDITY-CLAIM	validity claim		
+Q7920926		ML_RHETORIC_VERBA	Verba		
+Q3331189		ML_RHETORIC_VERSION,-EDITION-OR-TRANSLATION	version, edition or translation		
+		ML_RHETORIC_VIR-BONUS-BENI-DICENDI	vir bonus beni dicendi		
+Q2528506		ML_RHETORIC_VITA-ACTIVA	vita activa		
+Q1631685		ML_RHETORIC_WARRANT	Warrant		
+Q196984		ML_RHETORIC_ZEUGMA	zeugma		
+Q87523478		ML_RHETORIC_⁝	tricolon		

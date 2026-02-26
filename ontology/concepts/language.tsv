@@ -1,13 +1,13 @@
-WikiData QID	parent	ML_ID	label
-		ML_LANGUAGE_de	German
-		ML_LANGUAGE_el	Nieuw-Grieks
-		ML_LANGUAGE_en	Engeland, Engels
-		ML_LANGUAGE_fr	French
-		ML_LANGUAGE_grc	Oud-Grieks
-		ML_LANGUAGE_he	Hbrew
-		ML_LANGUAGE_it	Italian
-		ML_LANGUAGE_la	Latijn(s)
-		ML_LANGUAGE_nl	Dutch
-		ML_LANGUAGE_pt-PT	Portugees, Portugal
-		ML_LANGUAGE_ru	Russisch, Rusland
-		ML_LANGUAGE_tr	Turkish
+WikiData QID	parent	ML_ID	label	description	wiktionary
+		ML_LANGUAGE_de	German		
+		ML_LANGUAGE_el	Nieuw-Grieks		
+		ML_LANGUAGE_en	Engeland, Engels		
+		ML_LANGUAGE_fr	French		
+		ML_LANGUAGE_grc	Oud-Grieks		
+		ML_LANGUAGE_he	Hbrew		
+		ML_LANGUAGE_it	Italian		
+		ML_LANGUAGE_la	Latijn(s)		
+		ML_LANGUAGE_nl	Dutch		
+		ML_LANGUAGE_pt-PT	Portugees, Portugal		
+		ML_LANGUAGE_ru	Russisch, Rusland		
+		ML_LANGUAGE_tr	Turkish		

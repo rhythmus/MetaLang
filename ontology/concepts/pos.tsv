@@ -1,60 +1,53 @@
-WikiData QID	parent	ML_ID	label
-Q34698		ML_POS_ADJECTIVE	adjective
-Q134316		ML_POS_ADP	adposition
-Q103184	ML_POS_DET	ML_POS_ART	(grammatical) article
-Q2865743	ML_POS_ART	ML_POS_ART-DEF	definite article
-Q3813849	ML_POS_ART	ML_POS_ART-IND	indefinite article
-Q28833099	ML_POS_CONJUNCTION	ML_POS_CONJ-COORD	coordinative conjunction
-	ML_POS_CONJUNCTION	ML_POS_CONJ-SUB	subordinative conjunction
-Q36484		ML_POS_CONJUNCTION	conjunction
-Q34793275	ML_POS_PRONOUN	ML_POS_DEMONSTRATIVE-PRONOUN	demonstrative pronoun
-Q576271		ML_POS_DET	determiner
-Q83034		ML_POS_INTERJ	interjection
-Q1401131	ML_POS_NOUN	ML_POS_NOUN	noun
-Q147101	ML_POS_NOUN	ML_POS_NOUN-COMMON	common noun
-Q55951821	ML_POS_NUMERAL	ML_POS_NUMERAL-ADJECTIVAL	adjectival numeral, numeral adjective
-	ML_POS_NUMERAL	ML_POS_NUMERAL-ANALOGICAL	analog numeral
-Q1329258	ML_POS_NUMERAL	ML_POS_NUMERAL-CARDINAL	cardinal (numeral)
-Q55093533	ML_POS_NUMERAL	ML_POS_NUMERAL-COLLECTIVE	collective (numeral)
-Q110063840	ML_POS_NUMERAL	ML_POS_NUMERAL-MULTIPLICATIVE	multiplicative (numeral)
-Q116843701	ML_POS_NUMERAL	ML_POS_NUMERAL-NOMINAL	nominal (numeral)
-Q923933	ML_POS_NUMERAL	ML_POS_NUMERAL-ORDINAL	ordinal (numeral)
-Q115526488	ML_POS_NUMERAL	ML_POS_NUMERAL-SINGULATIVE	singulative (numeral)
-Q468801	ML_POS_PRONOUN	ML_POS_PERSONAL-PRONOUN	personal pronoun
-Q1502460	ML_POS_PRONOUN	ML_POS_POSSESSIVE-PRONOUN	possessive pronoun
-Q4833830		ML_POS_PREPOSITION	preposition
-Q36224		ML_POS_PRONOUN	pronoun
-Q147276	ML_POS_NOUN	ML_POS_PROPER-NOUN	proper noun
-Q7884789	ML_POS_PROPER-NOUN	ML_POS_PROPER-NOUN-TOPONYM	toponym
-Q184943		ML_POS_PTCL	particle
-Q82622	ML_RHETORIC_SYMBOL	ML_POS_PUNCT	punctuation mark
-Q1050744		ML_POS_RELATIVE-PRONOUN	relative pronoun
-Q163750	ML_POS_VERB	ML_POS_VERB-AUX	auxiliary (verb)
-Q814722	ML_POS_VERB	ML_POS_VERB-PTCP	participle
-		ML_POS_VRAGEND-VOORNAAMWOORD	vragend voornaamwoord
-Q781194		ML_POS_X	other / unclassified
-
-
-	ML_POS_PTCL	ML_POS_FUT-PTCL	future particle
-
-		ML_CUSTOM_IEMAND-S	iemand(s)
-Q12547192		ML_POS_IMPERF	imperfective tense
-Q2517088		ML_POS_IMPERS	impersonal passive voice
-	Q1306636	ML_POS_DET	ML_CUSTOM_INTERR	question word
-Q2825406	ML_CUSTOM_ADV	ML_CUSTOM_MULT-ADV	multiplicative adverb
-	ML_POS_PTCL	ML_CUSTOM_NEG-PTCL	negative particle
-
-Q1194697		ML_CUSTOM_PASS	passive (voice)
-Q625420		ML_CUSTOM_PERFECT	perfective tense
-Q161873	ML_POS_ADP	ML_CUSTOM_POSTP	postpostion
-Q956030	ML_POS_PRONOUN	ML_POS_PRON-IND	indefinite pronoun
-Q11003	ML_POS_PRONOUN	ML_POS_PRON-INT	interrogative pronoun
-Q953129	ML_POS_PRONOUN	ML_POS_PRON-REFL	reflexive pronoun
-		ML_CUSTOM_SIMP	simple
-	ML_POS_PTCL	ML_CUSTOM_SUB-PTCL	subjunctive particle
-Q177691		ML_CUSTOM_T	(grammatical) tense
-
-Q1317831		ML_POS_ACT	active (voice)
-Q3734650	ML_CUSTOM_ADV	ML_POS_ADV-GR	adverb phrase
-
-Q1778442	ML_POS_VERB	ML_CUSTOM_V-GR	verb phrase
+WikiData QID	parent	ML_ID	label	description	wiktionary
+Q34698		ML_POS_ADJECTIVE	adjective	A word like [_big_](https://en.wiktionary.org/wiki/big#English) or [_childish_](https://en.wiktionary.org/wiki/childish#English) that usually serves to modify a [noun](#noun).	https://en.wiktionary.org/wiki/adjective
+Q134316		ML_POS_ADP	adposition		
+Q103184	ML_POS_DET	ML_POS_ART	(grammatical) article		
+Q2865743	ML_POS_ART	ML_POS_ART-DEF	definite article		
+Q3813849	ML_POS_ART	ML_POS_ART-IND	indefinite article		
+Q28833099	ML_POS_CONJUNCTION	ML_POS_CONJ-COORD	coordinative conjunction		
+	ML_POS_CONJUNCTION	ML_POS_CONJ-SUB	subordinative conjunction		
+Q36484		ML_POS_CONJUNCTION	conjunction	A word used to join other words or phrases together into sentences.	https://en.wiktionary.org/wiki/conjunction
+Q34793275	ML_POS_PRONOUN	ML_POS_DEMONSTRATIVE-PRONOUN	demonstrative pronoun		
+	Q1306636	ML_POS_DET	ML_CUSTOM_INTERR	A noun modifier that expresses the in-context reference or quantity of a noun or noun phrase. Determiners are often considered adjectives, but in fact are not quite the same; for example, in English, [_big_](https://en.wiktionary.org/wiki/big#English) is an adjective, so “the big car” is grammatical while *“He saw big car” is not, but [_some_](https://en.wiktionary.org/wiki/some#English) is a determiner, so *“the some car” is not grammatical while “He saw some car” is. In English, adjectives can _sometimes_ stand alone without a noun, while determiners nearly _always_ can (contrast *“He saw big” with “He saw some”), such that they are sometimes considered pronouns as well as adjectives.	https://en.wiktionary.org/wiki/determiner
+Q83034		ML_POS_INTERJ	interjection	An expression of emotion ("ouch!", "wow!") or any of several kinds of expression that functions as a replacement of a sentence ([prosentence](https://en.wiktionary.org/wiki/prosentence)) or that are not syntactically connected to a sentence, including curses ("damn!"), greetings ("hey", "bye"), response particles ("okay", "oh!", "m-hm", "huh?"), and hesitation markers ("uh", "er", "um"), and perhaps profanities, discourse markers and fillers.	https://en.wiktionary.org/wiki/interjection
+Q1401131	ML_POS_NOUN	ML_POS_NOUN	noun	A word that refers to a person (such as an [_actress_](https://en.wiktionary.org/wiki/actress#English)), a place, a physical thing (such as [_wood_](https://en.wiktionary.org/wiki/wood#English)), or concept (such as [_beauty_](https://en.wiktionary.org/wiki/beauty#English), [_joy_](https://en.wiktionary.org/wiki/joy#English), or [_time_](https://en.wiktionary.org/wiki/time#English)). See also [countable](#countable), [uncountable](#uncountable) and [plural](#plural).	https://en.wiktionary.org/wiki/noun
+Q147101	ML_POS_NOUN	ML_POS_NOUN-COMMON	common noun		
+Q55951821	ML_POS_NUMERAL	ML_POS_NUMERAL-ADJECTIVAL	adjectival numeral, numeral adjective		
+	ML_POS_NUMERAL	ML_POS_NUMERAL-ANALOGICAL	analog numeral		
+Q1329258	ML_POS_NUMERAL	ML_POS_NUMERAL-CARDINAL	cardinal (numeral)		
+Q55093533	ML_POS_NUMERAL	ML_POS_NUMERAL-COLLECTIVE	collective (numeral)		
+Q110063840	ML_POS_NUMERAL	ML_POS_NUMERAL-MULTIPLICATIVE	multiplicative (numeral)		
+Q116843701	ML_POS_NUMERAL	ML_POS_NUMERAL-NOMINAL	nominal (numeral)		
+Q923933	ML_POS_NUMERAL	ML_POS_NUMERAL-ORDINAL	ordinal (numeral)		
+Q115526488	ML_POS_NUMERAL	ML_POS_NUMERAL-SINGULATIVE	singulative (numeral)		
+Q468801	ML_POS_PRONOUN	ML_POS_PERSONAL-PRONOUN	personal pronoun		
+Q1502460	ML_POS_PRONOUN	ML_POS_POSSESSIVE-PRONOUN	possessive pronoun		
+Q4833830		ML_POS_PREPOSITION	preposition	A word, normally non-[inflecting](#inflection), that is typically employed to connect a following [noun](#noun) or [pronoun](#pronoun), in an [adjectival](#adjective) or [adverbial](#adverb) sense, with some other word. Examples of prepositions in English are _in_, _from_ and _during_. Note that some languages have [postpositions](#postposition) instead of prepositions; they function like prepositions but come _after_ the noun or pronoun being connected.	https://en.wiktionary.org/wiki/preposition
+Q36224		ML_POS_PRONOUN	pronoun	A [part of speech](#part_of_speech) that acts as a substitute for a [noun](#noun) or [noun phrase](https://en.wiktionary.org/wiki/noun_phrase) and refers to a topic of the discussion. Pronouns can refer to a participant in the discussion and can be used instead of a person's name, such as with the pronouns [_I_](https://en.wiktionary.org/wiki/I#English) and [_you_](https://en.wiktionary.org/wiki/you#English). Other pronouns, such as [_he_](https://en.wiktionary.org/wiki/he#English), [_she_](https://en.wiktionary.org/wiki/she#English), and [_it_](https://en.wiktionary.org/wiki/it#English), can be used to refer to other people or objects that have already been mentioned without repeating their names.	https://en.wiktionary.org/wiki/pronoun
+Q147276	ML_POS_NOUN	ML_POS_PROPER-NOUN	proper noun	A kind of [noun](#noun) that usually refers to a specific, unique thing, such as [_Earth_](https://en.wiktionary.org/wiki/Earth#English) and [_the Alps_](https://en.wiktionary.org/wiki/Alps#English), though one language's proper noun may translate to another language using a _common_ (not proper) noun. In English, proper nouns are usually capitalized, as are common nouns and adjectives derived from proper nouns. The same word may have both common-noun and proper-noun senses (such as [_German_](https://en.wiktionary.org/wiki/German#English), which is both a proper noun denoting a certain language, and a common noun denoting a person from Germany), and most proper nouns can sometimes be used as common nouns – e.g. [_John_](https://en.wiktionary.org/wiki/John#English) is a proper noun that is a first name, but can be used a common noun with plural [_Johns_](https://en.wiktionary.org/wiki/Johns#English) meaning "people named John".	https://en.wiktionary.org/wiki/proper_noun
+Q7884789	ML_POS_PROPER-NOUN	ML_POS_PROPER-NOUN-TOPONYM	toponym	A placename, or a word derived from one.	https://en.wiktionary.org/wiki/toponym
+Q184943		ML_POS_PTCL	particle	A word that does not fall into the usual [part of speech](#part_of_speech) categories, but which modifies another word or the sentence as a whole. The English term [_like_](https://en.wiktionary.org/wiki/like#Particle) is used as a particle in many dialects. Particles are more common in other Indo-European languages (e.g. German [_doch_](https://en.wiktionary.org/wiki/doch#German), which marks a sentence as being surprising or rebutting a previous statement) and in East Asian languages (e.g. Japanese [_は_](https://en.wiktionary.org/wiki/%E3%81%AF#Japanese), which marks the topic of a sentence). Many [clitics](#clitic) are particles.	https://en.wiktionary.org/wiki/particle
+Q82622	ML_RHETORIC_SYMBOL	ML_POS_PUNCT	punctuation mark		
+Q1050744		ML_POS_RELATIVE-PRONOUN	relative pronoun		
+Q163750	ML_POS_VERB	ML_POS_VERB-AUX	auxiliary (verb)		
+Q814722	ML_POS_VERB	ML_POS_VERB-PTCP	participle	A form of a [verb](#verb) that may function as an [adjective](#adjective) or [noun](#noun). English has two types of participles: the [present](#present) participle and the [past](#past) participle. In other languages, also [future](#future), [perfect](#perfect), [future perfect](#future_perfect) participles.	https://en.wiktionary.org/wiki/participle
+		ML_POS_VRAGEND-VOORNAAMWOORD	vragend voornaamwoord		
+Q781194		ML_POS_X	other / unclassified		
+	ML_POS_PTCL	ML_POS_FUT-PTCL	future particle		
+		ML_CUSTOM_IEMAND-S	iemand(s)		
+Q12547192		ML_POS_IMPERF	imperfective tense		
+Q2517088		ML_POS_IMPERS	impersonal passive voice		
+Q2825406	ML_CUSTOM_ADV	ML_CUSTOM_MULT-ADV	multiplicative adverb		
+	ML_POS_PTCL	ML_CUSTOM_NEG-PTCL	negative particle		
+Q1194697		ML_CUSTOM_PASS	passive (voice)		
+Q625420		ML_CUSTOM_PERFECT	perfective tense		
+Q161873	ML_POS_ADP	ML_CUSTOM_POSTP	postpostion		
+Q956030	ML_POS_PRONOUN	ML_POS_PRON-IND	indefinite pronoun		
+Q11003	ML_POS_PRONOUN	ML_POS_PRON-INT	interrogative pronoun		
+Q953129	ML_POS_PRONOUN	ML_POS_PRON-REFL	reflexive pronoun		
+		ML_CUSTOM_SIMP	simple		
+	ML_POS_PTCL	ML_CUSTOM_SUB-PTCL	subjunctive particle		
+Q177691		ML_CUSTOM_T	(grammatical) tense		
+Q1317831		ML_POS_ACT	active (voice)		
+Q3734650	ML_CUSTOM_ADV	ML_POS_ADV-GR	adverb phrase		
+Q1778442	ML_POS_VERB	ML_CUSTOM_V-GR	verb phrase		

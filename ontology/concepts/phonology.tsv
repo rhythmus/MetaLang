@@ -1,4 +1,4 @@
-WikiData QID	parent	ML_ID	label
-		ML_PHONOLOGY_FONETIEK	fonetiek
-		ML_PHONOLOGY_SEGMENT	Phonology Segment
-	ML_PHONOLOGY_SEGMENT	ML_PHONOLOGY_SEGMENT-AFFRICATE	affricate
+WikiData QID	parent	ML_ID	label	description	wiktionary
+		ML_PHONOLOGY_FONETIEK	fonetiek		
+		ML_PHONOLOGY_SEGMENT	Phonology Segment		
+	ML_PHONOLOGY_SEGMENT	ML_PHONOLOGY_SEGMENT-AFFRICATE	affricate	A [consonant](#consonant) sound made up of a [plosive](#plosive) and a [fricative](#fricative) pronounced simultaneously, together behaving within a language's [phonology](https://en.wiktionary.org/wiki/phonology) as if one single consonant. English has the affricates /t͡ʃ/, as in _church_, and /d͡ʒ/, as in _judge_. Some languages are known to distinguish affricates from an otherwise-identical sequence of a plosive followed by a fricative, such as Polish [_czy_](https://en.wiktionary.org/wiki/czy#Polish) /t͡ʂɘ/ vs. [_trzy_](https://en.wiktionary.org/wiki/trzy#Polish) /tʂɘ/.	https://en.wiktionary.org/wiki/affricate

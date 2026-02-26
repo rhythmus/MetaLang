@@ -60,6 +60,8 @@ export class Registry {
             const parent = parts[1] || '';
             const id = parts[2] || '';
             const label = parts[3] || '';
+            const description = parts[4] || '';
+            const wiktionary = parts[5] || '';
 
             // Derive domain from ML_ID (e.g. ML_POS_NOUN -> POS)
             const idParts = id.split('_');
@@ -70,7 +72,9 @@ export class Registry {
                 parent: parent ? parent.split(',').map(p => p.trim()) : [],
                 wikidata,
                 id,
-                label
+                label,
+                description: description || undefined,
+                wiktionary: wiktionary || undefined
             };
         });
     }

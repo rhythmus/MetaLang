@@ -44,7 +44,7 @@ pnpm install
 
 ## 💻 API Usage Examples
 
-MetaLang provides a powerful programmatic interface to resolve, translate, and explore linguistic data.
+MetaLang provides a powerful programmatic interface to resolve, translate, and explore linguistic metalanguage data.
 
 ### 1. Unified Search & Resolution
 Quickly find concepts or resolve tags from specific systems.

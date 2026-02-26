@@ -1,6 +1,6 @@
-WikiData QID	parent	ML_ID	label
-Q43249		ML_MORPHOLOGY_MORPHEME	morpheme
-		ML_MORPHOLOGY_MORPHEME-PREFIX	prefix
-		ML_MORPHOLOGY_MORPHEME-PREFIX-PRIVATIVE	privative prefix        
-		ML_MORPHOLOGY_MORPHEME-ROOT	root
-		ML_MORPHOLOGY_MORPHEME-SUFFIX	suffix
+WikiData QID	parent	ML_ID	label	description	wiktionary
+Q43249		ML_MORPHOLOGY_MORPHEME	morpheme	The [smallest](https://en.wiktionary.org/wiki/small#Adjective) [linguistic unit](https://en.wiktionary.org/wiki/linguistic_unit) within a [word](https://en.wiktionary.org/wiki/word#Noun) that can [carry](https://en.wiktionary.org/wiki/carry#Verb) a [meaning](https://en.wiktionary.org/wiki/meaning#Noun).	https://en.wiktionary.org/wiki/morpheme
+		ML_MORPHOLOGY_MORPHEME-PREFIX	prefix	A [morpheme](https://en.wiktionary.org/wiki/morpheme) added to the beginning of a word to modify its meaning.	https://en.wiktionary.org/wiki/prefix
+		ML_MORPHOLOGY_MORPHEME-PREFIX-PRIVATIVE	privative prefix        		
+		ML_MORPHOLOGY_MORPHEME-ROOT	root	The part of a word that forms its core and gives its most basic meaning; also the part of the word that is left when all [affixes](#affix) are removed. For example, in [_insubordination_](https://en.wiktionary.org/wiki/insubordination#English), the root is _ord_, while in [_unspeakableness_](https://en.wiktionary.org/wiki/unspeakableness#English) it is [_speak_](https://en.wiktionary.org/wiki/speak#English). The root is often the first part of the word (as in [Uralic](https://en.wiktionary.org/wiki/Uralic) and often in [Indo-European](https://en.wiktionary.org/wiki/Indo-European) languages), but it may also be the last part, or it may only consist of the consonants of the word (as in the [Afroasiatic](https://en.wiktionary.org/wiki/Afroasiatic) languages).	https://en.wiktionary.org/wiki/root
+		ML_MORPHOLOGY_MORPHEME-SUFFIX	suffix	A [morpheme](https://en.wiktionary.org/wiki/morpheme) added to the end of a word to modify its meaning.	https://en.wiktionary.org/wiki/suffix
