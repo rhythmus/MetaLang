@@ -61,6 +61,16 @@ export interface BibliographicSource {
   bibtex?: string;
 }
 
+/**
+ * Rich mapping of a MetaLang concept to linguistic terms in a specific language.
+ */
+export interface LinguisticMapping {
+  id: string;             // ML_ID
+  singular?: string;      // Full singular form
+  plural?: string;        // Full plural form
+  abbreviations?: string[]; // Array of common abbreviations
+}
+
 export interface PluginManifest {
   descriptor: {
     id: string;
@@ -76,4 +86,5 @@ export interface PluginManifest {
   mappings: {
     [externalTag: string]: string | string[]; // maps to concept IDs
   };
+  linguisticMappings?: LinguisticMapping[]; // Rich mapping structured by ML_ID
 }

@@ -1,0 +1,15 @@
+{
+    "name": "@metalang/plugin-en",
+    "version": "1.0.0",
+    "description": "Generic MetaLang plugin for English language mappings and abbreviations",
+    "type": "module",
+    "main": "./src/index.js",
+    "types": "./src/index.d.ts",
+    "exports": {
+        ".": "./src/index.js",
+        "./manifest": "./src/manifest.json"
+    },
+    "dependencies": {
+        "@metalang/schema": "workspace:*"
+    }
+}

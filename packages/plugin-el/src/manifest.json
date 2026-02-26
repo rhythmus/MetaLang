@@ -1,0 +1,181 @@
+{
+    "descriptor": {
+        "id": "el-generic",
+        "name": "Generic Greek (Νέα Ελληνικά)",
+        "language": "el",
+        "scope": "national",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value",
+            "editorial",
+            "lex_struct",
+            "syntax"
+        ],
+        "publisher": "MetaLang Project",
+        "authoritative": false,
+        "source": {
+            "title": "Generic Greek Linguistic Abbreviation Reference",
+            "author": "MetaLang Contributors",
+            "year": 2026,
+            "url": "https://metalang.org/ontology/el",
+            "retrievedAt": "2026-02-26T18:00:00Z"
+        }
+    },
+    "mappings": {},
+    "linguisticMappings": [
+        {
+            "id": "ML_POS_NOUN",
+            "singular": "ουσιαστικό",
+            "plural": "ουσιαστικά",
+            "abbreviations": [
+                "ουσ."
+            ]
+        },
+        {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "επίθετο",
+            "plural": "επίθετα",
+            "abbreviations": [
+                "επίθ."
+            ]
+        },
+        {
+            "id": "ML_POS_VERB",
+            "singular": "ρήμα",
+            "plural": "ρήματα",
+            "abbreviations": [
+                "ρ."
+            ]
+        },
+        {
+            "id": "ML_POS_ADVERB",
+            "singular": "επίρρημα",
+            "plural": "επιρρήματα",
+            "abbreviations": [
+                "επίρρ."
+            ]
+        },
+        {
+            "id": "ML_POS_PRONOUN",
+            "singular": "αντωνυμία",
+            "plural": "αντωνυμίες",
+            "abbreviations": [
+                "αντων."
+            ]
+        },
+        {
+            "id": "ML_POS_CONJUNCTION",
+            "singular": "σύνδεσμος",
+            "plural": "σύνδεσμοι",
+            "abbreviations": [
+                "σύνδ."
+            ]
+        },
+        {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "πρόθεση",
+            "plural": "προθέσεις",
+            "abbreviations": [
+                "πρόθ."
+            ]
+        },
+        {
+            "id": "ML_POS_ARTICLE",
+            "singular": "άρθρο",
+            "plural": "άρθρα",
+            "abbreviations": [
+                "άρθρ."
+            ]
+        },
+        {
+            "id": "ML_POS_NUMERAL",
+            "singular": "αριθμητικό",
+            "plural": "αριθμητικά",
+            "abbreviations": [
+                "αριθ."
+            ]
+        },
+        {
+            "id": "ML_POS_INTERJECTION",
+            "singular": "επιφώνημα",
+            "plural": "επιφωνήματα",
+            "abbreviations": [
+                "επιφ."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "αρσενικό",
+            "abbreviations": [
+                "αρσ."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "θηλυκό",
+            "abbreviations": [
+                "θηλ."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-NEUTER",
+            "singular": "ουδέτερο",
+            "abbreviations": [
+                "ουδ."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "ενικός",
+            "abbreviations": [
+                "εν."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "πληθυντικός",
+            "abbreviations": [
+                "πληθ."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_VERGELIJK",
+            "abbreviations": [
+                "συγκρ."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_etc",
+            "singular": "και τα λοιπά",
+            "abbreviations": [
+                "κ.τ.λ.",
+                "κλπ."
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_SUBJECT",
+            "singular": "υποκείμενο",
+            "plural": "υποκείμενα",
+            "abbreviations": [
+                "υποκ."
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_PREDICATE",
+            "singular": "κατηγόρημα",
+            "plural": "κατηγορήματα",
+            "abbreviations": [
+                "κατηγ."
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
+            "singular": "άμεσο αντικείμενο"
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
+            "singular": "έμμεσο αντικείμενο"
+        }
+    ]
+}

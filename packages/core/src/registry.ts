@@ -1,4 +1,4 @@
-import type { Concept, Domain, PluginManifest } from '@metalang/schema';
+import type { Concept, Domain, PluginManifest, LinguisticMapping } from '@metalang/schema';
 
 export interface ValidationResult {
     valid: boolean;
@@ -9,6 +9,7 @@ export class Registry {
     private concepts: Map<string, Concept> = new Map();
     private domains: Map<string, Domain> = new Map();
     private tagSystems: Map<string, PluginManifest> = new Map();
+    private linguisticMappings: Map<string, Map<string, LinguisticMapping>> = new Map(); // systemId -> ML_ID -> mapping
 
     /**
      * Load concepts and domains from TSV data strings.
@@ -74,6 +75,39 @@ export class Registry {
      */
     public registerTagSystem(manifest: PluginManifest): void {
         this.tagSystems.set(manifest.descriptor.id, manifest);
+
+        // Index linguistic mappings if present
+        if (manifest.linguisticMappings) {
+            const systemMappings = new Map<string, LinguisticMapping>();
+            for (const lm of manifest.linguisticMappings) {
+                systemMappings.set(lm.id, lm);
+
+                // Also add to traditional mappings for normalization/lookup
+                if (lm.singular) this.addMapping(manifest.descriptor.id, lm.singular, lm.id);
+                if (lm.plural) this.addMapping(manifest.descriptor.id, lm.plural, lm.id);
+                if (lm.abbreviations) {
+                    for (const abbr of lm.abbreviations) {
+                        this.addMapping(manifest.descriptor.id, abbr, lm.id);
+                    }
+                }
+            }
+            this.linguisticMappings.set(manifest.descriptor.id, systemMappings);
+        }
+    }
+
+    private addMapping(systemId: string, tag: string, conceptId: string): void {
+        const manifest = this.tagSystems.get(systemId);
+        if (!manifest) return;
+
+        const existing = manifest.mappings[tag];
+        if (!existing) {
+            manifest.mappings[tag] = conceptId;
+        } else {
+            const ids = Array.isArray(existing) ? existing : [existing];
+            if (!ids.includes(conceptId)) {
+                manifest.mappings[tag] = [...ids, conceptId];
+            }
+        }
     }
 
     /**
@@ -153,6 +187,13 @@ export class Registry {
      */
     public listTagSystems(): PluginManifest[] {
         return Array.from(this.tagSystems.values());
+    }
+
+    /**
+     * Get the rich linguistic mapping for a concept in a specific system.
+     */
+    public getLinguisticMapping(conceptId: string, systemId: string): LinguisticMapping | undefined {
+        return this.linguisticMappings.get(systemId)?.get(conceptId);
     }
 
     /**

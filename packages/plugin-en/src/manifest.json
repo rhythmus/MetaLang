@@ -1,0 +1,200 @@
+{
+    "descriptor": {
+        "id": "en-generic",
+        "name": "Generic English",
+        "language": "en",
+        "scope": "global",
+        "domains": [
+            "pos",
+            "morph_feature",
+            "morph_value",
+            "editorial",
+            "lex_struct",
+            "syntax"
+        ],
+        "publisher": "MetaLang Project",
+        "authoritative": false,
+        "source": {
+            "title": "Generic English Linguistic Abbreviation Reference",
+            "author": "MetaLang Contributors",
+            "year": 2026,
+            "url": "https://metalang.org/ontology/en",
+            "retrievedAt": "2026-02-26T18:00:00Z"
+        }
+    },
+    "mappings": {},
+    "linguisticMappings": [
+        {
+            "id": "ML_POS_NOUN",
+            "singular": "noun",
+            "plural": "nouns",
+            "abbreviations": [
+                "n."
+            ]
+        },
+        {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "adjective",
+            "plural": "adjectives",
+            "abbreviations": [
+                "adj.",
+                "a."
+            ]
+        },
+        {
+            "id": "ML_POS_VERB",
+            "singular": "verb",
+            "plural": "verbs",
+            "abbreviations": [
+                "vb.",
+                "v."
+            ]
+        },
+        {
+            "id": "ML_POS_ADVERB",
+            "singular": "adverb",
+            "plural": "adverbs",
+            "abbreviations": [
+                "adv."
+            ]
+        },
+        {
+            "id": "ML_POS_PRONOUN",
+            "singular": "pronoun",
+            "plural": "pronouns",
+            "abbreviations": [
+                "pro.",
+                "pron."
+            ]
+        },
+        {
+            "id": "ML_POS_CONJUNCTION",
+            "singular": "conjunction",
+            "plural": "conjunctions",
+            "abbreviations": [
+                "conj.",
+                "cnj."
+            ]
+        },
+        {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "preposition",
+            "plural": "prepositions",
+            "abbreviations": [
+                "prep.",
+                "prp."
+            ]
+        },
+        {
+            "id": "ML_POS_ARTICLE",
+            "singular": "article",
+            "plural": "articles",
+            "abbreviations": [
+                "art."
+            ]
+        },
+        {
+            "id": "ML_POS_NUMERAL",
+            "singular": "numeral",
+            "plural": "numerals",
+            "abbreviations": [
+                "num."
+            ]
+        },
+        {
+            "id": "ML_POS_INTERJECTION",
+            "singular": "interjection",
+            "plural": "interjections",
+            "abbreviations": [
+                "intj.",
+                "interj."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "masculine"
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "feminine"
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-NEUTER",
+            "singular": "neuter"
+        },
+        {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "singular",
+            "plural": "singulars",
+            "abbreviations": [
+                "sg.",
+                "sgl."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "plural",
+            "plural": "plurals",
+            "abbreviations": [
+                "pl.",
+                "plur."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_eg",
+            "singular": "for example",
+            "abbreviations": [
+                "e.g.",
+                "eg."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_etc",
+            "singular": "et cetera",
+            "abbreviations": [
+                "etc.",
+                "etc"
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_cf",
+            "singular": "confer",
+            "abbreviations": [
+                "cf.",
+                "see"
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_SUBJECT",
+            "singular": "subject",
+            "plural": "subjects",
+            "abbreviations": [
+                "subj."
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_PREDICATE",
+            "singular": "predicate",
+            "plural": "predicates",
+            "abbreviations": [
+                "pred."
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
+            "singular": "direct object",
+            "plural": "direct objects",
+            "abbreviations": [
+                "d.o."
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
+            "singular": "indirect object",
+            "plural": "indirect objects",
+            "abbreviations": [
+                "i.o."
+            ]
+        }
+    ]
+}

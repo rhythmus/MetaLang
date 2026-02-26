@@ -22,64 +22,188 @@
             "retrievedAt": "2026-02-26T18:00:00Z"
         }
     },
-    "mappings": {
-        "zelfstandig naamwoord": "ML_POS_NOUN",
-        "znw.": "ML_POS_NOUN",
-        "zelfst. naamw.": "ML_POS_NOUN",
-        "bijvoeglijk naamwoord": "ML_POS_ADJECTIVE",
-        "bnw.": "ML_POS_ADJECTIVE",
-        "bijvoegl. naamw.": "ML_POS_ADJECTIVE",
-        "werkwoord": "ML_POS_VERB",
-        "ww.": "ML_POS_VERB",
-        "bijwoord": "ML_POS_ADVERB",
-        "bijw.": "ML_POS_ADVERB",
-        "voornaamwoord": "ML_POS_PRONOUN",
-        "vnw.": "ML_POS_PRONOUN",
-        "voegwoord": "ML_POS_CONJUNCTION",
-        "vw.": "ML_POS_CONJUNCTION",
-        "voorzetsel": "ML_POS_PREPOSITION",
-        "vz.": "ML_POS_PREPOSITION",
-        "lidwoord": "ML_POS_ARTICLE",
-        "lidw.": "ML_POS_ARTICLE",
-        "telwoord": "ML_POS_NUMERAL",
-        "tw.": "ML_POS_NUMERAL",
-        "tussenwerpsel": "ML_POS_INTERJECTION",
-        "tsw.": "ML_POS_INTERJECTION",
-        "mannelijk": "ML_MORPH_VALUE_GENDER_MASCULINE",
-        "m.": "ML_MORPH_VALUE_GENDER_MASCULINE",
-        "vrouwelijk": "ML_MORPH_VALUE_GENDER_FEMININE",
-        "v.": "ML_MORPH_VALUE_GENDER_FEMININE",
-        "onzijdig": "ML_MORPH_VALUE_GENDER_NEUTER",
-        "o.": "ML_MORPH_VALUE_GENDER_NEUTER",
-        "enkelvoud": "ML_MORPH_VALUE_NUMBER_SINGULAR",
-        "ev.": "ML_MORPH_VALUE_NUMBER_SINGULAR",
-        "enkv.": "ML_MORPH_VALUE_NUMBER_SINGULAR",
-        "meervoud": "ML_MORPH_VALUE_NUMBER_PLURAL",
-        "mv.": "ML_MORPH_VALUE_NUMBER_PLURAL",
-        "mrv.": "ML_MORPH_VALUE_NUMBER_PLURAL",
-        "bijvoorbeeld": "ML_EDITORIAL_eg",
-        "bv.": "ML_EDITORIAL_eg",
-        "bvb.": "ML_EDITORIAL_eg",
-        "vb.": "ML_EDITORIAL_eg",
-        "enzovoort": "ML_EDITORIAL_etc",
-        "enz.": "ML_EDITORIAL_etc",
-        "enzv.": "ML_EDITORIAL_etc",
-        "namelijk": "ML_EDITORIAL_NAMELIJK",
-        "nam.": "ML_EDITORIAL_NAMELIJK",
-        "vergelijk": "ML_EDITORIAL_VERGELIJK",
-        "vlg.": "ML_EDITORIAL_VERGELIJK",
-        "vgl.": "ML_EDITORIAL_VERGELIJK",
-        "confer": "ML_EDITORIAL_cf",
-        "cf.": "ML_EDITORIAL_cf",
-        "zie": "ML_EDITORIAL_cf",
-        "spreek uit": "ML_CUSTOM_SPREEK-UIT-LEES",
-        "lees": "ML_CUSTOM_SPREEK-UIT-LEES",
-        "onderwerp": "ML_SYNTACTIC-RELATION_SUBJECT",
-        "gezegde": "ML_SYNTACTIC-RELATION_PREDICATE",
-        "lijdend voorwerp": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
-        "meewerkend voorwerp": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
-        "voorzetselvoorwerp": "ML_SYNTACTIC-RELATION_PREPOSITIONAL-OBJECT",
-        "gerundiun": "ML_MORPH-VALUE_VERBFORM-GERUND",
-        "gerundium": "ML_MORPH-VALUE_VERBFORM-GERUND"
-    }
+    "mappings": {},
+    "linguisticMappings": [
+        {
+            "id": "ML_POS_NOUN",
+            "singular": "zelfstandig naamwoord",
+            "plural": "zelfstandige naamwoorden",
+            "abbreviations": [
+                "znw.",
+                "zelfst. naamw."
+            ]
+        },
+        {
+            "id": "ML_POS_ADJECTIVE",
+            "singular": "bijvoeglijk naamwoord",
+            "plural": "bijvoeglijke naamwoorden",
+            "abbreviations": [
+                "bnw.",
+                "bijvoegl. naamw."
+            ]
+        },
+        {
+            "id": "ML_POS_VERB",
+            "singular": "werkwoord",
+            "plural": "werkwoorden",
+            "abbreviations": [
+                "ww."
+            ]
+        },
+        {
+            "id": "ML_POS_ADVERB",
+            "singular": "bijwoord",
+            "plural": "bijwoorden",
+            "abbreviations": [
+                "bijw."
+            ]
+        },
+        {
+            "id": "ML_POS_PRONOUN",
+            "singular": "voornaamwoord",
+            "plural": "voornaamwoorden",
+            "abbreviations": [
+                "vnw."
+            ]
+        },
+        {
+            "id": "ML_POS_CONJUNCTION",
+            "singular": "voegwoord",
+            "plural": "voegwoorden",
+            "abbreviations": [
+                "vw."
+            ]
+        },
+        {
+            "id": "ML_POS_PREPOSITION",
+            "singular": "voorzetsel",
+            "plural": "voorzetsels",
+            "abbreviations": [
+                "vz."
+            ]
+        },
+        {
+            "id": "ML_POS_ARTICLE",
+            "singular": "lidwoord",
+            "plural": "lidwoorden",
+            "abbreviations": [
+                "lidw."
+            ]
+        },
+        {
+            "id": "ML_POS_NUMERAL",
+            "singular": "telwoord",
+            "plural": "telwoorden",
+            "abbreviations": [
+                "telw."
+            ]
+        },
+        {
+            "id": "ML_POS_INTERJECTION",
+            "singular": "tussenwerpsel",
+            "plural": "tussenwerpsels",
+            "abbreviations": [
+                "tsw."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-MASCULINE",
+            "singular": "mannelijk",
+            "abbreviations": [
+                "m."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-FEMININE",
+            "singular": "vrouwelijk",
+            "abbreviations": [
+                "v."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_GENDER-NEUTER",
+            "singular": "onzijdig",
+            "abbreviations": [
+                "o."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_NUMBER-SINGULAR",
+            "singular": "enkelvoud",
+            "plural": "enkelvouden",
+            "abbreviations": [
+                "ev.",
+                "enkv."
+            ]
+        },
+        {
+            "id": "ML_MORPH-VALUE_NUMBER-PLURAL",
+            "singular": "meervoud",
+            "plural": "meervouden",
+            "abbreviations": [
+                "mv.",
+                "mrv."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_eg",
+            "singular": "bijvoorbeeld",
+            "abbreviations": [
+                "bv.",
+                "bvb.",
+                "vb."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_etc",
+            "singular": "enzovoort",
+            "abbreviations": [
+                "enz.",
+                "enzv."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_NAMELIJK",
+            "singular": "namelijk",
+            "abbreviations": [
+                "nam."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_VERGELIJK",
+            "singular": "vergelijk",
+            "abbreviations": [
+                "vlg.",
+                "vgl."
+            ]
+        },
+        {
+            "id": "ML_EDITORIAL_cf",
+            "singular": "confer",
+            "abbreviations": [
+                "cf.",
+                "zie"
+            ]
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_SUBJECT",
+            "singular": "onderwerp"
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_PREDICATE",
+            "singular": "gezegde"
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_DIRECT-OBJECT",
+            "singular": "lijdend voorwerp"
+        },
+        {
+            "id": "ML_SYNTACTIC-RELATION_INDIRECT-OBJECT",
+            "singular": "meewerkend voorwerp"
+        },
+        {
+            "id": "ML_MORPH-VALUE_VERBFORM-GERUND",
+            "singular": "gerundium"
+        }
+    ]
 }

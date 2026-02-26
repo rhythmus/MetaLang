@@ -4,6 +4,8 @@ import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-eagles/src/index.ts';
 import { manifest as EL_GR_MANIFEST } from '../packages/plugin-el-ΓΝΕΓ/src/index.ts';
 import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-taalunie/src/index.ts';
 import { manifest as NL_GENERIC_MANIFEST } from '../packages/plugin-nl/src/index.ts';
+import { manifest as EN_GENERIC_MANIFEST } from '../packages/plugin-en/src/index.ts';
+import { manifest as EL_GENERIC_MANIFEST } from '../packages/plugin-el/src/index.ts';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
@@ -51,6 +53,12 @@ async function verifyPlugins() {
     registry.registerTagSystem(NL_GENERIC_MANIFEST as any);
     console.log(`✅ Dutch (Generic) Plugin registered.`);
 
+    registry.registerTagSystem(EN_GENERIC_MANIFEST as any);
+    console.log(`✅ English (Generic) Plugin registered.`);
+
+    registry.registerTagSystem(EL_GENERIC_MANIFEST as any);
+    console.log(`✅ Greek (Generic) Plugin registered.`);
+
     // 5. Test Cross-Plugin Normalization
     const testCases = [
         { systemId: 'universal-dependencies', tag: 'ADJ' },
@@ -61,16 +69,38 @@ async function verifyPlugins() {
         { systemId: 'nl-taalunie', tag: 'v' },
         { systemId: 'nl-generic', tag: 'znw.' },
         { systemId: 'nl-generic', tag: 'bv.' },
-        { systemId: 'nl-generic', tag: 'enz.' }
+        { systemId: 'nl-generic', tag: 'enz.' },
+        { systemId: 'en-generic', tag: 'n.' },
+        { systemId: 'en-generic', tag: 'e.g.' },
+        { systemId: 'el-generic', tag: 'ουσ.' },
+        { systemId: 'el-generic', tag: 'κλπ.' }
     ];
 
     console.log('\n🔍 Testing Normalization:');
     for (const t of testCases) {
-        const concepts = registry.normalizeTag(t.tag, t.systemId);
-        if (concepts.length > 0) {
-            console.log(`   - [${t.systemId}] "${t.tag}" -> ${concepts.map(c => c.id).join(', ')}`);
+        const result = registry.resolveTag(t.tag, t.systemId);
+        const resolved = result.length > 0 ? result.join(', ') : '❌ [NO MAPPING]';
+        console.log(`   - [${t.systemId}] "${t.tag}" -> ${resolved}`);
+    }
+
+    console.log('\n🔍 Testing Localization (Rich Mappings):');
+    const localizationTests = [
+        { conceptId: 'ML_POS_NOUN', systemId: 'nl-generic' },
+        { conceptId: 'ML_POS_NOUN', systemId: 'en-generic' },
+        { conceptId: 'ML_POS_NOUN', systemId: 'el-generic' },
+        { conceptId: 'ML_EDITORIAL_eg', systemId: 'nl-generic' },
+        { conceptId: 'ML_EDITORIAL_eg', systemId: 'en-generic' }
+    ];
+
+    for (const test of localizationTests) {
+        const mapping = registry.getLinguisticMapping(test.conceptId, test.systemId);
+        if (mapping) {
+            console.log(`   - [${test.systemId}] ${test.conceptId}:`);
+            console.log(`     Singular: ${mapping.singular || '-'}`);
+            console.log(`     Plural:   ${mapping.plural || '-'}`);
+            console.log(`     Abbrs:    ${mapping.abbreviations?.join(', ') || '-'}`);
         } else {
-            console.log(`   - [${t.systemId}] "${t.tag}" -> ❌ [NO MAPPING]`);
+            console.log(`   - [${test.systemId}] ${test.conceptId}: ❌ [NOT FOUND]`);
         }
     }
 
