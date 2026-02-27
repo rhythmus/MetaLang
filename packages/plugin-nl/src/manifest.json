@@ -152,6 +152,55 @@
             "id": "ML_MORPH-VALUE_PERSON-THIRD",
             "singular": "derde persoon"
         },
+        "ML_MORPH-VALUE_ASPECT": {
+            "id": "ML_MORPH-VALUE_ASPECT",
+            "singular": "aspect"
+        },
+        "ML_MORPH-VALUE_ASPECT-PERFECTIVE": {
+            "id": "ML_MORPH-VALUE_ASPECT-PERFECTIVE",
+            "singular": "voltooid verleden tijd",
+            "plural": "voltooid verleden tijden",
+            "abbreviations": [
+                "vvt"
+            ]
+        },
+        "ML_MORPH-VALUE_ASPECT-IMPERFECTIVE": {
+            "id": "ML_MORPH-VALUE_ASPECT-IMPERFECTIVE",
+            "singular": "onvoltooid verleden tijd",
+            "plural": "onvoltooid verleden tijden",
+            "abbreviations": [
+                "ovt"
+            ]
+        },
+        "ML_MORPH-VALUE_VOICE": {
+            "id": "ML_MORPH-VALUE_VOICE",
+            "singular": "φωνή"
+        },
+        "ML_MORPH-VALUE_VOICE-ACTIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-ACTIVE",
+            "singular": [
+                "handelende vorm",
+                "actieve vorm",
+                "actief"
+            ],
+            "plural": "actieve vormen"
+        },
+        "ML_MORPH-VALUE_VOICE-PASSIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-PASSIVE",
+            "singular": [
+                "lijdende vorm",
+                "passief"
+            ],
+            "plural": [
+                "lijdende vormen",
+                "passieven"
+            ]
+        },
+        "ML_MORPH-VALUE_VOICE-IMPERSONAL-PASSIVE": {
+            "id": "ML_MORPH-VALUE_VOICE-IMPERSONAL-PASSIVE",
+            "singular": "onpersoonlijk passief",
+            "plural": "onpersoonlijk passieve wijzen"
+        },
         "ML_POS_NOUN": {
             "id": "ML_POS_NOUN",
             "singular": [
@@ -569,6 +618,24 @@
             "id": "ML_ETYMOLOGY_LOANWORD",
             "singular": "leenwoord",
             "plural": "leenwoorden"
+        },
+        "ML_POS_ABBREVIATION": {
+            "id": "ML_POS_ABBREVIATION",
+            "singular": "afkorting",
+            "plural": "afkortingen",
+            "abbreviations": [
+                "afk."
+            ]
+        },
+        "ML_POS_INITIALS": {
+            "id": "ML_POS_INITIALS",
+            "singular": "inititalen",
+            "plural": "inititalen"
+        },
+        "ML_POS_ACRONYM": {
+            "id": "ML_POS_ACRONYM",
+            "singular": "acroniem",
+            "plural": "acroniemen"
         },
         "ML_CUSTOM_TRANSLIT": {
             "id": "ML_CUSTOM_TRANSLIT",
