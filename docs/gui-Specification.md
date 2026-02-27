@@ -52,10 +52,11 @@ The MetaLang project addresses terminological fragmentation through a centralize
 
 2.3 Separation of concerns
 
-- Presentation layer
-- State layer
-- Validation layer
-- Persistence/export layer  
+- **Concept Registry (Core)**: In-memory store with $O(1)$ indexing.
+- **Dynamic Loader**: Uses Vite's `import.meta.glob` to discover and load all TSV clusters from `ontology/concepts/*.tsv` and plugin manifests from `packages/plugin-*/src/manifest.json`.
+- **Change Tracking**: Immutable `Map` of modified concepts, enabling safe patch export without mutating the core registry.
+- **Validation layer**  
+- **Persistence/export layer**
 
 2.4 Technology constraints (browser-only, no server dependency initially)
 
@@ -111,10 +112,9 @@ Acceptance criteria:
 4.3.1 Plugin registry view: Display overview of registered standards and their authoritative status.
 4.3.2 Plugin descriptor info: Explicitly surface bibliographic source information (author, year, URL) to the user.
 4.3.3 Mapping grid: Inspect resolve/normalization results with provenance context.
-4.3.4 Multi-concept mapping support  
-4.3.5 Ambiguity handling UI  
-4.3.6 Bulk mapping suggestions  
-4.3.7 Unmapped tag detection
+4.3.4 Localization support: Display language endonyms (e.g., "Deutsch" instead of "de") using CLDR metadata.
+4.3.5 BCP 47 Resolution Sandbox: A dedicated diagnostic view for visualizing the hierarchical fallback path of specific tags across different locales and systems.
+4.3.6 Unmapped tag detection
 
 Acceptance criteria:
 

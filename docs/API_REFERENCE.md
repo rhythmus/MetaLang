@@ -8,10 +8,19 @@ The core engine responsible for registry management and external integrations.
 
 ### `Registry`
 The central state manager for concepts, domains, and tag systems.
-- `loadSeed(seed: SeedFile)`: Initializes the registry with canonical data.
-- `registerTagSystem(manifest: PluginManifest)`: Adds a new external mapping system.
-- `resolveTags(tags: string[], systemId: string)`: Resolves a list of external tags to MetaLang GUIDs.
-- `validatePlugin(systemId: string)`: Performs integrity checks on a plugin's mappings.
+- `loadTSVData(domainsTsv: string, conceptFiles: string[])`: Modular loading of domains and multiple concept files.
+- `registerTagSystem(manifest: PluginManifest)`: Adds a new external mapping system with automated indexing.
+- `resolve(tag: string, systemId: string)`: Resolves an external tag to Concept objects (replaces legacy methods).
+- `search(query: string, options: SearchOptions)`: Sub-millisecond exact and partial search using the inverted `searchIndex`.
+- `getChildren(conceptId: string)`: $O(1)$ child retrieval using pre-computed `childMap`.
+- `resolveLinguisticMapping(conceptId, systemOrLang)`: Advanced BCP 47 hierarchical fallback resolution.
+
+### `Locale`
+Utility for BCP 47 normalization and CLDR-backed localization.
+- `normalize(tag: string)`: Standardizes language tags (e.g., `en-us` -> `en-US`).
+- `getAncestry(tag: string)`: Returns the hierarchical fallback path (e.g., `nl-BE` -> `nl`).
+- `getEndonym(tag: string)`: Returns the native name of a language (e.g., `el` -> `Ελληνικά`).
+- `getExonym(tag, displayLocale)`: Returns the localized name of a language.
 
 ### `GitHubService`
 Handles automated Pull Request creation.

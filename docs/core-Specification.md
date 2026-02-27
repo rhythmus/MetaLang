@@ -140,9 +140,12 @@ Flat mappings are suitable for high-abstraction categories (e.g., POS tags). Ric
 
 5.4 Registry core
 
-- in-memory registry model
-- merge strategy for multiple plugins
-- plugin unload/replace semantics  
+- **Registry State Model**: In-memory storage using Maps for Concepts and Domains.
+- **Index Optimization**:
+    - **`childMap`**: Stores pre-computed child indices for $O(1)$ retrieval of concept hierarchies (replaces $O(N)$ iteration).
+    - **`searchIndex`**: An inverted index mapping lowercase terms/tags to Concept IDs, enabling sub-millisecond exact and partial search across all registered plugins.
+- **Incremental Indexing**: Indices are automatically synchronized during TSV loading, plugin registration, and patch application (`applyPatch`).
+- **Merge Strategy**: Deterministic merging of multiple plugins, prioritizing the most recently registered systems unless otherwise specified.
 
 5.5 Registration APIs
 
@@ -237,16 +240,25 @@ Implemented in the `Registry` class:
 235: - `getEndonym(lang: string): string | undefined`: Returns the localized name of a language in its own script (e.g., `de` -> `Deutsch`).
 236: - `getExonym(lang: string, displayLocale: string): string | undefined`: Returns the name of a language localized for a specific audience (e.g., `nl` in `fr` -> `néerlandais`).
 237: - `getRegionName(regionCode: string, displayLocale: string): string`: Returns the localized name of a region (ISO 3166) (e.g., `BE` in `en` -> `Belgium`).
-238: - `getRegionEndonym(regionCode: string, localeContext: string): string`: Returns the region name in the specified locale context (e.g., `BE` in `nl-BE` -> `België`).
-237: 
-238: 7.6 Hierarchical Resolution Logic
-239: 
-240: The `resolveLinguisticMapping` method implements a BCP 47-aware fallback strategy:
-241: 1. **Direct Match**: Attempt to find a mapping in the requested system (or the system associated with a language tag).
-242: 2. **BCP 47 Ancestry**: Traverse the tag's ancestry (e.g., `nl-BE` → `nl`). This allows a generic language plugin to provide default terms for all its dialects.
-243: 3. **Global Fallback**: Attempt resolution in the `en` (English) system.
-244: 4. **Semantic Sibling**: If a MetaLang concept has a WikiData QID, check for mappings of other concepts sharing the same QID.
-245: 5. **Ontology Label**: As a final resort, return the primary English label defined in the core ontology.
+- `getRegionEndonym(regionCode: string, localeContext: string): string`: Returns the region name in the specified locale context (e.g., `BE` in `nl-BE` -> `België`).
+
+7.6 Hierarchical Resolution Logic
+
+The `resolveLinguisticMapping` method implements a BCP 47-aware fallback strategy:
+1.  **Direct Match**: Attempt to find a mapping in the requested system (or the system associated with a language tag).
+2.  **BCP 47 Ancestry**: Traverse the tag's ancestry using CLDR-aligned logic (via `Locale.getAncestry`). 
+    - *Example*: `nl-BE-poly` → `nl-BE` → `nl` → `en`.
+    - This allows a generic language plugin (e.g., `plugin-nl`) to provide default terms for all its regional dialects.
+3.  **Global Fallback**: Attempt resolution in the `en` (English) system.
+4.  **QID Sibling Fallback**: If a MetaLang concept has a WikiData QID, check for mappings of other concepts sharing the same QID (cross-concept reconciliation).
+5.  **Ontology Label**: As a final resort, return the primary English label defined in the core ontology, wrapped in brackets (e.g., `[label]`).
+
+#### 7.6.1 Resolution Metadata
+The resolved mapping object includes flags to ensure transparency for the consumer:
+- `sourceSystemId`: The ID of the system where the mapping was eventually found.
+- `isFallback`: Set to `true` if any fallback stage (except 1) was triggered.
+- `isQidSibling`: Set to `true` if resolved via QID redirection.
+- `isOntologyLabel`: Set to `true` if using the core label as the last resort.
 
 7.7 Error model
 
