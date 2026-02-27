@@ -1,0 +1,11 @@
+{
+    "name": "@metalang/plugin-ptb",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Penn Treebank (PTB) Tag-System Plugin",
+    "main": "index.js",
+    "dependencies": {
+        "@metalang/core": "workspace:^",
+        "@metalang/schema": "workspace:^"
+    }
+}

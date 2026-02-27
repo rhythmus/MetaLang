@@ -1,0 +1,11 @@
+{
+    "name": "@metalang/plugin-lexilogio",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Lexilogio Tag-System Plugin",
+    "main": "index.js",
+    "dependencies": {
+        "@metalang/core": "workspace:^",
+        "@metalang/schema": "workspace:^"
+    }
+}
