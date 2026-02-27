@@ -1,6 +1,9 @@
 import { Registry } from '../packages/core/src/registry.ts';
 import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.ts';
 import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-EAGLES/src/index.ts';
+import { LEXILOGIO_PLUGIN_MANIFEST } from '../packages/plugin-Lexilogio/src/index.ts';
+import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-intera/src/index.ts';
+import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-ptb/src/index.ts';
 import { manifest as EL_GR_MANIFEST } from '../packages/plugin-el-ΓΝΕΓ/src/index.ts';
 import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-Taalunie/src/index.ts';
 import { manifest as NL_GENERIC_MANIFEST } from '../packages/plugin-nl/src/index.ts';
@@ -44,6 +47,16 @@ async function verifyPlugins() {
         console.log(`✅ EAGLES Plugin validated.`);
     }
 
+    // --- New Tag-Systems ---
+    registry.registerTagSystem(LEXILOGIO_PLUGIN_MANIFEST);
+    console.log(`✅ Lexilogio Plugin registered.`);
+
+    registry.registerTagSystem(INTERA_PLUGIN_MANIFEST);
+    console.log(`✅ INTERA Plugin registered.`);
+
+    registry.registerTagSystem(PTB_PLUGIN_MANIFEST);
+    console.log(`✅ PTB Plugin registered.`);
+
     // 4. Register & Validate National Plugins
     registry.registerTagSystem(EL_GR_MANIFEST as any);
     console.log(`✅ Greek (LTT) Plugin registered.`);
@@ -79,7 +92,15 @@ async function verifyPlugins() {
         { systemId: 'en-generic', tag: 'eg', expected: 'ML_EDITORIAL_eg' }, // Test dot-stripping
         { systemId: 'el-generic', tag: 'ουσ.', expected: 'ML_POS_NOUN' },
         { systemId: 'el-generic', tag: 'ουσ', expected: 'ML_POS_NOUN' }, // Test dot-stripping
-        { systemId: 'el-generic', tag: 'κλπ.', expected: 'ML_EDITORIAL_etc' }
+        { systemId: 'el-generic', tag: 'κλπ.', expected: 'ML_EDITORIAL_etc' },
+
+        // Test New Systems
+        { systemId: 'lexilogio', tag: 'n' },
+        { systemId: 'lexilogio', tag: 'v' },
+        { systemId: 'intera', tag: 'No' },
+        { systemId: 'intera', tag: 'Vb' },
+        { systemId: 'penn-treebank', tag: 'NN' },
+        { systemId: 'penn-treebank', tag: 'VB' }
     ];
 
     console.log('\n🔍 Testing Normalization:');
