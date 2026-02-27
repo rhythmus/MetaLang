@@ -6,8 +6,8 @@ import type { PluginManifest } from '@metalang/schema';
  */
 export const PTB_PLUGIN_MANIFEST: PluginManifest = {
     descriptor: {
-        id: 'penn-treebank',
-        name: 'Penn Treebank (PTB)',
+        id: 'PTB',
+        name: 'PTB',
         version: '3.0.0',
         source: {
             title: 'The Penn Treebank: Annotating Predicate Argument Structure',
@@ -22,7 +22,8 @@ export const PTB_PLUGIN_MANIFEST: PluginManifest = {
         'NNS': ['ML_POS_NOUN', 'ML_MORPH-VALUE_NUMBER-PLURAL'],
         'NNP': ['ML_POS_PROPER-NOUN', 'ML_MORPH-VALUE_NUMBER-SINGULAR'],
         'NNPS': ['ML_POS_PROPER-NOUN', 'ML_MORPH-VALUE_NUMBER-PLURAL'],
-        'NP': ['ML_CUSTOM_V-GR'], // Noun Phrase (MetaLang maps phrases to V-GR or similar if needed, but NN is better)
+        'NP': ['ML_POS_NOUN'], // Proper Noun/Noun Phrase tag in some contexts (Row 29)
+        'MWE': ['ML_LEX-STRUCT_MWE'], // Row 7-8
 
         // --- Verbs ---
         'VB': ['ML_POS_VERB'],
@@ -42,7 +43,7 @@ export const PTB_PLUGIN_MANIFEST: PluginManifest = {
         'RB': ['ML_POS_ADVERB'],
         'RBR': ['ML_POS_ADVERB', 'ML_MORPH-VALUE_DEGREE-COMPARATIVE'],
         'RBS': ['ML_POS_ADVERB', 'ML_MORPH-VALUE_DEGREE-SUPERLATIVE'],
-        'ADVP': ['ML_POS_ADV-GR'],
+        'ADVP': ['ML_POS_ADVERB'], // Row 79
 
         // --- Numerals ---
         'CD': ['ML_POS_NUMERAL-CARDINAL'],
@@ -64,7 +65,12 @@ export const PTB_PLUGIN_MANIFEST: PluginManifest = {
 
         // --- Symbols & Punctuation ---
         'SYM': ['ML_RHETORIC_SYMBOL'],
-        'PUNCT': ['ML_POS_PUNCT']
+        'PUNCT': ['ML_POS_PUNCT'],
+
+        // --- Meta-Tags from linguistic-meta-terms_core.tsv ---
+        't': ['ML_MORPH-TENSE'],
+        'Aor': ['ML_MORPH-VALUE_TENSE-AORIST'],
+        'Xx': ['ML_POS_X']
     }
 };
 
