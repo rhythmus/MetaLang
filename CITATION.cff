@@ -1,19 +1,62 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "If you use MetaLang in research, education, or software projects, please cite it using these metadata."
 authors:
   - family-names: Soudan
     given-names: Wouter
-title: "MetaLang"
+    affiliation: "Independent Scholar; former postdoc in Computational Linguistics, Universiteit Antwerpen, Belgium"
+title: "MetaLang: Cross-Linguistic Terminology Alignment Layer"
 version: 1.0.0
 date-released: 2026-02-26
 url: "https://github.com/rhythmus/MetaLang"
 repository-code: "https://github.com/rhythmus/MetaLang"
 license: ISC
-abstract: "MetaLang is a multilingual, ontology-based framework for linguistic metalanguage — the vocabulary used to describe language itself. It serves as a canonical pivot layer between academic, pedagogical, and computational grammar systems."
+abstract: >-
+  MetaLang provides a multilingual, ontology-based framework for linguistic 
+  metalanguage standardization. It resolves fragmentation in linguistic 
+  terminology across traditions (academic, pedagogical, computational) by 
+  establishing stable concept hierarchies and enabling cross-tradition 
+  mapping of linguistic tags and annotations. The framework implements 
+  a plugin architecture supporting Universal Dependencies, EAGLES, 
+  school grammars, and domain-specific standards (rhetoric, morphology, 
+  syntax). MetaLang bridges language resource infrastructure standards 
+  including CLDF, FoLiA, TEI, and Unicode standards (BCP-47, ISO-639, 
+  ISO-15924), making it essential infrastructure for multilingual NLP, 
+  linguistic annotation, computational lexicography, and cross-linguistic 
+  language documentation.
 keywords:
   - linguistics
+  - language-resources
   - metalanguage
+  - terminology-standardization
   - ontology
-  - terminology
-  - multidialectal
-  - cross-linguistic
+  - cross-linguistic-data
+  - language-documentation
+  - linguistic-annotation
+  - computational-linguistics
+  - localization
+  - i18n
+references:
+  - type: standard
+    title: "Universal Dependencies"
+    authors:
+      - family-names: Zeman
+        given-names: Dan
+    year: 2023
+    url: "https://universaldependencies.org/"
+  - type: standard
+    title: "Cross-Linguistic Data Formats (CLDF)"
+    authors:
+      - family-names: Forkel
+        given-names: Robert
+    year: 2023
+    url: "https://cldf.clld.org/"
+  - type: standard
+    title: "Framework for Linguistic Annotation (FoLiA)"
+    authors:
+      - family-names: van Gompel
+        given-names: Maarten
+    year: 2023
+    url: "https://proycon.github.io/folia/"
+funding:
+  - funder: "Independent Research"
+    notes: "This work was developed as independent scholarship building on expertise from PhD (KU Leuven) and Postdoctoral Fellowship (Universiteit Antwerpen)."

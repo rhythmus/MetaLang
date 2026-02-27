@@ -12,7 +12,21 @@ MetaLang provides:
 
 - **Canonical Ontology**: A stable hierarchy of linguistic concepts across domains (POS, Morphology, Syntax, etc.).
 - **Multilingual Labels**: localized terms and abbreviations for end-users and software (EN, NL, EL, DE, FR, PT, ES, IT, RU).
-- **Plugin Architecture**: A system for mapping any external tagset (e.g., UD, CELEX) to the MetaLang core.
+- **Plugin Architecture**: A system for mapping any external tagset (e.g., UD, CELEX, PTB) to the MetaLang core.
+
+## 🎓 Academic & Professional Context
+
+MetaLang is positioned within the emerging subdiscipline of **Language Resource Infrastructure and Standardization**. It addresses the "Backbone infrastructure" problems of:
+- **Linguistic Data Infrastructure (LDI)**: Organizing and disclosing heterogeneous linguistic data.
+- **Interoperability**: Bridging the gap between legacy institutional data (e.g., Greek-specific INTERA) and modern standards like **Universal Dependencies (UD)** and **CLDF**.
+- **Lexicography & Morphology**: Providing a machine-readable path for historical lexicographic terms to modern NLP pipelines.
+
+### Related Standards
+MetaLang complements and integrates with:
+- **UD**: Standardized syntactic annotation.
+- **CLDF**: Cross-Linguistic Data Formats for comparative studies.
+- **FoLiA**: Framework for Linguistic Annotation.
+- **CLDR**: Unicode Common Locale Data Repository (for localization).
 
 ## 📂 Project Structure
 
@@ -115,9 +129,10 @@ If you use MetaLang in your research or project, please cite it as follows:
 ```bibtex
 @software{Soudan_MetaLang_2026,
   author = {Soudan, Wouter},
+  affiliation = {Independent Scholar; PhD from KU Leuven; former postdoc in Computational Linguistics, Universiteit Antwerpen, Belgium},
   license = {ISC},
   month = {2},
-  title = {{MetaLang}},
+  title = {{MetaLang: Cross-Linguistic Terminology Alignment Layer}},
   url = {https://github.com/rhythmus/MetaLang},
   version = {1.0.0},
   year = {2026}
