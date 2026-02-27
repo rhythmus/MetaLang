@@ -157,10 +157,17 @@ Flat mappings are suitable for high-abstraction categories (e.g., POS tags). Ric
 - domain consistency (optional strict mode)
 - duplicate tag keys handling  
 
-5.7 Plugin packaging conventions
-
-- naming: `@metalang/plugin-*`
-- private plugins, internal plugins, institutional dictionaries  
+160: 5.7 Plugin packaging conventions
+161: 
+162: - **Naming Convention**: `@metalang/plugin-[Descriptor]`
+163:     - **Generic Language Plugins**: Use **BCP47** langtags. The first part (language) MUST be lowercase, while regional or diagnostic variants MUST be uppercase.
+164:         - *Examples*: `plugin-en`, `plugin-nl-BE`, `plugin-el-LTT`.
+165:     - **Specific Tag-System Plugins**: Use the shortest possible name or descriptor for the system.
+166:         - **Acronyms**: MUST be in ALLCAPS. (e.g., `plugin-PTB`, `plugin-UD`, `plugin-INTERA`).
+167:         - **Proper Names**: MUST be Capitalized. (e.g., `plugin-Lexilogio`).
+168:     - **Rationale**: This convention allows for immediate visual distinction between generic linguistic providers and specific historical or institutional tag-sets.
+169: 
+170: - **Module Structure**: Plugins MUST distribute a `src/index.ts` (or `index.js` in compiled form) that exports a `PluginManifest`.
 
 5.8 Governance: official vs third-party plugins
 

@@ -34,3 +34,14 @@ Follow this format consistently for all commits.
 4. **Group logically**: one commit per cohesive unit of work (e.g. one ROADMAP phase, one feature area). Do not mix unrelated changes; do not split a single feature across many tiny commits.
 
 5. **No noise**: do not commit generated files (`dist/`, `docs/api/`), secrets, or empty commits.
+
+## 🏷️ Naming Conventions
+
+### Plugin Packages
+
+- **Generic Language Plugins**: `plugin-[langtag]` (BCP47). Lowercase language code, uppercase variant/region.
+    - *Right*: `plugin-pt`, `plugin-pt-BR`.
+    - *Wrong*: `plugin-PT`, `plugin-pt-br`.
+- **Specific Tag-System Plugins**: `plugin-[Descriptor]`.
+    - **Acronyms**: ALLCAPS (e.g., `plugin-PTB`, `plugin-UD`).
+    - **Proper Names**: Capitalized (e.g., `plugin-Lexilogio`).
