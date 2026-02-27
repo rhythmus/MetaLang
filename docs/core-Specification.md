@@ -126,9 +126,17 @@ The `PluginManifest` MUST include a `descriptor` object containing:
 
 5.3 Plugin mapping schema
 
-- external tag → canonical concept ID(s)
-- multi-mapping rules (one tag maps to multiple concepts)
-- canonical-to-external emission rules  
+The `mappings` object in a manifest connects external tags (glyphs, abbreviations, codes) to canonical MetaLang IDs.
+
+- **Flat Mappings**: A simple string or array of strings (`"n": "ML_POS_NOUN"`).
+- **Rich Mappings**: An object (`LinguisticMapping`) containing localized metadata. This is the preferred format for concepts requiring typographic or morphological detail.
+- **The `symbols` Property**: Special support for the `PUNCTUATION` domain, where multiple typographic variants (glyphs) can be indexed for normalization under a single concept.
+
+#### 5.3.1 Rationale: Rich vs. Flat
+Flat mappings are suitable for high-abstraction categories (e.g., POS tags). Rich mappings are essential for:
+- **Typographic accuracy**: Handling multiple quotation marks (`"`, `«`, `„`) under one concept.
+- **Morphological metadata**: Storing localized singular/plural forms of grammatical terms.
+- **Searchability**: Normalizing diverse typographic variants back to a stable canonical ID for cross-linguistic search.
 
 5.4 Registry core
 
