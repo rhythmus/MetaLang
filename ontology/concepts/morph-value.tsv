@@ -69,3 +69,10 @@ Q12547192		ML_MORPH-VALUE_TENSE-PAST-REMOTE	remote past	A [tense](https://en.wik
 Q12547192		ML_MORPH-VALUE_TENSE-PAST-COMPOUND	past compound	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express a completed action in the past using an auxiliary. (French [passé composé](https://fr.wiktionary.org/wiki/passé_composé))
 Q12547192		ML_MORPH-VALUE_TENSE-PAST-ANTERIOR	past anterior	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express an action that occurred immediately before another past action. (French [passé antérieur](https://fr.wiktionary.org/wiki/passé_antérieur))
 Q12547192		ML_MORPH-VALUE_TENSE-FUTURE-ANTERIOR	future anterior	A [tense](https://en.wiktionary.org/wiki/tense#Noun) used to express a future action that will be completed before another future action. (French [futur antérieur](https://fr.wiktionary.org/wiki/futur_antérieur))
+Q208084		ML_MORPH-VALUE_ASPECT	aspect		
+Q12547192		ML_MORPH-VALUE_ASPECT-PERFECTIVE	perfective aspect		
+Q12547192		ML_MORPH-VALUE_ASPECT-IMPERFECTIVE	imperfective aspect		
+Q211101		ML_MORPH-VALUE_VOICE	voice		
+Q1317831	ML_MORPH-VALUE_VOICE	ML_MORPH-VALUE_VOICE-ACTIVE	active (voice)		
+Q1194697	ML_MORPH-VALUE_VOICE	ML_MORPH-VALUE_VOICE-PASSIVE	passive (voice)		
+Q2517088	ML_MORPH-VALUE_VOICE	ML_MORPH-VALUE_VOICE-IMPERSONAL-PASSIVE	impersonal passive voice		
