@@ -4,7 +4,7 @@ import type { PluginManifest } from '@metalang/schema';
  * Penn Treebank (PTB) Tag-System Plugin Manifest
  * Source: linguistic-meta-terms_core.tsv and standard PTB tagset
  */
-export const PTB_PLUGIN_MANIFEST: PluginManifest = {
+export const manifest: PluginManifest = {
     descriptor: {
         id: 'PTB',
         name: 'PTB',
@@ -74,4 +74,4 @@ export const PTB_PLUGIN_MANIFEST: PluginManifest = {
     }
 };
 
-export default PTB_PLUGIN_MANIFEST;
+export default manifest;

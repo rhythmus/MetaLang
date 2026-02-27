@@ -6,7 +6,7 @@ import type { PluginManifest } from '@metalang/schema';
  * Note: MULTEXT-East uses positional tags (MSDs). 
  * This manifest maps the most common first-position (category) characters.
  */
-export const EAGLES_PLUGIN_MANIFEST: PluginManifest = {
+export const manifest: PluginManifest = {
     descriptor: {
         id: 'eagles-multext-east',
         name: 'EAGLES / MULTEXT-East',
@@ -73,4 +73,4 @@ export const EAGLES_PLUGIN_MANIFEST: PluginManifest = {
     }
 };
 
-export default EAGLES_PLUGIN_MANIFEST;
+export default manifest;

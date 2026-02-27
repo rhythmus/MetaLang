@@ -4,7 +4,7 @@ import type { PluginManifest } from '@metalang/schema';
  * Universal Dependencies (UD) v2 Plugin Manifest
  * Source: https://universaldependencies.org/u/pos/ and https://universaldependencies.org/u/feat/
  */
-export const UD_PLUGIN_MANIFEST: PluginManifest = {
+export const manifest: PluginManifest = {
     descriptor: {
         id: 'universal-dependencies',
         name: 'Universal Dependencies (UD)',
@@ -80,4 +80,4 @@ export const UD_PLUGIN_MANIFEST: PluginManifest = {
     }
 };
 
-export default UD_PLUGIN_MANIFEST;
+export default manifest;

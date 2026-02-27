@@ -4,7 +4,7 @@ import type { PluginManifest } from '@metalang/schema';
  * INTERA Tag-System Plugin Manifest
  * Source: linguistic-meta-terms_core.tsv
  */
-export const INTERA_PLUGIN_MANIFEST: PluginManifest = {
+export const manifest: PluginManifest = {
     descriptor: {
         id: 'el-INTERA',
         name: 'el-INTERA',
@@ -117,4 +117,4 @@ export const INTERA_PLUGIN_MANIFEST: PluginManifest = {
     }
 };
 
-export default INTERA_PLUGIN_MANIFEST;
+export default manifest;

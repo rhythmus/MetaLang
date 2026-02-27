@@ -1,4 +1,5 @@
 {
+    "$schema": "../../../schema/schemas/plugin-manifest.schema.json",
     "descriptor": {
         "id": "pl",
         "name": "Polish (Polski)",

@@ -1,10 +1,5 @@
-import { Registry, PluginManifest } from '@metalang/core';
-import manifest from './manifest.json';
+import type { PluginManifest } from '@metalang/schema';
+import manifestData from './manifest.json' with { type: 'json' };
 
-export const DE_PLUGIN_MANIFEST: PluginManifest = manifest as any;
-
-export function register(registry: Registry) {
-    registry.registerPlugin(DE_PLUGIN_MANIFEST);
-}
-
-export default register;
+export const manifest = manifestData as unknown as PluginManifest;
+export default manifest;

@@ -4,7 +4,7 @@ import type { PluginManifest } from '@metalang/schema';
  * Lexilogio Tag-System Plugin Manifest
  * Source: linguistic-meta-terms_core.tsv
  */
-export const LEXILOGIO_PLUGIN_MANIFEST: PluginManifest = {
+export const manifest: PluginManifest = {
     descriptor: {
         id: 'Lexilogio',
         name: 'Lexilogio',
@@ -134,4 +134,4 @@ export const LEXILOGIO_PLUGIN_MANIFEST: PluginManifest = {
     }
 };
 
-export default LEXILOGIO_PLUGIN_MANIFEST;
+export default manifest;
