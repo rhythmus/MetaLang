@@ -6,12 +6,12 @@ import type { PluginManifest } from '@metalang/schema';
  */
 export const LEXILOGIO_PLUGIN_MANIFEST: PluginManifest = {
     descriptor: {
-        id: 'lexilogio',
+        id: 'Lexilogio',
         name: 'Lexilogio',
         version: '1.0.0',
         source: {
             title: 'Lexilogio Linguistic Meta-Terms',
-            author: 'MetaLang Project',
+            author: 'Wouter Soudan',
             year: 2026,
             url: 'https://metalang.org/ontology/lexilogio'
         }
