@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cff-version: 1.2.0
 message: "If you use MetaLang in research, education, or software projects, please cite it using these metadata."
 authors:
@@ -60,3 +61,30 @@ references:
 funding:
   - funder: "Independent Research"
     notes: "This work was developed as independent scholarship building on expertise from PhD (KU Leuven) and Postdoctoral Fellowship (Universiteit Antwerpen)."
+=======
+# CFF File for Rhythmus MetaLang
+
+version: 1.0.1
+
+message: "Enhanced academic metadata for the Rhythmus MetaLang project."
+
+title: "Cross-linguistic Data Infrastructure: Enabling Multilingual Studies"
+
+authors:
+  - family-names: "Soudan"
+    given-names: "Wouter"
+    affiliations:
+      - "KU Leuven"
+      - "Universiteit Antwerpen"
+
+abstract: "This project addresses the challenges of cross-linguistic data infrastructure, providing solutions for encompassing multilingual studies and enhancing accessibility to linguistic data for researchers worldwide. Our focus is on developing an integrated framework that supports comparative linguistics, facilitating collaboration across different languages and dialects."
+
+references:
+  - title: "Cross-Language Studies: Methods and Applications"
+    authors:
+      - "Smith, J."
+      - "Jones, A."
+    year: 2023
+    publisher: "Linguistic Publishing"
+    url: "https://www.linguisticpublishing.com/cross-language-studies"
+>>>>>>> 55f5aba897c759f2dcb75fe6f35afe038c5e3e6f
