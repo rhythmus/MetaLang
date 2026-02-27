@@ -17,7 +17,7 @@
 - [x] **Tag-System Plugins**: Implemented mappings for **Lexilogio**, **INTERA**, and **PTB** (Penn Treebank) based on core meta-terms.
 - [x] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
 - [x] **CLDR Integration**: Use CLDR as a dependency for authoritative language metadata and translations (incl. endonyms, exonyms).
-- [ ] **Geographic Standards**: Integrate **ISO 3166** or similar for geographic names and identifiers.
+- [x] **Geographic Standards**: Integrated **ISO 3166** support via CLDR/Intl for region names and identifiers.
 
 ## 🧹 Technical Debt & Maintenance
 - [x] Retire legacy PoS data: ensure all concepts from `ontology/part-of-speech terms (original list)/` are fully integrated in `pos.tsv` and `morph-value.tsv`. Then delete the directory. <!-- id: 5 -->

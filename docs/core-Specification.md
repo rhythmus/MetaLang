@@ -236,6 +236,8 @@ Implemented in the `Registry` class:
 234: 
 235: - `getEndonym(lang: string): string | undefined`: Returns the localized name of a language in its own script (e.g., `de` -> `Deutsch`).
 236: - `getExonym(lang: string, displayLocale: string): string | undefined`: Returns the name of a language localized for a specific audience (e.g., `nl` in `fr` -> `néerlandais`).
+237: - `getRegionName(regionCode: string, displayLocale: string): string`: Returns the localized name of a region (ISO 3166) (e.g., `BE` in `en` -> `Belgium`).
+238: - `getRegionEndonym(regionCode: string, localeContext: string): string`: Returns the region name in the specified locale context (e.g., `BE` in `nl-BE` -> `België`).
 237: 
 238: 7.6 Hierarchical Resolution Logic
 239: 
