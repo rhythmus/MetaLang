@@ -1,7 +1,7 @@
 import { Registry } from '../packages/core/src/registry.ts';
 import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.ts';
 import { LEXILOGIO_PLUGIN_MANIFEST } from '../packages/plugin-Lexilogio/src/index.ts';
-import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-INTERA/src/index.js';
+import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-el-INTERA/src/index.ts';
 import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-PTB/src/index.js';
 import type { Concept } from '@metalang/schema';
 import * as fs from 'fs';
@@ -66,14 +66,14 @@ async function runVerification() {
 
     // Test INTERA
     const interaTag = 'No';
-    const interaConcepts = registry.normalizeTag(interaTag, 'INTERA');
+    const interaConcepts = registry.normalizeTag(interaTag, 'el-INTERA');
     if (interaConcepts.length > 0) {
         console.log(`✅ Normalized INTERA "${interaTag}" -> ${interaConcepts[0].id}`);
     }
 
     // Test INTERA Tokenizers
     const interaAbbr = 'NBABBR';
-    const interaAbbrConcepts = registry.normalizeTag(interaAbbr, 'INTERA');
+    const interaAbbrConcepts = registry.normalizeTag(interaAbbr, 'el-INTERA');
     if (interaAbbrConcepts.length > 0) {
         console.log(`✅ Normalized INTERA "${interaAbbr}" -> ${interaAbbrConcepts[0].id}`);
     }

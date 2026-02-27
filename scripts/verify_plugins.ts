@@ -2,7 +2,7 @@ import { Registry } from '../packages/core/src/registry.ts';
 import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.ts';
 import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-EAGLES/src/index.ts';
 import { LEXILOGIO_PLUGIN_MANIFEST } from '../packages/plugin-Lexilogio/src/index.ts';
-import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-INTERA/src/index.js';
+import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-el-INTERA/src/index.ts';
 import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-PTB/src/index.js';
 import { manifest as EL_GR_MANIFEST } from '../packages/plugin-el-ΓΝΕΓ/src/index.ts';
 import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-Taalunie/src/index.ts';
@@ -97,10 +97,10 @@ async function verifyPlugins() {
         // Test New Systems
         { systemId: 'Lexilogio', tag: 'n' },
         { systemId: 'Lexilogio', tag: 'v' },
-        { systemId: 'INTERA', tag: 'No' },
-        { systemId: 'INTERA', tag: 'Vb' },
-        { systemId: 'INTERA', tag: 'NBABBR' },
-        { systemId: 'INTERA', tag: 'INIT' },
+        { systemId: 'el-INTERA', tag: 'No' },
+        { systemId: 'el-INTERA', tag: 'Vb' },
+        { systemId: 'el-INTERA', tag: 'NBABBR' },
+        { systemId: 'el-INTERA', tag: 'INIT' },
         { systemId: 'PTB', tag: 'NN' },
         { systemId: 'PTB', tag: 'VB' }
     ];

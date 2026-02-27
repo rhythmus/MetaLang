@@ -1,0 +1,11 @@
+{
+    "name": "@metalang/plugin-el-INTERA",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Greek INTERA Tag-System Plugin",
+    "main": "index.js",
+    "dependencies": {
+        "@metalang/core": "workspace:^",
+        "@metalang/schema": "workspace:^"
+    }
+}
