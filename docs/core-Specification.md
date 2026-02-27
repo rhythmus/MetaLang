@@ -167,6 +167,8 @@ Flat mappings are suitable for high-abstraction categories (e.g., POS tags). Ric
 167:         - **Proper Names**: MUST be Capitalized. (e.g., `plugin-Lexilogio`).
 168:     - **Rationale**: This convention allows for immediate visual distinction between generic linguistic providers and specific historical or institutional tag-sets.
 169: 
+170: - **Normalization and Fallback**: Generic language plugins SHOULD avoid `-generic` naming in their internal descriptors in favor of the raw BCP47 tag (e.g., `id: "nl"`). The Registry handles the mapping between region-specific tags and their base languages.
+169: 
 170: - **Module Structure**: Plugins MUST distribute a `src/index.ts` (or `index.js` in compiled form) that exports a `PluginManifest`.
 
 5.8 Governance: official vs third-party plugins
@@ -231,6 +233,18 @@ Implemented in the `Registry` class:
 7.5 Localization APIs
 
 - `labelForConcept(conceptId: string, locale: string, variant: 'full' | 'abbreviation'): string | null`
+234: 
+235: - `getEndonym(lang: string): string | undefined`: Returns the localized name of a language in its own script (e.g., `de` -> `Deutsch`).
+236: - `getExonym(lang: string, displayLocale: string): string | undefined`: Returns the name of a language localized for a specific audience (e.g., `nl` in `fr` -> `néerlandais`).
+237: 
+238: 7.6 Hierarchical Resolution Logic
+239: 
+240: The `resolveLinguisticMapping` method implements a BCP 47-aware fallback strategy:
+241: 1. **Direct Match**: Attempt to find a mapping in the requested system (or the system associated with a language tag).
+242: 2. **BCP 47 Ancestry**: Traverse the tag's ancestry (e.g., `nl-BE` → `nl`). This allows a generic language plugin to provide default terms for all its dialects.
+243: 3. **Global Fallback**: Attempt resolution in the `en` (English) system.
+244: 4. **Semantic Sibling**: If a MetaLang concept has a WikiData QID, check for mappings of other concepts sharing the same QID.
+245: 5. **Ontology Label**: As a final resort, return the primary English label defined in the core ontology.
 
 7.7 Error model
 

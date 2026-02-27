@@ -15,13 +15,13 @@
 
 ## 📏 Standardization & Interoperability
 - [x] **Tag-System Plugins**: Implemented mappings for **Lexilogio**, **INTERA**, and **PTB** (Penn Treebank) based on core meta-terms.
-- [ ] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
-- [ ] **CLDR Integration**: Use CLDR as a dependency for authoritative language metadata and translations (incl. endonyms, exonyms).
+- [x] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
+- [x] **CLDR Integration**: Use CLDR as a dependency for authoritative language metadata and translations (incl. endonyms, exonyms).
 - [ ] **Geographic Standards**: Integrate **ISO 3166** or similar for geographic names and identifiers.
 
 ## 🧹 Technical Debt & Maintenance
 - [x] Retire legacy PoS data: ensure all concepts from `ontology/part-of-speech terms (original list)/` are fully integrated in `pos.tsv` and `morph-value.tsv`. Then delete the directory. <!-- id: 5 -->
-- [ ] **Registry Robustness**: Improve `@metalang/core` handling of complex cross-tradition translations and edge-case resolution.
+- [x] **Registry Robustness**: Improve `@metalang/core` handling of complex cross-tradition translations and edge-case resolution via BCP47 hierarchical fallback.
 
 ## 📝 Documentation & Publication
 - [ ] **Unified Documentation**: Integrate and simplify existing docs.
