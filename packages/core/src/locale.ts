@@ -78,4 +78,33 @@ export class Locale {
         }
         return ancestry;
     }
+
+    /**
+     * Get the standardized name of a region (ISO 3166-1 alpha-2).
+     * Example: getRegionName('BE', 'en') -> 'Belgium'
+     */
+    public static getRegionName(regionCode: string, targetLang: string): string {
+        try {
+            const canonicalTarget = this.normalize(targetLang);
+            const formatter = new Intl.DisplayNames([canonicalTarget], { type: 'region' });
+            return formatter.of(regionCode.toUpperCase()) || regionCode;
+        } catch (e) {
+            return regionCode;
+        }
+    }
+
+    /**
+     * Get the endonym for a region.
+     * Note: This estimates the region's own name using the base language of the tag if provided.
+     * Example: getRegionEndonym('BE', 'nl-BE') -> 'België'
+     */
+    public static getRegionEndonym(regionCode: string, localeContext: string): string {
+        try {
+            const canonicalTarget = this.normalize(localeContext);
+            const formatter = new Intl.DisplayNames([canonicalTarget], { type: 'region' });
+            return formatter.of(regionCode.toUpperCase()) || regionCode;
+        } catch (e) {
+            return regionCode;
+        }
+    }
 }
