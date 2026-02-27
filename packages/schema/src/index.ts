@@ -71,6 +71,7 @@ export interface LinguisticMapping {
   singular?: string | string[];      // Full singular form(s)
   plural?: string | string[];        // Full plural form(s)
   abbreviations?: string[]; // Array of common abbreviations
+  symbols?: string[];       // Typographic symbols/glyphs associated with this concept
 }
 
 /**

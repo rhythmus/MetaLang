@@ -134,6 +134,9 @@ export class Registry {
                     const terms = Array.isArray(lm.plural) ? lm.plural : [lm.plural];
                     for (const term of terms) this.addInternalMapping(manifest.descriptor.id, term, lm.id);
                 }
+                if (lm.symbols) {
+                    for (const sym of lm.symbols) this.addInternalMapping(manifest.descriptor.id, sym, lm.id);
+                }
             } else {
                 // Flat mapping (string or string[])
                 const conceptIds = Array.isArray(value) ? value : [value];
