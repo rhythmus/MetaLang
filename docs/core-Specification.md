@@ -141,9 +141,11 @@ Flat mappings are suitable for high-abstraction categories (e.g., POS tags). Ric
 5.4 Registry core
 
 - **Registry State Model**: In-memory storage using Maps for Concepts and Domains.
+- **Decoupled Loading**: Data ingestion is decoupled from the core `Registry` state through dedicated `Loader` utilities (e.g., `TSVLoader`), allowing for independent evolution of parsing logic.
 - **Index Optimization**:
     - **`childMap`**: Stores pre-computed child indices for $O(1)$ retrieval of concept hierarchies (replaces $O(N)$ iteration).
     - **`searchIndex`**: An inverted index mapping lowercase terms/tags to Concept IDs, enabling sub-millisecond exact and partial search across all registered plugins.
+- **Normalization Caching**: To minimize expensive BCP 47 string operations, the Registry maintains a `normalizationCache` that stores pre-standardized language tags.
 - **Incremental Indexing**: Indices are automatically synchronized during TSV loading, plugin registration, and patch application (`applyPatch`).
 - **Merge Strategy**: Deterministic merging of multiple plugins, prioritizing the most recently registered systems unless otherwise specified.
 
@@ -257,8 +259,8 @@ The `resolveLinguisticMapping` method implements a BCP 47-aware fallback strateg
 The resolved mapping object includes flags to ensure transparency for the consumer:
 - `sourceSystemId`: The ID of the system where the mapping was eventually found.
 - `isFallback`: Set to `true` if any fallback stage (except 1) was triggered.
-- `isQidSibling`: Set to `true` if resolved via QID redirection.
-- `isOntologyLabel`: Set to `true` if using the core label as the last resort.
+- `isQidSibling`: Set to `true` if resolved via WikiData QID redirection across concepts.
+- `isOntologyLabel`: Set to `true` if using the core English label as the ultimate last resort.
 
 7.7 Error model
 

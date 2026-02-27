@@ -8,16 +8,21 @@ The core engine responsible for registry management and external integrations.
 
 ### `Registry`
 The central state manager for concepts, domains, and tag systems.
-- `loadTSVData(domainsTsv: string, conceptFiles: string[])`: Modular loading of domains and multiple concept files.
-- `registerTagSystem(manifest: PluginManifest)`: Adds a new external mapping system with automated indexing.
-- `resolve(tag: string, systemId: string)`: Resolves an external tag to Concept objects (replaces legacy methods).
+- `loadTSVData(domainsTsv: string, conceptFiles: string[])`: Orchestrates loading using `TSVLoader` for modular ingestion.
+- `registerTagSystem(manifest: PluginManifest)`: Adds a new external mapping system with automated indexing and language normalization caching.
+- `resolve(tag: string, systemId: string)`: Resolves an external tag to Concept objects.
 - `search(query: string, options: SearchOptions)`: Sub-millisecond exact and partial search using the inverted `searchIndex`.
 - `getChildren(conceptId: string)`: $O(1)$ child retrieval using pre-computed `childMap`.
-- `resolveLinguisticMapping(conceptId, systemOrLang)`: Advanced BCP 47 hierarchical fallback resolution.
+- `resolveLinguisticMapping(conceptId, systemOrLang)`: Advanced BCP 47 hierarchical fallback resolution with QID redirection support.
+
+### `TSVLoader`
+A stateless utility for parsing MetaLang TSV data formats.
+- `parseDomains(content: string)`: Parses `domains.tsv` into `Domain` objects.
+- `parseConcepts(content: string)`: Parses `concepts.tsv` files into indexed `Concept` objects.
 
 ### `Locale`
 Utility for BCP 47 normalization and CLDR-backed localization.
-- `normalize(tag: string)`: Standardizes language tags (e.g., `en-us` -> `en-US`).
+- `normalize(tag: string)`: Standardizes language tags (e.g., `en-us` -> `en-US`). The `Registry` class caches these results for performance.
 - `getAncestry(tag: string)`: Returns the hierarchical fallback path (e.g., `nl-BE` -> `nl`).
 - `getEndonym(tag: string)`: Returns the native name of a language (e.g., `el` -> `Ελληνικά`).
 - `getExonym(tag, displayLocale)`: Returns the localized name of a language.

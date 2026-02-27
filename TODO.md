@@ -7,16 +7,16 @@
 - [ ] **Interoperability Analysis**: Audit coverage and completeness of the ontology in comparison to [Universal Dependencies](https://github.com/UniversalDependencies).
 
 ## 🐛 Bug-fixes & Logic Tightening
-- [ ] **Standardize Plugin Exports**: Unify manifests to export a single `manifest` object; remove legacy `register()` functions.
-- [ ] **Type safety audit**: Remove `any` casts in `Registry.ts` (especially in `resolveLinguisticMapping` and `applyPatch`).
-- [ ] **Schema Linkage**: Fix broken `$schema` paths in all plugin manifests.
+- [x] **Standardize Plugin Exports**: Unify manifests to export a single `manifest` object; remove legacy `register()` functions.
+- [x] **Type safety audit**: Remove `any` casts in `Registry.ts` (especially in `resolveLinguisticMapping` and `applyPatch`).
+- [x] **Schema Linkage**: Fix broken `$schema` paths in all plugin manifests.
 
 ## 🚀 Efficiency & Performance
-- [ ] **Normalization Caching**: Cache BCP 47 results in the `Registry` to avoid redundant normalization overhead.
+- [x] **Normalization Caching**: Cache BCP 47 results in the `Registry` to avoid redundant normalization overhead.
 
 ## 🧹 Maintainability & DRY
 - [ ] **Unified Validation**: Consolidate `validate_plugins.ts` and `Registry.validatePlugin()` into a shared validation service.
-- [ ] **Decouple Registry Parsing**: Move TSV/JSON loading logic from `Registry.ts` to dedicated `Loader` utilities.
+- [x] **Decouple Registry Parsing**: Move TSV/JSON loading logic from `Registry.ts` to dedicated `Loader` utilities.
 - [ ] **Componentize Packaging**: Create a `@metalang/plugin-kit` or similar to reduce boilerplate in plugin packages.
 
 ## 📝 Documentation & Publication
