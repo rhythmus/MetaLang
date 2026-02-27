@@ -3,31 +3,21 @@
 ## 🎯 High Priority: Data Enrichment & Integrity
 - [ ] **WikiData QID Coverage**: 
   - Fill gaps in `ontology/concepts/pos.tsv` (e.g., subordinative conjunctions, specific numerals).
-  - [x] Complete `ontology/concepts/punctuation.tsv` (opening/closing marks, specialized symbols).
-  - [x] Map remaining localized rhetorical terms in `ontology/concepts/rhetoric.tsv`.
 - [ ] **Label Validation**: Cross-check existing labels and translations against WikiData using QID lookups to ensure global alignment.
-- [x] **Punctuation Support**: Verify full engine support in `@metalang/core` and ensure all language plugins map their local punctuation marks to the core ontology.
-
-## 🌍 Language Package Completion
-- [x] **Exhaustive Language Plugins**: Complete the "Core 9" language set and expanded to 14 plugins.
-- [x] English, German, Dutch, French, Greek, Polish, Spanish, Italian, Russian, Portuguese, Breton, Czech, Norwegian, Romanian.
-- [x] **Generic Plugin Upgrade**: Refactor all 14 generic language providers to leverage rich mappings (symbols and localized labels).
-
-## 📏 Standardization & Interoperability
-- [x] **Tag-System Plugins**: Implemented mappings for **Lexilogio**, **INTERA**, and **PTB** (Penn Treebank) based on core meta-terms.
-- [x] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
-- [x] **CLDR Integration**: Use CLDR as a dependency for authoritative language metadata and translations (incl. endonyms, exonyms).
-- [x] **Geographic Standards**: Integrated **ISO 3166** support via CLDR/Intl for region names and identifiers.
-
-## 🧹 Technical Debt & Maintenance
-- [x] Retire legacy PoS data: ensure all concepts from `ontology/part-of-speech terms (original list)/` are fully integrated in `pos.tsv` and `morph-value.tsv`. Then delete the directory. <!-- id: 5 -->
-- [x] **Registry Robustness**: Improve `@metalang/core` handling of complex cross-tradition translations and edge-case resolution via BCP47 hierarchical fallback.
+- [ ] **Interoperability Analysis**: Audit coverage and completeness of the ontology in comparison to [Universal Dependencies](https://github.com/UniversalDependencies).
 
 ## 📝 Documentation & Publication
-- [ ] **Unified Documentation**: Integrate and simplify existing docs.
+- [ ] **Unified Documentation**: Integrate and simplify existing specifications.
 - [ ] **API Reference**: Expand `docs/API_REFERENCE.md` with comprehensive examples and plugin-author guides.
 - [ ] **Academic Output**: Draft Whitepaper and transition to a formal Journal Paper.
 
-
-- coverage and completeness of the ontology in comparison to https://github.com/UniversalDependencies
-
+## ✅ Completed Milestones
+- [x] **BCP 47 Migration**: Standardized all language tags and implemented hierarchical fallback logic.
+- [x] **CLDR Integration**: Integrated `Intl.DisplayNames` for localized language/region metadata.
+- [x] **ISO 3166 Support**: Implemented region-specific naming and lookups.
+- [x] **Registry Robustness**: Enhanced `@metalang/core` for regional fallback (e.g., `nl-BE` -> `nl`).
+- [x] **Exhaustive Language Plugins**: Completed 14 core language plugins (Generic providers).
+- [x] **Tag-System Plugins**: Implemented mappings for **Lexilogio**, **INTERA**, and **PTB**.
+- [x] **Punctuation Support**: Multi-glyph resolution and rich linguistic mappings.
+- [x] **Rhetorical Expansion**: Integrated 250+ rhetorical concepts with WikiData cross-referencing.
+- [x] **Ontology Cleanup**: Retired legacy PoS data and migrated to modular TSV structure.
