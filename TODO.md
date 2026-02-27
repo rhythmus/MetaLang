@@ -1,32 +1,21 @@
 # MetaLang TODO
 
-## 🎯 High Priority: Data Enrichment & Integrity
-- [ ] **WikiData QID Coverage**: 
-  - Fill gaps in `ontology/concepts/pos.tsv` (e.g., subordinative conjunctions, specific numerals).
+## 🎯 Priority: Data Enrichment & Integrity
+- [ ] **WikiData QID Coverage**: Fill remaining gaps in `ontology/concepts/` (especially tags for logic, punctuation, and rhetoric).
 - [ ] **Label Validation**: Cross-check existing labels and translations against WikiData using QID lookups to ensure global alignment.
 - [ ] **Interoperability Analysis**: Audit coverage and completeness of the ontology in comparison to [Universal Dependencies](https://github.com/UniversalDependencies).
 
-## 🐛 Bug-fixes & Logic Tightening
-- [x] **Standardize Plugin Exports**: Unify manifests to export a single `manifest` object; remove legacy `register()` functions.
-- [x] **Type safety audit**: Remove `any` casts in `Registry.ts` (especially in `resolveLinguisticMapping` and `applyPatch`).
-- [x] **Schema Linkage**: Fix broken `$schema` paths in all plugin manifests.
+- [ ] Thoroughly revist the webapp GUI
 
-## 🚀 Efficiency & Performance
-- [x] **Normalization Caching**: Cache BCP 47 results in the `Registry` to avoid redundant normalization overhead.
+## 🧹 Maintainability & Architecture
+- [ ] **Unified Validation Service**: Consolidate `scripts/validate_plugins.ts` and `Registry.validatePlugin()` into a shared, robust validation utility.
+- [ ] **Componentize Packaging**: Create a `@metalang/plugin-kit` to reduce boilerplate across linguistic plugin packages.
 
-## 🧹 Maintainability & DRY
-- [ ] **Unified Validation**: Consolidate `validate_plugins.ts` and `Registry.validatePlugin()` into a shared validation service.
-- [x] **Decouple Registry Parsing**: Move TSV/JSON loading logic from `Registry.ts` to dedicated `Loader` utilities.
-- [ ] **Componentize Packaging**: Create a `@metalang/plugin-kit` or similar to reduce boilerplate in plugin packages.
-
-## 📝 Documentation & Publication
-- [ ] **Unified Documentation**: Integrate and simplify existing specifications.
-- [ ] **API Reference**: Expand `docs/API_REFERENCE.md` with comprehensive examples and plugin-author guides.
-- [x] **Academic Positioning**: Formally defined the domain as "Language Resource Infrastructure and Standardization."
-- [x] **Academic Output**: Fleshed out initial Journal Paper draft (`docs/paper/draft.md`).
-- [x] **Citation Standards**: Enhanced `CITATION.cff` and `README.md` with academic credentials and related standards.
+## 📝 Documentation & Outreach
+- [ ] **Unified Specification**: Integrate existing notes and specs into a single, cohesive specification document.
+- [ ] **API Reference Expansion**: Add comprehensive examples, edge-case behavior, and plugin-author guides to `docs/API_REFERENCE.md`.
+- [ ] **Discoverability**: Add recommended topics (e.g., `language-resources`, `computational-linguistics`) to the GitHub repository.
 
 ## 🎓 Scholarship & Community
 - [ ] **Affiliation**: Apply to the [Ronin Institute](https://ronininstitute.org/) to establish formal affiliation for independent scholarship.
-- [ ] **Discoverability**: Add recommended topics to the GitHub repository (e.g., `language-resources`, `computational-linguistics`).
-- [ ] **GitHub Pages**: Deploy the GUI as a static site for easier stakeholder access.
+- [ ] **GitHub Pages**: Deploy the GUI as a static site for easier stakeholder access and demonstration.
