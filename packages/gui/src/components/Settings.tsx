@@ -1,5 +1,5 @@
 import React from 'react';
-import { Package, Info, History, Trash2, Cpu, Globe, Database } from 'lucide-react';
+import { Package, Info, History, Trash2, Cpu, Globe, Database, Layers } from 'lucide-react';
 
 interface SettingsProps {
     stats: {
@@ -7,6 +7,7 @@ interface SettingsProps {
         domains: number;
         plugins: number;
         modified: number;
+        clusters: number;
     };
     onReset: () => void;
 }
@@ -20,9 +21,10 @@ export const Settings: React.FC<SettingsProps> = ({ stats, onReset }) => {
             </div>
 
             {/* System Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
                 <StatCard icon={<Database size={18} />} label="Concepts" value={stats.concepts} />
                 <StatCard icon={<Cpu size={18} />} label="Domains" value={stats.domains} />
+                <StatCard icon={<Layers size={18} />} label="Clusters" value={stats.clusters} />
                 <StatCard icon={<Package size={18} />} label="Plugins" value={stats.plugins} />
                 <StatCard
                     icon={<History size={18} />}
@@ -44,7 +46,7 @@ export const Settings: React.FC<SettingsProps> = ({ stats, onReset }) => {
                             </div>
                             <div>
                                 <h4 className="font-semibold text-slate-200">Multilingual Seed</h4>
-                                <p className="text-sm text-slate-400">Current seed data version: v1.1.0-alpha</p>
+                                <p className="text-sm text-slate-400">Current seed data version: v1.2.0-modular</p>
                             </div>
                         </div>
                         <button className="sidebar-link w-auto px-4" style={{ background: 'var(--border-glass)' }}>

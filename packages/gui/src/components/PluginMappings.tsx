@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import type { PluginManifest, Concept } from '@metalang/schema';
-import { Search, ExternalLink, ShieldCheck, ShieldAlert } from 'lucide-react';
+import { Locale } from '@metalang/core';
+import { Search, ShieldCheck, ShieldAlert, Globe } from 'lucide-react';
 
 interface PluginMappingsProps {
     manifests: PluginManifest[];
@@ -12,16 +13,18 @@ export const PluginMappings: React.FC<PluginMappingsProps> = ({ manifests, conce
     const conceptMap = useMemo(() => new Map(concepts.map(c => [c.id, c])), [concepts]);
 
     const flattenedMappings = useMemo(() => {
-        const rows: { system: string; tag: string; guid: string; exists: boolean }[] = [];
+        const rows: { system: string; lang: string; tag: string; guid: string; exists: boolean }[] = [];
         manifests.forEach(m => {
             Object.entries(m.mappings).forEach(([tag, ids]) => {
                 const idList = Array.isArray(ids) ? ids : [ids];
                 idList.forEach(id => {
+                    const conceptId = typeof id === 'object' ? (id as any).id : id;
                     rows.push({
                         system: m.descriptor.name,
+                        lang: m.descriptor.language || 'und',
                         tag: tag,
-                        guid: id,
-                        exists: conceptMap.has(id)
+                        guid: conceptId,
+                        exists: conceptMap.has(conceptId)
                     });
                 });
             });
@@ -30,11 +33,14 @@ export const PluginMappings: React.FC<PluginMappingsProps> = ({ manifests, conce
     }, [manifests, conceptMap]);
 
     const filteredMappings = useMemo(() => {
-        return flattenedMappings.filter(m =>
-            m.tag.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            m.guid.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            m.system.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+        const q = searchTerm.toLowerCase();
+        return flattenedMappings.filter(m => {
+            const endonym = Locale.getEndonym(m.lang).toLowerCase();
+            return m.tag.toLowerCase().includes(q) ||
+                m.guid.toLowerCase().includes(q) ||
+                m.system.toLowerCase().includes(q) ||
+                endonym.includes(q);
+        });
     }, [flattenedMappings, searchTerm]);
 
     return (
@@ -48,7 +54,7 @@ export const PluginMappings: React.FC<PluginMappingsProps> = ({ manifests, conce
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 opacity-50" size={14} />
                     <input
                         type="text"
-                        placeholder="Filter tags or GUIDs..."
+                        placeholder="Filter tags, GUIDs, or languages..."
                         className="search-input py-2 pl-9 text-sm"
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
@@ -61,22 +67,27 @@ export const PluginMappings: React.FC<PluginMappingsProps> = ({ manifests, conce
                     <table className="w-full text-left border-collapse">
                         <thead className="sticky top-0 bg-slate-900/80 backdrop-blur-md z-10">
                             <tr className="border-b border-white/5">
-                                <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">System</th>
+                                <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">Language / System</th>
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">Source Tag</th>
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">MetaLang GUID</th>
-                                <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500">Source Info</th>
                                 <th className="px-6 py-4 text-[10px] font-bold uppercase tracking-widest text-slate-500 text-center">Status</th>
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-white/5">
                             {filteredMappings.map((row, i) => {
-                                const manifest = manifests.find(m => m.descriptor.name === row.system);
-                                const source = manifest?.descriptor.source;
+                                const endonym = Locale.getEndonym(row.lang);
 
                                 return (
                                     <tr key={`${row.system}-${row.tag}-${i}`} className="hover:bg-white/5 transition-colors group">
                                         <td className="px-6 py-4">
-                                            <span className="text-xs font-medium text-slate-300">{row.system}</span>
+                                            <div className="flex flex-col gap-1">
+                                                <div className="flex items-center gap-2">
+                                                    <Globe size={10} className="text-cyan-400" />
+                                                    <span className="text-xs font-bold text-slate-200">{endonym}</span>
+                                                    <span className="text-[9px] font-mono text-slate-500">({row.lang})</span>
+                                                </div>
+                                                <span className="text-[10px] text-slate-400 pl-4">{row.system}</span>
+                                            </div>
                                         </td>
                                         <td className="px-6 py-4">
                                             <code className="text-xs px-2 py-1 rounded bg-white/5 text-blue-300 font-mono">
@@ -85,28 +96,11 @@ export const PluginMappings: React.FC<PluginMappingsProps> = ({ manifests, conce
                                         </td>
                                         <td className="px-6 py-4">
                                             <div className="flex items-center gap-2">
-                                                <span className="font-mono text-[11px] text-slate-400">{row.guid}</span>
-                                                <ExternalLink size={10} className="opacity-0 group-hover:opacity-40 transition-opacity cursor-pointer" />
+                                                <span className="font-mono text-[11px] text-slate-300">{row.guid}</span>
+                                                {row.exists && <span className="text-[10px] text-slate-500 italic truncate max-w-[120px]">
+                                                    {conceptMap.get(row.guid)?.label}
+                                                </span>}
                                             </div>
-                                        </td>
-                                        <td className="px-6 py-4">
-                                            {source ? (
-                                                <div className="flex flex-col gap-1 max-w-xs">
-                                                    <span className="text-[10px] text-slate-300 font-medium truncate" title={source.title}>
-                                                        {source.title}
-                                                    </span>
-                                                    <a
-                                                        href={source.url}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                        className="text-[9px] text-blue-400 flex items-center gap-1 hover:underline"
-                                                    >
-                                                        Source Link <ExternalLink size={8} />
-                                                    </a>
-                                                </div>
-                                            ) : (
-                                                <span className="text-[10px] text-slate-600 italic">No source info</span>
-                                            )}
                                         </td>
                                         <td className="px-6 py-4">
                                             <div className="flex justify-center">
