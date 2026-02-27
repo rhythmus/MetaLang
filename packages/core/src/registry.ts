@@ -1,7 +1,8 @@
-import type {
+import {
     Concept, Domain, PluginManifest, LinguisticMapping,
     ResolvedLinguisticMapping, SearchOptions, SearchResult, PluginDescriptor
 } from '@metalang/schema';
+import { Locale } from './locale.js';
 
 export interface ValidationResult {
     valid: boolean;
@@ -100,6 +101,11 @@ export class Registry {
      * Register an external tag system (plugin).
      */
     public registerTagSystem(manifest: PluginManifest): void {
+        // Normalize language tag if present
+        if (manifest.descriptor.language) {
+            manifest.descriptor.language = Locale.normalize(manifest.descriptor.language);
+        }
+
         this.tagSystems.set(manifest.descriptor.id, manifest);
 
         const systemLinguisticMappings = new Map<string, LinguisticMapping>();
@@ -399,6 +405,24 @@ export class Registry {
         return `https://${lang}.wiktionary.org/wiki/${encodeURIComponent(term)}`;
     }
 
+    // --- BCP 47 & CLDR Metadata ---
+
+    /**
+     * Get the name of a language in its own script.
+     * Example: 'el' -> 'Ελληνικά'
+     */
+    public getEndonym(langTag: string): string {
+        return Locale.getEndonym(langTag);
+    }
+
+    /**
+     * Get the name of a language localized for another language.
+     * Example: getExonym('el', 'en') -> 'Greek'
+     */
+    public getExonym(langTag: string, targetLangTag: string): string {
+        return Locale.getExonym(langTag, targetLangTag);
+    }
+
     // --- System Info ---
 
     public getSystems(): PluginDescriptor[] {
@@ -414,7 +438,9 @@ export class Registry {
     public getLanguages(): string[] {
         const langs = new Set<string>();
         for (const s of this.tagSystems.values()) {
-            if (s.descriptor.language) langs.add(s.descriptor.language);
+            if (s.descriptor.language) {
+                langs.add(Locale.normalize(s.descriptor.language));
+            }
         }
         return Array.from(langs);
     }
@@ -443,26 +469,50 @@ export class Registry {
      * 3. Global Fallback (en-generic)
      * 4. Ontology Label
      */
-    public resolveLinguisticMapping(conceptId: string, systemId: string): ResolvedLinguisticMapping | undefined {
+    public resolveLinguisticMapping(conceptId: string, systemOrLang?: string): ResolvedLinguisticMapping | undefined {
         const isValid = (m: LinguisticMapping) => !!(m.singular || m.plural || (m.abbreviations && m.abbreviations.length > 0));
 
-        // 1. Direct match (target, language generic, global generic)
-        const systemsToTry = [systemId];
-        const targetSystem = this.tagSystems.get(systemId);
-        if (targetSystem?.descriptor.language) {
-            const langGenericId = `${targetSystem.descriptor.language}-generic`;
-            if (langGenericId !== systemId) systemsToTry.push(langGenericId);
+        let systemsToTry: string[] = [];
+
+        if (systemOrLang) {
+            // 1. If it's a registered system ID, start there
+            if (this.tagSystems.has(systemOrLang)) {
+                systemsToTry.push(systemOrLang);
+            }
+
+            // 2. Derive ancestry from the system/lang
+            // If it's a system ID, use its associated language. If not, treat as a tag.
+            const langTag = this.tagSystems.get(systemOrLang)?.descriptor.language || systemOrLang;
+            const ancestry = Locale.getAncestry(langTag);
+
+            for (const lang of ancestry) {
+                // Try the lang tag itself as a system ID (new standard)
+                if (this.tagSystems.has(lang) && !systemsToTry.includes(lang)) {
+                    systemsToTry.push(lang);
+                }
+                // Compatibility fallback for old -generic IDs
+                const genericId = `${lang}-generic`;
+                if (this.tagSystems.has(genericId) && !systemsToTry.includes(genericId)) {
+                    systemsToTry.push(genericId);
+                }
+            }
         }
-        if (systemId !== 'en-generic') systemsToTry.push('en-generic');
+
+        // Always try English as a last resort generic fallback
+        for (const fallback of ['en', 'en-generic']) {
+            if (this.tagSystems.has(fallback) && !systemsToTry.includes(fallback)) {
+                systemsToTry.push(fallback);
+            }
+        }
 
         for (const sid of systemsToTry) {
             const mapping = this.getLinguisticMapping(conceptId, sid);
             if (mapping && isValid(mapping)) {
-                return { ...mapping, sourceSystemId: sid, isFallback: sid !== systemId };
+                return { ...mapping, sourceSystemId: sid, isFallback: sid !== systemOrLang };
             }
         }
 
-        // 2. QID Sibling Fallback
+        // 3. QID Sibling Fallback
         const concept = this.getConcept(conceptId);
         if (concept?.wikidata) {
             const siblingIds = this.qidMap.get(concept.wikidata) || [];
@@ -473,17 +523,17 @@ export class Registry {
                     if (siblingMapping && isValid(siblingMapping)) {
                         return {
                             ...siblingMapping,
-                            id: conceptId, // Return with requested concept ID
+                            id: conceptId,
                             sourceSystemId: sid,
                             isFallback: true,
-                            isQidSibling: true // Flag as QID-based sibling match
+                            isQidSibling: true
                         } as any;
                     }
                 }
             }
         }
 
-        // 3. Ontology Fallback
+        // 4. Ontology Fallback
         if (concept) {
             const label = concept.label || conceptId;
             return {
