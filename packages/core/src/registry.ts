@@ -3,6 +3,7 @@ import {
     ResolvedLinguisticMapping, SearchOptions, SearchResult, PluginDescriptor
 } from '@metalang/schema';
 import { Locale } from './locale.js';
+import { TSVLoader } from './loaders/tsv-loader.js';
 
 export interface ValidationResult {
     valid: boolean;
@@ -17,6 +18,7 @@ export class Registry {
     private qidMap: Map<string, string[]> = new Map(); // QID -> [ML_ID, ...]
     private childMap: Map<string, Set<string>> = new Map(); // parentId -> [childId, ...]
     private searchIndex: Map<string, SearchResult[]> = new Map(); // normalized term -> results
+    private normalizationCache: Map<string, string> = new Map(); // raw -> normalized
 
     // --- Core Management ---
 
@@ -24,10 +26,10 @@ export class Registry {
      * Load concepts and domains from TSV data strings.
      */
     public loadTSVData(domainsTsv: string, conceptsTsv: string | string[]): void {
-        this.parseDomainsTSV(domainsTsv).forEach(d => this.domains.set(d.id, d));
+        TSVLoader.parseDomains(domainsTsv).forEach(d => this.domains.set(d.id, d));
         const conceptsContents = Array.isArray(conceptsTsv) ? conceptsTsv : [conceptsTsv];
         conceptsContents.forEach(content => {
-            this.parseConceptsTSV(content).forEach(c => {
+            TSVLoader.parseConcepts(content).forEach(c => {
                 this.concepts.set(c.id, c);
                 this.updateIndices(c);
             });
@@ -65,45 +67,7 @@ export class Registry {
         }
     }
 
-    private parseDomainsTSV(content: string): Domain[] {
-        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#')).slice(1);
-        return lines.map(line => {
-            const parts = line.split('\t').map(s => s.trim());
-            return {
-                wikidata: parts[0] || '',
-                parent: parts[1] || '',
-                id: parts[2] || '',
-                label: parts[3] || ''
-            };
-        });
-    }
 
-    private parseConceptsTSV(content: string): Concept[] {
-        const lines = content.split('\n').filter(l => l.trim() && !l.startsWith('#')).slice(1);
-        return lines.map(line => {
-            const parts = line.split('\t').map(s => s.trim());
-            const wikidata = parts[0] || '';
-            const parent = parts[1] || '';
-            const id = parts[2] || '';
-            const label = parts[3] || '';
-            const description = parts[4] || '';
-            const wiktionary = parts[5] || '';
-
-            // Derive domain from ML_ID (e.g. ML_POS_NOUN -> POS)
-            const idParts = id.split('_');
-            const domain = idParts.length >= 2 ? idParts[1] : 'CUSTOM';
-
-            return {
-                domain: domain || 'CUSTOM',
-                parent: parent ? parent.split(',').map(p => p.trim()) : [],
-                wikidata,
-                id,
-                label,
-                description: description || undefined,
-                wiktionary: wiktionary || undefined
-            };
-        });
-    }
 
     /**
      * Register an external tag system (plugin).
@@ -111,7 +75,7 @@ export class Registry {
     public registerTagSystem(manifest: PluginManifest): void {
         // Normalize language tag if present
         if (manifest.descriptor.language) {
-            manifest.descriptor.language = Locale.normalize(manifest.descriptor.language);
+            manifest.descriptor.language = this.normalizeLanguage(manifest.descriptor.language);
         }
 
         this.tagSystems.set(manifest.descriptor.id, manifest);
@@ -554,7 +518,7 @@ export class Registry {
                             sourceSystemId: sid,
                             isFallback: true,
                             isQidSibling: true
-                        } as any;
+                        };
                     }
                 }
             }
@@ -622,7 +586,10 @@ export class Registry {
                         this.updateIndices(op.value);
                     } else if (concept) {
                         // Shallow property update for now
-                        (concept as any)[parts[2]] = op.value;
+                        const c = concept as any;
+                        if (parts[2] in c) {
+                            c[parts[2]] = op.value;
+                        }
                         this.updateIndices(concept);
                     }
                 } else if (op.op === 'remove' && parts.length === 2) {
@@ -645,6 +612,15 @@ export class Registry {
         }
 
         return result;
+    }
+
+    private normalizeLanguage(lang: string): string {
+        if (this.normalizationCache.has(lang)) {
+            return this.normalizationCache.get(lang)!;
+        }
+        const normalized = Locale.normalize(lang);
+        this.normalizationCache.set(lang, normalized);
+        return normalized;
     }
 }
 
