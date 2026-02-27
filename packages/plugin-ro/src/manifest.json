@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "ro-generic",
-        "name": "Generic Romanian",
+        "id": "ro",
+        "name": "Romanian (Română)",
         "language": "ro",
         "scope": "global",
         "domains": [

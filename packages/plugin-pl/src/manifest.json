@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "pl-generic",
-        "name": "Generic Polish",
+        "id": "pl",
+        "name": "Polish (Polski)",
         "language": "pl",
         "scope": "global",
         "domains": [

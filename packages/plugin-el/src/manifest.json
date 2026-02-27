@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "el-generic",
-        "name": "Generic Greek (Νέα Ελληνικά)",
+        "id": "el",
+        "name": "Greek (Ελληνικά)",
         "language": "el",
         "scope": "national",
         "domains": [

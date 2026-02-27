@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "nl-generic",
-        "name": "Generic Dutch (Algemeen Nederlands)",
+        "id": "nl",
+        "name": "Dutch (Nederlands)",
         "language": "nl",
         "scope": "national",
         "domains": [

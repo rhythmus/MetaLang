@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "en-generic",
-        "name": "Generic English",
+        "id": "en",
+        "name": "English",
         "language": "en",
         "scope": "global",
         "domains": [

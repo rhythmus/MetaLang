@@ -1,8 +1,8 @@
 {
     "$schema": "../../../schema/schemas/plugin-manifest.schema.json",
     "descriptor": {
-        "id": "cs-generic",
-        "name": "Czech Generic",
+        "id": "cs",
+        "name": "Czech (Čeština)",
         "language": "cs",
         "isGeneric": true,
         "lastEditedAt": "2026-02-26T20:55:00Z",

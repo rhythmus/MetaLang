@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "ru-generic",
-        "name": "Generic Russian",
+        "id": "ru",
+        "name": "Russian (Русский)",
         "language": "ru",
         "scope": "global",
         "domains": [

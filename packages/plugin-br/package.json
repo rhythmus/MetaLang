@@ -20,6 +20,6 @@
     "author": "MetaLang Contributors",
     "license": "MIT",
     "dependencies": {
-        "@metalang/core": "^1.0.0"
+        "@metalang/core": "workspace:^"
     }
 }

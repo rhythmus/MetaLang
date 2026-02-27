@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "pt-generic",
-        "name": "Generic Portuguese",
+        "id": "pt",
+        "name": "Portuguese (Português)",
         "language": "pt",
         "scope": "global",
         "domains": [

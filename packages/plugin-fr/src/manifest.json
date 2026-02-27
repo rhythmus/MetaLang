@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "fr-generic",
-        "name": "Generic French",
+        "id": "fr",
+        "name": "French (Français)",
         "language": "fr",
         "scope": "global",
         "domains": [

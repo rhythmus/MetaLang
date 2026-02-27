@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "it-generic",
-        "name": "Generic Italian",
+        "id": "it",
+        "name": "Italian (Italiano)",
         "language": "it",
         "scope": "global",
         "domains": [

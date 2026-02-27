@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "de-generic",
-        "name": "Generic German",
+        "id": "de",
+        "name": "German (Deutsch)",
         "language": "de",
         "scope": "global",
         "domains": [

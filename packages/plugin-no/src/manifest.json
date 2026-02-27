@@ -1,8 +1,8 @@
 {
     "$schema": "../../../schema/schemas/plugin-manifest.schema.json",
     "descriptor": {
-        "id": "no-generic",
-        "name": "Norwegian Generic",
+        "id": "no",
+        "name": "Norwegian (Norsk)",
         "language": "no",
         "isGeneric": true,
         "lastEditedAt": "2026-02-26T20:50:00Z",

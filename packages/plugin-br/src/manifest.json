@@ -1,7 +1,7 @@
 {
     "descriptor": {
-        "id": "br-generic",
-        "name": "Generic Breton",
+        "id": "br",
+        "name": "Breton (Brezhoneg)",
         "language": "br",
         "scope": "global",
         "domains": [
