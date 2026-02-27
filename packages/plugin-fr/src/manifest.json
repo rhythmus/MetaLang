@@ -1069,27 +1069,146 @@
             "singular": "synecdoque",
             "definition": "Consiste à prendre la partie pour le tout, proche de la métaphore"
         },
-        ".": "ML_PUNCTUATION_FULL-STOP",
-        ",": "ML_PUNCTUATION_COMMA",
-        ":": "ML_PUNCTUATION_COLON",
-        ";": "ML_PUNCTUATION_SEMICOLON",
-        "?": "ML_PUNCTUATION_QUESTION-MARK",
-        "!": "ML_PUNCTUATION_EXCLAMATION-MARK",
-        "\"": "ML_PUNCTUATION_QUOTATION-MARKS",
-        "'": "ML_PUNCTUATION_APOSTROPHE",
-        "-": "ML_PUNCTUATION_HYPHEN",
-        "(": "ML_PUNCTUATION_PARENTHESES",
-        ")": "ML_PUNCTUATION_CL-PUNCT",
-        "[": "ML_PUNCTUATION_BRACKETS",
-        "]": "ML_PUNCTUATION_CL-PUNCT",
-        "{": "ML_PUNCTUATION_BRACES",
-        "}": "ML_PUNCTUATION_CL-PUNCT",
-        "/": "ML_PUNCTUATION_SLASH",
-        "\\": "ML_PUNCTUATION_BACKSLASH",
-        "&": "ML_PUNCTUATION_AMPERSAND",
-        "*": "ML_PUNCTUATION_ASTERISK",
-        "@": "ML_PUNCTUATION_AT-SIGN",
-        "#": "ML_PUNCTUATION_HASH",
-        "%": "ML_PUNCTUATION_PERCENT"
+        "ML_PUNCTUATION_FULL-STOP": {
+            "id": "ML_PUNCTUATION_FULL-STOP",
+            "singular": "point",
+            "symbols": [
+                "."
+            ]
+        },
+        "ML_PUNCTUATION_COMMA": {
+            "id": "ML_PUNCTUATION_COMMA",
+            "singular": "virgule",
+            "symbols": [
+                ","
+            ]
+        },
+        "ML_PUNCTUATION_COLON": {
+            "id": "ML_PUNCTUATION_COLON",
+            "singular": "deux-points",
+            "symbols": [
+                ":"
+            ]
+        },
+        "ML_PUNCTUATION_SEMICOLON": {
+            "id": "ML_PUNCTUATION_SEMICOLON",
+            "singular": "point-virgule",
+            "symbols": [
+                ";"
+            ]
+        },
+        "ML_PUNCTUATION_QUESTION-MARK": {
+            "id": "ML_PUNCTUATION_QUESTION-MARK",
+            "singular": "point d'interrogation",
+            "symbols": [
+                "?"
+            ]
+        },
+        "ML_PUNCTUATION_EXCLAMATION-MARK": {
+            "id": "ML_PUNCTUATION_EXCLAMATION-MARK",
+            "singular": "point d'exclamation",
+            "symbols": [
+                "!"
+            ]
+        },
+        "ML_PUNCTUATION_QUOTATION-MARKS": {
+            "id": "ML_PUNCTUATION_QUOTATION-MARKS",
+            "singular": "guillemets",
+            "symbols": [
+                "\"",
+                "«",
+                "»",
+                "“",
+                "”"
+            ]
+        },
+        "ML_PUNCTUATION_APOSTROPHE": {
+            "id": "ML_PUNCTUATION_APOSTROPHE",
+            "singular": "apostrophe",
+            "symbols": [
+                "'",
+                "’"
+            ]
+        },
+        "ML_PUNCTUATION_HYPHEN": {
+            "id": "ML_PUNCTUATION_HYPHEN",
+            "singular": "trait d'union",
+            "symbols": [
+                "-"
+            ]
+        },
+        "ML_PUNCTUATION_PARENTHESES": {
+            "id": "ML_PUNCTUATION_PARENTHESES",
+            "singular": "parenthèses",
+            "symbols": [
+                "(",
+                ")"
+            ]
+        },
+        "ML_PUNCTUATION_BRACKETS": {
+            "id": "ML_PUNCTUATION_BRACKETS",
+            "singular": "crochets",
+            "symbols": [
+                "[",
+                "]"
+            ]
+        },
+        "ML_PUNCTUATION_BRACES": {
+            "id": "ML_PUNCTUATION_BRACES",
+            "singular": "accolades",
+            "symbols": [
+                "{",
+                "}"
+            ]
+        },
+        "ML_PUNCTUATION_SLASH": {
+            "id": "ML_PUNCTUATION_SLASH",
+            "singular": "barre oblique",
+            "symbols": [
+                "/"
+            ]
+        },
+        "ML_PUNCTUATION_BACKSLASH": {
+            "id": "ML_PUNCTUATION_BACKSLASH",
+            "singular": "barre oblique inversée",
+            "symbols": [
+                "\\"
+            ]
+        },
+        "ML_PUNCTUATION_AMPERSAND": {
+            "id": "ML_PUNCTUATION_AMPERSAND",
+            "singular": "perluette",
+            "symbols": [
+                "&"
+            ]
+        },
+        "ML_PUNCTUATION_ASTERISK": {
+            "id": "ML_PUNCTUATION_ASTERISK",
+            "singular": "astérisque",
+            "symbols": [
+                "*"
+            ]
+        },
+        "ML_PUNCTUATION_AT-SIGN": {
+            "id": "ML_PUNCTUATION_AT-SIGN",
+            "singular": "arobase",
+            "symbols": [
+                "@"
+            ]
+        },
+        "ML_PUNCTUATION_HASH": {
+            "id": "ML_PUNCTUATION_HASH",
+            "singular": "dièse",
+            "symbols": [
+                "#"
+            ]
+        },
+        "ML_PUNCTUATION_PERCENT": {
+            "id": "ML_PUNCTUATION_PERCENT",
+            "singular": "pourcentage",
+            "symbols": [
+                "%"
+            ]
+        }
     }
 }

@@ -80,27 +80,137 @@
             "id": "ML_LEX-STRUCT_GLOSS",
             "singular": "glose"
         },
-        ".": "ML_PUNCTUATION_FULL-STOP",
-        ",": "ML_PUNCTUATION_COMMA",
-        ":": "ML_PUNCTUATION_COLON",
-        ";": "ML_PUNCTUATION_SEMICOLON",
-        "?": "ML_PUNCTUATION_QUESTION-MARK",
-        "!": "ML_PUNCTUATION_EXCLAMATION-MARK",
-        "\"": "ML_PUNCTUATION_QUOTATION-MARKS",
-        "'": "ML_PUNCTUATION_APOSTROPHE",
-        "-": "ML_PUNCTUATION_HYPHEN",
-        "(": "ML_PUNCTUATION_PARENTHESES",
-        ")": "ML_PUNCTUATION_CL-PUNCT",
-        "[": "ML_PUNCTUATION_BRACKETS",
-        "]": "ML_PUNCTUATION_CL-PUNCT",
-        "{": "ML_PUNCTUATION_BRACES",
-        "}": "ML_PUNCTUATION_CL-PUNCT",
-        "/": "ML_PUNCTUATION_SLASH",
-        "\\": "ML_PUNCTUATION_BACKSLASH",
-        "&": "ML_PUNCTUATION_AMPERSAND",
-        "*": "ML_PUNCTUATION_ASTERISK",
-        "@": "ML_PUNCTUATION_AT-SIGN",
-        "#": "ML_PUNCTUATION_HASH",
-        "%": "ML_PUNCTUATION_PERCENT"
+        "ML_PUNCTUATION_FULL-STOP": {
+            "id": "ML_PUNCTUATION_FULL-STOP",
+            "singular": "punktum",
+            "symbols": [
+                "."
+            ]
+        },
+        "ML_PUNCTUATION_COMMA": {
+            "id": "ML_PUNCTUATION_COMMA",
+            "singular": "komma",
+            "symbols": [
+                ","
+            ]
+        },
+        "ML_PUNCTUATION_COLON": {
+            "id": "ML_PUNCTUATION_COLON",
+            "singular": "kolon",
+            "symbols": [
+                ":"
+            ]
+        },
+        "ML_PUNCTUATION_SEMICOLON": {
+            "id": "ML_PUNCTUATION_SEMICOLON",
+            "singular": "semikolon",
+            "symbols": [
+                ";"
+            ]
+        },
+        "ML_PUNCTUATION_QUESTION-MARK": {
+            "id": "ML_PUNCTUATION_QUESTION-MARK",
+            "singular": "spørsmålstegn",
+            "symbols": [
+                "?"
+            ]
+        },
+        "ML_PUNCTUATION_EXCLAMATION-MARK": {
+            "id": "ML_PUNCTUATION_EXCLAMATION-MARK",
+            "singular": "utropstegn",
+            "symbols": [
+                "!"
+            ]
+        },
+        "ML_PUNCTUATION_QUOTATION-MARKS": {
+            "id": "ML_PUNCTUATION_QUOTATION-MARKS",
+            "singular": "anførselstegn",
+            "symbols": [
+                "\"",
+                "«",
+                "»"
+            ]
+        },
+        "ML_PUNCTUATION_APOSTROPHE": {
+            "id": "ML_PUNCTUATION_APOSTROPHE",
+            "singular": "apostrofe",
+            "symbols": [
+                "'",
+                "’"
+            ]
+        },
+        "ML_PUNCTUATION_HYPHEN": {
+            "id": "ML_PUNCTUATION_HYPHEN",
+            "singular": "bindestrek",
+            "symbols": [
+                "-"
+            ]
+        },
+        "ML_PUNCTUATION_PARENTHESES": {
+            "id": "ML_PUNCTUATION_PARENTHESES",
+            "singular": "parenteser",
+            "symbols": [
+                "(",
+                ")"
+            ]
+        },
+        "ML_PUNCTUATION_BRACKETS": {
+            "id": "ML_PUNCTUATION_BRACKETS",
+            "singular": "klammeparenteser",
+            "symbols": [
+                "[",
+                "]"
+            ]
+        },
+        "ML_PUNCTUATION_BRACES": {
+            "id": "ML_PUNCTUATION_BRACES",
+            "singular": "krøllparenteser",
+            "symbols": [
+                "{",
+                "}"
+            ]
+        },
+        "ML_PUNCTUATION_SLASH": {
+            "id": "ML_PUNCTUATION_SLASH",
+            "symbols": [
+                "/"
+            ]
+        },
+        "ML_PUNCTUATION_BACKSLASH": {
+            "id": "ML_PUNCTUATION_BACKSLASH",
+            "symbols": [
+                "\\"
+            ]
+        },
+        "ML_PUNCTUATION_AMPERSAND": {
+            "id": "ML_PUNCTUATION_AMPERSAND",
+            "symbols": [
+                "&"
+            ]
+        },
+        "ML_PUNCTUATION_ASTERISK": {
+            "id": "ML_PUNCTUATION_ASTERISK",
+            "symbols": [
+                "*"
+            ]
+        },
+        "ML_PUNCTUATION_AT-SIGN": {
+            "id": "ML_PUNCTUATION_AT-SIGN",
+            "symbols": [
+                "@"
+            ]
+        },
+        "ML_PUNCTUATION_HASH": {
+            "id": "ML_PUNCTUATION_HASH",
+            "symbols": [
+                "#"
+            ]
+        },
+        "ML_PUNCTUATION_PERCENT": {
+            "id": "ML_PUNCTUATION_PERCENT",
+            "symbols": [
+                "%"
+            ]
+        }
     }
 }
