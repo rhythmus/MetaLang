@@ -1,8 +1,8 @@
 import { Registry } from '../packages/core/src/registry.ts';
 import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.ts';
 import { LEXILOGIO_PLUGIN_MANIFEST } from '../packages/plugin-Lexilogio/src/index.ts';
-import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-intera/src/index.ts';
-import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-ptb/src/index.ts';
+import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-INTERA/src/index.js';
+import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-PTB/src/index.js';
 import type { Concept } from '@metalang/schema';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -59,21 +59,21 @@ async function runVerification() {
 
     // Test Lexilogio
     const lexTag = 'n';
-    const lexConcepts = registry.normalizeTag(lexTag, 'lexilogio');
+    const lexConcepts = registry.normalizeTag(lexTag, 'Lexilogio');
     if (lexConcepts.length > 0) {
         console.log(`✅ Normalized Lexilogio "${lexTag}" -> ${lexConcepts[0].id}`);
     }
 
     // Test INTERA
     const interaTag = 'No';
-    const interaConcepts = registry.normalizeTag(interaTag, 'intera');
+    const interaConcepts = registry.normalizeTag(interaTag, 'INTERA');
     if (interaConcepts.length > 0) {
         console.log(`✅ Normalized INTERA "${interaTag}" -> ${interaConcepts[0].id}`);
     }
 
     // Test PTB
     const ptbTag = 'NN';
-    const ptbConcepts = registry.normalizeTag(ptbTag, 'penn-treebank');
+    const ptbConcepts = registry.normalizeTag(ptbTag, 'PTB');
     if (ptbConcepts.length > 0) {
         console.log(`✅ Normalized PTB "${ptbTag}" -> ${ptbConcepts[0].id}`);
     }

@@ -2,8 +2,8 @@ import { Registry } from '../packages/core/src/registry.ts';
 import { UD_PLUGIN_MANIFEST } from '../packages/plugin-UD/src/index.ts';
 import { EAGLES_PLUGIN_MANIFEST } from '../packages/plugin-EAGLES/src/index.ts';
 import { LEXILOGIO_PLUGIN_MANIFEST } from '../packages/plugin-Lexilogio/src/index.ts';
-import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-intera/src/index.ts';
-import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-ptb/src/index.ts';
+import { INTERA_PLUGIN_MANIFEST } from '../packages/plugin-INTERA/src/index.js';
+import { PTB_PLUGIN_MANIFEST } from '../packages/plugin-PTB/src/index.js';
 import { manifest as EL_GR_MANIFEST } from '../packages/plugin-el-ΓΝΕΓ/src/index.ts';
 import { manifest as NL_TAALUNIE_MANIFEST } from '../packages/plugin-nl-Taalunie/src/index.ts';
 import { manifest as NL_GENERIC_MANIFEST } from '../packages/plugin-nl/src/index.ts';
@@ -95,12 +95,12 @@ async function verifyPlugins() {
         { systemId: 'el-generic', tag: 'κλπ.', expected: 'ML_EDITORIAL_etc' },
 
         // Test New Systems
-        { systemId: 'lexilogio', tag: 'n' },
-        { systemId: 'lexilogio', tag: 'v' },
-        { systemId: 'intera', tag: 'No' },
-        { systemId: 'intera', tag: 'Vb' },
-        { systemId: 'penn-treebank', tag: 'NN' },
-        { systemId: 'penn-treebank', tag: 'VB' }
+        { systemId: 'Lexilogio', tag: 'n' },
+        { systemId: 'Lexilogio', tag: 'v' },
+        { systemId: 'INTERA', tag: 'No' },
+        { systemId: 'INTERA', tag: 'Vb' },
+        { systemId: 'PTB', tag: 'NN' },
+        { systemId: 'PTB', tag: 'VB' }
     ];
 
     console.log('\n🔍 Testing Normalization:');
