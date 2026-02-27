@@ -81,6 +81,7 @@ export interface ResolvedLinguisticMapping extends LinguisticMapping {
   sourceSystemId: string; // The system that provided the mapping (e.g., 'nl-generic')
   isFallback: boolean;    // True if this result comes from a fallback system or ontology
   isOntologyLabel?: boolean; // True if we fell back to the canonical ontology label
+  isQidSibling?: boolean;    // True if we fell back via QID sibling resolution
 }
 
 export interface PluginManifest {
