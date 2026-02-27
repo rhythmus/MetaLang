@@ -3,18 +3,15 @@
 ## 🎯 High Priority: Data Enrichment & Integrity
 - [ ] **WikiData QID Coverage**: 
   - Fill gaps in `ontology/concepts/pos.tsv` (e.g., subordinative conjunctions, specific numerals).
-  - Complete `ontology/concepts/punctuation.tsv` (opening/closing marks, specialized symbols).
-  - Map remaining localized rhetorical terms in `ontology/concepts/rhetoric.tsv`.
+  - [x] Complete `ontology/concepts/punctuation.tsv` (opening/closing marks, specialized symbols).
+  - [x] Map remaining localized rhetorical terms in `ontology/concepts/rhetoric.tsv`.
 - [ ] **Label Validation**: Cross-check existing labels and translations against WikiData using QID lookups to ensure global alignment.
 - [x] **Punctuation Support**: Verify full engine support in `@metalang/core` and ensure all language plugins map their local punctuation marks to the core ontology.
 
 ## 🌍 Language Package Completion
-- [ ] **Exhaustive Language Plugins**: Complete the "Core 9" language set.
-  - [x] English, German, Dutch, French, Greek, Polish.
-  - [x] **Spanish (`es`)**: Develop exhaustive plugin mapping.
-  - [x] **Italian (`it`)**: Develop exhaustive plugin mapping.
-  - [x] **Russian (`ru`)**: Develop exhaustive plugin mapping.
-- [x] **Generic Plugin Upgrade**: Refactor generic language providers to leverage QID lookups for more robust fallbacks.
+- [x] **Exhaustive Language Plugins**: Complete the "Core 9" language set and expanded to 14 plugins.
+- [x] English, German, Dutch, French, Greek, Polish, Spanish, Italian, Russian, Portuguese, Breton, Czech, Norwegian, Romanian.
+- [x] **Generic Plugin Upgrade**: Refactor all 14 generic language providers to leverage rich mappings (symbols and localized labels).
 
 ## 📏 Standardization & Interoperability
 - [ ] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
@@ -22,7 +19,7 @@
 - [ ] **Geographic Standards**: Integrate **ISO 3166** or similar for geographic names and identifiers.
 
 ## 🧹 Technical Debt & Maintenance
-- [ ] **Legacy PoS Retirement**: Confirm full coverage of `ontology/part-of-speech terms (original list)` in the new TSV files. Deprecate and remove the legacy directory once verified.
+- [x] Retire legacy PoS data: ensure all concepts from `ontology/part-of-speech terms (original list)/` are fully integrated in `pos.tsv` and `morph-value.tsv`. Then delete the directory. <!-- id: 5 -->
 - [ ] **Registry Robustness**: Improve `@metalang/core` handling of complex cross-tradition translations and edge-case resolution.
 
 ## 📝 Documentation & Publication
