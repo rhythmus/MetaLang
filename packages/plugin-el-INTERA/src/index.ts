@@ -110,7 +110,10 @@ export const INTERA_PLUGIN_MANIFEST: PluginManifest = {
         'O_PUNCT': ['ML_PUNCTUATION_PARENTHESES'],
         'C_PUNCT': ['ML_PUNCTUATION_CL-PUNCT'],
         'ENUM': ['ML_CUSTOM_ENUM'],
-        'DATE': ['ML_CUSTOM_DATUM']
+        'DATE': ['ML_CUSTOM_DATUM'],
+        'aor': ['ML_MORPH-VALUE_TENSE-AORIST'], // Row 64
+        'Or': ['ML_CUSTOM_ORIGINAL-SCRIPT'], // Row 115
+        'Xx': ['ML_POS_X'] // Row 127
     }
 };
 

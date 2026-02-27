@@ -40,12 +40,18 @@ export const LEXILOGIO_PLUGIN_MANIFEST: PluginManifest = {
         'sg': ['ML_MORPH-VALUE_NUMBER-SINGULAR'],
         'pl': ['ML_MORPH-VALUE_NUMBER-PLURAL'],
 
+        // --- Person ---
+        '1e.pers': ['ML_MORPH-VALUE_PERSON-FIRST'],
+        '2e.pers': ['ML_MORPH-VALUE_PERSON-SECOND'],
+        '3e.pers': ['ML_MORPH-VALUE_PERSON-THIRD'],
+
         // --- POS Tags ---
         'n': ['ML_POS_NOUN'],
-        'n.gr': ['ML_CUSTOM_V-GR'], // linguistic-meta-terms_core.tsv row 29: parent n, tag n.gr, Q1401131
+        'n.gr': ['ML_MORPH-VALUE_VERBFORM-GERUND', 'ML_POS_NOUN'], // verbal noun Q1401131
         'com.n': ['ML_POS_NOUN-COMMON'],
         'prop.n': ['ML_POS_PROPER-NOUN'],
         'topo': ['ML_POS_PROPER-NOUN-TOPONYM'],
+        'demonym': ['ML_CUSTOM_DEMONYM'],
         'adj': ['ML_POS_ADJECTIVE'],
         'dim': ['ML_DERIVATION_DIMINUTIVE'],
         'adj.comp': ['ML_MORPH-VALUE_DEGREE-COMPARATIVE'],
@@ -79,6 +85,7 @@ export const LEXILOGIO_PLUGIN_MANIFEST: PluginManifest = {
         'impers': ['ML_MORPH-VALUE_VOICE-IMPERSONAL-PASSIVE'],
 
         'v.aux': ['ML_POS_VERB-AUX'],
+        'cop': ['ML_POS_VERB-COP'],
         'v.gr': ['ML_CUSTOM_V-GR'],
         'v.ptcp': ['ML_POS_VERB-PTCP'],
 
@@ -115,6 +122,7 @@ export const LEXILOGIO_PLUGIN_MANIFEST: PluginManifest = {
         'sub.ptcl': ['ML_CUSTOM_SUB-PTCL'],
 
         'abbr': ['ML_POS_ABBREVIATION'],
+        'n.abbr': ['ML_POS_ABBREVIATION'],
         'init': ['ML_POS_INITIALS'],
         'acro': ['ML_POS_ACRONYM'],
         'translit': ['ML_CUSTOM_TRANSLIT'],
