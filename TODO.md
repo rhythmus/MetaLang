@@ -22,17 +22,11 @@
 ## 📝 Documentation & Publication
 - [ ] **Unified Documentation**: Integrate and simplify existing specifications.
 - [ ] **API Reference**: Expand `docs/API_REFERENCE.md` with comprehensive examples and plugin-author guides.
-- [ ] **Academic Output**: Draft Whitepaper and transition to a formal Journal Paper.
+- [x] **Academic Positioning**: Formally defined the domain as "Language Resource Infrastructure and Standardization."
+- [x] **Academic Output**: Fleshed out initial Journal Paper draft (`docs/paper/draft.md`).
+- [x] **Citation Standards**: Enhanced `CITATION.cff` and `README.md` with academic credentials and related standards.
 
-## ✅ Completed Milestones
-- [x] **GUI Revitalization**: Implemented modular TSV loading, standardized plugin registration, and a BCP 47 Resolution Sandbox.
-- [x] **Registry Performance**: Achieved $O(1)$ hierarchy traversal and inverted search indexing.
-- [x] **BCP 47 Migration**: Standardized all language tags and implemented hierarchical fallback logic.
-- [x] **CLDR Integration**: Integrated `Intl.DisplayNames` for localized language/region metadata.
-- [x] **ISO 3166 Support**: Implemented region-specific naming and lookups.
-- [x] **Registry Robustness**: Enhanced `@metalang/core` for regional fallback (e.g., `nl-BE` -> `nl`).
-- [x] **Exhaustive Language Plugins**: Completed 14 core language plugins (Generic providers).
-- [x] **Tag-System Plugins**: Implemented mappings for **Lexilogio**, **INTERA**, and **PTB**.
-- [x] **Punctuation Support**: Multi-glyph resolution and rich linguistic mappings.
-- [x] **Rhetorical Expansion**: Integrated 250+ rhetorical concepts with WikiData cross-referencing.
-- [x] **Ontology Cleanup**: Retired legacy PoS data and migrated to modular TSV structure.
+## 🎓 Scholarship & Community
+- [ ] **Affiliation**: Apply to the [Ronin Institute](https://ronininstitute.org/) to establish formal affiliation for independent scholarship.
+- [ ] **Discoverability**: Add recommended topics to the GitHub repository (e.g., `language-resources`, `computational-linguistics`).
+- [ ] **GitHub Pages**: Deploy the GUI as a static site for easier stakeholder access.
