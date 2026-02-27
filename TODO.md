@@ -6,12 +6,27 @@
 - [ ] **Label Validation**: Cross-check existing labels and translations against WikiData using QID lookups to ensure global alignment.
 - [ ] **Interoperability Analysis**: Audit coverage and completeness of the ontology in comparison to [Universal Dependencies](https://github.com/UniversalDependencies).
 
+## 🐛 Bug-fixes & Logic Tightening
+- [ ] **Standardize Plugin Exports**: Unify manifests to export a single `manifest` object; remove legacy `register()` functions.
+- [ ] **Type safety audit**: Remove `any` casts in `Registry.ts` (especially in `resolveLinguisticMapping` and `applyPatch`).
+- [ ] **Schema Linkage**: Fix broken `$schema` paths in all plugin manifests.
+
+## 🚀 Efficiency & Performance
+- [ ] **Normalization Caching**: Cache BCP 47 results in the `Registry` to avoid redundant normalization overhead.
+
+## 🧹 Maintainability & DRY
+- [ ] **Unified Validation**: Consolidate `validate_plugins.ts` and `Registry.validatePlugin()` into a shared validation service.
+- [ ] **Decouple Registry Parsing**: Move TSV/JSON loading logic from `Registry.ts` to dedicated `Loader` utilities.
+- [ ] **Componentize Packaging**: Create a `@metalang/plugin-kit` or similar to reduce boilerplate in plugin packages.
+
 ## 📝 Documentation & Publication
 - [ ] **Unified Documentation**: Integrate and simplify existing specifications.
 - [ ] **API Reference**: Expand `docs/API_REFERENCE.md` with comprehensive examples and plugin-author guides.
 - [ ] **Academic Output**: Draft Whitepaper and transition to a formal Journal Paper.
 
 ## ✅ Completed Milestones
+- [x] **GUI Revitalization**: Implemented modular TSV loading, standardized plugin registration, and a BCP 47 Resolution Sandbox.
+- [x] **Registry Performance**: Achieved $O(1)$ hierarchy traversal and inverted search indexing.
 - [x] **BCP 47 Migration**: Standardized all language tags and implemented hierarchical fallback logic.
 - [x] **CLDR Integration**: Integrated `Intl.DisplayNames` for localized language/region metadata.
 - [x] **ISO 3166 Support**: Implemented region-specific naming and lookups.

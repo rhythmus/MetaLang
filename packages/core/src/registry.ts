@@ -15,6 +15,8 @@ export class Registry {
     private tagSystems: Map<string, PluginManifest> = new Map();
     private linguisticMappings: Map<string, Map<string, LinguisticMapping>> = new Map(); // systemId -> ML_ID -> mapping
     private qidMap: Map<string, string[]> = new Map(); // QID -> [ML_ID, ...]
+    private childMap: Map<string, Set<string>> = new Map(); // parentId -> [childId, ...]
+    private searchIndex: Map<string, SearchResult[]> = new Map(); // normalized term -> results
 
     // --- Core Management ---
 
@@ -27,12 +29,7 @@ export class Registry {
         conceptsContents.forEach(content => {
             this.parseConceptsTSV(content).forEach(c => {
                 this.concepts.set(c.id, c);
-                if (c.wikidata) {
-                    const ids = this.qidMap.get(c.wikidata) || [];
-                    if (!ids.includes(c.id)) {
-                        this.qidMap.set(c.wikidata, [...ids, c.id]);
-                    }
-                }
+                this.updateIndices(c);
             });
         });
     }
@@ -47,13 +44,24 @@ export class Registry {
         if (seed.concepts) {
             seed.concepts.forEach((c: Concept) => {
                 this.concepts.set(c.id, c);
-                if (c.wikidata) {
-                    const ids = this.qidMap.get(c.wikidata) || [];
-                    if (!ids.includes(c.id)) {
-                        this.qidMap.set(c.wikidata, [...ids, c.id]);
-                    }
-                }
+                this.updateIndices(c);
             });
+        }
+    }
+
+    private updateIndices(c: Concept): void {
+        if (c.wikidata) {
+            const ids = this.qidMap.get(c.wikidata) || [];
+            if (!ids.includes(c.id)) {
+                this.qidMap.set(c.wikidata, [...ids, c.id]);
+            }
+        }
+        // Update child map
+        const parents = Array.isArray(c.parent) ? c.parent : [c.parent];
+        for (const pid of parents) {
+            if (!pid) continue;
+            if (!this.childMap.has(pid)) this.childMap.set(pid, new Set());
+            this.childMap.get(pid)!.add(c.id);
         }
     }
 
@@ -112,10 +120,14 @@ export class Registry {
 
         // Process mappings
         for (const [tag, value] of Object.entries(manifest.mappings)) {
+            const tagLower = tag.toLowerCase();
+            let conceptIds: string[] = [];
+
             if (typeof value === 'object' && !Array.isArray(value)) {
                 // Rich LinguisticMapping
                 const lm = value as LinguisticMapping;
                 systemLinguisticMappings.set(lm.id, lm);
+                conceptIds = [lm.id];
 
                 // Add abbreviations (with automatic dot-stripping)
                 if (lm.abbreviations) {
@@ -128,32 +140,52 @@ export class Registry {
                     }
                     for (const abbr of allAbbrs) {
                         this.addInternalMapping(manifest.descriptor.id, abbr, lm.id);
+                        this.addToSearchIndex(abbr, manifest.descriptor.id, lm.id);
                     }
                 }
 
                 // Add singular/plural forms
                 if (lm.singular) {
                     const terms = Array.isArray(lm.singular) ? lm.singular : [lm.singular];
-                    for (const term of terms) this.addInternalMapping(manifest.descriptor.id, term, lm.id);
+                    for (const term of terms) {
+                        this.addInternalMapping(manifest.descriptor.id, term, lm.id);
+                        this.addToSearchIndex(term, manifest.descriptor.id, lm.id);
+                    }
                 }
                 if (lm.plural) {
                     const terms = Array.isArray(lm.plural) ? lm.plural : [lm.plural];
-                    for (const term of terms) this.addInternalMapping(manifest.descriptor.id, term, lm.id);
+                    for (const term of terms) {
+                        this.addInternalMapping(manifest.descriptor.id, term, lm.id);
+                        this.addToSearchIndex(term, manifest.descriptor.id, lm.id);
+                    }
                 }
                 if (lm.symbols) {
-                    for (const sym of lm.symbols) this.addInternalMapping(manifest.descriptor.id, sym, lm.id);
+                    for (const sym of lm.symbols) {
+                        this.addInternalMapping(manifest.descriptor.id, sym, lm.id);
+                        this.addToSearchIndex(sym, manifest.descriptor.id, lm.id);
+                    }
                 }
             } else {
                 // Flat mapping (string or string[])
-                const conceptIds = Array.isArray(value) ? value : [value];
+                conceptIds = Array.isArray(value) ? value : [value];
                 for (const id of conceptIds) {
                     this.addInternalMapping(manifest.descriptor.id, tag, id);
+                    this.addToSearchIndex(tag, manifest.descriptor.id, id);
                 }
             }
         }
 
         if (systemLinguisticMappings.size > 0) {
             this.linguisticMappings.set(manifest.descriptor.id, systemLinguisticMappings);
+        }
+    }
+
+    private addToSearchIndex(term: string, systemId: string, conceptId: string): void {
+        const q = term.toLowerCase();
+        if (!this.searchIndex.has(q)) this.searchIndex.set(q, []);
+        const results = this.searchIndex.get(q)!;
+        if (!results.some(r => r.systemId === systemId && r.conceptId === conceptId)) {
+            results.push({ systemId, conceptId, tag: term, matchType: 'exact' });
         }
     }
 
@@ -170,8 +202,6 @@ export class Registry {
                 manifest.mappings[tag] = [...ids, conceptId];
             }
         }
-        // If it's a rich mapping already, we don't overwrite it for now
-        // to avoid losing the rich data, but normalization should handle it.
     }
 
     /**
@@ -219,32 +249,28 @@ export class Registry {
 
         const q = query.toLowerCase();
 
-        for (const systemId of systems) {
-            const manifest = this.tagSystems.get(systemId);
-            if (!manifest) continue;
-
-            for (const [tag, value] of Object.entries(manifest.mappings)) {
-                const tagLower = tag.toLowerCase();
-                let matchType: SearchResult['matchType'] | null = null;
-                let conceptId: string;
-
-                if (tagLower === q) {
-                    matchType = 'exact';
-                } else if (!exact && tagLower.includes(q)) {
-                    matchType = 'partial';
-                }
-
-                if (matchType) {
-                    if (typeof value === 'object' && !Array.isArray(value)) {
-                        conceptId = (value as LinguisticMapping).id;
-                    } else {
-                        const ids = Array.isArray(value) ? value : [value as string];
-                        conceptId = ids[0] || '';
-                    }
-                    if (conceptId) {
-                        results.push({ systemId, conceptId, tag, matchType });
-                    }
+        // 1. Try exact matches from search index (O(1))
+        if (this.searchIndex.has(q)) {
+            const indexedHits = this.searchIndex.get(q)!;
+            for (const hit of indexedHits) {
+                if (systems.includes(hit.systemId)) {
+                    results.push(hit);
                     if (results.length >= limit) return results;
+                }
+            }
+        }
+
+        if (exact) return results;
+
+        // 2. Partial matches (O(N) search index scan, much faster than mappings scan)
+        for (const [term, hits] of this.searchIndex.entries()) {
+            if (term === q) continue; // Already handled
+            if (term.includes(q)) {
+                for (const hit of hits) {
+                    if (systems.includes(hit.systemId)) {
+                        results.push({ ...hit, matchType: 'partial' });
+                        if (results.length >= limit) return results;
+                    }
                 }
             }
         }
@@ -360,10 +386,11 @@ export class Registry {
      * Get all direct children of a concept.
      */
     public getChildren(conceptId: string): Concept[] {
-        return Array.from(this.concepts.values()).filter(c => {
-            const parents = Array.isArray(c.parent) ? c.parent : [c.parent];
-            return parents.includes(conceptId);
-        });
+        const childIds = this.childMap.get(conceptId);
+        if (!childIds) return [];
+        return Array.from(childIds)
+            .map(id => this.getConcept(id))
+            .filter((c): c is Concept => !!c);
     }
 
     /**
@@ -592,12 +619,15 @@ export class Registry {
                 if (op.op === 'add' || op.op === 'replace') {
                     if (parts.length === 2) {
                         this.concepts.set(conceptId, op.value);
+                        this.updateIndices(op.value);
                     } else if (concept) {
                         // Shallow property update for now
                         (concept as any)[parts[2]] = op.value;
+                        this.updateIndices(concept);
                     }
                 } else if (op.op === 'remove' && parts.length === 2) {
                     this.concepts.delete(conceptId);
+                    // Note: full re-indexing might be needed for removal in a real system
                 }
             }
         }
