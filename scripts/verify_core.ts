@@ -71,6 +71,13 @@ async function runVerification() {
         console.log(`✅ Normalized INTERA "${interaTag}" -> ${interaConcepts[0].id}`);
     }
 
+    // Test INTERA Tokenizers
+    const interaAbbr = 'NBABBR';
+    const interaAbbrConcepts = registry.normalizeTag(interaAbbr, 'INTERA');
+    if (interaAbbrConcepts.length > 0) {
+        console.log(`✅ Normalized INTERA "${interaAbbr}" -> ${interaAbbrConcepts[0].id}`);
+    }
+
     // Test PTB
     const ptbTag = 'NN';
     const ptbConcepts = registry.normalizeTag(ptbTag, 'PTB');

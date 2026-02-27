@@ -99,6 +99,8 @@ async function verifyPlugins() {
         { systemId: 'Lexilogio', tag: 'v' },
         { systemId: 'INTERA', tag: 'No' },
         { systemId: 'INTERA', tag: 'Vb' },
+        { systemId: 'INTERA', tag: 'NBABBR' },
+        { systemId: 'INTERA', tag: 'INIT' },
         { systemId: 'PTB', tag: 'NN' },
         { systemId: 'PTB', tag: 'VB' }
     ];
