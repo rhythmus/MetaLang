@@ -10,19 +10,16 @@ pnpm-lock.yaml
 dist/
 *.tsbuildinfo
 
-# Build Noise (TSC output in src/scripts)
-scripts/*.js
-scripts/*.js.map
-scripts/*.d.ts
-scripts/*.d.ts.map
-packages/*/src/*.js
-packages/*/src/*.js.map
-packages/*/src/*.d.ts
-packages/*/src/*.d.ts.map
-packages/*/src/*/*.js
-packages/*/src/*/*.js.map
-packages/*/src/*/*.d.ts
-packages/*/src/*/*.d.ts.map
+# Build Noise (TSC/Build output)
+scripts/**/*.js
+scripts/**/*.js.map
+scripts/**/*.d.ts
+scripts/**/*.d.ts.map
+packages/**/*.js
+packages/**/*.js.map
+packages/**/*.d.ts
+packages/**/*.d.ts.map
+packages/**/*.tsbuildinfo
 
 # Brain
 .gemini/
