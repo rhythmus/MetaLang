@@ -14,6 +14,7 @@
 - [x] **Generic Plugin Upgrade**: Refactor all 14 generic language providers to leverage rich mappings (symbols and localized labels).
 
 ## 📏 Standardization & Interoperability
+- [x] **Tag-System Plugins**: Implemented mappings for **Lexilogio**, **INTERA**, and **PTB** (Penn Treebank) based on core meta-terms.
 - [ ] **Language Tags**: Transition from internal keys to strict **BCP47** compliant tags.
 - [ ] **CLDR Integration**: Use CLDR as a dependency for authoritative language metadata and translations (incl. endonyms, exonyms).
 - [ ] **Geographic Standards**: Integrate **ISO 3166** or similar for geographic names and identifiers.
